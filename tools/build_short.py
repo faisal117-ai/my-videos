@@ -100,6 +100,28 @@ def beat_html(i: int, beat: dict, dur: float, spoken: float, accent: str) -> str
         js.append(f'tl.fromTo("#{bid} .hi", {{textShadow: "0 0 0px rgba(0,0,0,0)"}}, '
                   f'{{textShadow: "0 0 28px var(--accent)", duration: 0.6, ease: "power1.out"}}, {spoken * 0.5:.2f});')
 
+    if beat.get("options"):
+        correct = beat.get("correct")
+        rows = []
+        for k, opt in enumerate(beat["options"]):
+            cls = "opt"
+            if correct is not None:
+                cls += " right" if k == correct else " wrong"
+            rows.append(f'<div id="{bid}-o{k}" class="{cls}"><b>{"ABC"[k]}</b>{esc(opt)}</div>')
+        parts.append(f'<div id="{bid}-opts" class="opts">{"".join(rows)}</div>')
+        if correct is None:
+            js.append(f'tl.fromTo("#{bid} .opt", {{opacity: 0, x: -30}}, {{opacity: 1, x: 0, duration: 0.35, '
+                      f'ease: "power2.out", stagger: 0.55}}, 0.6);')
+        else:
+            js.append(f'tl.fromTo("#{bid} .wrong", {{opacity: 1}}, {{opacity: 0.3, duration: 0.4}}, 0.1);')
+            js.append(f'tl.fromTo("#{bid} .right", {{scale: 1}}, {{scale: 1.06, duration: 0.35, ease: "back.out(2)"}}, 0.1);')
+        if beat.get("count"):
+            # "Three, two, one" closes the spoken line.
+            for c, at in zip("321", (spoken - 1.75, spoken - 1.15, spoken - 0.55)):
+                parts.append(f'<div id="{bid}-c{c}" class="count">{c}</div>')
+                js.append(f'tl.fromTo("#{bid}-c{c}", {{opacity: 0, scale: 1.4}}, {{keyframes: [{{opacity: 1, scale: 1, duration: 0.2}}, '
+                          f'{{opacity: 0, duration: 0.25, delay: 0.25}}]}}, {max(at, 0.1):.2f});')
+
     if beat.get("ref"):
         parts.append(f'<div id="{bid}-ref" class="ref">{esc(beat["ref"])}</div>')
         js.append(f'tl.fromTo("#{bid}-ref", {{opacity: 0, y: 12}}, '
@@ -246,6 +268,13 @@ def index_html(spec: dict, beats: list, total: float) -> str:
         text-transform: uppercase; color: var(--accent); border: 2px solid var(--accent); border-radius: 999px;
         padding: 12px 26px; background: rgba(0,0,0,0.35); }}
       .ar ~ .ref {{ align-self: center; }}
+      .opts {{ display: flex; flex-direction: column; gap: 22px; }}
+      .opt {{ font-family: "Cormorant Garamond"; font-weight: 600; font-size: 64px; padding: 14px 30px;
+        border: 2px solid rgba(245,234,214,0.35); border-radius: 24px; background: rgba(0,0,0,0.35); }}
+      .opt b {{ font-family: Inter; font-size: 40px; color: var(--accent); margin-right: 26px; }}
+      .opt.right {{ border-color: var(--accent); background: rgba(242,163,58,0.18); transform-origin: left center; }}
+      .count {{ position: absolute; right: 0; top: -40px; font-family: Inter; font-weight: 900; font-size: 150px;
+        color: var(--accent); opacity: 0; }}
       .mark {{ font-family: "Amiri Quran"; font-size: 120px; text-align: center; color: var(--accent); line-height: 1.4; }}
       .btn {{ align-self: center; font-family: Inter; font-weight: 700; font-size: 40px; letter-spacing: 0.08em;
         color: #120b08; background: var(--accent); border-radius: 999px; padding: 22px 48px; }}
