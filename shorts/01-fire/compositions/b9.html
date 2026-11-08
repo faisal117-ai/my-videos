@@ -1,0 +1,21 @@
+<template>
+  <style>
+    #b9 { position: absolute; inset: 0; }
+    #b9-wrap { position: absolute; left: 60px; right: 60px; top: 330px; bottom: 600px;
+      display: flex; flex-direction: column; justify-content: center; gap: 34px; }
+  </style>
+  <div id="b9" data-composition-id="b9" data-width="1080" data-height="1920">
+    <div id="b9-wrap" class="clip" data-start="0" data-duration="4.05">
+      <div id="b9-cta-mark" class="mark">حق کہانیاں</div>
+      <div id="b9-txt" class="txt cta"><span class="w" id="b9-w0">Follow</span> <span class="w" id="b9-w1">for</span> <span class="w" id="b9-w2">more</span> <span class="w" id="b9-w3">stories</span> <span class="w" id="b9-w4">of</span> <span class="w" id="b9-w5">the</span> <span class="w" id="b9-w6">prophets.</span></div>
+      <div id="b9-btn" class="btn">Follow · Haq Stories</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#b9-cta-mark", {opacity: 0, scale: 0.92}, {opacity: 1, scale: 1, duration: 0.8, ease: "power2.out"}, 0);
+    tl.fromTo("#b9 .w", {opacity: 0, y: 18}, {opacity: 1, y: 0, duration: 0.35, ease: "power2.out", stagger: 0.250}, 0.15);
+    tl.fromTo("#b9-btn", {opacity: 0, y: 24}, {opacity: 1, y: 0, duration: 0.5, ease: "back.out(1.6)"}, 0.5);
+    window.__timelines["b9"] = tl;
+  </script>
+</template>

@@ -1,0 +1,21 @@
+<template>
+  <style>
+    #b3 { position: absolute; inset: 0; }
+    #b3-wrap { position: absolute; left: 90px; right: 140px; top: 330px; bottom: 600px;
+      display: flex; flex-direction: column; justify-content: center; gap: 34px; }
+  </style>
+  <div id="b3" data-composition-id="b3" data-width="1080" data-height="1920">
+    <div id="b3-wrap" class="clip" data-start="0" data-duration="3.12">
+      <div id="b3-txt" class="txt"><span class="w hi" id="b3-w0">“Burn</span> <span class="w hi" id="b3-w1">him,</span> <span class="w" id="b3-w2">and</span> <span class="w" id="b3-w3">support</span> <span class="w" id="b3-w4">your</span> <span class="w" id="b3-w5">gods.”</span></div>
+      <div id="b3-ref" class="ref">Al-Anbiya 21:68</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#b3 .w", {opacity: 0, y: 22, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.32, ease: "power2.out", stagger: 0.360}, 0.12);
+    tl.fromTo("#b3 .hi", {textShadow: "0 0 0px rgba(0,0,0,0)"}, {textShadow: "0 0 28px var(--accent)", duration: 0.6, ease: "power1.out"}, 1.39);
+    tl.fromTo("#b3-ref", {opacity: 0, y: 12}, {opacity: 1, y: 0, duration: 0.45, ease: "power2.out"}, 0.35);
+    tl.fromTo("#b3-wrap", {opacity: 1}, {opacity: 0, duration: 0.22, ease: "power1.in"}, 2.88);
+    window.__timelines["b3"] = tl;
+  </script>
+</template>
