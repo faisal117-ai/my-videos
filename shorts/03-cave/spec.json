@@ -88,5 +88,51 @@
         "cool": 0.4
       }
     }
+  ],
+  "bed_volume": 1.0,
+  "sound": [
+    {
+      "prompt": "deep echoing low boom inside a cave",
+      "beat": 0,
+      "dur": 3,
+      "gain": -8,
+      "fade_in": 0,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "inside a cave at night, slow echoing water drips, faint wind at the cave mouth, crickets outside, no music",
+      "beat": 0,
+      "dur": 42,
+      "gain": -15,
+      "fade_in": 0.3,
+      "fade_out": 2
+    },
+    {
+      "prompt": "old clock ticking steadily, close, dry",
+      "beat": 1,
+      "offset": 0.3,
+      "dur": 9.5,
+      "gain": -17,
+      "fade_in": 0.5,
+      "fade_out": 0.3
+    },
+    {
+      "prompt": "soft magical shimmer, gentle reveal chime",
+      "beat": 2,
+      "offset": 0.1,
+      "dur": 2.5,
+      "gain": -13,
+      "fade_in": 0,
+      "fade_out": 1
+    },
+    {
+      "prompt": "soft male choir humming a slow, mysterious, peaceful melody, voices only, no instruments, cave reverb",
+      "beat": 3,
+      "offset": 0.3,
+      "dur": 22,
+      "gain": -19,
+      "fade_in": 3,
+      "fade_out": 2.5
+    }
   ]
 }

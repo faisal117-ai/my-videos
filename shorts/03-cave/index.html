@@ -35,6 +35,10 @@
         text-transform: uppercase; color: var(--accent); border: 2px solid var(--accent); border-radius: 999px;
         padding: 12px 26px; background: rgba(0,0,0,0.35); }
       .ar ~ .ref { align-self: center; }
+      .orbs { position: absolute; left: 0; right: 0; bottom: -420px; height: 200px; }
+      .orb { position: absolute; left: 50%; top: 50%; width: 120px; height: 120px; margin: -60px; border-radius: 50%;
+        background: radial-gradient(circle, #fff6e0 0%, #ffd27a 40%, rgba(255,190,90,0) 72%);
+        box-shadow: 0 0 60px 20px rgba(255,200,110,0.35); }
       .opts { display: flex; flex-direction: column; gap: 22px; }
       .opt { font-family: "Cormorant Garamond"; font-weight: 600; font-size: 76px; padding: 16px 34px;
         border: 2px solid rgba(245,234,214,0.35); border-radius: 24px; background: rgba(0,0,0,0.35); }
@@ -76,7 +80,7 @@
         data-width="1080" data-height="1920" style="z-index:2"></div>
       <audio id="vo" class="clip" src="assets/narration.wav" data-start="0" data-duration="41.39"
         data-track-index="10" data-volume="1"></audio>
-      <audio id="amb" class="clip" src="assets/ambience.wav" data-start="0" data-duration="42.50" data-track-index="11" data-volume="0.55"></audio>
+      <audio id="amb" class="clip" src="assets/ambience.wav" data-start="0" data-duration="42.50" data-track-index="11" data-volume="1.0"></audio>
     </div>
     <script>
       window.__timelines["main"] = gsap.timeline({ paused: true });

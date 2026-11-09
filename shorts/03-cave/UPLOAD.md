@@ -3,6 +3,9 @@
 **File:** `03-cave.mp4` (1080×1920, 42 s)
 **Post:** about 24 hours after Short 2, at the same time of day.
 
+## Sound
+Cave soundscape (echoing drips, wind, crickets), a ticking clock under the options, a chime on the answer, and soft voices-only humming from the verse on, generated with ElevenLabs.
+
 ## Title (paste as is)
 They slept in a cave… how many years? 🤔 (Most people guess wrong)
 

@@ -63,7 +63,7 @@ def main() -> None:
         filters.append(chain)
 
     n = len(spec["sound"])
-    mix = "".join(f"[a{k}]" for k in range(n)) + f"amix=inputs={n}:normalize=0:duration=longest,atrim=0:{total:.2f}[out]"
+    mix = "".join(f"[a{k}]" for k in range(n)) + f"amix=inputs={n}:normalize=0:duration=longest,apad=whole_dur={total:.2f},atrim=0:{total:.2f}[out]"
     subprocess.run(["ffmpeg", "-hide_banner", "-loglevel", "error", "-y", *inputs,
                     "-filter_complex", ";".join(filters + [mix]), "-map", "[out]",
                     "-ar", "48000", str(d / "assets/ambience.wav")], check=True)
