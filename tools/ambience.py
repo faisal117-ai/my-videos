@@ -61,8 +61,16 @@ def main() -> None:
     pad /= np.max(np.abs(pad))
 
     mix = fire * warm * 0.22 + pad * cool * 0.06
+    if spec.get("impact"):
+        # A low hit on frame 1: tells a scrolling viewer something is happening.
+        L = int(0.9 * SR)
+        tt = np.arange(L) / SR
+        hit = (np.sin(2 * np.pi * (70 - 30 * tt) * tt) * np.exp(-tt * 5)
+               + 0.35 * rng.standard_normal(L) * np.exp(-tt * 25))
+        mix[:L] += hit * 0.5
     fade = int(0.6 * SR)
-    mix[:fade] *= np.linspace(0, 1, fade)
+    if not spec.get("impact"):
+        mix[:fade] *= np.linspace(0, 1, fade)
     mix[-fade:] *= np.linspace(1, 0, fade)
     mix = np.clip(mix, -0.95, 0.95).astype(np.float32)
     sf.write(d / "assets/ambience.wav", np.stack([mix, mix], axis=1), SR)

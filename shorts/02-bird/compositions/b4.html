@@ -1,0 +1,19 @@
+<template>
+  <style>
+    #b4 { position: absolute; inset: 0; }
+    #b4-wrap { position: absolute; left: 90px; right: 140px; top: 330px; bottom: 600px;
+      display: flex; flex-direction: column; justify-content: center; gap: 34px; }
+  </style>
+  <div id="b4" data-composition-id="b4" data-width="1080" data-height="1920">
+    <div id="b4-wrap" class="clip" data-start="0" data-duration="6.83">
+      <div id="b4-txt" class="txt"><span class="w" id="b4-w0">The</span> <span class="w" id="b4-w1">mother</span> <span class="w" id="b4-w2">came</span> <span class="w" id="b4-w3">back.</span> <span class="w hi" id="b4-w4">Flapping.</span> <span class="w hi" id="b4-w5">Circling.</span> <span class="w" id="b4-w6">Again</span> <span class="w" id="b4-w7">and</span> <span class="w" id="b4-w8">again.</span></div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#b4 .w", {opacity: 0, y: 22, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.32, ease: "power2.out", stagger: 0.559}, 0.12);
+    tl.fromTo("#b4 .hi", {textShadow: "0 0 0px rgba(0,0,0,0)"}, {textShadow: "0 0 28px var(--accent)", duration: 0.6, ease: "power1.out"}, 3.23);
+    tl.fromTo("#b4-wrap", {opacity: 1}, {opacity: 0, duration: 0.22, ease: "power1.in"}, 6.59);
+    window.__timelines["b4"] = tl;
+  </script>
+</template>

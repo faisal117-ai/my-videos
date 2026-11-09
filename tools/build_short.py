@@ -41,7 +41,7 @@ FONT_FACES = """
 
 
 def esc(s: str) -> str:
-    return html.escape(s, quote=True)
+    return html.escape(s, quote=True).replace("ﷺ", '<span class="saw">ﷺ</span>')
 
 
 def words_html(text: str, prefix: str) -> tuple[str, int]:
@@ -83,7 +83,8 @@ def beat_html(i: int, beat: dict, dur: float, spoken: float, accent: str) -> str
         words, n = words_html(beat["text"], bid)
         size = beat.get("size")
         style = f' style="font-size:{size}px"' if size else ""
-        parts.append(f'<div id="{bid}-txt" class="txt"{style}>{words}</div>')
+        cls = "txt hook" if beat.get("hook") else "txt"
+        parts.append(f'<div id="{bid}-txt" class="{cls}"{style}>{words}</div>')
         if beat.get("sub"):
             parts.append(f'<div id="{bid}-sub" class="sub">{esc(beat["sub"])}</div>')
         if reveal:
@@ -93,7 +94,11 @@ def beat_html(i: int, beat: dict, dur: float, spoken: float, accent: str) -> str
                       f'stagger: {stagger:.3f}}}, 0.12);')
         else:
             # Hook: fully on screen at frame 0, then breathes.
-            js.append(f'tl.fromTo("#{bid}-txt", {{scale: 1}}, {{scale: 1.04, duration: {dur:.2f}, ease: "none"}}, 0);')
+            if beat.get("hook"):
+                # Every word is readable on frame 0 and lands with a punch in the first half second.
+                js.append(f'tl.fromTo("#{bid}-txt", {{scale: 1.18}}, {{scale: 1, duration: 0.35, ease: "back.out(2)"}}, 0);')
+            else:
+                js.append(f'tl.fromTo("#{bid}-txt", {{scale: 1}}, {{scale: 1.04, duration: {dur:.2f}, ease: "none"}}, 0);')
             if beat.get("sub"):
                 js.append(f'tl.fromTo("#{bid}-sub", {{opacity: 0, y: 16}}, '
                           f'{{opacity: 1, y: 0, duration: 0.5, ease: "power2.out"}}, {spoken * 0.45:.2f});')
@@ -197,6 +202,8 @@ def atmos_html(spec: dict, beats: list, total: float) -> str:
     .em {{ position: absolute; bottom: -20px; border-radius: 50%; background: {accent};
       box-shadow: 0 0 12px {accent}, 0 0 24px rgba(255,120,40,0.6); }}
     #vig {{ position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 45%, rgba(0,0,0,0) 45%, rgba(0,0,0,0.7) 100%); }}
+    #flash-host {{ position: absolute; inset: 0; }}
+    #flash {{ position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 45%, rgba(255,240,215,0.85), rgba(255,200,120,0.25) 60%, rgba(0,0,0,0) 85%); }}
     #brand {{ position: absolute; top: 210px; left: 0; right: 0; text-align: center; font-family: Inter; font-weight: 700;
       font-size: 28px; letter-spacing: 0.32em; color: rgba(245,234,214,0.72); }}
     #brand span {{ color: {accent}; }}
@@ -209,10 +216,12 @@ def atmos_html(spec: dict, beats: list, total: float) -> str:
       {"".join(embers)}
     </div></div>
     <div id="vig" class="clip" data-start="0" data-duration="{total:.2f}"></div>
+    <div id="flash-host" class="clip" data-start="0" data-duration="0.6"><div id="flash"></div></div>
     <div id="brand" class="clip" data-start="0" data-duration="{total:.2f}">HAQ <span>·</span> STORIES</div>
   </div>
   <script>
     const tl = gsap.timeline({{ paused: true }});
+    tl.fromTo("#flash", {{opacity: {spec.get("flash", 0)}}}, {{opacity: 0, duration: 0.55, ease: "power2.out"}}, 0);
     tl.fromTo("#warm-b", {{scaleY: 1}}, {{scaleY: 1.06, duration: 0.8, ease: "sine.inOut", yoyo: true, repeat: {breathes}}}, 0);
     {chr(10).join("    " + s for s in mood_js).strip()}
     const et = gsap.timeline({{ paused: true }});
@@ -257,6 +266,10 @@ def index_html(spec: dict, beats: list, total: float) -> str:
         letter-spacing: -0.01em; text-shadow: 0 4px 30px rgba(0,0,0,0.65); }}
       .txt .w {{ display: inline-block; }}
       .txt .hi {{ color: var(--accent); }}
+      .saw {{ font-family: "Amiri Quran"; font-style: normal; font-size: 0.8em; line-height: 1; }}
+      .txt.hook {{ font-size: 132px; text-align: center; line-height: 1.02; }}
+      .hook ~ .sub {{ text-align: center; font-size: 76px; }}
+      #flash {{ position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 45%, rgba(255,240,215,0.85), rgba(255,200,120,0.25) 60%, rgba(0,0,0,0) 85%); }}
       .txt.cta {{ font-size: 96px; text-align: center; }}
       .sub {{ font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 72px;
         color: rgba(245,234,214,0.82); line-height: 1.15; }}

@@ -15,7 +15,7 @@ import sys
 import tempfile
 from pathlib import Path
 
-LEAD = 0.3  # silence before the first word
+LEAD = 0.3  # default silence before the first word (narration.json "lead" overrides)
 TAIL = 0.3
 
 DEFAULT = {
@@ -30,6 +30,7 @@ def main() -> None:
     out = Path(sys.argv[2])
     out.mkdir(parents=True, exist_ok=True)
     el = {**DEFAULT, **cfg.get("eleven", {})}
+    lead = cfg.get("lead", LEAD)
     lines = cfg["lines"]
     text = " ".join(lines)
 
@@ -47,7 +48,7 @@ def main() -> None:
         mp3 = os.path.join(tmp, "take.mp3")
         Path(mp3).write_bytes(base64.b64decode(data["audio_base64"]))
         subprocess.run(["ffmpeg", "-hide_banner", "-loglevel", "error", "-y", "-i", mp3,
-                        "-af", f"adelay={int(LEAD * 1000)}:all=1,apad=pad_dur={TAIL}",
+                        "-af", (f"adelay={int(lead * 1000)}:all=1," if lead > 0 else "") + f"apad=pad_dur={TAIL}",
                         "-ar", "48000", "-ac", "1", str(out / "narration.wav")], check=True)
     (out / "take.json").write_text(json.dumps(data["alignment"]), encoding="utf-8")
 
@@ -57,7 +58,7 @@ def main() -> None:
     timings, pos = [], 0
     for line in lines:
         a, b = pos, pos + len(line) - 1
-        timings.append({"text": line, "start": round(starts[a] + LEAD, 3), "end": round(ends[b] + LEAD, 3)})
+        timings.append({"text": line, "start": round(starts[a] + lead, 3), "end": round(ends[b] + lead, 3)})
         pos += len(line) + 1
     (out / "timings.json").write_text(json.dumps(timings, indent=2, ensure_ascii=False), encoding="utf-8")
     for x in timings:
