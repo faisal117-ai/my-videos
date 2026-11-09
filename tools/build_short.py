@@ -115,14 +115,16 @@ def beat_html(i: int, beat: dict, dur: float, spoken: float, accent: str) -> str
             rows.append(f'<div id="{bid}-o{k}" class="{cls}"><b>{"ABC"[k]}</b>{esc(opt)}</div>')
         parts.append(f'<div id="{bid}-opts" class="opts">{"".join(rows)}</div>')
         if correct is None:
-            js.append(f'tl.fromTo("#{bid} .opt", {{opacity: 0, x: -30}}, {{opacity: 1, x: 0, duration: 0.35, '
-                      f'ease: "power2.out", stagger: 0.55}}, 0.6);')
+            at = beat.get("opt_at") or [0.6 + 0.55 * k for k in range(len(beat["options"]))]
+            for k, t in enumerate(at):
+                js.append(f'tl.fromTo("#{bid}-o{k}", {{opacity: 0, x: -30}}, {{opacity: 1, x: 0, duration: 0.3, '
+                          f'ease: "power2.out"}}, {t:.2f});')
         else:
-            js.append(f'tl.fromTo("#{bid} .wrong", {{opacity: 1}}, {{opacity: 0.3, duration: 0.4}}, 0.1);')
-            js.append(f'tl.fromTo("#{bid} .right", {{scale: 1}}, {{scale: 1.06, duration: 0.35, ease: "back.out(2)"}}, 0.1);')
+            js.append(f'tl.fromTo("#{bid} .wrong", {{opacity: 1}}, {{opacity: 0.3, duration: 0.4}}, 0.7);')
+            js.append(f'tl.fromTo("#{bid} .right", {{scale: 1}}, {{scale: 1.06, duration: 0.35, ease: "back.out(2)"}}, 0.7);')
         if beat.get("count"):
             # "Three, two, one" closes the spoken line.
-            for c, at in zip("321", (spoken - 1.75, spoken - 1.15, spoken - 0.55)):
+            for c, at in zip("321", beat.get("count_at") or (spoken - 1.75, spoken - 1.15, spoken - 0.55)):
                 parts.append(f'<div id="{bid}-c{c}" class="count">{c}</div>')
                 js.append(f'tl.fromTo("#{bid}-c{c}", {{opacity: 0, scale: 1.4}}, {{keyframes: [{{opacity: 1, scale: 1, duration: 0.2}}, '
                           f'{{opacity: 0, duration: 0.25, delay: 0.25}}]}}, {max(at, 0.1):.2f});')
@@ -159,8 +161,80 @@ def beat_html(i: int, beat: dict, dur: float, spoken: float, accent: str) -> str
 """
 
 
+def jagged(cx: float, cy: float, rx: float, ry: float, n: int, rough: float, seed: int) -> str:
+    """A rough, rock-like closed outline around an ellipse."""
+    import math
+    rnd = random.Random(seed)
+    pts = []
+    for k in range(n):
+        a = 2 * math.pi * k / n
+        f = 1 + rnd.uniform(-rough, rough)
+        pts.append((cx + rx * f * math.cos(a), cy + ry * f * math.sin(a)))
+    # Smooth curves through the midpoints: rounded, uneven rock instead of spikes.
+    mids = [((pts[i][0] + pts[(i + 1) % n][0]) / 2, (pts[i][1] + pts[(i + 1) % n][1]) / 2) for i in range(n)]
+    d = f"M {mids[-1][0]:.0f} {mids[-1][1]:.0f} "
+    d += " ".join(f"Q {pts[i][0]:.0f} {pts[i][1]:.0f} {mids[i][0]:.0f} {mids[i][1]:.0f}" for i in range(n))
+    return d + " Z"
+
+
+def cave_scene(total: float) -> tuple[str, str, str]:
+    """Inside a cave, looking out at a moonlit valley. Returns (css, markup, js)."""
+    rnd = random.Random(19)
+    stars, sjs = [], []
+    for k in range(60):
+        x, y = rnd.uniform(240, 840), rnd.uniform(300, 900)
+        r = rnd.uniform(1.5, 4)
+        stars.append(f'<div id="st{k}" class="st" style="left:{x:.0f}px;top:{y:.0f}px;width:{r:.1f}px;height:{r:.1f}px"></div>')
+        period = rnd.uniform(1.6, 3.4)
+        sjs.append(f'tl.fromTo("#st{k}", {{opacity: {rnd.uniform(0.25, 0.5):.2f}}}, {{opacity: 1, duration: {period / 2:.2f}, '
+                   f'ease: "sine.inOut", yoyo: true, repeat: {int(total / (period / 2)) + 1}}}, {rnd.uniform(0, 1.2):.2f});')
+    back = jagged(540, 700, 385, 470, 22, 0.10, 3)
+    front = jagged(540, 725, 335, 425, 18, 0.13, 5)
+    frame = "M -60 -60 H 1140 V 1980 H -60 Z "
+    css = """
+    #night { position: absolute; inset: 0; background: linear-gradient(180deg, #0b1830 0%, #1a2b4a 55%, #0e1626 100%); }
+    .st { position: absolute; border-radius: 50%; background: #eef4ff; box-shadow: 0 0 6px rgba(220,235,255,0.9); }
+    #moon { position: absolute; left: 610px; top: 420px; width: 110px; height: 110px; border-radius: 50%;
+      background: radial-gradient(circle at 40% 38%, #fffdf3 0%, #ece6d2 60%, #d6cfb8 100%);
+      box-shadow: 0 0 60px 20px rgba(230,236,255,0.35), 0 0 180px 60px rgba(160,190,255,0.18); }
+    #hills { position: absolute; inset: 0; width: 100%; height: 100%; }
+    #rock-wrap { position: absolute; inset: -60px; }
+    #rock { position: absolute; inset: 0; width: 100%; height: 100%; }
+"""
+    markup = f"""
+    <div id="night" class="clip" data-start="0" data-duration="{total:.2f}">
+      {"".join(stars)}
+      <div id="moon"></div>
+      <svg id="hills" viewBox="0 0 1080 1920" preserveAspectRatio="none">
+        <path fill="#101a2d" d="M 0 1010 C 160 930 300 960 420 1000 C 560 1046 700 930 860 960 C 960 980 1030 1000 1080 990 V 1920 H 0 Z"/>
+        <path fill="#0a111e" d="M 0 1070 C 200 1020 330 1060 500 1080 C 660 1100 820 1030 1080 1060 V 1920 H 0 Z"/>
+      </svg>
+    </div>
+    <div id="cave" class="clip" data-start="0" data-duration="{total:.2f}">
+      <div id="rock-wrap">
+        <svg id="rock" viewBox="-60 -60 1200 2040" preserveAspectRatio="none">
+          <defs>
+            <radialGradient id="rockb" cx="540" cy="700" r="900" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#3a3542"/><stop offset="0.45" stop-color="#1c1922"/><stop offset="1" stop-color="#0a090c"/>
+            </radialGradient>
+            <radialGradient id="rockf" cx="540" cy="720" r="1300" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#17141c"/><stop offset="0.4" stop-color="#0b0a0e"/><stop offset="1" stop-color="#030204"/>
+            </radialGradient>
+          </defs>
+          <path fill="url(#rockb)" fill-rule="evenodd" d="{frame}{back}"/>
+          <path fill="url(#rockf)" fill-rule="evenodd" d="{frame}{front}"/>
+        </svg>
+      </div>
+    </div>"""
+    js = "\n    ".join(sjs) + (f'\n    tl.fromTo("#rock-wrap", {{scale: 1}}, {{scale: 1.12, duration: {total:.2f}, ease: "none"}}, 0);'
+                                f'\n    tl.fromTo("#moon", {{y: 0}}, {{y: -30, duration: {total:.2f}, ease: "none"}}, 0);')
+    return css, markup, js
+
+
 def atmos_html(spec: dict, beats: list, total: float) -> str:
     accent = spec["accent"]
+    mote = spec.get("mote", accent)
+    floor = spec.get("motes", 0)
     rnd = random.Random(7)
     embers, ejs = [], []
     if spec.get("embers", True):
@@ -180,14 +254,17 @@ def atmos_html(spec: dict, beats: list, total: float) -> str:
     prev = beats[0]["mood"]
     for b in beats[1:]:
         m = b["mood"]
-        pw, pc, pe = prev.get("warm", 0), prev.get("cool", 0), min(1, prev.get("warm", 0) * 1.4)
-        w, c, e = m.get("warm", 0), m.get("cool", 0), min(1, m.get("warm", 0) * 1.4)
+        pw, pc, pe = prev.get("warm", 0), prev.get("cool", 0), max(floor, min(1, prev.get("warm", 0) * 1.4))
+        w, c, e = m.get("warm", 0), m.get("cool", 0), max(floor, min(1, m.get("warm", 0) * 1.4))
         mood_js.append(f'tl.fromTo("#warm-g", {{opacity: {pw}}}, {{opacity: {w}, duration: 0.9, ease: "sine.inOut", immediateRender: false}}, {b["start"]:.2f});')
         mood_js.append(f'tl.fromTo("#cool-g", {{opacity: {pc}}}, {{opacity: {c}, duration: 1.2, ease: "sine.inOut", immediateRender: false}}, {b["start"]:.2f});')
         mood_js.append(f'tl.fromTo("#embers-g", {{opacity: {pe:.2f}}}, {{opacity: {e:.2f}, duration: 0.9, immediateRender: false}}, {b["start"]:.2f});')
         prev = m
     m0 = beats[0]["mood"]
     breathes = int(total / 1.6)
+    scene_css = scene_markup = scene_js = ""
+    if spec.get("scene") == "cave":
+        scene_css, scene_markup, scene_js = cave_scene(total)
 
     return f"""<template>
   <style>
@@ -199,8 +276,8 @@ def atmos_html(spec: dict, beats: list, total: float) -> str:
       background: radial-gradient(ellipse at 50% 100%, rgba(255,170,60,0.95) 0%, rgba(230,90,30,0.55) 30%, rgba(120,30,20,0.25) 55%, rgba(0,0,0,0) 72%); }}
     #cool-g {{
       background: radial-gradient(ellipse at 50% 62%, rgba(215,236,255,0.55) 0%, rgba(120,170,220,0.22) 35%, rgba(0,0,0,0) 70%); }}
-    .em {{ position: absolute; bottom: -20px; border-radius: 50%; background: {accent};
-      box-shadow: 0 0 12px {accent}, 0 0 24px rgba(255,120,40,0.6); }}
+    .em {{ position: absolute; bottom: -20px; border-radius: 50%; background: {mote};
+      box-shadow: 0 0 12px {mote}, 0 0 24px {mote}; }}{scene_css}
     #vig {{ position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 45%, rgba(0,0,0,0) 45%, rgba(0,0,0,0.7) 100%); }}
     #flash-host {{ position: absolute; inset: 0; }}
     #flash {{ position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 45%, rgba(255,240,215,0.85), rgba(255,200,120,0.25) 60%, rgba(0,0,0,0) 85%); }}
@@ -210,9 +287,10 @@ def atmos_html(spec: dict, beats: list, total: float) -> str:
   </style>
   <div id="atmos" data-composition-id="atmos" data-width="{W}" data-height="{H}" data-layout-allow-overflow>
     <div id="sky" class="clip" data-start="0" data-duration="{total:.2f}"></div>
+{scene_markup}
     <div id="warm" class="clip" data-start="0" data-duration="{total:.2f}"><div id="warm-g" style="opacity:{m0.get('warm', 0)}"><div id="warm-b"></div></div></div>
     <div id="cool" class="clip" data-start="0" data-duration="{total:.2f}"><div id="cool-g" style="opacity:{m0.get('cool', 0)}"></div></div>
-    <div id="embers" class="clip" data-start="0" data-duration="{total:.2f}"><div id="embers-g" style="opacity:{min(1, m0.get('warm', 0) * 1.4):.2f}">
+    <div id="embers" class="clip" data-start="0" data-duration="{total:.2f}"><div id="embers-g" style="opacity:{max(floor, min(1, m0.get('warm', 0) * 1.4)):.2f}">
       {"".join(embers)}
     </div></div>
     <div id="vig" class="clip" data-start="0" data-duration="{total:.2f}"></div>
@@ -222,6 +300,7 @@ def atmos_html(spec: dict, beats: list, total: float) -> str:
   <script>
     const tl = gsap.timeline({{ paused: true }});
     tl.fromTo("#flash", {{opacity: {spec.get("flash", 0)}}}, {{opacity: 0, duration: 0.55, ease: "power2.out"}}, 0);
+    {scene_js}
     tl.fromTo("#warm-b", {{scaleY: 1}}, {{scaleY: 1.06, duration: 0.8, ease: "sine.inOut", yoyo: true, repeat: {breathes}}}, 0);
     {chr(10).join("    " + s for s in mood_js).strip()}
     const et = gsap.timeline({{ paused: true }});
@@ -282,9 +361,9 @@ def index_html(spec: dict, beats: list, total: float) -> str:
         padding: 12px 26px; background: rgba(0,0,0,0.35); }}
       .ar ~ .ref {{ align-self: center; }}
       .opts {{ display: flex; flex-direction: column; gap: 22px; }}
-      .opt {{ font-family: "Cormorant Garamond"; font-weight: 600; font-size: 64px; padding: 14px 30px;
+      .opt {{ font-family: "Cormorant Garamond"; font-weight: 600; font-size: 76px; padding: 16px 34px;
         border: 2px solid rgba(245,234,214,0.35); border-radius: 24px; background: rgba(0,0,0,0.35); }}
-      .opt b {{ font-family: Inter; font-size: 40px; color: var(--accent); margin-right: 26px; }}
+      .opt b {{ font-family: Inter; font-size: 46px; color: var(--accent); margin-right: 26px; }}
       .opt.right {{ border-color: var(--accent); background: rgba(242,163,58,0.18); transform-origin: left center; }}
       .count {{ position: absolute; right: 0; top: -40px; font-family: Inter; font-weight: 900; font-size: 150px;
         color: var(--accent); opacity: 0; }}

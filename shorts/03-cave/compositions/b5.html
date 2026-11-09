@@ -1,0 +1,21 @@
+<template>
+  <style>
+    #b5 { position: absolute; inset: 0; }
+    #b5-wrap { position: absolute; left: 90px; right: 140px; top: 330px; bottom: 600px;
+      display: flex; flex-direction: column; justify-content: center; gap: 34px; }
+  </style>
+  <div id="b5" data-composition-id="b5" data-width="1080" data-height="1920">
+    <div id="b5-wrap" class="clip" data-start="0" data-duration="6.58">
+      <div id="b5-txt" class="txt"><span class="w" id="b5-w0">They</span> <span class="w" id="b5-w1">thought</span> <span class="w" id="b5-w2">they</span> <span class="w" id="b5-w3">had</span> <span class="w" id="b5-w4">slept</span> <span class="w" id="b5-w5">only</span> <span class="w hi" id="b5-w6">a</span> <span class="w hi" id="b5-w7">day,</span> <span class="w" id="b5-w8">or</span> <span class="w" id="b5-w9">part</span> <span class="w" id="b5-w10">of</span> <span class="w" id="b5-w11">a</span> <span class="w" id="b5-w12">day.</span></div>
+      <div id="b5-ref" class="ref">Al-Kahf 18:19</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#b5 .w", {opacity: 0, y: 22, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.32, ease: "power2.out", stagger: 0.359}, 0.12);
+    tl.fromTo("#b5 .hi", {textShadow: "0 0 0px rgba(0,0,0,0)"}, {textShadow: "0 0 28px var(--accent)", duration: 0.6, ease: "power1.out"}, 2.99);
+    tl.fromTo("#b5-ref", {opacity: 0, y: 12}, {opacity: 1, y: 0, duration: 0.45, ease: "power2.out"}, 0.35);
+    tl.fromTo("#b5-wrap", {opacity: 1}, {opacity: 0, duration: 0.22, ease: "power1.in"}, 6.34);
+    window.__timelines["b5"] = tl;
+  </script>
+</template>

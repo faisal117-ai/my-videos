@@ -1,0 +1,22 @@
+<template>
+  <style>
+    #b3 { position: absolute; inset: 0; }
+    #b3-wrap { position: absolute; left: 90px; right: 140px; top: 330px; bottom: 600px;
+      display: flex; flex-direction: column; justify-content: center; gap: 34px; }
+  </style>
+  <div id="b3" data-composition-id="b3" data-width="1080" data-height="1920">
+    <div id="b3-wrap" class="clip" data-start="0" data-duration="3.81">
+      <div id="b3-txt" class="txt" style="font-size:110px"><span class="w" id="b3-w0">The</span> <span class="w" id="b3-w1">answer</span> <span class="w" id="b3-w2">is</span> <span class="w hi" id="b3-w3">C!</span></div>
+      <div id="b3-opts" class="opts"><div id="b3-o0" class="opt wrong"><b>A</b>100 years</div><div id="b3-o1" class="opt wrong"><b>B</b>40 years</div><div id="b3-o2" class="opt right"><b>C</b>309 years</div></div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#b3 .w", {opacity: 0, y: 22, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.32, ease: "power2.out", stagger: 0.684}, 0.12);
+    tl.fromTo("#b3 .hi", {textShadow: "0 0 0px rgba(0,0,0,0)"}, {textShadow: "0 0 28px var(--accent)", duration: 0.6, ease: "power1.out"}, 1.75);
+    tl.fromTo("#b3 .wrong", {opacity: 1}, {opacity: 0.3, duration: 0.4}, 0.7);
+    tl.fromTo("#b3 .right", {scale: 1}, {scale: 1.06, duration: 0.35, ease: "back.out(2)"}, 0.7);
+    tl.fromTo("#b3-wrap", {opacity: 1}, {opacity: 0, duration: 0.22, ease: "power1.in"}, 3.57);
+    window.__timelines["b3"] = tl;
+  </script>
+</template>
