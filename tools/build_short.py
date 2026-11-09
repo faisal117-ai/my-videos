@@ -129,6 +129,12 @@ def beat_html(i: int, beat: dict, dur: float, spoken: float, accent: str) -> str
                 js.append(f'tl.fromTo("#{bid}-c{c}", {{opacity: 0, scale: 1.4}}, {{keyframes: [{{opacity: 1, scale: 1, duration: 0.2}}, '
                           f'{{opacity: 0, duration: 0.25, delay: 0.25}}]}}, {max(at, 0.1):.2f});')
 
+    if beat.get("lights"):
+        parts.append(f'<div id="{bid}-orbs" class="orbs"><div id="{bid}-orb1" class="orb"></div><div id="{bid}-orb2" class="orb"></div></div>')
+        js.append(f'tl.fromTo("#{bid}-orbs", {{y: 260, opacity: 0}}, {{y: -60, opacity: 1, duration: {dur:.2f}, ease: "sine.out"}}, 0);')
+        js.append(f'tl.fromTo("#{bid}-orb1", {{x: -150}}, {{x: -70, duration: {dur:.2f}, ease: "sine.inOut"}}, 0);')
+        js.append(f'tl.fromTo("#{bid}-orb2", {{x: 150}}, {{x: 70, duration: {dur:.2f}, ease: "sine.inOut"}}, 0);')
+
     if beat.get("ref"):
         parts.append(f'<div id="{bid}-ref" class="ref">{esc(beat["ref"])}</div>')
         js.append(f'tl.fromTo("#{bid}-ref", {{opacity: 0, y: 12}}, '
@@ -140,6 +146,7 @@ def beat_html(i: int, beat: dict, dur: float, spoken: float, accent: str) -> str
 
     body = "\n      ".join(parts)
     side, rail = (60, 60) if beat.get("arabic") or beat.get("cta") else (90, 140)
+    allow = " data-layout-allow-overflow" if beat.get("lights") else ""
     script = "\n    ".join(js)
     return f"""<template>
   <style>
@@ -148,7 +155,7 @@ def beat_html(i: int, beat: dict, dur: float, spoken: float, accent: str) -> str
       display: flex; flex-direction: column; justify-content: center; gap: 34px; }}
   </style>
   <div id="{bid}" data-composition-id="{bid}" data-width="{W}" data-height="{H}">
-    <div id="{bid}-wrap" class="clip" data-start="0" data-duration="{dur:.2f}">
+    <div id="{bid}-wrap" class="clip" data-start="0" data-duration="{dur:.2f}"{allow}>
       {body}
     </div>
   </div>
@@ -231,6 +238,53 @@ def cave_scene(total: float) -> tuple[str, str, str]:
     return css, markup, js
 
 
+def storm_scene(spec: dict, beats: list, total: float) -> tuple[str, str, str]:
+    """Night storm with rain and lightning that clears into dawn. Returns (css, markup, js)."""
+    rnd = random.Random(23)
+    drops, djs = [], []
+    for k in range(90):
+        x = rnd.uniform(-100, W + 60)
+        h = rnd.uniform(60, 120)
+        period = rnd.uniform(0.55, 0.9)
+        drops.append(f'<div id="rd{k}" class="rd" style="left:{x:.0f}px;height:{h:.0f}px;opacity:{rnd.uniform(0.25, 0.6):.2f}"></div>')
+        djs.append(f'rt.fromTo("#rd{k}", {{y: -200, x: 0, rotation: 12}}, {{y: 2150, x: -440, rotation: 12, duration: {period:.2f}, '
+                   f'ease: "none", repeat: {int((total + 3) / period) + 1}}}, {3 - rnd.uniform(0, period):.2f});')
+    clouds = []
+    for k in range(5):
+        clouds.append(f'<div id="cl{k}" class="cl" style="left:{rnd.uniform(-500, 500):.0f}px;top:{rnd.uniform(-200, 500):.0f}px"></div>')
+    sun_at = beats[spec.get("sunrise_beat", 0)]["start"]
+    flashes = "".join(
+        f'\n    tl.fromTo("#bolt", {{opacity: 0}}, {{keyframes: [{{opacity: 0.85, duration: 0.05}}, {{opacity: 0.1, duration: 0.08}}, '
+        f'{{opacity: 0.6, duration: 0.05}}, {{opacity: 0, duration: 0.4}}], immediateRender: false}}, {t:.2f});' for t in spec.get("lightning", []))
+    css = """
+    #stormsky { position: absolute; inset: 0; background: linear-gradient(180deg, #0b0f17 0%, #161c28 50%, #0e1118 100%); }
+    .cl { position: absolute; width: 1400px; height: 700px; border-radius: 50%;
+      background: radial-gradient(ellipse at 50% 50%, rgba(70,80,100,0.45) 0%, rgba(40,46,60,0.25) 45%, rgba(0,0,0,0) 70%); }
+    #sun { position: absolute; left: 390px; top: 1300px; width: 300px; height: 300px; border-radius: 50%; opacity: 0;
+      background: radial-gradient(circle, #fff3d6 0%, #ffd38a 35%, rgba(255,170,80,0.5) 60%, rgba(255,140,60,0) 72%); }
+    #bolt { position: absolute; inset: 0; background: radial-gradient(ellipse at 60% 20%, rgba(220,230,255,0.9), rgba(160,180,230,0.3) 50%, rgba(0,0,0,0) 80%); opacity: 0; }
+    #rain-g { position: absolute; inset: 0; }
+    .rd { position: absolute; top: 0; width: 2px; background: linear-gradient(180deg, rgba(200,215,240,0), rgba(200,215,240,0.8)); }
+"""
+    markup = f"""
+    <div id="storm" class="clip" data-start="0" data-duration="{total:.2f}">
+      <div id="stormsky"></div>
+      {"".join(clouds)}
+      <div id="sun"></div>
+      <div id="bolt"></div>
+    </div>
+    <div id="rain" class="clip" data-start="0" data-duration="{total:.2f}"><div id="rain-g" style="opacity:{beats[0]["mood"].get("rain", 0)}">
+      {"".join(drops)}
+    </div></div>"""
+    cjs = "".join(f'\n    tl.fromTo("#cl{k}", {{x: 0}}, {{x: {(-1) ** k * 160}, duration: {total:.2f}, ease: "none"}}, 0);' for k in range(5))
+    js = ("const rt = gsap.timeline({ paused: true });\n    " + "\n    ".join(djs)
+          + f"\n    tl.add(rt.tweenFromTo(3, {3 + total:.2f}, {{ ease: \"none\" }}), 0);"
+          + cjs + flashes
+          + f'\n    tl.fromTo("#sun", {{y: 0, opacity: 0}}, {{y: -190, opacity: 1, duration: 5, ease: "sine.out", immediateRender: false}}, {sun_at:.2f});'
+          + f'\n    tl.fromTo("#stormsky", {{opacity: 1}}, {{opacity: 0.35, duration: 4, ease: "sine.inOut", immediateRender: false}}, {sun_at:.2f});')
+    return css, markup, js
+
+
 def atmos_html(spec: dict, beats: list, total: float) -> str:
     accent = spec["accent"]
     mote = spec.get("mote", accent)
@@ -259,12 +313,16 @@ def atmos_html(spec: dict, beats: list, total: float) -> str:
         mood_js.append(f'tl.fromTo("#warm-g", {{opacity: {pw}}}, {{opacity: {w}, duration: 0.9, ease: "sine.inOut", immediateRender: false}}, {b["start"]:.2f});')
         mood_js.append(f'tl.fromTo("#cool-g", {{opacity: {pc}}}, {{opacity: {c}, duration: 1.2, ease: "sine.inOut", immediateRender: false}}, {b["start"]:.2f});')
         mood_js.append(f'tl.fromTo("#embers-g", {{opacity: {pe:.2f}}}, {{opacity: {e:.2f}, duration: 0.9, immediateRender: false}}, {b["start"]:.2f});')
+        if "rain" in m or "rain" in prev:
+            mood_js.append(f'tl.fromTo("#rain-g", {{opacity: {prev.get("rain", 0)}}}, {{opacity: {m.get("rain", 0)}, duration: 1.5, ease: "sine.inOut", immediateRender: false}}, {b["start"]:.2f});')
         prev = m
     m0 = beats[0]["mood"]
     breathes = int(total / 1.6)
     scene_css = scene_markup = scene_js = ""
     if spec.get("scene") == "cave":
         scene_css, scene_markup, scene_js = cave_scene(total)
+    elif spec.get("scene") == "storm":
+        scene_css, scene_markup, scene_js = storm_scene(spec, beats, total)
 
     return f"""<template>
   <style>
@@ -329,7 +387,7 @@ def index_html(spec: dict, beats: list, total: float) -> str:
     audio = ""
     if Path(spec["_dir"], "assets/ambience.wav").exists():
         audio = (f'\n      <audio id="amb" class="clip" src="assets/ambience.wav" data-start="0" '
-                 f'data-duration="{total:.2f}" data-track-index="11" data-volume="0.55"></audio>')
+                 f'data-duration="{total:.2f}" data-track-index="11" data-volume="{spec.get("bed_volume", 0.55)}"></audio>')
     return f"""<!doctype html>
 <html lang="en">
   <head>
@@ -360,6 +418,10 @@ def index_html(spec: dict, beats: list, total: float) -> str:
         text-transform: uppercase; color: var(--accent); border: 2px solid var(--accent); border-radius: 999px;
         padding: 12px 26px; background: rgba(0,0,0,0.35); }}
       .ar ~ .ref {{ align-self: center; }}
+      .orbs {{ position: absolute; left: 0; right: 0; bottom: -420px; height: 200px; }}
+      .orb {{ position: absolute; left: 50%; top: 50%; width: 120px; height: 120px; margin: -60px; border-radius: 50%;
+        background: radial-gradient(circle, #fff6e0 0%, #ffd27a 40%, rgba(255,190,90,0) 72%);
+        box-shadow: 0 0 60px 20px rgba(255,200,110,0.35); }}
       .opts {{ display: flex; flex-direction: column; gap: 22px; }}
       .opt {{ font-family: "Cormorant Garamond"; font-weight: 600; font-size: 76px; padding: 16px 34px;
         border: 2px solid rgba(245,234,214,0.35); border-radius: 24px; background: rgba(0,0,0,0.35); }}
