@@ -26,4 +26,6 @@ Copy `assets/fonts/` and `assets/vendor/gsap.min.js` from `01-fire` into each ne
 - Arabic comes from the `quran-json` npm package (QuranEnc Uthmani text) and is never typed by hand. The English is Sahih International, from the same package.
 - Arabic names are pronounced from the IPA in `tools/tts.py` (`OVERRIDES`). Add a name there when the voice gets one wrong.
 - No figures or faces. Prophets are never depicted, only light, text and atmosphere.
+- Every Short gets its own scene that matches its story (fire, cave, desert, mosque…). Only the
+  branding stays the same: fonts, gold highlights, the HAQ · STORIES label and the end card.
 - No music: a quiet fire or air bed only.
