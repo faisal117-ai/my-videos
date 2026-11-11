@@ -13,6 +13,7 @@ build_short.py places under the narration. Generated clips are cached in assets/
 """
 import hashlib
 import json
+import re
 import subprocess
 import sys
 from pathlib import Path
@@ -31,6 +32,22 @@ def generate(prompt: str, dur: float, out: Path) -> None:
         msg = out.read_bytes()[:300].decode(errors="replace")
         out.unlink(missing_ok=True)
         sys.exit(f"ElevenLabs sound generation failed: {msg}")
+
+
+def clip_lufs(path: Path) -> float:
+    out = subprocess.run(["ffmpeg", "-hide_banner", "-i", str(path), "-af", "ebur128", "-f", "null", "-"],
+                         capture_output=True, text=True).stderr
+    vals = re.findall(r"I:\s+(-?[\d.]+) LUFS", out)
+    v = float(vals[-1]) if vals else -20.0
+    return v if v > -70 else -20.0
+
+
+def boost(l: float) -> float:
+    """Level-match a clip to REF, but never lift a near-silent clip by more than 25 dB."""
+    return max(min(REF - l, 25.0), -25.0)
+
+
+REF = -20.0  # every generated clip is level-matched to this before its own gain is applied
 
 
 def main() -> None:
@@ -56,7 +73,7 @@ def main() -> None:
         inputs += loop + ["-i", str(clip)]
         fi, fo = layer.get("fade_in", 0.5), layer.get("fade_out", 1.5)
         chain = (f"[{k}:a]aresample=48000,aformat=channel_layouts=stereo,atrim=0:{dur:.2f},asetpts=PTS-STARTPTS,"
-                 f"volume={layer.get('gain', 0)}dB")
+                 f"volume={layer.get('gain', 0) + boost(clip_lufs(clip)) + 14:.2f}dB")
         if fi > 0:
             chain += f",afade=t=in:st=0:d={fi}"
         chain += f",afade=t=out:st={max(0.0, dur - fo):.2f}:d={fo},adelay={int(start * 1000)}:all=1[a{k}]"

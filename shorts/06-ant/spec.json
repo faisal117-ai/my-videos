@@ -99,7 +99,7 @@
       "fade_out": 1.5
     },
     {
-      "prompt": "a large ancient army marching in the distance, footsteps, armor clinking, horses, wind over a valley, no music",
+      "prompt": "large ancient army marching, many footsteps, armor clinking, horses, wind, clear, no music",
       "beat": 0,
       "dur": 24,
       "gain": -15,
@@ -116,7 +116,7 @@
       "fade_out": 2
     },
     {
-      "prompt": "tiny insects scurrying on dry earth, close up, rustling, quick",
+      "prompt": "many ants scurrying on dry earth, close up, rustling, clear",
       "beat": 3,
       "offset": 0.3,
       "dur": 6,
@@ -125,7 +125,7 @@
       "fade_out": 1.5
     },
     {
-      "prompt": "quiet peaceful valley, gentle breeze, soft birdsong, calm, no music",
+      "prompt": "valley ambience at dusk, breeze, birds singing, calm, no music",
       "beat": 4,
       "dur": 16,
       "gain": -18,

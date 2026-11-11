@@ -35,3 +35,10 @@ Copy `assets/fonts/` and `assets/vendor/gsap.min.js` from `01-fire` into each ne
 - Every Short gets its own scene that matches its story (fire, cave, desert, mosque…). Only the
   branding stays the same: fonts, gold highlights, the HAQ · STORIES label and the end card.
 - No music: a quiet fire or air bed only.
+
+## Sound (from Short 5 on)
+- `tools/soundscape.py` level-matches every generated layer before mixing. Don't describe a layer
+  as "quiet", "soft" or "faint": ElevenLabs returns those nearly silent. Describe the sound and set
+  the level with `gain` instead.
+- After rendering, run `python3 tools/mix.py shorts/NN-name shorts/NN-name/NN-name.mp4`: it puts
+  the soundscape 5 LU under the voice, ducks it while the voice speaks and normalises to -14 LUFS.

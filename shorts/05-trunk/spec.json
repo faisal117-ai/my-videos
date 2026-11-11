@@ -84,7 +84,7 @@
   ],
   "sound": [
     {
-      "prompt": "deep soft wooden thud with reverb in a quiet hall",
+      "prompt": "single deep wooden knock thud, strong, with hall reverb",
       "beat": 0,
       "dur": 2.5,
       "gain": -9,
@@ -92,7 +92,7 @@
       "fade_out": 1
     },
     {
-      "prompt": "old palm wood creaking and groaning softly, mournful and sad, like a distant whimper, no human voice, no music",
+      "prompt": "old palm wood creaking and groaning, mournful, like a whimper, clear and close, no human voice, no music",
       "beat": 0,
       "offset": 0.1,
       "dur": 5,
@@ -101,7 +101,7 @@
       "fade_out": 1.5
     },
     {
-      "prompt": "quiet night inside an old mud-brick building, crickets outside, soft breeze, oil lamp flame flickering, peaceful, no music, no voices",
+      "prompt": "night ambience inside an old mud-brick room, crickets chirping outside, breeze, oil lamp flame crackling, no music, no voices",
       "beat": 0,
       "dur": 48,
       "gain": -17,
@@ -109,7 +109,7 @@
       "fade_out": 2
     },
     {
-      "prompt": "old palm wood creaking and groaning softly, mournful and sad, like a distant whimper, no human voice, no music",
+      "prompt": "old palm wood creaking and groaning, mournful, like a whimper, clear and close, no human voice, no music",
       "beat": 4,
       "offset": 0.2,
       "dur": 7.5,
