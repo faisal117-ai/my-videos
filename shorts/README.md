@@ -34,7 +34,8 @@ Copy `assets/fonts/` and `assets/vendor/gsap.min.js` from `01-fire` into each ne
   effects in the scene).
 - Every Short gets its own scene that matches its story (fire, cave, desert, mosque…). Only the
   branding stays the same: fonts, gold highlights, the HAQ · STORIES label and the end card.
-- No music: a quiet fire or air bed only.
+- No instrumental music: a story soundscape that matches the scene, plus voices-only humming at the
+  emotional moments.
 
 ## Sound (from Short 5 on)
 - `tools/soundscape.py` level-matches every generated layer before mixing. Don't describe a layer
