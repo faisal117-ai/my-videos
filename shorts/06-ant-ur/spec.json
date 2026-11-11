@@ -1,0 +1,145 @@
+{
+  "accent": "#f2b04a",
+  "embers": false,
+  "scene": "valley",
+  "hero_beat": 2,
+  "call_beat": 3,
+  "halt_beat": 4,
+  "flash": 0.45,
+  "bed_volume": 1.0,
+  "hold_end": 1.3,
+  "text_top": 300,
+  "text_bottom": 780,
+  "tr_size": 58,
+  "beats": [
+    {
+      "hook": true,
+      "text": "An entire *army* was marching…",
+      "sub": "…and one tiny ant saw it coming.",
+      "ur": "ایک پوری فوج چلی آ رہی تھی… اور ایک ننھی چیونٹی نے اسے آتے دیکھ لیا!",
+      "mood": {
+        "warm": 0.35,
+        "cool": 0
+      },
+      "reveal": false
+    },
+    {
+      "text": "Hazrat Sulaiman (AS) and his army of *men, jinn and birds.*",
+      "ref": "An-Naml 27:17",
+      "ur": "حضرت سلیمان علیہ السلام اپنے انسانوں، جنوں اور پرندوں کے لشکر کے ساتھ جا رہے تھے",
+      "mood": {
+        "warm": 0.3,
+        "cool": 0
+      }
+    },
+    {
+      "text": "They reached the *valley of the ants*…",
+      "ur": "وہ چیونٹیوں کی وادی میں پہنچے… اور ایک چیونٹی پکار اٹھی",
+      "mood": {
+        "warm": 0.3,
+        "cool": 0.1
+      }
+    },
+    {
+      "arabic": "يَـٰٓأَيُّهَا ٱلنَّمۡلُ ٱدۡخُلُواْ مَسَٰكِنَكُمۡ لَا يَحۡطِمَنَّكُمۡ سُلَيۡمَٰنُ وَجُنُودُهُۥ وَهُمۡ لَا يَشۡعُرُونَ",
+      "translation": "“O ants, enter your dwellings that you not be crushed by Solomon [Sulaiman] and his soldiers while they perceive not.”",
+      "ur": "اے چیونٹیو، اپنے بلوں میں گھس جاؤ، کہیں ایسا نہ ہو کہ سلیمانؑ اور اس کے لشکر تمہیں کچل ڈالیں اور انہیں خبر بھی نہ ہو",
+      "ref": "An-Naml 27:18",
+      "mood": {
+        "warm": 0.15,
+        "cool": 0.3
+      },
+      "ar_size": 58
+    },
+    {
+      "text": "Sulaiman (AS) heard her… and he *smiled.*",
+      "size": 120,
+      "ur": "سلیمانؑ نے اس کی بات سنی… اور مسکرا دیے",
+      "mood": {
+        "warm": 0.5,
+        "cool": 0.1
+      }
+    },
+    {
+      "arabic": "رَبِّ أَوۡزِعۡنِيٓ أَنۡ أَشۡكُرَ نِعۡمَتَكَ",
+      "translation": "“My Lord, enable me to be grateful for Your favor…”",
+      "ur": "اے میرے رب، مجھے قابو میں رکھ کہ میں تیرے اس احسان کا شکر ادا کرتا رہوں",
+      "ref": "An-Naml 27:19",
+      "mood": {
+        "warm": 0.7,
+        "cool": 0.15
+      }
+    },
+    {
+      "text": "The most powerful king… answered the *smallest voice* with gratitude.",
+      "size": 104,
+      "ur": "سب سے طاقتور بادشاہ نے… سب سے چھوٹی آواز کا جواب شکر سے دیا",
+      "mood": {
+        "warm": 0.75,
+        "cool": 0.1
+      }
+    },
+    {
+      "cta": true,
+      "text": "Follow for more.",
+      "ur": "مزید کہانیوں کے لیے فالو کریں",
+      "mood": {
+        "warm": 0.6,
+        "cool": 0.1
+      }
+    }
+  ],
+  "sound": [
+    {
+      "prompt": "deep war drum hit and distant army horn, epic, short",
+      "beat": 0,
+      "dur": 3,
+      "gain": -9,
+      "fade_in": 0,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "a large ancient army marching in the distance, footsteps, armor clinking, horses, wind over a valley, no music",
+      "beat": 0,
+      "dur": 24,
+      "gain": -15,
+      "fade_in": 0.2,
+      "fade_out": 2.5
+    },
+    {
+      "prompt": "flock of birds flapping wings overhead, many birds",
+      "beat": 1,
+      "offset": 0.5,
+      "dur": 6,
+      "gain": -18,
+      "fade_in": 1,
+      "fade_out": 2
+    },
+    {
+      "prompt": "tiny insects scurrying on dry earth, close up, rustling, quick",
+      "beat": 3,
+      "offset": 0.3,
+      "dur": 6,
+      "gain": -15,
+      "fade_in": 0.3,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "quiet peaceful valley, gentle breeze, soft birdsong, calm, no music",
+      "beat": 4,
+      "dur": 16,
+      "gain": -18,
+      "fade_in": 1.5,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "soft male choir humming a warm, grateful, slow melody, voices only, no instruments, gentle reverb",
+      "beat": 4,
+      "offset": 0.6,
+      "dur": 16,
+      "gain": -19,
+      "fade_in": 2.5,
+      "fade_out": 1.5
+    }
+  ]
+}
