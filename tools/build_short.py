@@ -480,6 +480,85 @@ def valley_scene(spec: dict, beats: list, total: float) -> tuple[str, str, str]:
     return css, markup, "\n    ".join(js)
 
 
+def yusuf_scene(spec: dict, beats: list, total: float) -> tuple[str, str, str]:
+    """Yusuf (AS) Part 1: a well at night, the dream sky, the brothers as distant shadows, and the
+    view from inside the well. Yusuf (AS) and Yaqub (AS) are never shown. Returns (css, markup, js)."""
+    rnd = random.Random(53)
+    b = lambda key, default: beats[spec.get(key, default)]
+    dream, warn, well, inside = b("dream_beat", 1), b("warn_beat", 2), b("well_beat", 3), b("inside_beat", 4)
+
+    # Dream sky: eleven stars on an arc, the sun and the moon; they bow near the end of the dream line.
+    stars = []
+    for k in range(11):
+        a = 3.14159 * (0.12 + 0.76 * k / 10)
+        x, y = 540 - 360 * __import__("math").cos(a), 760 - 300 * __import__("math").sin(a)
+        stars.append(f'<div id="ys{k}" class="ystar" style="left:{x:.0f}px;top:{y:.0f}px"></div>')
+    twinkles = [f'tl.fromTo("#ys{k}", {{opacity: 0.6}}, {{opacity: 1, duration: {rnd.uniform(0.5, 0.9):.2f}, yoyo: true, '
+                f'repeat: {int(total / 0.5)}, ease: "sine.inOut"}}, {rnd.uniform(0, 0.5):.2f});' for k in range(11)]
+    bow_at = dream["start"] + max(dream["spoken"] - 1.6, 0.5)
+    dunes = ('<path fill="#1b1a26" d="M 0 1230 C 200 1180 380 1210 560 1235 C 760 1262 900 1190 1080 1215 V 1920 H 0 Z"/>'
+             '<path fill="#13121c" d="M 0 1330 C 240 1290 420 1340 620 1350 C 820 1360 960 1300 1080 1320 V 1920 H 0 Z"/>')
+    # Faceless walkers without spears (the soldier shape minus its spear).
+    bros = re.sub(r'<rect [^>]*width="2"[^>]*/>', "", "".join(soldier(x, 46) for x in [520 + 34 * i for i in range(10)]))
+    css = """
+    #ydesert, #ydream, #yinside { position: absolute; inset: 0; }
+    #ysky { position: absolute; inset: 0; background: linear-gradient(180deg, #070b18 0%, #142037 55%, #22283c 100%); }
+    #ymoon { position: absolute; left: 720px; top: 360px; width: 120px; height: 120px; border-radius: 50%;
+      background: radial-gradient(circle at 40% 38%, #fffdf3, #e6dfc8 65%, #cfc7ae);
+      box-shadow: 0 0 70px 24px rgba(230,236,255,0.3); }
+    #ydunes { position: absolute; inset: 0; width: 100%; height: 100%; }
+    #ywell { position: absolute; left: 340px; top: 1380px; width: 400px; height: 260px; }
+    #ybros { position: absolute; left: 0; top: 1236px; width: 1080px; height: 80px; overflow: visible; opacity: 0; }
+    #dsky { position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 40%, #1d2a52 0%, #0b1026 60%, #05070f 100%); }
+    .ystar { position: absolute; width: 26px; height: 26px; margin: -13px; border-radius: 50%;
+      background: radial-gradient(circle, #ffffff 0%, #dfe8ff 35%, rgba(200,215,255,0) 70%);
+      box-shadow: 0 0 24px 8px rgba(200,215,255,0.45); }
+    #dsun { position: absolute; left: 190px; top: 380px; width: 150px; height: 150px; border-radius: 50%;
+      background: radial-gradient(circle, #fff2c8 0%, #ffc860 45%, rgba(255,170,60,0) 72%); }
+    #dmoon { position: absolute; left: 740px; top: 380px; width: 110px; height: 110px; border-radius: 50%;
+      background: radial-gradient(circle at 40% 38%, #fffdf3, #e6dfc8 65%, #cfc7ae); box-shadow: 0 0 50px 16px rgba(230,236,255,0.3); }
+    #dset { position: absolute; inset: 0; }
+    #iwall { position: absolute; inset: 0; background: radial-gradient(circle at 50% 28%, rgba(0,0,0,0) 0 170px, #1a140f 190px, #0a0705 70%); }
+    #ihole { position: absolute; left: 340px; top: 340px; width: 400px; height: 400px; border-radius: 50%;
+      background: radial-gradient(circle, #f6efe0 0%, #cfd9f0 40%, #6a7aa0 75%); }
+    #ibeam { position: absolute; left: 290px; top: 520px; width: 500px; height: 1400px; transform-origin: 50% 0%;
+      background: linear-gradient(180deg, rgba(240,235,220,0.45), rgba(240,235,220,0)); }
+    #istones { position: absolute; inset: 0; background: repeating-linear-gradient(180deg, rgba(255,255,255,0.03) 0 38px, rgba(0,0,0,0.25) 38px 42px); }
+"""
+    markup = f"""
+    <div id="ydesert" class="clip" data-start="0" data-duration="{total:.2f}">
+      <div id="ysky"></div><div id="ymoon"></div>
+      <svg id="ydunes" viewBox="0 0 1080 1920" preserveAspectRatio="none">{dunes}</svg>
+      <svg id="ybros" viewBox="0 0 1080 80"><g transform="translate(0,62)" fill="#07060a">{bros}</g></svg>
+      <svg id="ywell" viewBox="0 0 400 260">
+        <defs><linearGradient id="wst" x1="0" x2="1"><stop offset="0" stop-color="#2a2620"/><stop offset="0.5" stop-color="#5a5244"/><stop offset="1" stop-color="#211d18"/></linearGradient></defs>
+        <rect x="20" y="70" width="360" height="170" rx="10" fill="url(#wst)"/>
+        <path d="M 20 110 H 380 M 20 150 H 380 M 20 190 H 380" stroke="rgba(0,0,0,0.35)" stroke-width="4"/>
+        <ellipse cx="200" cy="70" rx="180" ry="48" fill="#6a6152"/>
+        <ellipse cx="200" cy="72" rx="150" ry="36" fill="#030202"/>
+      </svg>
+    </div>
+    <div id="ydream" class="clip" data-start="0" data-duration="{total:.2f}" style="opacity:0">
+      <div id="dsky"></div>
+      <div id="dset"><div id="dsun"></div><div id="dmoon"></div>{"".join(stars)}</div>
+    </div>
+    <div id="yinside" class="clip" data-start="0" data-duration="{total:.2f}" style="opacity:0">
+      <div id="ihole"></div><div id="ibeam"></div><div id="iwall"></div><div id="istones"></div>
+    </div>"""
+    js = ["\n    ".join(twinkles)]
+    fade = lambda sel, a, b2, t, d=0.8: f'tl.fromTo("{sel}", {{opacity: {a}}}, {{opacity: {b2}, duration: {d}, ease: "sine.inOut", immediateRender: false}}, {t:.2f});'
+    js.append(fade("#ydream", 0, 1, dream["start"]))
+    js.append(f'tl.fromTo("#dset", {{y: 0, scale: 1}}, {{y: 160, scale: 0.88, duration: 1.4, ease: "power2.inOut", immediateRender: false}}, {bow_at:.2f});')
+    js.append(fade("#ydream", 1, 0, well["start"]))
+    js.append(fade("#ybros", 0, 1, well["start"] + 0.3))
+    js.append(f'tl.fromTo("#ybros", {{x: 0}}, {{x: -260, duration: {well["dur"]:.2f}, ease: "none", immediateRender: false}}, {well["start"]:.2f});')
+    js.append(f'tl.fromTo("#ywell", {{scale: 1}}, {{scale: 1.6, duration: {well["dur"]:.2f}, ease: "power1.in", transformOrigin: "50% 30%", immediateRender: false}}, {well["start"]:.2f});')
+    js.append(fade("#yinside", 0, 1, inside["start"], 0.6))
+    js.append(f'tl.fromTo("#ibeam", {{opacity: 0.2, scaleY: 0.6}}, {{opacity: 1, scaleY: 1, duration: 3, ease: "sine.out", immediateRender: false}}, {inside["start"] + 0.5:.2f});')
+    js.append(f'tl.fromTo("#ihole", {{scale: 0.9}}, {{scale: 1.08, duration: {total - inside["start"]:.2f}, ease: "none", immediateRender: false}}, {inside["start"]:.2f});')
+    return css, markup, "\n    ".join(js)
+
+
 def atmos_html(spec: dict, beats: list, total: float) -> str:
     accent = spec["accent"]
     mote = spec.get("mote", accent)
@@ -516,6 +595,8 @@ def atmos_html(spec: dict, beats: list, total: float) -> str:
     scene_css = scene_markup = scene_js = ""
     if spec.get("scene") == "cave":
         scene_css, scene_markup, scene_js = cave_scene(total)
+    elif spec.get("scene") == "yusuf":
+        scene_css, scene_markup, scene_js = yusuf_scene(spec, beats, total)
     elif spec.get("scene") == "valley":
         scene_css, scene_markup, scene_js = valley_scene(spec, beats, total)
     elif spec.get("scene") == "mosque":
