@@ -1,0 +1,19 @@
+<template>
+  <style>
+    #b8 { position: absolute; inset: 0; }
+    #b8-wrap { position: absolute; left: 90px; right: 250px; top: 330px; bottom: 600px;
+      display: flex; flex-direction: column; justify-content: center; gap: 34px; }
+  </style>
+  <div id="b8" data-composition-id="b8" data-width="1080" data-height="1920">
+    <div id="b8-wrap" class="clip" data-start="0" data-duration="4.97">
+      <div id="b8-txt" class="txt" style="font-size:100px"><span class="w" id="b8-w0">A</span> <span class="w" id="b8-w1">piece</span> <span class="w" id="b8-w2">of</span> <span class="w" id="b8-w3">wood</span> <span class="w" id="b8-w4">cried</span> <span class="w" id="b8-w5">for</span> <span class="w" id="b8-w6">missing</span> <span class="w" id="b8-w7">him…</span> <span class="w hi" id="b8-w8">How</span> <span class="w" id="b8-w9">much</span> <span class="w" id="b8-w10">do</span> <span class="w" id="b8-w11">we</span> <span class="w" id="b8-w12">miss</span> <span class="w hi" id="b8-w13">him?</span></div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#b8 .w", {opacity: 0, y: 22, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.32, ease: "power2.out", stagger: 0.256}, 0.12);
+    tl.fromTo("#b8 .hi", {textShadow: "0 0 0px rgba(0,0,0,0)"}, {textShadow: "0 0 28px var(--accent)", duration: 0.6, ease: "power1.out"}, 2.29);
+    tl.fromTo("#b8-wrap", {opacity: 1}, {opacity: 0, duration: 0.22, ease: "power1.in"}, 4.73);
+    window.__timelines["b8"] = tl;
+  </script>
+</template>

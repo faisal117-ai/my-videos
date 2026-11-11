@@ -145,7 +145,7 @@ def beat_html(i: int, beat: dict, dur: float, spoken: float, accent: str) -> str
         js.append(f'tl.fromTo("#{bid}-wrap", {{opacity: 1}}, {{opacity: 0, duration: 0.22, ease: "power1.in"}}, {dur - 0.24:.2f});')
 
     body = "\n      ".join(parts)
-    side, rail = (60, 60) if beat.get("arabic") or beat.get("cta") else (90, 140)
+    side, rail = (60, 60) if beat.get("arabic") or beat.get("cta") else (90, beat.get("_text_right", 140))
     allow = " data-layout-allow-overflow" if beat.get("lights") else ""
     script = "\n    ".join(js)
     return f"""<template>
@@ -285,6 +285,88 @@ def storm_scene(spec: dict, beats: list, total: float) -> tuple[str, str, str]:
     return css, markup, js
 
 
+def mosque_scene(spec: dict, beats: list, total: float) -> tuple[str, str, str]:
+    """A simple old mosque at night: palm pillars, palm-leaf roof, lamps, the trunk, the pulpit.
+    No people are shown. Returns (css, markup, js)."""
+    rnd = random.Random(31)
+    pillars = []
+    for k, (x, w, shade) in enumerate([(40, 34, 0.55), (230, 26, 0.4), (420, 22, 0.32), (600, 22, 0.32), (760, 26, 0.4)]):
+        pillars.append(f'<div class="pil" style="left:{x}px;width:{w}px;opacity:{shade}"></div>')
+    lamps, ljs = [], []
+    for k, (x, y) in enumerate([(250, 520), (540, 470), (720, 560)]):
+        lamps.append(f'<div class="lampcord" style="left:{x + 9}px;height:{y - 250}px"></div>'
+                     f'<div id="lamp{k}" class="lamp" style="left:{x}px;top:{y}px"></div>')
+        period = rnd.uniform(0.18, 0.32)
+        ljs.append(f'tl.fromTo("#lamp{k}", {{opacity: 0.75}}, {{opacity: 1, duration: {period:.2f}, ease: "sine.inOut", '
+                   f'yoyo: true, repeat: {int(total / period) + 1}}}, {rnd.uniform(0, 0.3):.2f});')
+    shafts = "".join(f'<div class="shaft" style="left:{x}px"></div>' for x in (150, 470, 760))
+    pulpit_at = beats[spec.get("pulpit_beat", 1)]["start"]
+    cry = beats[spec.get("cry_beat", 2)]
+    cry_at, cry_end = cry["start"], cry["start"] + cry["dur"]
+    hook_cry = spec.get("hook_cry", True)
+    css = """
+    #mosque { position: absolute; inset: 0; background: linear-gradient(180deg, #0b0a0e 0%, #17110d 55%, #1e150f 100%); }
+    #wall { position: absolute; left: 0; right: 0; top: 260px; bottom: 380px;
+      background: linear-gradient(180deg, #1d1612 0%, #2a1f17 100%); }
+    #roof { position: absolute; left: 0; right: 0; top: 0; height: 270px;
+      background: repeating-linear-gradient(90deg, #120d0a 0 26px, #1c140f 26px 30px, #0e0a08 30px 44px); }
+    #roofbeam { position: absolute; left: 0; right: 0; top: 250px; height: 26px; background: #0d0907; }
+    .shaft { position: absolute; top: 260px; width: 180px; height: 1200px;
+      background: linear-gradient(180deg, rgba(190,210,255,0.16), rgba(190,210,255,0)); }
+    #floor { position: absolute; left: 0; right: 0; bottom: 0; height: 400px;
+      background: linear-gradient(180deg, #2b1f16 0%, #1a120d 100%); }
+    .pil { position: absolute; top: 250px; bottom: 380px; border-radius: 6px;
+      background: repeating-linear-gradient(180deg, #3a2a1d 0 22px, #2c2016 22px 26px); }
+    .lampcord { position: absolute; top: 260px; width: 2px; background: rgba(60,45,30,0.9); }
+    .lamp { position: absolute; width: 20px; height: 20px; border-radius: 50%;
+      background: radial-gradient(circle, #fff1c9 0%, #ffbe5c 50%, rgba(255,160,60,0) 75%);
+      box-shadow: 0 0 40px 18px rgba(255,170,70,0.35), 0 0 140px 60px rgba(255,150,60,0.12); }
+    #trunk { position: absolute; left: 860px; top: 250px; width: 120px; bottom: 360px; border-radius: 14px 14px 8px 8px;
+      background: repeating-linear-gradient(180deg, #7a5a3c 0 26px, #5a4129 26px 31px),
+                  linear-gradient(90deg, rgba(0,0,0,0.35), rgba(255,220,170,0.12) 45%, rgba(0,0,0,0.45));
+      background-blend-mode: multiply; box-shadow: 0 0 60px rgba(0,0,0,0.6); }
+    #trunkbase { position: absolute; left: 840px; width: 160px; bottom: 340px; height: 40px; border-radius: 50%;
+      background: #120c08; opacity: 0.7; }
+    .ripple { position: absolute; left: 920px; top: 1020px; width: 300px; height: 300px; margin: -150px;
+      border-radius: 50%; border: 6px solid rgba(255,214,150,0.75); opacity: 0; }
+    #pulpit { position: absolute; left: 120px; bottom: 330px; width: 330px; height: 330px; opacity: 0; }
+"""
+    ripples = "".join(f'<div id="rp{k}" class="ripple"></div>' for k in range(3))
+    markup = f"""
+    <div id="mosque" class="clip" data-start="0" data-duration="{total:.2f}">
+      <div id="wall"></div>
+      {"".join(pillars)}
+      <div id="roof"></div><div id="roofbeam"></div>
+      {shafts}
+      <div id="floor"></div>
+      {"".join(lamps)}
+      <svg id="pulpit" viewBox="0 0 330 330">
+        <rect x="200" y="20" width="16" height="310" fill="#4a3322"/>
+        <rect x="20" y="230" width="110" height="100" fill="#6a4a30"/>
+        <rect x="110" y="150" width="110" height="180" fill="#7a5638"/>
+        <rect x="200" y="70" width="110" height="260" fill="#86603e"/>
+        <rect x="200" y="62" width="110" height="12" fill="#a37a52"/>
+        <rect x="110" y="142" width="110" height="12" fill="#a37a52"/>
+        <rect x="20" y="222" width="110" height="12" fill="#a37a52"/>
+      </svg>
+      <div id="trunkbase"></div>
+      <div id="trunk"></div>
+      {ripples}
+    </div>"""
+    js = ["\n    ".join(ljs)]
+    js.append(f'tl.fromTo("#pulpit", {{opacity: 0, y: 40}}, {{opacity: 1, y: 0, duration: 1.2, ease: "power2.out", immediateRender: false}}, {pulpit_at + 0.6:.2f});')
+    windows = [(cry_at, cry_end)] + ([(0.05, 2.8)] if hook_cry else [])
+    for a, b in windows:
+        n = int((b - a) / 0.09)
+        js.append(f'tl.fromTo("#trunk", {{x: 0}}, {{x: 5, duration: 0.045, ease: "sine.inOut", yoyo: true, repeat: {n * 2 - 1}, immediateRender: false}}, {a:.2f});')
+        for k in range(3):
+            reps = max(int((b - a - 0.6 * k) / 1.8) - 1, 0)
+            js.append(f'tl.fromTo("#rp{k}", {{scale: 0.3, opacity: 0.7}}, {{scale: 2.4, opacity: 0, duration: 1.8, ease: "power1.out", '
+                      f'repeat: {reps}, immediateRender: false}}, {a + 0.6 * k:.2f});')
+    js.append(f'tl.fromTo("#trunk", {{x: 0}}, {{x: 0, duration: 0.01, immediateRender: false}}, {cry_end:.2f});')
+    return css, markup, "\n    ".join(js)
+
+
 def atmos_html(spec: dict, beats: list, total: float) -> str:
     accent = spec["accent"]
     mote = spec.get("mote", accent)
@@ -321,6 +403,8 @@ def atmos_html(spec: dict, beats: list, total: float) -> str:
     scene_css = scene_markup = scene_js = ""
     if spec.get("scene") == "cave":
         scene_css, scene_markup, scene_js = cave_scene(total)
+    elif spec.get("scene") == "mosque":
+        scene_css, scene_markup, scene_js = mosque_scene(spec, beats, total)
     elif spec.get("scene") == "storm":
         scene_css, scene_markup, scene_js = storm_scene(spec, beats, total)
 
@@ -465,7 +549,7 @@ def main() -> None:
     for i, (b, t) in enumerate(zip(spec["beats"], timings)):
         start = 0.0 if i == 0 else round(t["start"] - LEAD, 2)
         end = total if i == len(timings) - 1 else round(timings[i + 1]["start"] - LEAD, 2)
-        beats.append({**b, "start": start, "dur": round(end - start, 2),
+        beats.append({**b, "_text_right": spec.get("text_right", 140), "start": start, "dur": round(end - start, 2),
                       "spoken": t["end"] - t["start"], "mood": b.get("mood", {"warm": 0.3})})
 
     (d / "compositions").mkdir(exist_ok=True)
