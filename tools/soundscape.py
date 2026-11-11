@@ -37,7 +37,7 @@ def main() -> None:
     d = Path(sys.argv[1])
     spec = json.loads((d / "spec.json").read_text(encoding="utf-8"))
     timings = json.loads((d / "assets/timings.json").read_text(encoding="utf-8"))
-    total = timings[-1]["end"] + 1.4
+    total = timings[-1]["end"] + spec.get("hold_end", 1.4)
     starts = [0.0] + [t["start"] - LEAD for t in timings[1:]]
     cache = d / "assets/sfx"
     cache.mkdir(parents=True, exist_ok=True)

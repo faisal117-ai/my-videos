@@ -35,6 +35,8 @@ FONT_FACES = """
         src: url("assets/fonts/cormorant-garamond-latin-600-normal.woff2") format("woff2"); }
       @font-face { font-family: "Cormorant Garamond"; font-weight: 600; font-style: italic;
         src: url("assets/fonts/cormorant-garamond-latin-600-italic.woff2") format("woff2"); }
+      @font-face { font-family: "Noto Nastaliq Urdu"; font-weight: 400;
+        src: url("assets/fonts/noto-nastaliq-urdu-arabic-400-normal.woff2") format("woff2"); }
       @font-face { font-family: "Amiri Quran"; font-weight: 400;
         src: url("assets/fonts/amiri-quran-arabic-400-normal.woff2") format("woff2"); }
 """
@@ -62,7 +64,8 @@ def beat_html(i: int, beat: dict, dur: float, spoken: float, accent: str) -> str
     reveal = beat.get("reveal", i != 0)  # frame 0 is the thumbnail: the hook is already there
 
     if beat.get("arabic"):
-        parts.append(f'<div id="{bid}-ar" class="ar" dir="rtl" lang="ar">{esc(beat["arabic"])}</div>')
+        ars = f' style="font-size:{beat["ar_size"]}px"' if beat.get("ar_size") else ""
+        parts.append(f'<div id="{bid}-ar" class="ar" dir="rtl" lang="ar"{ars}>{esc(beat["arabic"])}</div>')
         parts.append(f'<div id="{bid}-tr" class="tr">{esc(beat["translation"])}</div>')
         js.append(f'tl.fromTo("#{bid}-ar", {{opacity: 0, y: 30, filter: "blur(10px)"}}, '
                   f'{{opacity: 1, y: 0, filter: "blur(0px)", duration: 0.9, ease: "power2.out"}}, 0.05);')
@@ -135,6 +138,10 @@ def beat_html(i: int, beat: dict, dur: float, spoken: float, accent: str) -> str
         js.append(f'tl.fromTo("#{bid}-orb1", {{x: -150}}, {{x: -70, duration: {dur:.2f}, ease: "sine.inOut"}}, 0);')
         js.append(f'tl.fromTo("#{bid}-orb2", {{x: 150}}, {{x: 70, duration: {dur:.2f}, ease: "sine.inOut"}}, 0);')
 
+    if beat.get("ur"):
+        parts.append(f'<div id="{bid}-ur" class="ur" dir="rtl" lang="ur" data-layout-allow-overflow>{esc(beat["ur"])}</div>')
+        js.append(f'tl.fromTo("#{bid}-ur", {{opacity: 0, y: 10}}, {{opacity: 1, y: 0, duration: 0.35, ease: "power2.out"}}, 0.15);')
+
     if beat.get("ref"):
         parts.append(f'<div id="{bid}-ref" class="ref">{esc(beat["ref"])}</div>')
         js.append(f'tl.fromTo("#{bid}-ref", {{opacity: 0, y: 12}}, '
@@ -151,7 +158,7 @@ def beat_html(i: int, beat: dict, dur: float, spoken: float, accent: str) -> str
     return f"""<template>
   <style>
     #{bid} {{ position: absolute; inset: 0; }}
-    #{bid}-wrap {{ position: absolute; left: {side}px; right: {rail}px; top: 330px; bottom: 600px;
+    #{bid}-wrap {{ position: absolute; left: {side}px; right: {rail}px; top: {beat["_top"]}px; bottom: {beat["_bottom"]}px;
       display: flex; flex-direction: column; justify-content: center; gap: 34px; }}
   </style>
   <div id="{bid}" data-composition-id="{bid}" data-width="{W}" data-height="{H}">
@@ -367,6 +374,112 @@ def mosque_scene(spec: dict, beats: list, total: float) -> tuple[str, str, str]:
     return css, markup, "\n    ".join(js)
 
 
+ANT = ('<g fill="#140d08"><ellipse cx="-11" cy="0" rx="7" ry="5"/><ellipse cx="0" cy="0" rx="5" ry="4"/>'
+       '<ellipse cx="9" cy="-1" rx="4" ry="3.6"/><path d="M -4 2 L -9 9 M 0 3 L 0 10 M 3 2 L 8 9 M -4 -2 L -9 -8 M 0 -3 L 1 -9 M 3 -2 L 8 -8 '
+       'M 11 -3 L 16 -9 M 11 -3 L 17 -4" stroke="#140d08" stroke-width="1.6" fill="none"/></g>')
+
+
+def soldier(x: float, h: float) -> str:
+    """A tiny faceless marching silhouette with a spear."""
+    w = h * 0.28
+    return (f'<g transform="translate({x:.0f},0)"><circle cx="0" cy="{-h + w * 0.55:.1f}" r="{w * 0.42:.1f}"/>'
+            f'<rect x="{-w / 2:.1f}" y="{-h + w:.1f}" width="{w:.1f}" height="{h * 0.55:.1f}" rx="2"/>'
+            f'<rect x="{-w / 2:.1f}" y="{-h * 0.26:.1f}" width="{w * 0.38:.1f}" height="{h * 0.26:.1f}"/>'
+            f'<rect x="{w * 0.12:.1f}" y="{-h * 0.26:.1f}" width="{w * 0.38:.1f}" height="{h * 0.26:.1f}"/>'
+            f'<rect x="{w * 0.55:.1f}" y="{-h * 1.35:.1f}" width="2" height="{h * 1.3:.1f}"/></g>')
+
+
+def valley_scene(spec: dict, beats: list, total: float) -> tuple[str, str, str]:
+    """The valley of the ants: an army on the horizon, birds, marching ants, one ant that calls.
+    Sulaiman (AS) and the jinn are never shown. Returns (css, markup, js)."""
+    rnd = random.Random(41)
+    halt = beats[spec.get("halt_beat", 4)]["start"]
+    call = beats[spec.get("call_beat", 3)]
+    rush_at = call["start"]
+    hero_at = beats[spec.get("hero_beat", 2)]["start"]
+
+    army = []
+    for row, (y, h, n, op) in enumerate([(1200, 62, 24, 0.85), (1232, 84, 20, 1.0)]):
+        xs = [rnd.uniform(-40, 1500) for _ in range(n)]
+        army.append(f'<g transform="translate(0,{y})" fill="#0d0a10" opacity="{op}">' + "".join(soldier(x, h) for x in xs) + "</g>")
+    banners = "".join(
+        f'<g transform="translate({x},1080)"><rect x="0" y="0" width="5" height="150" fill="#0d0a10"/>'
+        f'<rect id="fl{k}" class="flag" x="5" y="2" width="64" height="40" fill="{c}"/></g>'
+        for k, (x, c) in enumerate([(180, "#7a2e2a"), (520, "#2c4a6b"), (860, "#7a5a2a"), (1200, "#2f5a3a")]))
+    birds, bjs = [], []
+    for k in range(14):
+        x, y, sc = rnd.uniform(0, 1500), rnd.uniform(1000, 1110), rnd.uniform(1.4, 2.2)
+        birds.append(f'<g transform="translate({x:.0f},{y:.0f}) scale({sc:.2f})"><path id="bd{k}" class="bird" '
+                     f'd="M -16 0 Q -8 -9 0 0 Q 8 -9 16 0" stroke="#0d0a10" stroke-width="3" fill="none"/></g>')
+        per = rnd.uniform(0.28, 0.42)
+        bjs.append(f'tl.fromTo("#bd{k}", {{scaleY: 1}}, {{scaleY: -0.6, transformOrigin: "50% 100%", duration: {per:.2f}, ease: "sine.inOut", yoyo: true, '
+                   f'repeat: {int(total / per) + 1}}}, {rnd.uniform(0, 0.3):.2f});')
+
+    ants, ajs = [], []
+    hole_x, hole_y = 540, 1560
+    for k in range(26):
+        y0 = rnd.uniform(1430, 1800)
+        x0 = rnd.choice([-60, 1140])
+        per = rnd.uniform(5, 8)
+        ants.append(f'<g transform="translate({x0},{y0:.0f})"><g id="an{k}" class="ant">'
+                    f'<g transform="scale({1 if x0 < 0 else -1},1) scale(2.2)">{ANT}</g></g></g>')
+        mid = rnd.uniform(0.25, 0.75)
+        ajs.append(f'tl.fromTo("#an{k}", {{x: 0, y: 0, opacity: 1}}, {{x: {(hole_x - x0) * mid:.0f}, y: {(hole_y - y0) * mid * 0.4:.0f}, '
+                   f'duration: {rush_at:.2f}, ease: "none"}}, 0);')
+        ajs.append(f'tl.fromTo("#an{k}", {{x: {(hole_x - x0) * mid:.0f}, y: {(hole_y - y0) * mid * 0.4:.0f}, opacity: 1}}, '
+                   f'{{x: {hole_x - x0}, y: {hole_y - y0:.0f}, opacity: 0, duration: {rnd.uniform(1.6, 3.2):.2f}, ease: "power1.in", '
+                   f'immediateRender: false}}, {rush_at + rnd.uniform(0.2, 1.2):.2f});')
+
+    css = """
+    #vsky { position: absolute; inset: 0; background: linear-gradient(180deg, #0d1526 0%, #24304a 38%, #7a4a3a 52%, #d98a4e 62%, #f0b46a 66%, #3a2418 72%); }
+    #vhills { position: absolute; inset: 0; width: 100%; height: 100%; }
+    #army { position: absolute; left: 0; top: 0; width: 1500px; height: 1920px; }
+    #vground { position: absolute; left: 0; right: 0; top: 1240px; bottom: 0;
+      background: linear-gradient(180deg, #4a3220 0%, #2e2015 40%, #1c140e 100%); }
+    #mound { position: absolute; left: 390px; top: 1500px; width: 300px; height: 130px; border-radius: 50% 50% 8% 8%;
+      background: radial-gradient(ellipse at 50% 30%, #6a4a30, #3e2a1a 70%); }
+    #hole { position: absolute; left: 515px; top: 1545px; width: 50px; height: 26px; border-radius: 50%; background: #0b0705; }
+    #antsvg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+    #hero { position: absolute; left: 650px; top: 1390px; width: 300px; height: 180px; opacity: 0; }
+    #pebble { position: absolute; left: 670px; top: 1490px; width: 260px; height: 80px; border-radius: 50%;
+      background: radial-gradient(ellipse at 40% 30%, #8a7058, #4e3c2c 70%); opacity: 0; }
+    .call { position: absolute; left: 800px; top: 1470px; width: 160px; height: 160px; margin: -80px; border-radius: 50%;
+      border: 5px solid rgba(255,220,160,0.8); opacity: 0; }
+"""
+    calls = "".join(f'<div id="cr{k}" class="call"></div>' for k in range(3))
+    markup = f"""
+    <div id="valley" class="clip" data-start="0" data-duration="{total:.2f}">
+      <div id="vsky"></div>
+      <svg id="vhills" viewBox="0 0 1080 1920" preserveAspectRatio="none">
+        <path fill="#3a2a34" d="M 0 1170 C 180 1120 320 1150 470 1165 C 640 1185 780 1110 1080 1150 V 1920 H 0 Z"/>
+      </svg>
+      <svg id="army" viewBox="0 0 1500 1920">
+        {"".join(birds)}
+        {"".join(army)}
+        {banners}
+      </svg>
+      <div id="vground"></div>
+      <div id="mound"></div><div id="hole"></div>
+      <svg id="antsvg" viewBox="0 0 1080 1920">{"".join(ants)}</svg>
+      <div id="pebble"></div>
+      <svg id="hero" viewBox="-60 -40 120 80"><g transform="scale(2.6)">{ANT}</g></svg>
+      {calls}
+    </div>"""
+    js = ["\n    ".join(bjs), "\n    ".join(ajs)]
+    js.append(f'tl.fromTo("#army", {{x: 0}}, {{x: -420, duration: {halt:.2f}, ease: "none"}}, 0);')
+    for k in range(4):
+        js.append(f'tl.fromTo("#fl{k}", {{scaleX: 1}}, {{scaleX: 0.82, duration: 0.35, ease: "sine.inOut", yoyo: true, '
+                  f'repeat: {int(total / 0.35) + 1}, transformOrigin: "0% 50%"}}, {k * 0.1:.2f});')
+    js.append(f'tl.fromTo("#pebble", {{opacity: 0}}, {{opacity: 1, duration: 0.6, immediateRender: false}}, {hero_at:.2f});')
+    js.append(f'tl.fromTo("#hero", {{opacity: 0, x: 60}}, {{opacity: 1, x: 0, duration: 0.9, ease: "power2.out", immediateRender: false}}, {hero_at + 0.2:.2f});')
+    js.append(f'tl.fromTo("#hero", {{y: 0}}, {{y: -6, duration: 0.25, ease: "sine.inOut", yoyo: true, repeat: {int(call["dur"] / 0.25)}, immediateRender: false}}, {rush_at:.2f});')
+    for k in range(3):
+        reps = max(int((call["dur"] - 0.5 * k) / 1.5) - 1, 0)
+        js.append(f'tl.fromTo("#cr{k}", {{scale: 0.4, opacity: 0.85}}, {{scale: 2.6, opacity: 0, duration: 1.5, ease: "power1.out", '
+                  f'repeat: {reps}, immediateRender: false}}, {rush_at + 0.5 * k:.2f});')
+    return css, markup, "\n    ".join(js)
+
+
 def atmos_html(spec: dict, beats: list, total: float) -> str:
     accent = spec["accent"]
     mote = spec.get("mote", accent)
@@ -403,6 +516,8 @@ def atmos_html(spec: dict, beats: list, total: float) -> str:
     scene_css = scene_markup = scene_js = ""
     if spec.get("scene") == "cave":
         scene_css, scene_markup, scene_js = cave_scene(total)
+    elif spec.get("scene") == "valley":
+        scene_css, scene_markup, scene_js = valley_scene(spec, beats, total)
     elif spec.get("scene") == "mosque":
         scene_css, scene_markup, scene_js = mosque_scene(spec, beats, total)
     elif spec.get("scene") == "storm":
@@ -496,8 +611,11 @@ def index_html(spec: dict, beats: list, total: float) -> str:
         color: rgba(245,234,214,0.82); line-height: 1.15; }}
       .ar {{ font-family: "Amiri Quran"; font-size: 74px; line-height: 1.9; text-align: center; color: #fff6e6;
         text-shadow: 0 0 30px rgba(215,236,255,0.45); }}
-      .tr {{ font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 74px; line-height: 1.15;
+      .tr {{ font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: {spec.get("tr_size", 74)}px; line-height: 1.15;
         text-align: center; }}
+      .ur {{ font-family: "Noto Nastaliq Urdu"; font-size: 46px; line-height: 1.9; color: #fff3dc; text-align: right;
+        background: rgba(0,0,0,0.5); border-radius: 18px; padding: 12px 26px 26px; align-self: stretch; }}
+      .cta ~ .ur, .ar ~ .ur, .tr ~ .ur {{ text-align: center; }}
       .ref {{ align-self: flex-start; font-family: Inter; font-weight: 700; font-size: 32px; letter-spacing: 0.14em;
         text-transform: uppercase; color: var(--accent); border: 2px solid var(--accent); border-radius: 999px;
         padding: 12px 26px; background: rgba(0,0,0,0.35); }}
@@ -544,12 +662,13 @@ def main() -> None:
     if len(timings) != len(spec["beats"]):
         sys.exit(f"{len(spec['beats'])} beats but {len(timings)} narration lines")
 
-    total = round(timings[-1]["end"] + HOLD_END, 2)
+    total = round(timings[-1]["end"] + spec.get("hold_end", HOLD_END), 2)
     beats = []
     for i, (b, t) in enumerate(zip(spec["beats"], timings)):
         start = 0.0 if i == 0 else round(t["start"] - LEAD, 2)
         end = total if i == len(timings) - 1 else round(timings[i + 1]["start"] - LEAD, 2)
-        beats.append({**b, "_text_right": spec.get("text_right", 140), "start": start, "dur": round(end - start, 2),
+        beats.append({**b, "_text_right": spec.get("text_right", 140), "_top": spec.get("text_top", 330),
+                      "_bottom": spec.get("text_bottom", 600), "start": start, "dur": round(end - start, 2),
                       "spoken": t["end"] - t["start"], "mood": b.get("mood", {"warm": 0.3})})
 
     (d / "compositions").mkdir(exist_ok=True)
