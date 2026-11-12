@@ -1,0 +1,96 @@
+<template>
+  <style>
+    #c05 { position: absolute; inset: 0; overflow: hidden; background: #000; }
+    .c05-st { position: absolute; border-radius: 50%; background: #eef4ff; box-shadow: 0 0 6px rgba(220,235,255,0.9); }
+    .c05-mote { position: absolute; border-radius: 50%; }
+    .c05-full { position: absolute; inset: 0; }
+    .c05-svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+
+    .c05-cam { position: absolute; inset: 0; transform-origin: 50% 55%; }
+    .c05-scrim { position: absolute; left: 0; right: 0; bottom: 0; height: 300px;
+      background: linear-gradient(0deg, rgba(0,0,0,0.75), rgba(0,0,0,0)); }
+    .c05-cap { position: absolute; left: 210px; right: 210px; bottom: 64px; text-align: center;
+      font-family: "Cormorant Garamond"; font-weight: 600; font-size: 54px; line-height: 1.12; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c05-cardwrap { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+      background: radial-gradient(ellipse at 50% 50%, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.45) 50%, rgba(0,0,0,0) 80%); }
+    .c05-card { max-width: 1400px; display: flex; flex-direction: column; align-items: center; gap: 26px; text-align: center; }
+    .c05-ar { font-family: "Amiri Quran"; font-size: 70px; line-height: 1.8; color: #fff6e6; text-shadow: 0 0 30px rgba(215,236,255,0.4); }
+    .c05-en { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 50px; line-height: 1.18; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c05-ctext { font-family: "Cormorant Garamond"; font-weight: 600; font-size: 76px; line-height: 1.1; color: #f5ead6;
+      text-shadow: 0 3px 22px rgba(0,0,0,0.9); }
+    .c05-hi { color: var(--accent); }
+    .c05-ref { font-family: Inter, sans-serif; font-weight: 700; font-size: 28px; letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--accent); border: 2px solid var(--accent); border-radius: 999px; padding: 10px 24px; background: rgba(0,0,0,0.4); }
+    .c05-title { font-family: "Cormorant Garamond"; font-weight: 600; font-size: 118px; line-height: 1.02; color: #f5ead6;
+      text-shadow: 0 4px 30px rgba(0,0,0,0.8); }
+    .c05-tsub { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 52px; color: var(--accent); }
+    .c05-mark { font-family: Inter, sans-serif; font-weight: 700; font-size: 64px; letter-spacing: 0.32em; color: #f5ead6; }
+    .c05-mark span { color: var(--accent); }
+    .c05-endt { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 52px; color: #f5ead6; }
+    .c05-btn { font-family: Inter, sans-serif; font-weight: 700; font-size: 34px; letter-spacing: 0.08em; color: #120b08;
+      background: var(--accent); border-radius: 999px; padding: 18px 48px; }
+    .c05-label { position: absolute; left: 90px; top: 70px; }
+    .c05-label b { display: block; font-family: Inter, sans-serif; font-weight: 700; font-size: 28px; letter-spacing: 0.3em; color: var(--accent); }
+    .c05-label i { display: block; font-family: "Cormorant Garamond"; font-style: normal; font-weight: 600; font-size: 60px; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c05-brand { position: absolute; right: 80px; top: 70px; font-family: Inter, sans-serif; font-weight: 700; font-size: 28px;
+      letter-spacing: 0.32em; color: rgba(245,234,214,0.7); }
+    .c05-brand span { color: var(--accent); }
+    .c05-fade { position: absolute; inset: 0; background: #000; }
+
+    #c05-room { background: linear-gradient(180deg, #2a1810 0%, #3a2216 60%, #1a0e08 100%); }
+    #c05-cool { background: radial-gradient(ellipse at 50% 30%, rgba(160,190,240,0.35), rgba(0,0,0,0) 65%); opacity: 0; }
+    #c05-bars { opacity: 0; }
+
+  </style>
+  <div id="c05" data-composition-id="c05" data-width="1920" data-height="1080">
+    <div id="c05-scene" class="clip" data-start="0" data-duration="61.11" style="position:absolute;inset:0" data-layout-allow-overflow>
+      <div id="c05-cam" class="c05-cam">
+      <div id="c05-room" class="c05-full"></div>
+      <svg class="c05-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none"><defs><radialGradient id="c05-lg"><stop offset="0" stop-color="rgba(255,210,130,0.9)"/><stop offset="1" stop-color="rgba(255,170,80,0)"/></radialGradient></defs><path d="M 220 600 V 260 Q 340 120 460 260 V 600 Z" fill="#2a3450" opacity="0.8"/><path d="M 840 600 V 260 Q 960 120 1080 260 V 600 Z" fill="#2a3450" opacity="0.8"/><path d="M 1460 600 V 260 Q 1580 120 1700 260 V 600 Z" fill="#2a3450" opacity="0.8"/><rect x="200" y="760" width="1520" height="34" fill="#5a3418"/><rect x="230" y="794" width="1460" height="120" fill="#3a200e"/><rect x="160" y="900" width="1600" height="180" fill="#5a1a22"/><ellipse cx="360" cy="740" rx="70" ry="18" fill="#c8a868"/><circle cx="326" cy="722" r="17" fill="#6a8a2a"/><circle cx="343" cy="708" r="17" fill="#8a2a5a"/><circle cx="360" cy="722" r="17" fill="#8a2a5a"/><circle cx="377" cy="708" r="17" fill="#d07020"/><circle cx="394" cy="722" r="17" fill="#6a8a2a"/><g transform="translate(455,770)"><g id="c05-knife0"><g transform="rotate(-20)"><rect x="0" y="-4" width="70" height="8" fill="#d8dce0"/><rect x="-36" y="-6" width="36" height="12" rx="3" fill="#4a2a14"/></g></g></g><ellipse cx="600" cy="740" rx="70" ry="18" fill="#c8a868"/><circle cx="566" cy="722" r="17" fill="#e8902a"/><circle cx="583" cy="708" r="17" fill="#8a2a5a"/><circle cx="600" cy="722" r="17" fill="#6a8a2a"/><circle cx="617" cy="708" r="17" fill="#8a2a5a"/><circle cx="634" cy="722" r="17" fill="#6a8a2a"/><g transform="translate(695,770)"><g id="c05-knife1"><g transform="rotate(-20)"><rect x="0" y="-4" width="70" height="8" fill="#d8dce0"/><rect x="-36" y="-6" width="36" height="12" rx="3" fill="#4a2a14"/></g></g></g><ellipse cx="840" cy="740" rx="70" ry="18" fill="#c8a868"/><circle cx="806" cy="722" r="17" fill="#d07020"/><circle cx="823" cy="708" r="17" fill="#e8902a"/><circle cx="840" cy="722" r="17" fill="#d07020"/><circle cx="857" cy="708" r="17" fill="#6a8a2a"/><circle cx="874" cy="722" r="17" fill="#8a2a5a"/><g transform="translate(935,770)"><g id="c05-knife2"><g transform="rotate(-20)"><rect x="0" y="-4" width="70" height="8" fill="#d8dce0"/><rect x="-36" y="-6" width="36" height="12" rx="3" fill="#4a2a14"/></g></g></g><ellipse cx="1080" cy="740" rx="70" ry="18" fill="#c8a868"/><circle cx="1046" cy="722" r="17" fill="#d07020"/><circle cx="1063" cy="708" r="17" fill="#8a2a5a"/><circle cx="1080" cy="722" r="17" fill="#d07020"/><circle cx="1097" cy="708" r="17" fill="#e8902a"/><circle cx="1114" cy="722" r="17" fill="#d07020"/><g transform="translate(1175,770)"><g id="c05-knife3"><g transform="rotate(-20)"><rect x="0" y="-4" width="70" height="8" fill="#d8dce0"/><rect x="-36" y="-6" width="36" height="12" rx="3" fill="#4a2a14"/></g></g></g><ellipse cx="1320" cy="740" rx="70" ry="18" fill="#c8a868"/><circle cx="1286" cy="722" r="17" fill="#e8902a"/><circle cx="1303" cy="708" r="17" fill="#8a2a5a"/><circle cx="1320" cy="722" r="17" fill="#6a8a2a"/><circle cx="1337" cy="708" r="17" fill="#e8902a"/><circle cx="1354" cy="722" r="17" fill="#e8902a"/><g transform="translate(1415,770)"><g id="c05-knife4"><g transform="rotate(-20)"><rect x="0" y="-4" width="70" height="8" fill="#d8dce0"/><rect x="-36" y="-6" width="36" height="12" rx="3" fill="#4a2a14"/></g></g></g><ellipse cx="1560" cy="740" rx="70" ry="18" fill="#c8a868"/><circle cx="1526" cy="722" r="17" fill="#e8902a"/><circle cx="1543" cy="708" r="17" fill="#d07020"/><circle cx="1560" cy="722" r="17" fill="#e8902a"/><circle cx="1577" cy="708" r="17" fill="#6a8a2a"/><circle cx="1594" cy="722" r="17" fill="#6a8a2a"/><g transform="translate(1655,770)"><g id="c05-knife5"><g transform="rotate(-20)"><rect x="0" y="-4" width="70" height="8" fill="#d8dce0"/><rect x="-36" y="-6" width="36" height="12" rx="3" fill="#4a2a14"/></g></g></g><g id="c05-hl0" transform="translate(520,0)"><path d="M 0 0 V 170" stroke="#3a2a1a" stroke-width="3"/><path d="M -26 170 H 26 L 16 214 H -16 Z" fill="#b8883a"/><circle cx="0" cy="226" r="40" fill="url(#c05-lg)"/></g><g id="c05-hl1" transform="translate(960,0)"><path d="M 0 0 V 170" stroke="#3a2a1a" stroke-width="3"/><path d="M -26 170 H 26 L 16 214 H -16 Z" fill="#b8883a"/><circle cx="0" cy="226" r="40" fill="url(#c05-lg)"/></g><g id="c05-hl2" transform="translate(1400,0)"><path d="M 0 0 V 170" stroke="#3a2a1a" stroke-width="3"/><path d="M -26 170 H 26 L 16 214 H -16 Z" fill="#b8883a"/><circle cx="0" cy="226" r="40" fill="url(#c05-lg)"/></g></svg>
+      <div id="c05-cool" class="c05-full"></div>
+      <svg id="c05-bars" class="c05-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none"><rect x="120" y="0" width="46" height="1080" fill="#000"/><rect x="310" y="0" width="46" height="1080" fill="#000"/><rect x="500" y="0" width="46" height="1080" fill="#000"/><rect x="690" y="0" width="46" height="1080" fill="#000"/><rect x="880" y="0" width="46" height="1080" fill="#000"/><rect x="1070" y="0" width="46" height="1080" fill="#000"/><rect x="1260" y="0" width="46" height="1080" fill="#000"/><rect x="1450" y="0" width="46" height="1080" fill="#000"/><rect x="1640" y="0" width="46" height="1080" fill="#000"/><rect x="1830" y="0" width="46" height="1080" fill="#000"/></svg>
+      </div>
+    </div>
+    <div id="c05-scr" class="c05-scrim clip" data-start="0" data-duration="61.11"></div>
+    <div id="c05-lab" class="c05-label clip" data-start="0.3" data-duration="4.6"><b>CHAPTER 5</b><i>The Women of the City</i></div>
+    <div id="c05-cp0" class="c05-cap clip" data-start="0.22" data-duration="2.45">But the story spread.</div>
+    <div id="c05-cp1" class="c05-cap clip" data-start="2.67" data-duration="6.33">The women of the city said: the wife of al-Aziz is chasing her servant.</div>
+    <div id="c05-cp2" class="c05-cap clip" data-start="9.00" data-duration="2.53">She is clearly in error.</div>
+    <div id="c05-cp3" class="c05-cap clip" data-start="11.53" data-duration="5.91">When she heard their talk, she invited them to a banquet, and gave each of them a knife.</div>
+    <div id="c05-cp4" class="c05-cap clip" data-start="17.44" data-duration="4.23">Then she told Yusuf to come out before them. When they saw him,</div>
+    <div id="c05-cp5" class="c05-cap clip" data-start="21.66" data-duration="3.21">they were so stunned that they cut their own hands.</div>
+    <div id="c05-cp6" class="c05-cap clip" data-start="31.98" data-duration="4.19">&quot;That is the one you blamed me for.&quot; And if he would not obey her,</div>
+    <div id="c05-cp7" class="c05-cap clip" data-start="36.18" data-duration="1.86">he would be imprisoned.</div>
+    <div id="c05-cp8" class="c05-cap clip" data-start="38.03" data-duration="2.76">Now the pressure came from every side.</div>
+    <div id="c05-cp9" class="c05-cap clip" data-start="40.80" data-duration="3.18">And Yusuf turned to the only One who could help.</div>
+    <div id="c05-cp10" class="c05-cap clip" data-start="53.82" data-duration="3.30">And even after they had seen every sign of his innocence...</div>
+    <div id="c05-cp11" class="c05-cap clip" data-start="57.12" data-duration="3.39">they decided to put him in prison anyway.</div>
+    <div id="c05-k0w" class="c05-cardwrap clip" data-start="24.93" data-duration="6.90"><div id="c05-k0" class="c05-card"><div class="c05-ar" dir="rtl" lang="ar">وَقَطَّعۡنَ أَيۡدِيَهُنَّ</div><div class="c05-en">“…and cut their hands…”</div><div class="c05-ref">Yusuf 12:31</div></div></div>
+    <div id="c05-k1w" class="c05-cardwrap clip" data-start="44.02" data-duration="6.61"><div id="c05-k1" class="c05-card"><div class="c05-ar" dir="rtl" lang="ar">قَالَ رَبِّ ٱلسِّجۡنُ أَحَبُّ إِلَيَّ مِمَّا يَدۡعُونَنِيٓ إِلَيۡهِۖ</div><div class="c05-en">“…My Lord, prison is more to my liking than that to which they invite me…”</div><div class="c05-ref">Yusuf 12:33</div></div></div>
+    <div id="c05-fadeIn" class="c05-fade clip" data-start="0" data-duration="0.55" style="opacity:1"></div>
+    <div id="c05-fadeOut" class="c05-fade clip" data-start="60.61" data-duration="0.50" style="opacity:0"></div>
+    <div id="c05-br" class="c05-brand clip" data-start="0" data-duration="61.11">HAQ <span>·</span> STORIES</div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#c05-hl0", {rotation: -2, transformOrigin: '50% 0%'}, {rotation: 2, transformOrigin: '50% 0%', duration: 1.60, ease: "sine.inOut", yoyo: true, repeat: 39, immediateRender: false}, 0.00);
+    tl.fromTo("#c05-hl1", {rotation: -2, transformOrigin: '50% 0%'}, {rotation: 2, transformOrigin: '50% 0%', duration: 1.90, ease: "sine.inOut", yoyo: true, repeat: 33, immediateRender: false}, 0.00);
+    tl.fromTo("#c05-hl2", {rotation: -2, transformOrigin: '50% 0%'}, {rotation: 2, transformOrigin: '50% 0%', duration: 2.20, ease: "sine.inOut", yoyo: true, repeat: 28, immediateRender: false}, 0.00);
+    tl.fromTo("#c05-knife2", {y: 0, rotation: 0, opacity: 1}, {y: 140, rotation: 70, opacity: 1, duration: 0.60, ease: "power2.in", immediateRender: false}, 25.68);
+    tl.fromTo("#c05-cool", {opacity: 0}, {opacity: 1, duration: 2.00, ease: "sine.inOut", immediateRender: false}, 44.17);
+    tl.fromTo("#c05-bars", {opacity: 0, x: -200}, {opacity: 0.6, x: 0, duration: 2.50, ease: "power2.out", immediateRender: false}, 53.90);
+    tl.fromTo("#c05-k0w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 24.93);
+    tl.fromTo("#c05-k0", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 24.93);
+    tl.fromTo("#c05-k1w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 44.02);
+    tl.fromTo("#c05-k1", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 44.02);
+    tl.fromTo("#c05-lab", {opacity: 0, x: -20}, {opacity: 1, x: 0, duration: 0.60, ease: "power2.out", immediateRender: false}, 0.30);
+    tl.fromTo("#c05-lab", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 4.40);
+    tl.fromTo("#c05-scene", {scale: 1.0, x: 0}, {scale: 1.06, x: -30, duration: 61.11, ease: "none", immediateRender: false}, 0.00);
+    tl.fromTo("#c05-fadeIn", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 0.00);
+    tl.fromTo("#c05-fadeOut", {opacity: 0}, {opacity: 1, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 60.61);
+    window.__timelines["c05"] = tl;
+  </script>
+</template>

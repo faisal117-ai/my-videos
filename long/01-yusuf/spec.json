@@ -1,0 +1,74 @@
+{
+  "accent": "#f2b04a",
+  "gap": 0.7,
+  "chapters": [
+    {"title": null, "scene": "hall", "cards": [
+      {"line": 1, "v": 88, "ar": [12, 16], "en": "give us full measure and be charitable to us"},
+      {"line": 2, "v": 58, "ar": [5, 8], "en": "he recognized them, but he was to them unknown"},
+      {"line": 5, "v": 3, "ar": [3, 4], "en": "the best of stories"},
+      {"line": 6, "title": "From the Well to the Throne", "sub": "The Complete Story of Hazrat Yusuf (AS)"}
+    ]},
+    {"title": "The Dream of Eleven Stars", "scene": "dream", "cards": [
+      {"line": 1, "v": 4, "ar": [4, 14], "en": "O my father, indeed I have seen [in a dream] eleven stars and the sun and the moon; I saw them prostrating to me"},
+      {"line": 3, "v": 5, "ar": [0, 9], "en": "O my son, do not relate your vision to your brothers or they will contrive against you a plan"},
+      {"line": 4, "v": 6, "ar": [0, 2], "en": "And thus will your Lord choose you"}
+    ]},
+    {"title": "The Well", "scene": "well", "cards": [
+      {"line": 1, "v": 10, "ar": [3, 9], "en": "Do not kill Joseph but throw him into the bottom of the well"},
+      {"line": 3, "v": 13, "ar": [6, 12], "en": "I fear that a wolf would eat him while you are of him unaware"},
+      {"line": 7, "v": 15, "ar": [9, 16], "en": "You will surely inform them [someday] about this affair of theirs while they do not perceive"},
+      {"line": 10, "v": 18, "ar": [0, 4], "en": "And they brought upon his shirt false blood"},
+      {"line": 11, "v": 18, "ar": [11, 14], "en": "so patience is most fitting. And Allah is the one sought for help"}
+    ]},
+    {"title": "Sold for a Few Coins", "scene": "caravan", "cards": [
+      {"line": 2, "v": 20, "ar": [0, 4], "en": "they sold him for a reduced price - a few dirhams"},
+      {"line": 5, "v": 21, "ar": [23, 31], "en": "And Allah is predominant over His affair, but most of the people do not know"}
+    ]},
+    {"title": "The Closed Doors", "scene": "doors", "cards": [
+      {"line": 0, "v": 23, "ar": [7, 8], "en": "She closed the doors"},
+      {"line": 1, "v": 23, "ar": [12, 14], "en": "[I seek] the refuge of Allah"},
+      {"line": 7, "v": 27, "ar": [0, 9], "en": "But if his shirt is torn from the back, then she has lied, and he is of the truthful"}
+    ]},
+    {"title": "The Women of the City", "scene": "banquet", "cards": [
+      {"line": 3, "v": 31, "ar": [19, 20], "en": "and cut their hands"},
+      {"line": 6, "v": 33, "ar": [0, 7], "en": "My Lord, prison is more to my liking than that to which they invite me"}
+    ]},
+    {"title": "Prison and Two Dreams", "scene": "prison", "cards": [
+      {"line": 5, "v": 39, "ar": [0, 8], "en": "O [my] two companions of prison, are separate lords better or Allah, the One, the Prevailing"},
+      {"line": 7, "v": 42, "ar": [6, 8], "en": "Mention me before your master"}
+    ]},
+    {"title": "The King's Dream", "scene": "cows", "cards": [
+      {"line": 1, "v": 43, "ar": [2, 14], "en": "Indeed, I have seen [in a dream] seven fat cows being eaten by seven [that were] lean, and seven green spikes [of grain] and others [that were] dry"},
+      {"line": 8, "text": "7 years of plenty · 7 years of hardship · then rain", "ref": "Yusuf 12:47–49"}
+    ]},
+    {"title": "From Prison to the Storehouses", "scene": "granary", "cards": [
+      {"line": 3, "v": 51, "ar": [19, 28], "en": "Now the truth has become evident. It was I who sought to seduce him, and indeed, he is of the truthful"},
+      {"line": 5, "v": 55, "ar": [0, 7], "en": "Appoint me over the storehouses of the land. Indeed, I will be a knowing guardian"},
+      {"line": 7, "v": 56, "ar": [13, 16], "en": "We do not allow to be lost the reward of those who do good"}
+    ]},
+    {"title": "The Brothers and the Golden Cup", "scene": "store", "cards": [
+      {"line": 3, "v": 64, "ar": [11, 16], "en": "But Allah is the best guardian, and He is the most merciful of the merciful"},
+      {"line": 5, "v": 69, "ar": [8, 15], "en": "Indeed, I am your brother, so do not despair over what they used to do"},
+      {"line": 8, "text": "Hazrat Yusuf's (AS) brother, known as *Binyamin*", "ref": "Yusuf 12:76"}
+    ]},
+    {"title": "“I Only Complain to Allah”", "scene": "home", "cards": [
+      {"line": 3, "v": 83, "ar": [6, 13], "en": "so patience is most fitting. Perhaps Allah will bring them to me all together"},
+      {"line": 6, "v": 86, "ar": [0, 12], "en": "I only complain of my suffering and my grief to Allah, and I know from Allah that which you do not know"},
+      {"line": 7, "v": 87, "ar": [6, 10], "en": "despair not of relief from Allah"}
+    ]},
+    {"title": "“I Am Yusuf”", "scene": "reveal", "cards": [
+      {"line": 3, "v": 89, "ar": [1, 9], "en": "Do you know what you did with Joseph and his brother when you were ignorant"},
+      {"line": 6, "v": 90, "ar": [4, 8], "en": "I am Joseph, and this is my brother"},
+      {"line": 11, "v": 92, "ar": [1, 10], "en": "No blame will there be upon you today. Allah will forgive you; and He is the most merciful of the merciful"}
+    ]},
+    {"title": "The Third Shirt", "scene": "shirt", "cards": [
+      {"line": 0, "v": 93, "ar": [0, 8], "en": "Take this, my shirt, and cast it over the face of my father; he will become seeing"},
+      {"line": 4, "v": 96, "ar": [9, 19], "en": "Did I not tell you that I know from Allah that which you do not know"},
+      {"line": 7, "v": 100, "ar": [8, 17], "en": "O my father, this is the explanation of my vision of before. My Lord has made it reality"}
+    ]},
+    {"title": "The Lesson", "scene": "lesson", "cards": [
+      {"line": 2, "v": 111, "ar": [0, 6], "en": "There was certainly in their stories a lesson for those of understanding"},
+      {"line": 4, "end": true}
+    ]}
+  ]
+}

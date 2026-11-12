@@ -1,0 +1,109 @@
+<template>
+  <style>
+    #c01 { position: absolute; inset: 0; overflow: hidden; background: #000; }
+    .c01-st { position: absolute; border-radius: 50%; background: #eef4ff; box-shadow: 0 0 6px rgba(220,235,255,0.9); }
+    .c01-mote { position: absolute; border-radius: 50%; }
+    .c01-full { position: absolute; inset: 0; }
+    .c01-svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+
+    .c01-cam { position: absolute; inset: 0; transform-origin: 50% 55%; }
+    .c01-scrim { position: absolute; left: 0; right: 0; bottom: 0; height: 300px;
+      background: linear-gradient(0deg, rgba(0,0,0,0.75), rgba(0,0,0,0)); }
+    .c01-cap { position: absolute; left: 210px; right: 210px; bottom: 64px; text-align: center;
+      font-family: "Cormorant Garamond"; font-weight: 600; font-size: 54px; line-height: 1.12; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c01-cardwrap { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+      background: radial-gradient(ellipse at 50% 50%, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.45) 50%, rgba(0,0,0,0) 80%); }
+    .c01-card { max-width: 1400px; display: flex; flex-direction: column; align-items: center; gap: 26px; text-align: center; }
+    .c01-ar { font-family: "Amiri Quran"; font-size: 70px; line-height: 1.8; color: #fff6e6; text-shadow: 0 0 30px rgba(215,236,255,0.4); }
+    .c01-en { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 50px; line-height: 1.18; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c01-ctext { font-family: "Cormorant Garamond"; font-weight: 600; font-size: 76px; line-height: 1.1; color: #f5ead6;
+      text-shadow: 0 3px 22px rgba(0,0,0,0.9); }
+    .c01-hi { color: var(--accent); }
+    .c01-ref { font-family: Inter, sans-serif; font-weight: 700; font-size: 28px; letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--accent); border: 2px solid var(--accent); border-radius: 999px; padding: 10px 24px; background: rgba(0,0,0,0.4); }
+    .c01-title { font-family: "Cormorant Garamond"; font-weight: 600; font-size: 118px; line-height: 1.02; color: #f5ead6;
+      text-shadow: 0 4px 30px rgba(0,0,0,0.8); }
+    .c01-tsub { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 52px; color: var(--accent); }
+    .c01-mark { font-family: Inter, sans-serif; font-weight: 700; font-size: 64px; letter-spacing: 0.32em; color: #f5ead6; }
+    .c01-mark span { color: var(--accent); }
+    .c01-endt { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 52px; color: #f5ead6; }
+    .c01-btn { font-family: Inter, sans-serif; font-weight: 700; font-size: 34px; letter-spacing: 0.08em; color: #120b08;
+      background: var(--accent); border-radius: 999px; padding: 18px 48px; }
+    .c01-label { position: absolute; left: 90px; top: 70px; }
+    .c01-label b { display: block; font-family: Inter, sans-serif; font-weight: 700; font-size: 28px; letter-spacing: 0.3em; color: var(--accent); }
+    .c01-label i { display: block; font-family: "Cormorant Garamond"; font-style: normal; font-weight: 600; font-size: 60px; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c01-brand { position: absolute; right: 80px; top: 70px; font-family: Inter, sans-serif; font-weight: 700; font-size: 28px;
+      letter-spacing: 0.32em; color: rgba(245,234,214,0.7); }
+    .c01-brand span { color: var(--accent); }
+    .c01-fade { position: absolute; inset: 0; background: #000; }
+
+    .c01-dsky { background: radial-gradient(ellipse at 50% 45%, #1d2a52 0%, #0b1026 60%, #05070f 100%); }
+    .c01-ystar { position: absolute; width: 34px; height: 34px; margin: -17px; border-radius: 50%;
+      background: radial-gradient(circle, #ffffff 0%, #dfe8ff 35%, rgba(200,215,255,0) 70%); box-shadow: 0 0 30px 10px rgba(200,215,255,0.45); }
+    .c01-dsun { position: absolute; left: 330px; top: 640px; width: 190px; height: 190px; border-radius: 50%;
+      background: radial-gradient(circle, #fff2c8 0%, #ffc860 45%, rgba(255,170,60,0) 72%); }
+    .c01-dmoon { position: absolute; left: 1430px; top: 660px; width: 130px; height: 130px; border-radius: 50%;
+      background: radial-gradient(circle at 40% 38%, #fffdf3, #e6dfc8 65%, #cfc7ae); box-shadow: 0 0 60px 20px rgba(230,236,255,0.3); }
+    #c01-clouds { opacity: 0; }
+    #c01-glow { position:absolute; left:220px; top:860px; width:160px; height:140px; border-radius:50%;
+      background: radial-gradient(circle, rgba(255,190,90,0.6), rgba(255,190,90,0) 70%); }
+
+  </style>
+  <div id="c01" data-composition-id="c01" data-width="1920" data-height="1080">
+    <div id="c01-scene" class="clip" data-start="0" data-duration="46.39" style="position:absolute;inset:0" data-layout-allow-overflow>
+      <div id="c01-cam" class="c01-cam"><div class="c01-full c01-dsky"></div>
+        <div id="c01-dset" class="c01-full"><div class="c01-dsun"></div><div class="c01-dmoon"></div><div id="c01-ds0" class="c01-ystar" style="left:351px;top:630px"></div><div id="c01-ds1" class="c01-ystar" style="left:420px;top:535px"></div><div id="c01-ds2" class="c01-ystar" style="left:522px;top:454px"></div><div id="c01-ds3" class="c01-ystar" style="left:652px;top:392px"></div><div id="c01-ds4" class="c01-ystar" style="left:801px;top:353px"></div><div id="c01-ds5" class="c01-ystar" style="left:960px;top:340px"></div><div id="c01-ds6" class="c01-ystar" style="left:1119px;top:353px"></div><div id="c01-ds7" class="c01-ystar" style="left:1268px;top:392px"></div><div id="c01-ds8" class="c01-ystar" style="left:1398px;top:454px"></div><div id="c01-ds9" class="c01-ystar" style="left:1500px;top:535px"></div><div id="c01-ds10" class="c01-ystar" style="left:1569px;top:630px"></div></div>
+      <svg class="c01-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none"><path fill="#16141f" d="M -100 878 Q 60 864 220 921 Q 380 902 540 916 Q 700 895 860 885 Q 1020 869 1180 900 Q 1340 881 1500 897 Q 1660 880 1820 909 Q 1980 892 2140 917 V 1100 H -100 Z"/><path fill="#0e0d15" d="M -100 993 Q 60 978 220 992 Q 380 973 540 948 Q 700 933 860 949 Q 1020 938 1180 987 Q 1340 971 1500 982 Q 1660 966 1820 978 Q 1980 962 2140 960 V 1100 H -100 Z"/><path d="M 160 960 L 300 860 L 440 960 Z" fill="#0a0910"/><rect x="282" y="915" width="36" height="45" fill="#f2b04a" opacity="0.8"/></svg>
+      <div id="c01-glow"></div>
+      <svg id="c01-clouds" class="c01-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none"><ellipse cx="200" cy="300" rx="420" ry="134" fill="#04050b" opacity="0.85"/><ellipse cx="700" cy="220" rx="360" ry="115" fill="#04050b" opacity="0.85"/><ellipse cx="1200" cy="330" rx="460" ry="147" fill="#04050b" opacity="0.85"/><ellipse cx="1700" cy="250" rx="400" ry="128" fill="#04050b" opacity="0.85"/><ellipse cx="450" cy="520" rx="380" ry="122" fill="#04050b" opacity="0.85"/><ellipse cx="1450" cy="560" rx="420" ry="134" fill="#04050b" opacity="0.85"/></svg>
+      </div>
+    </div>
+    <div id="c01-scr" class="c01-scrim clip" data-start="0" data-duration="46.39"></div>
+    <div id="c01-lab" class="c01-label clip" data-start="0.3" data-duration="4.6"><b>CHAPTER 1</b><i>The Dream of Eleven Stars</i></div>
+    <div id="c01-cp0" class="c01-cap clip" data-start="0.22" data-duration="5.17">A boy comes to his father, the Prophet Yaqub, alayhis salaam.</div>
+    <div id="c01-cp1" class="c01-cap clip" data-start="14.80" data-duration="2.36">This was no ordinary dream.</div>
+    <div id="c01-cp2" class="c01-cap clip" data-start="17.16" data-duration="2.03">And he knew his other sons.</div>
+    <div id="c01-cp3" class="c01-cap clip" data-start="40.18" data-duration="1.93">A warning of danger.</div>
+    <div id="c01-cp4" class="c01-cap clip" data-start="42.11" data-duration="3.68">And the danger was already closer than anyone knew.</div>
+    <div id="c01-k0w" class="c01-cardwrap clip" data-start="5.44" data-duration="8.56"><div id="c01-k0" class="c01-card"><div class="c01-ar" dir="rtl" lang="ar">يَـٰٓأَبَتِ إِنِّي رَأَيۡتُ أَحَدَ عَشَرَ كَوۡكَبࣰا وَٱلشَّمۡسَ وَٱلۡقَمَرَ رَأَيۡتُهُمۡ لِي سَٰجِدِينَ</div><div class="c01-en">“…O my father, indeed I have seen [in a dream] eleven stars and the sun and the moon; I saw them prostrating to me”</div><div class="c01-ref">Yusuf 12:4</div></div></div>
+    <div id="c01-k1w" class="c01-cardwrap clip" data-start="19.24" data-duration="10.73"><div id="c01-k1" class="c01-card"><div class="c01-ar" dir="rtl" lang="ar">قَالَ يَٰبُنَيَّ لَا تَقۡصُصۡ رُءۡيَاكَ عَلَىٰٓ إِخۡوَتِكَ فَيَكِيدُواْ لَكَ كَيۡدًاۖ</div><div class="c01-en">“…O my son, do not relate your vision to your brothers or they will contrive against you a plan…”</div><div class="c01-ref">Yusuf 12:5</div></div></div>
+    <div id="c01-k2w" class="c01-cardwrap clip" data-start="30.07" data-duration="9.55"><div id="c01-k2" class="c01-card"><div class="c01-ar" dir="rtl" lang="ar">وَكَذَٰلِكَ يَجۡتَبِيكَ رَبُّكَ</div><div class="c01-en">“And thus will your Lord choose you…”</div><div class="c01-ref">Yusuf 12:6</div></div></div>
+    <div id="c01-fadeIn" class="c01-fade clip" data-start="0" data-duration="0.55" style="opacity:1"></div>
+    <div id="c01-fadeOut" class="c01-fade clip" data-start="45.89" data-duration="0.50" style="opacity:0"></div>
+    <div id="c01-br" class="c01-brand clip" data-start="0" data-duration="46.39">HAQ <span>·</span> STORIES</div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#c01-ds0", {opacity: 0.65}, {opacity: 1, duration: 0.60, ease: "sine.inOut", yoyo: true, repeat: 78, immediateRender: false}, 0.00);
+    tl.fromTo("#c01-ds1", {opacity: 0.65}, {opacity: 1, duration: 0.75, ease: "sine.inOut", yoyo: true, repeat: 62, immediateRender: false}, 0.07);
+    tl.fromTo("#c01-ds2", {opacity: 0.65}, {opacity: 1, duration: 0.90, ease: "sine.inOut", yoyo: true, repeat: 52, immediateRender: false}, 0.14);
+    tl.fromTo("#c01-ds3", {opacity: 0.65}, {opacity: 1, duration: 1.05, ease: "sine.inOut", yoyo: true, repeat: 44, immediateRender: false}, 0.21);
+    tl.fromTo("#c01-ds4", {opacity: 0.65}, {opacity: 1, duration: 0.60, ease: "sine.inOut", yoyo: true, repeat: 77, immediateRender: false}, 0.28);
+    tl.fromTo("#c01-ds5", {opacity: 0.65}, {opacity: 1, duration: 0.75, ease: "sine.inOut", yoyo: true, repeat: 62, immediateRender: false}, 0.35);
+    tl.fromTo("#c01-ds6", {opacity: 0.65}, {opacity: 1, duration: 0.90, ease: "sine.inOut", yoyo: true, repeat: 52, immediateRender: false}, 0.42);
+    tl.fromTo("#c01-ds7", {opacity: 0.65}, {opacity: 1, duration: 1.05, ease: "sine.inOut", yoyo: true, repeat: 44, immediateRender: false}, 0.49);
+    tl.fromTo("#c01-ds8", {opacity: 0.65}, {opacity: 1, duration: 0.60, ease: "sine.inOut", yoyo: true, repeat: 77, immediateRender: false}, 0.56);
+    tl.fromTo("#c01-ds9", {opacity: 0.65}, {opacity: 1, duration: 0.75, ease: "sine.inOut", yoyo: true, repeat: 62, immediateRender: false}, 0.63);
+    tl.fromTo("#c01-ds10", {opacity: 0.65}, {opacity: 1, duration: 0.90, ease: "sine.inOut", yoyo: true, repeat: 51, immediateRender: false}, 0.70);
+    tl.fromTo("#c01-dset", {y: 0, scale: 1}, {y: 110, scale: 0.9, duration: 1.80, ease: "power2.inOut", immediateRender: false}, 11.00);
+    tl.fromTo("#c01-glow", {opacity: 0.6}, {opacity: 1, duration: 0.50, ease: "sine.inOut", yoyo: true, repeat: 93, immediateRender: false}, 0.00);
+    tl.fromTo("#c01-clouds", {opacity: 0, x: 400}, {opacity: 0.85, x: 0, duration: 3.00, ease: "sine.inOut", immediateRender: false}, 19.39);
+    tl.fromTo("#c01-clouds", {opacity: 0.85}, {opacity: 0.3, duration: 2.00, ease: "sine.inOut", immediateRender: false}, 38.69);
+    tl.fromTo("#c01-clouds", {opacity: 0.3, x: 0}, {opacity: 0.95, x: -120, duration: 3.00, ease: "sine.inOut", immediateRender: false}, 42.19);
+    tl.fromTo("#c01-k0w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 5.44);
+    tl.fromTo("#c01-k0", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 5.44);
+    tl.fromTo("#c01-k1w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 19.24);
+    tl.fromTo("#c01-k1", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 19.24);
+    tl.fromTo("#c01-k2w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 30.07);
+    tl.fromTo("#c01-k2", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 30.07);
+    tl.fromTo("#c01-lab", {opacity: 0, x: -20}, {opacity: 1, x: 0, duration: 0.60, ease: "power2.out", immediateRender: false}, 0.30);
+    tl.fromTo("#c01-lab", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 4.40);
+    tl.fromTo("#c01-scene", {scale: 1.0, x: 0}, {scale: 1.06, x: -30, duration: 46.39, ease: "none", immediateRender: false}, 0.00);
+    tl.fromTo("#c01-fadeIn", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 0.00);
+    tl.fromTo("#c01-fadeOut", {opacity: 0}, {opacity: 1, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 45.89);
+    window.__timelines["c01"] = tl;
+  </script>
+</template>

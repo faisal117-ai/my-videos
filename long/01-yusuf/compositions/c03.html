@@ -1,0 +1,105 @@
+<template>
+  <style>
+    #c03 { position: absolute; inset: 0; overflow: hidden; background: #000; }
+    .c03-st { position: absolute; border-radius: 50%; background: #eef4ff; box-shadow: 0 0 6px rgba(220,235,255,0.9); }
+    .c03-mote { position: absolute; border-radius: 50%; }
+    .c03-full { position: absolute; inset: 0; }
+    .c03-svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+
+    .c03-cam { position: absolute; inset: 0; transform-origin: 50% 55%; }
+    .c03-scrim { position: absolute; left: 0; right: 0; bottom: 0; height: 300px;
+      background: linear-gradient(0deg, rgba(0,0,0,0.75), rgba(0,0,0,0)); }
+    .c03-cap { position: absolute; left: 210px; right: 210px; bottom: 64px; text-align: center;
+      font-family: "Cormorant Garamond"; font-weight: 600; font-size: 54px; line-height: 1.12; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c03-cardwrap { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+      background: radial-gradient(ellipse at 50% 50%, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.45) 50%, rgba(0,0,0,0) 80%); }
+    .c03-card { max-width: 1400px; display: flex; flex-direction: column; align-items: center; gap: 26px; text-align: center; }
+    .c03-ar { font-family: "Amiri Quran"; font-size: 70px; line-height: 1.8; color: #fff6e6; text-shadow: 0 0 30px rgba(215,236,255,0.4); }
+    .c03-en { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 50px; line-height: 1.18; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c03-ctext { font-family: "Cormorant Garamond"; font-weight: 600; font-size: 76px; line-height: 1.1; color: #f5ead6;
+      text-shadow: 0 3px 22px rgba(0,0,0,0.9); }
+    .c03-hi { color: var(--accent); }
+    .c03-ref { font-family: Inter, sans-serif; font-weight: 700; font-size: 28px; letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--accent); border: 2px solid var(--accent); border-radius: 999px; padding: 10px 24px; background: rgba(0,0,0,0.4); }
+    .c03-title { font-family: "Cormorant Garamond"; font-weight: 600; font-size: 118px; line-height: 1.02; color: #f5ead6;
+      text-shadow: 0 4px 30px rgba(0,0,0,0.8); }
+    .c03-tsub { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 52px; color: var(--accent); }
+    .c03-mark { font-family: Inter, sans-serif; font-weight: 700; font-size: 64px; letter-spacing: 0.32em; color: #f5ead6; }
+    .c03-mark span { color: var(--accent); }
+    .c03-endt { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 52px; color: #f5ead6; }
+    .c03-btn { font-family: Inter, sans-serif; font-weight: 700; font-size: 34px; letter-spacing: 0.08em; color: #120b08;
+      background: var(--accent); border-radius: 999px; padding: 18px 48px; }
+    .c03-label { position: absolute; left: 90px; top: 70px; }
+    .c03-label b { display: block; font-family: Inter, sans-serif; font-weight: 700; font-size: 28px; letter-spacing: 0.3em; color: var(--accent); }
+    .c03-label i { display: block; font-family: "Cormorant Garamond"; font-style: normal; font-weight: 600; font-size: 60px; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c03-brand { position: absolute; right: 80px; top: 70px; font-family: Inter, sans-serif; font-weight: 700; font-size: 28px;
+      letter-spacing: 0.32em; color: rgba(245,234,214,0.7); }
+    .c03-brand span { color: var(--accent); }
+    .c03-fade { position: absolute; inset: 0; background: #000; }
+
+    #c03-day { background: linear-gradient(180deg, #7aa0c8 0%, #e8c890 60%, #e0b070 100%); }
+    #c03-b, #c03-c { opacity: 0; }
+    #c03-cloth { background: radial-gradient(ellipse at 50% 55%, #8a2a22 0%, #5a1a16 60%, #2a0c0a 100%); }
+    .c03-coin { position:absolute; top: 380px; width: 70px; height: 70px; border-radius: 50%;
+      background: radial-gradient(circle at 40% 35%, #fff2c0, #d8a840 55%, #8a6420); box-shadow: 0 6px 18px rgba(0,0,0,0.5); }
+    #c03-eg { background: linear-gradient(180deg, #3a2a4a 0%, #c86a40 55%, #f0b060 100%); }
+    #c03-bucket { transform-origin: 50% 0; }
+
+  </style>
+  <div id="c03" data-composition-id="c03" data-width="1920" data-height="1080">
+    <div id="c03-scene" class="clip" data-start="0" data-duration="48.99" style="position:absolute;inset:0" data-layout-allow-overflow>
+      <div id="c03-cam" class="c03-cam">
+      <div id="c03-a" class="c03-full"><div id="c03-day" class="c03-full"></div>
+        <svg class="c03-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none"><defs><linearGradient id="c03-wst" x1="0" x2="1"><stop offset="0" stop-color="#2a2620"/><stop offset="0.5" stop-color="#5a5244"/><stop offset="1" stop-color="#211d18"/></linearGradient></defs><path fill="#d0a060" d="M -100 715 Q 60 700 220 716 Q 380 699 540 699 Q 700 683 860 688 Q 1020 672 1180 675 Q 1340 663 1500 708 Q 1660 692 1820 699 Q 1980 685 2140 713 V 1100 H -100 Z"/><path fill="#b88848" d="M -100 771 Q 60 755 220 763 Q 380 750 540 788 Q 700 770 860 759 Q 1020 746 1180 782 Q 1340 766 1500 773 Q 1660 757 1820 758 Q 1980 745 2140 780 V 1100 H -100 Z"/><g id="c03-car" fill="#3a2414" transform="translate(-1200,800)"><g class="c03-camel" transform="translate(0,0) scale(1.25)"><path d="M 8 -52 Q 14 -70 30 -64 Q 40 -86 56 -66 Q 66 -60 72 -58 L 82 -84 Q 86 -96 98 -94 L 104 -88 L 94 -84 L 86 -54 Q 82 -44 74 -42 L 72 0 L 66 0 L 64 -38 L 58 -38 L 58 0 L 52 0 L 50 -40 L 26 -40 L 24 0 L 18 0 L 18 -40 L 12 -40 L 12 0 L 6 0 L 6 -44 Z"/></g><g transform="translate(-40,0)"><g transform="translate(0,0) skewX(0)"><circle cx="0" cy="-53.1" r="7.6"/><path d="M -6.7 -45.1 Q 0 -48.9 6.7 -45.1 L 11.8 0 L -11.8 0 Z"/></g></g><g class="c03-camel" transform="translate(190,0) scale(1.25)"><path d="M 8 -52 Q 14 -70 30 -64 Q 40 -86 56 -66 Q 66 -60 72 -58 L 82 -84 Q 86 -96 98 -94 L 104 -88 L 94 -84 L 86 -54 Q 82 -44 74 -42 L 72 0 L 66 0 L 64 -38 L 58 -38 L 58 0 L 52 0 L 50 -40 L 26 -40 L 24 0 L 18 0 L 18 -40 L 12 -40 L 12 0 L 6 0 L 6 -44 Z"/></g><g transform="translate(150,0)"><g transform="translate(0,0) skewX(0)"><circle cx="0" cy="-53.1" r="7.6"/><path d="M -6.7 -45.1 Q 0 -48.9 6.7 -45.1 L 11.8 0 L -11.8 0 Z"/></g></g><g class="c03-camel" transform="translate(380,0) scale(1.25)"><path d="M 8 -52 Q 14 -70 30 -64 Q 40 -86 56 -66 Q 66 -60 72 -58 L 82 -84 Q 86 -96 98 -94 L 104 -88 L 94 -84 L 86 -54 Q 82 -44 74 -42 L 72 0 L 66 0 L 64 -38 L 58 -38 L 58 0 L 52 0 L 50 -40 L 26 -40 L 24 0 L 18 0 L 18 -40 L 12 -40 L 12 0 L 6 0 L 6 -44 Z"/></g><g transform="translate(340,0)"><g transform="translate(0,0) skewX(0)"><circle cx="0" cy="-53.1" r="7.6"/><path d="M -6.7 -45.1 Q 0 -48.9 6.7 -45.1 L 11.8 0 L -11.8 0 Z"/></g></g><g class="c03-camel" transform="translate(570,0) scale(1.25)"><path d="M 8 -52 Q 14 -70 30 -64 Q 40 -86 56 -66 Q 66 -60 72 -58 L 82 -84 Q 86 -96 98 -94 L 104 -88 L 94 -84 L 86 -54 Q 82 -44 74 -42 L 72 0 L 66 0 L 64 -38 L 58 -38 L 58 0 L 52 0 L 50 -40 L 26 -40 L 24 0 L 18 0 L 18 -40 L 12 -40 L 12 0 L 6 0 L 6 -44 Z"/></g><g transform="translate(530,0)"><g transform="translate(0,0) skewX(0)"><circle cx="0" cy="-53.1" r="7.6"/><path d="M -6.7 -45.1 Q 0 -48.9 6.7 -45.1 L 11.8 0 L -11.8 0 Z"/></g></g><g class="c03-camel" transform="translate(760,0) scale(1.25)"><path d="M 8 -52 Q 14 -70 30 -64 Q 40 -86 56 -66 Q 66 -60 72 -58 L 82 -84 Q 86 -96 98 -94 L 104 -88 L 94 -84 L 86 -54 Q 82 -44 74 -42 L 72 0 L 66 0 L 64 -38 L 58 -38 L 58 0 L 52 0 L 50 -40 L 26 -40 L 24 0 L 18 0 L 18 -40 L 12 -40 L 12 0 L 6 0 L 6 -44 Z"/></g><g transform="translate(720,0)"><g transform="translate(0,0) skewX(0)"><circle cx="0" cy="-53.1" r="7.6"/><path d="M -6.7 -45.1 Q 0 -48.9 6.7 -45.1 L 11.8 0 L -11.8 0 Z"/></g></g><g class="c03-camel" transform="translate(950,0) scale(1.25)"><path d="M 8 -52 Q 14 -70 30 -64 Q 40 -86 56 -66 Q 66 -60 72 -58 L 82 -84 Q 86 -96 98 -94 L 104 -88 L 94 -84 L 86 -54 Q 82 -44 74 -42 L 72 0 L 66 0 L 64 -38 L 58 -38 L 58 0 L 52 0 L 50 -40 L 26 -40 L 24 0 L 18 0 L 18 -40 L 12 -40 L 12 0 L 6 0 L 6 -44 Z"/></g><g transform="translate(910,0)"><g transform="translate(0,0) skewX(0)"><circle cx="0" cy="-53.1" r="7.6"/><path d="M -6.7 -45.1 Q 0 -48.9 6.7 -45.1 L 11.8 0 L -11.8 0 Z"/></g></g></g><g transform="translate(1560,900) scale(0.8)"><rect x="-180" y="-100" width="360" height="170" rx="10" fill="url(#c03-wst)"/><path d="M -180 -60 H 180 M -180 -20 H 180 M -180 20 H 180" stroke="rgba(0,0,0,0.35)" stroke-width="4"/><ellipse cx="0" cy="-100" rx="180" ry="48" fill="#6a6152"/><ellipse cx="0" cy="-98" rx="150" ry="36" fill="#030202"/><rect x="-170" y="-260" width="14" height="170" fill="#3a2e22"/><rect x="156" y="-260" width="14" height="170" fill="#3a2e22"/><rect x="-180" y="-270" width="360" height="16" fill="#4a3a2a"/></g><g id="c03-bucket"><path d="M 1560 690 V 760" stroke="#3a2e22" stroke-width="4"/><path d="M 1536 760 H 1584 L 1576 800 H 1544 Z" fill="#5a4026"/></g></svg>
+      </div>
+      <div id="c03-b" class="c03-full"><div id="c03-cloth" class="c03-full"></div><div id="c03-coin0" class="c03-coin" style="left:820px"></div><div id="c03-coin1" class="c03-coin" style="left:890px"></div><div id="c03-coin2" class="c03-coin" style="left:960px"></div><div id="c03-coin3" class="c03-coin" style="left:1030px"></div><div id="c03-coin4" class="c03-coin" style="left:1100px"></div></div>
+      <div id="c03-c" class="c03-full"><div id="c03-eg" class="c03-full"></div>
+        <svg class="c03-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none"><rect x="0" y="720" width="1920" height="60" fill="#2a4a5a" opacity="0.8"/><rect x="0" y="780" width="1920" height="300" fill="#3a2414"/><rect x="700" y="400" width="520" height="30" fill="#4a3624"/><rect x="680" y="380" width="560" height="26" fill="#5a4430"/><rect x="760" y="420" width="40" height="300" fill="#6a5034"/><rect x="850" y="420" width="40" height="300" fill="#6a5034"/><rect x="940" y="420" width="40" height="300" fill="#6a5034"/><rect x="1030" y="420" width="40" height="300" fill="#6a5034"/><rect x="1120" y="420" width="40" height="300" fill="#6a5034"/><rect x="720" y="430" width="480" height="290" fill="#2a1c12" opacity="0.6"/><g transform="translate(420,720)"><path d="M -6 0 Q 0 -150 10 -260 L 18 -260 Q 10 -150 8 0 Z" fill="#2a1e14"/><path d="M 14 -260 Q -60 -300 -120 -250 M 14 -260 Q 90 -310 140 -240 M 14 -260 Q -20 -330 -70 -330 M 14 -260 Q 60 -340 110 -320" stroke="#24301a" stroke-width="14" fill="none"/></g><g transform="translate(560,720)"><path d="M -6 0 Q 0 -150 10 -260 L 18 -260 Q 10 -150 8 0 Z" fill="#2a1e14"/><path d="M 14 -260 Q -60 -300 -120 -250 M 14 -260 Q 90 -310 140 -240 M 14 -260 Q -20 -330 -70 -330 M 14 -260 Q 60 -340 110 -320" stroke="#24301a" stroke-width="14" fill="none"/></g><g transform="translate(1500,720)"><path d="M -6 0 Q 0 -150 10 -260 L 18 -260 Q 10 -150 8 0 Z" fill="#2a1e14"/><path d="M 14 -260 Q -60 -300 -120 -250 M 14 -260 Q 90 -310 140 -240 M 14 -260 Q -20 -330 -70 -330 M 14 -260 Q 60 -340 110 -320" stroke="#24301a" stroke-width="14" fill="none"/></g><g transform="translate(1640,720)"><path d="M -6 0 Q 0 -150 10 -260 L 18 -260 Q 10 -150 8 0 Z" fill="#2a1e14"/><path d="M 14 -260 Q -60 -300 -120 -250 M 14 -260 Q 90 -310 140 -240 M 14 -260 Q -20 -330 -70 -330 M 14 -260 Q 60 -340 110 -320" stroke="#24301a" stroke-width="14" fill="none"/></g></svg>
+      </div>
+      </div>
+    </div>
+    <div id="c03-scr" class="c03-scrim clip" data-start="0" data-duration="48.99"></div>
+    <div id="c03-lab" class="c03-label clip" data-start="0.3" data-duration="4.6"><b>CHAPTER 3</b><i>Sold for a Few Coins</i></div>
+    <div id="c03-cp0" class="c03-cap clip" data-start="0.22" data-duration="2.48">Out in the desert, a caravan passed.</div>
+    <div id="c03-cp1" class="c03-cap clip" data-start="2.70" data-duration="5.38">They sent a man to draw water, and he let down his bucket... &quot;Good news!</div>
+    <div id="c03-cp2" class="c03-cap clip" data-start="8.08" data-duration="1.77">Here is a boy!&quot;</div>
+    <div id="c03-cp3" class="c03-cap clip" data-start="22.18" data-duration="2.26">&quot;Make his stay comfortable.</div>
+    <div id="c03-cp4" class="c03-cap clip" data-start="24.44" data-duration="3.12">Perhaps we will adopt him as a son.&quot;</div>
+    <div id="c03-cp5" class="c03-cap clip" data-start="27.56" data-duration="3.05">A boy thrown away by his own brothers...</div>
+    <div id="c03-cp6" class="c03-cap clip" data-start="30.62" data-duration="3.14">was now living in one of the great houses of Egypt.</div>
+    <div id="c03-cp7" class="c03-cap clip" data-start="44.47" data-duration="3.93">But that same house was about to bring his hardest test.</div>
+    <div id="c03-k0w" class="c03-cardwrap clip" data-start="9.90" data-duration="10.08"><div id="c03-k0" class="c03-card"><div class="c03-ar" dir="rtl" lang="ar">وَشَرَوۡهُ بِثَمَنِۭ بَخۡسࣲ دَرَٰهِمَ مَعۡدُودَةࣲ</div><div class="c03-en">“…they sold him for a reduced price - a few dirhams…”</div><div class="c03-ref">Yusuf 12:20</div></div></div>
+    <div id="c03-k1w" class="c03-cardwrap clip" data-start="33.81" data-duration="6.52"><div id="c03-k1" class="c03-card"><div class="c03-ar" dir="rtl" lang="ar">وَٱللَّهُ غَالِبٌ عَلَىٰٓ أَمۡرِهِۦ وَلَٰكِنَّ أَكۡثَرَ ٱلنَّاسِ لَا يَعۡلَمُونَ</div><div class="c03-en">“…And Allah is predominant over His affair, but most of the people do not know”</div><div class="c03-ref">Yusuf 12:21</div></div></div>
+    <div id="c03-fadeIn" class="c03-fade clip" data-start="0" data-duration="0.55" style="opacity:1"></div>
+    <div id="c03-fadeOut" class="c03-fade clip" data-start="48.49" data-duration="0.50" style="opacity:0"></div>
+    <div id="c03-br" class="c03-brand clip" data-start="0" data-duration="48.99">HAQ <span>·</span> STORIES</div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#c03-car", {x: -1200}, {x: 300, duration: 11.05, ease: "none", immediateRender: false}, 0.00);
+    tl.fromTo(".c03-camel", {y: 0}, {y: -4, duration: 0.45, ease: "sine.inOut", yoyo: true, repeat: 109, immediateRender: false}, 0.00);
+    tl.fromTo("#c03-bucket", {y: 90}, {y: 0, duration: 4.00, ease: "power1.inOut", immediateRender: false}, 2.80);
+    tl.fromTo("#c03-a", {opacity: 1}, {opacity: 0, duration: 0.60, ease: "sine.inOut", immediateRender: false}, 9.75);
+    tl.fromTo("#c03-b", {opacity: 0}, {opacity: 1, duration: 0.60, ease: "sine.inOut", immediateRender: false}, 9.75);
+    tl.fromTo("#c03-coin0", {y: -500, rotation: 0}, {y: 120, rotation: 90, duration: 0.70, ease: "bounce.out", immediateRender: false}, 10.35);
+    tl.fromTo("#c03-coin1", {y: -500, rotation: 0}, {y: 160, rotation: 130, duration: 0.70, ease: "bounce.out", immediateRender: false}, 10.70);
+    tl.fromTo("#c03-coin2", {y: -500, rotation: 0}, {y: 120, rotation: 170, duration: 0.70, ease: "bounce.out", immediateRender: false}, 11.05);
+    tl.fromTo("#c03-coin3", {y: -500, rotation: 0}, {y: 160, rotation: 210, duration: 0.70, ease: "bounce.out", immediateRender: false}, 11.40);
+    tl.fromTo("#c03-coin4", {y: -500, rotation: 0}, {y: 120, rotation: 250, duration: 0.70, ease: "bounce.out", immediateRender: false}, 11.75);
+    tl.fromTo("#c03-b", {opacity: 1}, {opacity: 0, duration: 0.60, ease: "sine.inOut", immediateRender: false}, 18.87);
+    tl.fromTo("#c03-c", {opacity: 0}, {opacity: 1, duration: 0.60, ease: "sine.inOut", immediateRender: false}, 18.87);
+    tl.fromTo("#c03-k0w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 9.90);
+    tl.fromTo("#c03-k0", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 9.90);
+    tl.fromTo("#c03-k1w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 33.81);
+    tl.fromTo("#c03-k1", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 33.81);
+    tl.fromTo("#c03-lab", {opacity: 0, x: -20}, {opacity: 1, x: 0, duration: 0.60, ease: "power2.out", immediateRender: false}, 0.30);
+    tl.fromTo("#c03-lab", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 4.40);
+    tl.fromTo("#c03-scene", {scale: 1.0, x: 0}, {scale: 1.06, x: -30, duration: 48.99, ease: "none", immediateRender: false}, 0.00);
+    tl.fromTo("#c03-fadeIn", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 0.00);
+    tl.fromTo("#c03-fadeOut", {opacity: 0}, {opacity: 1, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 48.49);
+    window.__timelines["c03"] = tl;
+  </script>
+</template>
