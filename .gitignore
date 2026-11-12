@@ -5,3 +5,4 @@ __pycache__/
 render.log
 work-*/
 *.mix.mp4
+.*.hf-transaction-*/
