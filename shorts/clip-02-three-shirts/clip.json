@@ -1,0 +1,85 @@
+{
+ "source": "../../long/01-yusuf",
+ "segments": [
+  {
+   "ch": 2,
+   "from": 10,
+   "to": 10,
+   "focus": 820
+  },
+  {
+   "ch": 4,
+   "from": 3,
+   "to": 3,
+   "focus": 960
+  },
+  {
+   "ch": 4,
+   "from": 8,
+   "to": 9,
+   "focus": 960
+  },
+  {
+   "ch": 12,
+   "from": 0,
+   "to": 0,
+   "focus": 1100
+  },
+  {
+   "ch": 12,
+   "from": 3,
+   "to": 3,
+   "focus": 800
+  },
+  {
+   "ch": 12,
+   "from": 1,
+   "to": 1,
+   "focus": 800
+  }
+ ],
+ "beats": [
+  {
+   "hook": true,
+   "text": "Three *shirts* told his whole story…",
+   "sub": "The first: false blood",
+   "ur": "تین قمیص… اور پوری کہانی"
+  },
+  {
+   "text": "The second was *torn* as he ran for the door.",
+   "ref": "Yusuf 12:25",
+   "ur": "اور اس نے پیچھے سے یوسفؑ کا قمیص (کھینچ کر) پھاڑ دیا"
+  },
+  {
+   "text": "They looked… torn *from the back*.",
+   "ref": "Yusuf 12:28",
+   "ur": "جب شوہر نے دیکھا کہ یوسفؑ کا قمیص پیچھے سے پھٹا ہے"
+  },
+  {
+   "text": "The first *lied* about him. This one told the *truth*.",
+   "ur": "پہلے نے ان کے بارے میں جھوٹ بولا تھا۔ اس نے سچ بتا دیا"
+  },
+  {
+   "v": 93,
+   "ar": [
+    0,
+    8
+   ],
+   "en": "Take this, my shirt, and cast it over the face of my father; he will become seeing",
+   "ur": "جاؤ، میرا یہ قمیص لے جاؤ اور میرے والد کے منہ پر ڈال دو، اُن کی بینائی پلٹ آئے گی"
+  },
+  {
+   "text": "…and he could *see* again.",
+   "ref": "Yusuf 12:96",
+   "ur": "اور یکا یک اس کی بینائی عود کر آئی"
+  },
+  {
+   "text": "A lie. The truth. And *healing*.",
+   "ur": "پہلا جھوٹ، دوسرا سچ، اور تیسرا شفا"
+  }
+ ],
+ "end": {
+  "text": "Watch the *full story* on the channel",
+  "ur": "مکمل کہانی چینل پر دیکھیں"
+ }
+}

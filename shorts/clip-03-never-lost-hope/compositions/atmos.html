@@ -1,0 +1,116 @@
+<template>
+  <style>
+    #atmos { position: absolute; inset: 0; overflow: hidden; background: #000; }
+    .s0-st { position: absolute; border-radius: 50%; background: #eef4ff; box-shadow: 0 0 6px rgba(220,235,255,0.9); }
+    .s0-mote { position: absolute; border-radius: 50%; }
+    .s0-full { position: absolute; inset: 0; }
+    .s0-svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+
+    #s0-room { background: linear-gradient(180deg, #120c0a 0%, #1e1410 100%); }
+    #s0-door { position:absolute; left: 1180px; top: 200px; width: 380px; height: 640px; overflow: hidden;
+      background: linear-gradient(180deg, #05070f 0%, #101a30 80%, #2a2020 100%); }
+    #s0-dawn { position:absolute; inset: 0; background: linear-gradient(0deg, rgba(255,170,100,0.8), rgba(255,170,100,0) 70%); opacity: 0; }
+    #s0-lampg { position:absolute; left: 560px; top: 470px; width: 420px; height: 420px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(255,200,110,0.75), rgba(255,160,70,0.2) 45%, rgba(0,0,0,0) 70%); }
+    #s0-curtain { transform-origin: 50% 0; }
+    #s0-cold { background: rgba(60,80,120,0.35); opacity: 0; }
+
+    .s1-st { position: absolute; border-radius: 50%; background: #eef4ff; box-shadow: 0 0 6px rgba(220,235,255,0.9); }
+    .s1-mote { position: absolute; border-radius: 50%; }
+    .s1-full { position: absolute; inset: 0; }
+    .s1-svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+
+    #s1-room { background: linear-gradient(180deg, #120c0a 0%, #1e1410 100%); }
+    #s1-door { position:absolute; left: 1180px; top: 200px; width: 380px; height: 640px; overflow: hidden;
+      background: linear-gradient(180deg, #05070f 0%, #101a30 80%, #2a2020 100%); }
+    #s1-dawn { position:absolute; inset: 0; background: linear-gradient(0deg, rgba(255,170,100,0.8), rgba(255,170,100,0) 70%); opacity: 0; }
+    #s1-lampg { position:absolute; left: 560px; top: 470px; width: 420px; height: 420px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(255,200,110,0.75), rgba(255,160,70,0.2) 45%, rgba(0,0,0,0) 70%); }
+    #s1-curtain { transform-origin: 50% 0; }
+    #s1-cold { background: rgba(60,80,120,0.35); opacity: 0; }
+
+    #scrim { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.45) 55%, rgba(0,0,0,0) 75%); }
+    #brand { position: absolute; top: 210px; left: 0; right: 0; text-align: center; font-family: Inter; font-weight: 700;
+      font-size: 28px; letter-spacing: 0.32em; color: rgba(245,234,214,0.72); }
+    #brand span { color: #f2b04a; }
+  </style>
+  <div id="atmos" data-composition-id="atmos" data-width="1080" data-height="1920" data-layout-allow-overflow>
+    <div id="s0-seg" class="clip" data-start="0.00" data-duration="6.84" style="position:absolute;inset:0;overflow:hidden">
+      <div id="s0-box" style="position:absolute;left:-1024px;top:0;width:1920px;height:1080px;transform-origin:0 0;transform:scale(1.7778)">
+        <div id="s0-cam" class="s0-cam" style="position:absolute;inset:0">
+      <div id="s0-room" class="s0-full"></div>
+      <div id="s0-door"><div id="s0-hst0" class="s0-st" style="left:1283px;top:546px;width:3.2px;height:3.2px"></div><div id="s0-hst1" class="s0-st" style="left:1243px;top:320px;width:3.3px;height:3.3px"></div><div id="s0-hst2" class="s0-st" style="left:1237px;top:470px;width:2.0px;height:2.0px"></div><div id="s0-hst3" class="s0-st" style="left:1409px;top:217px;width:2.2px;height:2.2px"></div><div id="s0-hst4" class="s0-st" style="left:1243px;top:637px;width:3.5px;height:3.5px"></div><div id="s0-hst5" class="s0-st" style="left:1532px;top:599px;width:2.1px;height:2.1px"></div><div id="s0-hst6" class="s0-st" style="left:1496px;top:449px;width:3.4px;height:3.4px"></div><div id="s0-hst7" class="s0-st" style="left:1345px;top:364px;width:1.8px;height:1.8px"></div><div id="s0-hst8" class="s0-st" style="left:1485px;top:601px;width:4.0px;height:4.0px"></div><div id="s0-hst9" class="s0-st" style="left:1239px;top:542px;width:2.6px;height:2.6px"></div><div id="s0-hst10" class="s0-st" style="left:1254px;top:309px;width:2.8px;height:2.8px"></div><div id="s0-hst11" class="s0-st" style="left:1332px;top:274px;width:2.7px;height:2.7px"></div><div id="s0-hst12" class="s0-st" style="left:1275px;top:325px;width:2.0px;height:2.0px"></div><div id="s0-hst13" class="s0-st" style="left:1533px;top:401px;width:3.3px;height:3.3px"></div><div id="s0-hst14" class="s0-st" style="left:1526px;top:231px;width:1.9px;height:1.9px"></div><div id="s0-hst15" class="s0-st" style="left:1248px;top:413px;width:3.7px;height:3.7px"></div><div id="s0-hst16" class="s0-st" style="left:1509px;top:604px;width:2.0px;height:2.0px"></div><div id="s0-hst17" class="s0-st" style="left:1239px;top:686px;width:3.0px;height:3.0px"></div><div id="s0-hst18" class="s0-st" style="left:1450px;top:314px;width:3.0px;height:3.0px"></div><div id="s0-hst19" class="s0-st" style="left:1452px;top:377px;width:2.2px;height:2.2px"></div><div id="s0-hst20" class="s0-st" style="left:1249px;top:545px;width:1.8px;height:1.8px"></div><div id="s0-hst21" class="s0-st" style="left:1390px;top:476px;width:1.6px;height:1.6px"></div><div id="s0-hst22" class="s0-st" style="left:1348px;top:378px;width:1.7px;height:1.7px"></div><div id="s0-hst23" class="s0-st" style="left:1299px;top:342px;width:3.0px;height:3.0px"></div><div id="s0-hst24" class="s0-st" style="left:1218px;top:440px;width:2.4px;height:2.4px"></div><div id="s0-hst25" class="s0-st" style="left:1369px;top:685px;width:2.8px;height:2.8px"></div><div id="s0-hst26" class="s0-st" style="left:1361px;top:538px;width:2.2px;height:2.2px"></div><div id="s0-hst27" class="s0-st" style="left:1456px;top:337px;width:3.2px;height:3.2px"></div><div id="s0-hst28" class="s0-st" style="left:1496px;top:337px;width:3.0px;height:3.0px"></div><div id="s0-hst29" class="s0-st" style="left:1263px;top:382px;width:1.6px;height:1.6px"></div><div id="s0-dawn"></div></div>
+      <svg class="s0-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none"><path id="s0-curtain" d="M 1180 200 H 1300 Q 1280 520 1320 840 H 1180 Z" fill="#4a2a1e" opacity="0.92"/><rect x="0" y="840" width="1920" height="240" fill="#0e0907"/><rect x="560" y="700" width="420" height="30" fill="#3a2414"/><path d="M 740 690 Q 770 650 800 690 L 812 700 H 728 Z" fill="#b8883a"/><path d="M 770 640 Q 760 620 770 600 Q 782 620 770 640 Z" id="s0-flame" fill="#ffd27a"/><rect x="200" y="760" width="300" height="80" rx="10" fill="#2a1a14"/></svg>
+      <div id="s0-lampg"></div>
+      <div id="s0-cold" class="s0-full"></div></div>
+      </div></div>
+    <div id="s1-seg" class="clip" data-start="6.84" data-duration="49.55" style="position:absolute;inset:0;overflow:hidden">
+      <div id="s1-box" style="position:absolute;left:-1024px;top:0;width:1920px;height:1080px;transform-origin:0 0;transform:scale(1.7778)">
+        <div id="s1-cam" class="s1-cam" style="position:absolute;inset:0">
+      <div id="s1-room" class="s1-full"></div>
+      <div id="s1-door"><div id="s1-hst0" class="s1-st" style="left:1283px;top:546px;width:3.2px;height:3.2px"></div><div id="s1-hst1" class="s1-st" style="left:1243px;top:320px;width:3.3px;height:3.3px"></div><div id="s1-hst2" class="s1-st" style="left:1237px;top:470px;width:2.0px;height:2.0px"></div><div id="s1-hst3" class="s1-st" style="left:1409px;top:217px;width:2.2px;height:2.2px"></div><div id="s1-hst4" class="s1-st" style="left:1243px;top:637px;width:3.5px;height:3.5px"></div><div id="s1-hst5" class="s1-st" style="left:1532px;top:599px;width:2.1px;height:2.1px"></div><div id="s1-hst6" class="s1-st" style="left:1496px;top:449px;width:3.4px;height:3.4px"></div><div id="s1-hst7" class="s1-st" style="left:1345px;top:364px;width:1.8px;height:1.8px"></div><div id="s1-hst8" class="s1-st" style="left:1485px;top:601px;width:4.0px;height:4.0px"></div><div id="s1-hst9" class="s1-st" style="left:1239px;top:542px;width:2.6px;height:2.6px"></div><div id="s1-hst10" class="s1-st" style="left:1254px;top:309px;width:2.8px;height:2.8px"></div><div id="s1-hst11" class="s1-st" style="left:1332px;top:274px;width:2.7px;height:2.7px"></div><div id="s1-hst12" class="s1-st" style="left:1275px;top:325px;width:2.0px;height:2.0px"></div><div id="s1-hst13" class="s1-st" style="left:1533px;top:401px;width:3.3px;height:3.3px"></div><div id="s1-hst14" class="s1-st" style="left:1526px;top:231px;width:1.9px;height:1.9px"></div><div id="s1-hst15" class="s1-st" style="left:1248px;top:413px;width:3.7px;height:3.7px"></div><div id="s1-hst16" class="s1-st" style="left:1509px;top:604px;width:2.0px;height:2.0px"></div><div id="s1-hst17" class="s1-st" style="left:1239px;top:686px;width:3.0px;height:3.0px"></div><div id="s1-hst18" class="s1-st" style="left:1450px;top:314px;width:3.0px;height:3.0px"></div><div id="s1-hst19" class="s1-st" style="left:1452px;top:377px;width:2.2px;height:2.2px"></div><div id="s1-hst20" class="s1-st" style="left:1249px;top:545px;width:1.8px;height:1.8px"></div><div id="s1-hst21" class="s1-st" style="left:1390px;top:476px;width:1.6px;height:1.6px"></div><div id="s1-hst22" class="s1-st" style="left:1348px;top:378px;width:1.7px;height:1.7px"></div><div id="s1-hst23" class="s1-st" style="left:1299px;top:342px;width:3.0px;height:3.0px"></div><div id="s1-hst24" class="s1-st" style="left:1218px;top:440px;width:2.4px;height:2.4px"></div><div id="s1-hst25" class="s1-st" style="left:1369px;top:685px;width:2.8px;height:2.8px"></div><div id="s1-hst26" class="s1-st" style="left:1361px;top:538px;width:2.2px;height:2.2px"></div><div id="s1-hst27" class="s1-st" style="left:1456px;top:337px;width:3.2px;height:3.2px"></div><div id="s1-hst28" class="s1-st" style="left:1496px;top:337px;width:3.0px;height:3.0px"></div><div id="s1-hst29" class="s1-st" style="left:1263px;top:382px;width:1.6px;height:1.6px"></div><div id="s1-dawn"></div></div>
+      <svg class="s1-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none"><path id="s1-curtain" d="M 1180 200 H 1300 Q 1280 520 1320 840 H 1180 Z" fill="#4a2a1e" opacity="0.92"/><rect x="0" y="840" width="1920" height="240" fill="#0e0907"/><rect x="560" y="700" width="420" height="30" fill="#3a2414"/><path d="M 740 690 Q 770 650 800 690 L 812 700 H 728 Z" fill="#b8883a"/><path d="M 770 640 Q 760 620 770 600 Q 782 620 770 640 Z" id="s1-flame" fill="#ffd27a"/><rect x="200" y="760" width="300" height="80" rx="10" fill="#2a1a14"/></svg>
+      <div id="s1-lampg"></div>
+      <div id="s1-cold" class="s1-full"></div></div>
+      </div></div>
+    <div id="scrim" class="clip" data-start="0" data-duration="56.40"></div>
+    <div id="brand" class="clip" data-start="0" data-duration="56.40">HAQ <span>·</span> STORIES</div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    const st0 = gsap.timeline({ paused: true });
+    st0.fromTo("#s0-hst0", {opacity: 0.55}, {opacity: 1, duration: 1.07, ease: "sine.inOut", yoyo: true, repeat: 58, immediateRender: false}, 0.23);
+    st0.fromTo("#s0-hst2", {opacity: 0.39}, {opacity: 1, duration: 1.29, ease: "sine.inOut", yoyo: true, repeat: 48, immediateRender: false}, 0.84);
+    st0.fromTo("#s0-hst4", {opacity: 0.54}, {opacity: 1, duration: 1.64, ease: "sine.inOut", yoyo: true, repeat: 38, immediateRender: false}, 0.74);
+    st0.fromTo("#s0-hst6", {opacity: 0.47}, {opacity: 1, duration: 1.29, ease: "sine.inOut", yoyo: true, repeat: 48, immediateRender: false}, 0.36);
+    st0.fromTo("#s0-hst8", {opacity: 0.51}, {opacity: 1, duration: 1.40, ease: "sine.inOut", yoyo: true, repeat: 44, immediateRender: false}, 0.75);
+    st0.fromTo("#s0-hst10", {opacity: 0.38}, {opacity: 1, duration: 1.31, ease: "sine.inOut", yoyo: true, repeat: 47, immediateRender: false}, 0.61);
+    st0.fromTo("#s0-hst12", {opacity: 0.41}, {opacity: 1, duration: 0.97, ease: "sine.inOut", yoyo: true, repeat: 64, immediateRender: false}, 0.65);
+    st0.fromTo("#s0-hst14", {opacity: 0.54}, {opacity: 1, duration: 1.65, ease: "sine.inOut", yoyo: true, repeat: 37, immediateRender: false}, 0.64);
+    st0.fromTo("#s0-hst16", {opacity: 0.56}, {opacity: 1, duration: 1.24, ease: "sine.inOut", yoyo: true, repeat: 50, immediateRender: false}, 0.72);
+    st0.fromTo("#s0-hst18", {opacity: 0.47}, {opacity: 1, duration: 1.43, ease: "sine.inOut", yoyo: true, repeat: 43, immediateRender: false}, 0.36);
+    st0.fromTo("#s0-hst20", {opacity: 0.37}, {opacity: 1, duration: 0.96, ease: "sine.inOut", yoyo: true, repeat: 64, immediateRender: false}, 0.64);
+    st0.fromTo("#s0-hst22", {opacity: 0.30}, {opacity: 1, duration: 1.80, ease: "sine.inOut", yoyo: true, repeat: 35, immediateRender: false}, 0.12);
+    st0.fromTo("#s0-hst24", {opacity: 0.55}, {opacity: 1, duration: 0.91, ease: "sine.inOut", yoyo: true, repeat: 68, immediateRender: false}, 0.33);
+    st0.fromTo("#s0-hst26", {opacity: 0.31}, {opacity: 1, duration: 1.35, ease: "sine.inOut", yoyo: true, repeat: 46, immediateRender: false}, 0.91);
+    st0.fromTo("#s0-hst28", {opacity: 0.41}, {opacity: 1, duration: 1.12, ease: "sine.inOut", yoyo: true, repeat: 55, immediateRender: false}, 0.29);
+    st0.fromTo("#s0-lampg", {opacity: 0.8}, {opacity: 1, duration: 0.32, ease: "sine.inOut", yoyo: true, repeat: 194, immediateRender: false}, 0.00);
+    st0.fromTo("#s0-flame", {scaleY: 0.9, transformOrigin: '50% 100%'}, {scaleY: 1.1, transformOrigin: '50% 100%', duration: 0.22, ease: "sine.inOut", yoyo: true, repeat: 281, immediateRender: false}, 0.00);
+    st0.fromTo("#s0-curtain", {skewX: -3}, {skewX: 3, duration: 2.20, ease: "sine.inOut", yoyo: true, repeat: 29, immediateRender: false}, 0.00);
+    st0.fromTo("#s0-cold", {opacity: 0}, {opacity: 1, duration: 2.00, ease: "sine.inOut", immediateRender: false}, 20.49);
+    st0.fromTo("#s0-cold", {opacity: 1}, {opacity: 0.4, duration: 2.00, ease: "sine.inOut", immediateRender: false}, 39.98);
+    st0.fromTo("#s0-lampg", {scale: 1}, {scale: 1.35, duration: 2.50, ease: "sine.inOut", immediateRender: false}, 39.98);
+    st0.fromTo("#s0-dawn", {opacity: 0}, {opacity: 1, duration: 6.00, ease: "sine.inOut", immediateRender: false}, 49.23);
+    st0.fromTo("#s0-cold", {opacity: 0.4}, {opacity: 0, duration: 2.00, ease: "sine.inOut", immediateRender: false}, 57.34);
+    tl.add(st0.tweenFromTo(0.10, 6.94, { ease: 'none' }), 0.00);
+    tl.fromTo("#s0-cam", {scale: 1}, {scale: 1.06, duration: 6.84, ease: "none", transformOrigin: "880px 50%", immediateRender: false}, 0.00);
+    const st1 = gsap.timeline({ paused: true });
+    st1.fromTo("#s1-hst0", {opacity: 0.55}, {opacity: 1, duration: 1.07, ease: "sine.inOut", yoyo: true, repeat: 58, immediateRender: false}, 0.23);
+    st1.fromTo("#s1-hst2", {opacity: 0.39}, {opacity: 1, duration: 1.29, ease: "sine.inOut", yoyo: true, repeat: 48, immediateRender: false}, 0.84);
+    st1.fromTo("#s1-hst4", {opacity: 0.54}, {opacity: 1, duration: 1.64, ease: "sine.inOut", yoyo: true, repeat: 38, immediateRender: false}, 0.74);
+    st1.fromTo("#s1-hst6", {opacity: 0.47}, {opacity: 1, duration: 1.29, ease: "sine.inOut", yoyo: true, repeat: 48, immediateRender: false}, 0.36);
+    st1.fromTo("#s1-hst8", {opacity: 0.51}, {opacity: 1, duration: 1.40, ease: "sine.inOut", yoyo: true, repeat: 44, immediateRender: false}, 0.75);
+    st1.fromTo("#s1-hst10", {opacity: 0.38}, {opacity: 1, duration: 1.31, ease: "sine.inOut", yoyo: true, repeat: 47, immediateRender: false}, 0.61);
+    st1.fromTo("#s1-hst12", {opacity: 0.41}, {opacity: 1, duration: 0.97, ease: "sine.inOut", yoyo: true, repeat: 64, immediateRender: false}, 0.65);
+    st1.fromTo("#s1-hst14", {opacity: 0.54}, {opacity: 1, duration: 1.65, ease: "sine.inOut", yoyo: true, repeat: 37, immediateRender: false}, 0.64);
+    st1.fromTo("#s1-hst16", {opacity: 0.56}, {opacity: 1, duration: 1.24, ease: "sine.inOut", yoyo: true, repeat: 50, immediateRender: false}, 0.72);
+    st1.fromTo("#s1-hst18", {opacity: 0.47}, {opacity: 1, duration: 1.43, ease: "sine.inOut", yoyo: true, repeat: 43, immediateRender: false}, 0.36);
+    st1.fromTo("#s1-hst20", {opacity: 0.37}, {opacity: 1, duration: 0.96, ease: "sine.inOut", yoyo: true, repeat: 64, immediateRender: false}, 0.64);
+    st1.fromTo("#s1-hst22", {opacity: 0.30}, {opacity: 1, duration: 1.80, ease: "sine.inOut", yoyo: true, repeat: 35, immediateRender: false}, 0.12);
+    st1.fromTo("#s1-hst24", {opacity: 0.55}, {opacity: 1, duration: 0.91, ease: "sine.inOut", yoyo: true, repeat: 68, immediateRender: false}, 0.33);
+    st1.fromTo("#s1-hst26", {opacity: 0.31}, {opacity: 1, duration: 1.35, ease: "sine.inOut", yoyo: true, repeat: 46, immediateRender: false}, 0.91);
+    st1.fromTo("#s1-hst28", {opacity: 0.41}, {opacity: 1, duration: 1.12, ease: "sine.inOut", yoyo: true, repeat: 55, immediateRender: false}, 0.29);
+    st1.fromTo("#s1-lampg", {opacity: 0.8}, {opacity: 1, duration: 0.32, ease: "sine.inOut", yoyo: true, repeat: 194, immediateRender: false}, 0.00);
+    st1.fromTo("#s1-flame", {scaleY: 0.9, transformOrigin: '50% 100%'}, {scaleY: 1.1, transformOrigin: '50% 100%', duration: 0.22, ease: "sine.inOut", yoyo: true, repeat: 281, immediateRender: false}, 0.00);
+    st1.fromTo("#s1-curtain", {skewX: -3}, {skewX: 3, duration: 2.20, ease: "sine.inOut", yoyo: true, repeat: 29, immediateRender: false}, 0.00);
+    st1.fromTo("#s1-cold", {opacity: 0}, {opacity: 1, duration: 2.00, ease: "sine.inOut", immediateRender: false}, 20.49);
+    st1.fromTo("#s1-cold", {opacity: 1}, {opacity: 0.4, duration: 2.00, ease: "sine.inOut", immediateRender: false}, 39.98);
+    st1.fromTo("#s1-lampg", {scale: 1}, {scale: 1.35, duration: 2.50, ease: "sine.inOut", immediateRender: false}, 39.98);
+    st1.fromTo("#s1-dawn", {opacity: 0}, {opacity: 1, duration: 6.00, ease: "sine.inOut", immediateRender: false}, 49.23);
+    st1.fromTo("#s1-cold", {opacity: 0.4}, {opacity: 0, duration: 2.00, ease: "sine.inOut", immediateRender: false}, 57.34);
+    tl.add(st1.tweenFromTo(15.01, 61.81, { ease: 'none' }), 6.84);
+    tl.fromTo("#s1-cam", {scale: 1}, {scale: 1.06, duration: 49.55, ease: "none", transformOrigin: "880px 50%", immediateRender: false}, 6.84);
+    tl.fromTo("#s1-seg", {opacity: 0}, {opacity: 1, duration: 0.35, ease: "sine.inOut", immediateRender: false}, 6.84);
+    window.__timelines["atmos"] = tl;
+  </script>
+</template>
