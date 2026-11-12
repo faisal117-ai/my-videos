@@ -1,0 +1,23 @@
+<template>
+  <style>
+    #b6 { position: absolute; inset: 0; }
+    #b6-wrap { position: absolute; left: 60px; right: 60px; top: 300px; bottom: 780px;
+      display: flex; flex-direction: column; justify-content: center; gap: 34px; }
+  </style>
+  <div id="b6" data-composition-id="b6" data-width="1080" data-height="1920">
+    <div id="b6-wrap" class="clip" data-start="0" data-duration="5.34">
+      <div id="b6-cta-mark" class="mark">حق کہانیاں</div>
+      <div id="b6-txt" class="txt cta"><span class="w" id="b6-w0">Part</span> <span class="w" id="b6-w1">2</span> <span class="w" id="b6-w2">tomorrow.</span> <span class="w" id="b6-w3">Follow</span> <span class="w" id="b6-w4">so</span> <span class="w" id="b6-w5">you</span> <span class="w" id="b6-w6">don&#x27;t</span> <span class="w" id="b6-w7">miss</span> <span class="w" id="b6-w8">it.</span></div>
+      <div id="b6-btn" class="btn">Follow · Haq Stories</div>
+      <div id="b6-ur" class="ur" dir="rtl" lang="ur" data-layout-allow-overflow>حصہ دوم کل… فالو کریں تاکہ آپ سے رہ نہ جائے</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#b6-cta-mark", {opacity: 0, scale: 0.92}, {opacity: 1, scale: 1, duration: 0.8, ease: "power2.out"}, 0);
+    tl.fromTo("#b6 .w", {opacity: 0, y: 18}, {opacity: 1, y: 0, duration: 0.35, ease: "power2.out", stagger: 0.326}, 0.15);
+    tl.fromTo("#b6-btn", {opacity: 0, y: 24}, {opacity: 1, y: 0, duration: 0.5, ease: "back.out(1.6)"}, 0.5);
+    tl.fromTo("#b6-ur", {opacity: 0, y: 10}, {opacity: 1, y: 0, duration: 0.35, ease: "power2.out"}, 0.15);
+    window.__timelines["b6"] = tl;
+  </script>
+</template>

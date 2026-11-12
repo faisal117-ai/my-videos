@@ -1,0 +1,16 @@
+{
+  "accent": "#f2b04a",
+  "embers": true,
+  "flash": 0.6,
+  "impact": true,
+  "beats": [
+    {"hook": true, "text": "They took a mother *bird's* babies…", "sub": "…and the Prophet ﷺ demanded them back.", "mood": {"warm": 1.0, "cool": 0.35}, "reveal": false},
+    {"text": "The Companions were on a *journey* with the Prophet ﷺ.", "mood": {"warm": 0.55, "cool": 0}},
+    {"text": "They found a small bird with *two chicks*… and took them.", "mood": {"warm": 0.45, "cool": 0}},
+    {"text": "The mother came back. *Flapping. Circling.* Again and again.", "mood": {"warm": 0.75, "cool": 0}},
+    {"text": "“Who has *distressed* this bird by taking her young?”", "ref": "Sunan Abi Dawud 2675", "mood": {"warm": 0.2, "cool": 0.55}},
+    {"text": "“*Return* her young to her!”", "size": 150, "ref": "Sunan Abi Dawud 2675", "mood": {"warm": 0.1, "cool": 0.85}},
+    {"text": "He cared for the pain of a *little bird.* How much should we care for each other?", "size": 104, "mood": {"warm": 0.3, "cool": 0.6}},
+    {"cta": true, "text": "Follow for more stories like this.", "mood": {"warm": 0.45, "cool": 0.35}}
+  ]
+}

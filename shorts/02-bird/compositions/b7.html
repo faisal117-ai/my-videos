@@ -1,0 +1,19 @@
+<template>
+  <style>
+    #b7 { position: absolute; inset: 0; }
+    #b7-wrap { position: absolute; left: 90px; right: 140px; top: 330px; bottom: 600px;
+      display: flex; flex-direction: column; justify-content: center; gap: 34px; }
+  </style>
+  <div id="b7" data-composition-id="b7" data-width="1080" data-height="1920">
+    <div id="b7-wrap" class="clip" data-start="0" data-duration="5.46">
+      <div id="b7-txt" class="txt" style="font-size:104px"><span class="w" id="b7-w0">He</span> <span class="w" id="b7-w1">cared</span> <span class="w" id="b7-w2">for</span> <span class="w" id="b7-w3">the</span> <span class="w" id="b7-w4">pain</span> <span class="w" id="b7-w5">of</span> <span class="w" id="b7-w6">a</span> <span class="w hi" id="b7-w7">little</span> <span class="w hi" id="b7-w8">bird.</span> <span class="w" id="b7-w9">How</span> <span class="w" id="b7-w10">much</span> <span class="w" id="b7-w11">should</span> <span class="w" id="b7-w12">we</span> <span class="w" id="b7-w13">care</span> <span class="w" id="b7-w14">for</span> <span class="w" id="b7-w15">each</span> <span class="w" id="b7-w16">other?</span></div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#b7 .w", {opacity: 0, y: 22, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.32, ease: "power2.out", stagger: 0.231}, 0.12);
+    tl.fromTo("#b7 .hi", {textShadow: "0 0 0px rgba(0,0,0,0)"}, {textShadow: "0 0 28px var(--accent)", duration: 0.6, ease: "power1.out"}, 2.51);
+    tl.fromTo("#b7-wrap", {opacity: 1}, {opacity: 0, duration: 0.22, ease: "power1.in"}, 5.22);
+    window.__timelines["b7"] = tl;
+  </script>
+</template>

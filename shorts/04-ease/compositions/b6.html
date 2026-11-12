@@ -1,0 +1,23 @@
+<template>
+  <style>
+    #b6 { position: absolute; inset: 0; }
+    #b6-wrap { position: absolute; left: 90px; right: 140px; top: 330px; bottom: 600px;
+      display: flex; flex-direction: column; justify-content: center; gap: 34px; }
+  </style>
+  <div id="b6" data-composition-id="b6" data-width="1080" data-height="1920">
+    <div id="b6-wrap" class="clip" data-start="0" data-duration="5.27" data-layout-allow-overflow>
+      <div id="b6-txt" class="txt" style="font-size:104px"><span class="w" id="b6-w0">Your</span> <span class="w" id="b6-w1">ease</span> <span class="w" id="b6-w2">isn&#x27;t</span> <span class="w" id="b6-w3">waiting</span> <span class="w" id="b6-w4">at</span> <span class="w" id="b6-w5">the</span> <span class="w" id="b6-w6">end</span> <span class="w" id="b6-w7">of</span> <span class="w" id="b6-w8">your</span> <span class="w" id="b6-w9">pain…</span> <span class="w" id="b6-w10">it&#x27;s</span> <span class="w hi" id="b6-w11">walking</span> <span class="w" id="b6-w12">beside</span> <span class="w hi" id="b6-w13">it.</span></div>
+      <div id="b6-orbs" class="orbs"><div id="b6-orb1" class="orb"></div><div id="b6-orb2" class="orb"></div></div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#b6 .w", {opacity: 0, y: 22, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.32, ease: "power2.out", stagger: 0.269}, 0.12);
+    tl.fromTo("#b6 .hi", {textShadow: "0 0 0px rgba(0,0,0,0)"}, {textShadow: "0 0 28px var(--accent)", duration: 0.6, ease: "power1.out"}, 2.41);
+    tl.fromTo("#b6-orbs", {y: 260, opacity: 0}, {y: -60, opacity: 1, duration: 5.27, ease: "sine.out"}, 0);
+    tl.fromTo("#b6-orb1", {x: -150}, {x: -70, duration: 5.27, ease: "sine.inOut"}, 0);
+    tl.fromTo("#b6-orb2", {x: 150}, {x: 70, duration: 5.27, ease: "sine.inOut"}, 0);
+    tl.fromTo("#b6-wrap", {opacity: 1}, {opacity: 0, duration: 0.22, ease: "power1.in"}, 5.03);
+    window.__timelines["b6"] = tl;
+  </script>
+</template>

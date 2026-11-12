@@ -1,0 +1,22 @@
+<template>
+  <style>
+    #b6 { position: absolute; inset: 0; }
+    #b6-wrap { position: absolute; left: 60px; right: 60px; top: 330px; bottom: 600px;
+      display: flex; flex-direction: column; justify-content: center; gap: 34px; }
+  </style>
+  <div id="b6" data-composition-id="b6" data-width="1080" data-height="1920">
+    <div id="b6-wrap" class="clip" data-start="0" data-duration="3.94">
+      <div id="b6-ar" class="ar" dir="rtl" lang="ar">قُلۡنَا يَٰنَارُ كُونِي بَرۡدٗا وَسَلَٰمًا عَلَىٰٓ إِبۡرَٰهِيمَ</div>
+      <div id="b6-tr" class="tr">“O fire, be coolness and safety upon Abraham [Ibrahim].”</div>
+      <div id="b6-ref" class="ref">Al-Anbiya 21:69 · Sahih International</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#b6-ar", {opacity: 0, y: 30, filter: "blur(10px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.9, ease: "power2.out"}, 0.05);
+    tl.fromTo("#b6-tr", {opacity: 0, y: 20}, {opacity: 1, y: 0, duration: 0.7, ease: "power2.out"}, 0.6);
+    tl.fromTo("#b6-ref", {opacity: 0, y: 12}, {opacity: 1, y: 0, duration: 0.45, ease: "power2.out"}, 0.35);
+    tl.fromTo("#b6-wrap", {opacity: 1}, {opacity: 0, duration: 0.22, ease: "power1.in"}, 3.70);
+    window.__timelines["b6"] = tl;
+  </script>
+</template>

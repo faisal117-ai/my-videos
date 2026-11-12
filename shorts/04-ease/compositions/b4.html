@@ -1,0 +1,23 @@
+<template>
+  <style>
+    #b4 { position: absolute; inset: 0; }
+    #b4-wrap { position: absolute; left: 90px; right: 140px; top: 330px; bottom: 600px;
+      display: flex; flex-direction: column; justify-content: center; gap: 34px; }
+  </style>
+  <div id="b4" data-composition-id="b4" data-width="1080" data-height="1920">
+    <div id="b4-wrap" class="clip" data-start="0" data-duration="2.28" data-layout-allow-overflow>
+      <div id="b4-txt" class="txt" style="font-size:170px"><span class="w hi" id="b4-w0">WITH.</span> <span class="w" id="b4-w1">Not</span> <span class="w" id="b4-w2">after.</span></div>
+      <div id="b4-orbs" class="orbs"><div id="b4-orb1" class="orb"></div><div id="b4-orb2" class="orb"></div></div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#b4 .w", {opacity: 0, y: 22, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.32, ease: "power2.out", stagger: 0.501}, 0.12);
+    tl.fromTo("#b4 .hi", {textShadow: "0 0 0px rgba(0,0,0,0)"}, {textShadow: "0 0 28px var(--accent)", duration: 0.6, ease: "power1.out"}, 0.96);
+    tl.fromTo("#b4-orbs", {y: 260, opacity: 0}, {y: -60, opacity: 1, duration: 2.28, ease: "sine.out"}, 0);
+    tl.fromTo("#b4-orb1", {x: -150}, {x: -70, duration: 2.28, ease: "sine.inOut"}, 0);
+    tl.fromTo("#b4-orb2", {x: 150}, {x: 70, duration: 2.28, ease: "sine.inOut"}, 0);
+    tl.fromTo("#b4-wrap", {opacity: 1}, {opacity: 0, duration: 0.22, ease: "power1.in"}, 2.04);
+    window.__timelines["b4"] = tl;
+  </script>
+</template>

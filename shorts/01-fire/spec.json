@@ -1,0 +1,76 @@
+{
+  "accent": "#f2a33a",
+  "embers": true,
+  "beats": [
+    {
+      "text": "They built a *fire* to burn him…",
+      "sub": "Then Allah gave it one command.",
+      "mood": {
+        "warm": 0.6,
+        "cool": 0
+      },
+      "reveal": false
+    },
+    {
+      "text": "Hazrat Ibrahim (AS) broke their *idols.* His people were furious.",
+      "ref": "Al-Anbiya 21:57–67",
+      "mood": {
+        "warm": 0.25,
+        "cool": 0
+      }
+    },
+    {
+      "text": "“*Burn him,* and support your gods.”",
+      "ref": "Al-Anbiya 21:68",
+      "mood": {
+        "warm": 0.5,
+        "cool": 0
+      }
+    },
+    {
+      "text": "They built a *huge fire*… and threw him into it.",
+      "mood": {
+        "warm": 1.0,
+        "cool": 0
+      }
+    },
+    {
+      "text": "Then Allah gave the fire *one command.*",
+      "mood": {
+        "warm": 0.35,
+        "cool": 0
+      }
+    },
+    {
+      "arabic": "قُلۡنَا يَٰنَارُ كُونِي بَرۡدٗا وَسَلَٰمًا عَلَىٰٓ إِبۡرَٰهِيمَ",
+      "translation": "“O fire, be coolness and safety upon Abraham [Ibrahim].”",
+      "ref": "Al-Anbiya 21:69 · Sahih International",
+      "mood": {
+        "warm": 0.05,
+        "cool": 0.9
+      }
+    },
+    {
+      "text": "The fire obeyed its *Creator.* It could not harm him.",
+      "mood": {
+        "warm": 0.0,
+        "cool": 0.7
+      }
+    },
+    {
+      "text": "When Allah is with you, *no fire* is stronger.",
+      "mood": {
+        "warm": 0.12,
+        "cool": 0.55
+      }
+    },
+    {
+      "cta": true,
+      "text": "Follow for more stories of the prophets.",
+      "mood": {
+        "warm": 0.3,
+        "cool": 0.3
+      }
+    }
+  ]
+}

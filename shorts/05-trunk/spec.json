@@ -1,0 +1,131 @@
+{
+  "accent": "#f2b04a",
+  "embers": true,
+  "mote": "#f0d9a8",
+  "motes": 0.3,
+  "scene": "mosque",
+  "pulpit_beat": 3,
+  "cry_beat": 4,
+  "flash": 0.45,
+  "bed_volume": 1.0,
+  "beats": [
+    {
+      "hook": true,
+      "text": "A tree trunk *cried* like a child…",
+      "sub": "…and the whole mosque heard it.",
+      "mood": {
+        "warm": 0.5,
+        "cool": 0.15
+      },
+      "reveal": false
+    },
+    {
+      "text": "An old *palm trunk* in the Prophet's ﷺ mosque.",
+      "mood": {
+        "warm": 0.35,
+        "cool": 0.2
+      }
+    },
+    {
+      "text": "He ﷺ would stand beside it to give the *sermon.*",
+      "mood": {
+        "warm": 0.35,
+        "cool": 0.2
+      }
+    },
+    {
+      "text": "Then a *pulpit* was built for him…",
+      "mood": {
+        "warm": 0.4,
+        "cool": 0.15
+      }
+    },
+    {
+      "text": "The trunk began to *cry.* Like a child.",
+      "size": 124,
+      "ref": "Sahih al-Bukhari 3584",
+      "mood": {
+        "warm": 0.15,
+        "cool": 0.35
+      }
+    },
+    {
+      "text": "He ﷺ came down… and *held it*… until it became calm.",
+      "ref": "Sahih al-Bukhari 3584",
+      "mood": {
+        "warm": 0.55,
+        "cool": 0.1
+      }
+    },
+    {
+      "text": "“It cried for the *remembrance* of Allah it used to hear.”",
+      "ref": "Sahih al-Bukhari 3584",
+      "mood": {
+        "warm": 0.5,
+        "cool": 0.15
+      }
+    },
+    {
+      "text": "A piece of wood cried for missing him… *How much do we miss him?*",
+      "size": 100,
+      "mood": {
+        "warm": 0.6,
+        "cool": 0.1
+      }
+    },
+    {
+      "cta": true,
+      "text": "Send salawat upon him ﷺ in the comments.",
+      "mood": {
+        "warm": 0.6,
+        "cool": 0.15
+      }
+    }
+  ],
+  "sound": [
+    {
+      "prompt": "single deep wooden knock thud, strong, with hall reverb",
+      "beat": 0,
+      "dur": 2.5,
+      "gain": -9,
+      "fade_in": 0,
+      "fade_out": 1
+    },
+    {
+      "prompt": "old palm wood creaking and groaning, mournful, like a whimper, clear and close, no human voice, no music",
+      "beat": 0,
+      "offset": 0.1,
+      "dur": 5,
+      "gain": -12,
+      "fade_in": 0.2,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "night ambience inside an old mud-brick room, crickets chirping outside, breeze, oil lamp flame crackling, no music, no voices",
+      "beat": 0,
+      "dur": 48,
+      "gain": -17,
+      "fade_in": 0.3,
+      "fade_out": 2
+    },
+    {
+      "prompt": "old palm wood creaking and groaning, mournful, like a whimper, clear and close, no human voice, no music",
+      "beat": 4,
+      "offset": 0.2,
+      "dur": 7.5,
+      "gain": -10,
+      "fade_in": 0.3,
+      "fade_out": 2.5
+    },
+    {
+      "prompt": "soft male choir humming a tender, gentle, loving slow melody, voices only, no instruments, warm reverb",
+      "beat": 5,
+      "offset": 0.8,
+      "dur": 20,
+      "gain": -19,
+      "fade_in": 3,
+      "fade_out": 2.5
+    }
+  ],
+  "text_right": 250
+}

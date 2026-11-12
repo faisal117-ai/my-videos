@@ -1,0 +1,117 @@
+{
+  "accent": "#f2b04a",
+  "embers": false,
+  "scene": "storm",
+  "sunrise_beat": 2,
+  "lightning": [
+    0.02,
+    5.6
+  ],
+  "flash": 0.0,
+  "bed_volume": 1.0,
+  "beats": [
+    {
+      "hook": true,
+      "text": "Allah never said ease comes *after* hardship…",
+      "sub": "Read what He actually said.",
+      "mood": {
+        "warm": 0,
+        "cool": 0.15,
+        "rain": 1
+      },
+      "reveal": false
+    },
+    {
+      "text": "First the *pain*… then, one day, the relief?",
+      "mood": {
+        "warm": 0,
+        "cool": 0.1,
+        "rain": 0.9
+      }
+    },
+    {
+      "arabic": "فَإِنَّ مَعَ ٱلۡعُسۡرِ يُسۡرًا  ۝  إِنَّ مَعَ ٱلۡعُسۡرِ يُسۡرٗا",
+      "translation": "“For indeed, with hardship will be ease. Indeed, with hardship will be ease.”",
+      "ref": "Ash-Sharh 94:5–6 · Sahih International",
+      "mood": {
+        "warm": 0.35,
+        "cool": 0.2,
+        "rain": 0.15
+      }
+    },
+    {
+      "text": "*WITH.* Not after.",
+      "size": 170,
+      "lights": true,
+      "mood": {
+        "warm": 0.6,
+        "cool": 0.1,
+        "rain": 0
+      }
+    },
+    {
+      "text": "And He said it *twice.*",
+      "size": 130,
+      "mood": {
+        "warm": 0.6,
+        "cool": 0.1,
+        "rain": 0
+      }
+    },
+    {
+      "text": "Your ease isn't waiting at the end of your pain… it's *walking beside it.*",
+      "size": 104,
+      "lights": true,
+      "mood": {
+        "warm": 0.75,
+        "cool": 0.1,
+        "rain": 0
+      }
+    },
+    {
+      "cta": true,
+      "text": "Send this to someone who needs it today.",
+      "mood": {
+        "warm": 0.6,
+        "cool": 0.15,
+        "rain": 0
+      }
+    }
+  ],
+  "sound": [
+    {
+      "prompt": "one loud close thunder crack, then rumble",
+      "beat": 0,
+      "dur": 4,
+      "gain": -6,
+      "fade_in": 0,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "heavy rain at night with distant rolling thunder and wind, no music",
+      "beat": 0,
+      "dur": 12,
+      "gain": -13,
+      "fade_in": 0,
+      "fade_out": 3
+    },
+    {
+      "prompt": "peaceful early morning dawn, soft breeze, birds beginning to sing, calm, no music",
+      "beat": 2,
+      "offset": 0,
+      "dur": 21,
+      "gain": -17,
+      "fade_in": 3,
+      "fade_out": 2
+    },
+    {
+      "prompt": "soft male choir humming a slow, calm, hopeful melody, voices only, no instruments, gentle reverb",
+      "beat": 2,
+      "offset": 0.5,
+      "dur": 21,
+      "gain": -19,
+      "fade_in": 3,
+      "fade_out": 2.5
+    }
+  ]
+}

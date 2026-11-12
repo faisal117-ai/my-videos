@@ -1,0 +1,158 @@
+<template>
+  <style>
+    #atmos { position: absolute; inset: 0; overflow: hidden; }
+    #sky { position: absolute; inset: 0; background: linear-gradient(180deg, #07060c 0%, #0d0a12 55%, #160d0c 100%); }
+    #warm, #cool, #embers { position: absolute; inset: 0; }
+    #warm-g, #cool-g, #embers-g { position: absolute; inset: 0; }
+    #warm-b { position: absolute; left: -20%; right: -20%; bottom: -18%; height: 85%;
+      background: radial-gradient(ellipse at 50% 100%, rgba(255,170,60,0.95) 0%, rgba(230,90,30,0.55) 30%, rgba(120,30,20,0.25) 55%, rgba(0,0,0,0) 72%); }
+    #cool-g {
+      background: radial-gradient(ellipse at 50% 62%, rgba(215,236,255,0.55) 0%, rgba(120,170,220,0.22) 35%, rgba(0,0,0,0) 70%); }
+    .em { position: absolute; bottom: -20px; border-radius: 50%; background: #f0d9a8;
+      box-shadow: 0 0 12px #f0d9a8, 0 0 24px #f0d9a8; }
+    #mosque { position: absolute; inset: 0; background: linear-gradient(180deg, #0b0a0e 0%, #17110d 55%, #1e150f 100%); }
+    #wall { position: absolute; left: 0; right: 0; top: 260px; bottom: 380px;
+      background: linear-gradient(180deg, #1d1612 0%, #2a1f17 100%); }
+    #roof { position: absolute; left: 0; right: 0; top: 0; height: 270px;
+      background: repeating-linear-gradient(90deg, #120d0a 0 26px, #1c140f 26px 30px, #0e0a08 30px 44px); }
+    #roofbeam { position: absolute; left: 0; right: 0; top: 250px; height: 26px; background: #0d0907; }
+    .shaft { position: absolute; top: 260px; width: 180px; height: 1200px;
+      background: linear-gradient(180deg, rgba(190,210,255,0.16), rgba(190,210,255,0)); }
+    #floor { position: absolute; left: 0; right: 0; bottom: 0; height: 400px;
+      background: linear-gradient(180deg, #2b1f16 0%, #1a120d 100%); }
+    .pil { position: absolute; top: 250px; bottom: 380px; border-radius: 6px;
+      background: repeating-linear-gradient(180deg, #3a2a1d 0 22px, #2c2016 22px 26px); }
+    .lampcord { position: absolute; top: 260px; width: 2px; background: rgba(60,45,30,0.9); }
+    .lamp { position: absolute; width: 20px; height: 20px; border-radius: 50%;
+      background: radial-gradient(circle, #fff1c9 0%, #ffbe5c 50%, rgba(255,160,60,0) 75%);
+      box-shadow: 0 0 40px 18px rgba(255,170,70,0.35), 0 0 140px 60px rgba(255,150,60,0.12); }
+    #trunk { position: absolute; left: 860px; top: 250px; width: 120px; bottom: 360px; border-radius: 14px 14px 8px 8px;
+      background: repeating-linear-gradient(180deg, #7a5a3c 0 26px, #5a4129 26px 31px),
+                  linear-gradient(90deg, rgba(0,0,0,0.35), rgba(255,220,170,0.12) 45%, rgba(0,0,0,0.45));
+      background-blend-mode: multiply; box-shadow: 0 0 60px rgba(0,0,0,0.6); }
+    #trunkbase { position: absolute; left: 840px; width: 160px; bottom: 340px; height: 40px; border-radius: 50%;
+      background: #120c08; opacity: 0.7; }
+    .ripple { position: absolute; left: 920px; top: 1020px; width: 300px; height: 300px; margin: -150px;
+      border-radius: 50%; border: 6px solid rgba(255,214,150,0.75); opacity: 0; }
+    #pulpit { position: absolute; left: 120px; bottom: 330px; width: 330px; height: 330px; opacity: 0; }
+
+    #vig { position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 45%, rgba(0,0,0,0) 45%, rgba(0,0,0,0.7) 100%); }
+    #flash-host { position: absolute; inset: 0; }
+    #flash { position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 45%, rgba(255,240,215,0.85), rgba(255,200,120,0.25) 60%, rgba(0,0,0,0) 85%); }
+    #brand { position: absolute; top: 210px; left: 0; right: 0; text-align: center; font-family: Inter; font-weight: 700;
+      font-size: 28px; letter-spacing: 0.32em; color: rgba(245,234,214,0.72); }
+    #brand span { color: #f2b04a; }
+  </style>
+  <div id="atmos" data-composition-id="atmos" data-width="1080" data-height="1920" data-layout-allow-overflow>
+    <div id="sky" class="clip" data-start="0" data-duration="48.07"></div>
+
+    <div id="mosque" class="clip" data-start="0" data-duration="48.07">
+      <div id="wall"></div>
+      <div class="pil" style="left:40px;width:34px;opacity:0.55"></div><div class="pil" style="left:230px;width:26px;opacity:0.4"></div><div class="pil" style="left:420px;width:22px;opacity:0.32"></div><div class="pil" style="left:600px;width:22px;opacity:0.32"></div><div class="pil" style="left:760px;width:26px;opacity:0.4"></div>
+      <div id="roof"></div><div id="roofbeam"></div>
+      <div class="shaft" style="left:150px"></div><div class="shaft" style="left:470px"></div><div class="shaft" style="left:760px"></div>
+      <div id="floor"></div>
+      <div class="lampcord" style="left:259px;height:270px"></div><div id="lamp0" class="lamp" style="left:250px;top:520px"></div><div class="lampcord" style="left:549px;height:220px"></div><div id="lamp1" class="lamp" style="left:540px;top:470px"></div><div class="lampcord" style="left:729px;height:310px"></div><div id="lamp2" class="lamp" style="left:720px;top:560px"></div>
+      <svg id="pulpit" viewBox="0 0 330 330">
+        <rect x="200" y="20" width="16" height="310" fill="#4a3322"/>
+        <rect x="20" y="230" width="110" height="100" fill="#6a4a30"/>
+        <rect x="110" y="150" width="110" height="180" fill="#7a5638"/>
+        <rect x="200" y="70" width="110" height="260" fill="#86603e"/>
+        <rect x="200" y="62" width="110" height="12" fill="#a37a52"/>
+        <rect x="110" y="142" width="110" height="12" fill="#a37a52"/>
+        <rect x="20" y="222" width="110" height="12" fill="#a37a52"/>
+      </svg>
+      <div id="trunkbase"></div>
+      <div id="trunk"></div>
+      <div id="rp0" class="ripple"></div><div id="rp1" class="ripple"></div><div id="rp2" class="ripple"></div>
+    </div>
+    <div id="warm" class="clip" data-start="0" data-duration="48.07"><div id="warm-g" style="opacity:0.5"><div id="warm-b"></div></div></div>
+    <div id="cool" class="clip" data-start="0" data-duration="48.07"><div id="cool-g" style="opacity:0.15"></div></div>
+    <div id="embers" class="clip" data-start="0" data-duration="48.07"><div id="embers-g" style="opacity:0.70">
+      <div id="em0" class="em" style="left:364px;width:5.1px;height:5.1px"></div><div id="em1" class="em" style="left:98px;width:7.6px;height:7.6px"></div><div id="em2" class="em" style="left:465px;width:9.8px;height:9.8px"></div><div id="em3" class="em" style="left:617px;width:6.8px;height:6.8px"></div><div id="em4" class="em" style="left:184px;width:4.8px;height:4.8px"></div><div id="em5" class="em" style="left:679px;width:6.6px;height:6.6px"></div><div id="em6" class="em" style="left:720px;width:7.0px;height:7.0px"></div><div id="em7" class="em" style="left:834px;width:8.9px;height:8.9px"></div><div id="em8" class="em" style="left:769px;width:6.0px;height:6.0px"></div><div id="em9" class="em" style="left:192px;width:7.4px;height:7.4px"></div><div id="em10" class="em" style="left:915px;width:6.2px;height:6.2px"></div><div id="em11" class="em" style="left:880px;width:10.6px;height:10.6px"></div><div id="em12" class="em" style="left:687px;width:11.0px;height:11.0px"></div><div id="em13" class="em" style="left:63px;width:7.2px;height:7.2px"></div><div id="em14" class="em" style="left:169px;width:5.7px;height:5.7px"></div><div id="em15" class="em" style="left:589px;width:10.2px;height:10.2px"></div><div id="em16" class="em" style="left:399px;width:10.2px;height:10.2px"></div><div id="em17" class="em" style="left:273px;width:7.4px;height:7.4px"></div><div id="em18" class="em" style="left:409px;width:8.0px;height:8.0px"></div><div id="em19" class="em" style="left:716px;width:4.4px;height:4.4px"></div><div id="em20" class="em" style="left:432px;width:6.8px;height:6.8px"></div><div id="em21" class="em" style="left:249px;width:5.1px;height:5.1px"></div><div id="em22" class="em" style="left:141px;width:6.5px;height:6.5px"></div><div id="em23" class="em" style="left:292px;width:6.4px;height:6.4px"></div><div id="em24" class="em" style="left:506px;width:7.4px;height:7.4px"></div><div id="em25" class="em" style="left:869px;width:5.1px;height:5.1px"></div><div id="em26" class="em" style="left:583px;width:4.2px;height:4.2px"></div><div id="em27" class="em" style="left:301px;width:6.6px;height:6.6px"></div><div id="em28" class="em" style="left:370px;width:5.6px;height:5.6px"></div><div id="em29" class="em" style="left:858px;width:9.2px;height:9.2px"></div><div id="em30" class="em" style="left:68px;width:6.0px;height:6.0px"></div><div id="em31" class="em" style="left:977px;width:10.9px;height:10.9px"></div><div id="em32" class="em" style="left:237px;width:5.4px;height:5.4px"></div><div id="em33" class="em" style="left:693px;width:9.6px;height:9.6px"></div>
+    </div></div>
+    <div id="vig" class="clip" data-start="0" data-duration="48.07"></div>
+    <div id="flash-host" class="clip" data-start="0" data-duration="0.6"><div id="flash"></div></div>
+    <div id="brand" class="clip" data-start="0" data-duration="48.07">HAQ <span>·</span> STORIES</div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#flash", {opacity: 0.45}, {opacity: 0, duration: 0.55, ease: "power2.out"}, 0);
+    tl.fromTo("#lamp0", {opacity: 0.75}, {opacity: 1, duration: 0.18, ease: "sine.inOut", yoyo: true, repeat: 265}, 0.03);
+    tl.fromTo("#lamp1", {opacity: 0.75}, {opacity: 1, duration: 0.23, ease: "sine.inOut", yoyo: true, repeat: 205}, 0.21);
+    tl.fromTo("#lamp2", {opacity: 0.75}, {opacity: 1, duration: 0.20, ease: "sine.inOut", yoyo: true, repeat: 242}, 0.03);
+    tl.fromTo("#pulpit", {opacity: 0, y: 40}, {opacity: 1, y: 0, duration: 1.2, ease: "power2.out", immediateRender: false}, 16.32);
+    tl.fromTo("#trunk", {x: 0}, {x: 5, duration: 0.045, ease: "sine.inOut", yoyo: true, repeat: 163, immediateRender: false}, 20.25);
+    tl.fromTo("#rp0", {scale: 0.3, opacity: 0.7}, {scale: 2.4, opacity: 0, duration: 1.8, ease: "power1.out", repeat: 3, immediateRender: false}, 20.25);
+    tl.fromTo("#rp1", {scale: 0.3, opacity: 0.7}, {scale: 2.4, opacity: 0, duration: 1.8, ease: "power1.out", repeat: 2, immediateRender: false}, 20.85);
+    tl.fromTo("#rp2", {scale: 0.3, opacity: 0.7}, {scale: 2.4, opacity: 0, duration: 1.8, ease: "power1.out", repeat: 2, immediateRender: false}, 21.45);
+    tl.fromTo("#trunk", {x: 0}, {x: 5, duration: 0.045, ease: "sine.inOut", yoyo: true, repeat: 59, immediateRender: false}, 0.05);
+    tl.fromTo("#rp0", {scale: 0.3, opacity: 0.7}, {scale: 2.4, opacity: 0, duration: 1.8, ease: "power1.out", repeat: 0, immediateRender: false}, 0.05);
+    tl.fromTo("#rp1", {scale: 0.3, opacity: 0.7}, {scale: 2.4, opacity: 0, duration: 1.8, ease: "power1.out", repeat: 0, immediateRender: false}, 0.65);
+    tl.fromTo("#rp2", {scale: 0.3, opacity: 0.7}, {scale: 2.4, opacity: 0, duration: 1.8, ease: "power1.out", repeat: 0, immediateRender: false}, 1.25);
+    tl.fromTo("#trunk", {x: 0}, {x: 0, duration: 0.01, immediateRender: false}, 27.69);
+    tl.fromTo("#warm-b", {scaleY: 1}, {scaleY: 1.06, duration: 0.8, ease: "sine.inOut", yoyo: true, repeat: 30}, 0);
+    tl.fromTo("#warm-g", {opacity: 0.5}, {opacity: 0.35, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 5.41);
+    tl.fromTo("#cool-g", {opacity: 0.15}, {opacity: 0.2, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 5.41);
+    tl.fromTo("#embers-g", {opacity: 0.70}, {opacity: 0.49, duration: 0.9, immediateRender: false}, 5.41);
+    tl.fromTo("#warm-g", {opacity: 0.35}, {opacity: 0.35, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 9.92);
+    tl.fromTo("#cool-g", {opacity: 0.2}, {opacity: 0.2, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 9.92);
+    tl.fromTo("#embers-g", {opacity: 0.49}, {opacity: 0.49, duration: 0.9, immediateRender: false}, 9.92);
+    tl.fromTo("#warm-g", {opacity: 0.35}, {opacity: 0.4, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 15.72);
+    tl.fromTo("#cool-g", {opacity: 0.2}, {opacity: 0.15, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 15.72);
+    tl.fromTo("#embers-g", {opacity: 0.49}, {opacity: 0.56, duration: 0.9, immediateRender: false}, 15.72);
+    tl.fromTo("#warm-g", {opacity: 0.4}, {opacity: 0.15, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 20.25);
+    tl.fromTo("#cool-g", {opacity: 0.15}, {opacity: 0.35, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 20.25);
+    tl.fromTo("#embers-g", {opacity: 0.56}, {opacity: 0.30, duration: 0.9, immediateRender: false}, 20.25);
+    tl.fromTo("#warm-g", {opacity: 0.15}, {opacity: 0.55, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 27.69);
+    tl.fromTo("#cool-g", {opacity: 0.35}, {opacity: 0.1, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 27.69);
+    tl.fromTo("#embers-g", {opacity: 0.30}, {opacity: 0.77, duration: 0.9, immediateRender: false}, 27.69);
+    tl.fromTo("#warm-g", {opacity: 0.55}, {opacity: 0.5, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 33.31);
+    tl.fromTo("#cool-g", {opacity: 0.1}, {opacity: 0.15, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 33.31);
+    tl.fromTo("#embers-g", {opacity: 0.77}, {opacity: 0.70, duration: 0.9, immediateRender: false}, 33.31);
+    tl.fromTo("#warm-g", {opacity: 0.5}, {opacity: 0.6, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 38.58);
+    tl.fromTo("#cool-g", {opacity: 0.15}, {opacity: 0.1, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 38.58);
+    tl.fromTo("#embers-g", {opacity: 0.70}, {opacity: 0.84, duration: 0.9, immediateRender: false}, 38.58);
+    tl.fromTo("#warm-g", {opacity: 0.6}, {opacity: 0.6, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 43.55);
+    tl.fromTo("#cool-g", {opacity: 0.1}, {opacity: 0.15, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 43.55);
+    tl.fromTo("#embers-g", {opacity: 0.84}, {opacity: 0.84, duration: 0.9, immediateRender: false}, 43.55);
+    const et = gsap.timeline({ paused: true });
+    et.fromTo("#em0", {y: 0, x: 0, opacity: 0}, {keyframes: [{opacity: 0.95, duration: 1.07}, {opacity: 0, duration: 4.28}], y: -1119, x: 6, duration: 5.35, ease: "none", repeat: 10}, 6.61);
+    et.fromTo("#em1", {y: 0, x: 0, opacity: 0}, {keyframes: [{opacity: 0.95, duration: 0.66}, {opacity: 0, duration: 2.66}], y: -954, x: -77, duration: 3.32, ease: "none", repeat: 15}, 5.56);
+    et.fromTo("#em2", {y: 0, x: 0, opacity: 0}, {keyframes: [{opacity: 0.95, duration: 0.72}, {opacity: 0, duration: 2.89}], y: -1469, x: 23, duration: 3.61, ease: "none", repeat: 14}, 6.19);
+    et.fromTo("#em3", {y: 0, x: 0, opacity: 0}, {keyframes: [{opacity: 0.95, duration: 1.28}, {opacity: 0, duration: 5.14}], y: -1074, x: 65, duration: 6.42, ease: "none", repeat: 8}, 6.70);
+    et.fromTo("#em4", {y: 0, x: 0, opacity: 0}, {keyframes: [{opacity: 0.95, duration: 0.84}, {opacity: 0, duration: 3.37}], y: -1249, x: -57, duration: 4.22, ease: "none", repeat: 13}, 3.56);
+    et.fromTo("#em5", {y: 0, x: 0, opacity: 0}, {keyframes: [{opacity: 0.95, duration: 1.00}, {opacity: 0, duration: 4.01}], y: -1024, x: -79, duration: 5.01, ease: "none", repeat: 10}, 6.69);
+    et.fromTo("#em6", {y: 0, x: 0, opacity: 0}, {keyframes: [{opacity: 0.95, duration: 0.85}, {opacity: 0, duration: 3.39}], y: -1080, x: -8, duration: 4.24, ease: "none", repeat: 12}, 4.52);
+    et.fromTo("#em7", {y: 0, x: 0, opacity: 0}, {keyframes: [{opacity: 0.95, duration: 0.80}, {opacity: 0, duration: 3.20}], y: -1425, x: 5, duration: 4.01, ease: "none", repeat: 13}, 4.70);
+    et.fromTo("#em8", {y: 0, x: 0, opacity: 0}, {keyframes: [{opacity: 0.95, duration: 1.29}, {opacity: 0, duration: 5.15}], y: -1354, x: -15, duration: 6.43, ease: "none", repeat: 8}, 6.24);
+    et.fromTo("#em9", {y: 0, x: 0, opacity: 0}, {keyframes: [{opacity: 0.95, duration: 0.67}, {opacity: 0, duration: 2.66}], y: -1244, x: 48, duration: 3.33, ease: "none", repeat: 16}, 4.78);
+    et.fromTo("#em10", {y: 0, x: 0, opacity: 0}, {keyframes: [{opacity: 0.95, duration: 1.10}, {opacity: 0, duration: 4.40}], y: -1174, x: 14, duration: 5.49, ease: "none", repeat: 10}, 3.73);
+    et.fromTo("#em11", {y: 0, x: 0, opacity: 0}, {keyframes: [{opacity: 0.95, duration: 0.95}, {opacity: 0, duration: 3.81}], y: -1321, x: -79, duration: 4.76, ease: "none", repeat: 11}, 3.84);
+    et.fromTo("#em12", {y: 0, x: 0, opacity: 0}, {keyframes: [{opacity: 0.95, duration: 1.18}, {opacity: 0, duration: 4.73}], y: -1301, x: -21, duration: 5.91, ease: "none", repeat: 9}, 5.32);
+    et.fromTo("#em13", {y: 0, x: 0, opacity: 0}, {keyframes: [{opacity: 0.95, duration: 0.75}, {opacity: 0, duration: 3.00}], y: -1361, x: -79, duration: 3.75, ease: "none", repeat: 13}, 6.56);
+    et.fromTo("#em14", {y: 0, x: 0, opacity: 0}, {keyframes: [{opacity: 0.95, duration: 0.90}, {opacity: 0, duration: 3.59}], y: -1170, x: -75, duration: 4.49, ease: "none", repeat: 12}, 3.09);
+    et.fromTo("#em15", {y: 0, x: 0, opacity: 0}, {keyframes: [{opacity: 0.95, duration: 1.18}, {opacity: 0, duration: 4.72}], y: -1149, x: -40, duration: 5.90, ease: "none", repeat: 10}, 1.90);
+    et.fromTo("#em16", {y: 0, x: 0, opacity: 0}, {keyframes: [{opacity: 0.95, duration: 1.27}, {opacity: 0, duration: 5.09}], y: -1039, x: -58, duration: 6.36, ease: "none", repeat: 8}, 6.04);
+    et.fromTo("#em17", {y: 0, x: 0, opacity: 0}, {keyframes: [{opacity: 0.95, duration: 1.03}, {opacity: 0, duration: 4.12}], y: -1151, x: -89, duration: 5.14, ease: "none", repeat: 10}, 5.65);
+    et.fromTo("#em18", {y: 0, x: 0, opacity: 0}, {keyframes: [{opacity: 0.95, duration: 1.27}, {opacity: 0, duration: 5.08}], y: -1271, x: 3, duration: 6.35, ease: "none", repeat: 9}, 2.62);
+    et.fromTo("#em19", {y: 0, x: 0, opacity: 0}, {keyframes: [{opacity: 0.95, duration: 1.23}, {opacity: 0, duration: 4.93}], y: -1379, x: 67, duration: 6.17, ease: "none", repeat: 9}, 2.19);
+    et.fromTo("#em20", {y: 0, x: 0, opacity: 0}, {keyframes: [{opacity: 0.95, duration: 0.71}, {opacity: 0, duration: 2.83}], y: -940, x: -79, duration: 3.54, ease: "none", repeat: 15}, 4.75);
+    et.fromTo("#em21", {y: 0, x: 0, opacity: 0}, {keyframes: [{opacity: 0.95, duration: 0.86}, {opacity: 0, duration: 3.46}], y: -991, x: -90, duration: 4.32, ease: "none", repeat: 12}, 6.77);
+    et.fromTo("#em22", {y: 0, x: 0, opacity: 0}, {keyframes: [{opacity: 0.95, duration: 0.66}, {opacity: 0, duration: 2.63}], y: -989, x: 21, duration: 3.28, ease: "none", repeat: 16}, 4.13);
+    et.fromTo("#em23", {y: 0, x: 0, opacity: 0}, {keyframes: [{opacity: 0.95, duration: 0.88}, {opacity: 0, duration: 3.52}], y: -1496, x: 63, duration: 4.40, ease: "none", repeat: 12}, 6.46);
+    et.fromTo("#em24", {y: 0, x: 0, opacity: 0}, {keyframes: [{opacity: 0.95, duration: 0.70}, {opacity: 0, duration: 2.79}], y: -1059, x: -28, duration: 3.48, ease: "none", repeat: 14}, 6.64);
+    et.fromTo("#em25", {y: 0, x: 0, opacity: 0}, {keyframes: [{opacity: 0.95, duration: 0.66}, {opacity: 0, duration: 2.62}], y: -988, x: 5, duration: 3.28, ease: "none", repeat: 16}, 3.88);
+    et.fromTo("#em26", {y: 0, x: 0, opacity: 0}, {keyframes: [{opacity: 0.95, duration: 0.99}, {opacity: 0, duration: 3.95}], y: -1318, x: 65, duration: 4.94, ease: "none", repeat: 11}, 2.16);
+    et.fromTo("#em27", {y: 0, x: 0, opacity: 0}, {keyframes: [{opacity: 0.95, duration: 0.75}, {opacity: 0, duration: 3.00}], y: -1367, x: 6, duration: 3.75, ease: "none", repeat: 14}, 4.10);
+    et.fromTo("#em28", {y: 0, x: 0, opacity: 0}, {keyframes: [{opacity: 0.95, duration: 1.18}, {opacity: 0, duration: 4.70}], y: -1384, x: 63, duration: 5.88, ease: "none", repeat: 10}, 1.21);
+    et.fromTo("#em29", {y: 0, x: 0, opacity: 0}, {keyframes: [{opacity: 0.95, duration: 0.79}, {opacity: 0, duration: 3.16}], y: -917, x: -26, duration: 3.95, ease: "none", repeat: 13}, 4.96);
+    et.fromTo("#em30", {y: 0, x: 0, opacity: 0}, {keyframes: [{opacity: 0.95, duration: 0.81}, {opacity: 0, duration: 3.24}], y: -1168, x: 82, duration: 4.06, ease: "none", repeat: 13}, 4.19);
+    et.fromTo("#em31", {y: 0, x: 0, opacity: 0}, {keyframes: [{opacity: 0.95, duration: 1.27}, {opacity: 0, duration: 5.08}], y: -1036, x: -50, duration: 6.35, ease: "none", repeat: 8}, 4.68);
+    et.fromTo("#em32", {y: 0, x: 0, opacity: 0}, {keyframes: [{opacity: 0.95, duration: 1.05}, {opacity: 0, duration: 4.21}], y: -1188, x: 61, duration: 5.26, ease: "none", repeat: 11}, 2.26);
+    et.fromTo("#em33", {y: 0, x: 0, opacity: 0}, {keyframes: [{opacity: 0.95, duration: 0.70}, {opacity: 0, duration: 2.78}], y: -1369, x: 74, duration: 3.48, ease: "none", repeat: 15}, 4.70);
+    // Sparks are already mid-flight on frame 0: play their own timeline from 7 s in.
+    tl.add(et.tweenFromTo(7, 55.07, { ease: "none" }), 0);
+    window.__timelines["atmos"] = tl;
+  </script>
+</template>

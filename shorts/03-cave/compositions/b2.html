@@ -1,0 +1,29 @@
+<template>
+  <style>
+    #b2 { position: absolute; inset: 0; }
+    #b2-wrap { position: absolute; left: 90px; right: 140px; top: 330px; bottom: 600px;
+      display: flex; flex-direction: column; justify-content: center; gap: 34px; }
+  </style>
+  <div id="b2" data-composition-id="b2" data-width="1080" data-height="1920">
+    <div id="b2-wrap" class="clip" data-start="0" data-duration="10.26">
+      <div id="b2-txt" class="txt" style="font-size:96px"><span class="w" id="b2-w0">How</span> <span class="w" id="b2-w1">long</span> <span class="w" id="b2-w2">did</span> <span class="w" id="b2-w3">they</span> <span class="w hi" id="b2-w4">sleep?</span></div>
+      <div id="b2-opts" class="opts"><div id="b2-o0" class="opt"><b>A</b>100 years</div><div id="b2-o1" class="opt"><b>B</b>40 years</div><div id="b2-o2" class="opt"><b>C</b>309 years</div></div>
+      <div id="b2-c3" class="count">3</div>
+      <div id="b2-c2" class="count">2</div>
+      <div id="b2-c1" class="count">1</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#b2 .w", {opacity: 0, y: 22, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.32, ease: "power2.out", stagger: 1.500}, 0.12);
+    tl.fromTo("#b2 .hi", {textShadow: "0 0 0px rgba(0,0,0,0)"}, {textShadow: "0 0 28px var(--accent)", duration: 0.6, ease: "power1.out"}, 4.81);
+    tl.fromTo("#b2-o0", {opacity: 0, x: -30}, {opacity: 1, x: 0, duration: 0.3, ease: "power2.out"}, 1.71);
+    tl.fromTo("#b2-o1", {opacity: 0, x: -30}, {opacity: 1, x: 0, duration: 0.3, ease: "power2.out"}, 3.62);
+    tl.fromTo("#b2-o2", {opacity: 0, x: -30}, {opacity: 1, x: 0, duration: 0.3, ease: "power2.out"}, 5.40);
+    tl.fromTo("#b2-c3", {opacity: 0, scale: 1.4}, {keyframes: [{opacity: 1, scale: 1, duration: 0.2}, {opacity: 0, duration: 0.25, delay: 0.25}]}, 7.23);
+    tl.fromTo("#b2-c2", {opacity: 0, scale: 1.4}, {keyframes: [{opacity: 1, scale: 1, duration: 0.2}, {opacity: 0, duration: 0.25, delay: 0.25}]}, 8.01);
+    tl.fromTo("#b2-c1", {opacity: 0, scale: 1.4}, {keyframes: [{opacity: 1, scale: 1, duration: 0.2}, {opacity: 0, duration: 0.25, delay: 0.25}]}, 9.22);
+    tl.fromTo("#b2-wrap", {opacity: 1}, {opacity: 0, duration: 0.22, ease: "power1.in"}, 10.02);
+    window.__timelines["b2"] = tl;
+  </script>
+</template>

@@ -1,0 +1,138 @@
+{
+  "accent": "#f2b04a",
+  "embers": true,
+  "mote": "#e6d6b2",
+  "motes": 0.3,
+  "scene": "cave",
+  "flash": 0.5,
+  "impact": true,
+  "beats": [
+    {
+      "hook": true,
+      "text": "They fell asleep in a *cave*…",
+      "sub": "…and woke up in a different world.",
+      "mood": {
+        "warm": 0,
+        "cool": 0.5
+      },
+      "reveal": false
+    },
+    {
+      "text": "How long did they *sleep?*",
+      "size": 96,
+      "options": [
+        "100 years",
+        "40 years",
+        "309 years"
+      ],
+      "count": true,
+      "mood": {
+        "warm": 0,
+        "cool": 0.3
+      },
+      "opt_at": [
+        1.71,
+        3.62,
+        5.4
+      ],
+      "count_at": [
+        7.23,
+        8.01,
+        9.22
+      ]
+    },
+    {
+      "text": "The answer is *C!*",
+      "size": 110,
+      "options": [
+        "100 years",
+        "40 years",
+        "309 years"
+      ],
+      "correct": 2,
+      "mood": {
+        "warm": 0.25,
+        "cool": 0.6
+      }
+    },
+    {
+      "arabic": "وَلَبِثُواْ فِي كَهۡفِهِمۡ ثَلَٰثَ مِاْئَةٖ سِنِينَ وَٱزۡدَادُواْ تِسۡعٗا",
+      "translation": "“And they remained in their cave for three hundred years and exceeded by nine.”",
+      "ref": "Al-Kahf 18:25 · Sahih International",
+      "mood": {
+        "warm": 0,
+        "cool": 0.85
+      }
+    },
+    {
+      "text": "They thought they had slept only *a day*, or part of a day.",
+      "ref": "Al-Kahf 18:19",
+      "mood": {
+        "warm": 0,
+        "cool": 0.5
+      }
+    },
+    {
+      "text": "*Three centuries* passed… in what felt like a single day.",
+      "size": 104,
+      "mood": {
+        "warm": 0.1,
+        "cool": 0.6
+      }
+    },
+    {
+      "cta": true,
+      "text": "Did you get it right? Comment A, B or C!",
+      "mood": {
+        "warm": 0.15,
+        "cool": 0.4
+      }
+    }
+  ],
+  "bed_volume": 1.0,
+  "sound": [
+    {
+      "prompt": "deep echoing low boom inside a cave",
+      "beat": 0,
+      "dur": 3,
+      "gain": -8,
+      "fade_in": 0,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "inside a cave at night, slow echoing water drips, faint wind at the cave mouth, crickets outside, no music",
+      "beat": 0,
+      "dur": 42,
+      "gain": -15,
+      "fade_in": 0.3,
+      "fade_out": 2
+    },
+    {
+      "prompt": "old clock ticking steadily, close, dry",
+      "beat": 1,
+      "offset": 0.3,
+      "dur": 9.5,
+      "gain": -17,
+      "fade_in": 0.5,
+      "fade_out": 0.3
+    },
+    {
+      "prompt": "soft magical shimmer, gentle reveal chime",
+      "beat": 2,
+      "offset": 0.1,
+      "dur": 2.5,
+      "gain": -13,
+      "fade_in": 0,
+      "fade_out": 1
+    },
+    {
+      "prompt": "soft male choir humming a slow, mysterious, peaceful melody, voices only, no instruments, cave reverb",
+      "beat": 3,
+      "offset": 0.3,
+      "dur": 22,
+      "gain": -19,
+      "fade_in": 3,
+      "fade_out": 2.5
+    }
+  ]
+}
