@@ -2,60 +2,90 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=1920, height=1080" />
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="assets/vendor/gsap.min.js"></script>
     <style>
-      /* Placeholders: replace all three with the film's own palette and display face. */
-      :root {
-        --ground: #000;
-        --ink: #ffffff;
-        --font-display: sans-serif;
-      }
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      html,
-      body {
-        margin: 0;
-        width: 1920px;
-        height: 1080px;
-        overflow: hidden;
-        background: var(--ground);
-      }
-      #root {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: var(--font-display);
-      }
-      #title {
-        color: var(--ink);
-        font-size: 72px;
-        font-weight: 600;
-        letter-spacing: -0.03em;
-      }
+      @font-face { font-family: "Cormorant Garamond"; font-weight: 600; font-style: normal;
+        src: url("assets/fonts/cormorant-garamond-latin-600-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Cormorant Garamond"; font-weight: 600; font-style: italic;
+        src: url("assets/fonts/cormorant-garamond-latin-600-italic.woff2") format("woff2"); }
+      @font-face { font-family: "Noto Nastaliq Urdu"; font-weight: 400;
+        src: url("assets/fonts/noto-nastaliq-urdu-arabic-400-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Amiri Quran"; font-weight: 400;
+        src: url("assets/fonts/amiri-quran-arabic-400-normal.woff2") format("woff2"); }
+
+      :root { --ground: #07060c; --ink: #f5ead6; --accent: #f2b04a; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: var(--ground); }
+      #root { width: 100%; height: 100%; position: relative; color: var(--ink); }
+      .txt { font-family: "Cormorant Garamond"; font-weight: 600; font-size: 116px; line-height: 1.06;
+        letter-spacing: -0.01em; text-shadow: 0 4px 30px rgba(0,0,0,0.65); }
+      .txt .w { display: inline-block; }
+      .txt .hi { color: var(--accent); }
+      .saw { font-family: "Amiri Quran"; font-style: normal; font-size: 0.8em; line-height: 1; }
+      .txt.hook { font-size: 132px; text-align: center; line-height: 1.02; }
+      .hook ~ .sub { text-align: center; font-size: 76px; }
+      #flash { position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 45%, rgba(255,240,215,0.85), rgba(255,200,120,0.25) 60%, rgba(0,0,0,0) 85%); }
+      .txt.cta { font-size: 96px; text-align: center; }
+      .sub { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 72px;
+        color: rgba(245,234,214,0.82); line-height: 1.15; }
+      .ar { font-family: "Amiri Quran"; font-size: 74px; line-height: 1.9; text-align: center; color: #fff6e6;
+        text-shadow: 0 0 30px rgba(215,236,255,0.45); }
+      .tr { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 58px; line-height: 1.15;
+        text-align: center; }
+      .ur { font-family: "Noto Nastaliq Urdu"; font-size: 46px; line-height: 1.9; color: #fff3dc; text-align: right;
+        background: rgba(0,0,0,0.5); border-radius: 18px; padding: 12px 26px 26px; align-self: stretch; }
+      .cta ~ .ur, .ar ~ .ur, .tr ~ .ur { text-align: center; }
+      .ref { align-self: flex-start; font-family: Inter; font-weight: 700; font-size: 32px; letter-spacing: 0.14em;
+        text-transform: uppercase; color: var(--accent); border: 2px solid var(--accent); border-radius: 999px;
+        padding: 12px 26px; background: rgba(0,0,0,0.35); }
+      .ar ~ .ref { align-self: center; }
+      .orbs { position: absolute; left: 0; right: 0; bottom: -420px; height: 200px; }
+      .orb { position: absolute; left: 50%; top: 50%; width: 120px; height: 120px; margin: -60px; border-radius: 50%;
+        background: radial-gradient(circle, #fff6e0 0%, #ffd27a 40%, rgba(255,190,90,0) 72%);
+        box-shadow: 0 0 60px 20px rgba(255,200,110,0.35); }
+      .opts { display: flex; flex-direction: column; gap: 22px; }
+      .opt { font-family: "Cormorant Garamond"; font-weight: 600; font-size: 76px; padding: 16px 34px;
+        border: 2px solid rgba(245,234,214,0.35); border-radius: 24px; background: rgba(0,0,0,0.35); }
+      .opt b { font-family: Inter; font-size: 46px; color: var(--accent); margin-right: 26px; }
+      .opt.right { border-color: var(--accent); background: rgba(242,163,58,0.18); transform-origin: left center; }
+      .count { position: absolute; right: 0; top: -40px; font-family: Inter; font-weight: 900; font-size: 150px;
+        color: var(--accent); opacity: 0; }
+      .mark { font-family: "Amiri Quran"; font-size: 120px; text-align: center; color: var(--accent); line-height: 1.4; }
+      .btn { align-self: center; font-family: Inter; font-weight: 700; font-size: 40px; letter-spacing: 0.08em;
+        color: #120b08; background: var(--accent); border-radius: 999px; padding: 22px 48px; }
     </style>
   </head>
   <body>
-    <div
-      id="root"
-      data-composition-id="main"
-      data-start="0"
-      data-duration="10"
-      data-width="1920"
-      data-height="1080"
-    >
-      <h1 id="title" class="clip" data-start="0" data-duration="10" data-track-index="0">Title</h1>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="38.15"
+      data-width="1080" data-height="1920">
+      <div id="atmos" data-composition-id="atmos" data-composition-src="compositions/atmos.html"
+        data-start="0" data-duration="38.15" data-track-index="1" data-track-kind="graphics"
+        data-width="1080" data-height="1920" style="z-index:1"></div>
+      <div id="b1" data-composition-id="b1" data-composition-src="compositions/b1.html"
+        data-start="0.00" data-duration="6.12" data-track-index="2" data-track-kind="graphics"
+        data-width="1080" data-height="1920" style="z-index:2"></div>
+      <div id="b2" data-composition-id="b2" data-composition-src="compositions/b2.html"
+        data-start="6.12" data-duration="8.94" data-track-index="2" data-track-kind="graphics"
+        data-width="1080" data-height="1920" style="z-index:2"></div>
+      <div id="b3" data-composition-id="b3" data-composition-src="compositions/b3.html"
+        data-start="15.06" data-duration="4.91" data-track-index="2" data-track-kind="graphics"
+        data-width="1080" data-height="1920" style="z-index:2"></div>
+      <div id="b4" data-composition-id="b4" data-composition-src="compositions/b4.html"
+        data-start="19.97" data-duration="5.64" data-track-index="2" data-track-kind="graphics"
+        data-width="1080" data-height="1920" style="z-index:2"></div>
+      <div id="b5" data-composition-id="b5" data-composition-src="compositions/b5.html"
+        data-start="25.61" data-duration="7.20" data-track-index="2" data-track-kind="graphics"
+        data-width="1080" data-height="1920" style="z-index:2"></div>
+      <div id="b6" data-composition-id="b6" data-composition-src="compositions/b6.html"
+        data-start="32.81" data-duration="5.34" data-track-index="2" data-track-kind="graphics"
+        data-width="1080" data-height="1920" style="z-index:2"></div>
+      <audio id="vo" class="clip" src="assets/narration.wav" data-start="0" data-duration="37.45"
+        data-track-index="10" data-volume="1"></audio>
+      <audio id="amb" class="clip" src="assets/ambience.wav" data-start="0" data-duration="38.15" data-track-index="11" data-volume="1.0"></audio>
     </div>
     <script>
-      const tl = gsap.timeline({ paused: true });
-      // Example: tl.fromTo("#title", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.18, ease: "power4.out" }, 0);
-      window.__timelines["main"] = tl;
-      tl.seek(0);
+      window.__timelines["main"] = gsap.timeline({ paused: true });
     </script>
   </body>
 </html>

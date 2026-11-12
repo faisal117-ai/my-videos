@@ -62,8 +62,15 @@ def main() -> None:
     inputs, filters = [], []
     for k, layer in enumerate(spec["sound"]):
         gen_dur = min(layer["dur"], 22)
-        key = hashlib.sha1(f'{layer["prompt"]}|{gen_dur}'.encode()).hexdigest()[:12]
-        clip = cache / f"{key}.mp3"
+        if layer.get("src"):
+            # Reuse a clip generated for an earlier Short: no credits spent.
+            clip = (d / layer["src"]).resolve()
+            src_dur = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0",
+                                            str(clip)], capture_output=True, text=True).stdout or 0)
+            gen_dur = src_dur or gen_dur
+        else:
+            key = hashlib.sha1(f'{layer["prompt"]}|{gen_dur}'.encode()).hexdigest()[:12]
+            clip = cache / f"{key}.mp3"
         if not clip.exists():
             print(f"generating: {layer['prompt'][:60]}…")
             generate(layer["prompt"], gen_dur, clip)

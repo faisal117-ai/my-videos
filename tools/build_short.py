@@ -491,7 +491,7 @@ def yusuf_scene(spec: dict, beats: list, total: float) -> tuple[str, str, str]:
     stars = []
     for k in range(11):
         a = 3.14159 * (0.12 + 0.76 * k / 10)
-        x, y = 540 - 360 * __import__("math").cos(a), 760 - 300 * __import__("math").sin(a)
+        x, y = 540 - 380 * __import__("math").cos(a), 1560 - 300 * __import__("math").sin(a)
         stars.append(f'<div id="ys{k}" class="ystar" style="left:{x:.0f}px;top:{y:.0f}px"></div>')
     twinkles = [f'tl.fromTo("#ys{k}", {{opacity: 0.6}}, {{opacity: 1, duration: {rnd.uniform(0.5, 0.9):.2f}, yoyo: true, '
                 f'repeat: {int(total / 0.5)}, ease: "sine.inOut"}}, {rnd.uniform(0, 0.5):.2f});' for k in range(11)]
@@ -499,37 +499,37 @@ def yusuf_scene(spec: dict, beats: list, total: float) -> tuple[str, str, str]:
     dunes = ('<path fill="#1b1a26" d="M 0 1230 C 200 1180 380 1210 560 1235 C 760 1262 900 1190 1080 1215 V 1920 H 0 Z"/>'
              '<path fill="#13121c" d="M 0 1330 C 240 1290 420 1340 620 1350 C 820 1360 960 1300 1080 1320 V 1920 H 0 Z"/>')
     # Faceless walkers without spears (the soldier shape minus its spear).
-    bros = re.sub(r'<rect [^>]*width="2"[^>]*/>', "", "".join(soldier(x, 46) for x in [520 + 34 * i for i in range(10)]))
+    bros = re.sub(r'<rect [^>]*width="2"[^>]*/>', "", "".join(soldier(x, 74) for x in [430, 492, 540, 610, 668, 720, 790, 846, 900, 968]))
     css = """
     #ydesert, #ydream, #yinside { position: absolute; inset: 0; }
     #ysky { position: absolute; inset: 0; background: linear-gradient(180deg, #070b18 0%, #142037 55%, #22283c 100%); }
-    #ymoon { position: absolute; left: 720px; top: 360px; width: 120px; height: 120px; border-radius: 50%;
+    #ymoon { position: absolute; left: 800px; top: 1010px; width: 110px; height: 110px; border-radius: 50%;
       background: radial-gradient(circle at 40% 38%, #fffdf3, #e6dfc8 65%, #cfc7ae);
       box-shadow: 0 0 70px 24px rgba(230,236,255,0.3); }
     #ydunes { position: absolute; inset: 0; width: 100%; height: 100%; }
     #ywell { position: absolute; left: 340px; top: 1380px; width: 400px; height: 260px; }
-    #ybros { position: absolute; left: 0; top: 1236px; width: 1080px; height: 80px; overflow: visible; opacity: 0; }
+    #ybros { position: absolute; left: 0; top: 1150px; width: 1080px; height: 110px; overflow: visible; opacity: 0; }
     #dsky { position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 40%, #1d2a52 0%, #0b1026 60%, #05070f 100%); }
     .ystar { position: absolute; width: 26px; height: 26px; margin: -13px; border-radius: 50%;
       background: radial-gradient(circle, #ffffff 0%, #dfe8ff 35%, rgba(200,215,255,0) 70%);
       box-shadow: 0 0 24px 8px rgba(200,215,255,0.45); }
-    #dsun { position: absolute; left: 190px; top: 380px; width: 150px; height: 150px; border-radius: 50%;
+    #dsun { position: absolute; left: 170px; top: 1080px; width: 150px; height: 150px; border-radius: 50%;
       background: radial-gradient(circle, #fff2c8 0%, #ffc860 45%, rgba(255,170,60,0) 72%); }
-    #dmoon { position: absolute; left: 740px; top: 380px; width: 110px; height: 110px; border-radius: 50%;
+    #dmoon { position: absolute; left: 790px; top: 1100px; width: 110px; height: 110px; border-radius: 50%;
       background: radial-gradient(circle at 40% 38%, #fffdf3, #e6dfc8 65%, #cfc7ae); box-shadow: 0 0 50px 16px rgba(230,236,255,0.3); }
     #dset { position: absolute; inset: 0; }
-    #iwall { position: absolute; inset: 0; background: radial-gradient(circle at 50% 28%, rgba(0,0,0,0) 0 170px, #1a140f 190px, #0a0705 70%); }
-    #ihole { position: absolute; left: 340px; top: 340px; width: 400px; height: 400px; border-radius: 50%;
+    #iwall { position: absolute; inset: 0; background: radial-gradient(circle at 50% 70%, rgba(0,0,0,0) 0 170px, #1a140f 190px, #0a0705 70%); }
+    #ihole { position: absolute; left: 340px; top: 1150px; width: 400px; height: 400px; border-radius: 50%;
       background: radial-gradient(circle, #f6efe0 0%, #cfd9f0 40%, #6a7aa0 75%); }
-    #ibeam { position: absolute; left: 290px; top: 520px; width: 500px; height: 1400px; transform-origin: 50% 0%;
-      background: linear-gradient(180deg, rgba(240,235,220,0.45), rgba(240,235,220,0)); }
+    #ibeam { position: absolute; left: 140px; top: 1250px; width: 800px; height: 700px; transform-origin: 50% 0%;
+      background: radial-gradient(ellipse 50% 70% at 50% 20%, rgba(240,235,220,0.35), rgba(240,235,220,0.12) 45%, rgba(240,235,220,0) 75%); }
     #istones { position: absolute; inset: 0; background: repeating-linear-gradient(180deg, rgba(255,255,255,0.03) 0 38px, rgba(0,0,0,0.25) 38px 42px); }
 """
     markup = f"""
     <div id="ydesert" class="clip" data-start="0" data-duration="{total:.2f}">
       <div id="ysky"></div><div id="ymoon"></div>
       <svg id="ydunes" viewBox="0 0 1080 1920" preserveAspectRatio="none">{dunes}</svg>
-      <svg id="ybros" viewBox="0 0 1080 80"><g transform="translate(0,62)" fill="#07060a">{bros}</g></svg>
+      <svg id="ybros" viewBox="0 0 1080 110"><g transform="translate(0,100)" fill="#07060a">{bros}</g></svg>
       <svg id="ywell" viewBox="0 0 400 260">
         <defs><linearGradient id="wst" x1="0" x2="1"><stop offset="0" stop-color="#2a2620"/><stop offset="0.5" stop-color="#5a5244"/><stop offset="1" stop-color="#211d18"/></linearGradient></defs>
         <rect x="20" y="70" width="360" height="170" rx="10" fill="url(#wst)"/>
@@ -543,7 +543,7 @@ def yusuf_scene(spec: dict, beats: list, total: float) -> tuple[str, str, str]:
       <div id="dset"><div id="dsun"></div><div id="dmoon"></div>{"".join(stars)}</div>
     </div>
     <div id="yinside" class="clip" data-start="0" data-duration="{total:.2f}" style="opacity:0">
-      <div id="ihole"></div><div id="ibeam"></div><div id="iwall"></div><div id="istones"></div>
+      <div id="istones"></div><div id="iwall"></div><div id="ihole"></div><div id="ibeam"></div>
     </div>"""
     js = ["\n    ".join(twinkles)]
     fade = lambda sel, a, b2, t, d=0.8: f'tl.fromTo("{sel}", {{opacity: {a}}}, {{opacity: {b2}, duration: {d}, ease: "sine.inOut", immediateRender: false}}, {t:.2f});'

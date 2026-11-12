@@ -1,0 +1,152 @@
+{
+  "accent": "#f2b04a",
+  "embers": false,
+  "scene": "yusuf",
+  "dream_beat": 1,
+  "warn_beat": 2,
+  "well_beat": 3,
+  "inside_beat": 4,
+  "flash": 0.4,
+  "bed_volume": 1.0,
+  "hold_end": 1.0,
+  "text_top": 300,
+  "text_bottom": 780,
+  "tr_size": 58,
+  "beats": [
+    {
+      "hook": true,
+      "text": "His own *brothers* threw him into a well…",
+      "sub": "Yusuf (AS) · Part 1",
+      "ur": "اس کے اپنے بھائیوں نے اسے کنویں میں پھینک دیا… یوسفؑ، حصہ اول",
+      "mood": {
+        "warm": 0,
+        "cool": 0.2
+      },
+      "reveal": false
+    },
+    {
+      "arabic": "إِنِّي رَأَيۡتُ أَحَدَ عَشَرَ كَوۡكَبٗا وَٱلشَّمۡسَ وَٱلۡقَمَرَ رَأَيۡتُهُمۡ لِي سَٰجِدِينَ",
+      "translation": "“…I have seen eleven stars and the sun and the moon; I saw them prostrating to me.”",
+      "ur": "میں نے خواب دیکھا ہے کہ گیارہ ستارے ہیں اور سورج اور چاند ہیں اور وہ مجھے سجدہ کر رہے ہیں",
+      "ref": "Yusuf 12:4",
+      "mood": {
+        "warm": 0.1,
+        "cool": 0.3
+      }
+    },
+    {
+      "text": "His father, Hazrat Yaqub (AS): “Do not tell your *brothers*.”",
+      "ur": "بیٹا، اپنا یہ خواب اپنے بھائیوں کو نہ سنانا",
+      "ref": "Yusuf 12:5",
+      "mood": {
+        "warm": 0.1,
+        "cool": 0.2
+      }
+    },
+    {
+      "text": "But his brothers were *jealous*… and threw him into the bottom of a well.",
+      "size": 104,
+      "ur": "لیکن بھائی حسد کرتے تھے… انہوں نے اسے لے جا کر کنویں کی تہہ میں ڈال دیا",
+      "ref": "Yusuf 12:8–15",
+      "mood": {
+        "warm": 0,
+        "cool": 0.1
+      }
+    },
+    {
+      "arabic": "وَأَوۡحَيۡنَآ إِلَيۡهِ لَتُنَبِّئَنَّهُم بِأَمۡرِهِمۡ هَٰذَا وَهُمۡ لَا يَشۡعُرُونَ",
+      "translation": "“You will surely inform them [someday] about this affair of theirs while they do not perceive.”",
+      "ur": "ایک وقت آئے گا جب تو ان لوگوں کو ان کی یہ حرکت جتائے گا، یہ اپنے فعل کے نتائج سے بے خبر ہیں",
+      "ref": "Yusuf 12:15",
+      "mood": {
+        "warm": 0.2,
+        "cool": 0.5
+      }
+    },
+    {
+      "cta": true,
+      "text": "Part 2 tomorrow. Follow so you don't miss it.",
+      "ur": "حصہ دوم کل… فالو کریں تاکہ آپ سے رہ نہ جائے",
+      "mood": {
+        "warm": 0.2,
+        "cool": 0.4
+      }
+    }
+  ],
+  "sound": [
+    {
+      "prompt": "boom",
+      "src": "../03-cave/assets/sfx/03b5f68efefc.mp3",
+      "beat": 0,
+      "dur": 3,
+      "gain": -6,
+      "fade_in": 0,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "well drips",
+      "src": "../03-cave/assets/sfx/a84b989967d0.mp3",
+      "beat": 0,
+      "dur": 6,
+      "gain": -12,
+      "fade_in": 0.2,
+      "fade_out": 1
+    },
+    {
+      "prompt": "shimmer",
+      "src": "../03-cave/assets/sfx/f73090a5a6a6.mp3",
+      "beat": 1,
+      "dur": 2.5,
+      "gain": -10,
+      "fade_in": 0,
+      "fade_out": 1
+    },
+    {
+      "prompt": "hum mysterious",
+      "src": "../03-cave/assets/sfx/1a9908bb62c8.mp3",
+      "beat": 1,
+      "offset": 0.4,
+      "dur": 13,
+      "gain": -17,
+      "fade_in": 2,
+      "fade_out": 2
+    },
+    {
+      "prompt": "night",
+      "src": "../05-trunk/assets/sfx/beb74bb8b482.mp3",
+      "beat": 2,
+      "dur": 12,
+      "gain": -14,
+      "fade_in": 1.5,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "a body falling into a deep stone well, thud and splash with long echo",
+      "beat": 3,
+      "offset": 3.4,
+      "dur": 3,
+      "gain": -8,
+      "fade_in": 0,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "well drips",
+      "src": "../03-cave/assets/sfx/a84b989967d0.mp3",
+      "beat": 4,
+      "dur": 12,
+      "gain": -15,
+      "fade_in": 0.5,
+      "fade_out": 2
+    },
+    {
+      "prompt": "hum hopeful",
+      "src": "../04-ease/assets/sfx/ed4334fb2fbf.mp3",
+      "beat": 4,
+      "offset": 0.5,
+      "dur": 12,
+      "gain": -15,
+      "fade_in": 2,
+      "fade_out": 2
+    }
+  ]
+}
