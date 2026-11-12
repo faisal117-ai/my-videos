@@ -80,8 +80,10 @@ def main() -> None:
         chain += f",afade=t=out:st={max(0.0, dur - fo):.2f}:d={min(fo, dur)},adelay={int(start * 1000)}:all=1[a{k}]"
         filters.append(chain)
     n = len(spec["sound"])
-    mix = "".join(f"[a{k}]" for k in range(n)) + \
-        f"amix=inputs={n}:normalize=0:duration=longest,apad=whole_dur={total:.2f},atrim=0:{total:.2f}[out]"
+    # The limiter caps sound hits so they never drive the final mix (and its AAC encode) over 0 dBTP.
+    mix = "".join(f"[a{k}]" for k in range(n)) + (
+        f"amix=inputs={n}:normalize=0:duration=longest,alimiter=limit=0.5:attack=8:release=120:level=false,"
+        f"apad=whole_dur={total:.2f},atrim=0:{total:.2f}[out]")
     subprocess.run(["ffmpeg", "-hide_banner", "-loglevel", "error", "-y", *inputs, "-filter_complex", ";".join(filters + [mix]),
                     "-map", "[out]", "-ar", "48000", str(d / "assets/ambience.wav")], check=True)
     print(f"soundscape: {n} layers, voice + bed {total:.2f}s")
