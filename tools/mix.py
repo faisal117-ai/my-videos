@@ -26,10 +26,19 @@ def main() -> None:
     voice, bed = d / "assets/narration.wav", d / "assets/ambience.wav"
     gain = (lufs(voice) - offset) - lufs(bed)
     tmp = video.with_suffix(".mix.mp4")
-    graph = (f"[1:a]aresample=48000,aformat=channel_layouts=stereo,asplit=2[v1][v2];"
-             f"[2:a]aresample=48000,aformat=channel_layouts=stereo,volume={gain:.2f}dB[bed];"
-             f"[bed][v1]sidechaincompress=threshold=0.05:ratio=2.5:attack=20:release=250:makeup=1[duck];"
-             f"[v2][duck]amix=inputs=2:normalize=0:duration=longest,loudnorm=I=-14:TP=-1.5:LRA=11[a]")
+    pre = (f"[1:a]aresample=48000,aformat=channel_layouts=stereo,asplit=2[v1][v2];"
+           f"[2:a]aresample=48000,aformat=channel_layouts=stereo,volume={gain:.2f}dB[bed];"
+           f"[bed][v1]sidechaincompress=threshold=0.05:ratio=2.5:attack=20:release=250:makeup=1[duck];"
+           f"[v2][duck]amix=inputs=2:normalize=0:duration=longest,afade=t=in:st=0:d=0.05")
+    # Two-pass loudnorm: measure the whole mix, then apply one fixed (linear) gain. Single-pass
+    # loudnorm starts with a guessed gain and can push the first transient over 0 dBTP.
+    probe = subprocess.run(["ffmpeg", "-hide_banner", "-i", str(video), "-i", str(voice), "-i", str(bed),
+                            "-filter_complex", pre + ",loudnorm=I=-14:TP=-2:LRA=11:print_format=json[a]",
+                            "-map", "[a]", "-f", "null", "-"], capture_output=True, text=True).stderr
+    m = json.loads(probe[probe.rindex("{"):probe.rindex("}") + 1])
+    norm = (f"loudnorm=I=-14:TP=-2:LRA=11:linear=true:measured_I={m['input_i']}:measured_TP={m['input_tp']}:"
+            f"measured_LRA={m['input_lra']}:measured_thresh={m['input_thresh']}:offset={m['target_offset']}")
+    graph = pre + f",{norm},aresample=48000,alimiter=limit=0.7:level=false[a]"
     subprocess.run(["ffmpeg", "-hide_banner", "-loglevel", "error", "-y", "-i", str(video), "-i", str(voice),
                     "-i", str(bed), "-filter_complex", graph, "-map", "0:v", "-map", "[a]", "-c:v", "copy",
                     "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-shortest", "-movflags", "+faststart",

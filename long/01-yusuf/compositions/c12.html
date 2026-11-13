@@ -1,0 +1,194 @@
+<template>
+  <style>
+    #c12 { position: absolute; inset: 0; overflow: hidden; background: #000; }
+    .c12-st { position: absolute; border-radius: 50%; background: #eef4ff; box-shadow: 0 0 6px rgba(220,235,255,0.9); }
+    .c12-mote { position: absolute; border-radius: 50%; }
+    .c12-full { position: absolute; inset: 0; }
+    .c12-svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+
+    .c12-cam { position: absolute; inset: 0; transform-origin: 50% 55%; }
+    .c12-scrim { position: absolute; left: 0; right: 0; bottom: 0; height: 300px;
+      background: linear-gradient(0deg, rgba(0,0,0,0.75), rgba(0,0,0,0)); }
+    .c12-cap { position: absolute; left: 210px; right: 210px; bottom: 64px; text-align: center;
+      font-family: "Cormorant Garamond"; font-weight: 600; font-size: 54px; line-height: 1.12; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c12-cardwrap { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+      background: radial-gradient(ellipse at 50% 50%, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.45) 50%, rgba(0,0,0,0) 80%); }
+    .c12-card { max-width: 1400px; display: flex; flex-direction: column; align-items: center; gap: 26px; text-align: center; }
+    .c12-ar { font-family: "Amiri Quran"; font-size: 70px; line-height: 1.8; color: #fff6e6; text-shadow: 0 0 30px rgba(215,236,255,0.4); }
+    .c12-en { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 50px; line-height: 1.18; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c12-ctext { font-family: "Cormorant Garamond"; font-weight: 600; font-size: 76px; line-height: 1.1; color: #f5ead6;
+      text-shadow: 0 3px 22px rgba(0,0,0,0.9); }
+    .c12-hi { color: var(--accent); }
+    .c12-ref { font-family: Inter, sans-serif; font-weight: 700; font-size: 28px; letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--accent); border: 2px solid var(--accent); border-radius: 999px; padding: 10px 24px; background: rgba(0,0,0,0.4); }
+    .c12-title { font-family: "Cormorant Garamond"; font-weight: 600; font-size: 118px; line-height: 1.02; color: #f5ead6;
+      text-shadow: 0 4px 30px rgba(0,0,0,0.8); }
+    .c12-tsub { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 52px; color: var(--accent); }
+    .c12-mark { font-family: Inter, sans-serif; font-weight: 700; font-size: 64px; letter-spacing: 0.32em; color: #f5ead6; }
+    .c12-mark span { color: var(--accent); }
+    .c12-endt { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 52px; color: #f5ead6; }
+    .c12-btn { font-family: Inter, sans-serif; font-weight: 700; font-size: 34px; letter-spacing: 0.08em; color: #120b08;
+      background: var(--accent); border-radius: 999px; padding: 18px 48px; }
+    .c12-label { position: absolute; left: 90px; top: 70px; }
+    .c12-label b { display: block; font-family: Inter, sans-serif; font-weight: 700; font-size: 28px; letter-spacing: 0.3em; color: var(--accent); }
+    .c12-label i { display: block; font-family: "Cormorant Garamond"; font-style: normal; font-weight: 600; font-size: 60px; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c12-brand { position: absolute; right: 80px; top: 70px; font-family: Inter, sans-serif; font-weight: 700; font-size: 28px;
+      letter-spacing: 0.32em; color: rgba(245,234,214,0.7); }
+    .c12-brand span { color: var(--accent); }
+    .c12-fade { position: absolute; inset: 0; background: #000; }
+
+    .c12-dsky { background: radial-gradient(ellipse at 50% 45%, #1d2a52 0%, #0b1026 60%, #05070f 100%); }
+    .c12-ystar { position: absolute; width: 34px; height: 34px; margin: -17px; border-radius: 50%;
+      background: radial-gradient(circle, #ffffff 0%, #dfe8ff 35%, rgba(200,215,255,0) 70%); box-shadow: 0 0 30px 10px rgba(200,215,255,0.45); }
+    .c12-dsun { position: absolute; left: 330px; top: 640px; width: 190px; height: 190px; border-radius: 50%;
+      background: radial-gradient(circle, #fff2c8 0%, #ffc860 45%, rgba(255,170,60,0) 72%); }
+    .c12-dmoon { position: absolute; left: 1430px; top: 660px; width: 130px; height: 130px; border-radius: 50%;
+      background: radial-gradient(circle at 40% 38%, #fffdf3, #e6dfc8 65%, #cfc7ae); box-shadow: 0 0 60px 20px rgba(230,236,255,0.3); }
+
+    #c12-kroom { background: linear-gradient(180deg, #120c0a 0%, #1e1410 100%); }
+    #c12-kdoor { position:absolute; left: 1180px; top: 200px; width: 380px; height: 640px; overflow: hidden;
+      background: linear-gradient(180deg, #05070f 0%, #101a30 80%, #2a2020 100%); }
+    #c12-kdawn { position:absolute; inset: 0; background: linear-gradient(0deg, rgba(255,170,100,0.8), rgba(255,170,100,0) 70%); opacity: 0; }
+    #c12-klampg { position:absolute; left: 560px; top: 470px; width: 420px; height: 420px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(255,200,110,0.75), rgba(255,160,70,0.2) 45%, rgba(0,0,0,0) 70%); }
+    #c12-kcurtain { transform-origin: 50% 0; }
+
+    #c12-msky { background: linear-gradient(180deg, #05070f 0%, #14203a 70%, #2a2a3a 100%); }
+    #c12-bundle { position:absolute; width: 90px; height: 90px; border-radius: 50%; left: 1280px; top: 640px;
+      background: radial-gradient(circle, rgba(255,240,200,0.95), rgba(255,220,150,0) 70%); }
+    #c12-b, #c12-c { opacity: 0; }
+    #c12-sight { background: radial-gradient(circle at 42% 60%, rgba(255,240,210,1), rgba(255,220,160,0.5) 40%, rgba(0,0,0,0) 75%); opacity: 0; }
+
+  </style>
+  <div id="c12" data-composition-id="c12" data-width="1920" data-height="1080">
+    <div id="c12-scene" class="clip" data-start="0" data-duration="71.28" style="position:absolute;inset:0" data-layout-allow-overflow>
+      <div id="c12-cam" class="c12-cam">
+      <div id="c12-a" class="c12-full"><div id="c12-msky" class="c12-full"></div><div id="c12-sst0" class="c12-st" style="left:1002px;top:484px;width:3.9px;height:3.9px"></div><div id="c12-sst1" class="c12-st" style="left:1270px;top:66px;width:1.6px;height:1.6px"></div><div id="c12-sst2" class="c12-st" style="left:738px;top:448px;width:2.1px;height:2.1px"></div><div id="c12-sst3" class="c12-st" style="left:1815px;top:241px;width:4.0px;height:4.0px"></div><div id="c12-sst4" class="c12-st" style="left:119px;top:488px;width:3.7px;height:3.7px"></div><div id="c12-sst5" class="c12-st" style="left:1834px;top:126px;width:2.8px;height:2.8px"></div><div id="c12-sst6" class="c12-st" style="left:1694px;top:383px;width:2.3px;height:2.3px"></div><div id="c12-sst7" class="c12-st" style="left:1913px;top:85px;width:3.5px;height:3.5px"></div><div id="c12-sst8" class="c12-st" style="left:1562px;top:552px;width:1.5px;height:1.5px"></div><div id="c12-sst9" class="c12-st" style="left:681px;top:576px;width:2.4px;height:2.4px"></div><div id="c12-sst10" class="c12-st" style="left:1487px;top:521px;width:2.1px;height:2.1px"></div><div id="c12-sst11" class="c12-st" style="left:691px;top:160px;width:3.5px;height:3.5px"></div><div id="c12-sst12" class="c12-st" style="left:370px;top:362px;width:2.9px;height:2.9px"></div><div id="c12-sst13" class="c12-st" style="left:1760px;top:191px;width:2.3px;height:2.3px"></div><div id="c12-sst14" class="c12-st" style="left:1745px;top:347px;width:2.2px;height:2.2px"></div><div id="c12-sst15" class="c12-st" style="left:897px;top:164px;width:3.1px;height:3.1px"></div><div id="c12-sst16" class="c12-st" style="left:1400px;top:186px;width:1.7px;height:1.7px"></div><div id="c12-sst17" class="c12-st" style="left:1083px;top:412px;width:2.5px;height:2.5px"></div><div id="c12-sst18" class="c12-st" style="left:1405px;top:576px;width:3.0px;height:3.0px"></div><div id="c12-sst19" class="c12-st" style="left:290px;top:66px;width:2.0px;height:2.0px"></div><div id="c12-sst20" class="c12-st" style="left:1617px;top:322px;width:3.5px;height:3.5px"></div><div id="c12-sst21" class="c12-st" style="left:1778px;top:56px;width:3.4px;height:3.4px"></div><div id="c12-sst22" class="c12-st" style="left:1611px;top:394px;width:2.5px;height:2.5px"></div><div id="c12-sst23" class="c12-st" style="left:464px;top:319px;width:2.2px;height:2.2px"></div><div id="c12-sst24" class="c12-st" style="left:314px;top:177px;width:3.3px;height:3.3px"></div><div id="c12-sst25" class="c12-st" style="left:1064px;top:309px;width:2.6px;height:2.6px"></div><div id="c12-sst26" class="c12-st" style="left:1857px;top:451px;width:2.1px;height:2.1px"></div><div id="c12-sst27" class="c12-st" style="left:54px;top:447px;width:2.9px;height:2.9px"></div><div id="c12-sst28" class="c12-st" style="left:812px;top:536px;width:2.3px;height:2.3px"></div><div id="c12-sst29" class="c12-st" style="left:1177px;top:221px;width:4.0px;height:4.0px"></div><div id="c12-sst30" class="c12-st" style="left:1449px;top:182px;width:2.4px;height:2.4px"></div><div id="c12-sst31" class="c12-st" style="left:369px;top:345px;width:3.3px;height:3.3px"></div><div id="c12-sst32" class="c12-st" style="left:1469px;top:270px;width:2.6px;height:2.6px"></div><div id="c12-sst33" class="c12-st" style="left:23px;top:158px;width:4.0px;height:4.0px"></div><div id="c12-sst34" class="c12-st" style="left:1587px;top:280px;width:3.4px;height:3.4px"></div><div id="c12-sst35" class="c12-st" style="left:1343px;top:17px;width:2.7px;height:2.7px"></div><div id="c12-sst36" class="c12-st" style="left:1740px;top:367px;width:4.0px;height:4.0px"></div><div id="c12-sst37" class="c12-st" style="left:50px;top:322px;width:3.4px;height:3.4px"></div><div id="c12-sst38" class="c12-st" style="left:426px;top:390px;width:3.6px;height:3.6px"></div><div id="c12-sst39" class="c12-st" style="left:1035px;top:113px;width:2.8px;height:2.8px"></div><div id="c12-sst40" class="c12-st" style="left:517px;top:208px;width:2.9px;height:2.9px"></div><div id="c12-sst41" class="c12-st" style="left:14px;top:450px;width:2.3px;height:2.3px"></div><div id="c12-sst42" class="c12-st" style="left:1455px;top:498px;width:1.6px;height:1.6px"></div><div id="c12-sst43" class="c12-st" style="left:642px;top:323px;width:2.1px;height:2.1px"></div><div id="c12-sst44" class="c12-st" style="left:949px;top:170px;width:1.8px;height:1.8px"></div><div id="c12-sst45" class="c12-st" style="left:385px;top:219px;width:2.0px;height:2.0px"></div><div id="c12-sst46" class="c12-st" style="left:1890px;top:472px;width:1.9px;height:1.9px"></div><div id="c12-sst47" class="c12-st" style="left:746px;top:314px;width:3.4px;height:3.4px"></div><div id="c12-sst48" class="c12-st" style="left:296px;top:336px;width:1.9px;height:1.9px"></div><div id="c12-sst49" class="c12-st" style="left:1692px;top:574px;width:2.5px;height:2.5px"></div><div id="c12-sst50" class="c12-st" style="left:1184px;top:101px;width:3.3px;height:3.3px"></div><div id="c12-sst51" class="c12-st" style="left:1455px;top:450px;width:3.5px;height:3.5px"></div><div id="c12-sst52" class="c12-st" style="left:554px;top:146px;width:2.1px;height:2.1px"></div><div id="c12-sst53" class="c12-st" style="left:946px;top:258px;width:3.7px;height:3.7px"></div><div id="c12-sst54" class="c12-st" style="left:726px;top:102px;width:3.8px;height:3.8px"></div><div id="c12-sst55" class="c12-st" style="left:617px;top:578px;width:3.4px;height:3.4px"></div><div id="c12-sst56" class="c12-st" style="left:592px;top:518px;width:3.8px;height:3.8px"></div><div id="c12-sst57" class="c12-st" style="left:1570px;top:533px;width:3.1px;height:3.1px"></div><div id="c12-sst58" class="c12-st" style="left:1486px;top:476px;width:2.1px;height:2.1px"></div><div id="c12-sst59" class="c12-st" style="left:837px;top:162px;width:1.7px;height:1.7px"></div>
+        <svg class="c12-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none"><path fill="#1a1a26" d="M -100 758 Q 60 743 220 763 Q 380 750 540 781 Q 700 764 860 758 Q 1020 743 1180 760 Q 1340 746 1500 764 Q 1660 747 1820 744 Q 1980 731 2140 761 V 1100 H -100 Z"/><path fill="#121220" d="M -100 839 Q 60 825 220 848 Q 380 833 540 848 Q 700 831 860 822 Q 1020 806 1180 816 Q 1340 802 1500 834 Q 1660 818 1820 829 Q 1980 816 2140 856 V 1100 H -100 Z"/><g id="c12-car" fill="#06060a" transform="translate(1900,800)"><g class="c12-camel" transform="translate(0,0) scale(1.10)"><path d="M 8 -52 Q 14 -70 30 -64 Q 40 -86 56 -66 Q 66 -60 72 -58 L 82 -84 Q 86 -96 98 -94 L 104 -88 L 94 -84 L 86 -54 Q 82 -44 74 -42 L 72 0 L 66 0 L 64 -38 L 58 -38 L 58 0 L 52 0 L 50 -40 L 26 -40 L 24 0 L 18 0 L 18 -40 L 12 -40 L 12 0 L 6 0 L 6 -44 Z"/></g><g class="c12-camel" transform="translate(170,0) scale(1.10)"><path d="M 8 -52 Q 14 -70 30 -64 Q 40 -86 56 -66 Q 66 -60 72 -58 L 82 -84 Q 86 -96 98 -94 L 104 -88 L 94 -84 L 86 -54 Q 82 -44 74 -42 L 72 0 L 66 0 L 64 -38 L 58 -38 L 58 0 L 52 0 L 50 -40 L 26 -40 L 24 0 L 18 0 L 18 -40 L 12 -40 L 12 0 L 6 0 L 6 -44 Z"/></g><g class="c12-camel" transform="translate(340,0) scale(1.10)"><path d="M 8 -52 Q 14 -70 30 -64 Q 40 -86 56 -66 Q 66 -60 72 -58 L 82 -84 Q 86 -96 98 -94 L 104 -88 L 94 -84 L 86 -54 Q 82 -44 74 -42 L 72 0 L 66 0 L 64 -38 L 58 -38 L 58 0 L 52 0 L 50 -40 L 26 -40 L 24 0 L 18 0 L 18 -40 L 12 -40 L 12 0 L 6 0 L 6 -44 Z"/></g><g class="c12-camel" transform="translate(510,0) scale(1.10)"><path d="M 8 -52 Q 14 -70 30 -64 Q 40 -86 56 -66 Q 66 -60 72 -58 L 82 -84 Q 86 -96 98 -94 L 104 -88 L 94 -84 L 86 -54 Q 82 -44 74 -42 L 72 0 L 66 0 L 64 -38 L 58 -38 L 58 0 L 52 0 L 50 -40 L 26 -40 L 24 0 L 18 0 L 18 -40 L 12 -40 L 12 0 L 6 0 L 6 -44 Z"/></g><g class="c12-camel" transform="translate(680,0) scale(1.10)"><path d="M 8 -52 Q 14 -70 30 -64 Q 40 -86 56 -66 Q 66 -60 72 -58 L 82 -84 Q 86 -96 98 -94 L 104 -88 L 94 -84 L 86 -54 Q 82 -44 74 -42 L 72 0 L 66 0 L 64 -38 L 58 -38 L 58 0 L 52 0 L 50 -40 L 26 -40 L 24 0 L 18 0 L 18 -40 L 12 -40 L 12 0 L 6 0 L 6 -44 Z"/></g></g></svg>
+        <div id="c12-bundle"></div><svg id="c12-winds" class="c12-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none" style="opacity:0"><path id="c12-wind0" d="M -300 300 Q 0 260 300 300 T 900 300" stroke="rgba(230,220,200,0.35)" stroke-width="4" fill="none"/><path id="c12-wind1" d="M -300 390 Q 0 350 300 390 T 900 390" stroke="rgba(230,220,200,0.35)" stroke-width="4" fill="none"/><path id="c12-wind2" d="M -300 480 Q 0 440 300 480 T 900 480" stroke="rgba(230,220,200,0.35)" stroke-width="4" fill="none"/><path id="c12-wind3" d="M -300 570 Q 0 530 300 570 T 900 570" stroke="rgba(230,220,200,0.35)" stroke-width="4" fill="none"/><path id="c12-wind4" d="M -300 660 Q 0 620 300 660 T 900 660" stroke="rgba(230,220,200,0.35)" stroke-width="4" fill="none"/></svg></div>
+      <div id="c12-b" class="c12-full">
+      <div id="c12-kroom" class="c12-full"></div>
+      <div id="c12-kdoor"><div id="c12-khst0" class="c12-st" style="left:1283px;top:546px;width:3.2px;height:3.2px"></div><div id="c12-khst1" class="c12-st" style="left:1243px;top:320px;width:3.3px;height:3.3px"></div><div id="c12-khst2" class="c12-st" style="left:1237px;top:470px;width:2.0px;height:2.0px"></div><div id="c12-khst3" class="c12-st" style="left:1409px;top:217px;width:2.2px;height:2.2px"></div><div id="c12-khst4" class="c12-st" style="left:1243px;top:637px;width:3.5px;height:3.5px"></div><div id="c12-khst5" class="c12-st" style="left:1532px;top:599px;width:2.1px;height:2.1px"></div><div id="c12-khst6" class="c12-st" style="left:1496px;top:449px;width:3.4px;height:3.4px"></div><div id="c12-khst7" class="c12-st" style="left:1345px;top:364px;width:1.8px;height:1.8px"></div><div id="c12-khst8" class="c12-st" style="left:1485px;top:601px;width:4.0px;height:4.0px"></div><div id="c12-khst9" class="c12-st" style="left:1239px;top:542px;width:2.6px;height:2.6px"></div><div id="c12-khst10" class="c12-st" style="left:1254px;top:309px;width:2.8px;height:2.8px"></div><div id="c12-khst11" class="c12-st" style="left:1332px;top:274px;width:2.7px;height:2.7px"></div><div id="c12-khst12" class="c12-st" style="left:1275px;top:325px;width:2.0px;height:2.0px"></div><div id="c12-khst13" class="c12-st" style="left:1533px;top:401px;width:3.3px;height:3.3px"></div><div id="c12-khst14" class="c12-st" style="left:1526px;top:231px;width:1.9px;height:1.9px"></div><div id="c12-khst15" class="c12-st" style="left:1248px;top:413px;width:3.7px;height:3.7px"></div><div id="c12-khst16" class="c12-st" style="left:1509px;top:604px;width:2.0px;height:2.0px"></div><div id="c12-khst17" class="c12-st" style="left:1239px;top:686px;width:3.0px;height:3.0px"></div><div id="c12-khst18" class="c12-st" style="left:1450px;top:314px;width:3.0px;height:3.0px"></div><div id="c12-khst19" class="c12-st" style="left:1452px;top:377px;width:2.2px;height:2.2px"></div><div id="c12-khst20" class="c12-st" style="left:1249px;top:545px;width:1.8px;height:1.8px"></div><div id="c12-khst21" class="c12-st" style="left:1390px;top:476px;width:1.6px;height:1.6px"></div><div id="c12-khst22" class="c12-st" style="left:1348px;top:378px;width:1.7px;height:1.7px"></div><div id="c12-khst23" class="c12-st" style="left:1299px;top:342px;width:3.0px;height:3.0px"></div><div id="c12-khst24" class="c12-st" style="left:1218px;top:440px;width:2.4px;height:2.4px"></div><div id="c12-khst25" class="c12-st" style="left:1369px;top:685px;width:2.8px;height:2.8px"></div><div id="c12-khst26" class="c12-st" style="left:1361px;top:538px;width:2.2px;height:2.2px"></div><div id="c12-khst27" class="c12-st" style="left:1456px;top:337px;width:3.2px;height:3.2px"></div><div id="c12-khst28" class="c12-st" style="left:1496px;top:337px;width:3.0px;height:3.0px"></div><div id="c12-khst29" class="c12-st" style="left:1263px;top:382px;width:1.6px;height:1.6px"></div><div id="c12-kdawn"></div></div>
+      <svg class="c12-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none"><path id="c12-kcurtain" d="M 1180 200 H 1300 Q 1280 520 1320 840 H 1180 Z" fill="#4a2a1e" opacity="0.92"/><rect x="0" y="840" width="1920" height="240" fill="#0e0907"/><rect x="560" y="700" width="420" height="30" fill="#3a2414"/><path d="M 740 690 Q 770 650 800 690 L 812 700 H 728 Z" fill="#b8883a"/><path d="M 770 640 Q 760 620 770 600 Q 782 620 770 640 Z" id="c12-kflame" fill="#ffd27a"/><rect x="200" y="760" width="300" height="80" rx="10" fill="#2a1a14"/></svg>
+      <div id="c12-klampg"></div><div id="c12-sight" class="c12-full"></div></div>
+      <div id="c12-c" class="c12-full"><div class="c12-full c12-dsky"></div>
+        <div id="c12-qset" class="c12-full"><div class="c12-dsun"></div><div class="c12-dmoon"></div><div id="c12-qs0" class="c12-ystar" style="left:351px;top:630px"></div><div id="c12-qs1" class="c12-ystar" style="left:420px;top:535px"></div><div id="c12-qs2" class="c12-ystar" style="left:522px;top:454px"></div><div id="c12-qs3" class="c12-ystar" style="left:652px;top:392px"></div><div id="c12-qs4" class="c12-ystar" style="left:801px;top:353px"></div><div id="c12-qs5" class="c12-ystar" style="left:960px;top:340px"></div><div id="c12-qs6" class="c12-ystar" style="left:1119px;top:353px"></div><div id="c12-qs7" class="c12-ystar" style="left:1268px;top:392px"></div><div id="c12-qs8" class="c12-ystar" style="left:1398px;top:454px"></div><div id="c12-qs9" class="c12-ystar" style="left:1500px;top:535px"></div><div id="c12-qs10" class="c12-ystar" style="left:1569px;top:630px"></div></div></div>
+      </div>
+    </div>
+    <div id="c12-scr" class="c12-scrim clip" data-start="0" data-duration="71.28"></div>
+    <div id="c12-lab" class="c12-label clip" data-start="0.3" data-duration="4.6"><b>CHAPTER 12</b><i>The Third Shirt</i></div>
+    <div id="c12-cp0" class="c12-cap clip" data-start="11.51" data-duration="2.12">The first carried a lie.</div>
+    <div id="c12-cp1" class="c12-cap clip" data-start="13.63" data-duration="2.23">The second carried the truth.</div>
+    <div id="c12-cp2" class="c12-cap clip" data-start="15.86" data-duration="2.24">This one would carry healing.</div>
+    <div id="c12-cp3" class="c12-cap clip" data-start="18.10" data-duration="4.75">As the caravan left Egypt, far away, an old man said:</div>
+    <div id="c12-cp4" class="c12-cap clip" data-start="22.85" data-duration="2.10">&quot;I can smell Yusuf...</div>
+    <div id="c12-cp5" class="c12-cap clip" data-start="24.95" data-duration="4.81">if you would not think me weak in mind.&quot; When the bearer of good news arrived,</div>
+    <div id="c12-cp6" class="c12-cap clip" data-start="29.76" data-duration="3.74">he cast the shirt over his face... and he could see again.</div>
+    <div id="c12-cp7" class="c12-cap clip" data-start="40.98" data-duration="2.90">Yusuf raised his parents up onto the throne...</div>
+    <div id="c12-cp8" class="c12-cap clip" data-start="43.88" data-duration="4.53">and they all bowed down before him. The sun. The moon.</div>
+    <div id="c12-cp9" class="c12-cap clip" data-start="48.41" data-duration="1.87">And eleven stars.</div>
+    <div id="c12-cp10" class="c12-cap clip" data-start="58.83" data-duration="5.32">&quot;He was good to me when He took me out of prison.&quot; Notice what he did not say.</div>
+    <div id="c12-cp11" class="c12-cap clip" data-start="64.14" data-duration="4.09">He did not say &quot;when He took me out of the well.&quot; Even now,</div>
+    <div id="c12-cp12" class="c12-cap clip" data-start="68.23" data-duration="2.45">he would not shame his brothers.</div>
+    <div id="c12-k0w" class="c12-cardwrap clip" data-start="0.15" data-duration="10.88"><div id="c12-k0" class="c12-card"><div class="c12-ar" dir="rtl" lang="ar">ٱذۡهَبُواْ بِقَمِيصِي هَٰذَا فَأَلۡقُوهُ عَلَىٰ وَجۡهِ أَبِي يَأۡتِ بَصِيرࣰا</div><div class="c12-en">“Take this, my shirt, and cast it over the face of my father; he will become seeing…”</div><div class="c12-ref">Yusuf 12:93</div></div></div>
+    <div id="c12-k1w" class="c12-cardwrap clip" data-start="33.54" data-duration="5.51"><div id="c12-k1" class="c12-card"><div class="c12-ar" dir="rtl" lang="ar">قَالَ أَلَمۡ أَقُل لَّكُمۡ إِنِّيٓ أَعۡلَمُ مِنَ ٱللَّهِ مَا لَا تَعۡلَمُونَ</div><div class="c12-en">“…Did I not tell you that I know from Allah that which you do not know”</div><div class="c12-ref">Yusuf 12:96</div></div></div>
+    <div id="c12-k2w" class="c12-cardwrap clip" data-start="50.33" data-duration="8.37"><div id="c12-k2" class="c12-card"><div class="c12-ar" dir="rtl" lang="ar">يَـٰٓأَبَتِ هَٰذَا تَأۡوِيلُ رُءۡيَٰيَ مِن قَبۡلُ قَدۡ جَعَلَهَا رَبِّي حَقࣰّاۖ</div><div class="c12-en">“…O my father, this is the explanation of my vision of before. My Lord has made it reality…”</div><div class="c12-ref">Yusuf 12:100</div></div></div>
+    <div id="c12-fadeIn" class="c12-fade clip" data-start="0" data-duration="0.55" style="opacity:1"></div>
+    <div id="c12-fadeOut" class="c12-fade clip" data-start="70.78" data-duration="0.50" style="opacity:0"></div>
+    <div id="c12-br" class="c12-brand clip" data-start="0" data-duration="71.28">HAQ <span>·</span> STORIES</div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#c12-khst0", {opacity: 0.55}, {opacity: 1, duration: 1.07, ease: "sine.inOut", yoyo: true, repeat: 67, immediateRender: false}, 0.23);
+    tl.fromTo("#c12-khst2", {opacity: 0.39}, {opacity: 1, duration: 1.29, ease: "sine.inOut", yoyo: true, repeat: 55, immediateRender: false}, 0.84);
+    tl.fromTo("#c12-khst4", {opacity: 0.54}, {opacity: 1, duration: 1.64, ease: "sine.inOut", yoyo: true, repeat: 43, immediateRender: false}, 0.74);
+    tl.fromTo("#c12-khst6", {opacity: 0.47}, {opacity: 1, duration: 1.29, ease: "sine.inOut", yoyo: true, repeat: 56, immediateRender: false}, 0.36);
+    tl.fromTo("#c12-khst8", {opacity: 0.51}, {opacity: 1, duration: 1.40, ease: "sine.inOut", yoyo: true, repeat: 51, immediateRender: false}, 0.75);
+    tl.fromTo("#c12-khst10", {opacity: 0.38}, {opacity: 1, duration: 1.31, ease: "sine.inOut", yoyo: true, repeat: 54, immediateRender: false}, 0.61);
+    tl.fromTo("#c12-khst12", {opacity: 0.41}, {opacity: 1, duration: 0.97, ease: "sine.inOut", yoyo: true, repeat: 74, immediateRender: false}, 0.65);
+    tl.fromTo("#c12-khst14", {opacity: 0.54}, {opacity: 1, duration: 1.65, ease: "sine.inOut", yoyo: true, repeat: 43, immediateRender: false}, 0.64);
+    tl.fromTo("#c12-khst16", {opacity: 0.56}, {opacity: 1, duration: 1.24, ease: "sine.inOut", yoyo: true, repeat: 58, immediateRender: false}, 0.72);
+    tl.fromTo("#c12-khst18", {opacity: 0.47}, {opacity: 1, duration: 1.43, ease: "sine.inOut", yoyo: true, repeat: 50, immediateRender: false}, 0.36);
+    tl.fromTo("#c12-khst20", {opacity: 0.37}, {opacity: 1, duration: 0.96, ease: "sine.inOut", yoyo: true, repeat: 74, immediateRender: false}, 0.64);
+    tl.fromTo("#c12-khst22", {opacity: 0.30}, {opacity: 1, duration: 1.80, ease: "sine.inOut", yoyo: true, repeat: 40, immediateRender: false}, 0.12);
+    tl.fromTo("#c12-khst24", {opacity: 0.55}, {opacity: 1, duration: 0.91, ease: "sine.inOut", yoyo: true, repeat: 79, immediateRender: false}, 0.33);
+    tl.fromTo("#c12-khst26", {opacity: 0.31}, {opacity: 1, duration: 1.35, ease: "sine.inOut", yoyo: true, repeat: 53, immediateRender: false}, 0.91);
+    tl.fromTo("#c12-khst28", {opacity: 0.41}, {opacity: 1, duration: 1.12, ease: "sine.inOut", yoyo: true, repeat: 64, immediateRender: false}, 0.29);
+    tl.fromTo("#c12-klampg", {opacity: 0.8}, {opacity: 1, duration: 0.32, ease: "sine.inOut", yoyo: true, repeat: 223, immediateRender: false}, 0.00);
+    tl.fromTo("#c12-kflame", {scaleY: 0.9, transformOrigin: '50% 100%'}, {scaleY: 1.1, transformOrigin: '50% 100%', duration: 0.22, ease: "sine.inOut", yoyo: true, repeat: 325, immediateRender: false}, 0.00);
+    tl.fromTo("#c12-kcurtain", {skewX: -3}, {skewX: 3, duration: 2.20, ease: "sine.inOut", yoyo: true, repeat: 33, immediateRender: false}, 0.00);
+    tl.fromTo("#c12-sst0", {opacity: 0.39}, {opacity: 1, duration: 1.59, ease: "sine.inOut", yoyo: true, repeat: 45, immediateRender: false}, 0.70);
+    tl.fromTo("#c12-sst2", {opacity: 0.45}, {opacity: 1, duration: 1.19, ease: "sine.inOut", yoyo: true, repeat: 60, immediateRender: false}, 0.85);
+    tl.fromTo("#c12-sst4", {opacity: 0.35}, {opacity: 1, duration: 1.54, ease: "sine.inOut", yoyo: true, repeat: 47, immediateRender: false}, 0.56);
+    tl.fromTo("#c12-sst6", {opacity: 0.32}, {opacity: 1, duration: 1.75, ease: "sine.inOut", yoyo: true, repeat: 41, immediateRender: false}, 0.47);
+    tl.fromTo("#c12-sst8", {opacity: 0.41}, {opacity: 1, duration: 0.95, ease: "sine.inOut", yoyo: true, repeat: 75, immediateRender: false}, 0.75);
+    tl.fromTo("#c12-sst10", {opacity: 0.47}, {opacity: 1, duration: 1.76, ease: "sine.inOut", yoyo: true, repeat: 41, immediateRender: false}, 0.53);
+    tl.fromTo("#c12-sst12", {opacity: 0.47}, {opacity: 1, duration: 1.02, ease: "sine.inOut", yoyo: true, repeat: 70, immediateRender: false}, 0.66);
+    tl.fromTo("#c12-sst14", {opacity: 0.30}, {opacity: 1, duration: 1.58, ease: "sine.inOut", yoyo: true, repeat: 45, immediateRender: false}, 0.35);
+    tl.fromTo("#c12-sst16", {opacity: 0.60}, {opacity: 1, duration: 1.72, ease: "sine.inOut", yoyo: true, repeat: 42, immediateRender: false}, 0.02);
+    tl.fromTo("#c12-sst18", {opacity: 0.42}, {opacity: 1, duration: 1.08, ease: "sine.inOut", yoyo: true, repeat: 67, immediateRender: false}, 0.25);
+    tl.fromTo("#c12-sst20", {opacity: 0.58}, {opacity: 1, duration: 1.63, ease: "sine.inOut", yoyo: true, repeat: 44, immediateRender: false}, 0.05);
+    tl.fromTo("#c12-sst22", {opacity: 0.32}, {opacity: 1, duration: 0.98, ease: "sine.inOut", yoyo: true, repeat: 73, immediateRender: false}, 0.64);
+    tl.fromTo("#c12-sst24", {opacity: 0.45}, {opacity: 1, duration: 1.25, ease: "sine.inOut", yoyo: true, repeat: 57, immediateRender: false}, 0.49);
+    tl.fromTo("#c12-sst26", {opacity: 0.40}, {opacity: 1, duration: 1.07, ease: "sine.inOut", yoyo: true, repeat: 67, immediateRender: false}, 0.36);
+    tl.fromTo("#c12-sst28", {opacity: 0.47}, {opacity: 1, duration: 1.74, ease: "sine.inOut", yoyo: true, repeat: 41, immediateRender: false}, 0.56);
+    tl.fromTo("#c12-sst30", {opacity: 0.48}, {opacity: 1, duration: 1.37, ease: "sine.inOut", yoyo: true, repeat: 52, immediateRender: false}, 0.52);
+    tl.fromTo("#c12-sst32", {opacity: 0.45}, {opacity: 1, duration: 1.38, ease: "sine.inOut", yoyo: true, repeat: 52, immediateRender: false}, 0.47);
+    tl.fromTo("#c12-sst34", {opacity: 0.36}, {opacity: 1, duration: 1.14, ease: "sine.inOut", yoyo: true, repeat: 63, immediateRender: false}, 0.52);
+    tl.fromTo("#c12-sst36", {opacity: 0.33}, {opacity: 1, duration: 1.72, ease: "sine.inOut", yoyo: true, repeat: 42, immediateRender: false}, 0.84);
+    tl.fromTo("#c12-sst38", {opacity: 0.54}, {opacity: 1, duration: 1.29, ease: "sine.inOut", yoyo: true, repeat: 56, immediateRender: false}, 0.06);
+    tl.fromTo("#c12-sst40", {opacity: 0.55}, {opacity: 1, duration: 1.78, ease: "sine.inOut", yoyo: true, repeat: 40, immediateRender: false}, 0.41);
+    tl.fromTo("#c12-sst42", {opacity: 0.52}, {opacity: 1, duration: 1.16, ease: "sine.inOut", yoyo: true, repeat: 62, immediateRender: false}, 0.32);
+    tl.fromTo("#c12-sst44", {opacity: 0.37}, {opacity: 1, duration: 1.51, ease: "sine.inOut", yoyo: true, repeat: 47, immediateRender: false}, 0.31);
+    tl.fromTo("#c12-sst46", {opacity: 0.39}, {opacity: 1, duration: 1.29, ease: "sine.inOut", yoyo: true, repeat: 55, immediateRender: false}, 0.53);
+    tl.fromTo("#c12-sst48", {opacity: 0.46}, {opacity: 1, duration: 1.19, ease: "sine.inOut", yoyo: true, repeat: 60, immediateRender: false}, 0.80);
+    tl.fromTo("#c12-sst50", {opacity: 0.53}, {opacity: 1, duration: 1.28, ease: "sine.inOut", yoyo: true, repeat: 56, immediateRender: false}, 0.32);
+    tl.fromTo("#c12-sst52", {opacity: 0.36}, {opacity: 1, duration: 0.91, ease: "sine.inOut", yoyo: true, repeat: 79, immediateRender: false}, 0.12);
+    tl.fromTo("#c12-sst54", {opacity: 0.32}, {opacity: 1, duration: 1.21, ease: "sine.inOut", yoyo: true, repeat: 59, immediateRender: false}, 0.76);
+    tl.fromTo("#c12-sst56", {opacity: 0.45}, {opacity: 1, duration: 1.03, ease: "sine.inOut", yoyo: true, repeat: 70, immediateRender: false}, 0.10);
+    tl.fromTo("#c12-sst58", {opacity: 0.36}, {opacity: 1, duration: 1.68, ease: "sine.inOut", yoyo: true, repeat: 42, immediateRender: false}, 0.84);
+    tl.fromTo("#c12-qs0", {opacity: 0.65}, {opacity: 1, duration: 0.60, ease: "sine.inOut", yoyo: true, repeat: 119, immediateRender: false}, 0.00);
+    tl.fromTo("#c12-qs1", {opacity: 0.65}, {opacity: 1, duration: 0.75, ease: "sine.inOut", yoyo: true, repeat: 95, immediateRender: false}, 0.07);
+    tl.fromTo("#c12-qs2", {opacity: 0.65}, {opacity: 1, duration: 0.90, ease: "sine.inOut", yoyo: true, repeat: 80, immediateRender: false}, 0.14);
+    tl.fromTo("#c12-qs3", {opacity: 0.65}, {opacity: 1, duration: 1.05, ease: "sine.inOut", yoyo: true, repeat: 68, immediateRender: false}, 0.21);
+    tl.fromTo("#c12-qs4", {opacity: 0.65}, {opacity: 1, duration: 0.60, ease: "sine.inOut", yoyo: true, repeat: 119, immediateRender: false}, 0.28);
+    tl.fromTo("#c12-qs5", {opacity: 0.65}, {opacity: 1, duration: 0.75, ease: "sine.inOut", yoyo: true, repeat: 95, immediateRender: false}, 0.35);
+    tl.fromTo("#c12-qs6", {opacity: 0.65}, {opacity: 1, duration: 0.90, ease: "sine.inOut", yoyo: true, repeat: 79, immediateRender: false}, 0.42);
+    tl.fromTo("#c12-qs7", {opacity: 0.65}, {opacity: 1, duration: 1.05, ease: "sine.inOut", yoyo: true, repeat: 68, immediateRender: false}, 0.49);
+    tl.fromTo("#c12-qs8", {opacity: 0.65}, {opacity: 1, duration: 0.60, ease: "sine.inOut", yoyo: true, repeat: 118, immediateRender: false}, 0.56);
+    tl.fromTo("#c12-qs9", {opacity: 0.65}, {opacity: 1, duration: 0.75, ease: "sine.inOut", yoyo: true, repeat: 95, immediateRender: false}, 0.63);
+    tl.fromTo("#c12-qs10", {opacity: 0.65}, {opacity: 1, duration: 0.90, ease: "sine.inOut", yoyo: true, repeat: 79, immediateRender: false}, 0.70);
+    tl.fromTo("#c12-qset", {y: 0, scale: 1}, {y: 110, scale: 0.9, duration: 1.80, ease: "power2.inOut", immediateRender: false}, 46.59);
+    tl.fromTo("#c12-car", {x: 1900}, {x: 300, duration: 27.94, ease: "none", immediateRender: false}, 0.00);
+    tl.fromTo("#c12-bundle", {x: 0}, {x: -1600, duration: 27.94, ease: "none", immediateRender: false}, 0.00);
+    tl.fromTo("#c12-bundle", {opacity: 0.6}, {opacity: 1, duration: 0.60, ease: "sine.inOut", yoyo: true, repeat: 119, immediateRender: false}, 0.00);
+    tl.fromTo(".c12-camel", {y: 0}, {y: -4, duration: 0.45, ease: "sine.inOut", yoyo: true, repeat: 159, immediateRender: false}, 0.00);
+    tl.fromTo("#c12-winds", {opacity: 0}, {opacity: 1, duration: 1.00, ease: "sine.inOut", immediateRender: false}, 18.18);
+    tl.fromTo("#c12-wind0", {x: -400}, {x: 1900, duration: 3.00, ease: "none", repeat: 18, immediateRender: false}, 18.18);
+    tl.fromTo("#c12-wind1", {x: -400}, {x: 1900, duration: 3.40, ease: "none", repeat: 16, immediateRender: false}, 18.48);
+    tl.fromTo("#c12-wind2", {x: -400}, {x: 1900, duration: 3.80, ease: "none", repeat: 14, immediateRender: false}, 18.78);
+    tl.fromTo("#c12-wind3", {x: -400}, {x: 1900, duration: 4.20, ease: "none", repeat: 13, immediateRender: false}, 19.08);
+    tl.fromTo("#c12-wind4", {x: -400}, {x: 1900, duration: 4.60, ease: "none", repeat: 12, immediateRender: false}, 19.38);
+    tl.fromTo("#c12-a", {opacity: 1}, {opacity: 0, duration: 0.70, ease: "sine.inOut", immediateRender: false}, 27.64);
+    tl.fromTo("#c12-b", {opacity: 0}, {opacity: 1, duration: 0.70, ease: "sine.inOut", immediateRender: false}, 27.64);
+    tl.fromTo("#c12-sight", {opacity: 0, scale: 0.3}, {opacity: 1, scale: 1.4, duration: 1.80, ease: "power2.out", immediateRender: false}, 30.44);
+    tl.fromTo("#c12-sight", {opacity: 1}, {opacity: 0.45, duration: 2.00, ease: "sine.inOut", immediateRender: false}, 32.44);
+    tl.fromTo("#c12-b", {opacity: 1}, {opacity: 0, duration: 0.80, ease: "sine.inOut", immediateRender: false}, 38.15);
+    tl.fromTo("#c12-c", {opacity: 0}, {opacity: 1, duration: 0.80, ease: "sine.inOut", immediateRender: false}, 38.15);
+    tl.fromTo("#c12-k0w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 0.15);
+    tl.fromTo("#c12-k0", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 0.15);
+    tl.fromTo("#c12-k1w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 33.54);
+    tl.fromTo("#c12-k1", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 33.54);
+    tl.fromTo("#c12-k2w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 50.33);
+    tl.fromTo("#c12-k2", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 50.33);
+    tl.fromTo("#c12-lab", {opacity: 0, x: -20}, {opacity: 1, x: 0, duration: 0.60, ease: "power2.out", immediateRender: false}, 0.30);
+    tl.fromTo("#c12-lab", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 4.40);
+    tl.fromTo("#c12-scene", {scale: 1.0, x: 0}, {scale: 1.06, x: 30, duration: 71.28, ease: "none", immediateRender: false}, 0.00);
+    tl.fromTo("#c12-fadeIn", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 0.00);
+    tl.fromTo("#c12-fadeOut", {opacity: 0}, {opacity: 1, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 70.78);
+    window.__timelines["c12"] = tl;
+  </script>
+</template>

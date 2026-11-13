@@ -1,0 +1,115 @@
+<template>
+  <style>
+    #c06 { position: absolute; inset: 0; overflow: hidden; background: #000; }
+    .c06-st { position: absolute; border-radius: 50%; background: #eef4ff; box-shadow: 0 0 6px rgba(220,235,255,0.9); }
+    .c06-mote { position: absolute; border-radius: 50%; }
+    .c06-full { position: absolute; inset: 0; }
+    .c06-svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+
+    .c06-cam { position: absolute; inset: 0; transform-origin: 50% 55%; }
+    .c06-scrim { position: absolute; left: 0; right: 0; bottom: 0; height: 300px;
+      background: linear-gradient(0deg, rgba(0,0,0,0.75), rgba(0,0,0,0)); }
+    .c06-cap { position: absolute; left: 210px; right: 210px; bottom: 64px; text-align: center;
+      font-family: "Cormorant Garamond"; font-weight: 600; font-size: 54px; line-height: 1.12; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c06-cardwrap { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+      background: radial-gradient(ellipse at 50% 50%, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.45) 50%, rgba(0,0,0,0) 80%); }
+    .c06-card { max-width: 1400px; display: flex; flex-direction: column; align-items: center; gap: 26px; text-align: center; }
+    .c06-ar { font-family: "Amiri Quran"; font-size: 70px; line-height: 1.8; color: #fff6e6; text-shadow: 0 0 30px rgba(215,236,255,0.4); }
+    .c06-en { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 50px; line-height: 1.18; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c06-ctext { font-family: "Cormorant Garamond"; font-weight: 600; font-size: 76px; line-height: 1.1; color: #f5ead6;
+      text-shadow: 0 3px 22px rgba(0,0,0,0.9); }
+    .c06-hi { color: var(--accent); }
+    .c06-ref { font-family: Inter, sans-serif; font-weight: 700; font-size: 28px; letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--accent); border: 2px solid var(--accent); border-radius: 999px; padding: 10px 24px; background: rgba(0,0,0,0.4); }
+    .c06-title { font-family: "Cormorant Garamond"; font-weight: 600; font-size: 118px; line-height: 1.02; color: #f5ead6;
+      text-shadow: 0 4px 30px rgba(0,0,0,0.8); }
+    .c06-tsub { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 52px; color: var(--accent); }
+    .c06-mark { font-family: Inter, sans-serif; font-weight: 700; font-size: 64px; letter-spacing: 0.32em; color: #f5ead6; }
+    .c06-mark span { color: var(--accent); }
+    .c06-endt { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 52px; color: #f5ead6; }
+    .c06-btn { font-family: Inter, sans-serif; font-weight: 700; font-size: 34px; letter-spacing: 0.08em; color: #120b08;
+      background: var(--accent); border-radius: 999px; padding: 18px 48px; }
+    .c06-label { position: absolute; left: 90px; top: 70px; }
+    .c06-label b { display: block; font-family: Inter, sans-serif; font-weight: 700; font-size: 28px; letter-spacing: 0.3em; color: var(--accent); }
+    .c06-label i { display: block; font-family: "Cormorant Garamond"; font-style: normal; font-weight: 600; font-size: 60px; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c06-brand { position: absolute; right: 80px; top: 70px; font-family: Inter, sans-serif; font-weight: 700; font-size: 28px;
+      letter-spacing: 0.32em; color: rgba(245,234,214,0.7); }
+    .c06-brand span { color: var(--accent); }
+    .c06-fade { position: absolute; inset: 0; background: #000; }
+
+    #c06-wall { background: #2a2420; }
+    #c06-bricks { background: repeating-linear-gradient(0deg, rgba(0,0,0,0.25) 0 4px, rgba(0,0,0,0) 4px 70px),
+      repeating-linear-gradient(90deg, rgba(0,0,0,0.18) 0 4px, rgba(0,0,0,0) 4px 140px); }
+    #c06-win { position:absolute; left: 820px; top: 120px; width: 280px; height: 200px; background: #9ab0d8; }
+    #c06-moon { position:absolute; left: 860px; top: 150px; width: 70px; height: 70px; border-radius:50%;
+      background: radial-gradient(circle at 40% 38%, #fffdf3, #e6dfc8 65%, #cfc7ae); }
+    #c06-beam { position:absolute; left: 700px; top: 300px; width: 700px; height: 800px;
+      background: linear-gradient(170deg, rgba(200,215,255,0.35), rgba(200,215,255,0) 80%); clip-path: polygon(17% 0, 57% 0, 100% 100%, 0 100%); }
+    #c06-beamhi { position:absolute; inset: 0; opacity: 0;
+      background: radial-gradient(ellipse at 52% 60%, rgba(220,230,255,0.35), rgba(0,0,0,0) 60%); }
+    .c06-vig { position:absolute; width: 460px; height: 460px; border-radius:50%; top: 260px; opacity: 0;
+      background: radial-gradient(circle, rgba(40,40,70,0.95) 60%, rgba(40,40,70,0) 72%); }
+    #c06-v1 { left: 220px; } #c06-v2 { left: 1240px; }
+    #c06-dark { background: #000; opacity: 0; }
+
+  </style>
+  <div id="c06" data-composition-id="c06" data-width="1920" data-height="1080">
+    <div id="c06-scene" class="clip" data-start="0" data-duration="53.68" style="position:absolute;inset:0" data-layout-allow-overflow>
+      <div id="c06-cam" class="c06-cam">
+      <div id="c06-wall" class="c06-full"></div><div id="c06-bricks" class="c06-full"></div>
+      <div id="c06-win"></div><div id="c06-moon"></div>
+      <svg class="c06-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none"><rect x="850" y="120" width="14" height="200" fill="#1a1612"/><rect x="906" y="120" width="14" height="200" fill="#1a1612"/><rect x="962" y="120" width="14" height="200" fill="#1a1612"/><rect x="1018" y="120" width="14" height="200" fill="#1a1612"/></svg>
+      <div id="c06-beam"></div><div id="c06-beamhi"></div>
+      <svg class="c06-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none"><rect x="0" y="900" width="1920" height="180" fill="#1a1612"/><path d="M 0 910 Q 300 880 700 920 T 1920 900 V 1080 H 0 Z" fill="#4a3c22" opacity="0.5"/></svg>
+      <div id="c06-v1" class="c06-vig"></div><div id="c06-v2" class="c06-vig"></div>
+      <svg id="c06-dreams" class="c06-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none" style="opacity:0"><g id="c06-grapes"><circle cx="450" cy="430" r="18" fill="#6a2a6a"/><circle cx="484" cy="430" r="18" fill="#6a2a6a"/><circle cx="518" cy="430" r="18" fill="#6a2a6a"/><circle cx="450" cy="462" r="18" fill="#6a2a6a"/><circle cx="484" cy="462" r="18" fill="#6a2a6a"/><circle cx="518" cy="462" r="18" fill="#6a2a6a"/><circle cx="450" cy="494" r="18" fill="#6a2a6a"/><circle cx="484" cy="494" r="18" fill="#6a2a6a"/><circle cx="518" cy="494" r="18" fill="#6a2a6a"/><path d="M 400 560 H 520 L 500 640 H 420 Z" fill="#8a6a3a"/></g><g id="c06-bread"><ellipse cx="1470" cy="580" rx="110" ry="40" fill="#b8884a"/><ellipse cx="1430" cy="560" rx="50" ry="26" fill="#d8a860"/><ellipse cx="1510" cy="556" rx="46" ry="24" fill="#c89850"/><path id="c06-bird0" d="M 1330 470 q 14 -12 28 0 q 14 -12 28 0" stroke="#1a1410" stroke-width="5" fill="none"/><path id="c06-bird1" d="M 1420 440 q 14 -12 28 0 q 14 -12 28 0" stroke="#1a1410" stroke-width="5" fill="none"/><path id="c06-bird2" d="M 1480 500 q 14 -12 28 0 q 14 -12 28 0" stroke="#1a1410" stroke-width="5" fill="none"/></g></svg>
+      <div id="c06-dark" class="c06-full"></div>
+      </div>
+    </div>
+    <div id="c06-scr" class="c06-scrim clip" data-start="0" data-duration="53.68"></div>
+    <div id="c06-lab" class="c06-label clip" data-start="0.3" data-duration="4.6"><b>CHAPTER 6</b><i>Prison and Two Dreams</i></div>
+    <div id="c06-cp0" class="c06-cap clip" data-start="0.22" data-duration="4.11">An innocent man, locked away for doing what was right.</div>
+    <div id="c06-cp1" class="c06-cap clip" data-start="4.33" data-duration="6.46">Two young men entered the prison with him, and each had a dream. One saw himself pressing wine.</div>
+    <div id="c06-cp2" class="c06-cap clip" data-start="10.79" data-duration="5.31">The other saw birds eating bread from his head. &quot;Tell us what it means,&quot; they said,</div>
+    <div id="c06-cp3" class="c06-cap clip" data-start="16.09" data-duration="3.40">&quot;we see that you are one of those who do good.&quot;</div>
+    <div id="c06-cp4" class="c06-cap clip" data-start="19.49" data-duration="6.79">Even in a prison cell, people could see it. But before he answered, Yusuf told them about Allah.</div>
+    <div id="c06-cp5" class="c06-cap clip" data-start="36.75" data-duration="4.28">One of them would serve his master again. The other would not survive.</div>
+    <div id="c06-cp6" class="c06-cap clip" data-start="48.56" data-duration="2.57">And Yusuf remained in prison...</div>
+    <div id="c06-cp7" class="c06-cap clip" data-start="51.13" data-duration="1.96">for several years.</div>
+    <div id="c06-k0w" class="c06-cardwrap clip" data-start="26.33" data-duration="9.71"><div id="c06-k0" class="c06-card"><div class="c06-ar" dir="rtl" lang="ar">يَٰصَٰحِبَيِ ٱلسِّجۡنِ ءَأَرۡبَابࣱ مُّتَفَرِّقُونَ خَيۡرٌ أَمِ ٱللَّهُ ٱلۡوَٰحِدُ ٱلۡقَهَّارُ</div><div class="c06-en">“O [my] two companions of prison, are separate lords better or Allah, the One, the Prevailing”</div><div class="c06-ref">Yusuf 12:39</div></div></div>
+    <div id="c06-k1w" class="c06-cardwrap clip" data-start="41.08" data-duration="5.84"><div id="c06-k1" class="c06-card"><div class="c06-ar" dir="rtl" lang="ar">ٱذۡكُرۡنِي عِندَ رَبِّكَ</div><div class="c06-en">“…Mention me before your master…”</div><div class="c06-ref">Yusuf 12:42</div></div></div>
+    <div id="c06-fadeIn" class="c06-fade clip" data-start="0" data-duration="0.55" style="opacity:1"></div>
+    <div id="c06-fadeOut" class="c06-fade clip" data-start="53.18" data-duration="0.50" style="opacity:0"></div>
+    <div id="c06-br" class="c06-brand clip" data-start="0" data-duration="53.68">HAQ <span>·</span> STORIES</div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#c06-v1", {opacity: 0}, {opacity: 1, duration: 0.80, ease: "sine.inOut", immediateRender: false}, 8.35);
+    tl.fromTo("#c06-v2", {opacity: 0}, {opacity: 1, duration: 0.80, ease: "sine.inOut", immediateRender: false}, 9.55);
+    tl.fromTo("#c06-dreams", {opacity: 0}, {opacity: 1, duration: 1.00, ease: "sine.inOut", immediateRender: false}, 8.75);
+    tl.fromTo("#c06-bird0", {y: 0}, {y: -10, duration: 0.30, ease: "sine.inOut", yoyo: true, repeat: 152, immediateRender: false}, 8.35);
+    tl.fromTo("#c06-bird1", {y: 0}, {y: -10, duration: 0.35, ease: "sine.inOut", yoyo: true, repeat: 130, immediateRender: false}, 8.35);
+    tl.fromTo("#c06-bird2", {y: 0}, {y: -10, duration: 0.40, ease: "sine.inOut", yoyo: true, repeat: 114, immediateRender: false}, 8.35);
+    tl.fromTo("#c06-v1", {opacity: 1}, {opacity: 0, duration: 0.80, ease: "sine.inOut", immediateRender: false}, 22.61);
+    tl.fromTo("#c06-v2", {opacity: 1}, {opacity: 0, duration: 0.80, ease: "sine.inOut", immediateRender: false}, 22.61);
+    tl.fromTo("#c06-dreams", {opacity: 1}, {opacity: 0, duration: 0.80, ease: "sine.inOut", immediateRender: false}, 22.61);
+    tl.fromTo("#c06-beamhi", {opacity: 0}, {opacity: 1, duration: 2.00, ease: "sine.inOut", immediateRender: false}, 26.48);
+    tl.fromTo("#c06-beam", {opacity: 0.85}, {opacity: 1, duration: 2.40, ease: "sine.inOut", yoyo: true, repeat: 23, immediateRender: false}, 0.00);
+    tl.fromTo("#c06-moon", {x: -120}, {x: 260, duration: 0.7, ease: "none", repeat: 6, immediateRender: false}, 48.44);
+    tl.fromTo("#c06-win", {backgroundColor: "#9ab0d8"}, {backgroundColor: "#f0d8a0", duration: 0.35, yoyo: true, repeat: 11, ease: "sine.inOut", immediateRender: false}, 48.44);
+    tl.fromTo("#c06-dark", {opacity: 0}, {opacity: 0.35, duration: 1.50, ease: "sine.inOut", immediateRender: false}, 52.94);
+    tl.fromTo("#c06-k0w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 26.33);
+    tl.fromTo("#c06-k0", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 26.33);
+    tl.fromTo("#c06-k1w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 41.08);
+    tl.fromTo("#c06-k1", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 41.08);
+    tl.fromTo("#c06-lab", {opacity: 0, x: -20}, {opacity: 1, x: 0, duration: 0.60, ease: "power2.out", immediateRender: false}, 0.30);
+    tl.fromTo("#c06-lab", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 4.40);
+    tl.fromTo("#c06-scene", {scale: 1.0, x: 0}, {scale: 1.06, x: 30, duration: 53.68, ease: "none", immediateRender: false}, 0.00);
+    tl.fromTo("#c06-fadeIn", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 0.00);
+    tl.fromTo("#c06-fadeOut", {opacity: 0}, {opacity: 1, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 53.18);
+    window.__timelines["c06"] = tl;
+  </script>
+</template>

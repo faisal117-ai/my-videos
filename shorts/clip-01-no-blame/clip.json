@@ -1,0 +1,85 @@
+{
+ "source": "../../long/01-yusuf",
+ "segments": [
+  {
+   "ch": 11,
+   "from": 0,
+   "to": 0,
+   "focus": 960
+  },
+  {
+   "ch": 11,
+   "from": 2,
+   "to": 6,
+   "focus": 960
+  },
+  {
+   "ch": 11,
+   "from": 9,
+   "to": 9,
+   "focus": 960
+  },
+  {
+   "ch": 11,
+   "from": 11,
+   "to": 11,
+   "focus": 960
+  }
+ ],
+ "beats": [
+  {
+   "hook": true,
+   "text": "They threw him in a *well*… now they beg him for food",
+   "sub": "Hazrat Yusuf (AS)",
+   "ur": "انہوں نے اسے کنویں میں پھینکا… آج وہی اس سے غلہ مانگ رہے ہیں"
+  },
+  {
+   "text": "The man before them asked *one question*.",
+   "ur": "ان کے سامنے کھڑے شخص نے ایک سوال کیا"
+  },
+  {
+   "v": 89,
+   "ar": [
+    1,
+    9
+   ],
+   "en": "Do you know what you did with Joseph and his brother when you were ignorant",
+   "ur": "تمہیں کچھ یہ بھی معلوم ہے کہ تم نے یوسفؑ اور اُس کے بھائی کے ساتھ کیا کیا تھا جبکہ تم نادان تھے"
+  },
+  {
+   "text": "How could this *stranger* know?",
+   "ur": "یہ اجنبی یہ بات کیسے جانتا ہے؟"
+  },
+  {
+   "text": "“Are you indeed *Yusuf*?”",
+   "ref": "Yusuf 12:90",
+   "ur": "کیا تم یوسفؑ ہو؟"
+  },
+  {
+   "v": 90,
+   "ar": [
+    4,
+    8
+   ],
+   "en": "I am Joseph, and this is my brother",
+   "ur": "ہاں، میں یوسفؑ ہوں اور یہ میرا بھائی ہے"
+  },
+  {
+   "text": "He had the *power* to punish them.",
+   "ur": "وہ انہیں سزا دے سکتے تھے"
+  },
+  {
+   "v": 92,
+   "ar": [
+    1,
+    10
+   ],
+   "en": "No blame will there be upon you today. Allah will forgive you; and He is the most merciful of the merciful",
+   "ur": "آج تم پر کوئی گرفت نہیں، اللہ تمہیں معاف کرے، وہ سب سے بڑھ کر رحم فرمانے والا ہے"
+  }
+ ],
+ "end": {
+  "text": "Watch the *full story* on the channel",
+  "ur": "مکمل کہانی چینل پر دیکھیں"
+ }
+}

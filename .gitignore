@@ -2,3 +2,7 @@
 renders/
 node_modules/
 __pycache__/
+render.log
+work-*/
+*.mix.mp4
+.*.hf-transaction-*/

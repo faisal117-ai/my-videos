@@ -1,0 +1,69 @@
+{
+ "source": "../../long/01-yusuf",
+ "segments": [
+  {
+   "ch": 10,
+   "from": 0,
+   "to": 0,
+   "focus": 880
+  },
+  {
+   "ch": 10,
+   "from": 3,
+   "to": 8,
+   "focus": 880
+  }
+ ],
+ "beats": [
+  {
+   "hook": true,
+   "text": "He lost *two* sons… and never lost *hope*",
+   "sub": "Hazrat Yaqub (AS)",
+   "ur": "دو بیٹے کھو دیے… مگر امید نہیں چھوڑی"
+  },
+  {
+   "v": 83,
+   "ar": [
+    8,
+    13
+   ],
+   "en": "Perhaps Allah will bring them to me all together",
+   "ur": "کیا بعید ہے کہ اللہ ان سب کو مجھ سے لا ملا ئے"
+  },
+  {
+   "text": "His grief was so deep, his eyes turned *white*.",
+   "ref": "Yusuf 12:84",
+   "ur": "اس کی آنکھیں سفید پڑ گئی تھیں"
+  },
+  {
+   "text": "His sons told him to *stop*…",
+   "ur": "بیٹوں نے کہا کہ بس کیجیے"
+  },
+  {
+   "v": 86,
+   "ar": [
+    0,
+    12
+   ],
+   "en": "I only complain of my suffering and my grief to Allah, and I know from Allah that which you do not know",
+   "ur": "اُس نے کہا \"میں اپنی پریشانی اور اپنے غم کی فریاد اللہ کے سوا کسی سے نہیں کرتا، اور اللہ سے جیسا میں واقف ہوں تم نہیں ہو"
+  },
+  {
+   "v": 87,
+   "ar": [
+    6,
+    10
+   ],
+   "en": "despair not of relief from Allah",
+   "ur": "اللہ کی رحمت سے مایوس نہ ہو"
+  },
+  {
+   "text": "After all these years… he still had not *given up*.",
+   "ur": "اتنے برسوں بعد بھی… انہوں نے امید نہیں چھوڑی تھی"
+  }
+ ],
+ "end": {
+  "text": "Watch the *full story* on the channel",
+  "ur": "مکمل کہانی چینل پر دیکھیں"
+ }
+}

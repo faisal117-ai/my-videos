@@ -1,0 +1,23 @@
+<template>
+  <style>
+    #b1 { position: absolute; inset: 0; }
+    #b1-wrap { position: absolute; left: 90px; right: 90px; top: 300px; bottom: 780px;
+      display: flex; flex-direction: column; justify-content: center; gap: 34px; }
+  </style>
+  <div id="b1" data-composition-id="b1" data-width="1080" data-height="1920">
+    <div id="b1-wrap" class="clip" data-start="0" data-duration="5.81">
+      <div id="b1-txt" class="txt hook"><span class="w" id="b1-w0">They</span> <span class="w" id="b1-w1">threw</span> <span class="w" id="b1-w2">him</span> <span class="w" id="b1-w3">in</span> <span class="w" id="b1-w4">a</span> <span class="w hi" id="b1-w5">well…</span> <span class="w" id="b1-w6">now</span> <span class="w" id="b1-w7">they</span> <span class="w" id="b1-w8">beg</span> <span class="w" id="b1-w9">him</span> <span class="w" id="b1-w10">for</span> <span class="w" id="b1-w11">food</span></div>
+      <div id="b1-sub" class="sub">Hazrat Yusuf (AS)</div>
+      <div id="b1-ur" class="ur" dir="rtl" lang="ur" data-layout-allow-overflow>انہوں نے اسے کنویں میں پھینکا… آج وہی اس سے غلہ مانگ رہے ہیں</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#b1-txt", {scale: 1.18}, {scale: 1, duration: 0.35, ease: "back.out(2)"}, 0);
+    tl.fromTo("#b1-sub", {opacity: 0, y: 16}, {opacity: 1, y: 0, duration: 0.5, ease: "power2.out"}, 2.19);
+    tl.fromTo("#b1 .hi", {textShadow: "0 0 0px rgba(0,0,0,0)"}, {textShadow: "0 0 28px var(--accent)", duration: 0.6, ease: "power1.out"}, 2.43);
+    tl.fromTo("#b1-ur", {opacity: 0, y: 10}, {opacity: 1, y: 0, duration: 0.35, ease: "power2.out"}, 0.15);
+    tl.fromTo("#b1-wrap", {opacity: 1}, {opacity: 0, duration: 0.22, ease: "power1.in"}, 5.57);
+    window.__timelines["b1"] = tl;
+  </script>
+</template>

@@ -1,0 +1,24 @@
+<template>
+  <style>
+    #b2 { position: absolute; inset: 0; }
+    #b2-wrap { position: absolute; left: 60px; right: 60px; top: 300px; bottom: 780px;
+      display: flex; flex-direction: column; justify-content: center; gap: 34px; }
+  </style>
+  <div id="b2" data-composition-id="b2" data-width="1080" data-height="1920">
+    <div id="b2-wrap" class="clip" data-start="0" data-duration="5.29">
+      <div id="b2-ar" class="ar" dir="rtl" lang="ar">عَسَى ٱللَّهُ أَن يَأۡتِيَنِي بِهِمۡ جَمِيعًاۚ</div>
+      <div id="b2-tr" class="tr">“…Perhaps Allah will bring them to me all together…”</div>
+      <div id="b2-ur" class="ur" dir="rtl" lang="ur" data-layout-allow-overflow>کیا بعید ہے کہ اللہ ان سب کو مجھ سے لا ملا ئے</div>
+      <div id="b2-ref" class="ref">Yusuf 12:83</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#b2-ar", {opacity: 0, y: 30, filter: "blur(10px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.9, ease: "power2.out"}, 0.05);
+    tl.fromTo("#b2-tr", {opacity: 0, y: 20}, {opacity: 1, y: 0, duration: 0.7, ease: "power2.out"}, 0.6);
+    tl.fromTo("#b2-ur", {opacity: 0, y: 10}, {opacity: 1, y: 0, duration: 0.35, ease: "power2.out"}, 0.15);
+    tl.fromTo("#b2-ref", {opacity: 0, y: 12}, {opacity: 1, y: 0, duration: 0.45, ease: "power2.out"}, 0.35);
+    tl.fromTo("#b2-wrap", {opacity: 1}, {opacity: 0, duration: 0.22, ease: "power1.in"}, 5.05);
+    window.__timelines["b2"] = tl;
+  </script>
+</template>
