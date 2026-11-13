@@ -1,6 +1,6 @@
 # Short: 12-ayyub: Upload details
 
-**File:** `12-ayyub.mp4` (1080×1920, about 37 s, English narration (Callum), Urdu subtitles on screen, −14.5 LUFS)
+**File:** `12-ayyub.mp4` (1080×1920, about 27 s, English narration (Callum), Urdu subtitles on screen, −14.5 LUFS)
 **Script:** `scripts/batch-02.md`. Verses filled from quran-json / quran-cloud by `tools/fill_verses.py`.
 
 ## Title

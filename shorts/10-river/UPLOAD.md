@@ -1,6 +1,6 @@
 # Short: 10-river: Upload details
 
-**File:** `10-river.mp4` (1080×1920, about 42 s, English narration (Callum), Urdu subtitles on screen, −14.5 LUFS)
+**File:** `10-river.mp4` (1080×1920, about 31 s, English narration (Callum), Urdu subtitles on screen, −14.5 LUFS)
 **Script:** `scripts/batch-02.md`. Verses filled from quran-json / quran-cloud by `tools/fill_verses.py`.
 
 ## Title
