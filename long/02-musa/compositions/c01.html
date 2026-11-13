@@ -1,0 +1,106 @@
+<template>
+  <style>
+    #c01 { position: absolute; inset: 0; overflow: hidden; background: #000; }
+    .c01-st { position: absolute; border-radius: 50%; background: #eef4ff; box-shadow: 0 0 6px rgba(220,235,255,0.9); }
+    .c01-mote { position: absolute; border-radius: 50%; }
+    .c01-full { position: absolute; inset: 0; }
+    .c01-svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+
+    .c01-cam { position: absolute; inset: 0; transform-origin: 50% 55%; }
+    .c01-scrim { position: absolute; left: 0; right: 0; bottom: 0; height: 300px;
+      background: linear-gradient(0deg, rgba(0,0,0,0.75), rgba(0,0,0,0)); }
+    .c01-cap { position: absolute; left: 210px; right: 210px; bottom: 64px; text-align: center;
+      font-family: "Cormorant Garamond"; font-weight: 600; font-size: 54px; line-height: 1.12; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c01-cardwrap { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+      background: radial-gradient(ellipse at 50% 50%, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.45) 50%, rgba(0,0,0,0) 80%); }
+    .c01-card { max-width: 1400px; display: flex; flex-direction: column; align-items: center; gap: 26px; text-align: center; }
+    .c01-ar { font-family: "Amiri Quran"; font-size: 70px; line-height: 1.8; color: #fff6e6; text-shadow: 0 0 30px rgba(215,236,255,0.4); }
+    .c01-en { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 50px; line-height: 1.18; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c01-ctext { font-family: "Cormorant Garamond"; font-weight: 600; font-size: 76px; line-height: 1.1; color: #f5ead6;
+      text-shadow: 0 3px 22px rgba(0,0,0,0.9); }
+    .c01-hi { color: var(--accent); }
+    .c01-ref { font-family: Inter, sans-serif; font-weight: 700; font-size: 28px; letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--accent); border: 2px solid var(--accent); border-radius: 999px; padding: 10px 24px; background: rgba(0,0,0,0.4); }
+    .c01-title { font-family: "Cormorant Garamond"; font-weight: 600; font-size: 118px; line-height: 1.02; color: #f5ead6;
+      text-shadow: 0 4px 30px rgba(0,0,0,0.8); }
+    .c01-tsub { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 52px; color: var(--accent); }
+    .c01-mark { font-family: Inter, sans-serif; font-weight: 700; font-size: 64px; letter-spacing: 0.32em; color: #f5ead6; }
+    .c01-mark span { color: var(--accent); }
+    .c01-endt { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 52px; color: #f5ead6; }
+    .c01-btn { font-family: Inter, sans-serif; font-weight: 700; font-size: 34px; letter-spacing: 0.08em; color: #120b08;
+      background: var(--accent); border-radius: 999px; padding: 18px 48px; }
+    .c01-label { position: absolute; left: 90px; top: 70px; }
+    .c01-label b { display: block; font-family: Inter, sans-serif; font-weight: 700; font-size: 28px; letter-spacing: 0.3em; color: var(--accent); }
+    .c01-label i { display: block; font-family: "Cormorant Garamond"; font-style: normal; font-weight: 600; font-size: 60px; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c01-brand { position: absolute; right: 80px; top: 70px; font-family: Inter, sans-serif; font-weight: 700; font-size: 28px;
+      letter-spacing: 0.32em; color: rgba(245,234,214,0.7); }
+    .c01-brand span { color: var(--accent); }
+    .c01-fade { position: absolute; inset: 0; background: #000; }
+
+    #c01-sky { background: linear-gradient(180deg, #1a1030 0%, #6a3a3a 45%, #d9864a 62%, #3a2216 75%); }
+    #c01-sun { position: absolute; left: 860px; top: 470px; width: 200px; height: 200px; border-radius: 50%;
+      background: radial-gradient(circle, #ffe4a8 0%, #ff9a50 50%, rgba(255,120,60,0) 72%); }
+    .c01-win { position: absolute; top: 790px; width: 26px; height: 26px; background: #ffc670; box-shadow: 0 0 24px 8px rgba(255,190,100,0.45); }
+    #c01-march { position: absolute; inset: 0; }
+
+  </style>
+  <div id="c01" data-composition-id="c01" data-width="1920" data-height="1080">
+    <div id="c01-scene" class="clip" data-start="0" data-duration="45.84" style="position:absolute;inset:0" data-layout-allow-overflow>
+      <div id="c01-cam" class="c01-cam">
+      <div id="c01-sky" class="c01-full"></div><div id="c01-sun"></div>
+      <svg class="c01-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none"><path d="M 150 700 L 380 490 L 610 700 Z" fill="#4a2c1e"/><path d="M 530 700 L 700 550 L 870 700 Z" fill="#4a2c1e"/><path d="M 1320 700 L 1580 460 L 1840 700 Z" fill="#4a2c1e"/><rect x="0" y="690" width="1920" height="390" fill="#2e1f14"/><path d="M 1180 700 L 1220 300 L 1420 300 L 1460 700 Z M 1500 700 L 1540 300 L 1740 300 L 1780 700 Z" fill="#3a2618"/><rect x="1440" y="420" width="80" height="280" fill="#120c08"/><circle cx="1480" cy="360" r="28" fill="#c98a3a"/><rect x="60" y="760" width="170" height="140" fill="#2a1d14"/><rect x="120" y="820" width="50" height="80" fill="#120c08"/><rect x="270" y="760" width="170" height="140" fill="#2a1d14"/><rect x="330" y="820" width="50" height="80" fill="#120c08"/><rect x="480" y="760" width="170" height="140" fill="#2a1d14"/><rect x="540" y="820" width="50" height="80" fill="#120c08"/><rect x="690" y="760" width="170" height="140" fill="#2a1d14"/><rect x="750" y="820" width="50" height="80" fill="#120c08"/><rect x="900" y="760" width="170" height="140" fill="#2a1d14"/><rect x="960" y="820" width="50" height="80" fill="#120c08"/><rect x="1110" y="760" width="170" height="140" fill="#2a1d14"/><rect x="1170" y="820" width="50" height="80" fill="#120c08"/><rect x="1320" y="760" width="170" height="140" fill="#2a1d14"/><rect x="1380" y="820" width="50" height="80" fill="#120c08"/><rect x="1530" y="760" width="170" height="140" fill="#2a1d14"/><rect x="1590" y="820" width="50" height="80" fill="#120c08"/><rect x="1740" y="760" width="170" height="140" fill="#2a1d14"/><rect x="1800" y="820" width="50" height="80" fill="#120c08"/></svg>
+      <div id="c01-win0" class="c01-win" style="left:95px"></div><div id="c01-win1" class="c01-win" style="left:305px"></div><div id="c01-win2" class="c01-win" style="left:515px"></div><div id="c01-win3" class="c01-win" style="left:725px"></div><div id="c01-win4" class="c01-win" style="left:935px"></div><div id="c01-win5" class="c01-win" style="left:1145px"></div><div id="c01-win6" class="c01-win" style="left:1355px"></div><div id="c01-win7" class="c01-win" style="left:1565px"></div><div id="c01-win8" class="c01-win" style="left:1775px"></div>
+      <div id="c01-march"><svg class="c01-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none"><g fill="#0c0806" transform="translate(0,960)"><g transform="translate(212,0) skewX(0)"><circle cx="0" cy="-82.6" r="11.8"/><path d="M -10.5 -70.1 Q 0 -76.0 10.5 -70.1 L 18.3 0 L -18.3 0 Z"/></g><rect x="232" y="-120" width="3" height="120"/><g transform="translate(356,0) skewX(0)"><circle cx="0" cy="-83.8" r="12.0"/><path d="M -10.6 -71.2 Q 0 -77.2 10.6 -71.2 L 18.6 0 L -18.6 0 Z"/></g><rect x="376" y="-122" width="3" height="122"/><g transform="translate(60,0) skewX(0)"><circle cx="0" cy="-89.6" r="12.8"/><path d="M -11.4 -76.1 Q 0 -82.5 11.4 -76.1 L 19.9 0 L -19.9 0 Z"/></g><rect x="81" y="-131" width="3" height="131"/><g transform="translate(826,0) skewX(0)"><circle cx="0" cy="-99.0" r="14.1"/><path d="M -12.6 -84.1 Q 0 -91.2 12.6 -84.1 L 22.0 0 L -22.0 0 Z"/></g><rect x="849" y="-144" width="3" height="144"/><g transform="translate(689,0) skewX(0)"><circle cx="0" cy="-85.4" r="12.2"/><path d="M -10.8 -72.5 Q 0 -78.6 10.8 -72.5 L 19.0 0 L -19.0 0 Z"/></g><rect x="709" y="-125" width="3" height="125"/><g transform="translate(483,0) skewX(0)"><circle cx="0" cy="-86.7" r="12.4"/><path d="M -11.0 -73.6 Q 0 -79.8 11.0 -73.6 L 19.3 0 L -19.3 0 Z"/></g><rect x="503" y="-126" width="3" height="126"/><g transform="translate(155,0) skewX(0)"><circle cx="0" cy="-82.7" r="11.8"/><path d="M -10.5 -70.2 Q 0 -76.1 10.5 -70.2 L 18.4 0 L -18.4 0 Z"/></g><rect x="175" y="-121" width="3" height="121"/><g transform="translate(193,0) skewX(0)"><circle cx="0" cy="-102.0" r="14.6"/><path d="M -12.9 -86.6 Q 0 -93.9 12.9 -86.6 L 22.7 0 L -22.7 0 Z"/></g><rect x="217" y="-149" width="3" height="149"/><g transform="translate(746,0) skewX(0)"><circle cx="0" cy="-99.2" r="14.2"/><path d="M -12.6 -84.2 Q 0 -91.3 12.6 -84.2 L 22.0 0 L -22.0 0 Z"/></g><rect x="769" y="-145" width="3" height="145"/><g transform="translate(720,0) skewX(0)"><circle cx="0" cy="-84.7" r="12.1"/><path d="M -10.8 -71.9 Q 0 -78.0 10.8 -71.9 L 18.8 0 L -18.8 0 Z"/></g><rect x="740" y="-124" width="3" height="124"/><g transform="translate(279,0) skewX(0)"><circle cx="0" cy="-94.9" r="13.6"/><path d="M -12.0 -80.6 Q 0 -87.4 12.0 -80.6 L 21.1 0 L -21.1 0 Z"/></g><rect x="301" y="-138" width="3" height="138"/><g transform="translate(659,0) skewX(0)"><circle cx="0" cy="-100.3" r="14.3"/><path d="M -12.7 -85.2 Q 0 -92.3 12.7 -85.2 L 22.3 0 L -22.3 0 Z"/></g><rect x="682" y="-146" width="3" height="146"/><g transform="translate(792,0) skewX(0)"><circle cx="0" cy="-82.2" r="11.7"/><path d="M -10.4 -69.8 Q 0 -75.7 10.4 -69.8 L 18.3 0 L -18.3 0 Z"/></g><rect x="811" y="-120" width="3" height="120"/><g transform="translate(545,0) skewX(0)"><circle cx="0" cy="-96.0" r="13.7"/><path d="M -12.2 -81.5 Q 0 -88.4 12.2 -81.5 L 21.3 0 L -21.3 0 Z"/></g><rect x="568" y="-140" width="3" height="140"/></g></svg></div>
+      </div>
+    </div>
+    <div id="c01-scr" class="c01-scrim clip" data-start="0" data-duration="45.84"></div>
+    <div id="c01-lab" class="c01-label clip" data-start="0.3" data-duration="4.6"><b>CHAPTER 1</b><i>The Tyrant of Egypt</i></div>
+    <div id="c01-cp0" class="c01-cap clip" data-start="0.22" data-duration="1.11">Egypt.</div>
+    <div id="c01-cp1" class="c01-cap clip" data-start="1.33" data-duration="4.28">The richest kingdom on earth, ruled by a man who called himself a god.</div>
+    <div id="c01-cp2" class="c01-cap clip" data-start="5.62" data-duration="2.50">Pharaoh divided the people into classes.</div>
+    <div id="c01-cp3" class="c01-cap clip" data-start="8.12" data-duration="4.23">And one group, the Children of Israel, he crushed beneath his feet.</div>
+    <div id="c01-cp4" class="c01-cap clip" data-start="24.78" data-duration="2.27">Soldiers went from house to house.</div>
+    <div id="c01-cp5" class="c01-cap clip" data-start="41.17" data-duration="4.07">was about to be born, inside his own kingdom.</div>
+    <div id="c01-k0w" class="c01-cardwrap clip" data-start="12.40" data-duration="10.09"><div id="c01-k0" class="c01-card"><div class="c01-ar" dir="rtl" lang="ar">إِنَّ فِرۡعَوۡنَ عَلَا فِي ٱلۡأَرۡضِ</div><div class="c01-en">“Indeed, Pharaoh exalted himself in the land…”</div><div class="c01-ref">Al-Qasas 28:4</div></div></div>
+    <div id="c01-k1w" class="c01-cardwrap clip" data-start="27.10" data-duration="12.39"><div id="c01-k1" class="c01-card"><div class="c01-ar" dir="rtl" lang="ar">وَنُرِيدُ أَن نَّمُنَّ عَلَى ٱلَّذِينَ ٱسۡتُضۡعِفُواْ فِي ٱلۡأَرۡضِ وَنَجۡعَلَهُمۡ أَئِمَّةࣰ وَنَجۡعَلَهُمُ ٱلۡوَٰرِثِينَ</div><div class="c01-en">“And We wanted to confer favor upon those who were oppressed in the land and make them leaders and make them inheritors”</div><div class="c01-ref">Al-Qasas 28:5</div></div></div>
+    <div id="c01-fadeIn" class="c01-fade clip" data-start="0" data-duration="0.55" style="opacity:1"></div>
+    <div id="c01-fadeOut" class="c01-fade clip" data-start="45.34" data-duration="0.50" style="opacity:0"></div>
+    <div id="c01-br" class="c01-brand clip" data-start="0" data-duration="45.84">HAQ <span>·</span> STORIES</div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#c01-win0", {opacity: 0.8}, {opacity: 1, duration: 0.40, ease: "sine.inOut", yoyo: true, repeat: 54, immediateRender: false}, 0);
+    tl.fromTo("#c01-win0", {opacity: 1}, {opacity: 0, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 22.40);
+    tl.fromTo("#c01-win1", {opacity: 0.8}, {opacity: 1, duration: 0.43, ease: "sine.inOut", yoyo: true, repeat: 50, immediateRender: false}, 0);
+    tl.fromTo("#c01-win1", {opacity: 1}, {opacity: 0, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 22.75);
+    tl.fromTo("#c01-win2", {opacity: 0.8}, {opacity: 1, duration: 0.46, ease: "sine.inOut", yoyo: true, repeat: 48, immediateRender: false}, 0);
+    tl.fromTo("#c01-win2", {opacity: 1}, {opacity: 0, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 23.10);
+    tl.fromTo("#c01-win3", {opacity: 0.8}, {opacity: 1, duration: 0.49, ease: "sine.inOut", yoyo: true, repeat: 45, immediateRender: false}, 0);
+    tl.fromTo("#c01-win3", {opacity: 1}, {opacity: 0, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 23.45);
+    tl.fromTo("#c01-win4", {opacity: 0.8}, {opacity: 1, duration: 0.52, ease: "sine.inOut", yoyo: true, repeat: 43, immediateRender: false}, 0);
+    tl.fromTo("#c01-win4", {opacity: 1}, {opacity: 0, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 23.80);
+    tl.fromTo("#c01-win5", {opacity: 0.8}, {opacity: 1, duration: 0.55, ease: "sine.inOut", yoyo: true, repeat: 41, immediateRender: false}, 0);
+    tl.fromTo("#c01-win5", {opacity: 1}, {opacity: 0, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 24.15);
+    tl.fromTo("#c01-win6", {opacity: 0.8}, {opacity: 1, duration: 0.58, ease: "sine.inOut", yoyo: true, repeat: 40, immediateRender: false}, 0);
+    tl.fromTo("#c01-win6", {opacity: 1}, {opacity: 0, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 24.50);
+    tl.fromTo("#c01-win7", {opacity: 0.8}, {opacity: 1, duration: 0.61, ease: "sine.inOut", yoyo: true, repeat: 38, immediateRender: false}, 0);
+    tl.fromTo("#c01-win7", {opacity: 1}, {opacity: 0, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 24.85);
+    tl.fromTo("#c01-win8", {opacity: 0.8}, {opacity: 1, duration: 0.64, ease: "sine.inOut", yoyo: true, repeat: 37, immediateRender: false}, 0);
+    tl.fromTo("#c01-win8", {opacity: 1}, {opacity: 0, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 25.20);
+    tl.fromTo("#c01-march", {x: -900}, {x: 1400, duration: 45.84, ease: "none", immediateRender: false}, 0.00);
+    tl.fromTo("#c01-sun", {scale: 1}, {scale: 1.05, duration: 3.00, ease: "sine.inOut", yoyo: true, repeat: 16, immediateRender: false}, 0.00);
+    tl.fromTo("#c01-k0w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 12.40);
+    tl.fromTo("#c01-k0", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 12.40);
+    tl.fromTo("#c01-k1w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 27.10);
+    tl.fromTo("#c01-k1", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 27.10);
+    tl.fromTo("#c01-lab", {opacity: 0, x: -20}, {opacity: 1, x: 0, duration: 0.60, ease: "power2.out", immediateRender: false}, 0.30);
+    tl.fromTo("#c01-lab", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 4.40);
+    tl.fromTo("#c01-scene", {scale: 1.0, x: 0}, {scale: 1.06, x: -30, duration: 45.84, ease: "none", immediateRender: false}, 0.00);
+    tl.fromTo("#c01-fadeIn", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 0.00);
+    tl.fromTo("#c01-fadeOut", {opacity: 0}, {opacity: 1, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 45.34);
+    window.__timelines["c01"] = tl;
+  </script>
+</template>
