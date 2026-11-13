@@ -1,0 +1,171 @@
+{
+  "accent": "#f2b04a",
+  "embers": false,
+  "flash": 0.4,
+  "bed_volume": 1.0,
+  "hold_end": 1.0,
+  "text_top": 300,
+  "text_bottom": 780,
+  "tr_size": 58,
+  "scene": "ayyub",
+  "beats": [
+    {
+      "hook": true,
+      "text": "He lost *everything*…",
+      "ur": "سب کچھ کھو دیا…",
+      "mood": {
+        "warm": 0.1,
+        "cool": 0
+      },
+      "reveal": false
+    },
+    {
+      "text": "Hazrat Ayyub (AS) was tested: his *health*, his family, his wealth.",
+      "ur": "حضرت ایوبؑ کی آزمائش ہوئی… صحت، اہل و عیال اور مال، سب میں",
+      "ref": "Sad 38:41",
+      "mood": {
+        "warm": 0.1,
+        "cool": 0
+      }
+    },
+    {
+      "text": "For years, the hardship stayed. And he never *complained* about Allah.",
+      "size": 104,
+      "ur": "برسوں تکلیف رہی… مگر انہوں نے اللہ سے کبھی شکوہ نہ کیا",
+      "ref": "Sad 38:44",
+      "mood": {
+        "warm": 0.05,
+        "cool": 0.1
+      }
+    },
+    {
+      "q": "21:83",
+      "ar_words": [
+        5,
+        10
+      ],
+      "en": "Indeed, adversity has touched me, and You are the Most Merciful of the merciful",
+      "ur_q": "مجھے بیماری لگ گئی ہے اور تو ارحم الراحمین ہے",
+      "ref": "Al-Anbiya 21:83",
+      "mood": {
+        "warm": 0,
+        "cool": 0.4
+      },
+      "arabic": "أَنِّي مَسَّنِيَ ٱلضُّرُّ وَأَنتَ أَرۡحَمُ ٱلرَّـٰحِمِينَ",
+      "translation": "“Indeed, adversity has touched me, and You are the Most Merciful of the merciful”",
+      "ur": "مجھے بیماری لگ گئی ہے اور تو ارحم الراحمین ہے"
+    },
+    {
+      "text": "That was all. And Allah *answered* him.",
+      "size": 124,
+      "ur": "بس اتنا… اور اللہ نے اس کی دُعا قبول کی",
+      "ref": "Sad 38:42",
+      "mood": {
+        "warm": 0.2,
+        "cool": 0.3
+      }
+    },
+    {
+      "q": "21:84",
+      "ar_words": [
+        8,
+        14
+      ],
+      "en": "And We gave him [back] his family and the like thereof with them as mercy from Us",
+      "ur_q": "صرف اس کے اہل و عیال ہی اس کو نہیں دیے بلکہ ان کے ساتھ اتنے ہی اور بھی دیے، اپنی خاص رحمت کے طور پر",
+      "ref": "Al-Anbiya 21:84",
+      "mood": {
+        "warm": 0.45,
+        "cool": 0.15
+      },
+      "arabic": "وَءَاتَيۡنَٰهُ أَهۡلَهُۥ وَمِثۡلَهُم مَّعَهُمۡ رَحۡمَةࣰ مِّنۡ عِندِنَا",
+      "translation": "“And We gave him [back] his family and the like thereof with them as mercy from Us”",
+      "ur": "صرف اس کے اہل و عیال ہی اس کو نہیں دیے بلکہ ان کے ساتھ اتنے ہی اور بھی دیے، اپنی خاص رحمت کے طور پر"
+    },
+    {
+      "cta": true,
+      "text": "A new story from the Quran, every day.",
+      "ur": "ہر روز قرآن سے ایک نئی کہانی… فالو کریں",
+      "mood": {
+        "warm": 0.4,
+        "cool": 0.1
+      }
+    }
+  ],
+  "sound": [
+    {
+      "prompt": "boom",
+      "src": "../03-cave/assets/sfx/03b5f68efefc.mp3",
+      "beat": 0,
+      "dur": 3,
+      "gain": -7,
+      "fade_in": 0,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "desert wind",
+      "src": "../../long/01-yusuf/assets/sfx/59352a0d56de.mp3",
+      "beat": 0,
+      "dur": 15,
+      "gain": -12,
+      "fade_in": 0.3,
+      "fade_out": 2
+    },
+    {
+      "prompt": "clock",
+      "src": "../03-cave/assets/sfx/c0a62b45d83e.mp3",
+      "beat": 2,
+      "dur": 6,
+      "gain": -12,
+      "fade_in": 0.3,
+      "fade_out": 1
+    },
+    {
+      "prompt": "hum sorrow",
+      "src": "../../long/01-yusuf/assets/sfx/1830ee4b40ad.mp3",
+      "beat": 1,
+      "offset": 0.5,
+      "dur": 13,
+      "gain": -16,
+      "fade_in": 2,
+      "fade_out": 2
+    },
+    {
+      "prompt": "night room",
+      "src": "../05-trunk/assets/sfx/beb74bb8b482.mp3",
+      "beat": 3,
+      "dur": 10,
+      "gain": -14,
+      "fade_in": 0.8,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "a fresh water spring bursting up out of the ground, splashing and bubbling, clear and close",
+      "beat": 4,
+      "offset": 1.4,
+      "dur": 8,
+      "gain": -9,
+      "fade_in": 0.1,
+      "fade_out": 2
+    },
+    {
+      "prompt": "dawn",
+      "src": "../04-ease/assets/sfx/61e97fb787a5.mp3",
+      "beat": 5,
+      "dur": 12,
+      "gain": -12,
+      "fade_in": 1.5,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "hum grateful",
+      "src": "../06-ant/assets/sfx/cabf6e6577de.mp3",
+      "beat": 5,
+      "offset": 0.3,
+      "dur": 12,
+      "gain": -14,
+      "fade_in": 2,
+      "fade_out": 2
+    }
+  ]
+}
