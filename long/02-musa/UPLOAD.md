@@ -1,7 +1,7 @@
 # Long video 2: Musa (AS): Upload details
 
 **Files**
-- Video: `renders/02-musa.mp4` (1920×1080, 11:30, −14.5 LUFS). Not in git if it is over 100 MB.
+- Video: `02-musa.mp4` (1920×1080, 11:30, −14.6 LUFS, 74 MB; re-encoded with x264 CRF 21 to stay under GitHub's 100 MB limit)
 - Thumbnail: `thumbnail/thumbnail.jpg` (1280×720)
 - Subtitles: `subtitles/en.srt` (English, timed from the voice). No Urdu file this time.
 
@@ -62,5 +62,6 @@ python3 ../../tools/soundscape_long.py .
 npx --yes hyperframes@0.9.23 render -q delivery -o renders/02-musa.mp4
 python3 ../../tools/mix.py . renders/02-musa.mp4
 python3 ../../tools/srt_en_long.py .
+ffmpeg -i renders/02-musa.mp4 -c:v libx264 -preset slow -crf 21 -pix_fmt yuv420p -c:a copy -movflags +faststart 02-musa.mp4
 node ../../tools/screenshot.js $PWD/thumbnail/thumbnail.html $PWD/thumbnail/thumbnail.jpg
 ```
