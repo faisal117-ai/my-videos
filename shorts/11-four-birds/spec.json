@@ -1,0 +1,174 @@
+{
+  "accent": "#f2b04a",
+  "embers": false,
+  "flash": 0.4,
+  "bed_volume": 1.0,
+  "hold_end": 1.0,
+  "text_top": 300,
+  "text_bottom": 780,
+  "tr_size": 58,
+  "scene": "birds",
+  "beats": [
+    {
+      "hook": true,
+      "text": "Four birds were cut into *pieces*…",
+      "sub": "…then they flew back alive.",
+      "ur": "چار پرندوں کے ٹکڑے… پھر وہ زندہ لوٹ آئے",
+      "mood": {
+        "warm": 0.2,
+        "cool": 0
+      },
+      "reveal": false
+    },
+    {
+      "q": "2:260",
+      "ar_words": [
+        4,
+        8
+      ],
+      "en": "My Lord, show me how You give life to the dead",
+      "ur_q": "میرے مالک، مجھے دکھا دے، تو مُردوں کو کیسے زندہ کرتا ہے",
+      "ref": "Al-Baqarah 2:260",
+      "mood": {
+        "warm": 0.2,
+        "cool": 0.2
+      },
+      "arabic": "رَبِّ أَرِنِي كَيۡفَ تُحۡيِ ٱلۡمَوۡتَىٰۖ",
+      "translation": "“My Lord, show me how You give life to the dead”",
+      "ur": "میرے مالک، مجھے دکھا دے، تو مُردوں کو کیسے زندہ کرتا ہے"
+    },
+    {
+      "text": "“Have you not *believed*?” “Yes… but only that my *heart* may be satisfied.”",
+      "size": 100,
+      "ur": "کیا تو ایمان نہیں رکھتا؟ … ایمان تو رکھتا ہوں، مگر دل کا اطمینان درکار ہے",
+      "ref": "Al-Baqarah 2:260",
+      "mood": {
+        "warm": 0.25,
+        "cool": 0.1
+      }
+    },
+    {
+      "text": "Take four birds… and put a part of them on each *hill*.",
+      "ur": "چار پرندے لے… پھر ان کا ایک ایک جز ایک ایک پہاڑ پر رکھ دے",
+      "ref": "Al-Baqarah 2:260",
+      "mood": {
+        "warm": 0.2,
+        "cool": 0
+      }
+    },
+    {
+      "text": "Then… *call* them.",
+      "size": 130,
+      "ur": "پھر ان کو پکار",
+      "mood": {
+        "warm": 0.3,
+        "cool": 0.2
+      }
+    },
+    {
+      "q": "2:260",
+      "ar_words": [
+        33,
+        39
+      ],
+      "en": "they will come [flying] to you in haste. And know that Allah is Exalted in Might and Wise",
+      "ur_q": "وہ تیرے پاس دوڑے چلے آئیں گے خوب جان لے کہ اللہ نہایت با اقتدار اور حکیم ہے",
+      "ref": "Al-Baqarah 2:260",
+      "mood": {
+        "warm": 0.4,
+        "cool": 0.3
+      },
+      "arabic": "يَأۡتِينَكَ سَعۡيࣰاۚ وَٱعۡلَمۡ أَنَّ ٱللَّهَ عَزِيزٌ حَكِيمࣱ",
+      "translation": "“they will come [flying] to you in haste. And know that Allah is Exalted in Might and Wise”",
+      "ur": "وہ تیرے پاس دوڑے چلے آئیں گے خوب جان لے کہ اللہ نہایت با اقتدار اور حکیم ہے"
+    },
+    {
+      "cta": true,
+      "text": "A new story from the Quran, every day.",
+      "ur": "ہر روز قرآن سے ایک نئی کہانی… فالو کریں",
+      "mood": {
+        "warm": 0.4,
+        "cool": 0.2
+      }
+    }
+  ],
+  "sound": [
+    {
+      "prompt": "flock",
+      "src": "../06-ant/assets/sfx/5245d986054f.mp3",
+      "beat": 0,
+      "dur": 3,
+      "gain": -9,
+      "fade_in": 0,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "dawn",
+      "src": "../04-ease/assets/sfx/61e97fb787a5.mp3",
+      "beat": 0,
+      "dur": 18,
+      "gain": -13,
+      "fade_in": 0.3,
+      "fade_out": 2
+    },
+    {
+      "prompt": "hum mysterious",
+      "src": "../03-cave/assets/sfx/1a9908bb62c8.mp3",
+      "beat": 1,
+      "offset": 0.3,
+      "dur": 15,
+      "gain": -17,
+      "fade_in": 2,
+      "fade_out": 2
+    },
+    {
+      "prompt": "soft white feathers fluttering and drifting down in a light breeze, close",
+      "beat": 3,
+      "offset": 2,
+      "dur": 4,
+      "gain": -10,
+      "fade_in": 0.3,
+      "fade_out": 1
+    },
+    {
+      "prompt": "boom",
+      "src": "../03-cave/assets/sfx/03b5f68efefc.mp3",
+      "beat": 4,
+      "offset": 0.2,
+      "dur": 3,
+      "gain": -9,
+      "fade_in": 0,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "shimmer",
+      "src": "../03-cave/assets/sfx/f73090a5a6a6.mp3",
+      "beat": 4,
+      "offset": 0.3,
+      "dur": 2.5,
+      "gain": -9,
+      "fade_in": 0,
+      "fade_out": 1
+    },
+    {
+      "prompt": "flock",
+      "src": "../06-ant/assets/sfx/5245d986054f.mp3",
+      "beat": 5,
+      "offset": 0.9,
+      "dur": 4,
+      "gain": -6,
+      "fade_in": 0,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "hum hopeful",
+      "src": "../04-ease/assets/sfx/ed4334fb2fbf.mp3",
+      "beat": 5,
+      "offset": 0.4,
+      "dur": 12,
+      "gain": -14,
+      "fade_in": 2,
+      "fade_out": 2
+    }
+  ]
+}

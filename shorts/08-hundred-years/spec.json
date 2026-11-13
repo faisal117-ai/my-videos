@@ -1,0 +1,192 @@
+{
+  "accent": "#f2b04a",
+  "embers": false,
+  "scene": "ruins",
+  "lapse_beat": 2,
+  "food_beat": 4,
+  "raise_beat": 5,
+  "flash": 0.4,
+  "bed_volume": 1.0,
+  "hold_end": 1.0,
+  "text_top": 300,
+  "text_bottom": 780,
+  "tr_size": 58,
+  "beats": [
+    {
+      "hook": true,
+      "text": "Allah made him die… for *100 years*",
+      "sub": "…and his food hadn't even spoiled.",
+      "ur": "سو برس کی موت… اور کھانا تک خراب نہ ہوا",
+      "mood": {
+        "warm": 0.2,
+        "cool": 0
+      },
+      "reveal": false
+    },
+    {
+      "text": "A man passed by a town lying in *ruins*.",
+      "ur": "ایک شخص ایک اجڑی ہوئی بستی سے گزرا… اللہ اسے کس طرح دوبارہ زندگی بخشے گا؟",
+      "ref": "Al-Baqarah 2:259",
+      "mood": {
+        "warm": 0.25,
+        "cool": 0
+      }
+    },
+    {
+      "q": "2:259",
+      "ar_words": [
+        17,
+        22
+      ],
+      "en": "So Allah caused him to die for a hundred years; then He revived him",
+      "ur_q": "اللہ نے اس کی روح قبض کر لی اور وہ سوبرس تک مُردہ پڑا رہا پھر اللہ نے اسے دوبارہ زندگی بخشی",
+      "ref": "Al-Baqarah 2:259",
+      "mood": {
+        "warm": 0.1,
+        "cool": 0.3
+      },
+      "arabic": "فَأَمَاتَهُ ٱللَّهُ مِاْئَةَ عَامࣲ ثُمَّ بَعَثَهُۥۖ",
+      "translation": "“So Allah caused him to die for a hundred years; then He revived him”",
+      "ur": "اللہ نے اس کی روح قبض کر لی اور وہ سوبرس تک مُردہ پڑا رہا پھر اللہ نے اسے دوبارہ زندگی بخشی"
+    },
+    {
+      "text": "“How long have you remained?” “A *day*, or part of a day.”",
+      "ur": "بتاؤ، کتنی مدت پڑے رہے ہو؟ … ایک دن یا چند گھنٹے رہا ہوں گا",
+      "ref": "Al-Baqarah 2:259",
+      "mood": {
+        "warm": 0.15,
+        "cool": 0.2
+      }
+    },
+    {
+      "text": "100 years… his food had not *changed*. His donkey: only *bones*.",
+      "size": 104,
+      "ur": "سو برس… مگر کھانے اور پانی میں ذرا تغیر نہیں آیا۔ اور گدھا؟ صرف ہڈیاں",
+      "ref": "Al-Baqarah 2:259",
+      "mood": {
+        "warm": 0.3,
+        "cool": 0.1
+      }
+    },
+    {
+      "q": "2:259",
+      "ar_words": [
+        61,
+        67
+      ],
+      "en": "I know that Allah is over all things competent",
+      "ur_q": "میں جانتا ہوں کہ اللہ ہر چیز پر قدرت رکھتا ہے",
+      "ref": "Al-Baqarah 2:259",
+      "mood": {
+        "warm": 0.3,
+        "cool": 0.4
+      },
+      "arabic": "أَعۡلَمُ أَنَّ ٱللَّهَ عَلَىٰ كُلِّ شَيۡءࣲ قَدِيرࣱ",
+      "translation": "“I know that Allah is over all things competent”",
+      "ur": "میں جانتا ہوں کہ اللہ ہر چیز پر قدرت رکھتا ہے"
+    },
+    {
+      "cta": true,
+      "text": "A new story from the Quran, every day.",
+      "ur": "ہر روز قرآن سے ایک نئی کہانی… فالو کریں",
+      "mood": {
+        "warm": 0.3,
+        "cool": 0.3
+      }
+    }
+  ],
+  "sound": [
+    {
+      "prompt": "boom",
+      "src": "../03-cave/assets/sfx/03b5f68efefc.mp3",
+      "beat": 0,
+      "dur": 3,
+      "gain": -6,
+      "fade_in": 0,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "desert wind",
+      "src": "../../long/01-yusuf/assets/sfx/59352a0d56de.mp3",
+      "beat": 0,
+      "dur": 11.5,
+      "gain": -12,
+      "fade_in": 0.3,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "a long rushing whoosh of wind sweeping past, rising and falling again and again",
+      "beat": 2,
+      "dur": 5.5,
+      "gain": -10,
+      "fade_in": 0.3,
+      "fade_out": 1
+    },
+    {
+      "prompt": "clock",
+      "src": "../03-cave/assets/sfx/c0a62b45d83e.mp3",
+      "beat": 2,
+      "dur": 5.4,
+      "gain": -11,
+      "fade_in": 0.2,
+      "fade_out": 0.6
+    },
+    {
+      "prompt": "hum mysterious",
+      "src": "../03-cave/assets/sfx/1a9908bb62c8.mp3",
+      "beat": 2,
+      "offset": 0.3,
+      "dur": 14,
+      "gain": -17,
+      "fade_in": 2,
+      "fade_out": 2
+    },
+    {
+      "prompt": "desert wind",
+      "src": "../../long/01-yusuf/assets/sfx/59352a0d56de.mp3",
+      "beat": 3,
+      "dur": 15,
+      "gain": -15,
+      "fade_in": 1,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "shimmer",
+      "src": "../03-cave/assets/sfx/f73090a5a6a6.mp3",
+      "beat": 4,
+      "offset": 1.4,
+      "dur": 2.5,
+      "gain": -10,
+      "fade_in": 0,
+      "fade_out": 1
+    },
+    {
+      "prompt": "dry old bones dropping and rattling onto sand, close",
+      "beat": 4,
+      "offset": 4.6,
+      "dur": 2.5,
+      "gain": -9,
+      "fade_in": 0,
+      "fade_out": 0.8
+    },
+    {
+      "prompt": "old dry bones clicking and knocking together one by one as they rise and fit into place",
+      "beat": 5,
+      "offset": 0.9,
+      "dur": 3,
+      "gain": -9,
+      "fade_in": 0,
+      "fade_out": 0.8
+    },
+    {
+      "prompt": "hum hopeful",
+      "src": "../04-ease/assets/sfx/ed4334fb2fbf.mp3",
+      "beat": 5,
+      "offset": 0.4,
+      "dur": 13,
+      "gain": -14,
+      "fade_in": 2,
+      "fade_out": 2
+    }
+  ]
+}

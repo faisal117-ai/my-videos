@@ -1,0 +1,178 @@
+{
+  "accent": "#f2b04a",
+  "embers": false,
+  "flash": 0.4,
+  "bed_volume": 1.0,
+  "hold_end": 1.0,
+  "text_top": 300,
+  "text_bottom": 780,
+  "tr_size": 58,
+  "scene": "sea",
+  "beats": [
+    {
+      "hook": true,
+      "text": "Swallowed… in the *darkness* of the sea",
+      "ur": "سمندر کی تاریکی میں… نگل لیا گیا",
+      "mood": {
+        "warm": 0,
+        "cool": 0
+      },
+      "reveal": false
+    },
+    {
+      "text": "Hazrat Yunus (AS) left his people in *anger*…",
+      "sub": "before Allah gave him permission.",
+      "ur": "حضرت یونسؑ اپنی قوم سے ناراض ہو کر چلے گئے… اللہ کی اجازت سے پہلے",
+      "ref": "Al-Anbiya 21:87",
+      "mood": {
+        "warm": 0.1,
+        "cool": 0.2
+      }
+    },
+    {
+      "text": "A storm. The sea. And a huge *fish* swallowed him.",
+      "ur": "طوفان… سمندر… آخرکار مچھلی نے اسے نگل لیا",
+      "ref": "As-Saffat 37:142",
+      "mood": {
+        "warm": 0,
+        "cool": 0.1
+      }
+    },
+    {
+      "text": "Darkness of the night. Darkness of the sea. Darkness inside the *fish*.",
+      "size": 100,
+      "ur": "رات کی تاریکی… سمندر کی تاریکی… مچھلی کے پیٹ کی تاریکی",
+      "ref": "Al-Anbiya 21:87",
+      "mood": {
+        "warm": 0,
+        "cool": 0
+      }
+    },
+    {
+      "q": "21:87",
+      "ar_words": [
+        15,
+        23
+      ],
+      "en": "There is no deity except You; exalted are You. Indeed, I have been of the wrongdoers",
+      "ur_q": "نہیں ہے کوئی خدا مگر تُو، پاک ہے تیری ذات، بے شک میں نے قصور کیا",
+      "ref": "Al-Anbiya 21:87",
+      "mood": {
+        "warm": 0,
+        "cool": 0.35
+      },
+      "arabic": "لَّآ إِلَٰهَ إِلَّآ أَنتَ سُبۡحَٰنَكَ إِنِّي كُنتُ مِنَ ٱلظَّـٰلِمِينَ",
+      "translation": "“There is no deity except You; exalted are You. Indeed, I have been of the wrongdoers”",
+      "ur": "نہیں ہے کوئی خدا مگر تُو، پاک ہے تیری ذات، بے شک میں نے قصور کیا"
+    },
+    {
+      "q": "21:88",
+      "ar_words": [
+        1,
+        8
+      ],
+      "en": "So We responded to him and saved him from the distress. And thus do We save the believers",
+      "ur_q": "تب ہم نے اس کی دُعا قبول کی اور غم سے اس کو نجات بخشی، اور اِسی طرح ہم مومنوں کو بچا لیا کرتے ہیں",
+      "ref": "Al-Anbiya 21:88",
+      "mood": {
+        "warm": 0.3,
+        "cool": 0.3
+      },
+      "arabic": "فَٱسۡتَجَبۡنَا لَهُۥ وَنَجَّيۡنَٰهُ مِنَ ٱلۡغَمِّۚ وَكَذَٰلِكَ نُـۨجِي ٱلۡمُؤۡمِنِينَ",
+      "translation": "“So We responded to him and saved him from the distress. And thus do We save the believers”",
+      "ur": "تب ہم نے اس کی دُعا قبول کی اور غم سے اس کو نجات بخشی، اور اِسی طرح ہم مومنوں کو بچا لیا کرتے ہیں"
+    },
+    {
+      "cta": true,
+      "text": "A new story from the Quran, every day.",
+      "ur": "ہر روز قرآن سے ایک نئی کہانی… فالو کریں",
+      "mood": {
+        "warm": 0.3,
+        "cool": 0.3
+      }
+    }
+  ],
+  "sound": [
+    {
+      "prompt": "boom",
+      "src": "../03-cave/assets/sfx/03b5f68efefc.mp3",
+      "beat": 0,
+      "dur": 3,
+      "gain": -6,
+      "fade_in": 0,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "calm ocean waves at dusk rolling onto rocks, sea breeze, distant seagulls, no music",
+      "beat": 0,
+      "dur": 10,
+      "gain": -12,
+      "fade_in": 0.3,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "storm",
+      "src": "../04-ease/assets/sfx/3835e3c98c45.mp3",
+      "beat": 2,
+      "dur": 7.5,
+      "gain": -9,
+      "fade_in": 0.5,
+      "fade_out": 1.2
+    },
+    {
+      "prompt": "thunder",
+      "src": "../04-ease/assets/sfx/13fce06b48a0.mp3",
+      "beat": 2,
+      "offset": 1.1,
+      "dur": 4,
+      "gain": -7,
+      "fade_in": 0,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "a huge sea creature surging underwater, deep low rumble and a powerful swirl of water",
+      "beat": 2,
+      "offset": 3.8,
+      "dur": 4,
+      "gain": -7,
+      "fade_in": 0.2,
+      "fade_out": 1.2
+    },
+    {
+      "prompt": "deep underwater ambience, muffled and enclosed, slow low drone, occasional bubbles, no music",
+      "beat": 3,
+      "dur": 15,
+      "gain": -12,
+      "fade_in": 1,
+      "fade_out": 2
+    },
+    {
+      "prompt": "hum mysterious",
+      "src": "../03-cave/assets/sfx/1a9908bb62c8.mp3",
+      "beat": 4,
+      "dur": 10,
+      "gain": -16,
+      "fade_in": 2,
+      "fade_out": 2
+    },
+    {
+      "prompt": "dawn",
+      "src": "../04-ease/assets/sfx/61e97fb787a5.mp3",
+      "beat": 5,
+      "dur": 11,
+      "gain": -13,
+      "fade_in": 1.5,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "hum hopeful",
+      "src": "../04-ease/assets/sfx/ed4334fb2fbf.mp3",
+      "beat": 5,
+      "offset": 0.3,
+      "dur": 11,
+      "gain": -14,
+      "fade_in": 2,
+      "fade_out": 2
+    }
+  ]
+}
