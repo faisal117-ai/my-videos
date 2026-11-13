@@ -748,8 +748,29 @@ def chunks(line: str, max_words=13):
 OPEN_TANWEEN = str.maketrans({"\u0657": "\u08F0", "\u065E": "\u08F1", "\u0656": "\u08F2"})
 
 
+NAMES = {"Joseph": "Joseph [Yusuf]", "Jacob": "Jacob [Yaqub]", "Moses": "Moses [Musa]", "Aaron": "Aaron [Harun]"}
+
+
 def show_en(s: str) -> str:
-    return s.replace("Joseph", "Joseph [Yusuf]").replace("Jacob", "Jacob [Yaqub]")
+    for k, v in NAMES.items():
+        s = re.sub(rf"\b{k}\b", v, s)
+    return s
+
+
+# Any surah: cards with "q": "s:v" and 1-based "w": [first, last] read the Quran packages in the
+# repo root (npm i --no-save quran-json), so no verse is ever typed by hand.
+_PKG = {}
+
+
+def pkg_verse(q: str) -> dict:
+    if not _PKG:
+        root = Path(__file__).resolve().parent.parent / "node_modules/quran-json/dist"
+        _PKG["ar"] = json.loads((root / "quran.json").read_text(encoding="utf-8"))
+        _PKG["en"] = json.loads((root / "quran_en.json").read_text(encoding="utf-8"))
+    s, v = map(int, q.split(":"))
+    ch = _PKG["ar"][s - 1]
+    return {"ar": ch["verses"][v - 1]["text"], "en": _PKG["en"][s - 1]["verses"][v - 1]["translation"],
+            "ref": f'{ch["transliteration"]} {s}:{v}'}
 
 
 def card_html(cid: str, card: dict, quran: dict) -> str:
@@ -762,17 +783,23 @@ def card_html(cid: str, card: dict, quran: dict) -> str:
     if card.get("text"):
         return (f'<div id="{cid}" class="§card"><div class="§ctext">{hi(card["text"])}</div>'
                 f'<div class="§ref">{esc(card["ref"])}</div></div>')
-    v = quran[str(card["v"])]
+    if "q" in card:
+        v = pkg_verse(card["q"])
+        a, b = card["w"][0] - 1, card["w"][1] - 1
+        ref = v["ref"]
+    else:
+        v = quran[str(card["v"])]
+        a, b = card["ar"]
+        ref = f'Yusuf 12:{card["v"]}'
     words = v["ar"].split(" ")
-    a, b = card["ar"]
     ar = " ".join(words[a:b + 1]).translate(OPEN_TANWEEN)
     if card["en"] not in v["en"]:
-        sys.exit(f"12:{card['v']}: English excerpt not found in Sahih International: {card['en']!r}")
+        sys.exit(f"{card.get('q') or card.get('v')}: English excerpt not found in Sahih International: {card['en']!r}")
     lead = "…" if not v["en"].startswith(card["en"]) else ""
     tail = "" if v["en"].rstrip(" .").endswith(card["en"]) else "…"
     en = f"“{lead}{show_en(card['en'])}{tail}”"
     return (f'<div id="{cid}" class="§card"><div class="§ar" dir="rtl" lang="ar">{esc(ar)}</div>'
-            f'<div class="§en">{esc(en)}</div><div class="§ref">Yusuf 12:{card["v"]}</div></div>')
+            f'<div class="§en">{esc(en)}</div><div class="§ref">{esc(ref)}</div></div>')
 
 
 CHAPTER_CSS = """
@@ -913,7 +940,12 @@ def wav_len(path: Path) -> float:
 def main() -> None:
     d = Path(sys.argv[1])
     spec = json.loads((d / "spec.json").read_text(encoding="utf-8"))
-    quran = json.loads((d / "assets/surah12.json").read_text(encoding="utf-8"))["verses"]
+    qf = d / "assets/surah12.json"
+    quran = json.loads(qf.read_text(encoding="utf-8"))["verses"] if qf.exists() else {}
+    if spec.get("scene_module"):
+        import importlib
+        sys.path.insert(0, str(Path(__file__).parent))
+        SCENES.update(importlib.import_module(spec["scene_module"]).SCENES)
     gap = spec.get("gap", 0.7)
     (d / "compositions").mkdir(exist_ok=True)
     hosts, audio, at = [], [], 0.0

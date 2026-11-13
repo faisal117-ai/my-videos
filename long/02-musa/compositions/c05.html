@@ -1,0 +1,172 @@
+<template>
+  <style>
+    #c05 { position: absolute; inset: 0; overflow: hidden; background: #000; }
+    .c05-st { position: absolute; border-radius: 50%; background: #eef4ff; box-shadow: 0 0 6px rgba(220,235,255,0.9); }
+    .c05-mote { position: absolute; border-radius: 50%; }
+    .c05-full { position: absolute; inset: 0; }
+    .c05-svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+
+    .c05-cam { position: absolute; inset: 0; transform-origin: 50% 55%; }
+    .c05-scrim { position: absolute; left: 0; right: 0; bottom: 0; height: 300px;
+      background: linear-gradient(0deg, rgba(0,0,0,0.75), rgba(0,0,0,0)); }
+    .c05-cap { position: absolute; left: 210px; right: 210px; bottom: 64px; text-align: center;
+      font-family: "Cormorant Garamond"; font-weight: 600; font-size: 54px; line-height: 1.12; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c05-cardwrap { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+      background: radial-gradient(ellipse at 50% 50%, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.45) 50%, rgba(0,0,0,0) 80%); }
+    .c05-card { max-width: 1400px; display: flex; flex-direction: column; align-items: center; gap: 26px; text-align: center; }
+    .c05-ar { font-family: "Amiri Quran"; font-size: 70px; line-height: 1.8; color: #fff6e6; text-shadow: 0 0 30px rgba(215,236,255,0.4); }
+    .c05-en { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 50px; line-height: 1.18; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c05-ctext { font-family: "Cormorant Garamond"; font-weight: 600; font-size: 76px; line-height: 1.1; color: #f5ead6;
+      text-shadow: 0 3px 22px rgba(0,0,0,0.9); }
+    .c05-hi { color: var(--accent); }
+    .c05-ref { font-family: Inter, sans-serif; font-weight: 700; font-size: 28px; letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--accent); border: 2px solid var(--accent); border-radius: 999px; padding: 10px 24px; background: rgba(0,0,0,0.4); }
+    .c05-title { font-family: "Cormorant Garamond"; font-weight: 600; font-size: 118px; line-height: 1.02; color: #f5ead6;
+      text-shadow: 0 4px 30px rgba(0,0,0,0.8); }
+    .c05-tsub { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 52px; color: var(--accent); }
+    .c05-mark { font-family: Inter, sans-serif; font-weight: 700; font-size: 64px; letter-spacing: 0.32em; color: #f5ead6; }
+    .c05-mark span { color: var(--accent); }
+    .c05-endt { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 52px; color: #f5ead6; }
+    .c05-btn { font-family: Inter, sans-serif; font-weight: 700; font-size: 34px; letter-spacing: 0.08em; color: #120b08;
+      background: var(--accent); border-radius: 999px; padding: 18px 48px; }
+    .c05-label { position: absolute; left: 90px; top: 70px; }
+    .c05-label b { display: block; font-family: Inter, sans-serif; font-weight: 700; font-size: 28px; letter-spacing: 0.3em; color: var(--accent); }
+    .c05-label i { display: block; font-family: "Cormorant Garamond"; font-style: normal; font-weight: 600; font-size: 60px; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c05-brand { position: absolute; right: 80px; top: 70px; font-family: Inter, sans-serif; font-weight: 700; font-size: 28px;
+      letter-spacing: 0.32em; color: rgba(245,234,214,0.7); }
+    .c05-brand span { color: var(--accent); }
+    .c05-fade { position: absolute; inset: 0; background: #000; }
+
+    #c05-sky { background: linear-gradient(180deg, #02030a 0%, #0b1026 60%, #151a2c 100%); }
+    #c05-glow { position: absolute; left: 1510px; top: 680px; width: 300px; height: 300px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(255,180,90,0.55), rgba(255,140,60,0) 70%); }
+    #c05-obj { position: absolute; inset: 0; opacity: 0; }
+    #c05-staff, #c05-snake { transform-origin: 960px 900px; }
+
+  </style>
+  <div id="c05" data-composition-id="c05" data-width="1920" data-height="1080">
+    <div id="c05-scene" class="clip" data-start="0" data-duration="68.50" style="position:absolute;inset:0" data-layout-allow-overflow>
+      <div id="c05-cam" class="c05-cam">
+      <div id="c05-sky" class="c05-full"></div><div id="c05-ust0" class="c05-st" style="left:732px;top:138px;width:1.9px;height:1.9px"></div><div id="c05-ust1" class="c05-st" style="left:1062px;top:230px;width:3.3px;height:3.3px"></div><div id="c05-ust2" class="c05-st" style="left:1107px;top:469px;width:3.2px;height:3.2px"></div><div id="c05-ust3" class="c05-st" style="left:288px;top:434px;width:1.9px;height:1.9px"></div><div id="c05-ust4" class="c05-st" style="left:1257px;top:372px;width:1.6px;height:1.6px"></div><div id="c05-ust5" class="c05-st" style="left:1615px;top:130px;width:3.3px;height:3.3px"></div><div id="c05-ust6" class="c05-st" style="left:1406px;top:75px;width:3.2px;height:3.2px"></div><div id="c05-ust7" class="c05-st" style="left:1882px;top:32px;width:2.3px;height:2.3px"></div><div id="c05-ust8" class="c05-st" style="left:1190px;top:365px;width:2.0px;height:2.0px"></div><div id="c05-ust9" class="c05-st" style="left:280px;top:401px;width:2.5px;height:2.5px"></div><div id="c05-ust10" class="c05-st" style="left:1274px;top:296px;width:2.5px;height:2.5px"></div><div id="c05-ust11" class="c05-st" style="left:1398px;top:255px;width:3.4px;height:3.4px"></div><div id="c05-ust12" class="c05-st" style="left:1036px;top:528px;width:3.1px;height:3.1px"></div><div id="c05-ust13" class="c05-st" style="left:76px;top:517px;width:3.7px;height:3.7px"></div><div id="c05-ust14" class="c05-st" style="left:1443px;top:66px;width:3.2px;height:3.2px"></div><div id="c05-ust15" class="c05-st" style="left:1439px;top:365px;width:2.5px;height:2.5px"></div><div id="c05-ust16" class="c05-st" style="left:1629px;top:577px;width:2.1px;height:2.1px"></div><div id="c05-ust17" class="c05-st" style="left:788px;top:270px;width:3.9px;height:3.9px"></div><div id="c05-ust18" class="c05-st" style="left:530px;top:127px;width:3.2px;height:3.2px"></div><div id="c05-ust19" class="c05-st" style="left:1775px;top:228px;width:3.7px;height:3.7px"></div><div id="c05-ust20" class="c05-st" style="left:1442px;top:439px;width:2.0px;height:2.0px"></div><div id="c05-ust21" class="c05-st" style="left:1280px;top:39px;width:2.1px;height:2.1px"></div><div id="c05-ust22" class="c05-st" style="left:1089px;top:93px;width:2.3px;height:2.3px"></div><div id="c05-ust23" class="c05-st" style="left:1915px;top:359px;width:3.3px;height:3.3px"></div><div id="c05-ust24" class="c05-st" style="left:1061px;top:299px;width:3.9px;height:3.9px"></div><div id="c05-ust25" class="c05-st" style="left:1132px;top:565px;width:3.1px;height:3.1px"></div><div id="c05-ust26" class="c05-st" style="left:985px;top:390px;width:1.9px;height:1.9px"></div><div id="c05-ust27" class="c05-st" style="left:979px;top:357px;width:2.4px;height:2.4px"></div><div id="c05-ust28" class="c05-st" style="left:1309px;top:553px;width:3.8px;height:3.8px"></div><div id="c05-ust29" class="c05-st" style="left:1175px;top:498px;width:3.7px;height:3.7px"></div><div id="c05-ust30" class="c05-st" style="left:537px;top:352px;width:2.3px;height:2.3px"></div><div id="c05-ust31" class="c05-st" style="left:960px;top:356px;width:2.1px;height:2.1px"></div><div id="c05-ust32" class="c05-st" style="left:350px;top:285px;width:1.7px;height:1.7px"></div><div id="c05-ust33" class="c05-st" style="left:104px;top:495px;width:3.3px;height:3.3px"></div><div id="c05-ust34" class="c05-st" style="left:1360px;top:16px;width:3.4px;height:3.4px"></div><div id="c05-ust35" class="c05-st" style="left:704px;top:103px;width:3.7px;height:3.7px"></div><div id="c05-ust36" class="c05-st" style="left:426px;top:524px;width:2.8px;height:2.8px"></div><div id="c05-ust37" class="c05-st" style="left:52px;top:494px;width:2.2px;height:2.2px"></div><div id="c05-ust38" class="c05-st" style="left:46px;top:460px;width:3.3px;height:3.3px"></div><div id="c05-ust39" class="c05-st" style="left:1126px;top:414px;width:2.7px;height:2.7px"></div><div id="c05-ust40" class="c05-st" style="left:1090px;top:432px;width:2.0px;height:2.0px"></div><div id="c05-ust41" class="c05-st" style="left:1541px;top:512px;width:2.6px;height:2.6px"></div><div id="c05-ust42" class="c05-st" style="left:1370px;top:64px;width:2.5px;height:2.5px"></div><div id="c05-ust43" class="c05-st" style="left:1286px;top:451px;width:2.4px;height:2.4px"></div><div id="c05-ust44" class="c05-st" style="left:1526px;top:51px;width:2.4px;height:2.4px"></div><div id="c05-ust45" class="c05-st" style="left:306px;top:54px;width:3.6px;height:3.6px"></div><div id="c05-ust46" class="c05-st" style="left:606px;top:542px;width:2.3px;height:2.3px"></div><div id="c05-ust47" class="c05-st" style="left:1869px;top:527px;width:3.2px;height:3.2px"></div><div id="c05-ust48" class="c05-st" style="left:1721px;top:549px;width:3.9px;height:3.9px"></div><div id="c05-ust49" class="c05-st" style="left:664px;top:101px;width:3.7px;height:3.7px"></div><div id="c05-ust50" class="c05-st" style="left:907px;top:318px;width:3.7px;height:3.7px"></div><div id="c05-ust51" class="c05-st" style="left:1022px;top:163px;width:3.2px;height:3.2px"></div><div id="c05-ust52" class="c05-st" style="left:1736px;top:148px;width:3.5px;height:3.5px"></div><div id="c05-ust53" class="c05-st" style="left:1277px;top:169px;width:2.1px;height:2.1px"></div><div id="c05-ust54" class="c05-st" style="left:1639px;top:162px;width:1.7px;height:1.7px"></div><div id="c05-ust55" class="c05-st" style="left:778px;top:327px;width:3.4px;height:3.4px"></div><div id="c05-ust56" class="c05-st" style="left:23px;top:389px;width:2.1px;height:2.1px"></div><div id="c05-ust57" class="c05-st" style="left:864px;top:393px;width:1.6px;height:1.6px"></div><div id="c05-ust58" class="c05-st" style="left:389px;top:178px;width:2.4px;height:2.4px"></div><div id="c05-ust59" class="c05-st" style="left:1087px;top:578px;width:3.6px;height:3.6px"></div><div id="c05-ust60" class="c05-st" style="left:1194px;top:589px;width:3.3px;height:3.3px"></div><div id="c05-ust61" class="c05-st" style="left:1715px;top:538px;width:3.5px;height:3.5px"></div><div id="c05-ust62" class="c05-st" style="left:1323px;top:488px;width:3.9px;height:3.9px"></div><div id="c05-ust63" class="c05-st" style="left:1819px;top:341px;width:2.6px;height:2.6px"></div><div id="c05-ust64" class="c05-st" style="left:827px;top:162px;width:1.6px;height:1.6px"></div><div id="c05-ust65" class="c05-st" style="left:1772px;top:542px;width:3.7px;height:3.7px"></div><div id="c05-ust66" class="c05-st" style="left:1032px;top:231px;width:2.7px;height:2.7px"></div><div id="c05-ust67" class="c05-st" style="left:1725px;top:312px;width:2.8px;height:2.8px"></div><div id="c05-ust68" class="c05-st" style="left:1319px;top:174px;width:2.0px;height:2.0px"></div><div id="c05-ust69" class="c05-st" style="left:945px;top:53px;width:2.8px;height:2.8px"></div><div id="c05-ust70" class="c05-st" style="left:308px;top:497px;width:1.7px;height:1.7px"></div><div id="c05-ust71" class="c05-st" style="left:1537px;top:573px;width:1.9px;height:1.9px"></div><div id="c05-ust72" class="c05-st" style="left:1891px;top:89px;width:2.4px;height:2.4px"></div><div id="c05-ust73" class="c05-st" style="left:1067px;top:560px;width:3.5px;height:3.5px"></div><div id="c05-ust74" class="c05-st" style="left:1244px;top:54px;width:4.0px;height:4.0px"></div><div id="c05-ust75" class="c05-st" style="left:574px;top:569px;width:3.4px;height:3.4px"></div><div id="c05-ust76" class="c05-st" style="left:358px;top:275px;width:2.9px;height:2.9px"></div><div id="c05-ust77" class="c05-st" style="left:978px;top:250px;width:2.4px;height:2.4px"></div><div id="c05-ust78" class="c05-st" style="left:921px;top:208px;width:2.5px;height:2.5px"></div><div id="c05-ust79" class="c05-st" style="left:858px;top:174px;width:2.7px;height:2.7px"></div><div id="c05-ust80" class="c05-st" style="left:1651px;top:568px;width:3.5px;height:3.5px"></div><div id="c05-ust81" class="c05-st" style="left:214px;top:174px;width:2.2px;height:2.2px"></div><div id="c05-ust82" class="c05-st" style="left:460px;top:200px;width:3.9px;height:3.9px"></div><div id="c05-ust83" class="c05-st" style="left:1438px;top:402px;width:3.0px;height:3.0px"></div><div id="c05-ust84" class="c05-st" style="left:1775px;top:356px;width:2.8px;height:2.8px"></div><div id="c05-ust85" class="c05-st" style="left:780px;top:78px;width:3.9px;height:3.9px"></div><div id="c05-ust86" class="c05-st" style="left:34px;top:265px;width:2.1px;height:2.1px"></div><div id="c05-ust87" class="c05-st" style="left:765px;top:427px;width:3.7px;height:3.7px"></div><div id="c05-ust88" class="c05-st" style="left:557px;top:238px;width:2.6px;height:2.6px"></div><div id="c05-ust89" class="c05-st" style="left:356px;top:409px;width:3.1px;height:3.1px"></div><div id="c05-ust90" class="c05-st" style="left:65px;top:196px;width:3.6px;height:3.6px"></div><div id="c05-ust91" class="c05-st" style="left:1038px;top:282px;width:2.6px;height:2.6px"></div><div id="c05-ust92" class="c05-st" style="left:1801px;top:402px;width:2.6px;height:2.6px"></div><div id="c05-ust93" class="c05-st" style="left:926px;top:456px;width:1.7px;height:1.7px"></div><div id="c05-ust94" class="c05-st" style="left:284px;top:30px;width:3.2px;height:3.2px"></div><div id="c05-ust95" class="c05-st" style="left:61px;top:218px;width:2.7px;height:2.7px"></div><div id="c05-ust96" class="c05-st" style="left:647px;top:150px;width:2.4px;height:2.4px"></div><div id="c05-ust97" class="c05-st" style="left:47px;top:260px;width:2.5px;height:2.5px"></div><div id="c05-ust98" class="c05-st" style="left:1556px;top:424px;width:2.6px;height:2.6px"></div><div id="c05-ust99" class="c05-st" style="left:1225px;top:594px;width:2.7px;height:2.7px"></div><div id="c05-ust100" class="c05-st" style="left:760px;top:321px;width:1.8px;height:1.8px"></div><div id="c05-ust101" class="c05-st" style="left:1175px;top:411px;width:2.0px;height:2.0px"></div><div id="c05-ust102" class="c05-st" style="left:1368px;top:566px;width:4.0px;height:4.0px"></div><div id="c05-ust103" class="c05-st" style="left:340px;top:588px;width:1.6px;height:1.6px"></div><div id="c05-ust104" class="c05-st" style="left:32px;top:241px;width:1.7px;height:1.7px"></div><div id="c05-ust105" class="c05-st" style="left:1670px;top:210px;width:3.5px;height:3.5px"></div><div id="c05-ust106" class="c05-st" style="left:239px;top:564px;width:2.6px;height:2.6px"></div><div id="c05-ust107" class="c05-st" style="left:71px;top:285px;width:3.0px;height:3.0px"></div><div id="c05-ust108" class="c05-st" style="left:1914px;top:313px;width:2.3px;height:2.3px"></div><div id="c05-ust109" class="c05-st" style="left:1343px;top:159px;width:3.4px;height:3.4px"></div><div id="c05-ust110" class="c05-st" style="left:1325px;top:384px;width:2.6px;height:2.6px"></div><div id="c05-ust111" class="c05-st" style="left:356px;top:268px;width:3.1px;height:3.1px"></div><div id="c05-ust112" class="c05-st" style="left:1827px;top:303px;width:2.7px;height:2.7px"></div><div id="c05-ust113" class="c05-st" style="left:1299px;top:129px;width:3.4px;height:3.4px"></div><div id="c05-ust114" class="c05-st" style="left:1234px;top:172px;width:2.8px;height:2.8px"></div><div id="c05-ust115" class="c05-st" style="left:1444px;top:580px;width:2.3px;height:2.3px"></div><div id="c05-ust116" class="c05-st" style="left:1224px;top:484px;width:2.3px;height:2.3px"></div><div id="c05-ust117" class="c05-st" style="left:796px;top:66px;width:2.8px;height:2.8px"></div><div id="c05-ust118" class="c05-st" style="left:1302px;top:548px;width:3.4px;height:3.4px"></div><div id="c05-ust119" class="c05-st" style="left:1175px;top:163px;width:1.5px;height:1.5px"></div>
+      <svg class="c05-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none"><path fill="#0c0d16" d="M -100 1080 L 500 560 L 900 700 L 1300 620 L 1660 830 L 2100 760 L 2100 1080 Z"/><path d="M 1660 830 L 1660 780 M 1660 810 L 1620 770 M 1660 800 L 1700 760" stroke="#1a1208" stroke-width="10" fill="none"/><path id="c05-f0" d="M 1593 830 Q 1610 758 1626 830 Z" fill="#ffd27a"/><path id="c05-f1" d="M 1607 830 Q 1624 728 1641 830 Z" fill="#ff9a3a"/><path id="c05-f2" d="M 1622 830 Q 1638 698 1655 830 Z" fill="#ffbe5c"/><path id="c05-f3" d="M 1636 830 Q 1653 758 1670 830 Z" fill="#ffd27a"/><path id="c05-f4" d="M 1650 830 Q 1667 728 1684 830 Z" fill="#ff9a3a"/><path id="c05-f5" d="M 1665 830 Q 1682 698 1698 830 Z" fill="#ffbe5c"/><path id="c05-f6" d="M 1679 830 Q 1696 758 1713 830 Z" fill="#ffd27a"/><rect x="0" y="880" width="1920" height="200" fill="#08080e"/><g id="c05-sand" opacity="0"><ellipse cx="700" cy="930" rx="60" ry="22" fill="#6a4a2a"/><ellipse cx="800" cy="938" rx="60" ry="22" fill="#6a4a2a"/><path d="M 670 924 L 730 924 M 770 932 L 830 932" stroke="#3a2614" stroke-width="6"/></g></svg>
+      <div id="c05-glow"></div>
+      <div id="c05-obj"><svg class="c05-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none"><g id="c05-staff" transform="translate(960,900) rotate(80)"><rect x="-6" y="-170" width="12" height="340" rx="6" fill="#7a5634"/><path d="M -6 -170 Q -30 -200 -10 -215" stroke="#7a5634" stroke-width="12" fill="none" stroke-linecap="round"/></g><g id="c05-snake" opacity="0" transform="translate(960,880)"><path d="M -260 30 C -200 -40 -140 80 -80 10 S 40 -50 100 20 S 200 60 250 -10" stroke="#3c4a2a" stroke-width="34" fill="none" stroke-linecap="round"/><ellipse cx="262" cy="-16" rx="38" ry="24" fill="#3c4a2a"/><circle cx="276" cy="-24" r="5" fill="#e8d36a"/></g></svg></div>
+      </div>
+    </div>
+    <div id="c05-scr" class="c05-scrim clip" data-start="0" data-duration="68.50"></div>
+    <div id="c05-lab" class="c05-label clip" data-start="0.3" data-duration="4.6"><b>CHAPTER 5</b><i>The Fire on the Mountain</i></div>
+    <div id="c05-cp0" class="c05-cap clip" data-start="0.22" data-duration="4.81">When his term was complete, Musa set out with his family, back toward Egypt.</div>
+    <div id="c05-cp1" class="c05-cap clip" data-start="14.99" data-duration="4.86">Perhaps I can bring you some news, or a burning stick, so you can warm yourselves.</div>
+    <div id="c05-cp2" class="c05-cap clip" data-start="39.80" data-duration="4.24">&quot;And what is that in your right hand, O Musa?&quot; He said:</div>
+    <div id="c05-cp3" class="c05-cap clip" data-start="44.04" data-duration="1.88">it is my staff.</div>
+    <div id="c05-cp4" class="c05-cap clip" data-start="45.92" data-duration="3.49">I lean on it, and I bring down leaves for my sheep.</div>
+    <div id="c05-cp5" class="c05-cap clip" data-start="58.57" data-duration="2.76">We will return it to its former state.&quot;</div>
+    <div id="c05-k0w" class="c05-cardwrap clip" data-start="5.08" data-duration="7.90"><div id="c05-k0" class="c05-card"><div class="c05-ar" dir="rtl" lang="ar">ءَانَسَ مِن جَانِبِ ٱلطُّورِ نَارࣰاۖ</div><div class="c05-en">“…he perceived from the direction of the mount a fire…”</div><div class="c05-ref">Al-Qasas 28:29</div></div></div>
+    <div id="c05-k1w" class="c05-cardwrap clip" data-start="19.90" data-duration="10.13"><div id="c05-k1" class="c05-card"><div class="c05-ar" dir="rtl" lang="ar">إِنِّيٓ أَنَا۠ رَبُّكَ فَٱخۡلَعۡ نَعۡلَيۡكَ إِنَّكَ بِٱلۡوَادِ ٱلۡمُقَدَّسِ طُوࣰى</div><div class="c05-en">“Indeed, I am your Lord, so remove your sandals. Indeed, you are in the sacred valley of Tuwa”</div><div class="c05-ref">Taha 20:12</div></div></div>
+    <div id="c05-k2w" class="c05-cardwrap clip" data-start="30.13" data-duration="8.92"><div id="c05-k2" class="c05-card"><div class="c05-ar" dir="rtl" lang="ar">إِنَّنِيٓ أَنَا ٱللَّهُ لَآ إِلَٰهَ إِلَّآ أَنَا۠ فَٱعۡبُدۡنِي وَأَقِمِ ٱلصَّلَوٰةَ لِذِكۡرِيٓ</div><div class="c05-en">“Indeed, I am Allah. There is no deity except Me, so worship Me and establish prayer for My remembrance”</div><div class="c05-ref">Taha 20:14</div></div></div>
+    <div id="c05-k3w" class="c05-cardwrap clip" data-start="49.46" data-duration="8.05"><div id="c05-k3" class="c05-card"><div class="c05-ar" dir="rtl" lang="ar">فَأَلۡقَىٰهَا فَإِذَا هِيَ حَيَّةࣱ تَسۡعَىٰ</div><div class="c05-en">“So he threw it down, and thereupon it was a snake, moving swiftly”</div><div class="c05-ref">Taha 20:20</div></div></div>
+    <div id="c05-k4w" class="c05-cardwrap clip" data-start="61.38" data-duration="6.62"><div id="c05-k4" class="c05-card"><div class="c05-ar" dir="rtl" lang="ar">ٱذۡهَبۡ إِلَىٰ فِرۡعَوۡنَ إِنَّهُۥ طَغَىٰ</div><div class="c05-en">“Go to Pharaoh. Indeed, he has transgressed”</div><div class="c05-ref">Taha 20:24</div></div></div>
+    <div id="c05-fadeIn" class="c05-fade clip" data-start="0" data-duration="0.55" style="opacity:1"></div>
+    <div id="c05-fadeOut" class="c05-fade clip" data-start="68.00" data-duration="0.50" style="opacity:0"></div>
+    <div id="c05-br" class="c05-brand clip" data-start="0" data-duration="68.50">HAQ <span>·</span> STORIES</div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#c05-f0", {scaleY: 0.8}, {scaleY: 1.2, duration: 0.18, ease: "sine.inOut", yoyo: true, repeat: 381, immediateRender: false}, 0.00);
+    tl.fromTo("#c05-f1", {scaleY: 0.8}, {scaleY: 1.2, duration: 0.23, ease: "sine.inOut", yoyo: true, repeat: 298, immediateRender: false}, 0.03);
+    tl.fromTo("#c05-f2", {scaleY: 0.8}, {scaleY: 1.2, duration: 0.28, ease: "sine.inOut", yoyo: true, repeat: 245, immediateRender: false}, 0.06);
+    tl.fromTo("#c05-f3", {scaleY: 0.8}, {scaleY: 1.2, duration: 0.33, ease: "sine.inOut", yoyo: true, repeat: 208, immediateRender: false}, 0.09);
+    tl.fromTo("#c05-f4", {scaleY: 0.8}, {scaleY: 1.2, duration: 0.18, ease: "sine.inOut", yoyo: true, repeat: 380, immediateRender: false}, 0.12);
+    tl.fromTo("#c05-f5", {scaleY: 0.8}, {scaleY: 1.2, duration: 0.23, ease: "sine.inOut", yoyo: true, repeat: 298, immediateRender: false}, 0.15);
+    tl.fromTo("#c05-f6", {scaleY: 0.8}, {scaleY: 1.2, duration: 0.28, ease: "sine.inOut", yoyo: true, repeat: 244, immediateRender: false}, 0.18);
+    tl.fromTo("#c05-ust0", {opacity: 0.57}, {opacity: 1, duration: 1.42, ease: "sine.inOut", yoyo: true, repeat: 48, immediateRender: false}, 0.69);
+    tl.fromTo("#c05-ust2", {opacity: 0.55}, {opacity: 1, duration: 1.30, ease: "sine.inOut", yoyo: true, repeat: 53, immediateRender: false}, 0.16);
+    tl.fromTo("#c05-ust4", {opacity: 0.54}, {opacity: 1, duration: 0.93, ease: "sine.inOut", yoyo: true, repeat: 73, immediateRender: false}, 0.87);
+    tl.fromTo("#c05-ust6", {opacity: 0.34}, {opacity: 1, duration: 1.72, ease: "sine.inOut", yoyo: true, repeat: 40, immediateRender: false}, 0.69);
+    tl.fromTo("#c05-ust8", {opacity: 0.57}, {opacity: 1, duration: 1.66, ease: "sine.inOut", yoyo: true, repeat: 42, immediateRender: false}, 0.30);
+    tl.fromTo("#c05-ust10", {opacity: 0.31}, {opacity: 1, duration: 1.02, ease: "sine.inOut", yoyo: true, repeat: 67, immediateRender: false}, 0.46);
+    tl.fromTo("#c05-ust12", {opacity: 0.40}, {opacity: 1, duration: 1.02, ease: "sine.inOut", yoyo: true, repeat: 67, immediateRender: false}, 0.07);
+    tl.fromTo("#c05-ust14", {opacity: 0.34}, {opacity: 1, duration: 1.70, ease: "sine.inOut", yoyo: true, repeat: 40, immediateRender: false}, 0.66);
+    tl.fromTo("#c05-ust16", {opacity: 0.43}, {opacity: 1, duration: 1.56, ease: "sine.inOut", yoyo: true, repeat: 44, immediateRender: false}, 0.68);
+    tl.fromTo("#c05-ust18", {opacity: 0.38}, {opacity: 1, duration: 1.71, ease: "sine.inOut", yoyo: true, repeat: 40, immediateRender: false}, 0.33);
+    tl.fromTo("#c05-ust20", {opacity: 0.35}, {opacity: 1, duration: 0.93, ease: "sine.inOut", yoyo: true, repeat: 74, immediateRender: false}, 0.18);
+    tl.fromTo("#c05-ust22", {opacity: 0.37}, {opacity: 1, duration: 1.51, ease: "sine.inOut", yoyo: true, repeat: 46, immediateRender: false}, 0.12);
+    tl.fromTo("#c05-ust24", {opacity: 0.57}, {opacity: 1, duration: 1.64, ease: "sine.inOut", yoyo: true, repeat: 42, immediateRender: false}, 0.03);
+    tl.fromTo("#c05-ust26", {opacity: 0.52}, {opacity: 1, duration: 1.61, ease: "sine.inOut", yoyo: true, repeat: 43, immediateRender: false}, 0.07);
+    tl.fromTo("#c05-ust28", {opacity: 0.39}, {opacity: 1, duration: 1.04, ease: "sine.inOut", yoyo: true, repeat: 66, immediateRender: false}, 0.85);
+    tl.fromTo("#c05-ust30", {opacity: 0.54}, {opacity: 1, duration: 1.52, ease: "sine.inOut", yoyo: true, repeat: 45, immediateRender: false}, 0.24);
+    tl.fromTo("#c05-ust32", {opacity: 0.45}, {opacity: 1, duration: 1.75, ease: "sine.inOut", yoyo: true, repeat: 39, immediateRender: false}, 0.83);
+    tl.fromTo("#c05-ust34", {opacity: 0.36}, {opacity: 1, duration: 1.62, ease: "sine.inOut", yoyo: true, repeat: 43, immediateRender: false}, 0.32);
+    tl.fromTo("#c05-ust36", {opacity: 0.34}, {opacity: 1, duration: 1.49, ease: "sine.inOut", yoyo: true, repeat: 46, immediateRender: false}, 0.53);
+    tl.fromTo("#c05-ust38", {opacity: 0.42}, {opacity: 1, duration: 1.07, ease: "sine.inOut", yoyo: true, repeat: 64, immediateRender: false}, 0.53);
+    tl.fromTo("#c05-ust40", {opacity: 0.35}, {opacity: 1, duration: 1.34, ease: "sine.inOut", yoyo: true, repeat: 51, immediateRender: false}, 0.75);
+    tl.fromTo("#c05-ust42", {opacity: 0.32}, {opacity: 1, duration: 1.65, ease: "sine.inOut", yoyo: true, repeat: 41, immediateRender: false}, 1.00);
+    tl.fromTo("#c05-ust44", {opacity: 0.41}, {opacity: 1, duration: 1.68, ease: "sine.inOut", yoyo: true, repeat: 41, immediateRender: false}, 0.17);
+    tl.fromTo("#c05-ust46", {opacity: 0.55}, {opacity: 1, duration: 1.08, ease: "sine.inOut", yoyo: true, repeat: 63, immediateRender: false}, 0.90);
+    tl.fromTo("#c05-ust48", {opacity: 0.38}, {opacity: 1, duration: 1.66, ease: "sine.inOut", yoyo: true, repeat: 41, immediateRender: false}, 0.78);
+    tl.fromTo("#c05-ust50", {opacity: 0.45}, {opacity: 1, duration: 1.13, ease: "sine.inOut", yoyo: true, repeat: 61, immediateRender: false}, 0.69);
+    tl.fromTo("#c05-ust52", {opacity: 0.53}, {opacity: 1, duration: 1.37, ease: "sine.inOut", yoyo: true, repeat: 50, immediateRender: false}, 0.19);
+    tl.fromTo("#c05-ust54", {opacity: 0.55}, {opacity: 1, duration: 1.80, ease: "sine.inOut", yoyo: true, repeat: 38, immediateRender: false}, 0.31);
+    tl.fromTo("#c05-ust56", {opacity: 0.58}, {opacity: 1, duration: 1.27, ease: "sine.inOut", yoyo: true, repeat: 54, immediateRender: false}, 0.94);
+    tl.fromTo("#c05-ust58", {opacity: 0.35}, {opacity: 1, duration: 1.28, ease: "sine.inOut", yoyo: true, repeat: 54, immediateRender: false}, 0.09);
+    tl.fromTo("#c05-ust60", {opacity: 0.49}, {opacity: 1, duration: 1.31, ease: "sine.inOut", yoyo: true, repeat: 53, immediateRender: false}, 0.08);
+    tl.fromTo("#c05-ust62", {opacity: 0.59}, {opacity: 1, duration: 1.59, ease: "sine.inOut", yoyo: true, repeat: 43, immediateRender: false}, 0.02);
+    tl.fromTo("#c05-ust64", {opacity: 0.49}, {opacity: 1, duration: 1.46, ease: "sine.inOut", yoyo: true, repeat: 47, immediateRender: false}, 0.09);
+    tl.fromTo("#c05-ust66", {opacity: 0.41}, {opacity: 1, duration: 1.76, ease: "sine.inOut", yoyo: true, repeat: 39, immediateRender: false}, 0.92);
+    tl.fromTo("#c05-ust68", {opacity: 0.60}, {opacity: 1, duration: 1.14, ease: "sine.inOut", yoyo: true, repeat: 60, immediateRender: false}, 0.27);
+    tl.fromTo("#c05-ust70", {opacity: 0.54}, {opacity: 1, duration: 1.14, ease: "sine.inOut", yoyo: true, repeat: 60, immediateRender: false}, 0.79);
+    tl.fromTo("#c05-ust72", {opacity: 0.30}, {opacity: 1, duration: 1.34, ease: "sine.inOut", yoyo: true, repeat: 51, immediateRender: false}, 0.08);
+    tl.fromTo("#c05-ust74", {opacity: 0.41}, {opacity: 1, duration: 1.75, ease: "sine.inOut", yoyo: true, repeat: 39, immediateRender: false}, 0.15);
+    tl.fromTo("#c05-ust76", {opacity: 0.38}, {opacity: 1, duration: 1.10, ease: "sine.inOut", yoyo: true, repeat: 63, immediateRender: false}, 0.08);
+    tl.fromTo("#c05-ust78", {opacity: 0.53}, {opacity: 1, duration: 1.03, ease: "sine.inOut", yoyo: true, repeat: 67, immediateRender: false}, 0.10);
+    tl.fromTo("#c05-ust80", {opacity: 0.58}, {opacity: 1, duration: 1.11, ease: "sine.inOut", yoyo: true, repeat: 62, immediateRender: false}, 0.35);
+    tl.fromTo("#c05-ust82", {opacity: 0.45}, {opacity: 1, duration: 1.71, ease: "sine.inOut", yoyo: true, repeat: 40, immediateRender: false}, 0.53);
+    tl.fromTo("#c05-ust84", {opacity: 0.37}, {opacity: 1, duration: 0.99, ease: "sine.inOut", yoyo: true, repeat: 69, immediateRender: false}, 0.43);
+    tl.fromTo("#c05-ust86", {opacity: 0.42}, {opacity: 1, duration: 1.65, ease: "sine.inOut", yoyo: true, repeat: 41, immediateRender: false}, 0.96);
+    tl.fromTo("#c05-ust88", {opacity: 0.55}, {opacity: 1, duration: 1.17, ease: "sine.inOut", yoyo: true, repeat: 58, immediateRender: false}, 0.90);
+    tl.fromTo("#c05-ust90", {opacity: 0.42}, {opacity: 1, duration: 0.95, ease: "sine.inOut", yoyo: true, repeat: 72, immediateRender: false}, 0.47);
+    tl.fromTo("#c05-ust92", {opacity: 0.43}, {opacity: 1, duration: 1.59, ease: "sine.inOut", yoyo: true, repeat: 43, immediateRender: false}, 0.24);
+    tl.fromTo("#c05-ust94", {opacity: 0.54}, {opacity: 1, duration: 1.50, ease: "sine.inOut", yoyo: true, repeat: 46, immediateRender: false}, 0.62);
+    tl.fromTo("#c05-ust96", {opacity: 0.37}, {opacity: 1, duration: 0.96, ease: "sine.inOut", yoyo: true, repeat: 71, immediateRender: false}, 0.57);
+    tl.fromTo("#c05-ust98", {opacity: 0.30}, {opacity: 1, duration: 1.54, ease: "sine.inOut", yoyo: true, repeat: 44, immediateRender: false}, 0.72);
+    tl.fromTo("#c05-ust100", {opacity: 0.49}, {opacity: 1, duration: 1.02, ease: "sine.inOut", yoyo: true, repeat: 67, immediateRender: false}, 0.67);
+    tl.fromTo("#c05-ust102", {opacity: 0.53}, {opacity: 1, duration: 1.04, ease: "sine.inOut", yoyo: true, repeat: 66, immediateRender: false}, 0.77);
+    tl.fromTo("#c05-ust104", {opacity: 0.59}, {opacity: 1, duration: 1.74, ease: "sine.inOut", yoyo: true, repeat: 40, immediateRender: false}, 0.26);
+    tl.fromTo("#c05-ust106", {opacity: 0.37}, {opacity: 1, duration: 1.30, ease: "sine.inOut", yoyo: true, repeat: 53, immediateRender: false}, 0.00);
+    tl.fromTo("#c05-ust108", {opacity: 0.38}, {opacity: 1, duration: 0.92, ease: "sine.inOut", yoyo: true, repeat: 74, immediateRender: false}, 0.92);
+    tl.fromTo("#c05-ust110", {opacity: 0.56}, {opacity: 1, duration: 1.73, ease: "sine.inOut", yoyo: true, repeat: 40, immediateRender: false}, 0.76);
+    tl.fromTo("#c05-ust112", {opacity: 0.32}, {opacity: 1, duration: 0.96, ease: "sine.inOut", yoyo: true, repeat: 72, immediateRender: false}, 0.27);
+    tl.fromTo("#c05-ust114", {opacity: 0.55}, {opacity: 1, duration: 0.93, ease: "sine.inOut", yoyo: true, repeat: 74, immediateRender: false}, 0.63);
+    tl.fromTo("#c05-ust116", {opacity: 0.53}, {opacity: 1, duration: 1.57, ease: "sine.inOut", yoyo: true, repeat: 43, immediateRender: false}, 0.95);
+    tl.fromTo("#c05-ust118", {opacity: 0.46}, {opacity: 1, duration: 1.67, ease: "sine.inOut", yoyo: true, repeat: 41, immediateRender: false}, 0.85);
+    tl.fromTo("#c05-glow", {opacity: 0.7, scale: 0.95}, {opacity: 1, scale: 1.05, duration: 0.60, ease: "sine.inOut", yoyo: true, repeat: 115, immediateRender: false}, 0.00);
+    tl.fromTo("#c05-sand", {opacity: 0}, {opacity: 1, duration: 1.00, ease: "sine.inOut", immediateRender: false}, 22.05);
+    tl.fromTo("#c05-sand", {opacity: 1}, {opacity: 0, duration: 0.80, ease: "sine.inOut", immediateRender: false}, 38.23);
+    tl.fromTo("#c05-obj", {opacity: 0}, {opacity: 1, duration: 1.00, ease: "sine.inOut", immediateRender: false}, 38.73);
+    tl.fromTo("#c05-staff", {opacity: 1}, {opacity: 0, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 52.21);
+    tl.fromTo("#c05-snake", {opacity: 0}, {opacity: 1, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 52.21);
+    tl.fromTo("#c05-snake", {x: -20, skewX: -6}, {x: 20, skewX: 6, duration: 0.35, ease: "sine.inOut", yoyo: true, repeat: 47, immediateRender: false}, 52.21);
+    tl.fromTo("#c05-snake", {opacity: 1}, {opacity: 0, duration: 0.40, ease: "sine.inOut", immediateRender: false}, 57.96);
+    tl.fromTo("#c05-staff", {opacity: 0}, {opacity: 1, duration: 0.40, ease: "sine.inOut", immediateRender: false}, 57.96);
+    tl.fromTo("#c05-obj", {opacity: 1}, {opacity: 0, duration: 0.80, ease: "sine.inOut", immediateRender: false}, 61.53);
+    tl.fromTo("#c05-k0w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 5.08);
+    tl.fromTo("#c05-k0", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 5.08);
+    tl.fromTo("#c05-k1w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 19.90);
+    tl.fromTo("#c05-k1", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 19.90);
+    tl.fromTo("#c05-k2w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 30.13);
+    tl.fromTo("#c05-k2", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 30.13);
+    tl.fromTo("#c05-k3w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 49.46);
+    tl.fromTo("#c05-k3", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 49.46);
+    tl.fromTo("#c05-k4w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 61.38);
+    tl.fromTo("#c05-k4", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 61.38);
+    tl.fromTo("#c05-lab", {opacity: 0, x: -20}, {opacity: 1, x: 0, duration: 0.60, ease: "power2.out", immediateRender: false}, 0.30);
+    tl.fromTo("#c05-lab", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 4.40);
+    tl.fromTo("#c05-scene", {scale: 1.0, x: 0}, {scale: 1.06, x: -30, duration: 68.50, ease: "none", immediateRender: false}, 0.00);
+    tl.fromTo("#c05-fadeIn", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 0.00);
+    tl.fromTo("#c05-fadeOut", {opacity: 0}, {opacity: 1, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 68.00);
+    window.__timelines["c05"] = tl;
+  </script>
+</template>
