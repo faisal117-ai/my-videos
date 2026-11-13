@@ -3,7 +3,7 @@
   "embers": false,
   "flash": 0.4,
   "bed_volume": 1.0,
-  "hold_end": 1.0,
+  "hold_end": 0.5,
   "text_top": 300,
   "text_bottom": 780,
   "tr_size": 58,
@@ -18,16 +18,6 @@
         "cool": 0
       },
       "reveal": false
-    },
-    {
-      "text": "Pharaoh was killing the baby *boys* of Bani Israel.",
-      "sub": "And one mother was terrified for her son.",
-      "ur": "فرعون بنی اسرائیل کے بیٹوں کو قتل کر رہا تھا… اور ایک ماں اپنے بیٹے کے لیے خوفزدہ تھی",
-      "ref": "Al-Qasas 28:4",
-      "mood": {
-        "warm": 0.2,
-        "cool": 0.1
-      }
     },
     {
       "q": "28:7",
@@ -84,11 +74,11 @@
     },
     {
       "cta": true,
-      "text": "A new story from the Quran, every day.",
-      "ur": "ہر روز قرآن سے ایک نئی کہانی… فالو کریں",
+      "text": "Follow for more.",
+      "ur": "فالو کریں",
       "mood": {
-        "warm": 0.4,
-        "cool": 0.1
+        "warm": 0.3,
+        "cool": 0.3
       }
     }
   ],
@@ -113,7 +103,7 @@
     {
       "prompt": "army",
       "src": "../06-ant/assets/sfx/71389a05d7ab.mp3",
-      "beat": 1,
+      "beat": 0,
       "dur": 7,
       "gain": -15,
       "fade_in": 0.8,
@@ -122,7 +112,7 @@
     {
       "prompt": "hum tender",
       "src": "../05-trunk/assets/sfx/562217fe60ac.mp3",
-      "beat": 2,
+      "beat": 1,
       "offset": 0.4,
       "dur": 12,
       "gain": -15,
@@ -132,7 +122,7 @@
     {
       "prompt": "river sunrise",
       "src": "../../long/01-yusuf/assets/sfx/4d78b7e38eae.mp3",
-      "beat": 3,
+      "beat": 2,
       "dur": 6,
       "gain": -13,
       "fade_in": 1,
@@ -141,7 +131,7 @@
     {
       "prompt": "night room",
       "src": "../05-trunk/assets/sfx/beb74bb8b482.mp3",
-      "beat": 4,
+      "beat": 3,
       "dur": 13,
       "gain": -14,
       "fade_in": 0.6,
@@ -150,7 +140,7 @@
     {
       "prompt": "hum sorrow",
       "src": "../../long/01-yusuf/assets/sfx/1830ee4b40ad.mp3",
-      "beat": 4,
+      "beat": 3,
       "dur": 5.5,
       "gain": -15,
       "fade_in": 1,
@@ -159,7 +149,7 @@
     {
       "prompt": "shimmer",
       "src": "../03-cave/assets/sfx/f73090a5a6a6.mp3",
-      "beat": 5,
+      "beat": 4,
       "offset": 2,
       "dur": 2.5,
       "gain": -10,
@@ -169,12 +159,17 @@
     {
       "prompt": "hum hopeful",
       "src": "../04-ease/assets/sfx/ed4334fb2fbf.mp3",
-      "beat": 5,
+      "beat": 4,
       "offset": 0.4,
       "dur": 12,
       "gain": -14,
       "fade_in": 2,
       "fade_out": 2
     }
-  ]
+  ],
+  "pharaoh_beat": 0,
+  "cast_beat": 1,
+  "carry_beat": 2,
+  "empty_beat": 3,
+  "back_beat": 4
 }

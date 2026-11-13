@@ -3,7 +3,7 @@
   "embers": false,
   "flash": 0.4,
   "bed_volume": 1.0,
-  "hold_end": 1.0,
+  "hold_end": 0.5,
   "text_top": 300,
   "text_bottom": 780,
   "tr_size": 58,
@@ -18,16 +18,6 @@
         "cool": 0
       },
       "reveal": false
-    },
-    {
-      "text": "Hazrat Yunus (AS) left his people in *anger*…",
-      "sub": "before Allah gave him permission.",
-      "ur": "حضرت یونسؑ اپنی قوم سے ناراض ہو کر چلے گئے… اللہ کی اجازت سے پہلے",
-      "ref": "Al-Anbiya 21:87",
-      "mood": {
-        "warm": 0.1,
-        "cool": 0.2
-      }
     },
     {
       "text": "A storm. The sea. And a huge *fish* swallowed him.",
@@ -84,8 +74,8 @@
     },
     {
       "cta": true,
-      "text": "A new story from the Quran, every day.",
-      "ur": "ہر روز قرآن سے ایک نئی کہانی… فالو کریں",
+      "text": "Follow for more.",
+      "ur": "فالو کریں",
       "mood": {
         "warm": 0.3,
         "cool": 0.3
@@ -113,7 +103,7 @@
     {
       "prompt": "storm",
       "src": "../04-ease/assets/sfx/3835e3c98c45.mp3",
-      "beat": 2,
+      "beat": 1,
       "dur": 7.5,
       "gain": -9,
       "fade_in": 0.5,
@@ -122,7 +112,7 @@
     {
       "prompt": "thunder",
       "src": "../04-ease/assets/sfx/13fce06b48a0.mp3",
-      "beat": 2,
+      "beat": 1,
       "offset": 1.1,
       "dur": 4,
       "gain": -7,
@@ -131,7 +121,7 @@
     },
     {
       "prompt": "a huge sea creature surging underwater, deep low rumble and a powerful swirl of water",
-      "beat": 2,
+      "beat": 1,
       "offset": 3.8,
       "dur": 4,
       "gain": -7,
@@ -140,7 +130,7 @@
     },
     {
       "prompt": "deep underwater ambience, muffled and enclosed, slow low drone, occasional bubbles, no music",
-      "beat": 3,
+      "beat": 2,
       "dur": 15,
       "gain": -12,
       "fade_in": 1,
@@ -149,7 +139,7 @@
     {
       "prompt": "hum mysterious",
       "src": "../03-cave/assets/sfx/1a9908bb62c8.mp3",
-      "beat": 4,
+      "beat": 3,
       "dur": 10,
       "gain": -16,
       "fade_in": 2,
@@ -158,7 +148,7 @@
     {
       "prompt": "dawn",
       "src": "../04-ease/assets/sfx/61e97fb787a5.mp3",
-      "beat": 5,
+      "beat": 4,
       "dur": 11,
       "gain": -13,
       "fade_in": 1.5,
@@ -167,12 +157,17 @@
     {
       "prompt": "hum hopeful",
       "src": "../04-ease/assets/sfx/ed4334fb2fbf.mp3",
-      "beat": 5,
+      "beat": 4,
       "offset": 0.3,
       "dur": 11,
       "gain": -14,
       "fade_in": 2,
       "fade_out": 2
     }
-  ]
+  ],
+  "leave_beat": 1,
+  "storm_beat": 1,
+  "dark_beat": 2,
+  "call_beat": 3,
+  "saved_beat": 4
 }

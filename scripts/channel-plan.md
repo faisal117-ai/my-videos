@@ -38,10 +38,11 @@ From the YouTube Studio export (55 videos, lifetime to 11 Nov 2026), analysed in
 
 ## The hit formula
 > A Quran or sahih story · a surprising detail in the first line · hope or mercy at the end ·
-> **45 s or shorter** (aim for 30–40) · animated Haq Stories style · title "X… then Y" + one emoji ·
-> one a day · end with "A new story from the Quran every day. Follow."
+> **about 30 s** (never over 35) · animated Haq Stories style · title "X… then Y" + one emoji ·
+> say the hook once, never repeat it · end on a 1-second "Follow for more." so the Short loops
 
-No more advice Shorts, no more "Part 1/2" series Shorts, no Urdu duplicates.
+No more advice Shorts, no more "Part 1/2" series Shorts, no Urdu duplicates, and no Shorts cut straight
+from a long video without rewriting them ("Never lost hope", 56 s, held 28% on 13 Nov: about 16 s watched).
 
 ## The next 5 Shorts
 1. "Allah made him die for 100 years… his food hadn't even spoiled 🍇" (Al-Baqarah 2:259)
