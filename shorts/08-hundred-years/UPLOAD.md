@@ -1,6 +1,6 @@
 # Short: 08-hundred-years: Upload details
 
-**File:** `08-hundred-years.mp4` (1080×1920, about 43 s, English narration (Callum), Urdu subtitles on screen, −14.5 LUFS)
+**File:** `08-hundred-years.mp4` (1080×1920, about 34 s, English narration (Callum), Urdu subtitles on screen, −14.5 LUFS)
 **Script:** `scripts/batch-02.md`. Verses filled from quran-json / quran-cloud by `tools/fill_verses.py`.
 
 ## Title

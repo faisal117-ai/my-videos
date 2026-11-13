@@ -1,6 +1,6 @@
 # Short: 11-four-birds: Upload details
 
-**File:** `11-four-birds.mp4` (1080×1920, about 39 s, English narration (Callum), Urdu subtitles on screen, −14.5 LUFS)
+**File:** `11-four-birds.mp4` (1080×1920, about 27 s, English narration (Callum), Urdu subtitles on screen, −14.5 LUFS)
 **Script:** `scripts/batch-02.md`. Verses filled from quran-json / quran-cloud by `tools/fill_verses.py`.
 
 ## Title

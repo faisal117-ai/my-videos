@@ -37,9 +37,9 @@
     #brand span { color: #f2b04a; }
   </style>
   <div id="atmos" data-composition-id="atmos" data-width="1080" data-height="1920" data-layout-allow-overflow>
-    <div id="sky" class="clip" data-start="0" data-duration="43.21"></div>
+    <div id="sky" class="clip" data-start="0" data-duration="32.08"></div>
 
-    <div id="sea" class="clip" data-start="0" data-duration="43.21">
+    <div id="sea" class="clip" data-start="0" data-duration="32.08">
       <div id="sdusk"></div><div id="sstorm"></div><div id="sbolt"></div>
       <svg id="scoast" viewBox="0 0 1080 1920" preserveAspectRatio="none"><g fill="#141826">
         <path d="M 0 1300 L 0 1180 L 60 1180 L 60 1140 L 110 1140 L 110 1190 L 170 1190 L 170 1160 L 230 1160 L 230 1210 L 300 1230 L 330 1300 Z"/></g></svg>
@@ -67,165 +67,162 @@
         <ellipse cx="880" cy="1520" rx="34" ry="22" fill="#b9a24a"/>
       </svg>
     </div>
-    <div id="warm" class="clip" data-start="0" data-duration="43.21"><div id="warm-g" style="opacity:0"><div id="warm-b"></div></div></div>
-    <div id="cool" class="clip" data-start="0" data-duration="43.21"><div id="cool-g" style="opacity:0"></div></div>
-    <div id="embers" class="clip" data-start="0" data-duration="43.21"><div id="embers-g" style="opacity:0.00">
+    <div id="warm" class="clip" data-start="0" data-duration="32.08"><div id="warm-g" style="opacity:0"><div id="warm-b"></div></div></div>
+    <div id="cool" class="clip" data-start="0" data-duration="32.08"><div id="cool-g" style="opacity:0"></div></div>
+    <div id="embers" class="clip" data-start="0" data-duration="32.08"><div id="embers-g" style="opacity:0.00">
       
     </div></div>
-    <div id="vig" class="clip" data-start="0" data-duration="43.21"></div>
+    <div id="vig" class="clip" data-start="0" data-duration="32.08"></div>
     <div id="flash-host" class="clip" data-start="0" data-duration="0.6"><div id="flash"></div></div>
-    <div id="brand" class="clip" data-start="0" data-duration="43.21">HAQ <span>·</span> STORIES</div>
+    <div id="brand" class="clip" data-start="0" data-duration="32.08">HAQ <span>·</span> STORIES</div>
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
     tl.fromTo("#flash", {opacity: 0.4}, {opacity: 0, duration: 0.55, ease: "power2.out"}, 0);
-    tl.fromTo("#rn0", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.50, ease: "none", repeat: 87}, -0.41);
-    tl.fromTo("#rn1", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.57, ease: "none", repeat: 77}, -0.11);
-    tl.fromTo("#rn2", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.63, ease: "none", repeat: 70}, -0.48);
-    tl.fromTo("#rn3", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.62, ease: "none", repeat: 71}, -0.40);
-    tl.fromTo("#rn4", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.81, ease: "none", repeat: 55}, -0.77);
-    tl.fromTo("#rn5", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.59, ease: "none", repeat: 75}, -0.14);
-    tl.fromTo("#rn6", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.60, ease: "none", repeat: 73}, -0.21);
-    tl.fromTo("#rn7", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.59, ease: "none", repeat: 75}, -0.24);
-    tl.fromTo("#rn8", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.80, ease: "none", repeat: 56}, -0.08);
-    tl.fromTo("#rn9", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.70, ease: "none", repeat: 63}, -0.23);
-    tl.fromTo("#rn10", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.72, ease: "none", repeat: 62}, -0.50);
-    tl.fromTo("#rn11", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.57, ease: "none", repeat: 78}, -0.40);
-    tl.fromTo("#rn12", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.61, ease: "none", repeat: 73}, -0.53);
-    tl.fromTo("#rn13", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.66, ease: "none", repeat: 67}, -0.40);
-    tl.fromTo("#rn14", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.60, ease: "none", repeat: 74}, -0.52);
-    tl.fromTo("#rn15", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.61, ease: "none", repeat: 72}, -0.53);
-    tl.fromTo("#rn16", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.64, ease: "none", repeat: 69}, -0.41);
-    tl.fromTo("#rn17", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.60, ease: "none", repeat: 73}, -0.25);
-    tl.fromTo("#rn18", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.71, ease: "none", repeat: 62}, -0.65);
-    tl.fromTo("#rn19", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.62, ease: "none", repeat: 71}, -0.18);
-    tl.fromTo("#rn20", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.72, ease: "none", repeat: 61}, -0.53);
-    tl.fromTo("#rn21", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.80, ease: "none", repeat: 56}, -0.21);
-    tl.fromTo("#rn22", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.59, ease: "none", repeat: 75}, -0.06);
-    tl.fromTo("#rn23", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.76, ease: "none", repeat: 58}, -0.12);
-    tl.fromTo("#rn24", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.70, ease: "none", repeat: 63}, -0.28);
-    tl.fromTo("#rn25", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.54, ease: "none", repeat: 81}, -0.03);
-    tl.fromTo("#rn26", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.66, ease: "none", repeat: 67}, -0.58);
-    tl.fromTo("#rn27", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.51, ease: "none", repeat: 87}, -0.24);
-    tl.fromTo("#rn28", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.77, ease: "none", repeat: 58}, -0.52);
-    tl.fromTo("#rn29", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.50, ease: "none", repeat: 88}, -0.44);
-    tl.fromTo("#rn30", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.73, ease: "none", repeat: 61}, -0.55);
-    tl.fromTo("#rn31", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.82, ease: "none", repeat: 54}, -0.21);
-    tl.fromTo("#rn32", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.79, ease: "none", repeat: 56}, -0.50);
-    tl.fromTo("#rn33", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.79, ease: "none", repeat: 56}, -0.23);
-    tl.fromTo("#rn34", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.72, ease: "none", repeat: 61}, -0.21);
-    tl.fromTo("#rn35", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.79, ease: "none", repeat: 57}, -0.22);
-    tl.fromTo("#rn36", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.75, ease: "none", repeat: 59}, -0.05);
-    tl.fromTo("#rn37", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.79, ease: "none", repeat: 56}, -0.31);
-    tl.fromTo("#rn38", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.83, ease: "none", repeat: 54}, -0.79);
-    tl.fromTo("#rn39", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.61, ease: "none", repeat: 73}, -0.34);
-    tl.fromTo("#rn40", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.82, ease: "none", repeat: 54}, -0.53);
-    tl.fromTo("#rn41", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.71, ease: "none", repeat: 62}, -0.61);
-    tl.fromTo("#rn42", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.65, ease: "none", repeat: 68}, -0.06);
-    tl.fromTo("#rn43", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.69, ease: "none", repeat: 65}, -0.43);
-    tl.fromTo("#rn44", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.80, ease: "none", repeat: 56}, -0.62);
-    tl.fromTo("#rn45", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.64, ease: "none", repeat: 70}, -0.50);
-    tl.fromTo("#rn46", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.60, ease: "none", repeat: 74}, -0.27);
-    tl.fromTo("#rn47", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.53, ease: "none", repeat: 82}, -0.42);
-    tl.fromTo("#rn48", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.56, ease: "none", repeat: 79}, -0.45);
-    tl.fromTo("#rn49", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.69, ease: "none", repeat: 64}, -0.29);
-    tl.fromTo("#rn50", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.70, ease: "none", repeat: 63}, -0.03);
-    tl.fromTo("#rn51", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.80, ease: "none", repeat: 55}, -0.29);
-    tl.fromTo("#rn52", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.56, ease: "none", repeat: 79}, -0.51);
-    tl.fromTo("#rn53", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.60, ease: "none", repeat: 74}, -0.54);
-    tl.fromTo("#rn54", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.69, ease: "none", repeat: 64}, -0.02);
-    tl.fromTo("#rn55", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.81, ease: "none", repeat: 55}, -0.43);
-    tl.fromTo("#rn56", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.83, ease: "none", repeat: 54}, -0.53);
-    tl.fromTo("#rn57", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.65, ease: "none", repeat: 68}, -0.29);
-    tl.fromTo("#rn58", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.51, ease: "none", repeat: 86}, -0.04);
-    tl.fromTo("#rn59", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.75, ease: "none", repeat: 59}, -0.50);
-    tl.fromTo("#rn60", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.59, ease: "none", repeat: 75}, -0.08);
-    tl.fromTo("#rn61", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.84, ease: "none", repeat: 53}, -0.36);
-    tl.fromTo("#rn62", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.73, ease: "none", repeat: 61}, -0.67);
-    tl.fromTo("#rn63", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.78, ease: "none", repeat: 57}, -0.36);
-    tl.fromTo("#rn64", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.53, ease: "none", repeat: 83}, -0.39);
-    tl.fromTo("#rn65", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.60, ease: "none", repeat: 73}, -0.07);
-    tl.fromTo("#rn66", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.77, ease: "none", repeat: 57}, -0.07);
-    tl.fromTo("#rn67", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.79, ease: "none", repeat: 56}, -0.30);
-    tl.fromTo("#rn68", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.71, ease: "none", repeat: 62}, -0.58);
-    tl.fromTo("#rn69", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.75, ease: "none", repeat: 59}, -0.74);
-    tl.fromTo("#rn70", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.55, ease: "none", repeat: 80}, -0.40);
-    tl.fromTo("#rn71", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.63, ease: "none", repeat: 70}, -0.10);
-    tl.fromTo("#rn72", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.68, ease: "none", repeat: 65}, -0.44);
-    tl.fromTo("#rn73", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.74, ease: "none", repeat: 60}, -0.05);
-    tl.fromTo("#rn74", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.83, ease: "none", repeat: 54}, -0.58);
-    tl.fromTo("#rn75", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.81, ease: "none", repeat: 55}, -0.67);
-    tl.fromTo("#rn76", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.51, ease: "none", repeat: 86}, -0.43);
-    tl.fromTo("#rn77", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.57, ease: "none", repeat: 77}, -0.53);
-    tl.fromTo("#rn78", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.85, ease: "none", repeat: 52}, -0.49);
-    tl.fromTo("#rn79", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.85, ease: "none", repeat: 53}, -0.67);
-    tl.fromTo("#sw1", {x: 0}, {x: -1080, duration: 9.00, ease: "none", repeat: 5}, 0);
-    tl.fromTo("#sw2", {x: 0}, {x: -1080, duration: 7.00, ease: "none", repeat: 7}, 0);
-    tl.fromTo("#sw3", {x: 0}, {x: -1080, duration: 5.50, ease: "none", repeat: 8}, 0);
-    tl.fromTo("#scoast", {x: 0}, {x: -360, duration: 9.82, ease: "none"}, 0);
-    tl.fromTo("#sship", {opacity: 0}, {opacity: 1, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 4.03);
-    tl.fromTo("#sship", {rotation: -4}, {rotation: 4, duration: 1.4, ease: "sine.inOut", yoyo: true, repeat: 6, transformOrigin: "50% 90%"}, 0);
-    tl.fromTo("#sship", {rotation: -12}, {rotation: 12, duration: 0.6, ease: "sine.inOut", yoyo: true, repeat: 12, transformOrigin: "50% 90%", immediateRender: false}, 9.82);
-    tl.fromTo("#sstorm", {opacity: 0}, {opacity: 1, duration: 1.0, ease: "sine.inOut", immediateRender: false}, 9.82);
-    tl.fromTo("#srain", {opacity: 0}, {opacity: 1, duration: 1.0, ease: "sine.inOut", immediateRender: false}, 10.22);
-    tl.fromTo("#sbolt", {opacity: 0}, {keyframes: [{opacity: 0.85, duration: 0.05}, {opacity: 0.1, duration: 0.08}, {opacity: 0.6, duration: 0.05}, {opacity: 0, duration: 0.4}], immediateRender: false}, 11.02);
-    tl.fromTo("#sbolt", {opacity: 0}, {keyframes: [{opacity: 0.85, duration: 0.05}, {opacity: 0.1, duration: 0.08}, {opacity: 0.6, duration: 0.05}, {opacity: 0, duration: 0.4}], immediateRender: false}, 12.82);
-    tl.fromTo("#sfish", {x: 0, y: 60}, {x: -1500, y: -60, duration: 3.2, ease: "power1.inOut", immediateRender: false}, 14.09);
-    tl.fromTo("#sship", {opacity: 1}, {opacity: 0, duration: 0.8, ease: "sine.inOut", immediateRender: false}, 15.69);
-    tl.fromTo("#srain", {opacity: 1}, {opacity: 0, duration: 0.6, ease: "sine.inOut", immediateRender: false}, 17.24);
+    tl.fromTo("#rn0", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.50, ease: "none", repeat: 65}, -0.41);
+    tl.fromTo("#rn1", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.57, ease: "none", repeat: 58}, -0.11);
+    tl.fromTo("#rn2", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.63, ease: "none", repeat: 53}, -0.48);
+    tl.fromTo("#rn3", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.62, ease: "none", repeat: 53}, -0.40);
+    tl.fromTo("#rn4", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.81, ease: "none", repeat: 41}, -0.77);
+    tl.fromTo("#rn5", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.59, ease: "none", repeat: 56}, -0.14);
+    tl.fromTo("#rn6", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.60, ease: "none", repeat: 55}, -0.21);
+    tl.fromTo("#rn7", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.59, ease: "none", repeat: 56}, -0.24);
+    tl.fromTo("#rn8", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.80, ease: "none", repeat: 42}, -0.08);
+    tl.fromTo("#rn9", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.70, ease: "none", repeat: 47}, -0.23);
+    tl.fromTo("#rn10", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.72, ease: "none", repeat: 46}, -0.50);
+    tl.fromTo("#rn11", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.57, ease: "none", repeat: 58}, -0.40);
+    tl.fromTo("#rn12", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.61, ease: "none", repeat: 54}, -0.53);
+    tl.fromTo("#rn13", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.66, ease: "none", repeat: 50}, -0.40);
+    tl.fromTo("#rn14", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.60, ease: "none", repeat: 55}, -0.52);
+    tl.fromTo("#rn15", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.61, ease: "none", repeat: 54}, -0.53);
+    tl.fromTo("#rn16", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.64, ease: "none", repeat: 51}, -0.41);
+    tl.fromTo("#rn17", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.60, ease: "none", repeat: 55}, -0.25);
+    tl.fromTo("#rn18", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.71, ease: "none", repeat: 47}, -0.65);
+    tl.fromTo("#rn19", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.62, ease: "none", repeat: 53}, -0.18);
+    tl.fromTo("#rn20", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.72, ease: "none", repeat: 46}, -0.53);
+    tl.fromTo("#rn21", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.80, ease: "none", repeat: 42}, -0.21);
+    tl.fromTo("#rn22", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.59, ease: "none", repeat: 56}, -0.06);
+    tl.fromTo("#rn23", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.76, ease: "none", repeat: 44}, -0.12);
+    tl.fromTo("#rn24", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.70, ease: "none", repeat: 47}, -0.28);
+    tl.fromTo("#rn25", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.54, ease: "none", repeat: 60}, -0.03);
+    tl.fromTo("#rn26", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.66, ease: "none", repeat: 50}, -0.58);
+    tl.fromTo("#rn27", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.51, ease: "none", repeat: 65}, -0.24);
+    tl.fromTo("#rn28", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.77, ease: "none", repeat: 43}, -0.52);
+    tl.fromTo("#rn29", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.50, ease: "none", repeat: 65}, -0.44);
+    tl.fromTo("#rn30", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.73, ease: "none", repeat: 46}, -0.55);
+    tl.fromTo("#rn31", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.82, ease: "none", repeat: 41}, -0.21);
+    tl.fromTo("#rn32", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.79, ease: "none", repeat: 42}, -0.50);
+    tl.fromTo("#rn33", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.79, ease: "none", repeat: 42}, -0.23);
+    tl.fromTo("#rn34", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.72, ease: "none", repeat: 46}, -0.21);
+    tl.fromTo("#rn35", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.79, ease: "none", repeat: 42}, -0.22);
+    tl.fromTo("#rn36", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.75, ease: "none", repeat: 44}, -0.05);
+    tl.fromTo("#rn37", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.79, ease: "none", repeat: 42}, -0.31);
+    tl.fromTo("#rn38", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.83, ease: "none", repeat: 40}, -0.79);
+    tl.fromTo("#rn39", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.61, ease: "none", repeat: 55}, -0.34);
+    tl.fromTo("#rn40", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.82, ease: "none", repeat: 41}, -0.53);
+    tl.fromTo("#rn41", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.71, ease: "none", repeat: 47}, -0.61);
+    tl.fromTo("#rn42", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.65, ease: "none", repeat: 51}, -0.06);
+    tl.fromTo("#rn43", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.69, ease: "none", repeat: 48}, -0.43);
+    tl.fromTo("#rn44", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.80, ease: "none", repeat: 42}, -0.62);
+    tl.fromTo("#rn45", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.64, ease: "none", repeat: 52}, -0.50);
+    tl.fromTo("#rn46", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.60, ease: "none", repeat: 55}, -0.27);
+    tl.fromTo("#rn47", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.53, ease: "none", repeat: 62}, -0.42);
+    tl.fromTo("#rn48", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.56, ease: "none", repeat: 59}, -0.45);
+    tl.fromTo("#rn49", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.69, ease: "none", repeat: 48}, -0.29);
+    tl.fromTo("#rn50", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.70, ease: "none", repeat: 47}, -0.03);
+    tl.fromTo("#rn51", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.80, ease: "none", repeat: 42}, -0.29);
+    tl.fromTo("#rn52", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.56, ease: "none", repeat: 59}, -0.51);
+    tl.fromTo("#rn53", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.60, ease: "none", repeat: 55}, -0.54);
+    tl.fromTo("#rn54", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.69, ease: "none", repeat: 48}, -0.02);
+    tl.fromTo("#rn55", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.81, ease: "none", repeat: 41}, -0.43);
+    tl.fromTo("#rn56", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.83, ease: "none", repeat: 40}, -0.53);
+    tl.fromTo("#rn57", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.65, ease: "none", repeat: 51}, -0.29);
+    tl.fromTo("#rn58", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.51, ease: "none", repeat: 64}, -0.04);
+    tl.fromTo("#rn59", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.75, ease: "none", repeat: 44}, -0.50);
+    tl.fromTo("#rn60", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.59, ease: "none", repeat: 56}, -0.08);
+    tl.fromTo("#rn61", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.84, ease: "none", repeat: 40}, -0.36);
+    tl.fromTo("#rn62", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.73, ease: "none", repeat: 46}, -0.67);
+    tl.fromTo("#rn63", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.78, ease: "none", repeat: 43}, -0.36);
+    tl.fromTo("#rn64", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.53, ease: "none", repeat: 62}, -0.39);
+    tl.fromTo("#rn65", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.60, ease: "none", repeat: 55}, -0.07);
+    tl.fromTo("#rn66", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.77, ease: "none", repeat: 43}, -0.07);
+    tl.fromTo("#rn67", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.79, ease: "none", repeat: 42}, -0.30);
+    tl.fromTo("#rn68", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.71, ease: "none", repeat: 47}, -0.58);
+    tl.fromTo("#rn69", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.75, ease: "none", repeat: 45}, -0.74);
+    tl.fromTo("#rn70", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.55, ease: "none", repeat: 60}, -0.40);
+    tl.fromTo("#rn71", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.63, ease: "none", repeat: 52}, -0.10);
+    tl.fromTo("#rn72", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.68, ease: "none", repeat: 48}, -0.44);
+    tl.fromTo("#rn73", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.74, ease: "none", repeat: 45}, -0.05);
+    tl.fromTo("#rn74", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.83, ease: "none", repeat: 40}, -0.58);
+    tl.fromTo("#rn75", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.81, ease: "none", repeat: 41}, -0.67);
+    tl.fromTo("#rn76", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.51, ease: "none", repeat: 64}, -0.43);
+    tl.fromTo("#rn77", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.57, ease: "none", repeat: 58}, -0.53);
+    tl.fromTo("#rn78", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.85, ease: "none", repeat: 39}, -0.49);
+    tl.fromTo("#rn79", {y: -200, x: 0, rotation: 14}, {y: 2150, x: -480, rotation: 14, duration: 0.85, ease: "none", repeat: 39}, -0.67);
+    tl.fromTo("#sw1", {x: 0}, {x: -1080, duration: 9.00, ease: "none", repeat: 4}, 0);
+    tl.fromTo("#sw2", {x: 0}, {x: -1080, duration: 7.00, ease: "none", repeat: 5}, 0);
+    tl.fromTo("#sw3", {x: 0}, {x: -1080, duration: 5.50, ease: "none", repeat: 6}, 0);
+    tl.fromTo("#scoast", {x: 0}, {x: -360, duration: 2.94, ease: "none"}, 0);
+    tl.fromTo("#sship", {opacity: 0}, {opacity: 1, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 3.94);
+    tl.fromTo("#sship", {rotation: -4}, {rotation: 4, duration: 1.4, ease: "sine.inOut", yoyo: true, repeat: 1, transformOrigin: "50% 90%"}, 0);
+    tl.fromTo("#sship", {rotation: -12}, {rotation: 12, duration: 0.6, ease: "sine.inOut", yoyo: true, repeat: 12, transformOrigin: "50% 90%", immediateRender: false}, 2.94);
+    tl.fromTo("#sstorm", {opacity: 0}, {opacity: 1, duration: 1.0, ease: "sine.inOut", immediateRender: false}, 2.94);
+    tl.fromTo("#srain", {opacity: 0}, {opacity: 1, duration: 1.0, ease: "sine.inOut", immediateRender: false}, 3.34);
+    tl.fromTo("#sbolt", {opacity: 0}, {keyframes: [{opacity: 0.85, duration: 0.05}, {opacity: 0.1, duration: 0.08}, {opacity: 0.6, duration: 0.05}, {opacity: 0, duration: 0.4}], immediateRender: false}, 4.14);
+    tl.fromTo("#sbolt", {opacity: 0}, {keyframes: [{opacity: 0.85, duration: 0.05}, {opacity: 0.1, duration: 0.08}, {opacity: 0.6, duration: 0.05}, {opacity: 0, duration: 0.4}], immediateRender: false}, 5.94);
+    tl.fromTo("#sfish", {x: 0, y: 60}, {x: -1500, y: -60, duration: 3.2, ease: "power1.inOut", immediateRender: false}, 7.48);
+    tl.fromTo("#sship", {opacity: 1}, {opacity: 0, duration: 0.8, ease: "sine.inOut", immediateRender: false}, 9.08);
+    tl.fromTo("#srain", {opacity: 1}, {opacity: 0, duration: 0.6, ease: "sine.inOut", immediateRender: false}, 10.86);
     tl.set("#sd1", {opacity: 0}, 0);
-    tl.fromTo("#sd1", {opacity: 0}, {opacity: 0.45, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 17.24);
+    tl.fromTo("#sd1", {opacity: 0}, {opacity: 0.45, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 10.86);
     tl.set("#sd2", {opacity: 0}, 0);
-    tl.fromTo("#sd2", {opacity: 0}, {opacity: 0.75, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 18.97);
+    tl.fromTo("#sd2", {opacity: 0}, {opacity: 0.75, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 12.56);
     tl.set("#sd3", {opacity: 0}, 0);
-    tl.fromTo("#sd3", {opacity: 0}, {opacity: 1, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 20.71);
-    tl.fromTo("#sribs", {opacity: 0}, {opacity: 1, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 21.11);
-    tl.fromTo("#bb0", {y: 0, opacity: 0}, {keyframes: [{opacity: 0.8, duration: 0.90}, {opacity: 0, duration: 3.62}], y: -700, duration: 4.52, ease: "none", repeat: 3, immediateRender: false}, 23.03);
-    tl.fromTo("#bb1", {y: 0, opacity: 0}, {keyframes: [{opacity: 0.8, duration: 0.67}, {opacity: 0, duration: 2.67}], y: -700, duration: 3.34, ease: "none", repeat: 3, immediateRender: false}, 23.97);
-    tl.fromTo("#bb2", {y: 0, opacity: 0}, {keyframes: [{opacity: 0.8, duration: 0.63}, {opacity: 0, duration: 2.53}], y: -700, duration: 3.17, ease: "none", repeat: 3, immediateRender: false}, 24.40);
-    tl.fromTo("#bb3", {y: 0, opacity: 0}, {keyframes: [{opacity: 0.8, duration: 0.63}, {opacity: 0, duration: 2.53}], y: -700, duration: 3.16, ease: "none", repeat: 3, immediateRender: false}, 24.87);
-    tl.fromTo("#bb4", {y: 0, opacity: 0}, {keyframes: [{opacity: 0.8, duration: 0.65}, {opacity: 0, duration: 2.61}], y: -700, duration: 3.26, ease: "none", repeat: 3, immediateRender: false}, 22.80);
-    tl.fromTo("#bb5", {y: 0, opacity: 0}, {keyframes: [{opacity: 0.8, duration: 0.78}, {opacity: 0, duration: 3.14}], y: -700, duration: 3.92, ease: "none", repeat: 3, immediateRender: false}, 24.35);
-    tl.fromTo("#bb6", {y: 0, opacity: 0}, {keyframes: [{opacity: 0.8, duration: 0.79}, {opacity: 0, duration: 3.18}], y: -700, duration: 3.97, ease: "none", repeat: 3, immediateRender: false}, 24.21);
-    tl.fromTo("#bb7", {y: 0, opacity: 0}, {keyframes: [{opacity: 0.8, duration: 0.70}, {opacity: 0, duration: 2.79}], y: -700, duration: 3.48, ease: "none", repeat: 3, immediateRender: false}, 24.59);
-    tl.fromTo("#bb8", {y: 0, opacity: 0}, {keyframes: [{opacity: 0.8, duration: 0.68}, {opacity: 0, duration: 2.72}], y: -700, duration: 3.41, ease: "none", repeat: 3, immediateRender: false}, 23.47);
-    tl.fromTo("#bb9", {y: 0, opacity: 0}, {keyframes: [{opacity: 0.8, duration: 0.92}, {opacity: 0, duration: 3.69}], y: -700, duration: 4.61, ease: "none", repeat: 3, immediateRender: false}, 23.42);
-    tl.fromTo("#bb10", {y: 0, opacity: 0}, {keyframes: [{opacity: 0.8, duration: 0.62}, {opacity: 0, duration: 2.49}], y: -700, duration: 3.12, ease: "none", repeat: 3, immediateRender: false}, 24.24);
-    tl.fromTo("#bb11", {y: 0, opacity: 0}, {keyframes: [{opacity: 0.8, duration: 0.64}, {opacity: 0, duration: 2.54}], y: -700, duration: 3.18, ease: "none", repeat: 3, immediateRender: false}, 23.47);
-    tl.fromTo("#bb12", {y: 0, opacity: 0}, {keyframes: [{opacity: 0.8, duration: 0.74}, {opacity: 0, duration: 2.95}], y: -700, duration: 3.69, ease: "none", repeat: 3, immediateRender: false}, 23.66);
-    tl.fromTo("#bb13", {y: 0, opacity: 0}, {keyframes: [{opacity: 0.8, duration: 0.65}, {opacity: 0, duration: 2.62}], y: -700, duration: 3.27, ease: "none", repeat: 3, immediateRender: false}, 24.75);
-    tl.fromTo("#bb14", {y: 0, opacity: 0}, {keyframes: [{opacity: 0.8, duration: 0.93}, {opacity: 0, duration: 3.70}], y: -700, duration: 4.63, ease: "none", repeat: 3, immediateRender: false}, 23.81);
-    tl.fromTo("#bb15", {y: 0, opacity: 0}, {keyframes: [{opacity: 0.8, duration: 0.72}, {opacity: 0, duration: 2.88}], y: -700, duration: 3.60, ease: "none", repeat: 3, immediateRender: false}, 23.40);
-    tl.to("#sd1", {opacity: 0, duration: 1.4, ease: "sine.inOut"}, 31.76);
-    tl.to("#sd2", {opacity: 0, duration: 1.4, ease: "sine.inOut"}, 31.76);
-    tl.to("#sd3", {opacity: 0, duration: 1.4, ease: "sine.inOut"}, 31.76);
-    tl.to("#sribs", {opacity: 0, duration: 1.4, ease: "sine.inOut"}, 31.76);
-    tl.fromTo("#sdawn", {opacity: 0}, {opacity: 1, duration: 1.6, ease: "sine.inOut", immediateRender: false}, 31.76);
-    tl.fromTo("#sshore", {opacity: 0}, {opacity: 1, duration: 1.6, ease: "sine.inOut", immediateRender: false}, 32.16);
-    tl.fromTo("#ssun", {opacity: 0, y: 120}, {opacity: 1, y: -60, duration: 4, ease: "sine.out", immediateRender: false}, 32.06);
-    tl.fromTo("#warm-b", {scaleY: 1}, {scaleY: 1.06, duration: 0.8, ease: "sine.inOut", yoyo: true, repeat: 27}, 0);
-    tl.fromTo("#warm-g", {opacity: 0}, {opacity: 0.1, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 3.03);
-    tl.fromTo("#cool-g", {opacity: 0}, {opacity: 0.2, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 3.03);
-    tl.fromTo("#embers-g", {opacity: 0.00}, {opacity: 0.14, duration: 0.9, immediateRender: false}, 3.03);
-    tl.fromTo("#warm-g", {opacity: 0.1}, {opacity: 0, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 9.82);
-    tl.fromTo("#cool-g", {opacity: 0.2}, {opacity: 0.1, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 9.82);
-    tl.fromTo("#embers-g", {opacity: 0.14}, {opacity: 0.00, duration: 0.9, immediateRender: false}, 9.82);
-    tl.fromTo("#warm-g", {opacity: 0}, {opacity: 0, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 17.09);
-    tl.fromTo("#cool-g", {opacity: 0.1}, {opacity: 0, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 17.09);
-    tl.fromTo("#embers-g", {opacity: 0.00}, {opacity: 0.00, duration: 0.9, immediateRender: false}, 17.09);
-    tl.fromTo("#warm-g", {opacity: 0}, {opacity: 0, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 22.44);
-    tl.fromTo("#cool-g", {opacity: 0}, {opacity: 0.35, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 22.44);
-    tl.fromTo("#embers-g", {opacity: 0.00}, {opacity: 0.00, duration: 0.9, immediateRender: false}, 22.44);
-    tl.fromTo("#warm-g", {opacity: 0}, {opacity: 0.3, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 31.76);
-    tl.fromTo("#cool-g", {opacity: 0.35}, {opacity: 0.3, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 31.76);
-    tl.fromTo("#embers-g", {opacity: 0.00}, {opacity: 0.42, duration: 0.9, immediateRender: false}, 31.76);
-    tl.fromTo("#warm-g", {opacity: 0.3}, {opacity: 0.3, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 38.15);
-    tl.fromTo("#cool-g", {opacity: 0.3}, {opacity: 0.3, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 38.15);
-    tl.fromTo("#embers-g", {opacity: 0.42}, {opacity: 0.42, duration: 0.9, immediateRender: false}, 38.15);
+    tl.fromTo("#sd3", {opacity: 0}, {opacity: 1, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 14.25);
+    tl.fromTo("#sribs", {opacity: 0}, {opacity: 1, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 14.65);
+    tl.fromTo("#bb0", {y: 0, opacity: 0}, {keyframes: [{opacity: 0.8, duration: 0.90}, {opacity: 0, duration: 3.62}], y: -700, duration: 4.52, ease: "none", repeat: 2, immediateRender: false}, 16.55);
+    tl.fromTo("#bb1", {y: 0, opacity: 0}, {keyframes: [{opacity: 0.8, duration: 0.67}, {opacity: 0, duration: 2.67}], y: -700, duration: 3.34, ease: "none", repeat: 3, immediateRender: false}, 17.49);
+    tl.fromTo("#bb2", {y: 0, opacity: 0}, {keyframes: [{opacity: 0.8, duration: 0.63}, {opacity: 0, duration: 2.53}], y: -700, duration: 3.17, ease: "none", repeat: 3, immediateRender: false}, 17.92);
+    tl.fromTo("#bb3", {y: 0, opacity: 0}, {keyframes: [{opacity: 0.8, duration: 0.63}, {opacity: 0, duration: 2.53}], y: -700, duration: 3.16, ease: "none", repeat: 3, immediateRender: false}, 18.39);
+    tl.fromTo("#bb4", {y: 0, opacity: 0}, {keyframes: [{opacity: 0.8, duration: 0.65}, {opacity: 0, duration: 2.61}], y: -700, duration: 3.26, ease: "none", repeat: 3, immediateRender: false}, 16.32);
+    tl.fromTo("#bb5", {y: 0, opacity: 0}, {keyframes: [{opacity: 0.8, duration: 0.78}, {opacity: 0, duration: 3.14}], y: -700, duration: 3.92, ease: "none", repeat: 3, immediateRender: false}, 17.87);
+    tl.fromTo("#bb6", {y: 0, opacity: 0}, {keyframes: [{opacity: 0.8, duration: 0.79}, {opacity: 0, duration: 3.18}], y: -700, duration: 3.97, ease: "none", repeat: 3, immediateRender: false}, 17.73);
+    tl.fromTo("#bb7", {y: 0, opacity: 0}, {keyframes: [{opacity: 0.8, duration: 0.70}, {opacity: 0, duration: 2.79}], y: -700, duration: 3.48, ease: "none", repeat: 3, immediateRender: false}, 18.11);
+    tl.fromTo("#bb8", {y: 0, opacity: 0}, {keyframes: [{opacity: 0.8, duration: 0.68}, {opacity: 0, duration: 2.72}], y: -700, duration: 3.41, ease: "none", repeat: 3, immediateRender: false}, 16.99);
+    tl.fromTo("#bb9", {y: 0, opacity: 0}, {keyframes: [{opacity: 0.8, duration: 0.92}, {opacity: 0, duration: 3.69}], y: -700, duration: 4.61, ease: "none", repeat: 2, immediateRender: false}, 16.94);
+    tl.fromTo("#bb10", {y: 0, opacity: 0}, {keyframes: [{opacity: 0.8, duration: 0.62}, {opacity: 0, duration: 2.49}], y: -700, duration: 3.12, ease: "none", repeat: 3, immediateRender: false}, 17.76);
+    tl.fromTo("#bb11", {y: 0, opacity: 0}, {keyframes: [{opacity: 0.8, duration: 0.64}, {opacity: 0, duration: 2.54}], y: -700, duration: 3.18, ease: "none", repeat: 3, immediateRender: false}, 16.99);
+    tl.fromTo("#bb12", {y: 0, opacity: 0}, {keyframes: [{opacity: 0.8, duration: 0.74}, {opacity: 0, duration: 2.95}], y: -700, duration: 3.69, ease: "none", repeat: 3, immediateRender: false}, 17.18);
+    tl.fromTo("#bb13", {y: 0, opacity: 0}, {keyframes: [{opacity: 0.8, duration: 0.65}, {opacity: 0, duration: 2.62}], y: -700, duration: 3.27, ease: "none", repeat: 3, immediateRender: false}, 18.27);
+    tl.fromTo("#bb14", {y: 0, opacity: 0}, {keyframes: [{opacity: 0.8, duration: 0.93}, {opacity: 0, duration: 3.70}], y: -700, duration: 4.63, ease: "none", repeat: 2, immediateRender: false}, 17.33);
+    tl.fromTo("#bb15", {y: 0, opacity: 0}, {keyframes: [{opacity: 0.8, duration: 0.72}, {opacity: 0, duration: 2.88}], y: -700, duration: 3.60, ease: "none", repeat: 3, immediateRender: false}, 16.92);
+    tl.to("#sd1", {opacity: 0, duration: 1.4, ease: "sine.inOut"}, 23.93);
+    tl.to("#sd2", {opacity: 0, duration: 1.4, ease: "sine.inOut"}, 23.93);
+    tl.to("#sd3", {opacity: 0, duration: 1.4, ease: "sine.inOut"}, 23.93);
+    tl.to("#sribs", {opacity: 0, duration: 1.4, ease: "sine.inOut"}, 23.93);
+    tl.fromTo("#sdawn", {opacity: 0}, {opacity: 1, duration: 1.6, ease: "sine.inOut", immediateRender: false}, 23.93);
+    tl.fromTo("#sshore", {opacity: 0}, {opacity: 1, duration: 1.6, ease: "sine.inOut", immediateRender: false}, 24.33);
+    tl.fromTo("#ssun", {opacity: 0, y: 120}, {opacity: 1, y: -60, duration: 4, ease: "sine.out", immediateRender: false}, 24.23);
+    tl.fromTo("#warm-b", {scaleY: 1}, {scaleY: 1.06, duration: 0.8, ease: "sine.inOut", yoyo: true, repeat: 20}, 0);
+    tl.fromTo("#warm-g", {opacity: 0}, {opacity: 0, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 2.94);
+    tl.fromTo("#cool-g", {opacity: 0}, {opacity: 0.1, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 2.94);
+    tl.fromTo("#embers-g", {opacity: 0.00}, {opacity: 0.00, duration: 0.9, immediateRender: false}, 2.94);
+    tl.fromTo("#warm-g", {opacity: 0}, {opacity: 0, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 10.71);
+    tl.fromTo("#cool-g", {opacity: 0.1}, {opacity: 0, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 10.71);
+    tl.fromTo("#embers-g", {opacity: 0.00}, {opacity: 0.00, duration: 0.9, immediateRender: false}, 10.71);
+    tl.fromTo("#warm-g", {opacity: 0}, {opacity: 0, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 15.96);
+    tl.fromTo("#cool-g", {opacity: 0}, {opacity: 0.35, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 15.96);
+    tl.fromTo("#embers-g", {opacity: 0.00}, {opacity: 0.00, duration: 0.9, immediateRender: false}, 15.96);
+    tl.fromTo("#warm-g", {opacity: 0}, {opacity: 0.3, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 23.93);
+    tl.fromTo("#cool-g", {opacity: 0.35}, {opacity: 0.3, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 23.93);
+    tl.fromTo("#embers-g", {opacity: 0.00}, {opacity: 0.42, duration: 0.9, immediateRender: false}, 23.93);
+    tl.fromTo("#warm-g", {opacity: 0.3}, {opacity: 0.3, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 29.83);
+    tl.fromTo("#cool-g", {opacity: 0.3}, {opacity: 0.3, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 29.83);
+    tl.fromTo("#embers-g", {opacity: 0.42}, {opacity: 0.42, duration: 0.9, immediateRender: false}, 29.83);
     const et = gsap.timeline({ paused: true });
     
     // Sparks are already mid-flight on frame 0: play their own timeline from 7 s in.
-    tl.add(et.tweenFromTo(7, 50.21, { ease: "none" }), 0);
+    tl.add(et.tweenFromTo(7, 39.08, { ease: "none" }), 0);
     window.__timelines["atmos"] = tl;
   </script>
 </template>

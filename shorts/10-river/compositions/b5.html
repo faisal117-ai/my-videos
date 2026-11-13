@@ -1,23 +1,24 @@
 <template>
   <style>
     #b5 { position: absolute; inset: 0; }
-    #b5-wrap { position: absolute; left: 90px; right: 140px; top: 300px; bottom: 780px;
+    #b5-wrap { position: absolute; left: 60px; right: 60px; top: 300px; bottom: 780px;
       display: flex; flex-direction: column; justify-content: center; gap: 34px; }
   </style>
   <div id="b5" data-composition-id="b5" data-width="1080" data-height="1920">
-    <div id="b5-wrap" class="clip" data-start="0" data-duration="5.23">
-      <div id="b5-txt" class="txt"><span class="w" id="b5-w0">Her</span> <span class="w" id="b5-w1">heart</span> <span class="w" id="b5-w2">became</span> <span class="w hi" id="b5-w3">empty…</span> <span class="w" id="b5-w4">but</span> <span class="w" id="b5-w5">the</span> <span class="w" id="b5-w6">baby</span> <span class="w" id="b5-w7">refused</span> <span class="w" id="b5-w8">every</span> <span class="w" id="b5-w9">nurse.</span></div>
-      <div id="b5-ur" class="ur" dir="rtl" lang="ur" data-layout-allow-overflow>موسیٰؑ کی ماں کا دل اڑا جا رہا تھا… مگر بچے نے ہر دودھ پلانے والی کو ٹھکرا دیا</div>
-      <div id="b5-ref" class="ref">Al-Qasas 28:10–12</div>
+    <div id="b5-wrap" class="clip" data-start="0" data-duration="7.13">
+      <div id="b5-ar" class="ar" dir="rtl" lang="ar">وَلِتَعۡلَمَ أَنَّ وَعۡدَ ٱللَّهِ حَقࣱّ</div>
+      <div id="b5-tr" class="tr">“and that she would know that the promise of Allah is true”</div>
+      <div id="b5-ur" class="ur" dir="rtl" lang="ur" data-layout-allow-overflow>اور جان لے کہ اللہ کا وعدہ سچا تھا</div>
+      <div id="b5-ref" class="ref">Al-Qasas 28:13</div>
     </div>
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
-    tl.fromTo("#b5 .w", {opacity: 0, y: 22, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.32, ease: "power2.out", stagger: 0.374}, 0.12);
-    tl.fromTo("#b5 .hi", {textShadow: "0 0 0px rgba(0,0,0,0)"}, {textShadow: "0 0 28px var(--accent)", duration: 0.6, ease: "power1.out"}, 2.40);
+    tl.fromTo("#b5-ar", {opacity: 0, y: 30, filter: "blur(10px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.9, ease: "power2.out"}, 0.05);
+    tl.fromTo("#b5-tr", {opacity: 0, y: 20}, {opacity: 1, y: 0, duration: 0.7, ease: "power2.out"}, 0.6);
     tl.fromTo("#b5-ur", {opacity: 0, y: 10}, {opacity: 1, y: 0, duration: 0.35, ease: "power2.out"}, 0.15);
     tl.fromTo("#b5-ref", {opacity: 0, y: 12}, {opacity: 1, y: 0, duration: 0.45, ease: "power2.out"}, 0.35);
-    tl.fromTo("#b5-wrap", {opacity: 1}, {opacity: 0, duration: 0.22, ease: "power1.in"}, 4.99);
+    tl.fromTo("#b5-wrap", {opacity: 1}, {opacity: 0, duration: 0.22, ease: "power1.in"}, 6.89);
     window.__timelines["b5"] = tl;
   </script>
 </template>

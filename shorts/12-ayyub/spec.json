@@ -3,7 +3,7 @@
   "embers": false,
   "flash": 0.4,
   "bed_volume": 1.0,
-  "hold_end": 1.0,
+  "hold_end": 0.5,
   "text_top": 300,
   "text_bottom": 780,
   "tr_size": 58,
@@ -20,19 +20,10 @@
       "reveal": false
     },
     {
-      "text": "Hazrat Ayyub (AS) was tested: his *health*, his family, his wealth.",
-      "ur": "حضرت ایوبؑ کی آزمائش ہوئی… صحت، اہل و عیال اور مال، سب میں",
-      "ref": "Sad 38:41",
-      "mood": {
-        "warm": 0.1,
-        "cool": 0
-      }
-    },
-    {
-      "text": "For years, the hardship stayed. And he never *complained* about Allah.",
+      "text": "His *health*, his family, his wealth… for years. And he never complained.",
       "size": 104,
-      "ur": "برسوں تکلیف رہی… مگر انہوں نے اللہ سے کبھی شکوہ نہ کیا",
-      "ref": "Sad 38:44",
+      "ur": "صحت، اہل و عیال، مال… برسوں تک۔ اور انہوں نے کبھی شکوہ نہ کیا",
+      "ref": "Sad 38:41–44",
       "mood": {
         "warm": 0.05,
         "cool": 0.1
@@ -56,9 +47,9 @@
       "ur": "مجھے بیماری لگ گئی ہے اور تو ارحم الراحمین ہے"
     },
     {
-      "text": "That was all. And Allah *answered* him.",
+      "text": "And Allah *answered* him.",
       "size": 124,
-      "ur": "بس اتنا… اور اللہ نے اس کی دُعا قبول کی",
+      "ur": "اور اللہ نے اس کی دُعا قبول کی",
       "ref": "Sad 38:42",
       "mood": {
         "warm": 0.2,
@@ -84,11 +75,11 @@
     },
     {
       "cta": true,
-      "text": "A new story from the Quran, every day.",
-      "ur": "ہر روز قرآن سے ایک نئی کہانی… فالو کریں",
+      "text": "Follow for more.",
+      "ur": "فالو کریں",
       "mood": {
-        "warm": 0.4,
-        "cool": 0.1
+        "warm": 0.3,
+        "cool": 0.3
       }
     }
   ],
@@ -114,7 +105,7 @@
     {
       "prompt": "clock",
       "src": "../03-cave/assets/sfx/c0a62b45d83e.mp3",
-      "beat": 2,
+      "beat": 1,
       "dur": 6,
       "gain": -12,
       "fade_in": 0.3,
@@ -123,7 +114,7 @@
     {
       "prompt": "hum sorrow",
       "src": "../../long/01-yusuf/assets/sfx/1830ee4b40ad.mp3",
-      "beat": 1,
+      "beat": 0,
       "offset": 0.5,
       "dur": 13,
       "gain": -16,
@@ -133,7 +124,7 @@
     {
       "prompt": "night room",
       "src": "../05-trunk/assets/sfx/beb74bb8b482.mp3",
-      "beat": 3,
+      "beat": 2,
       "dur": 10,
       "gain": -14,
       "fade_in": 0.8,
@@ -141,7 +132,7 @@
     },
     {
       "prompt": "a fresh water spring bursting up out of the ground, splashing and bubbling, clear and close",
-      "beat": 4,
+      "beat": 3,
       "offset": 1.4,
       "dur": 8,
       "gain": -9,
@@ -151,7 +142,7 @@
     {
       "prompt": "dawn",
       "src": "../04-ease/assets/sfx/61e97fb787a5.mp3",
-      "beat": 5,
+      "beat": 4,
       "dur": 12,
       "gain": -12,
       "fade_in": 1.5,
@@ -160,12 +151,16 @@
     {
       "prompt": "hum grateful",
       "src": "../06-ant/assets/sfx/cabf6e6577de.mp3",
-      "beat": 5,
+      "beat": 4,
       "offset": 0.3,
       "dur": 12,
       "gain": -14,
       "fade_in": 2,
       "fade_out": 2
     }
-  ]
+  ],
+  "years_beat": 1,
+  "dua_beat": 2,
+  "answer_beat": 3,
+  "mercy_beat": 4
 }

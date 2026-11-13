@@ -2,12 +2,9 @@
   "accent": "#f2b04a",
   "embers": false,
   "scene": "ruins",
-  "lapse_beat": 2,
-  "food_beat": 4,
-  "raise_beat": 5,
   "flash": 0.4,
   "bed_volume": 1.0,
-  "hold_end": 1.0,
+  "hold_end": 0.5,
   "text_top": 300,
   "text_bottom": 780,
   "tr_size": 58,
@@ -31,23 +28,6 @@
         "warm": 0.25,
         "cool": 0
       }
-    },
-    {
-      "q": "2:259",
-      "ar_words": [
-        17,
-        22
-      ],
-      "en": "So Allah caused him to die for a hundred years; then He revived him",
-      "ur_q": "اللہ نے اس کی روح قبض کر لی اور وہ سوبرس تک مُردہ پڑا رہا پھر اللہ نے اسے دوبارہ زندگی بخشی",
-      "ref": "Al-Baqarah 2:259",
-      "mood": {
-        "warm": 0.1,
-        "cool": 0.3
-      },
-      "arabic": "فَأَمَاتَهُ ٱللَّهُ مِاْئَةَ عَامࣲ ثُمَّ بَعَثَهُۥۖ",
-      "translation": "“So Allah caused him to die for a hundred years; then He revived him”",
-      "ur": "اللہ نے اس کی روح قبض کر لی اور وہ سوبرس تک مُردہ پڑا رہا پھر اللہ نے اسے دوبارہ زندگی بخشی"
     },
     {
       "text": "“How long have you remained?” “A *day*, or part of a day.”",
@@ -87,8 +67,8 @@
     },
     {
       "cta": true,
-      "text": "A new story from the Quran, every day.",
-      "ur": "ہر روز قرآن سے ایک نئی کہانی… فالو کریں",
+      "text": "Follow for more.",
+      "ur": "فالو کریں",
       "mood": {
         "warm": 0.3,
         "cool": 0.3
@@ -144,7 +124,7 @@
     {
       "prompt": "desert wind",
       "src": "../../long/01-yusuf/assets/sfx/59352a0d56de.mp3",
-      "beat": 3,
+      "beat": 2,
       "dur": 15,
       "gain": -15,
       "fade_in": 1,
@@ -153,7 +133,7 @@
     {
       "prompt": "shimmer",
       "src": "../03-cave/assets/sfx/f73090a5a6a6.mp3",
-      "beat": 4,
+      "beat": 3,
       "offset": 1.4,
       "dur": 2.5,
       "gain": -10,
@@ -162,7 +142,7 @@
     },
     {
       "prompt": "dry old bones dropping and rattling onto sand, close",
-      "beat": 4,
+      "beat": 3,
       "offset": 4.6,
       "dur": 2.5,
       "gain": -9,
@@ -171,7 +151,7 @@
     },
     {
       "prompt": "old dry bones clicking and knocking together one by one as they rise and fit into place",
-      "beat": 5,
+      "beat": 4,
       "offset": 0.9,
       "dur": 3,
       "gain": -9,
@@ -181,12 +161,15 @@
     {
       "prompt": "hum hopeful",
       "src": "../04-ease/assets/sfx/ed4334fb2fbf.mp3",
-      "beat": 5,
+      "beat": 4,
       "offset": 0.4,
       "dur": 13,
       "gain": -14,
       "fade_in": 2,
       "fade_out": 2
     }
-  ]
+  ],
+  "lapse_beat": 2,
+  "food_beat": 3,
+  "raise_beat": 4
 }
