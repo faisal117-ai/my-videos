@@ -76,6 +76,7 @@ Check YouTube Studio → Earn for the current thresholds.
 - Never buy views or subscribers.
 
 ## Routine
-- Daily: one Short; reply to every comment in the first hour.
+- **Daily: two uploads, at 11:00 and 18:30 Pakistan time (Asia/Karachi)**, scheduled through Metricool. Mostly Shorts; a long video takes one of the two slots on its day. Reply to every comment in the first hour after each upload.
+- Batch production: about 10 Shorts a week, made in batches of 5 so the queue never runs dry.
 - Weekly: Studio → Earn, note subscribers and hours.
 - Every 2 weeks: export the CSV again (or read it from Metricool, connected 13 Nov) and update this plan.
