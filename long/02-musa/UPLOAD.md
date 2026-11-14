@@ -5,7 +5,7 @@
 - Thumbnail: `thumbnail/thumbnail.jpg` (1280×720)
 - Subtitles: `subtitles/en.srt` (English, timed from the voice). No Urdu file this time.
 
-**When:** Saturday 14 Nov, 8 PM PKT (long films go out Saturday evenings; the Urdu version follows on Sunday).
+**When:** Saturday 14 Nov, 6:30 PM PKT (long films go out Saturday evenings; the Urdu version follows on Sunday).
 
 ## Title
 Prophet Musa (AS) and Pharaoh: The Complete Story from the Quran
