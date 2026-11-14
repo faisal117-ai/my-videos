@@ -28,3 +28,9 @@ ceiling at feed size). Titles were 65–80 characters (desktop search cuts at 60
 | Ibrahim Urdu | unchanged | `final-ibrahim-ur.jpg` "زندہ آگ میں" |
 
 Voice profile for packaging: `scripts/voice.md`.
+
+## Decision (14 Nov, night): the user prefers the bright 5–6-word set
+Back in use: Yusuf `yusuf-a-well.jpg` (changed in Studio by the user), Ibrahim `ibrahim-a-fire.jpg` with
+"Thrown Into the Fire… It Became Cool | Prophet Ibrahim (AS) Full Story", Ibrahim Urdu `ibrahim-ur-fire.jpg`
+(Metricool updated). Musa keeps its original thumbnail. The `final-*` three-word versions stay here for a
+Test & Compare later; the CTR numbers will decide.
