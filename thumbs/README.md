@@ -15,3 +15,16 @@ Made by `tools/thumbs_v2.py`. No prophet, righteous woman, angel or person is dr
 The Ibrahim films are updated in Metricool. Yusuf and Musa are already published, so they are changed
 in YouTube Studio: video → Details → Title and Thumbnail (phone), or Thumbnail → Test & compare
 (computer) with all three options.
+
+## Update (14 Nov, night): packaging rules applied (yt-package)
+The first set broke two rules: the thumbnail repeated the title, and it had 5–6 words (3 is the
+ceiling at feed size). Titles were 65–80 characters (desktop search cuts at 60) and carried no number.
+
+| Film | Title (scored) | Thumbnail (3 words, different from the title) |
+|---|---|---|
+| Yusuf | Prophet Yusuf (AS): The Dream of 11 Stars Came True (100/100; Quran 12:4) | `final-yusuf.jpg` "DOWN THE WELL" |
+| Musa | Prophet Musa (AS) and the 9 Signs Pharaoh Denied (100/100; Quran 17:101) | `final-musa.jpg`: the original art the user preferred, "THE SEA SPLIT" in bold |
+| Ibrahim | Prophet Ibrahim (AS): The Fire That Became Cool (84/100, no number in the Quran story) | `final-ibrahim.jpg` "THROWN IN ALIVE" |
+| Ibrahim Urdu | unchanged | `final-ibrahim-ur.jpg` "زندہ آگ میں" |
+
+Voice profile for packaging: `scripts/voice.md`.

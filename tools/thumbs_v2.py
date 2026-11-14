@@ -260,13 +260,43 @@ def ibrahim_fire_ur():
             'آگ میں پھینکا گیا…<br><span class="b">آگ ٹھنڈی ہو گئی</span></div>' + h[end:]).replace("PROPHET IBRAHIM (AS)", "HAZRAT IBRAHIM AS")
 
 
+def three(fn, words, cls="", top=60, size=150):
+    """Same art, only three words (yt-package rule: max 3 words, never repeating the title)."""
+    h = fn()
+    start = h.index('<div class="t'); end = h.rindex('<div class="chip">')
+    return (h[:start] + f'<div class="t {cls}" style="left:0;right:0;text-align:center;top:{top}px;font-size:{size}px">{words}</div>'
+            + h[end:])
+
+
+def musa_old_bold():
+    """The user's preferred original Musa art, with three bold words instead of the thin serif lines."""
+    h = (ROOT / "long/02-musa/thumbnail/thumbnail.html").read_text(encoding="utf-8")
+    h = h.replace('cormorant-garamond-latin-600-normal.woff2', (ROOT / "long/02-musa/thumbnail/cormorant-garamond-latin-600-normal.woff2").as_uri())
+    h = h.replace("</style>", CSS + "</style>")
+    a = h.index('<div id="chip">'); b = h.index("</body>")
+    return (h[:a] + '<div class="t" style="left:0;right:0;text-align:center;top:70px;font-size:150px">The sea<br><span class="y">split</span></div>'
+            '<div class="chip">PROPHET MUSA (AS)</div>' + h[b:])
+
+
+def ur_three():
+    h = ibrahim_fire_ur()
+    start = h.index('<div class="t u"'); end = h.index('</div>', start) + 6
+    return h[:start] + ('<div class="t u" dir="rtl" style="left:0;right:0;text-align:center;top:60px;font-size:130px">'
+                        'زندہ <span class="b">آگ میں</span></div>') + h[end:]
+
+
+FINAL = {"final-yusuf": lambda: three(yusuf_well, 'Down the<br><span class="y">well</span>', top=70, size=150),
+         "final-musa": musa_old_bold,
+         "final-ibrahim": lambda: three(ibrahim_fire, 'Thrown in<br><span class="y">alive</span>', top=60, size=150),
+         "final-ibrahim-ur": ur_three}
+
 THUMBS = {"ibrahim-ur-fire": ibrahim_fire_ur, "yusuf-a-well": yusuf_well, "yusuf-b-dream": yusuf_dream, "yusuf-c-split": yusuf_split,
           "musa-a-sea": musa_sea, "musa-b-pharaoh": musa_pharaoh, "musa-c-basket": musa_basket,
           "ibrahim-a-fire": ibrahim_fire, "ibrahim-b-idols": ibrahim_idols, "ibrahim-c-kaaba": ibrahim_kaaba}
 
 if __name__ == "__main__":
     OUT.mkdir(exist_ok=True)
-    for k, fn in THUMBS.items():
+    for k, fn in {**THUMBS, **FINAL}.items():
         h = OUT / f"{k}.html"
         h.write_text(fn(), encoding="utf-8")
         subprocess.run(["node", str(ROOT / "tools/screenshot.js"), str(h), str(OUT / f"{k}.jpg")], check=True)
