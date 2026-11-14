@@ -110,3 +110,54 @@ so it is a new work, not a re-upload.)
 4,000 watch hours ≈ one 25-min film with 32,000 views watched for 30% (about 7.5 min each).
 Islam With Idriss, 60K subscribers, got 1.1M views on its Musa film. **One film that catches on in
 search clears the hours on its own;** a library of 20+ films makes that very likely.
+
+---
+
+## Part 2: the wider field (111 more story channels)
+
+20 more searches in English and Urdu/Hindi found 264 channels; 111 are story channels (not kids'
+cartoons, recitation or lectures). Views below are each channel's typical (median) recent upload.
+
+### The fastest-growing corner: Urdu/Hindi long films
+Small channels, huge views per video:
+
+| Channel | Subs | Typical recent video | Typical length | Best recent |
+|---|---|---|---|---|
+| Deen E Taufiq | 43K | **1.8M** | 35 min | Hazrat Muhammad ﷺ Aur Budhi Aurat Ki Kahani (4.1M, 47 min) |
+| Stories By Quran | 18K | **479K** | 28 min | Hazrat Musa and Firon, Full Movie in Urdu (1.9M, 56 min) |
+| Qur'anic Faith History | 12K | **210K** | 36 min | Lut AS, Urdu Islamic Movie (463K, 41 min) |
+| Dastaan | 91K | **254K** | 14 min | Ibrahim (A.S) Series EP 5 (1.2M) |
+| Imaan Verse | 221K | **1.1M** | 15 min | Hazrat Yunus AS Machli Ke Pait Se (2.3M) |
+| Urdu – Stories of the Prophets | 921K | **1.3M** | 11 min | Prophet Muhammad (SAW) Part 1 (5.9M) |
+| Islam Studio 9 | 542K | 213K | 15 min | Hazrat Musa (As) Ka Waqia, all life events (12M, 131 min) |
+| Israr Voice | 58K | 83K | 45 min | The Incredible Life Story of Khadijah (857K) |
+
+Common to all: Urdu/Hindi narration, titles in Roman Urdu with the prophet's name first
+("Hazrat Musa AS Ka Waqia | Full Movie in Urdu"), 25–60 min, and "Full Movie", "Complete", "Series EP".
+
+### New English story channels like ours are mostly not being found
+| Channel | Subs | Typical recent video |
+|---|---|---|
+| Islamic Stories Hub ("ILYAS – The Movie (2026)") | 5.4K | 274 |
+| Islamic Tales TV ("The Story of the Prophet Ibrahim (AS), Animated Film", 72 min) | 143 | 186 |
+| Noor Stories, DeenQasas, Noor Tales, Hikmah, Islamic Story TV | 5–5.3K | 12–213 |
+
+English long-form prophet stories are crowded by the big early channels; most new English
+channels sit in the hundreds, as our Yusuf film (17 views) does so far.
+
+### Two more formats that work
+- **Numbered series:** Dastaan's "Ibrahim (A.S) Series EP 5/6/7" each got 840K–1.2M. Viewers come back
+  for the next episode, and each episode is found in search.
+- **Very long "all life events" films:** Islam Studio 9's 131-min Musa film has 12M views; Hineni's
+  128-min "Complete Story of Elijah" 302K on a 30K channel.
+
+## What this adds to the plan
+1. **Test Urdu long films.** Our Urdu ant Short did worse than the English one (270 vs 1,467), but
+   that was Shorts. In long films the Urdu/Hindi audience is where small channels are growing fastest.
+   The cheapest test: an Urdu version of the Musa film (same scenes, new Urdu narration, Urdu
+   subtitles burned in or removed, an Urdu title such as
+   "Hazrat Musa AS Aur Firaun Ka Mukammal Waqia | Full Movie in Urdu"). If it beats the English one
+   in its first two weeks, make every film in both languages.
+2. **Try the numbered-series format** for one long story (e.g. Ibrahim (AS) in 5–6 episodes of
+   12–15 min), alongside the complete film.
+3. **Keep English**, but expect it to grow through search slowly; Shorts are what reach English viewers now.
