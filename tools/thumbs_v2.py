@@ -175,10 +175,14 @@ def musa_basket():
 
 
 # ---------------- Ibrahim ----------------
-def flames(cx, base, w, h, n, seed):
+HOT = ["#d81e05", "#ff6a00", "#ffb000", "#fff0a0"]
+COOL = ["#1f7ae0", "#4fb8ff", "#a8e6ff", "#ffffff"]
+
+
+def flames(cx, base, w, h, n, seed, pal=HOT):
     rnd = random.Random(seed)
     out = []
-    for layer, col in [(1.0, "#d81e05"), (0.78, "#ff6a00"), (0.55, "#ffb000"), (0.32, "#fff0a0")]:
+    for layer, col in zip([1.0, 0.78, 0.55, 0.32], pal):
         for i in range(n):
             x = cx - w/2 + (i + 0.5) * w / n + rnd.uniform(-12, 12)
             fh = h * layer * rnd.uniform(0.6, 1.0)
@@ -189,14 +193,13 @@ def flames(cx, base, w, h, n, seed):
 
 
 def ibrahim_fire():
-    defs = ('<defs><radialGradient id="c" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#ffffff"/>'
-            '<stop offset="0.45" stop-color="#bdf1ff"/><stop offset="1" stop-color="rgba(120,220,255,0)"/></radialGradient></defs>')
-    flowers = "".join(f'<g transform="translate({x},{y})"><circle r="15" fill="{c}" stroke="#000" stroke-width="4"/>'
-                      f'<circle r="6" fill="#ffd21f"/></g>' for x, y, c in
-                      [(560, 640, "#ff7ab8"), (600, 670, "#ffffff"), (650, 650, "#ff7ab8"), (700, 672, "#ffffff"), (735, 640, "#ff7ab8")])
+    """The fire turns cool: hot flames all round, and in the middle the same flames turn icy blue
+    (Al-Anbiya 21:69, "be coolness and safety"). Nothing else is drawn."""
+    defs = ('<defs><radialGradient id="c" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="rgba(255,255,255,0.95)"/>'
+            '<stop offset="0.5" stop-color="rgba(150,225,255,0.6)"/><stop offset="1" stop-color="rgba(120,220,255,0)"/></radialGradient></defs>')
     svg = (defs + '<rect width="1280" height="720" fill="#2a0600"/>' + flames(640, 720, 1400, 700, 16, 4) +
-           '<circle cx="645" cy="560" r="250" fill="url(#c)"/>'
-           '<path d="M 500 720 Q 520 650 645 640 Q 770 650 790 720 Z" fill="#3fbf5a" stroke="#000" stroke-width="8"/>' + flowers)
+           '<ellipse cx="640" cy="560" rx="330" ry="300" fill="url(#c)"/>' +
+           flames(640, 720, 420, 470, 5, 8, COOL))
     text = ('<div class="t" style="left:0;right:0;text-align:center;top:95px;font-size:118px">Thrown into fire…<br>'
             '<span class="b">it became cool</span></div>')
     return page(svg, text, "PROPHET IBRAHIM (AS)")
