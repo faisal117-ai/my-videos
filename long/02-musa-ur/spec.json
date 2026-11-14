@@ -1,0 +1,959 @@
+{
+  "accent": "#f2b04a",
+  "gap": 0.7,
+  "scene_module": "scenes_musa",
+  "chapters": [
+    {
+      "title": null,
+      "scene": "hook",
+      "cards": [
+        {
+          "line": 1,
+          "q": "26:61",
+          "w": [
+            7,
+            8
+          ],
+          "en": "Indeed, we are to be overtaken",
+          "ur": "ہم تو پکڑے گئے"
+        },
+        {
+          "line": 2,
+          "q": "26:62",
+          "w": [
+            1,
+            6
+          ],
+          "en": "No! Indeed, with me is my Lord; He will guide me",
+          "ur": "ہرگز نہیں میرے ساتھ میرا رب ہے وہ ضرور میری رہنمائی فرمائے گا"
+        },
+        {
+          "line": 5,
+          "title": "دریا سے سمندر تک",
+          "sub": "حضرت موسیٰ علیہ السلام کا مکمل قصہ"
+        }
+      ]
+    },
+    {
+      "title": "مصر کا ظالم",
+      "scene": "palace",
+      "cards": [
+        {
+          "line": 2,
+          "q": "28:4",
+          "w": [
+            1,
+            5
+          ],
+          "en": "Indeed, Pharaoh exalted himself in the land",
+          "ur": "فرعون نے زمین میں سرکشی کی"
+        },
+        {
+          "line": 4,
+          "q": "28:5",
+          "w": [
+            1,
+            12
+          ],
+          "en": "And We wanted to confer favor upon those who were oppressed in the land and make them leaders and make them inheritors",
+          "ur": "اور ہم یہ ارادہ رکھتے تھے کہ مہربانی کریں ان لوگوں پر جو زمین میں ذلیل کر کے رکھے گئے تھے اور انہیں پیشوا بنا دیں اور انہی کو وارث بنائیں"
+        }
+      ]
+    },
+    {
+      "title": "دریا پر ٹوکری",
+      "scene": "river",
+      "cards": [
+        {
+          "line": 1,
+          "q": "28:7",
+          "w": [
+            7,
+            22
+          ],
+          "en": "when you fear for him, cast him into the river and do not fear and do not grieve. Indeed, We will return him to you and will make him [one] of the messengers",
+          "ur": "جب تجھے اُس کی جان کا خطرہ ہو تو اسے دریا میں ڈال دے اور کچھ خوف اور غم نہ کر، ہم اسے تیرے ہی پاس واپس لے آئیں گے اور اس کو پیغمبروں میں شامل کریں گے"
+        },
+        {
+          "line": 4,
+          "q": "28:9",
+          "w": [
+            4,
+            9
+          ],
+          "en": "a comfort of the eye for me and for you. Do not kill him",
+          "ur": "یہ میرے اور تیرے لیے آنکھوں کی ٹھنڈک ہے، اسے قتل نہ کرو"
+        },
+        {
+          "line": 7,
+          "q": "28:13",
+          "w": [
+            9,
+            13
+          ],
+          "en": "and that she would know that the promise of Allah is true",
+          "ur": "اور جان لے کہ اللہ کا وعدہ سچا تھا"
+        }
+      ]
+    },
+    {
+      "title": "شہر میں ایک گھونسا",
+      "scene": "city",
+      "cards": [
+        {
+          "line": 0,
+          "q": "28:14",
+          "w": [
+            5,
+            7
+          ],
+          "en": "We bestowed upon him judgement and knowledge",
+          "ur": "ہم نے اسے حکم اور علم عطا کیا"
+        },
+        {
+          "line": 4,
+          "q": "28:16",
+          "w": [
+            2,
+            8
+          ],
+          "en": "My Lord, indeed I have wronged myself, so forgive me,\" and He forgave him",
+          "ur": "اے میرے رب، مَیں نے اپنے نفس پر بڑا ظلم کر ڈالا، میری مغفرت فرما دے"
+        },
+        {
+          "line": 5,
+          "q": "28:20",
+          "w": [
+            8,
+            14
+          ],
+          "en": "O Moses, indeed the eminent ones are conferring over you [intending] to kill you, so leave [the city]",
+          "ur": "موسیٰؑ، سرداروں میں تیرے قتل کے مشورے ہو رہے ہیں، یہاں سے نکل جا"
+        },
+        {
+          "line": 6,
+          "q": "28:21",
+          "w": [
+            6,
+            10
+          ],
+          "en": "My Lord, save me from the wrongdoing people",
+          "ur": "اے میرے رب، مجھے ظالموں سے بچا"
+        }
+      ]
+    },
+    {
+      "title": "مدین کا کنواں",
+      "scene": "madyan",
+      "cards": [
+        {
+          "line": 4,
+          "q": "28:24",
+          "w": [
+            8,
+            15
+          ],
+          "en": "My Lord, indeed I am, for whatever good You would send down to me, in need",
+          "ur": "پروردگار، جو خیر بھی تو مجھ پر نازل کر دے میں اس کا محتاج ہوں"
+        },
+        {
+          "line": 5,
+          "q": "28:25",
+          "w": [
+            21,
+            26
+          ],
+          "en": "Fear not. You have escaped from the wrongdoing people",
+          "ur": "کچھ خوف نہ کرو، اب تم ظالموں سے بچ نکلے ہو"
+        }
+      ]
+    },
+    {
+      "title": "پہاڑ پر آگ",
+      "scene": "tur",
+      "cards": [
+        {
+          "line": 1,
+          "q": "28:29",
+          "w": [
+            7,
+            11
+          ],
+          "en": "he perceived from the direction of the mount a fire",
+          "ur": "طُور کی جانب اس کو ایک آگ نظر آئی"
+        },
+        {
+          "line": 3,
+          "q": "20:12",
+          "w": [
+            1,
+            9
+          ],
+          "en": "Indeed, I am your Lord, so remove your sandals. Indeed, you are in the sacred valley of Tuwa",
+          "ur": "میں ہی تیرا رب ہوں، جوتیاں اتار دے تو وادی مقدس طویٰ میں ہے"
+        },
+        {
+          "line": 4,
+          "q": "20:14",
+          "w": [
+            1,
+            11
+          ],
+          "en": "Indeed, I am Allah. There is no deity except Me, so worship Me and establish prayer for My remembrance",
+          "ur": "میں ہی اللہ ہوں، میرے سوا کوئی خدا نہیں ہے، پس تو میری بندگی کر اور میری یاد کے لیے نماز قائم کر"
+        },
+        {
+          "line": 6,
+          "q": "20:20",
+          "w": [
+            1,
+            5
+          ],
+          "en": "So he threw it down, and thereupon it was a snake, moving swiftly",
+          "ur": "اس نے پھینک دیا اور یکایک وہ ایک سانپ تھی جو دَوڑ رہا تھا"
+        },
+        {
+          "line": 8,
+          "q": "20:24",
+          "w": [
+            1,
+            5
+          ],
+          "en": "Go to Pharaoh. Indeed, he has transgressed",
+          "ur": "اب تو فرعون کے پاس جا، وہ سرکش ہو گیا ہے"
+        }
+      ]
+    },
+    {
+      "title": "میرا سینہ کھول دے",
+      "scene": "tur2",
+      "cards": [
+        {
+          "line": 2,
+          "q": "20:25",
+          "w": [
+            2,
+            5
+          ],
+          "en": "My Lord, expand for me my breast",
+          "ur": "پروردگار، میرا سینہ کھول دے"
+        },
+        {
+          "line": 3,
+          "q": "20:30",
+          "w": [
+            1,
+            2
+          ],
+          "en": "Aaron, my brother",
+          "ur": "ہارونؑ، جو میرا بھائی ہے"
+        },
+        {
+          "line": 5,
+          "q": "20:44",
+          "w": [
+            1,
+            8
+          ],
+          "en": "And speak to him with gentle speech that perhaps he may be reminded or fear [Allah]",
+          "ur": "اس سے نرمی کے ساتھ بات کرنا، شاید کہ وہ نصیحت قبول کرے یا ڈر جائے"
+        },
+        {
+          "line": 7,
+          "q": "20:46",
+          "w": [
+            2,
+            7
+          ],
+          "en": "Fear not. Indeed, I am with you both; I hear and I see",
+          "ur": "ڈرو مت، میں تمہارے ساتھ ہوں، سب کچھ سُن رہا ہوں اور دیکھ رہا ہوں"
+        }
+      ]
+    },
+    {
+      "title": "فرعون کے دربار میں",
+      "scene": "throne",
+      "cards": [
+        {
+          "line": 1,
+          "q": "20:47",
+          "w": [
+            3,
+            11
+          ],
+          "en": "Indeed, we are messengers of your Lord, so send with us the Children of Israel and do not torment them",
+          "ur": "ہم تیرے رب کے فرستادے ہیں، بنی اسرائیل کو ہمارے ساتھ جانے کے لیے چھوڑ دے اور ان کو تکلیف نہ دے"
+        },
+        {
+          "line": 4,
+          "q": "79:24",
+          "w": [
+            2,
+            4
+          ],
+          "en": "I am your most exalted lord",
+          "ur": "میں تمہارا سب سے بڑا رب ہوں"
+        }
+      ]
+    },
+    {
+      "title": "جادوگر",
+      "scene": "arena",
+      "cards": [
+        {
+          "line": 2,
+          "q": "20:66",
+          "w": [
+            4,
+            12
+          ],
+          "en": "And suddenly their ropes and staffs seemed to him from their magic that they were moving",
+          "ur": "یکایک اُن کی رسّیاں اور اُن کی لاٹھیاں اُن کے جادو کے زور سے موسیٰؑ کو دَوڑتی ہوئی محسوس ہونے لگیں"
+        },
+        {
+          "line": 3,
+          "q": "20:68",
+          "w": [
+            2,
+            6
+          ],
+          "en": "Fear not. Indeed, it is you who are superior",
+          "ur": "مت ڈر، تو ہی غالب رہے گا"
+        },
+        {
+          "line": 4,
+          "q": "7:117",
+          "w": [
+            7,
+            11
+          ],
+          "en": "and at once it devoured what they were falsifying",
+          "ur": "وہ ان کے اس جھوٹے طلسم کو نگلتا چلا گیا"
+        },
+        {
+          "line": 6,
+          "q": "20:70",
+          "w": [
+            1,
+            8
+          ],
+          "en": "So the magicians fell down in prostration. They said, \"We have believed in the Lord of Aaron and Moses",
+          "ur": "سارے جادوگر سجدے میں گرا دیے گئے اور پکار اٹھے مان لیا ہم نے ہارونؑ اور موسیٰؑ کے رب کو"
+        },
+        {
+          "line": 8,
+          "q": "20:72",
+          "w": [
+            2,
+            10
+          ],
+          "en": "Never will we prefer you over what has come to us of clear proofs and [over] He who created us",
+          "ur": "یہ ہرگز نہیں ہو سکتا کہ ہم روشن نشانیاں سامنے آ جانے کے بعد بھی (صداقت پر) تجھے ترجیح دیں"
+        }
+      ]
+    },
+    {
+      "title": "نشانیاں",
+      "scene": "plagues",
+      "cards": [
+        {
+          "line": 1,
+          "q": "7:133",
+          "w": [
+            1,
+            9
+          ],
+          "en": "So We sent upon them the flood and locusts and lice and frogs and blood as distinct signs",
+          "ur": "آخر کار ہم نے ان پر طوفان بھیجا، ٹڈی دل چھوڑے، سرسریاں پھیلائیں، مینڈک نکالے، اور خو ن برسایا"
+        },
+        {
+          "line": 5,
+          "q": "26:52",
+          "w": [
+            5,
+            8
+          ],
+          "en": "Travel by night with My servants; indeed, you will be pursued",
+          "ur": "راتوں رات میرے بندوں کو لے کر نکل جاؤ، تمہارا پیچھا کیا جائے گا"
+        }
+      ]
+    },
+    {
+      "title": "سمندر",
+      "scene": "parting",
+      "cards": [
+        {
+          "line": 4,
+          "q": "26:63",
+          "w": [
+            4,
+            13
+          ],
+          "en": "Strike with your staff the sea,\" and it parted, and each portion was like a great towering mountain",
+          "ur": "مار اپنا عصا سمندر پر یکایک سمندر پھَٹ گیا اور اس کا ہر ٹکڑا ایک عظیم الشان پہاڑ کی طرح ہو گیا"
+        },
+        {
+          "line": 5,
+          "q": "20:77",
+          "w": [
+            8,
+            13
+          ],
+          "en": "strike for them a dry path through the sea",
+          "ur": "اُن کے لیے سمندر میں سے سُوکھی سڑک بنا لے"
+        }
+      ]
+    },
+    {
+      "title": "اب؟",
+      "scene": "drown",
+      "cards": [
+        {
+          "line": 1,
+          "q": "26:65",
+          "w": [
+            1,
+            5
+          ],
+          "en": "And We saved Moses and those with him, all together",
+          "ur": "موسیٰؑ اور اُن سب لوگوں کو جو اس کے ساتھ تھے، ہم نے بچا لیا"
+        },
+        {
+          "line": 3,
+          "q": "10:90",
+          "w": [
+            15,
+            27
+          ],
+          "en": "I believe that there is no deity except that in whom the Children of Israel believe, and I am of the Muslims",
+          "ur": "میں نے مان لیا کہ خداوند حقیقی اُس کے سوا کوئی نہیں ہے جس پر بنی اسرائیل ایمان لائے، اور میں بھی سر اطاعت جھکا دینے والوں میں سے ہوں"
+        },
+        {
+          "line": 4,
+          "q": "10:91",
+          "w": [
+            1,
+            7
+          ],
+          "en": "Now? And you had disobeyed [Him] before and were of the corrupters",
+          "ur": "اب ایمان لاتا ہے! حالانکہ اِس سے پہلے تک تو نافرمانی کرتا رہا اور فساد برپا کرنے والوں میں سے تھا"
+        },
+        {
+          "line": 5,
+          "q": "10:92",
+          "w": [
+            1,
+            7
+          ],
+          "en": "So today We will save you in body that you may be to those who succeed you a sign",
+          "ur": "اب تو ہم صرف تیری لاش ہی کو بچائیں گے تاکہ تو بعد کی نسلوں کے لیے نشان عبرت بنے"
+        }
+      ]
+    },
+    {
+      "title": "سبق",
+      "scene": "lesson2",
+      "cards": [
+        {
+          "line": 3,
+          "q": "26:62",
+          "w": [
+            1,
+            6
+          ],
+          "en": "No! Indeed, with me is my Lord; He will guide me",
+          "ur": "ہرگز نہیں میرے ساتھ میرا رب ہے وہ ضرور میری رہنمائی فرمائے گا"
+        },
+        {
+          "line": 5,
+          "end": true
+        }
+      ]
+    }
+  ],
+  "sound": [
+    {
+      "ch": 0,
+      "gain": -12,
+      "src": "../../shorts/03-cave/assets/sfx/03b5f68efefc.mp3",
+      "prompt": "lib",
+      "dur": 3,
+      "fade_in": 0.03,
+      "fade_out": 1
+    },
+    {
+      "ch": 0,
+      "gain": -13,
+      "prompt": "the sea at night, waves rolling onto a sandy shore, wind, no music",
+      "until_end": true,
+      "fade_in": 0.3
+    },
+    {
+      "ch": 0,
+      "gain": -15,
+      "prompt": "a great ancient army approaching in the distance, horses galloping, chariots rumbling, war cries, no music",
+      "until_end": true,
+      "fade_in": 2
+    },
+    {
+      "ch": 0,
+      "gain": -16,
+      "src": "../../shorts/03-cave/assets/sfx/1a9908bb62c8.mp3",
+      "prompt": "lib",
+      "line": 4,
+      "offset": -0.5,
+      "until_end": true,
+      "fade_in": 1.5
+    },
+    {
+      "ch": 1,
+      "gain": -15,
+      "src": "../01-yusuf/assets/sfx/59352a0d56de.mp3",
+      "prompt": "lib",
+      "until_end": true
+    },
+    {
+      "ch": 1,
+      "gain": -17,
+      "src": "../../shorts/06-ant/assets/sfx/71389a05d7ab.mp3",
+      "prompt": "lib",
+      "until": [
+        1,
+        4
+      ]
+    },
+    {
+      "ch": 1,
+      "gain": -12,
+      "src": "../../shorts/06-ant/assets/sfx/2ed870b01b8e.mp3",
+      "prompt": "lib",
+      "line": 3,
+      "dur": 4,
+      "fade_in": 0,
+      "fade_out": 1.5
+    },
+    {
+      "ch": 1,
+      "gain": -17,
+      "src": "../01-yusuf/assets/sfx/1830ee4b40ad.mp3",
+      "prompt": "lib",
+      "line": 3,
+      "until_end": true,
+      "fade_in": 2
+    },
+    {
+      "ch": 2,
+      "gain": -14,
+      "src": "../../shorts/10-river/assets/sfx/c3ed322d44ac.mp3",
+      "prompt": "lib",
+      "until": [
+        2,
+        5
+      ]
+    },
+    {
+      "ch": 2,
+      "gain": -16,
+      "src": "../../shorts/05-trunk/assets/sfx/562217fe60ac.mp3",
+      "prompt": "lib",
+      "line": 1,
+      "until": [
+        2,
+        5
+      ],
+      "fade_in": 2
+    },
+    {
+      "ch": 2,
+      "gain": -15,
+      "src": "../01-yusuf/assets/sfx/4d78b7e38eae.mp3",
+      "prompt": "lib",
+      "line": 3,
+      "until": [
+        2,
+        5
+      ]
+    },
+    {
+      "ch": 2,
+      "gain": -15,
+      "src": "../../shorts/05-trunk/assets/sfx/beb74bb8b482.mp3",
+      "prompt": "lib",
+      "line": 5,
+      "until_end": true
+    },
+    {
+      "ch": 2,
+      "gain": -15,
+      "src": "../../shorts/04-ease/assets/sfx/ed4334fb2fbf.mp3",
+      "prompt": "lib",
+      "line": 7,
+      "offset": -0.5,
+      "until_end": true,
+      "fade_in": 1.5
+    },
+    {
+      "ch": 3,
+      "gain": -14,
+      "prompt": "a quiet ancient city street at night, distant dogs barking, wind between buildings, no music",
+      "until": [
+        3,
+        6
+      ]
+    },
+    {
+      "ch": 3,
+      "gain": -10,
+      "prompt": "two men scuffling and struggling, grunts, feet scraping on dirt, then a heavy body falling to the ground",
+      "line": 1,
+      "offset": 1.0,
+      "dur": 9,
+      "fade_in": 0.2,
+      "fade_out": 0.8
+    },
+    {
+      "ch": 3,
+      "gain": -11,
+      "prompt": "footsteps of a man running fast toward us on a dirt street",
+      "line": 5,
+      "dur": 5,
+      "fade_in": 0.1,
+      "fade_out": 0.8
+    },
+    {
+      "ch": 3,
+      "gain": -14,
+      "src": "../01-yusuf/assets/sfx/59352a0d56de.mp3",
+      "prompt": "lib",
+      "line": 6,
+      "until_end": true
+    },
+    {
+      "ch": 3,
+      "gain": -17,
+      "src": "../01-yusuf/assets/sfx/1830ee4b40ad.mp3",
+      "prompt": "lib",
+      "line": 4,
+      "until_end": true,
+      "fade_in": 2
+    },
+    {
+      "ch": 4,
+      "gain": -15,
+      "src": "../01-yusuf/assets/sfx/59352a0d56de.mp3",
+      "prompt": "lib",
+      "until": [
+        4,
+        1
+      ]
+    },
+    {
+      "ch": 4,
+      "gain": -13,
+      "prompt": "sheep bleating and a flock moving around a well in the desert, water splashing into a trough, shepherds murmuring, no music",
+      "line": 1,
+      "until": [
+        4,
+        4
+      ]
+    },
+    {
+      "ch": 4,
+      "gain": -16,
+      "src": "../../shorts/04-ease/assets/sfx/61e97fb787a5.mp3",
+      "prompt": "lib",
+      "line": 3,
+      "until_end": true
+    },
+    {
+      "ch": 4,
+      "gain": -15,
+      "src": "../../shorts/06-ant/assets/sfx/cabf6e6577de.mp3",
+      "prompt": "lib",
+      "line": 4,
+      "offset": -0.3,
+      "until_end": true,
+      "fade_in": 2
+    },
+    {
+      "ch": 5,
+      "gain": -13,
+      "prompt": "cold desert night on a mountain, strong wind, a fire crackling and roaring in the distance, no music",
+      "until_end": true
+    },
+    {
+      "ch": 5,
+      "gain": -16,
+      "src": "../../shorts/03-cave/assets/sfx/1a9908bb62c8.mp3",
+      "prompt": "lib",
+      "line": 3,
+      "offset": -0.5,
+      "until": [
+        5,
+        6
+      ],
+      "fade_in": 2
+    },
+    {
+      "ch": 5,
+      "gain": -9,
+      "prompt": "a large snake hissing and slithering fast over dry ground, close",
+      "line": 6,
+      "offset": 2.4,
+      "dur": 5,
+      "fade_in": 0.1,
+      "fade_out": 1
+    },
+    {
+      "ch": 5,
+      "gain": -12,
+      "src": "../../shorts/03-cave/assets/sfx/03b5f68efefc.mp3",
+      "prompt": "lib",
+      "line": 8,
+      "dur": 3,
+      "fade_in": 0.03,
+      "fade_out": 1.2
+    },
+    {
+      "ch": 6,
+      "gain": -14,
+      "src": "../../shorts/04-ease/assets/sfx/61e97fb787a5.mp3",
+      "prompt": "lib",
+      "until_end": true
+    },
+    {
+      "ch": 6,
+      "gain": -15,
+      "src": "../../shorts/04-ease/assets/sfx/ed4334fb2fbf.mp3",
+      "prompt": "lib",
+      "line": 2,
+      "offset": -0.4,
+      "until_end": true,
+      "fade_in": 2
+    },
+    {
+      "ch": 7,
+      "gain": -13,
+      "src": "../01-yusuf/assets/sfx/992f69b875be.mp3",
+      "prompt": "lib",
+      "until_end": true
+    },
+    {
+      "ch": 7,
+      "gain": -12,
+      "src": "../01-yusuf/assets/sfx/b026f60a103d.mp3",
+      "prompt": "lib",
+      "dur": 4,
+      "fade_in": 0,
+      "fade_out": 1
+    },
+    {
+      "ch": 7,
+      "gain": -11,
+      "src": "../../shorts/06-ant/assets/sfx/2ed870b01b8e.mp3",
+      "prompt": "lib",
+      "line": 4,
+      "dur": 4,
+      "fade_in": 0,
+      "fade_out": 1.5
+    },
+    {
+      "ch": 8,
+      "gain": -14,
+      "prompt": "a huge crowd in an ancient open-air arena, murmuring and cheering, festival atmosphere, no music",
+      "until_end": true
+    },
+    {
+      "ch": 8,
+      "gain": -12,
+      "prompt": "a large snake hissing and slithering fast over dry ground, close",
+      "line": 2,
+      "dur": 6,
+      "fade_in": 0.2,
+      "fade_out": 1.5
+    },
+    {
+      "ch": 8,
+      "gain": -10,
+      "src": "../../shorts/03-cave/assets/sfx/03b5f68efefc.mp3",
+      "prompt": "lib",
+      "line": 4,
+      "offset": 0.3,
+      "dur": 3,
+      "fade_in": 0.03,
+      "fade_out": 1.2
+    },
+    {
+      "ch": 8,
+      "gain": -11,
+      "src": "../../shorts/03-cave/assets/sfx/f73090a5a6a6.mp3",
+      "prompt": "lib",
+      "line": 6,
+      "dur": 3,
+      "fade_in": 0,
+      "fade_out": 1
+    },
+    {
+      "ch": 8,
+      "gain": -16,
+      "src": "../../shorts/03-cave/assets/sfx/1a9908bb62c8.mp3",
+      "prompt": "lib",
+      "line": 5,
+      "until": [
+        8,
+        7
+      ],
+      "fade_in": 2
+    },
+    {
+      "ch": 8,
+      "gain": -16,
+      "src": "../../shorts/06-ant/assets/sfx/cabf6e6577de.mp3",
+      "prompt": "lib",
+      "line": 8,
+      "until_end": true,
+      "fade_in": 2
+    },
+    {
+      "ch": 9,
+      "gain": -14,
+      "src": "../../shorts/04-ease/assets/sfx/3835e3c98c45.mp3",
+      "prompt": "lib",
+      "line": 1,
+      "dur": 3.5,
+      "fade_in": 0.2,
+      "fade_out": 0.8
+    },
+    {
+      "ch": 9,
+      "gain": -12,
+      "prompt": "a dense swarm of locusts buzzing loudly overhead",
+      "line": 1,
+      "offset": 3.0,
+      "dur": 4,
+      "fade_in": 0.2,
+      "fade_out": 0.8
+    },
+    {
+      "ch": 9,
+      "gain": -12,
+      "prompt": "many frogs croaking loudly by water at night",
+      "line": 1,
+      "offset": 6.5,
+      "dur": 3,
+      "fade_in": 0.2,
+      "fade_out": 0.8
+    },
+    {
+      "ch": 9,
+      "gain": -12,
+      "src": "../../shorts/04-ease/assets/sfx/13fce06b48a0.mp3",
+      "prompt": "lib",
+      "line": 2,
+      "dur": 4,
+      "fade_in": 0,
+      "fade_out": 1.5
+    },
+    {
+      "ch": 9,
+      "gain": -15,
+      "src": "../../shorts/05-trunk/assets/sfx/beb74bb8b482.mp3",
+      "prompt": "lib",
+      "line": 5,
+      "until_end": true
+    },
+    {
+      "ch": 9,
+      "gain": -17,
+      "src": "../../shorts/03-cave/assets/sfx/1a9908bb62c8.mp3",
+      "prompt": "lib",
+      "line": 4,
+      "until_end": true,
+      "fade_in": 2
+    },
+    {
+      "ch": 10,
+      "gain": -13,
+      "prompt": "the sea at night, waves rolling onto a sandy shore, wind, no music",
+      "until_end": true
+    },
+    {
+      "ch": 10,
+      "gain": -14,
+      "prompt": "a great ancient army approaching in the distance, horses galloping, chariots rumbling, war cries, no music",
+      "line": 1,
+      "until_end": true,
+      "fade_in": 2
+    },
+    {
+      "ch": 10,
+      "gain": -8,
+      "prompt": "a deep rumble as a sea splits apart, enormous walls of water rising and rushing, roaring wind",
+      "line": 4,
+      "offset": 2.6,
+      "dur": 8,
+      "fade_in": 0.3,
+      "fade_out": 2
+    },
+    {
+      "ch": 10,
+      "gain": -14,
+      "src": "../../shorts/04-ease/assets/sfx/ed4334fb2fbf.mp3",
+      "prompt": "lib",
+      "line": 4,
+      "offset": 3.5,
+      "until_end": true,
+      "fade_in": 2
+    },
+    {
+      "ch": 11,
+      "gain": -14,
+      "prompt": "a great ancient army approaching in the distance, horses galloping, chariots rumbling, war cries, no music",
+      "until": [
+        11,
+        2
+      ]
+    },
+    {
+      "ch": 11,
+      "gain": -6,
+      "prompt": "enormous walls of sea water collapsing and crashing together, a huge roaring wave",
+      "line": 1,
+      "offset": 1.8,
+      "dur": 6,
+      "fade_in": 0.1,
+      "fade_out": 2
+    },
+    {
+      "ch": 11,
+      "gain": -14,
+      "prompt": "the sea at night, waves rolling onto a sandy shore, wind, no music",
+      "line": 2,
+      "until_end": true
+    },
+    {
+      "ch": 11,
+      "gain": -16,
+      "src": "../01-yusuf/assets/sfx/1830ee4b40ad.mp3",
+      "prompt": "lib",
+      "line": 3,
+      "until_end": true,
+      "fade_in": 2
+    },
+    {
+      "ch": 12,
+      "gain": -16,
+      "prompt": "the sea at night, waves rolling onto a sandy shore, wind, no music",
+      "until_end": true
+    },
+    {
+      "ch": 12,
+      "gain": -14,
+      "src": "../../shorts/04-ease/assets/sfx/ed4334fb2fbf.mp3",
+      "prompt": "lib",
+      "until_end": true,
+      "fade_in": 2
+    }
+  ],
+  "lang": "ur"
+}

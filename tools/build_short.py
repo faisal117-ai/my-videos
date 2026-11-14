@@ -1181,7 +1181,64 @@ def ayyub_scene(spec: dict, beats: list, total: float) -> tuple[str, str, str]:
     return css, markup, "\n    ".join(js)
 
 
-SCENES = {"ruins": ruins_scene, "sea": sea_scene, "river": river_scene, "birds": birds_scene, "ayyub": ayyub_scene}
+def drown_scene(spec: dict, beats: list, total: float) -> tuple[str, str, str]:
+    """Yunus 10:90–92: Pharaoh's army (faceless silhouettes with torches) in the dry path between
+    two walls of water; the walls crash shut; foam; then a calm sea at dawn. Musa (AS) is never shown."""
+    b = lambda key, default: beats[spec.get(key, default)]
+    crash, calm = b("crash_beat", 1), b("calm_beat", 3)
+    rnd = random.Random(131)
+    army = re.sub(r'fill="[^"]*"', "", "".join(soldier(rnd.uniform(380, 700), rnd.uniform(70, 95)) for _ in range(26)))
+    torch_pts = [(rnd.uniform(390, 690), rnd.uniform(1210, 1290)) for _ in range(14)]
+    torches = "".join(f'<div id="dt{k}" class="dtorch" style="left:{x:.0f}px;top:{y:.0f}px"></div>' for k, (x, y) in enumerate(torch_pts))
+    css = """
+    #dsky { position: absolute; inset: 0; background: linear-gradient(180deg, #0a0c18 0%, #1e2440 45%, #4a3a4a 60%, #2a2a3a 70%); }
+    #dpath { position: absolute; left: 330px; width: 420px; top: 1180px; bottom: 0; background: linear-gradient(180deg, #6a5038, #3a2a1c); }
+    #darmy { position: absolute; inset: 0; }
+    .dtorch { position: absolute; width: 16px; height: 16px; margin: -8px; border-radius: 50%;
+      background: radial-gradient(circle, #fff1c9 0%, #ffae4a 50%, rgba(255,140,40,0) 75%); box-shadow: 0 0 26px 10px rgba(255,150,60,0.35); }
+    .dwall { position: absolute; top: 900px; bottom: 0; width: 360px;
+      background: linear-gradient(180deg, #e8f4fb 0%, #9cc4de 3%, #3a6a94 14%, #163456 55%, #081a30 100%); box-shadow: 0 0 60px rgba(160,200,240,0.25); }
+    #dwl { left: 0; border-radius: 0 40px 0 0; } #dwr { right: 0; border-radius: 40px 0 0 0; }
+    #dfoam { position: absolute; inset: 0; opacity: 0;
+      background: radial-gradient(ellipse at 50% 70%, rgba(240,250,255,0.9), rgba(200,230,250,0.25) 45%, rgba(0,0,0,0) 75%); }
+    #dcalm { position: absolute; inset: 0; opacity: 0; background: linear-gradient(180deg, #1a2440 0%, #6a7a9a 50%, #c8a888 60%, #2a4a6a 62%, #0a2040 100%); }
+    .wv { position: absolute; left: 0; top: 0; width: 2160px; height: 1920px; }
+    #dsun { position: absolute; left: 440px; top: 1060px; width: 200px; height: 200px; border-radius: 50%; opacity: 0;
+      background: radial-gradient(circle, #fff3d6 0%, #ffd08a 40%, rgba(255,180,90,0) 72%); }
+"""
+    markup = f"""
+    <div id="drown" class="clip" data-start="0" data-duration="{total:.2f}">
+      <div id="dsky"></div><div id="dpath"></div>
+      <div id="darmy"><svg viewBox="0 0 1080 1920" style="position:absolute;inset:0;width:100%;height:100%"><g fill="#07050a" transform="translate(0,1330)">{army}</g></svg>{torches}</div>
+      <div id="dwl" class="dwall"></div><div id="dwr" class="dwall"></div>
+      <div id="dfoam"></div>
+      <div id="dcalm"></div><div id="dsun"></div>
+      {waves_svg("dc1", 1200, 14, "#2a4a6a")}{waves_svg("dc2", 1360, 18, "#1a3a5a")}
+    </div>"""
+    js = []
+    for k in range(len(torch_pts)):
+        js.append(loop(f"#dt{k}", "opacity: 0.65, scale: 0.9", "opacity: 1, scale: 1.1", 0.5 + (k % 4) * 0.08, total, (k % 5) * 0.05))
+    js.append(f'tl.fromTo("#darmy", {{y: 0, scale: 1}}, {{y: 40, scale: 1.06, duration: {crash["start"] + 2:.2f}, ease: "none", transformOrigin: "50% 70%"}}, 0);')
+    c0 = crash["start"] + crash["spoken"] * 0.55
+    js.append(f'tl.fromTo("#dwl", {{x: 0}}, {{x: 360, duration: 0.9, ease: "power2.in", immediateRender: false}}, {c0:.2f});')
+    js.append(f'tl.fromTo("#dwr", {{x: 0}}, {{x: -360, duration: 0.9, ease: "power2.in", immediateRender: false}}, {c0:.2f});')
+    js.append(fade("#darmy", 1, 0, c0 + 0.7, 0.3))
+    js.append(fade("#dwl", 1, 0, c0 + 1.0, 0.8))
+    js.append(fade("#dpath", 1, 0, c0 + 0.7, 0.3))
+    js.append(fade("#dwr", 1, 0, c0 + 1.0, 0.8))
+    js.append(fade("#dfoam", 0, 1, c0 + 0.7, 0.3))
+    js.append(fade("#dfoam", 1, 0.2, c0 + 1.2, 2.5))
+    for sel in ("#dc1", "#dc2"):
+        js.append(f'tl.set("{sel}", {{opacity: 0}}, 0);')
+        js.append(fade(sel, 0, 1, c0 + 0.9, 1.5))
+    js.append(f'tl.fromTo("#dc1", {{x: 0}}, {{x: -1080, duration: 14, ease: "none", repeat: {int(total / 14) + 1}}}, 0);')
+    js.append(f'tl.fromTo("#dc2", {{x: 0}}, {{x: -1080, duration: 10, ease: "none", repeat: {int(total / 10) + 1}}}, 0);')
+    js.append(fade("#dcalm", 0, 1, calm["start"], 2.0))
+    js.append(f'tl.fromTo("#dsun", {{opacity: 0, y: 100}}, {{opacity: 1, y: -80, duration: 5, ease: "sine.out", immediateRender: false}}, {calm["start"] + 0.5:.2f});')
+    return css, markup, "\n    ".join(js)
+
+
+SCENES = {"ruins": ruins_scene, "sea": sea_scene, "river": river_scene, "birds": birds_scene, "ayyub": ayyub_scene, "drown": drown_scene}
 
 
 def vo_len(spec: dict) -> float:

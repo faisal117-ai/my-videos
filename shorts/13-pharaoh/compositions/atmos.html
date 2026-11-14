@@ -1,0 +1,111 @@
+<template>
+  <style>
+    #atmos { position: absolute; inset: 0; overflow: hidden; }
+    #sky { position: absolute; inset: 0; background: linear-gradient(180deg, #07060c 0%, #0d0a12 55%, #160d0c 100%); }
+    #warm, #cool, #embers { position: absolute; inset: 0; }
+    #warm-g, #cool-g, #embers-g { position: absolute; inset: 0; }
+    #warm-b { position: absolute; left: -20%; right: -20%; bottom: -18%; height: 85%;
+      background: radial-gradient(ellipse at 50% 100%, rgba(255,170,60,0.95) 0%, rgba(230,90,30,0.55) 30%, rgba(120,30,20,0.25) 55%, rgba(0,0,0,0) 72%); }
+    #cool-g {
+      background: radial-gradient(ellipse at 50% 62%, rgba(215,236,255,0.55) 0%, rgba(120,170,220,0.22) 35%, rgba(0,0,0,0) 70%); }
+    .em { position: absolute; bottom: -20px; border-radius: 50%; background: #f2b04a;
+      box-shadow: 0 0 12px #f2b04a, 0 0 24px #f2b04a; }
+    #dsky { position: absolute; inset: 0; background: linear-gradient(180deg, #0a0c18 0%, #1e2440 45%, #4a3a4a 60%, #2a2a3a 70%); }
+    #dpath { position: absolute; left: 330px; width: 420px; top: 1180px; bottom: 0; background: linear-gradient(180deg, #6a5038, #3a2a1c); }
+    #darmy { position: absolute; inset: 0; }
+    .dtorch { position: absolute; width: 16px; height: 16px; margin: -8px; border-radius: 50%;
+      background: radial-gradient(circle, #fff1c9 0%, #ffae4a 50%, rgba(255,140,40,0) 75%); box-shadow: 0 0 26px 10px rgba(255,150,60,0.35); }
+    .dwall { position: absolute; top: 900px; bottom: 0; width: 360px;
+      background: linear-gradient(180deg, #e8f4fb 0%, #9cc4de 3%, #3a6a94 14%, #163456 55%, #081a30 100%); box-shadow: 0 0 60px rgba(160,200,240,0.25); }
+    #dwl { left: 0; border-radius: 0 40px 0 0; } #dwr { right: 0; border-radius: 40px 0 0 0; }
+    #dfoam { position: absolute; inset: 0; opacity: 0;
+      background: radial-gradient(ellipse at 50% 70%, rgba(240,250,255,0.9), rgba(200,230,250,0.25) 45%, rgba(0,0,0,0) 75%); }
+    #dcalm { position: absolute; inset: 0; opacity: 0; background: linear-gradient(180deg, #1a2440 0%, #6a7a9a 50%, #c8a888 60%, #2a4a6a 62%, #0a2040 100%); }
+    .wv { position: absolute; left: 0; top: 0; width: 2160px; height: 1920px; }
+    #dsun { position: absolute; left: 440px; top: 1060px; width: 200px; height: 200px; border-radius: 50%; opacity: 0;
+      background: radial-gradient(circle, #fff3d6 0%, #ffd08a 40%, rgba(255,180,90,0) 72%); }
+
+    #vig { position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 45%, rgba(0,0,0,0) 45%, rgba(0,0,0,0.7) 100%); }
+    #flash-host { position: absolute; inset: 0; }
+    #flash { position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 45%, rgba(255,240,215,0.85), rgba(255,200,120,0.25) 60%, rgba(0,0,0,0) 85%); }
+    #brand { position: absolute; top: 210px; left: 0; right: 0; text-align: center; font-family: Inter; font-weight: 700;
+      font-size: 28px; letter-spacing: 0.32em; color: rgba(245,234,214,0.72); }
+    #brand span { color: #f2b04a; }
+  </style>
+  <div id="atmos" data-composition-id="atmos" data-width="1080" data-height="1920" data-layout-allow-overflow>
+    <div id="sky" class="clip" data-start="0" data-duration="33.98"></div>
+
+    <div id="drown" class="clip" data-start="0" data-duration="33.98">
+      <div id="dsky"></div><div id="dpath"></div>
+      <div id="darmy"><svg viewBox="0 0 1080 1920" style="position:absolute;inset:0;width:100%;height:100%"><g fill="#07050a" transform="translate(0,1330)"><g transform="translate(481,0)"><circle cx="0" cy="-75.5" r="10.5"/><rect x="-12.5" y="-64.3" width="25.0" height="49.1" rx="2"/><rect x="-12.5" y="-23.2" width="9.5" height="23.2"/><rect x="3.0" y="-23.2" width="9.5" height="23.2"/><rect x="13.7" y="-120.5" width="2" height="116.0"/></g><g transform="translate(408,0)"><circle cx="0" cy="-65.3" r="9.1"/><rect x="-10.8" y="-55.6" width="21.6" height="42.4" rx="2"/><rect x="-10.8" y="-20.1" width="8.2" height="20.1"/><rect x="2.6" y="-20.1" width="8.2" height="20.1"/><rect x="11.9" y="-104.2" width="2" height="100.3"/></g><g transform="translate(505,0)"><circle cx="0" cy="-78.2" r="10.9"/><rect x="-12.9" y="-66.5" width="25.9" height="50.8" rx="2"/><rect x="-12.9" y="-24.0" width="9.8" height="24.0"/><rect x="3.1" y="-24.0" width="9.8" height="24.0"/><rect x="14.2" y="-124.7" width="2" height="120.1"/></g><g transform="translate(491,0)"><circle cx="0" cy="-71.8" r="10.0"/><rect x="-11.9" y="-61.1" width="23.8" height="46.7" rx="2"/><rect x="-11.9" y="-22.1" width="9.0" height="22.1"/><rect x="2.9" y="-22.1" width="9.0" height="22.1"/><rect x="13.1" y="-114.5" width="2" height="110.3"/></g><g transform="translate(412,0)"><circle cx="0" cy="-62.9" r="8.7"/><rect x="-10.4" y="-53.5" width="20.8" height="40.9" rx="2"/><rect x="-10.4" y="-19.3" width="7.9" height="19.3"/><rect x="2.5" y="-19.3" width="7.9" height="19.3"/><rect x="11.4" y="-100.3" width="2" height="96.6"/></g><g transform="translate(604,0)"><circle cx="0" cy="-70.9" r="9.9"/><rect x="-11.7" y="-60.4" width="23.5" height="46.1" rx="2"/><rect x="-11.7" y="-21.8" width="8.9" height="21.8"/><rect x="2.8" y="-21.8" width="8.9" height="21.8"/><rect x="12.9" y="-113.2" width="2" height="109.0"/></g><g transform="translate(611,0)"><circle cx="0" cy="-68.6" r="9.5"/><rect x="-11.3" y="-58.4" width="22.7" height="44.6" rx="2"/><rect x="-11.3" y="-21.1" width="8.6" height="21.1"/><rect x="2.7" y="-21.1" width="8.6" height="21.1"/><rect x="12.5" y="-109.4" width="2" height="105.4"/></g><g transform="translate(536,0)"><circle cx="0" cy="-63.5" r="8.8"/><rect x="-10.5" y="-54.0" width="21.0" height="41.3" rx="2"/><rect x="-10.5" y="-19.5" width="8.0" height="19.5"/><rect x="2.5" y="-19.5" width="8.0" height="19.5"/><rect x="11.6" y="-101.3" width="2" height="97.5"/></g><g transform="translate(451,0)"><circle cx="0" cy="-60.3" r="8.4"/><rect x="-10.0" y="-51.3" width="20.0" height="39.2" rx="2"/><rect x="-10.0" y="-18.5" width="7.6" height="18.5"/><rect x="2.4" y="-18.5" width="7.6" height="18.5"/><rect x="11.0" y="-96.2" width="2" height="92.7"/></g><g transform="translate(434,0)"><circle cx="0" cy="-68.8" r="9.6"/><rect x="-11.4" y="-58.5" width="22.8" height="44.7" rx="2"/><rect x="-11.4" y="-21.1" width="8.6" height="21.1"/><rect x="2.7" y="-21.1" width="8.6" height="21.1"/><rect x="12.5" y="-109.7" width="2" height="105.6"/></g><g transform="translate(569,0)"><circle cx="0" cy="-74.8" r="10.4"/><rect x="-12.4" y="-63.7" width="24.8" height="48.6" rx="2"/><rect x="-12.4" y="-23.0" width="9.4" height="23.0"/><rect x="3.0" y="-23.0" width="9.4" height="23.0"/><rect x="13.6" y="-119.4" width="2" height="115.0"/></g><g transform="translate(586,0)"><circle cx="0" cy="-76.5" r="10.6"/><rect x="-12.7" y="-65.1" width="25.3" height="49.7" rx="2"/><rect x="-12.7" y="-23.5" width="9.6" height="23.5"/><rect x="3.0" y="-23.5" width="9.6" height="23.5"/><rect x="13.9" y="-122.0" width="2" height="117.5"/></g><g transform="translate(616,0)"><circle cx="0" cy="-59.4" r="8.3"/><rect x="-9.8" y="-50.6" width="19.7" height="38.6" rx="2"/><rect x="-9.8" y="-18.3" width="7.5" height="18.3"/><rect x="2.4" y="-18.3" width="7.5" height="18.3"/><rect x="10.8" y="-94.8" width="2" height="91.3"/></g><g transform="translate(664,0)"><circle cx="0" cy="-69.7" r="9.7"/><rect x="-11.5" y="-59.3" width="23.1" height="45.3" rx="2"/><rect x="-11.5" y="-21.4" width="8.8" height="21.4"/><rect x="2.8" y="-21.4" width="8.8" height="21.4"/><rect x="12.7" y="-111.3" width="2" height="107.1"/></g><g transform="translate(519,0)"><circle cx="0" cy="-61.1" r="8.5"/><rect x="-10.1" y="-52.0" width="20.2" height="39.7" rx="2"/><rect x="-10.1" y="-18.8" width="7.7" height="18.8"/><rect x="2.4" y="-18.8" width="7.7" height="18.8"/><rect x="11.1" y="-97.5" width="2" height="93.8"/></g><g transform="translate(429,0)"><circle cx="0" cy="-60.6" r="8.4"/><rect x="-10.0" y="-51.6" width="20.1" height="39.4" rx="2"/><rect x="-10.0" y="-18.6" width="7.6" height="18.6"/><rect x="2.4" y="-18.6" width="7.6" height="18.6"/><rect x="11.0" y="-96.7" width="2" height="93.1"/></g><g transform="translate(409,0)"><circle cx="0" cy="-75.9" r="10.5"/><rect x="-12.6" y="-64.6" width="25.1" height="49.3" rx="2"/><rect x="-12.6" y="-23.3" width="9.5" height="23.3"/><rect x="3.0" y="-23.3" width="9.5" height="23.3"/><rect x="13.8" y="-121.1" width="2" height="116.6"/></g><g transform="translate(499,0)"><circle cx="0" cy="-75.7" r="10.5"/><rect x="-12.5" y="-64.4" width="25.1" height="49.2" rx="2"/><rect x="-12.5" y="-23.3" width="9.5" height="23.3"/><rect x="3.0" y="-23.3" width="9.5" height="23.3"/><rect x="13.8" y="-120.8" width="2" height="116.3"/></g><g transform="translate(695,0)"><circle cx="0" cy="-72.4" r="10.1"/><rect x="-12.0" y="-61.6" width="24.0" height="47.1" rx="2"/><rect x="-12.0" y="-22.2" width="9.1" height="22.2"/><rect x="2.9" y="-22.2" width="9.1" height="22.2"/><rect x="13.2" y="-115.5" width="2" height="111.2"/></g><g transform="translate(446,0)"><circle cx="0" cy="-62.6" r="8.7"/><rect x="-10.4" y="-53.3" width="20.7" height="40.7" rx="2"/><rect x="-10.4" y="-19.2" width="7.9" height="19.2"/><rect x="2.5" y="-19.2" width="7.9" height="19.2"/><rect x="11.4" y="-99.9" width="2" height="96.2"/></g><g transform="translate(689,0)"><circle cx="0" cy="-69.6" r="9.7"/><rect x="-11.5" y="-59.3" width="23.0" height="45.3" rx="2"/><rect x="-11.5" y="-21.4" width="8.8" height="21.4"/><rect x="2.8" y="-21.4" width="8.8" height="21.4"/><rect x="12.7" y="-111.1" width="2" height="107.0"/></g><g transform="translate(488,0)"><circle cx="0" cy="-79.4" r="11.0"/><rect x="-13.1" y="-67.6" width="26.3" height="51.6" rx="2"/><rect x="-13.1" y="-24.4" width="10.0" height="24.4"/><rect x="3.2" y="-24.4" width="10.0" height="24.4"/><rect x="14.5" y="-126.7" width="2" height="122.1"/></g><g transform="translate(434,0)"><circle cx="0" cy="-77.8" r="10.8"/><rect x="-12.9" y="-66.2" width="25.7" height="50.6" rx="2"/><rect x="-12.9" y="-23.9" width="9.8" height="23.9"/><rect x="3.1" y="-23.9" width="9.8" height="23.9"/><rect x="14.2" y="-124.1" width="2" height="119.5"/></g><g transform="translate(383,0)"><circle cx="0" cy="-68.5" r="9.5"/><rect x="-11.3" y="-58.3" width="22.7" height="44.5" rx="2"/><rect x="-11.3" y="-21.0" width="8.6" height="21.0"/><rect x="2.7" y="-21.0" width="8.6" height="21.0"/><rect x="12.5" y="-109.3" width="2" height="105.2"/></g><g transform="translate(488,0)"><circle cx="0" cy="-79.8" r="11.1"/><rect x="-13.2" y="-67.9" width="26.4" height="51.9" rx="2"/><rect x="-13.2" y="-24.5" width="10.0" height="24.5"/><rect x="3.2" y="-24.5" width="10.0" height="24.5"/><rect x="14.5" y="-127.3" width="2" height="122.6"/></g><g transform="translate(525,0)"><circle cx="0" cy="-71.2" r="9.9"/><rect x="-11.8" y="-60.6" width="23.6" height="46.3" rx="2"/><rect x="-11.8" y="-21.9" width="9.0" height="21.9"/><rect x="2.8" y="-21.9" width="9.0" height="21.9"/><rect x="13.0" y="-113.7" width="2" height="109.4"/></g></g></svg><div id="dt0" class="dtorch" style="left:632px;top:1260px"></div><div id="dt1" class="dtorch" style="left:639px;top:1275px"></div><div id="dt2" class="dtorch" style="left:410px;top:1221px"></div><div id="dt3" class="dtorch" style="left:512px;top:1241px"></div><div id="dt4" class="dtorch" style="left:635px;top:1221px"></div><div id="dt5" class="dtorch" style="left:686px;top:1275px"></div><div id="dt6" class="dtorch" style="left:585px;top:1231px"></div><div id="dt7" class="dtorch" style="left:624px;top:1267px"></div><div id="dt8" class="dtorch" style="left:649px;top:1234px"></div><div id="dt9" class="dtorch" style="left:627px;top:1226px"></div><div id="dt10" class="dtorch" style="left:526px;top:1221px"></div><div id="dt11" class="dtorch" style="left:469px;top:1286px"></div><div id="dt12" class="dtorch" style="left:690px;top:1222px"></div><div id="dt13" class="dtorch" style="left:584px;top:1210px"></div></div>
+      <div id="dwl" class="dwall"></div><div id="dwr" class="dwall"></div>
+      <div id="dfoam"></div>
+      <div id="dcalm"></div><div id="dsun"></div>
+      <svg id="dc1" class="wv" viewBox="0 0 2160 1920" preserveAspectRatio="none"><path fill="#2a4a6a" d="M 0 1200 Q 68 1186 135 1200 T 270 1200 Q 338 1186 405 1200 T 540 1200 Q 608 1186 675 1200 T 810 1200 Q 878 1186 945 1200 T 1080 1200 Q 1148 1186 1215 1200 T 1350 1200 Q 1418 1186 1485 1200 T 1620 1200 Q 1688 1186 1755 1200 T 1890 1200 Q 1958 1186 2025 1200 T 2160 1200 V 1920 H 0 Z"/></svg><svg id="dc2" class="wv" viewBox="0 0 2160 1920" preserveAspectRatio="none"><path fill="#1a3a5a" d="M 0 1360 Q 68 1342 135 1360 T 270 1360 Q 338 1342 405 1360 T 540 1360 Q 608 1342 675 1360 T 810 1360 Q 878 1342 945 1360 T 1080 1360 Q 1148 1342 1215 1360 T 1350 1360 Q 1418 1342 1485 1360 T 1620 1360 Q 1688 1342 1755 1360 T 1890 1360 Q 1958 1342 2025 1360 T 2160 1360 V 1920 H 0 Z"/></svg>
+    </div>
+    <div id="warm" class="clip" data-start="0" data-duration="33.98"><div id="warm-g" style="opacity:0.1"><div id="warm-b"></div></div></div>
+    <div id="cool" class="clip" data-start="0" data-duration="33.98"><div id="cool-g" style="opacity:0"></div></div>
+    <div id="embers" class="clip" data-start="0" data-duration="33.98"><div id="embers-g" style="opacity:0.14">
+      
+    </div></div>
+    <div id="vig" class="clip" data-start="0" data-duration="33.98"></div>
+    <div id="flash-host" class="clip" data-start="0" data-duration="0.6"><div id="flash"></div></div>
+    <div id="brand" class="clip" data-start="0" data-duration="33.98">HAQ <span>·</span> STORIES</div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#flash", {opacity: 0.4}, {opacity: 0, duration: 0.55, ease: "power2.out"}, 0);
+    tl.fromTo("#dt0", {opacity: 0.65, scale: 0.9}, {opacity: 1, scale: 1.1, duration: 0.25, ease: "sine.inOut", yoyo: true, repeat: 136}, 0.00);
+    tl.fromTo("#dt1", {opacity: 0.65, scale: 0.9}, {opacity: 1, scale: 1.1, duration: 0.29, ease: "sine.inOut", yoyo: true, repeat: 118}, 0.05);
+    tl.fromTo("#dt2", {opacity: 0.65, scale: 0.9}, {opacity: 1, scale: 1.1, duration: 0.33, ease: "sine.inOut", yoyo: true, repeat: 103}, 0.10);
+    tl.fromTo("#dt3", {opacity: 0.65, scale: 0.9}, {opacity: 1, scale: 1.1, duration: 0.37, ease: "sine.inOut", yoyo: true, repeat: 92}, 0.15);
+    tl.fromTo("#dt4", {opacity: 0.65, scale: 0.9}, {opacity: 1, scale: 1.1, duration: 0.25, ease: "sine.inOut", yoyo: true, repeat: 136}, 0.20);
+    tl.fromTo("#dt5", {opacity: 0.65, scale: 0.9}, {opacity: 1, scale: 1.1, duration: 0.29, ease: "sine.inOut", yoyo: true, repeat: 118}, 0.00);
+    tl.fromTo("#dt6", {opacity: 0.65, scale: 0.9}, {opacity: 1, scale: 1.1, duration: 0.33, ease: "sine.inOut", yoyo: true, repeat: 103}, 0.05);
+    tl.fromTo("#dt7", {opacity: 0.65, scale: 0.9}, {opacity: 1, scale: 1.1, duration: 0.37, ease: "sine.inOut", yoyo: true, repeat: 92}, 0.10);
+    tl.fromTo("#dt8", {opacity: 0.65, scale: 0.9}, {opacity: 1, scale: 1.1, duration: 0.25, ease: "sine.inOut", yoyo: true, repeat: 136}, 0.15);
+    tl.fromTo("#dt9", {opacity: 0.65, scale: 0.9}, {opacity: 1, scale: 1.1, duration: 0.29, ease: "sine.inOut", yoyo: true, repeat: 118}, 0.20);
+    tl.fromTo("#dt10", {opacity: 0.65, scale: 0.9}, {opacity: 1, scale: 1.1, duration: 0.33, ease: "sine.inOut", yoyo: true, repeat: 103}, 0.00);
+    tl.fromTo("#dt11", {opacity: 0.65, scale: 0.9}, {opacity: 1, scale: 1.1, duration: 0.37, ease: "sine.inOut", yoyo: true, repeat: 92}, 0.05);
+    tl.fromTo("#dt12", {opacity: 0.65, scale: 0.9}, {opacity: 1, scale: 1.1, duration: 0.25, ease: "sine.inOut", yoyo: true, repeat: 136}, 0.10);
+    tl.fromTo("#dt13", {opacity: 0.65, scale: 0.9}, {opacity: 1, scale: 1.1, duration: 0.29, ease: "sine.inOut", yoyo: true, repeat: 118}, 0.15);
+    tl.fromTo("#darmy", {y: 0, scale: 1}, {y: 40, scale: 1.06, duration: 6.53, ease: "none", transformOrigin: "50% 70%"}, 0);
+    tl.fromTo("#dwl", {x: 0}, {x: 360, duration: 0.9, ease: "power2.in", immediateRender: false}, 8.83);
+    tl.fromTo("#dwr", {x: 0}, {x: -360, duration: 0.9, ease: "power2.in", immediateRender: false}, 8.83);
+    tl.fromTo("#darmy", {opacity: 1}, {opacity: 0, duration: 0.3, ease: "sine.inOut", immediateRender: false}, 9.53);
+    tl.fromTo("#dwl", {opacity: 1}, {opacity: 0, duration: 0.8, ease: "sine.inOut", immediateRender: false}, 9.83);
+    tl.fromTo("#dpath", {opacity: 1}, {opacity: 0, duration: 0.3, ease: "sine.inOut", immediateRender: false}, 9.53);
+    tl.fromTo("#dwr", {opacity: 1}, {opacity: 0, duration: 0.8, ease: "sine.inOut", immediateRender: false}, 9.83);
+    tl.fromTo("#dfoam", {opacity: 0}, {opacity: 1, duration: 0.3, ease: "sine.inOut", immediateRender: false}, 9.53);
+    tl.fromTo("#dfoam", {opacity: 1}, {opacity: 0.2, duration: 2.5, ease: "sine.inOut", immediateRender: false}, 10.03);
+    tl.set("#dc1", {opacity: 0}, 0);
+    tl.fromTo("#dc1", {opacity: 0}, {opacity: 1, duration: 1.5, ease: "sine.inOut", immediateRender: false}, 9.73);
+    tl.set("#dc2", {opacity: 0}, 0);
+    tl.fromTo("#dc2", {opacity: 0}, {opacity: 1, duration: 1.5, ease: "sine.inOut", immediateRender: false}, 9.73);
+    tl.fromTo("#dc1", {x: 0}, {x: -1080, duration: 14, ease: "none", repeat: 3}, 0);
+    tl.fromTo("#dc2", {x: 0}, {x: -1080, duration: 10, ease: "none", repeat: 4}, 0);
+    tl.fromTo("#dcalm", {opacity: 0}, {opacity: 1, duration: 2.0, ease: "sine.inOut", immediateRender: false}, 19.99);
+    tl.fromTo("#dsun", {opacity: 0, y: 100}, {opacity: 1, y: -80, duration: 5, ease: "sine.out", immediateRender: false}, 20.49);
+    tl.fromTo("#warm-b", {scaleY: 1}, {scaleY: 1.06, duration: 0.8, ease: "sine.inOut", yoyo: true, repeat: 21}, 0);
+    tl.fromTo("#warm-g", {opacity: 0.1}, {opacity: 0.15, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 4.53);
+    tl.fromTo("#cool-g", {opacity: 0}, {opacity: 0.1, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 4.53);
+    tl.fromTo("#embers-g", {opacity: 0.14}, {opacity: 0.21, duration: 0.9, immediateRender: false}, 4.53);
+    tl.fromTo("#warm-g", {opacity: 0.15}, {opacity: 0, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 12.63);
+    tl.fromTo("#cool-g", {opacity: 0.1}, {opacity: 0.3, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 12.63);
+    tl.fromTo("#embers-g", {opacity: 0.21}, {opacity: 0.00, duration: 0.9, immediateRender: false}, 12.63);
+    tl.fromTo("#warm-g", {opacity: 0}, {opacity: 0.1, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 19.99);
+    tl.fromTo("#cool-g", {opacity: 0.3}, {opacity: 0.4, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 19.99);
+    tl.fromTo("#embers-g", {opacity: 0.00}, {opacity: 0.14, duration: 0.9, immediateRender: false}, 19.99);
+    tl.fromTo("#warm-g", {opacity: 0.1}, {opacity: 0.35, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 25.83);
+    tl.fromTo("#cool-g", {opacity: 0.4}, {opacity: 0.2, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 25.83);
+    tl.fromTo("#embers-g", {opacity: 0.14}, {opacity: 0.49, duration: 0.9, immediateRender: false}, 25.83);
+    tl.fromTo("#warm-g", {opacity: 0.35}, {opacity: 0.3, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 31.89);
+    tl.fromTo("#cool-g", {opacity: 0.2}, {opacity: 0.3, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 31.89);
+    tl.fromTo("#embers-g", {opacity: 0.49}, {opacity: 0.42, duration: 0.9, immediateRender: false}, 31.89);
+    const et = gsap.timeline({ paused: true });
+    
+    // Sparks are already mid-flight on frame 0: play their own timeline from 7 s in.
+    tl.add(et.tweenFromTo(7, 40.98, { ease: "none" }), 0);
+    window.__timelines["atmos"] = tl;
+  </script>
+</template>

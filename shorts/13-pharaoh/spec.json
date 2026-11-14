@@ -1,0 +1,144 @@
+{
+  "accent": "#f2b04a",
+  "embers": false,
+  "scene": "drown",
+  "crash_beat": 1,
+  "calm_beat": 3,
+  "flash": 0.4,
+  "bed_volume": 1.0,
+  "hold_end": 0.5,
+  "text_top": 300,
+  "text_bottom": 780,
+  "tr_size": 56,
+  "beats": [
+    {
+      "hook": true,
+      "text": "He called himself a *god*…",
+      "sub": "…until the sea closed over him.",
+      "ur": "وہ خود کو خدا کہتا تھا… یہاں تک کہ سمندر اس پر آ ملا",
+      "mood": {
+        "warm": 0.1,
+        "cool": 0
+      },
+      "reveal": false
+    },
+    {
+      "text": "Pharaoh chased them into the parted *sea*.",
+      "ur": "فرعون ان کے پیچھے پھٹے ہوئے سمندر میں اتر گیا",
+      "ref": "Yunus 10:90",
+      "mood": {
+        "warm": 0.15,
+        "cool": 0.1
+      }
+    },
+    {
+      "q": "10:90",
+      "ar_words": [
+        15,
+        27
+      ],
+      "en": "I believe that there is no deity except that in whom the Children of Israel believe, and I am of the Muslims",
+      "ur_q": "میں نے مان لیا کہ خداوند حقیقی اُس کے سوا کوئی نہیں ہے جس پر بنی اسرائیل ایمان لائے",
+      "ref": "Yunus 10:90",
+      "mood": {
+        "warm": 0,
+        "cool": 0.3
+      },
+      "arabic": "ءَامَنتُ أَنَّهُۥ لَآ إِلَٰهَ إِلَّا ٱلَّذِيٓ ءَامَنَتۡ بِهِۦ بَنُوٓاْ إِسۡرَـٰٓءِيلَ وَأَنَا۠ مِنَ ٱلۡمُسۡلِمِينَ",
+      "translation": "“I believe that there is no deity except that in whom the Children of Israel believe, and I am of the Muslims”",
+      "ur": "میں نے مان لیا کہ خداوند حقیقی اُس کے سوا کوئی نہیں ہے جس پر بنی اسرائیل ایمان لائے"
+    },
+    {
+      "q": "10:91",
+      "ar_words": [
+        1,
+        7
+      ],
+      "en": "Now? And you had disobeyed [Him] before and were of the corrupters",
+      "ur_q": "اب ایمان لاتا ہے! حالانکہ اِس سے پہلے تک تو نافرمانی کرتا رہا",
+      "ref": "Yunus 10:91",
+      "mood": {
+        "warm": 0.1,
+        "cool": 0.4
+      },
+      "arabic": "ءَآلۡـَٰٔنَ وَقَدۡ عَصَيۡتَ قَبۡلُ وَكُنتَ مِنَ ٱلۡمُفۡسِدِينَ",
+      "translation": "“Now? And you had disobeyed [Him] before and were of the corrupters”",
+      "ur": "اب ایمان لاتا ہے! حالانکہ اِس سے پہلے تک تو نافرمانی کرتا رہا"
+    },
+    {
+      "q": "10:92",
+      "ar_words": [
+        1,
+        7
+      ],
+      "en": "So today We will save you in body that you may be to those who succeed you a sign",
+      "ur_q": "اب تو ہم صرف تیری لاش ہی کو بچائیں گے تاکہ تو بعد کی نسلوں کے لیے نشان عبرت بنے",
+      "ref": "Yunus 10:92",
+      "mood": {
+        "warm": 0.35,
+        "cool": 0.2
+      },
+      "arabic": "فَٱلۡيَوۡمَ نُنَجِّيكَ بِبَدَنِكَ لِتَكُونَ لِمَنۡ خَلۡفَكَ ءَايَةࣰۚ",
+      "translation": "“So today We will save you in body that you may be to those who succeed you a sign”",
+      "ur": "اب تو ہم صرف تیری لاش ہی کو بچائیں گے تاکہ تو بعد کی نسلوں کے لیے نشان عبرت بنے"
+    },
+    {
+      "cta": true,
+      "text": "Follow for more.",
+      "ur": "فالو کریں",
+      "mood": {
+        "warm": 0.3,
+        "cool": 0.3
+      }
+    }
+  ],
+  "sound": [
+    {
+      "prompt": "boom",
+      "src": "../03-cave/assets/sfx/03b5f68efefc.mp3",
+      "beat": 0,
+      "dur": 3,
+      "gain": -6,
+      "fade_in": 0,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "army",
+      "src": "../../long/02-musa/assets/sfx/7b90c0d9761e.mp3",
+      "beat": 0,
+      "dur": 9,
+      "gain": -12,
+      "fade_in": 0.3,
+      "fade_out": 1.2
+    },
+    {
+      "prompt": "crash",
+      "src": "../../long/02-musa/assets/sfx/fa0944d0f6b7.mp3",
+      "beat": 1,
+      "offset": 2.8,
+      "dur": 6,
+      "gain": -6,
+      "fade_in": 0.1,
+      "fade_out": 2
+    },
+    {
+      "prompt": "sea",
+      "src": "../../long/02-musa/assets/sfx/fab1e4cd7af5.mp3",
+      "beat": 2,
+      "dur": 20,
+      "gain": -14,
+      "fade_in": 1,
+      "fade_out": 2
+    },
+    {
+      "prompt": "hum sorrow",
+      "src": "../../long/01-yusuf/assets/sfx/1830ee4b40ad.mp3",
+      "beat": 2,
+      "offset": 0.3,
+      "dur": 20,
+      "gain": -16,
+      "fade_in": 2,
+      "fade_out": 2
+    }
+  ]
+}

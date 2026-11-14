@@ -1,0 +1,125 @@
+<template>
+  <style>
+    #c03 { position: absolute; inset: 0; overflow: hidden; background: #000; }
+    .c03-st { position: absolute; border-radius: 50%; background: #eef4ff; box-shadow: 0 0 6px rgba(220,235,255,0.9); }
+    .c03-mote { position: absolute; border-radius: 50%; }
+    .c03-full { position: absolute; inset: 0; }
+    .c03-svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+
+    .c03-cam { position: absolute; inset: 0; transform-origin: 50% 55%; }
+    .c03-scrim { position: absolute; left: 0; right: 0; bottom: 0; height: 300px;
+      background: linear-gradient(0deg, rgba(0,0,0,0.75), rgba(0,0,0,0)); }
+    .c03-cap { position: absolute; left: 210px; right: 210px; bottom: 64px; text-align: center;
+      font-family: "Cormorant Garamond"; font-weight: 600; font-size: 54px; line-height: 1.12; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c03-cardwrap { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+      background: radial-gradient(ellipse at 50% 50%, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.45) 50%, rgba(0,0,0,0) 80%); }
+    .c03-card { max-width: 1400px; display: flex; flex-direction: column; align-items: center; gap: 26px; text-align: center; }
+    .c03-ar { font-family: "Amiri Quran"; font-size: 70px; line-height: 1.8; color: #fff6e6; text-shadow: 0 0 30px rgba(215,236,255,0.4); }
+    .c03-en { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 50px; line-height: 1.18; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c03-ctext { font-family: "Cormorant Garamond"; font-weight: 600; font-size: 76px; line-height: 1.1; color: #f5ead6;
+      text-shadow: 0 3px 22px rgba(0,0,0,0.9); }
+    .c03-hi { color: var(--accent); }
+    .c03-ref { font-family: Inter, sans-serif; font-weight: 700; font-size: 28px; letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--accent); border: 2px solid var(--accent); border-radius: 999px; padding: 10px 24px; background: rgba(0,0,0,0.4); }
+    .c03-title { font-family: "Cormorant Garamond"; font-weight: 600; font-size: 118px; line-height: 1.02; color: #f5ead6;
+      text-shadow: 0 4px 30px rgba(0,0,0,0.8); }
+    .c03-tsub { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 52px; color: var(--accent); }
+    .c03-mark { font-family: Inter, sans-serif; font-weight: 700; font-size: 64px; letter-spacing: 0.32em; color: #f5ead6; }
+    .c03-mark span { color: var(--accent); }
+    .c03-endt { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 52px; color: #f5ead6; }
+    .c03-btn { font-family: Inter, sans-serif; font-weight: 700; font-size: 34px; letter-spacing: 0.08em; color: #120b08;
+      background: var(--accent); border-radius: 999px; padding: 18px 48px; }
+    .c03-label { position: absolute; left: 90px; top: 70px; }
+    .c03-label b { display: block; font-family: Inter, sans-serif; font-weight: 700; font-size: 28px; letter-spacing: 0.3em; color: var(--accent); }
+    .c03-label i { display: block; font-family: "Cormorant Garamond"; font-style: normal; font-weight: 600; font-size: 60px; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c03-brand { position: absolute; right: 80px; top: 70px; font-family: Inter, sans-serif; font-weight: 700; font-size: 28px;
+      letter-spacing: 0.32em; color: rgba(245,234,214,0.7); }
+    .c03-brand span { color: var(--accent); }
+    .c03-fade { position: absolute; inset: 0; background: #000; }
+
+    #c03-sky { background: linear-gradient(180deg, #05060e 0%, #141a30 70%, #1a1a24 100%); }
+    #c03-fight, #c03-fall, #c03-run { position: absolute; inset: 0; }
+    #c03-road { opacity: 0; background: linear-gradient(180deg, #2a2a4e 0%, #c27f68 50%, #e8b07a 58%, #4a3220 60%, #2a1c12 100%); }
+
+    .c03-cap { font-family: "Noto Nastaliq Urdu"; font-weight: 400; font-size: 44px; line-height: 1.9; direction: rtl; bottom: 40px; }
+    .c03-urtr { font-family: "Noto Nastaliq Urdu"; font-style: normal; font-weight: 400; font-size: 44px; line-height: 1.9; }
+    .c03-label i, .c03-title, .c03-tsub, .c03-endt { font-family: "Noto Nastaliq Urdu"; font-style: normal; font-weight: 400; direction: rtl; line-height: 1.8; }
+    .c03-title { font-size: 92px; } .c03-tsub { font-size: 46px; } .c03-label i { font-size: 48px; } .c03-endt { font-size: 44px; }
+    .c03-label b { letter-spacing: 0; font-family: "Noto Nastaliq Urdu"; font-weight: 400; font-size: 30px; }
+
+  </style>
+  <div id="c03" data-composition-id="c03" data-width="1920" data-height="1080">
+    <div id="c03-scene" class="clip" data-start="0" data-duration="66.02" style="position:absolute;inset:0" data-layout-allow-overflow>
+      <div id="c03-cam" class="c03-cam">
+      <div id="c03-sky" class="c03-full"></div><div id="c03-cst0" class="c03-st" style="left:1097px;top:247px;width:2.7px;height:2.7px"></div><div id="c03-cst1" class="c03-st" style="left:935px;top:228px;width:2.4px;height:2.4px"></div><div id="c03-cst2" class="c03-st" style="left:1085px;top:82px;width:3.5px;height:3.5px"></div><div id="c03-cst3" class="c03-st" style="left:1041px;top:58px;width:2.9px;height:2.9px"></div><div id="c03-cst4" class="c03-st" style="left:1103px;top:80px;width:3.5px;height:3.5px"></div><div id="c03-cst5" class="c03-st" style="left:747px;top:240px;width:3.5px;height:3.5px"></div><div id="c03-cst6" class="c03-st" style="left:923px;top:28px;width:2.0px;height:2.0px"></div><div id="c03-cst7" class="c03-st" style="left:994px;top:60px;width:3.1px;height:3.1px"></div><div id="c03-cst8" class="c03-st" style="left:880px;top:280px;width:3.8px;height:3.8px"></div><div id="c03-cst9" class="c03-st" style="left:1103px;top:293px;width:1.6px;height:1.6px"></div><div id="c03-cst10" class="c03-st" style="left:881px;top:181px;width:2.3px;height:2.3px"></div><div id="c03-cst11" class="c03-st" style="left:963px;top:35px;width:3.2px;height:3.2px"></div><div id="c03-cst12" class="c03-st" style="left:856px;top:59px;width:2.7px;height:2.7px"></div><div id="c03-cst13" class="c03-st" style="left:1049px;top:4px;width:3.4px;height:3.4px"></div><div id="c03-cst14" class="c03-st" style="left:709px;top:100px;width:3.8px;height:3.8px"></div><div id="c03-cst15" class="c03-st" style="left:895px;top:38px;width:4.0px;height:4.0px"></div><div id="c03-cst16" class="c03-st" style="left:727px;top:127px;width:3.4px;height:3.4px"></div><div id="c03-cst17" class="c03-st" style="left:1190px;top:268px;width:3.2px;height:3.2px"></div><div id="c03-cst18" class="c03-st" style="left:1145px;top:134px;width:3.6px;height:3.6px"></div><div id="c03-cst19" class="c03-st" style="left:1053px;top:123px;width:1.7px;height:1.7px"></div><div id="c03-cst20" class="c03-st" style="left:1073px;top:80px;width:2.7px;height:2.7px"></div><div id="c03-cst21" class="c03-st" style="left:762px;top:177px;width:2.4px;height:2.4px"></div><div id="c03-cst22" class="c03-st" style="left:828px;top:135px;width:3.8px;height:3.8px"></div><div id="c03-cst23" class="c03-st" style="left:1006px;top:80px;width:2.7px;height:2.7px"></div><div id="c03-cst24" class="c03-st" style="left:939px;top:43px;width:2.4px;height:2.4px"></div><div id="c03-cst25" class="c03-st" style="left:1030px;top:291px;width:3.8px;height:3.8px"></div><div id="c03-cst26" class="c03-st" style="left:888px;top:181px;width:2.3px;height:2.3px"></div><div id="c03-cst27" class="c03-st" style="left:1168px;top:87px;width:1.5px;height:1.5px"></div><div id="c03-cst28" class="c03-st" style="left:925px;top:17px;width:1.6px;height:1.6px"></div><div id="c03-cst29" class="c03-st" style="left:881px;top:282px;width:3.6px;height:3.6px"></div><div id="c03-cst30" class="c03-st" style="left:731px;top:58px;width:3.9px;height:3.9px"></div><div id="c03-cst31" class="c03-st" style="left:1107px;top:148px;width:2.7px;height:2.7px"></div><div id="c03-cst32" class="c03-st" style="left:750px;top:109px;width:1.9px;height:1.9px"></div><div id="c03-cst33" class="c03-st" style="left:1014px;top:29px;width:1.8px;height:1.8px"></div><div id="c03-cst34" class="c03-st" style="left:1023px;top:139px;width:3.7px;height:3.7px"></div><div id="c03-cst35" class="c03-st" style="left:1116px;top:25px;width:3.0px;height:3.0px"></div><div id="c03-cst36" class="c03-st" style="left:1156px;top:272px;width:3.7px;height:3.7px"></div><div id="c03-cst37" class="c03-st" style="left:769px;top:283px;width:3.8px;height:3.8px"></div><div id="c03-cst38" class="c03-st" style="left:920px;top:234px;width:2.6px;height:2.6px"></div><div id="c03-cst39" class="c03-st" style="left:1100px;top:293px;width:2.2px;height:2.2px"></div><div style="position:absolute;left:900px;top:80px;width:90px;height:90px;border-radius:50%;background:radial-gradient(circle at 40% 38%,#fffdf3,#e6dfc8 65%,#cfc7ae);box-shadow:0 0 70px 24px rgba(230,236,255,0.3)"></div>
+      <svg class="c03-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none"><rect x="0" y="420" width="260" height="480" fill="#15121c"/><rect x="240" y="360" width="220" height="540" fill="#1b1724"/><rect x="450" y="470" width="260" height="430" fill="#15121c"/><rect x="1200" y="380" width="240" height="520" fill="#1b1724"/><rect x="1430" y="440" width="260" height="460" fill="#15121c"/><rect x="1680" y="350" width="260" height="550" fill="#1b1724"/><rect x="1675" y="601" width="22" height="30" fill="#f2b04a" opacity="0.70"/><rect x="163" y="612" width="22" height="30" fill="#f2b04a" opacity="0.61"/><rect x="1222" y="792" width="22" height="30" fill="#f2b04a" opacity="0.69"/><rect x="303" y="787" width="22" height="30" fill="#f2b04a" opacity="0.82"/><rect x="1508" y="659" width="22" height="30" fill="#f2b04a" opacity="0.55"/><rect x="1437" y="691" width="22" height="30" fill="#f2b04a" opacity="0.67"/><rect x="448" y="465" width="22" height="30" fill="#f2b04a" opacity="0.54"/><rect x="560" y="590" width="22" height="30" fill="#f2b04a" opacity="0.78"/><rect x="1446" y="463" width="22" height="30" fill="#f2b04a" opacity="0.41"/><rect x="459" y="431" width="22" height="30" fill="#f2b04a" opacity="0.74"/><rect x="150" y="451" width="22" height="30" fill="#f2b04a" opacity="0.88"/><rect x="334" y="543" width="22" height="30" fill="#f2b04a" opacity="0.41"/><rect x="1574" y="553" width="22" height="30" fill="#f2b04a" opacity="0.70"/><rect x="1475" y="562" width="22" height="30" fill="#f2b04a" opacity="0.72"/><rect x="1282" y="401" width="22" height="30" fill="#f2b04a" opacity="0.83"/><rect x="66" y="640" width="22" height="30" fill="#f2b04a" opacity="0.69"/><rect x="230" y="476" width="22" height="30" fill="#f2b04a" opacity="0.53"/><rect x="1450" y="546" width="22" height="30" fill="#f2b04a" opacity="0.60"/><rect x="414" y="471" width="22" height="30" fill="#f2b04a" opacity="0.88"/><rect x="1335" y="557" width="22" height="30" fill="#f2b04a" opacity="0.85"/><rect x="471" y="571" width="22" height="30" fill="#f2b04a" opacity="0.47"/><rect x="673" y="771" width="22" height="30" fill="#f2b04a" opacity="0.45"/><rect x="344" y="793" width="22" height="30" fill="#f2b04a" opacity="0.45"/><rect x="1591" y="738" width="22" height="30" fill="#f2b04a" opacity="0.41"/><rect x="1539" y="422" width="22" height="30" fill="#f2b04a" opacity="0.62"/><rect x="1411" y="504" width="22" height="30" fill="#f2b04a" opacity="0.47"/><rect x="280" y="813" width="22" height="30" fill="#f2b04a" opacity="0.83"/><rect x="1536" y="459" width="22" height="30" fill="#f2b04a" opacity="0.73"/><rect x="1822" y="412" width="22" height="30" fill="#f2b04a" opacity="0.46"/><rect x="160" y="770" width="22" height="30" fill="#f2b04a" opacity="0.67"/><rect x="0" y="900" width="1920" height="180" fill="#100d10"/></svg>
+      <div id="c03-fight"><svg class="c03-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none"><g fill="#050407" transform="translate(0,900)"><g id="c03-m1"><g transform="translate(900,0) skewX(0)"><circle cx="0" cy="-128.6" r="18.4"/><path d="M -16.3 -109.2 Q 0 -118.4 16.3 -109.2 L 28.6 0 L -28.6 0 Z"/></g></g><g id="c03-m2"><g transform="translate(1010,0) skewX(0)"><circle cx="0" cy="-128.6" r="18.4"/><path d="M -16.3 -109.2 Q 0 -118.4 16.3 -109.2 L 28.6 0 L -28.6 0 Z"/></g></g></g></svg></div>
+      <div id="c03-run" style="opacity:0"><svg class="c03-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none"><g fill="#050407" transform="translate(0,900)"><g id="c03-rn"><g transform="translate(1850,0) skewX(-12)"><circle cx="0" cy="-102.9" r="14.7"/><path d="M -13.1 -87.4 Q 0 -94.7 13.1 -87.4 L 22.8 0 L -22.8 0 Z"/></g></g></g></svg></div>
+      <div id="c03-road" class="c03-full"><svg class="c03-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none"><path d="M 860 640 L 1060 640 L 1500 1080 L 420 1080 Z" fill="#6a4a30"/><ellipse cx="960" cy="1040" rx="14" ry="6.0" fill="#3a2618"/><ellipse cx="942" cy="990" rx="13" ry="5.6" fill="#3a2618"/><ellipse cx="996" cy="940" rx="12" ry="5.2" fill="#3a2618"/><ellipse cx="906" cy="890" rx="11" ry="4.8" fill="#3a2618"/><ellipse cx="1032" cy="840" rx="10" ry="4.4" fill="#3a2618"/><ellipse cx="870" cy="790" rx="9" ry="4.0" fill="#3a2618"/><ellipse cx="1068" cy="740" rx="8" ry="3.6" fill="#3a2618"/><ellipse cx="834" cy="690" rx="7" ry="3.2" fill="#3a2618"/></svg></div>
+      </div>
+    </div>
+    <div id="c03-scr" class="c03-scrim clip" data-start="0" data-duration="66.02"></div>
+    <div id="c03-lab" class="c03-label clip" data-start="0.3" data-duration="4.6"><b>باب 3</b><i>شہر میں ایک گھونسا</i></div>
+    <div id="c03-cp0" class="c03-cap clip" data-start="10.70" data-duration="3.16">اور دیکھا کہ دو آدمی لڑ رہے ہیں۔</div>
+    <div id="c03-cp1" class="c03-cap clip" data-start="13.86" data-duration="3.99">ایک ان کی اپنی قوم کا، اور ایک دشمن کی قوم کا۔</div>
+    <div id="c03-cp2" class="c03-cap clip" data-start="17.85" data-duration="6.49">ان کی قوم کے آدمی نے مدد کے لیے پکارا۔ موسیٰ نے دوسرے کو ایک گھونسا مارا...</div>
+    <div id="c03-cp3" class="c03-cap clip" data-start="24.34" data-duration="5.76">اور وہ مر گیا۔ انہوں نے اسے مارنے کا ارادہ ہرگز نہیں کیا تھا۔ فرمایا:</div>
+    <div id="c03-cp4" class="c03-cap clip" data-start="30.10" data-duration="1.96">یہ شیطان کا کام ہے۔</div>
+    <div id="c03-k0w" class="c03-cardwrap clip" data-start="0.15" data-duration="9.47"><div id="c03-k0" class="c03-card"><div class="c03-ar" dir="rtl" lang="ar">ءَاتَيۡنَٰهُ حُكۡمࣰا وَعِلۡمࣰاۚ</div><div class="c03-en c03-urtr" dir="rtl" lang="ur">ہم نے اسے حکم اور علم عطا کیا</div><div class="c03-ref">Al-Qasas 28:14</div></div></div>
+    <div id="c03-k1w" class="c03-cardwrap clip" data-start="32.11" data-duration="12.32"><div id="c03-k1" class="c03-card"><div class="c03-ar" dir="rtl" lang="ar">رَبِّ إِنِّي ظَلَمۡتُ نَفۡسِي فَٱغۡفِرۡ لِي فَغَفَرَ</div><div class="c03-en c03-urtr" dir="rtl" lang="ur">اے میرے رب، مَیں نے اپنے نفس پر بڑا ظلم کر ڈالا، میری مغفرت فرما دے</div><div class="c03-ref">Al-Qasas 28:16</div></div></div>
+    <div id="c03-k2w" class="c03-cardwrap clip" data-start="44.53" data-duration="10.26"><div id="c03-k2" class="c03-card"><div class="c03-ar" dir="rtl" lang="ar">يَٰمُوسَىٰٓ إِنَّ ٱلۡمَلَأَ يَأۡتَمِرُونَ بِكَ لِيَقۡتُلُوكَ فَٱخۡرُجۡ</div><div class="c03-en c03-urtr" dir="rtl" lang="ur">موسیٰؑ، سرداروں میں تیرے قتل کے مشورے ہو رہے ہیں، یہاں سے نکل جا</div><div class="c03-ref">Al-Qasas 28:20</div></div></div>
+    <div id="c03-k3w" class="c03-cardwrap clip" data-start="54.89" data-duration="7.97"><div id="c03-k3" class="c03-card"><div class="c03-ar" dir="rtl" lang="ar">رَبِّ نَجِّنِي مِنَ ٱلۡقَوۡمِ ٱلظَّـٰلِمِينَ</div><div class="c03-en c03-urtr" dir="rtl" lang="ur">اے میرے رب، مجھے ظالموں سے بچا</div><div class="c03-ref">Al-Qasas 28:21</div></div></div>
+    <div id="c03-fadeIn" class="c03-fade clip" data-start="0" data-duration="0.55" style="opacity:1"></div>
+    <div id="c03-fadeOut" class="c03-fade clip" data-start="65.52" data-duration="0.50" style="opacity:0"></div>
+    <div id="c03-br" class="c03-brand clip" data-start="0" data-duration="66.02">HAQ <span>·</span> STORIES</div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#c03-cst0", {opacity: 0.38}, {opacity: 1, duration: 0.90, ease: "sine.inOut", yoyo: true, repeat: 73, immediateRender: false}, 0.66);
+    tl.fromTo("#c03-cst2", {opacity: 0.52}, {opacity: 1, duration: 1.27, ease: "sine.inOut", yoyo: true, repeat: 52, immediateRender: false}, 0.54);
+    tl.fromTo("#c03-cst4", {opacity: 0.51}, {opacity: 1, duration: 1.66, ease: "sine.inOut", yoyo: true, repeat: 40, immediateRender: false}, 0.34);
+    tl.fromTo("#c03-cst6", {opacity: 0.49}, {opacity: 1, duration: 1.16, ease: "sine.inOut", yoyo: true, repeat: 56, immediateRender: false}, 0.95);
+    tl.fromTo("#c03-cst8", {opacity: 0.45}, {opacity: 1, duration: 1.48, ease: "sine.inOut", yoyo: true, repeat: 45, immediateRender: false}, 0.70);
+    tl.fromTo("#c03-cst10", {opacity: 0.48}, {opacity: 1, duration: 0.98, ease: "sine.inOut", yoyo: true, repeat: 67, immediateRender: false}, 0.88);
+    tl.fromTo("#c03-cst12", {opacity: 0.34}, {opacity: 1, duration: 1.09, ease: "sine.inOut", yoyo: true, repeat: 60, immediateRender: false}, 0.87);
+    tl.fromTo("#c03-cst14", {opacity: 0.49}, {opacity: 1, duration: 1.18, ease: "sine.inOut", yoyo: true, repeat: 56, immediateRender: false}, 0.38);
+    tl.fromTo("#c03-cst16", {opacity: 0.42}, {opacity: 1, duration: 1.78, ease: "sine.inOut", yoyo: true, repeat: 37, immediateRender: false}, 0.25);
+    tl.fromTo("#c03-cst18", {opacity: 0.54}, {opacity: 1, duration: 1.37, ease: "sine.inOut", yoyo: true, repeat: 49, immediateRender: false}, 0.47);
+    tl.fromTo("#c03-cst20", {opacity: 0.54}, {opacity: 1, duration: 1.05, ease: "sine.inOut", yoyo: true, repeat: 63, immediateRender: false}, 0.02);
+    tl.fromTo("#c03-cst22", {opacity: 0.38}, {opacity: 1, duration: 1.27, ease: "sine.inOut", yoyo: true, repeat: 52, immediateRender: false}, 0.88);
+    tl.fromTo("#c03-cst24", {opacity: 0.39}, {opacity: 1, duration: 1.62, ease: "sine.inOut", yoyo: true, repeat: 41, immediateRender: false}, 0.32);
+    tl.fromTo("#c03-cst26", {opacity: 0.42}, {opacity: 1, duration: 1.34, ease: "sine.inOut", yoyo: true, repeat: 49, immediateRender: false}, 0.79);
+    tl.fromTo("#c03-cst28", {opacity: 0.53}, {opacity: 1, duration: 1.00, ease: "sine.inOut", yoyo: true, repeat: 66, immediateRender: false}, 0.72);
+    tl.fromTo("#c03-cst30", {opacity: 0.48}, {opacity: 1, duration: 1.28, ease: "sine.inOut", yoyo: true, repeat: 51, immediateRender: false}, 0.78);
+    tl.fromTo("#c03-cst32", {opacity: 0.49}, {opacity: 1, duration: 1.45, ease: "sine.inOut", yoyo: true, repeat: 46, immediateRender: false}, 0.14);
+    tl.fromTo("#c03-cst34", {opacity: 0.49}, {opacity: 1, duration: 1.53, ease: "sine.inOut", yoyo: true, repeat: 44, immediateRender: false}, 0.13);
+    tl.fromTo("#c03-cst36", {opacity: 0.44}, {opacity: 1, duration: 1.52, ease: "sine.inOut", yoyo: true, repeat: 43, immediateRender: false}, 0.79);
+    tl.fromTo("#c03-cst38", {opacity: 0.38}, {opacity: 1, duration: 1.54, ease: "sine.inOut", yoyo: true, repeat: 43, immediateRender: false}, 0.06);
+    tl.fromTo("#c03-m1", {x: 0, skewX: 0}, {x: 22, skewX: 6, duration: 0.35, ease: "sine.inOut", yoyo: true, repeat: 165, immediateRender: false}, 8.57);
+    tl.fromTo("#c03-m2", {x: 0, skewX: 0}, {x: -22, skewX: -6, duration: 0.32, ease: "sine.inOut", yoyo: true, repeat: 180, immediateRender: false}, 8.57);
+    tl.fromTo("#c03-m2", {rotation: 0, x: 0, y: 0}, {rotation: 86, x: 60, y: 0, duration: 0.70, ease: "power2.in", immediateRender: false}, 22.31);
+    tl.set("#c03-m2", {transformOrigin: "50% 100%"}, 0);
+    tl.fromTo("#c03-fight", {opacity: 1}, {opacity: 0, duration: 0.80, ease: "sine.inOut", immediateRender: false}, 44.48);
+    tl.fromTo("#c03-run", {opacity: 0}, {opacity: 1, duration: 0.40, ease: "sine.inOut", immediateRender: false}, 44.68);
+    tl.fromTo("#c03-rn", {x: 0}, {x: -900, duration: 10.18, ease: "none", immediateRender: false}, 44.68);
+    tl.fromTo("#c03-rn", {y: 0}, {y: -10, duration: 0.18, ease: "sine.inOut", yoyo: true, repeat: 119, immediateRender: false}, 44.68);
+    tl.fromTo("#c03-road", {opacity: 0}, {opacity: 1, duration: 1.20, ease: "sine.inOut", immediateRender: false}, 55.04);
+    tl.fromTo("#c03-k0w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 0.15);
+    tl.fromTo("#c03-k0", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 0.15);
+    tl.fromTo("#c03-k1w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 32.11);
+    tl.fromTo("#c03-k1", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 32.11);
+    tl.fromTo("#c03-k2w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 44.53);
+    tl.fromTo("#c03-k2", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 44.53);
+    tl.fromTo("#c03-k3w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 54.89);
+    tl.fromTo("#c03-k3", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 54.89);
+    tl.fromTo("#c03-lab", {opacity: 0, x: -20}, {opacity: 1, x: 0, duration: 0.60, ease: "power2.out", immediateRender: false}, 0.30);
+    tl.fromTo("#c03-lab", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 4.40);
+    tl.fromTo("#c03-scene", {scale: 1.0, x: 0}, {scale: 1.06, x: -30, duration: 66.02, ease: "none", immediateRender: false}, 0.00);
+    tl.fromTo("#c03-fadeIn", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 0.00);
+    tl.fromTo("#c03-fadeOut", {opacity: 0}, {opacity: 1, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 65.52);
+    window.__timelines["c03"] = tl;
+  </script>
+</template>
