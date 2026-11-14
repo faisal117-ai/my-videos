@@ -5,7 +5,7 @@
 - Thumbnail: `thumbnail/thumbnail.jpg` (1280×720)
 - Subtitles: `subtitles/en.srt` (English, timed from the voice). No Urdu file this time.
 
-**When:** after the Short "She put her baby in the river…" (Musa's mother), which leads into it.
+**When:** Saturday 14 Nov, 8 PM PKT (long films go out Saturday evenings; the Urdu version follows on Sunday).
 
 ## Title
 Prophet Musa (AS) and Pharaoh: The Complete Story from the Quran

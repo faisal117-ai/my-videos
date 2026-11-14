@@ -31,6 +31,8 @@ FONT_FACES = """
         src: url("assets/fonts/cormorant-garamond-latin-600-italic.woff2") format("woff2"); }
       @font-face { font-family: "Amiri Quran"; font-weight: 400;
         src: url("assets/fonts/amiri-quran-arabic-400-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Noto Nastaliq Urdu"; font-weight: 400;
+        src: url("assets/fonts/noto-nastaliq-urdu-arabic-400-normal.woff2") format("woff2"); }
 """
 
 
@@ -715,7 +717,7 @@ SCENES = {"hall": hall, "dream": dream, "well": well, "caravan": caravan, "doors
 def chunks(line: str, max_words=13):
     """Split a spoken line into caption chunks: (char offset, text)."""
     parts, pos = [], 0
-    for m in re.finditer(r".+?(?:[.?!:…](?=\s)|$)", line):
+    for m in re.finditer(r".+?(?:[.?!:…۔؟](?=\s)|$)", line):
         seg = m.group(0)
         if seg.strip():
             parts.append((m.start() + len(seg) - len(seg.lstrip()), seg.strip()))
@@ -757,6 +759,25 @@ def show_en(s: str) -> str:
     return s
 
 
+# spec.json "lang": "ur" makes captions, labels and verse translations Urdu (Maududi, from the
+# quran-cloud package, checked word for word). Set by main().
+LANG = {"code": "en"}
+UR_LABEL = {"chapter": "باب", "end_sub": "قرآن سے انبیاء کے قصے", "subscribe": "سبسکرائب کریں"}
+
+
+def _norm(s: str) -> str:
+    """Compare words only: quote marks and spacing do not count."""
+    return re.sub(r"\s+", " ", re.sub(r"[\"“”]", " ", s)).strip()
+
+
+def maududi(q: str) -> str:
+    root = Path(__file__).resolve().parent.parent / "node_modules/quran-cloud/dist"
+    if "ur" not in _PKG:
+        _PKG["ur"] = json.loads((root / "quran_ur.json").read_text(encoding="utf-8"))
+    s, v = map(int, q.split(":"))
+    return _PKG["ur"][s - 1]["verses"][v - 1]["translation"]
+
+
 # Any surah: cards with "q": "s:v" and 1-based "w": [first, last] read the Quran packages in the
 # repo root (npm i --no-save quran-json), so no verse is ever typed by hand.
 _PKG = {}
@@ -774,9 +795,11 @@ def pkg_verse(q: str) -> dict:
 
 
 def card_html(cid: str, card: dict, quran: dict) -> str:
+    ur = LANG["code"] == "ur"
     if card.get("end"):
+        sub, btn = (UR_LABEL["end_sub"], UR_LABEL["subscribe"]) if ur else ("Stories of the prophets, from the Quran", "Subscribe")
         return (f'<div id="{cid}" class="§card §end"><div class="§mark">HAQ <span>·</span> STORIES</div>'
-                f'<div class="§endt">Stories of the prophets, from the Quran</div><div class="§btn">Subscribe</div></div>')
+                f'<div class="§endt">{sub}</div><div class="§btn">{btn}</div></div>')
     if card.get("title"):
         return (f'<div id="{cid}" class="§card"><div class="§title">{esc(card["title"])}</div>'
                 f'<div class="§tsub">{esc(card["sub"])}</div></div>')
@@ -795,6 +818,12 @@ def card_html(cid: str, card: dict, quran: dict) -> str:
     ar = " ".join(words[a:b + 1]).translate(OPEN_TANWEEN)
     if card["en"] not in v["en"]:
         sys.exit(f"{card.get('q') or card.get('v')}: English excerpt not found in Sahih International: {card['en']!r}")
+    if ur and "q" in card:
+        full = maududi(card["q"])
+        if _norm(card["ur"]) not in _norm(full):
+            sys.exit(f"{card['q']}: Urdu excerpt not found in Maududi: {card['ur']!r}")
+        return (f'<div id="{cid}" class="§card"><div class="§ar" dir="rtl" lang="ar">{esc(ar)}</div>'
+                f'<div class="§en §urtr" dir="rtl" lang="ur">{esc(card["ur"])}</div><div class="§ref">{esc(ref)}</div></div>')
     lead = "…" if not v["en"].startswith(card["en"]) else ""
     tail = "" if v["en"].rstrip(" .").endswith(card["en"]) else "…"
     en = f"“{lead}{show_en(card['en'])}{tail}”"
@@ -836,6 +865,15 @@ CHAPTER_CSS = """
       letter-spacing: 0.32em; color: rgba(245,234,214,0.7); }
     .§brand span { color: var(--accent); }
     .§fade { position: absolute; inset: 0; background: #000; }
+"""
+
+
+URDU_CSS = """
+    .§cap { font-family: "Noto Nastaliq Urdu"; font-weight: 400; font-size: 44px; line-height: 1.9; direction: rtl; bottom: 40px; }
+    .§urtr { font-family: "Noto Nastaliq Urdu"; font-style: normal; font-weight: 400; font-size: 44px; line-height: 1.9; }
+    .§label i, .§title, .§tsub, .§endt { font-family: "Noto Nastaliq Urdu"; font-style: normal; font-weight: 400; direction: rtl; line-height: 1.8; }
+    .§title { font-size: 92px; } .§tsub { font-size: 46px; } .§label i { font-size: 48px; } .§endt { font-size: 44px; }
+    .§label b { letter-spacing: 0; font-family: "Noto Nastaliq Urdu"; font-weight: 400; font-size: 30px; }
 """
 
 
@@ -897,7 +935,7 @@ def chapter_html(n: int, ch: dict, lines, timings, align, dur: float, quran: dic
 
     label = ""
     if ch.get("title"):
-        label = (f'<div id="§lab" class="§label clip" data-start="0.3" data-duration="4.6"><b>CHAPTER {n}</b><i>{esc(ch["title"])}</i></div>')
+        label = (f'<div id="§lab" class="§label clip" data-start="0.3" data-duration="4.6"><b>{UR_LABEL["chapter"] + " " + str(n) if LANG["code"] == "ur" else f"CHAPTER {n}"}</b><i>{esc(ch["title"])}</i></div>')
         t.to("#§lab", "opacity: 0, x: -20", "opacity: 1, x: 0", 0.3, 0.6, "power2.out")
         t.to("#§lab", "opacity: 1", "opacity: 0", 4.4, 0.5)
     t.to("#§scene", "scale: 1.0, x: 0", f"scale: 1.06, x: {(-1) ** n * 30}", 0, dur, "none")
@@ -905,6 +943,8 @@ def chapter_html(n: int, ch: dict, lines, timings, align, dur: float, quran: dic
         t.fade("#§fadeIn", 1, 0, 0, FADE)
     t.fade("#§fadeOut", 0, 1, dur - FADE, FADE)
 
+    if LANG["code"] == "ur":
+        scss += URDU_CSS
     body = f"""<template>
   <style>
     #{p} {{ position: absolute; inset: 0; overflow: hidden; background: #000; }}{BASE_CSS}{CHAPTER_CSS}{scss}
@@ -940,6 +980,7 @@ def wav_len(path: Path) -> float:
 def main() -> None:
     d = Path(sys.argv[1])
     spec = json.loads((d / "spec.json").read_text(encoding="utf-8"))
+    LANG["code"] = spec.get("lang", "en")
     qf = d / "assets/surah12.json"
     quran = json.loads(qf.read_text(encoding="utf-8"))["verses"] if qf.exists() else {}
     if spec.get("scene_module"):
