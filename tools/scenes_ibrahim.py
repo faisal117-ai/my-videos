@@ -332,10 +332,10 @@ def mina(t, L, E, D):
            + '<path d="M 0 880 Q 960 840 1920 880 V 1080 H 0 Z" fill="#3a2a1e"/><ellipse cx="760" cy="900" rx="220" ry="60" fill="#4a3826"/>'
            + '<g id="§knife" transform="translate(690,880) rotate(-8)"><rect x="0" y="-6" width="60" height="14" rx="4" fill="#4a3020"/><path d="M 60 -8 L 170 -2 L 170 4 L 60 10 Z" fill="#c8ccd6"/></g>')}
       <div id="§glow"></div>
-      {svg(f'<g id="§ram" transform="translate(1260,800) scale(1.5)">{RAM}</g>')}"""
+      {svg(f'<g id="§ram"><g transform="translate(1260,800) scale(1.5)">{RAM}</g></g>')}"""
     t.fade("#§dawn", 0, 1, L[3], 4)
     t.fade("#§knife", 0, 1, L[2] + 1.5, 0.8)
-    t.to("#§knife", "filter: brightness(1)", "filter: brightness(1.8)", L[4], 0.3)
+    t.to("#§knife", 'filter: "brightness(1)"', 'filter: "brightness(1.8)"', L[4], 0.3)
     r0 = L[6] + 0.5
     t.fade("#§knife", 1, 0, r0, 0.6)
     t.fade("#§glow", 0, 1, r0, 1.0)
@@ -403,13 +403,15 @@ def makkah(t, L, E, D):
     #§sky { background: radial-gradient(ellipse at 50% 100%, #1a2240 0%, #0a0e20 55%, #03040a 100%); }
     #§k { position: absolute; left: 880px; top: 640px; width: 160px; height: 200px; background: #0c0a0c; box-shadow: 0 0 80px 30px rgba(255,220,160,0.25); }
     #§kb { position: absolute; left: 880px; top: 680px; width: 160px; height: 14px; background: #c9a04a; }
+    #§kglow { position: absolute; left: 760px; top: 560px; width: 400px; height: 360px; border-radius: 50%;
+      background: radial-gradient(ellipse, rgba(255,220,160,0.35), rgba(255,220,160,0) 70%); }
 """
     markup = f"""
       <div id="§sky" class="§full"></div>{starfield("§mk", 160, 131, (0, 0, W, 640), t, (1.5, 3.5))}
       {svg('<path d="M -50 860 L 260 520 L 520 640 L 760 860 Z" fill="#14121c"/><path d="M 1160 860 L 1420 540 L 1680 620 L 1980 860 Z" fill="#14121c"/>'
            + '<path d="M 0 840 Q 960 820 1920 840 V 1080 H 0 Z" fill="#1c1820"/>')}
-      <div id="§k"></div><div id="§kb"></div>"""
-    t.loop("#§k", "box-shadow: 0 0 60px 20px rgba(255,220,160,0.2)", "box-shadow: 0 0 110px 40px rgba(255,220,160,0.35)", 2.5)
+      <div id="§kglow"></div><div id="§k"></div><div id="§kb"></div>"""
+    t.loop("#§kglow", "opacity: 0.5, scale: 0.95", "opacity: 1, scale: 1.08", 2.5)
     return css, markup
 
 
