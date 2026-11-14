@@ -871,6 +871,7 @@ CHAPTER_CSS = """
 URDU_CSS = """
     .§cap { font-family: "Noto Nastaliq Urdu"; font-weight: 400; font-size: 44px; line-height: 1.9; direction: rtl; bottom: 40px; }
     .§urtr { font-family: "Noto Nastaliq Urdu"; font-style: normal; font-weight: 400; font-size: 44px; line-height: 1.9; }
+    .§ctext { font-family: "Noto Nastaliq Urdu"; font-weight: 400; font-size: 60px; line-height: 1.9; direction: rtl; }
     .§label i, .§title, .§tsub, .§endt { font-family: "Noto Nastaliq Urdu"; font-style: normal; font-weight: 400; direction: rtl; line-height: 1.8; }
     .§title { font-size: 92px; } .§tsub { font-size: 46px; } .§label i { font-size: 48px; } .§endt { font-size: 44px; }
     .§label b { letter-spacing: 0; font-family: "Noto Nastaliq Urdu"; font-weight: 400; font-size: 30px; }

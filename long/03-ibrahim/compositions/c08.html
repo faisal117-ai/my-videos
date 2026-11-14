@@ -1,0 +1,128 @@
+<template>
+  <style>
+    #c08 { position: absolute; inset: 0; overflow: hidden; background: #000; }
+    .c08-st { position: absolute; border-radius: 50%; background: #eef4ff; box-shadow: 0 0 6px rgba(220,235,255,0.9); }
+    .c08-mote { position: absolute; border-radius: 50%; }
+    .c08-full { position: absolute; inset: 0; }
+    .c08-svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+
+    .c08-cam { position: absolute; inset: 0; transform-origin: 50% 55%; }
+    .c08-scrim { position: absolute; left: 0; right: 0; bottom: 0; height: 300px;
+      background: linear-gradient(0deg, rgba(0,0,0,0.75), rgba(0,0,0,0)); }
+    .c08-cap { position: absolute; left: 210px; right: 210px; bottom: 64px; text-align: center;
+      font-family: "Cormorant Garamond"; font-weight: 600; font-size: 54px; line-height: 1.12; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c08-cardwrap { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+      background: radial-gradient(ellipse at 50% 50%, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.45) 50%, rgba(0,0,0,0) 80%); }
+    .c08-card { max-width: 1400px; display: flex; flex-direction: column; align-items: center; gap: 26px; text-align: center; }
+    .c08-ar { font-family: "Amiri Quran"; font-size: 70px; line-height: 1.8; color: #fff6e6; text-shadow: 0 0 30px rgba(215,236,255,0.4); }
+    .c08-en { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 50px; line-height: 1.18; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c08-ctext { font-family: "Cormorant Garamond"; font-weight: 600; font-size: 76px; line-height: 1.1; color: #f5ead6;
+      text-shadow: 0 3px 22px rgba(0,0,0,0.9); }
+    .c08-hi { color: var(--accent); }
+    .c08-ref { font-family: Inter, sans-serif; font-weight: 700; font-size: 28px; letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--accent); border: 2px solid var(--accent); border-radius: 999px; padding: 10px 24px; background: rgba(0,0,0,0.4); }
+    .c08-title { font-family: "Cormorant Garamond"; font-weight: 600; font-size: 118px; line-height: 1.02; color: #f5ead6;
+      text-shadow: 0 4px 30px rgba(0,0,0,0.8); }
+    .c08-tsub { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 52px; color: var(--accent); }
+    .c08-mark { font-family: Inter, sans-serif; font-weight: 700; font-size: 64px; letter-spacing: 0.32em; color: #f5ead6; }
+    .c08-mark span { color: var(--accent); }
+    .c08-endt { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 52px; color: #f5ead6; }
+    .c08-btn { font-family: Inter, sans-serif; font-weight: 700; font-size: 34px; letter-spacing: 0.08em; color: #120b08;
+      background: var(--accent); border-radius: 999px; padding: 18px 48px; }
+    .c08-label { position: absolute; left: 90px; top: 70px; }
+    .c08-label b { display: block; font-family: Inter, sans-serif; font-weight: 700; font-size: 28px; letter-spacing: 0.3em; color: var(--accent); }
+    .c08-label i { display: block; font-family: "Cormorant Garamond"; font-style: normal; font-weight: 600; font-size: 60px; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c08-brand { position: absolute; right: 80px; top: 70px; font-family: Inter, sans-serif; font-weight: 700; font-size: 28px;
+      letter-spacing: 0.32em; color: rgba(245,234,214,0.7); }
+    .c08-brand span { color: var(--accent); }
+    .c08-fade { position: absolute; inset: 0; background: #000; }
+
+    #c08-sky { background: linear-gradient(180deg, #3a5a8a 0%, #d8b88a 55%, #e8c08a 64%, #8a6440 72%); }
+    #c08-dot { position: absolute; left: 0; top: 0; width: 26px; height: 26px; margin: -13px; border-radius: 50%; opacity: 0;
+      background: radial-gradient(circle, #fffbe8, rgba(255,230,160,0) 70%); box-shadow: 0 0 30px 10px rgba(255,230,160,0.5); }
+    #c08-spring { position: absolute; left: 960px; top: 900px; }
+    .c08-sp { position: absolute; left: 0; top: 0; width: 14px; height: 14px; margin: -7px; border-radius: 50%; opacity: 0;
+      background: radial-gradient(circle, #f2fbff, #8fd0f0 60%, rgba(140,200,240,0) 75%); }
+    #c08-pool { position: absolute; left: 820px; top: 880px; width: 280px; height: 60px; border-radius: 50%; opacity: 0;
+      background: radial-gradient(ellipse, #bfe6f6, #5aa8d0 60%, rgba(90,168,208,0) 72%); }
+
+  </style>
+  <div id="c08" data-composition-id="c08" data-width="1920" data-height="1080">
+    <div id="c08-scene" class="clip" data-start="0" data-duration="73.89" style="position:absolute;inset:0" data-layout-allow-overflow>
+      <div id="c08-cam" class="c08-cam">
+      <div id="c08-sky" class="c08-full"></div>
+      <svg class="c08-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none"><path d="M -50 900 L 200 420 L 420 560 L 600 380 L 760 900 Z" fill="#6a4a30"/><path d="M 1160 900 L 1320 400 L 1500 520 L 1700 360 L 1980 900 Z" fill="#6a4a30"/><path d="M 0 900 Q 960 860 1920 900 V 1080 H 0 Z" fill="#a07448"/><g transform="translate(860,920)"><path d="M 0 0 Q 20 -40 50 -20 Q 70 10 40 30 Q 10 30 0 0 Z" fill="#7a5634"/><ellipse cx="110" cy="20" rx="34" ry="18" fill="#5a3e24"/></g><text x="300" y="860" font-family="Inter" font-weight="700" font-size="30" letter-spacing="6" fill="rgba(255,240,210,0.85)" text-anchor="middle">SAFA</text><text x="1600" y="860" font-family="Inter" font-weight="700" font-size="30" letter-spacing="6" fill="rgba(255,240,210,0.85)" text-anchor="middle">MARWA</text></svg>
+      <div id="c08-dot"></div><div id="c08-pool"></div><div id="c08-spring"><div id="c08-sp0" class="c08-sp"></div><div id="c08-sp1" class="c08-sp"></div><div id="c08-sp2" class="c08-sp"></div><div id="c08-sp3" class="c08-sp"></div><div id="c08-sp4" class="c08-sp"></div><div id="c08-sp5" class="c08-sp"></div><div id="c08-sp6" class="c08-sp"></div><div id="c08-sp7" class="c08-sp"></div><div id="c08-sp8" class="c08-sp"></div><div id="c08-sp9" class="c08-sp"></div><div id="c08-sp10" class="c08-sp"></div><div id="c08-sp11" class="c08-sp"></div><div id="c08-sp12" class="c08-sp"></div><div id="c08-sp13" class="c08-sp"></div><div id="c08-sp14" class="c08-sp"></div><div id="c08-sp15" class="c08-sp"></div><div id="c08-sp16" class="c08-sp"></div><div id="c08-sp17" class="c08-sp"></div><div id="c08-sp18" class="c08-sp"></div><div id="c08-sp19" class="c08-sp"></div><div id="c08-sp20" class="c08-sp"></div><div id="c08-sp21" class="c08-sp"></div><div id="c08-sp22" class="c08-sp"></div><div id="c08-sp23" class="c08-sp"></div><div id="c08-sp24" class="c08-sp"></div><div id="c08-sp25" class="c08-sp"></div></div>
+      </div>
+    </div>
+    <div id="c08-scr" class="c08-scrim clip" data-start="0" data-duration="73.89"></div>
+    <div id="c08-lab" class="c08-label clip" data-start="0.3" data-duration="4.6"><b>CHAPTER 8</b><i>The Valley Without Water</i></div>
+    <div id="c08-cp0" class="c08-cap clip" data-start="0.22" data-duration="3.12">His son Ismail was born.</div>
+    <div id="c08-cp1" class="c08-cap clip" data-start="3.34" data-duration="3.54">And then came a test that no father would choose.</div>
+    <div id="c08-cp2" class="c08-cap clip" data-start="6.88" data-duration="5.25">By Allah&#x27;s command, Ibrahim brought the baby and his mother to a dry valley,</div>
+    <div id="c08-cp3" class="c08-cap clip" data-start="12.13" data-duration="3.95">with no water, no plants, and no people.</div>
+    <div id="c08-cp4" class="c08-cap clip" data-start="16.08" data-duration="2.02">The valley of Makkah.</div>
+    <div id="c08-cp5" class="c08-cap clip" data-start="51.66" data-duration="5.13">Safa and Marwa, seven times, searching for any sign of help.</div>
+    <div id="c08-cp6" class="c08-cap clip" data-start="69.45" data-duration="3.84">walking in the footsteps of a mother who trusted Allah.</div>
+    <div id="c08-k0w" class="c08-cardwrap clip" data-start="18.15" data-duration="15.46"><div id="c08-k0" class="c08-card"><div class="c08-ctext">“Then He will not abandon us.”</div><div class="c08-ref">Sahih al-Bukhari 3364</div></div></div>
+    <div id="c08-k1w" class="c08-cardwrap clip" data-start="33.70" data-duration="14.33"><div id="c08-k1" class="c08-card"><div class="c08-ar" dir="rtl" lang="ar">رَّبَّنَآ إِنِّيٓ أَسۡكَنتُ مِن ذُرِّيَّتِي بِوَادٍ غَيۡرِ ذِي زَرۡعٍ عِندَ بَيۡتِكَ ٱلۡمُحَرَّمِ رَبَّنَا لِيُقِيمُواْ ٱلصَّلَوٰةَ</div><div class="c08-en">“Our Lord, I have settled some of my descendants in an uncultivated valley near Your sacred House, our Lord, that they may establish prayer…”</div><div class="c08-ref">Ibrahim 14:37</div></div></div>
+    <div id="c08-k2w" class="c08-cardwrap clip" data-start="56.84" data-duration="9.52"><div id="c08-k2" class="c08-card"><div class="c08-ctext">The spring of <span class="c08-hi">Zamzam</span></div><div class="c08-ref">Sahih al-Bukhari 3364</div></div></div>
+    <div id="c08-fadeIn" class="c08-fade clip" data-start="0" data-duration="0.55" style="opacity:1"></div>
+    <div id="c08-fadeOut" class="c08-fade clip" data-start="73.39" data-duration="0.50" style="opacity:0"></div>
+    <div id="c08-br" class="c08-brand clip" data-start="0" data-duration="73.89">HAQ <span>·</span> STORIES</div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#c08-dot", {opacity: 0}, {opacity: 1, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 48.08);
+    tl.fromTo("#c08-dot", {x: 300, y: 800}, {x: 1600, y: 800, duration: 1.16, ease: "sine.inOut", immediateRender: false}, 48.08);
+    tl.fromTo("#c08-dot", {x: 1600, y: 800}, {x: 300, y: 800, duration: 1.16, ease: "sine.inOut", immediateRender: false}, 49.30);
+    tl.fromTo("#c08-dot", {x: 300, y: 800}, {x: 1600, y: 800, duration: 1.16, ease: "sine.inOut", immediateRender: false}, 50.52);
+    tl.fromTo("#c08-dot", {x: 1600, y: 800}, {x: 300, y: 800, duration: 1.16, ease: "sine.inOut", immediateRender: false}, 51.74);
+    tl.fromTo("#c08-dot", {x: 300, y: 800}, {x: 1600, y: 800, duration: 1.16, ease: "sine.inOut", immediateRender: false}, 52.95);
+    tl.fromTo("#c08-dot", {x: 1600, y: 800}, {x: 300, y: 800, duration: 1.16, ease: "sine.inOut", immediateRender: false}, 54.17);
+    tl.fromTo("#c08-dot", {x: 300, y: 800}, {x: 1600, y: 800, duration: 1.16, ease: "sine.inOut", immediateRender: false}, 55.39);
+    tl.fromTo("#c08-dot", {opacity: 1}, {opacity: 0, duration: 0.40, ease: "sine.inOut", immediateRender: false}, 56.61);
+    tl.fromTo("#c08-pool", {opacity: 0}, {opacity: 1, duration: 0.80, ease: "sine.inOut", immediateRender: false}, 57.59);
+    tl.fromTo("#c08-sp0", {x: 0, y: 0, opacity: 0}, {keyframes: [{x: 1, y: -183, opacity: 1, duration: 0.59, ease: "power2.out"}, {x: 1, y: -10, opacity: 0, duration: 0.59, ease: "power2.in"}], repeat: 14, immediateRender: false}, 58.04);
+    tl.fromTo("#c08-sp1", {x: 0, y: 0, opacity: 0}, {keyframes: [{x: 29, y: -142, opacity: 1, duration: 0.56, ease: "power2.out"}, {x: 57, y: -10, opacity: 0, duration: 0.56, ease: "power2.in"}], repeat: 15, immediateRender: false}, 58.45);
+    tl.fromTo("#c08-sp2", {x: 0, y: 0, opacity: 0}, {keyframes: [{x: 16, y: -247, opacity: 1, duration: 0.52, ease: "power2.out"}, {x: 31, y: -10, opacity: 0, duration: 0.52, ease: "power2.in"}], repeat: 16, immediateRender: false}, 57.97);
+    tl.fromTo("#c08-sp3", {x: 0, y: 0, opacity: 0}, {keyframes: [{x: -16, y: -139, opacity: 1, duration: 0.47, ease: "power2.out"}, {x: -32, y: -10, opacity: 0, duration: 0.47, ease: "power2.in"}], repeat: 18, immediateRender: false}, 58.07);
+    tl.fromTo("#c08-sp4", {x: 0, y: 0, opacity: 0}, {keyframes: [{x: -24, y: -201, opacity: 1, duration: 0.69, ease: "power2.out"}, {x: -49, y: -10, opacity: 0, duration: 0.69, ease: "power2.in"}], repeat: 12, immediateRender: false}, 58.97);
+    tl.fromTo("#c08-sp5", {x: 0, y: 0, opacity: 0}, {keyframes: [{x: 28, y: -166, opacity: 1, duration: 0.55, ease: "power2.out"}, {x: 56, y: -10, opacity: 0, duration: 0.55, ease: "power2.in"}], repeat: 15, immediateRender: false}, 58.57);
+    tl.fromTo("#c08-sp6", {x: 0, y: 0, opacity: 0}, {keyframes: [{x: -38, y: -235, opacity: 1, duration: 0.51, ease: "power2.out"}, {x: -75, y: -10, opacity: 0, duration: 0.51, ease: "power2.in"}], repeat: 16, immediateRender: false}, 58.05);
+    tl.fromTo("#c08-sp7", {x: 0, y: 0, opacity: 0}, {keyframes: [{x: 9, y: -254, opacity: 1, duration: 0.63, ease: "power2.out"}, {x: 18, y: -10, opacity: 0, duration: 0.63, ease: "power2.in"}], repeat: 13, immediateRender: false}, 58.65);
+    tl.fromTo("#c08-sp8", {x: 0, y: 0, opacity: 0}, {keyframes: [{x: -15, y: -169, opacity: 1, duration: 0.67, ease: "power2.out"}, {x: -31, y: -10, opacity: 0, duration: 0.67, ease: "power2.in"}], repeat: 13, immediateRender: false}, 58.37);
+    tl.fromTo("#c08-sp9", {x: 0, y: 0, opacity: 0}, {keyframes: [{x: 18, y: -134, opacity: 1, duration: 0.47, ease: "power2.out"}, {x: 35, y: -10, opacity: 0, duration: 0.47, ease: "power2.in"}], repeat: 18, immediateRender: false}, 57.99);
+    tl.fromTo("#c08-sp10", {x: 0, y: 0, opacity: 0}, {keyframes: [{x: -18, y: -157, opacity: 1, duration: 0.65, ease: "power2.out"}, {x: -36, y: -10, opacity: 0, duration: 0.65, ease: "power2.in"}], repeat: 13, immediateRender: false}, 58.80);
+    tl.fromTo("#c08-sp11", {x: 0, y: 0, opacity: 0}, {keyframes: [{x: -22, y: -134, opacity: 1, duration: 0.50, ease: "power2.out"}, {x: -44, y: -10, opacity: 0, duration: 0.50, ease: "power2.in"}], repeat: 17, immediateRender: false}, 57.78);
+    tl.fromTo("#c08-sp12", {x: 0, y: 0, opacity: 0}, {keyframes: [{x: 23, y: -173, opacity: 1, duration: 0.69, ease: "power2.out"}, {x: 47, y: -10, opacity: 0, duration: 0.69, ease: "power2.in"}], repeat: 12, immediateRender: false}, 57.62);
+    tl.fromTo("#c08-sp13", {x: 0, y: 0, opacity: 0}, {keyframes: [{x: 3, y: -139, opacity: 1, duration: 0.66, ease: "power2.out"}, {x: 6, y: -10, opacity: 0, duration: 0.66, ease: "power2.in"}], repeat: 13, immediateRender: false}, 58.10);
+    tl.fromTo("#c08-sp14", {x: 0, y: 0, opacity: 0}, {keyframes: [{x: -31, y: -202, opacity: 1, duration: 0.67, ease: "power2.out"}, {x: -63, y: -10, opacity: 0, duration: 0.67, ease: "power2.in"}], repeat: 13, immediateRender: false}, 57.61);
+    tl.fromTo("#c08-sp15", {x: 0, y: 0, opacity: 0}, {keyframes: [{x: -40, y: -246, opacity: 1, duration: 0.56, ease: "power2.out"}, {x: -80, y: -10, opacity: 0, duration: 0.56, ease: "power2.in"}], repeat: 15, immediateRender: false}, 57.70);
+    tl.fromTo("#c08-sp16", {x: 0, y: 0, opacity: 0}, {keyframes: [{x: 65, y: -253, opacity: 1, duration: 0.56, ease: "power2.out"}, {x: 131, y: -10, opacity: 0, duration: 0.56, ease: "power2.in"}], repeat: 15, immediateRender: false}, 57.81);
+    tl.fromTo("#c08-sp17", {x: 0, y: 0, opacity: 0}, {keyframes: [{x: -64, y: -224, opacity: 1, duration: 0.64, ease: "power2.out"}, {x: -127, y: -10, opacity: 0, duration: 0.64, ease: "power2.in"}], repeat: 13, immediateRender: false}, 58.54);
+    tl.fromTo("#c08-sp18", {x: 0, y: 0, opacity: 0}, {keyframes: [{x: 19, y: -169, opacity: 1, duration: 0.52, ease: "power2.out"}, {x: 39, y: -10, opacity: 0, duration: 0.52, ease: "power2.in"}], repeat: 16, immediateRender: false}, 58.19);
+    tl.fromTo("#c08-sp19", {x: 0, y: 0, opacity: 0}, {keyframes: [{x: 33, y: -186, opacity: 1, duration: 0.58, ease: "power2.out"}, {x: 65, y: -10, opacity: 0, duration: 0.58, ease: "power2.in"}], repeat: 15, immediateRender: false}, 58.04);
+    tl.fromTo("#c08-sp20", {x: 0, y: 0, opacity: 0}, {keyframes: [{x: 49, y: -254, opacity: 1, duration: 0.52, ease: "power2.out"}, {x: 98, y: -10, opacity: 0, duration: 0.52, ease: "power2.in"}], repeat: 16, immediateRender: false}, 58.59);
+    tl.fromTo("#c08-sp21", {x: 0, y: 0, opacity: 0}, {keyframes: [{x: 33, y: -177, opacity: 1, duration: 0.51, ease: "power2.out"}, {x: 66, y: -10, opacity: 0, duration: 0.51, ease: "power2.in"}], repeat: 16, immediateRender: false}, 58.29);
+    tl.fromTo("#c08-sp22", {x: 0, y: 0, opacity: 0}, {keyframes: [{x: 5, y: -203, opacity: 1, duration: 0.70, ease: "power2.out"}, {x: 10, y: -10, opacity: 0, duration: 0.70, ease: "power2.in"}], repeat: 12, immediateRender: false}, 58.96);
+    tl.fromTo("#c08-sp23", {x: 0, y: 0, opacity: 0}, {keyframes: [{x: 24, y: -193, opacity: 1, duration: 0.49, ease: "power2.out"}, {x: 47, y: -10, opacity: 0, duration: 0.49, ease: "power2.in"}], repeat: 17, immediateRender: false}, 57.67);
+    tl.fromTo("#c08-sp24", {x: 0, y: 0, opacity: 0}, {keyframes: [{x: 30, y: -156, opacity: 1, duration: 0.62, ease: "power2.out"}, {x: 60, y: -10, opacity: 0, duration: 0.62, ease: "power2.in"}], repeat: 14, immediateRender: false}, 57.97);
+    tl.fromTo("#c08-sp25", {x: 0, y: 0, opacity: 0}, {keyframes: [{x: -37, y: -216, opacity: 1, duration: 0.49, ease: "power2.out"}, {x: -74, y: -10, opacity: 0, duration: 0.49, ease: "power2.in"}], repeat: 17, immediateRender: false}, 57.66);
+    tl.fromTo("#c08-k0w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 18.15);
+    tl.fromTo("#c08-k0", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 18.15);
+    tl.fromTo("#c08-k1w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 33.70);
+    tl.fromTo("#c08-k1", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 33.70);
+    tl.fromTo("#c08-k2w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 56.84);
+    tl.fromTo("#c08-k2", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 56.84);
+    tl.fromTo("#c08-lab", {opacity: 0, x: -20}, {opacity: 1, x: 0, duration: 0.60, ease: "power2.out", immediateRender: false}, 0.30);
+    tl.fromTo("#c08-lab", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 4.40);
+    tl.fromTo("#c08-scene", {scale: 1.0, x: 0}, {scale: 1.06, x: 30, duration: 73.89, ease: "none", immediateRender: false}, 0.00);
+    tl.fromTo("#c08-fadeIn", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 0.00);
+    tl.fromTo("#c08-fadeOut", {opacity: 0}, {opacity: 1, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 73.39);
+    window.__timelines["c08"] = tl;
+  </script>
+</template>

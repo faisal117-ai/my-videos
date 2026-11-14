@@ -1,0 +1,93 @@
+<template>
+  <style>
+    #c01 { position: absolute; inset: 0; overflow: hidden; background: #000; }
+    .c01-st { position: absolute; border-radius: 50%; background: #eef4ff; box-shadow: 0 0 6px rgba(220,235,255,0.9); }
+    .c01-mote { position: absolute; border-radius: 50%; }
+    .c01-full { position: absolute; inset: 0; }
+    .c01-svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+
+    .c01-cam { position: absolute; inset: 0; transform-origin: 50% 55%; }
+    .c01-scrim { position: absolute; left: 0; right: 0; bottom: 0; height: 300px;
+      background: linear-gradient(0deg, rgba(0,0,0,0.75), rgba(0,0,0,0)); }
+    .c01-cap { position: absolute; left: 210px; right: 210px; bottom: 64px; text-align: center;
+      font-family: "Cormorant Garamond"; font-weight: 600; font-size: 54px; line-height: 1.12; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c01-cardwrap { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+      background: radial-gradient(ellipse at 50% 50%, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.45) 50%, rgba(0,0,0,0) 80%); }
+    .c01-card { max-width: 1400px; display: flex; flex-direction: column; align-items: center; gap: 26px; text-align: center; }
+    .c01-ar { font-family: "Amiri Quran"; font-size: 70px; line-height: 1.8; color: #fff6e6; text-shadow: 0 0 30px rgba(215,236,255,0.4); }
+    .c01-en { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 50px; line-height: 1.18; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c01-ctext { font-family: "Cormorant Garamond"; font-weight: 600; font-size: 76px; line-height: 1.1; color: #f5ead6;
+      text-shadow: 0 3px 22px rgba(0,0,0,0.9); }
+    .c01-hi { color: var(--accent); }
+    .c01-ref { font-family: Inter, sans-serif; font-weight: 700; font-size: 28px; letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--accent); border: 2px solid var(--accent); border-radius: 999px; padding: 10px 24px; background: rgba(0,0,0,0.4); }
+    .c01-title { font-family: "Cormorant Garamond"; font-weight: 600; font-size: 118px; line-height: 1.02; color: #f5ead6;
+      text-shadow: 0 4px 30px rgba(0,0,0,0.8); }
+    .c01-tsub { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 52px; color: var(--accent); }
+    .c01-mark { font-family: Inter, sans-serif; font-weight: 700; font-size: 64px; letter-spacing: 0.32em; color: #f5ead6; }
+    .c01-mark span { color: var(--accent); }
+    .c01-endt { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 52px; color: #f5ead6; }
+    .c01-btn { font-family: Inter, sans-serif; font-weight: 700; font-size: 34px; letter-spacing: 0.08em; color: #120b08;
+      background: var(--accent); border-radius: 999px; padding: 18px 48px; }
+    .c01-label { position: absolute; left: 90px; top: 70px; }
+    .c01-label b { display: block; font-family: Inter, sans-serif; font-weight: 700; font-size: 28px; letter-spacing: 0.3em; color: var(--accent); }
+    .c01-label i { display: block; font-family: "Cormorant Garamond"; font-style: normal; font-weight: 600; font-size: 60px; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c01-brand { position: absolute; right: 80px; top: 70px; font-family: Inter, sans-serif; font-weight: 700; font-size: 28px;
+      letter-spacing: 0.32em; color: rgba(245,234,214,0.7); }
+    .c01-brand span { color: var(--accent); }
+    .c01-fade { position: absolute; inset: 0; background: #000; }
+
+    #c01-sky { background: linear-gradient(180deg, #1a1030 0%, #5a3040 45%, #d9864a 62%, #3a2216 72%); }
+    #c01-bow { position: absolute; inset: 0; transform-origin: 50% 100%; }
+
+    .c01-cap { font-family: "Noto Nastaliq Urdu"; font-weight: 400; font-size: 44px; line-height: 1.9; direction: rtl; bottom: 40px; }
+    .c01-urtr { font-family: "Noto Nastaliq Urdu"; font-style: normal; font-weight: 400; font-size: 44px; line-height: 1.9; }
+    .c01-ctext { font-family: "Noto Nastaliq Urdu"; font-weight: 400; font-size: 60px; line-height: 1.9; direction: rtl; }
+    .c01-label i, .c01-title, .c01-tsub, .c01-endt { font-family: "Noto Nastaliq Urdu"; font-style: normal; font-weight: 400; direction: rtl; line-height: 1.8; }
+    .c01-title { font-size: 92px; } .c01-tsub { font-size: 46px; } .c01-label i { font-size: 48px; } .c01-endt { font-size: 44px; }
+    .c01-label b { letter-spacing: 0; font-family: "Noto Nastaliq Urdu"; font-weight: 400; font-size: 30px; }
+
+  </style>
+  <div id="c01" data-composition-id="c01" data-width="1920" data-height="1080">
+    <div id="c01-scene" class="clip" data-start="0" data-duration="57.14" style="position:absolute;inset:0" data-layout-allow-overflow>
+      <div id="c01-cam" class="c01-cam">
+      <div id="c01-sky" class="c01-full"></div>
+      <svg class="c01-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none"><path d="M 760 700 L 760 600 L 820 600 L 820 520 L 880 520 L 880 440 L 1040 440 L 1040 520 L 1100 520 L 1100 600 L 1160 600 L 1160 700 Z" fill="#2a1a14"/><rect x="0" y="700" width="1920" height="380" fill="#2a1c12"/><g transform="translate(0,860)"><g transform="translate(160,0)"><rect x="-46" y="-14" width="92" height="14" fill="#3a2a1c"/><path d="M -33 -14 L -33 -97 Q 0 -112 33 -97 L 33 -14 Z" fill="#7a6a58"/><circle cx="0" cy="-122" r="24" fill="#8a7a66"/></g><g transform="translate(340,0)"><rect x="-48" y="-14" width="97" height="14" fill="#3a2a1c"/><path d="M -35 -14 L -35 -102 Q 0 -119 35 -102 L 35 -14 Z" fill="#7a6a58"/><circle cx="0" cy="-129" r="25" fill="#8a7a66"/></g><g transform="translate(520,0)"><rect x="-57" y="-14" width="114" height="14" fill="#3a2a1c"/><path d="M -41 -14 L -41 -120 Q 0 -140 41 -120 L 41 -14 Z" fill="#7a6a58"/><circle cx="0" cy="-151" r="29" fill="#8a7a66"/></g><g transform="translate(700,0)"><rect x="-46" y="-14" width="92" height="14" fill="#3a2a1c"/><path d="M -33 -14 L -33 -97 Q 0 -113 33 -97 L 33 -14 Z" fill="#7a6a58"/><circle cx="0" cy="-123" r="24" fill="#8a7a66"/></g><g transform="translate(880,0)"><rect x="-47" y="-14" width="94" height="14" fill="#3a2a1c"/><path d="M -34 -14 L -34 -100 Q 0 -116 34 -100 L 34 -14 Z" fill="#7a6a58"/><circle cx="0" cy="-125" r="24" fill="#8a7a66"/></g><g transform="translate(1060,0)"><rect x="-49" y="-14" width="98" height="14" fill="#3a2a1c"/><path d="M -35 -14 L -35 -104 Q 0 -120 35 -104 L 35 -14 Z" fill="#7a6a58"/><circle cx="0" cy="-130" r="25" fill="#8a7a66"/></g><g transform="translate(1240,0)"><rect x="-40" y="-14" width="79" height="14" fill="#3a2a1c"/><path d="M -28 -14 L -28 -84 Q 0 -97 28 -84 L 28 -14 Z" fill="#7a6a58"/><circle cx="0" cy="-105" r="20" fill="#8a7a66"/></g><g transform="translate(1420,0)"><rect x="-47" y="-14" width="95" height="14" fill="#3a2a1c"/><path d="M -34 -14 L -34 -100 Q 0 -116 34 -100 L 34 -14 Z" fill="#7a6a58"/><circle cx="0" cy="-126" r="24" fill="#8a7a66"/></g><g transform="translate(1600,0)"><rect x="-50" y="-14" width="100" height="14" fill="#3a2a1c"/><path d="M -36 -14 L -36 -106 Q 0 -123 36 -106 L 36 -14 Z" fill="#7a6a58"/><circle cx="0" cy="-133" r="26" fill="#8a7a66"/></g><g transform="translate(1780,0)"><rect x="-54" y="-14" width="108" height="14" fill="#3a2a1c"/><path d="M -39 -14 L -39 -114 Q 0 -132 39 -114 L 39 -14 Z" fill="#7a6a58"/><circle cx="0" cy="-143" r="28" fill="#8a7a66"/></g></g></svg>
+      <div id="c01-bow"><svg class="c01-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none"><g fill="#0a0604" transform="translate(0,1060)"><g transform="translate(916,0) skewX(0)"><circle cx="0" cy="-95.6" r="13.7"/><path d="M -12.1 -81.2 Q 0 -88.1 12.1 -81.2 L 21.2 0 L -21.2 0 Z"/></g><g transform="translate(1246,0) skewX(0)"><circle cx="0" cy="-83.5" r="11.9"/><path d="M -10.6 -70.9 Q 0 -76.9 10.6 -70.9 L 18.5 0 L -18.5 0 Z"/></g><g transform="translate(119,0) skewX(0)"><circle cx="0" cy="-89.0" r="12.7"/><path d="M -11.3 -75.6 Q 0 -81.9 11.3 -75.6 L 19.8 0 L -19.8 0 Z"/></g><g transform="translate(571,0) skewX(0)"><circle cx="0" cy="-99.3" r="14.2"/><path d="M -12.6 -84.3 Q 0 -91.4 12.6 -84.3 L 22.0 0 L -22.0 0 Z"/></g><g transform="translate(1288,0) skewX(0)"><circle cx="0" cy="-94.3" r="13.5"/><path d="M -12.0 -80.1 Q 0 -86.8 12.0 -80.1 L 21.0 0 L -21.0 0 Z"/></g><g transform="translate(1060,0) skewX(0)"><circle cx="0" cy="-95.7" r="13.7"/><path d="M -12.2 -81.3 Q 0 -88.1 12.2 -81.3 L 21.3 0 L -21.3 0 Z"/></g><g transform="translate(350,0) skewX(0)"><circle cx="0" cy="-90.5" r="12.9"/><path d="M -11.5 -76.9 Q 0 -83.3 11.5 -76.9 L 20.1 0 L -20.1 0 Z"/></g><g transform="translate(379,0) skewX(0)"><circle cx="0" cy="-101.5" r="14.5"/><path d="M -12.9 -86.2 Q 0 -93.5 12.9 -86.2 L 22.5 0 L -22.5 0 Z"/></g><g transform="translate(201,0) skewX(0)"><circle cx="0" cy="-99.5" r="14.2"/><path d="M -12.6 -84.5 Q 0 -91.6 12.6 -84.5 L 22.1 0 L -22.1 0 Z"/></g><g transform="translate(228,0) skewX(0)"><circle cx="0" cy="-96.3" r="13.8"/><path d="M -12.2 -81.8 Q 0 -88.7 12.2 -81.8 L 21.4 0 L -21.4 0 Z"/></g><g transform="translate(680,0) skewX(0)"><circle cx="0" cy="-89.7" r="12.8"/><path d="M -11.4 -76.2 Q 0 -82.6 11.4 -76.2 L 19.9 0 L -19.9 0 Z"/></g><g transform="translate(1549,0) skewX(0)"><circle cx="0" cy="-80.6" r="11.5"/><path d="M -10.2 -68.4 Q 0 -74.2 10.2 -68.4 L 17.9 0 L -17.9 0 Z"/></g><g transform="translate(205,0) skewX(0)"><circle cx="0" cy="-101.7" r="14.5"/><path d="M -12.9 -86.4 Q 0 -93.6 12.9 -86.4 L 22.6 0 L -22.6 0 Z"/></g><g transform="translate(975,0) skewX(0)"><circle cx="0" cy="-82.3" r="11.8"/><path d="M -10.4 -69.9 Q 0 -75.8 10.4 -69.9 L 18.3 0 L -18.3 0 Z"/></g><g transform="translate(1798,0) skewX(0)"><circle cx="0" cy="-102.5" r="14.6"/><path d="M -13.0 -87.0 Q 0 -94.3 13.0 -87.0 L 22.8 0 L -22.8 0 Z"/></g><g transform="translate(294,0) skewX(0)"><circle cx="0" cy="-90.1" r="12.9"/><path d="M -11.4 -76.5 Q 0 -83.0 11.4 -76.5 L 20.0 0 L -20.0 0 Z"/></g><g transform="translate(332,0) skewX(0)"><circle cx="0" cy="-87.5" r="12.5"/><path d="M -11.1 -74.3 Q 0 -80.6 11.1 -74.3 L 19.4 0 L -19.4 0 Z"/></g><g transform="translate(1169,0) skewX(0)"><circle cx="0" cy="-84.0" r="12.0"/><path d="M -10.7 -71.3 Q 0 -77.3 10.7 -71.3 L 18.7 0 L -18.7 0 Z"/></g><g transform="translate(1299,0) skewX(0)"><circle cx="0" cy="-81.4" r="11.6"/><path d="M -10.3 -69.1 Q 0 -74.9 10.3 -69.1 L 18.1 0 L -18.1 0 Z"/></g><g transform="translate(394,0) skewX(0)"><circle cx="0" cy="-99.4" r="14.2"/><path d="M -12.6 -84.4 Q 0 -91.5 12.6 -84.4 L 22.1 0 L -22.1 0 Z"/></g><g transform="translate(789,0) skewX(0)"><circle cx="0" cy="-90.0" r="12.9"/><path d="M -11.4 -76.5 Q 0 -82.9 11.4 -76.5 L 20.0 0 L -20.0 0 Z"/></g><g transform="translate(1125,0) skewX(0)"><circle cx="0" cy="-91.4" r="13.0"/><path d="M -11.6 -77.6 Q 0 -84.1 11.6 -77.6 L 20.3 0 L -20.3 0 Z"/></g><g transform="translate(761,0) skewX(0)"><circle cx="0" cy="-80.9" r="11.5"/><path d="M -10.3 -68.7 Q 0 -74.5 10.3 -68.7 L 18.0 0 L -18.0 0 Z"/></g><g transform="translate(1349,0) skewX(0)"><circle cx="0" cy="-103.0" r="14.7"/><path d="M -13.1 -87.4 Q 0 -94.8 13.1 -87.4 L 22.9 0 L -22.9 0 Z"/></g><g transform="translate(1779,0) skewX(0)"><circle cx="0" cy="-95.8" r="13.7"/><path d="M -12.2 -81.4 Q 0 -88.2 12.2 -81.4 L 21.3 0 L -21.3 0 Z"/></g><g transform="translate(713,0) skewX(0)"><circle cx="0" cy="-88.7" r="12.7"/><path d="M -11.3 -75.3 Q 0 -81.7 11.3 -75.3 L 19.7 0 L -19.7 0 Z"/></g><g transform="translate(1287,0) skewX(0)"><circle cx="0" cy="-96.0" r="13.7"/><path d="M -12.2 -81.6 Q 0 -88.4 12.2 -81.6 L 21.3 0 L -21.3 0 Z"/></g><g transform="translate(296,0) skewX(0)"><circle cx="0" cy="-85.7" r="12.2"/><path d="M -10.9 -72.8 Q 0 -78.9 10.9 -72.8 L 19.0 0 L -19.0 0 Z"/></g><g transform="translate(725,0) skewX(0)"><circle cx="0" cy="-92.2" r="13.2"/><path d="M -11.7 -78.3 Q 0 -84.9 11.7 -78.3 L 20.5 0 L -20.5 0 Z"/></g><g transform="translate(1493,0) skewX(0)"><circle cx="0" cy="-91.9" r="13.1"/><path d="M -11.7 -78.1 Q 0 -84.6 11.7 -78.1 L 20.4 0 L -20.4 0 Z"/></g><g transform="translate(148,0) skewX(0)"><circle cx="0" cy="-99.5" r="14.2"/><path d="M -12.6 -84.5 Q 0 -91.6 12.6 -84.5 L 22.1 0 L -22.1 0 Z"/></g><g transform="translate(840,0) skewX(0)"><circle cx="0" cy="-92.4" r="13.2"/><path d="M -11.7 -78.5 Q 0 -85.1 11.7 -78.5 L 20.5 0 L -20.5 0 Z"/></g><g transform="translate(482,0) skewX(0)"><circle cx="0" cy="-90.2" r="12.9"/><path d="M -11.5 -76.6 Q 0 -83.1 11.5 -76.6 L 20.0 0 L -20.0 0 Z"/></g><g transform="translate(768,0) skewX(0)"><circle cx="0" cy="-98.3" r="14.0"/><path d="M -12.5 -83.5 Q 0 -90.5 12.5 -83.5 L 21.8 0 L -21.8 0 Z"/></g><g transform="translate(276,0) skewX(0)"><circle cx="0" cy="-93.1" r="13.3"/><path d="M -11.8 -79.1 Q 0 -85.7 11.8 -79.1 L 20.7 0 L -20.7 0 Z"/></g><g transform="translate(406,0) skewX(0)"><circle cx="0" cy="-96.6" r="13.8"/><path d="M -12.3 -82.0 Q 0 -88.9 12.3 -82.0 L 21.4 0 L -21.4 0 Z"/></g></g></svg></div>
+      </div>
+    </div>
+    <div id="c01-scr" class="c01-scrim clip" data-start="0" data-duration="57.14"></div>
+    <div id="c01-lab" class="c01-label clip" data-start="0.3" data-duration="4.6"><b>باب 1</b><i>بتوں کے درمیان ایک لڑکا</i></div>
+    <div id="c01-cp0" class="c01-cap clip" data-start="0.22" data-duration="3.41">بہت پہلے، مندروں اور مورتیوں کی ایک سرزمین</div>
+    <div id="c01-cp1" class="c01-cap clip" data-start="3.63" data-duration="3.81">میں، ایک لڑکا بتوں کے درمیان پلا بڑھا۔</div>
+    <div id="c01-cp2" class="c01-cap clip" data-start="7.45" data-duration="4.21">اس کی قوم پتھر اور لکڑی کی مورتیوں کو سجدہ کرتی تھی۔</div>
+    <div id="c01-cp3" class="c01-cap clip" data-start="11.66" data-duration="4.76">ان کے آگے کھانا رکھتی۔ ان سے بارش، اولاد اور دولت مانگتی۔</div>
+    <div id="c01-cp4" class="c01-cap clip" data-start="16.42" data-duration="4.44">اور اس کا اپنا باپ، آزر، بھی انہی کی پوجا کرتا تھا۔</div>
+    <div id="c01-cp5" class="c01-cap clip" data-start="20.86" data-duration="4.28">مگر لڑکے نے بتوں کو دیکھا، اور پہچان لیا کہ یہ کیا ہیں:</div>
+    <div id="c01-cp6" class="c01-cap clip" data-start="25.14" data-duration="3.73">پتھر جو سن نہیں سکتا، لکڑی جو دیکھ نہیں سکتی۔</div>
+    <div id="c01-cp7" class="c01-cap clip" data-start="39.13" data-duration="2.99">اس سرزمین میں بت صرف عبادت نہیں تھے۔</div>
+    <div id="c01-cp8" class="c01-cap clip" data-start="42.12" data-duration="3.94">وہ طاقت تھے، تجارت تھے، ہر خاندان کی عزت تھے۔</div>
+    <div id="c01-k0w" class="c01-cardwrap clip" data-start="28.92" data-duration="9.98"><div id="c01-k0" class="c01-card"><div class="c01-ar" dir="rtl" lang="ar">أَتَتَّخِذُ أَصۡنَامًا ءَالِهَةً إِنِّيٓ أَرَىٰكَ وَقَوۡمَكَ فِي ضَلَٰلࣲ مُّبِينࣲ</div><div class="c01-en c01-urtr" dir="rtl" lang="ur">کیا تو بتوں کو خدا بناتا ہے؟ میں تو تجھے اور تیری قوم کو کھلی گمراہی میں پاتا ہوں</div><div class="c01-ref">Al-An&#x27;am 6:74</div></div></div>
+    <div id="c01-k1w" class="c01-cardwrap clip" data-start="46.11" data-duration="6.59"><div id="c01-k1" class="c01-card"><div class="c01-ar" dir="rtl" lang="ar">۞وَلَقَدۡ ءَاتَيۡنَآ إِبۡرَٰهِيمَ رُشۡدَهُۥ مِن قَبۡلُ وَكُنَّا</div><div class="c01-en c01-urtr" dir="rtl" lang="ur">ہم نے ابراہیمؑ کو اُس کی ہوش مندی بخشی تھی</div><div class="c01-ref">Al-Anbya 21:51</div></div></div>
+    <div id="c01-fadeIn" class="c01-fade clip" data-start="0" data-duration="0.55" style="opacity:1"></div>
+    <div id="c01-fadeOut" class="c01-fade clip" data-start="56.64" data-duration="0.50" style="opacity:0"></div>
+    <div id="c01-br" class="c01-brand clip" data-start="0" data-duration="57.14">HAQ <span>·</span> STORIES</div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#c01-bow", {scaleY: 1}, {scaleY: 0.86, duration: 1.60, ease: "sine.inOut", yoyo: true, repeat: 32, immediateRender: false}, 7.53);
+    tl.fromTo("#c01-k0w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 28.92);
+    tl.fromTo("#c01-k0", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 28.92);
+    tl.fromTo("#c01-k1w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 46.11);
+    tl.fromTo("#c01-k1", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 46.11);
+    tl.fromTo("#c01-lab", {opacity: 0, x: -20}, {opacity: 1, x: 0, duration: 0.60, ease: "power2.out", immediateRender: false}, 0.30);
+    tl.fromTo("#c01-lab", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 4.40);
+    tl.fromTo("#c01-scene", {scale: 1.0, x: 0}, {scale: 1.06, x: -30, duration: 57.14, ease: "none", immediateRender: false}, 0.00);
+    tl.fromTo("#c01-fadeIn", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 0.00);
+    tl.fromTo("#c01-fadeOut", {opacity: 0}, {opacity: 1, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 56.64);
+    window.__timelines["c01"] = tl;
+  </script>
+</template>

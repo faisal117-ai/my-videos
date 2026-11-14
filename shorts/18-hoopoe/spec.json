@@ -1,0 +1,177 @@
+{
+  "accent": "#f2b04a",
+  "embers": false,
+  "flash": 0.4,
+  "bed_volume": 1.0,
+  "hold_end": 0.5,
+  "text_top": 300,
+  "text_bottom": 780,
+  "tr_size": 56,
+  "scene": "hoopoe",
+  "fly_beat": 2,
+  "sheba_beat": 3,
+  "glass_beat": 4,
+  "beats": [
+    {
+      "hook": true,
+      "text": "A small *bird* brought news…",
+      "sub": "…of a queen who worshipped the sun.",
+      "ur": "ایک ننھا پرندہ خبر لایا… ایک ملکہ کی جو سورج کو پوجتی تھی",
+      "mood": {
+        "warm": 0.3,
+        "cool": 0
+      },
+      "reveal": false
+    },
+    {
+      "q": "27:20",
+      "ar_words": [
+        4,
+        11
+      ],
+      "en": "Why do I not see the hoopoe - or is he among the absent",
+      "ur_a": [
+        "کیا بات ہے",
+        "غائب ہو گیا ہے"
+      ],
+      "ref": "An-Naml 27:20",
+      "mood": {
+        "warm": 0.3,
+        "cool": 0.1
+      },
+      "arabic": "مَالِيَ لَآ أَرَى ٱلۡهُدۡهُدَ أَمۡ كَانَ مِنَ ٱلۡغَآئِبِينَ",
+      "translation": "“Why do I not see the hoopoe - or is he among the absent”",
+      "ur": "کیا بات ہے کہ میں فلاں ہُد ہُد کو نہیں دیکھ رہا ہوں کیا وہ کہیں غائب ہو گیا ہے"
+    },
+    {
+      "q": "27:22",
+      "ar_words": [
+        10,
+        14
+      ],
+      "en": "and I have come to you from Sheba with certain news",
+      "ur_a": [
+        "میں سَبا",
+        "لے کر آیا ہوں"
+      ],
+      "ref": "An-Naml 27:22",
+      "mood": {
+        "warm": 0.4,
+        "cool": 0
+      },
+      "arabic": "وَجِئۡتُكَ مِن سَبَإِۭ بِنَبَإࣲ يَقِينٍ",
+      "translation": "“and I have come to you from Sheba with certain news”",
+      "ur": "میں سَبا کے متعلق یقینی اطلاع لے کر آیا ہوں"
+    },
+    {
+      "q": "27:24",
+      "ar_words": [
+        1,
+        7
+      ],
+      "en": "I found her and her people prostrating to the sun instead of Allah",
+      "ur_a": [
+        "میں نے دیکھا",
+        "سجدہ کرتی ہے"
+      ],
+      "ref": "An-Naml 27:24",
+      "mood": {
+        "warm": 0.6,
+        "cool": 0
+      },
+      "arabic": "وَجَدتُّهَا وَقَوۡمَهَا يَسۡجُدُونَ لِلشَّمۡسِ مِن دُونِ ٱللَّهِ",
+      "translation": "“I found her and her people prostrating to the sun instead of Allah”",
+      "ur": "میں نے دیکھا ہے کہ وہ اور اس کی قوم اللہ کے بجائے سورج کے آگے سجدہ کرتی ہے"
+    },
+    {
+      "q": "27:44",
+      "ar_words": [
+        19,
+        28
+      ],
+      "en": "My Lord, indeed I have wronged myself, and I submit with Solomon to Allah, Lord of the worlds",
+      "ur_a": [
+        "اے میرے رب",
+        "اطاعت قبول کر لی"
+      ],
+      "ref": "An-Naml 27:44",
+      "mood": {
+        "warm": 0.3,
+        "cool": 0.4
+      },
+      "arabic": "رَبِّ إِنِّي ظَلَمۡتُ نَفۡسِي وَأَسۡلَمۡتُ مَعَ سُلَيۡمَٰنَ لِلَّهِ رَبِّ ٱلۡعَٰلَمِينَ",
+      "translation": "“My Lord, indeed I have wronged myself, and I submit with Solomon to Allah, Lord of the worlds”",
+      "ur": "اے میرے رب، (آج تک) میں اپنے نفس پر بڑا ظلم کرتی رہی، اور اب میں نے سلیمانؑ کے ساتھ اللہ رب العالمین کی اطاعت قبول کر لی"
+    },
+    {
+      "cta": true,
+      "text": "Follow for more.",
+      "ur": "فالو کریں",
+      "mood": {
+        "warm": 0.3,
+        "cool": 0.3
+      }
+    }
+  ],
+  "sound": [
+    {
+      "prompt": "lib",
+      "src": "../06-ant/assets/sfx/5245d986054f.mp3",
+      "beat": 0,
+      "offset": 0,
+      "dur": 3,
+      "gain": -10,
+      "fade_in": 0,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "lib",
+      "src": "../04-ease/assets/sfx/61e97fb787a5.mp3",
+      "beat": 0,
+      "offset": 0,
+      "dur": 14,
+      "gain": -13,
+      "fade_in": 0.3,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "a single small bird flapping its wings fast and chirping, flying past close",
+      "beat": 2,
+      "offset": 0,
+      "dur": 4,
+      "gain": -9,
+      "fade_in": 0.2,
+      "fade_out": 1.0
+    },
+    {
+      "prompt": "lib",
+      "src": "../../long/01-yusuf/assets/sfx/59352a0d56de.mp3",
+      "beat": 3,
+      "offset": 0,
+      "dur": 8,
+      "gain": -14,
+      "fade_in": 0.5,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "lib",
+      "src": "../../long/01-yusuf/assets/sfx/992f69b875be.mp3",
+      "beat": 3,
+      "offset": 0,
+      "dur": 8,
+      "gain": -16,
+      "fade_in": 0.5,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "lib",
+      "src": "../06-ant/assets/sfx/cabf6e6577de.mp3",
+      "beat": 4,
+      "offset": 0,
+      "dur": 10,
+      "gain": -14,
+      "fade_in": 1.5,
+      "fade_out": 2
+    }
+  ]
+}

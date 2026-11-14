@@ -1,0 +1,952 @@
+{
+  "accent": "#f2b04a",
+  "gap": 0.7,
+  "scene_module": "scenes_ibrahim",
+  "chapters": [
+    {
+      "title": null,
+      "scene": "fire0",
+      "cards": [
+        {
+          "line": 2,
+          "q": "21:69",
+          "w": [
+            2,
+            7
+          ],
+          "en": "O fire, be coolness and safety upon Abraham",
+          "ur": "اے آگ، ٹھنڈی ہو جا اور سلامتی بن جا ابراہیمؑ پر"
+        },
+        {
+          "line": 4,
+          "q": "4:125",
+          "w": [
+            14,
+            17
+          ],
+          "en": "And Allah took Abraham as an intimate friend",
+          "ur": "اللہ نے اپنا دوست بنا لیا تھا"
+        },
+        {
+          "line": 6,
+          "title": "خلیل اللہ",
+          "sub": "حضرت ابراہیم علیہ السلام کا مکمل قصہ"
+        }
+      ]
+    },
+    {
+      "title": "بتوں کے درمیان ایک لڑکا",
+      "scene": "idoltown",
+      "cards": [
+        {
+          "line": 4,
+          "q": "6:74",
+          "w": [
+            6,
+            14
+          ],
+          "en": "Do you take idols as deities? Indeed, I see you and your people to be in manifest error",
+          "ur": "کیا تو بتوں کو خدا بناتا ہے؟ میں تو تجھے اور تیری قوم کو کھلی گمراہی میں پاتا ہوں"
+        },
+        {
+          "line": 6,
+          "q": "21:51",
+          "w": [
+            1,
+            7
+          ],
+          "en": "And We had certainly given Abraham his sound judgement before",
+          "ur": "ہم نے ابراہیمؑ کو اُس کی ہوش مندی بخشی تھی"
+        }
+      ]
+    },
+    {
+      "title": "ستارہ، چاند اور سورج",
+      "scene": "sky",
+      "cards": [
+        {
+          "line": 1,
+          "q": "6:76",
+          "w": [
+            13,
+            15
+          ],
+          "en": "I like not those that disappear",
+          "ur": "ڈوب جانے والوں کا تو میں گرویدہ نہیں ہوں"
+        },
+        {
+          "line": 5,
+          "q": "6:79",
+          "w": [
+            1,
+            12
+          ],
+          "en": "Indeed, I have turned my face toward He who created the heavens and the earth, inclining toward truth, and I am not of those who associate others with Allah",
+          "ur": "میں نے تویکسو ہو کر اپنا رخ اُس ہستی کی طرف کر لیا جس نے زمین اور آسمانوں کو پیدا کیا ہے اور میں ہرگز شرک کرنے والوں میں سے نہیں ہوں"
+        }
+      ]
+    },
+    {
+      "title": "ابا جان",
+      "scene": "home",
+      "cards": [
+        {
+          "line": 1,
+          "q": "19:42",
+          "w": [
+            4,
+            15
+          ],
+          "en": "O my father, why do you worship that which does not hear and does not see and will not benefit you at all",
+          "ur": "ابّا جان، آپ کیوں اُن چیزوں کی عبادت کرتے ہیں جو نہ سنتی ہیں نہ دیکھتی ہیں اور نہ آپ کا کوئی کام بنا سکتی ہیں"
+        },
+        {
+          "line": 5,
+          "q": "19:46",
+          "w": [
+            2,
+            10
+          ],
+          "en": "Have you no desire for my gods, O Abraham? If you do not desist, I will surely stone you",
+          "ur": "ابراہیمؑ، کیا تو میرے معبُودوں سے پھر گیا ہے؟ اگر تو باز نہ آیا تو میں تجھے سنگسار کر دوں گا"
+        },
+        {
+          "line": 6,
+          "q": "19:47",
+          "w": [
+            2,
+            10
+          ],
+          "en": "Peace will be upon you. I will ask forgiveness for you of my Lord. Indeed, He is ever gracious to me",
+          "ur": "سلام ہے آپ کو میں اپنے رب سے دُعا کروں گا کہ آپ کو معاف کر دے، میرا رب مجھ پر بڑا ہی مہربان ہے"
+        }
+      ]
+    },
+    {
+      "title": "ٹوٹے ہوئے بت",
+      "scene": "temple",
+      "cards": [
+        {
+          "line": 1,
+          "q": "21:52",
+          "w": [
+            5,
+            11
+          ],
+          "en": "What are these statues to which you are devoted",
+          "ur": "یہ مورتیں کیسی ہیں جن کے تم لوگ گرویدہ ہو رہے ہو"
+        },
+        {
+          "line": 4,
+          "q": "21:58",
+          "w": [
+            1,
+            5
+          ],
+          "en": "So he made them into fragments, except a large one among them",
+          "ur": "چنانچہ اس نے اُن کو ٹکڑے ٹکڑے کر دیا اور صرف ان کے بڑے کو چھوڑ دیا"
+        },
+        {
+          "line": 7,
+          "q": "21:63",
+          "w": [
+            2,
+            9
+          ],
+          "en": "Rather, this - the largest of them - did it, so ask them, if they should [be able to] speak",
+          "ur": "بلکہ یہ سب کچھ ان کے اس سردار نے کیا ہے، اِن ہی سے پوچھ لو اگر یہ بولتے ہوں"
+        }
+      ]
+    },
+    {
+      "title": "آگ",
+      "scene": "pyre",
+      "cards": [
+        {
+          "line": 1,
+          "q": "21:68",
+          "w": [
+            2,
+            7
+          ],
+          "en": "Burn him and support your gods - if you are to act",
+          "ur": "جلا ڈالو اس کو اور حمایت کرو اپنے خداؤں کی اگر تمہیں کچھ کرنا ہے"
+        },
+        {
+          "line": 4,
+          "q": "21:69",
+          "w": [
+            2,
+            7
+          ],
+          "en": "O fire, be coolness and safety upon Abraham",
+          "ur": "اے آگ، ٹھنڈی ہو جا اور سلامتی بن جا ابراہیمؑ پر"
+        },
+        {
+          "line": 6,
+          "q": "21:70",
+          "w": [
+            1,
+            5
+          ],
+          "en": "And they intended for him harm, but We made them the greatest losers",
+          "ur": "وہ چاہتے تھے کہ ابراہیمؑ کے ساتھ بُرائی کریں مگر ہم نے ان کو بُری طرح ناکام کر دیا"
+        }
+      ]
+    },
+    {
+      "title": "بادشاہ جو جھگڑا",
+      "scene": "court",
+      "cards": [
+        {
+          "line": 4,
+          "q": "2:258",
+          "w": [
+            26,
+            35
+          ],
+          "en": "Indeed, Allah brings up the sun from the east, so bring it up from the west",
+          "ur": "اچھا، اللہ سورج کو مشرق سے نکالتا ہے، تو ذرا اُسے مغرب سے نکال لا"
+        },
+        {
+          "line": 5,
+          "q": "2:258",
+          "w": [
+            36,
+            38
+          ],
+          "en": "So the disbeliever was overwhelmed [by astonishment]",
+          "ur": "یہ سن کر وہ منکر حق ششدر رہ گیا"
+        }
+      ]
+    },
+    {
+      "title": "گھر چھوڑنا",
+      "scene": "journey",
+      "cards": [
+        {
+          "line": 3,
+          "q": "37:99",
+          "w": [
+            2,
+            6
+          ],
+          "en": "Indeed, I will go to [where I am ordered by] my Lord; He will guide me",
+          "ur": "میں اپنے رب کی طرف جاتا ہوں، وہی میری رہنمائی کرے گا"
+        },
+        {
+          "line": 5,
+          "q": "37:100",
+          "w": [
+            1,
+            5
+          ],
+          "en": "My Lord, grant me [a child] from among the righteous",
+          "ur": "اے پروردگار، مجھے ایک بیٹا عطا کر جو صالحوں میں سے ہو"
+        },
+        {
+          "line": 6,
+          "q": "37:101",
+          "w": [
+            1,
+            3
+          ],
+          "en": "So We gave him good tidings of a forbearing boy",
+          "ur": "ہم نے اس کو ایک حلیم (بردبار) لڑکے کی بشارت دی"
+        }
+      ]
+    },
+    {
+      "title": "بے آب وادی",
+      "scene": "valley",
+      "cards": [
+        {
+          "line": 2,
+          "text": "تو پھر وہ ہمیں ضائع نہیں کرے گا",
+          "ref": "Sahih al-Bukhari 3364"
+        },
+        {
+          "line": 3,
+          "q": "14:37",
+          "w": [
+            1,
+            15
+          ],
+          "en": "Our Lord, I have settled some of my descendants in an uncultivated valley near Your sacred House, our Lord, that they may establish prayer",
+          "ur": "پروردگار، میں نے ایک بے آب و گیاہ وادی میں اپنی اولاد کے ایک حصے کو تیرے محترم گھر کے پاس لا بسایا ہے پروردگار، یہ میں نے اس لیے کیا ہے کہ یہ لوگ یہاں نماز قائم کریں"
+        },
+        {
+          "line": 5,
+          "text": "*زمزم* کا چشمہ",
+          "ref": "Sahih al-Bukhari 3364"
+        }
+      ]
+    },
+    {
+      "title": "مجھے دکھا دے",
+      "scene": "hills",
+      "cards": [
+        {
+          "line": 1,
+          "q": "2:260",
+          "w": [
+            4,
+            8
+          ],
+          "en": "My Lord, show me how You give life to the dead",
+          "ur": "میرے مالک، مجھے دکھا دے، تو مُردوں کو کیسے زندہ کرتا ہے"
+        },
+        {
+          "line": 2,
+          "q": "2:260",
+          "w": [
+            13,
+            16
+          ],
+          "en": "Yes, but [I ask] only that my heart may be satisfied",
+          "ur": "ایمان تو رکھتا ہوں، مگر دل کا اطمینان درکار ہے"
+        }
+      ]
+    },
+    {
+      "title": "خواب",
+      "scene": "mina",
+      "cards": [
+        {
+          "line": 2,
+          "q": "37:102",
+          "w": [
+            6,
+            15
+          ],
+          "en": "O my son, indeed I have seen in a dream that I [must] sacrifice you, so see what you think",
+          "ur": "بیٹا، میں خواب میں دیکھتا ہوں کہ میں تجھے ذبح کر رہا ہوں، اب تو بتا، تیرا کیا خیال ہے"
+        },
+        {
+          "line": 3,
+          "q": "37:102",
+          "w": [
+            17,
+            26
+          ],
+          "en": "O my father, do as you are commanded. You will find me, if Allah wills, of the steadfast",
+          "ur": "ابا جان، جو کچھ آپ کو حکم دیا جا رہا ہے اسے کر ڈالیے، آپ انشاءاللہ مجھے صابروں میں سے پائیں گے"
+        },
+        {
+          "line": 6,
+          "q": "37:107",
+          "w": [
+            1,
+            3
+          ],
+          "en": "And We ransomed him with a great sacrifice",
+          "ur": "اور ہم نے ایک بڑی قربانی فدیے میں دے کر اس بچے کو چھڑا لیا"
+        }
+      ]
+    },
+    {
+      "title": "معزز مہمان",
+      "scene": "tent",
+      "cards": [
+        {
+          "line": 1,
+          "q": "51:24",
+          "w": [
+            1,
+            6
+          ],
+          "en": "Has there reached you the story of the honored guests of Abraham",
+          "ur": "ابراہیمؑ کے معزز مہمانوں کی حکایت بھی تمہیں پہنچی ہے"
+        },
+        {
+          "line": 3,
+          "q": "51:27",
+          "w": [
+            3,
+            5
+          ],
+          "en": "Will you not eat",
+          "ur": "آپ حضرات کھاتے نہیں"
+        },
+        {
+          "line": 5,
+          "q": "11:71",
+          "w": [
+            4,
+            9
+          ],
+          "en": "Then We gave her good tidings of Isaac and after Isaac, Jacob",
+          "ur": "پھر ہم نے اس کو اسحاقؑ کی اور اسحاقؑ کے بعد یعقوب کی خوشخبری دی"
+        },
+        {
+          "line": 6,
+          "q": "11:73",
+          "w": [
+            1,
+            11
+          ],
+          "en": "Are you amazed at the decree of Allah? May the mercy of Allah and His blessings be upon you, people of the house",
+          "ur": "اللہ کے حکم پر تعجب کرتی ہو؟ ابراہیمؑ کے گھر والو، تم لوگوں پر تو اللہ کی رحمت اور اُس کی برکتیں ہیں"
+        }
+      ]
+    },
+    {
+      "title": "اللہ کا گھر",
+      "scene": "kaaba",
+      "cards": [
+        {
+          "line": 2,
+          "q": "2:127",
+          "w": [
+            8,
+            14
+          ],
+          "en": "Our Lord, accept [this] from us. Indeed You are the Hearing, the Knowing",
+          "ur": "اے ہمارے رب، ہم سے یہ خدمت قبول فرما لے، تو سب کی سننے اور سب کچھ جاننے والا ہے"
+        },
+        {
+          "line": 3,
+          "q": "2:128",
+          "w": [
+            1,
+            9
+          ],
+          "en": "Our Lord, and make us Muslims [in submission] to You and from our descendants a Muslim nation [in submission] to You",
+          "ur": "اے رب، ہم دونوں کو اپنا مسلم (مُطیع فرمان) بنا، ہماری نسل سے ایک ایسی قوم اٹھا، جو تیری مسلم ہو"
+        },
+        {
+          "line": 5,
+          "q": "22:27",
+          "w": [
+            1,
+            14
+          ],
+          "en": "And proclaim to the people the Hajj [pilgrimage]; they will come to you on foot and on every lean camel; they will come from every distant pass",
+          "ur": "اور لوگوں کو حج کے لیے اذنِ عام دے دو کہ وہ تمہارے پاس ہر دور دراز مقام سے پیدل اور اونٹوں پر سوار آئیں"
+        }
+      ]
+    },
+    {
+      "title": "ابراہیمؑ کی دعا",
+      "scene": "makkah",
+      "cards": [
+        {
+          "line": 1,
+          "q": "14:35",
+          "w": [
+            4,
+            13
+          ],
+          "en": "My Lord, make this city [Makkah] secure and keep me and my sons away from worshipping idols",
+          "ur": "پروردگار، اِس شہر کو امن کا شہر بنا اور مجھے اور میری اولاد کو بت پرستی سے بچا"
+        },
+        {
+          "line": 3,
+          "q": "14:40",
+          "w": [
+            1,
+            9
+          ],
+          "en": "My Lord, make me an establisher of prayer, and [many] from my descendants. Our Lord, and accept my supplication",
+          "ur": "مجھے نماز قائم کرنے والا بنا اور میری اولاد سے بھی (ایسے لوگ اٹھا جو یہ کام کریں) پروردگار، میری دعا قبول کر"
+        },
+        {
+          "line": 4,
+          "q": "14:41",
+          "w": [
+            1,
+            8
+          ],
+          "en": "Our Lord, forgive me and my parents and the believers the Day the account is established",
+          "ur": "پروردگار، مجھے اور میرے والدین کو اور سب ایمان لانے والوں کو اُس دن معاف کر دیجیو جبکہ حساب قائم ہوگا"
+        }
+      ]
+    },
+    {
+      "title": "سبق",
+      "scene": "lesson3",
+      "cards": [
+        {
+          "line": 2,
+          "q": "60:4",
+          "w": [
+            1,
+            7
+          ],
+          "en": "There has already been for you an excellent pattern in Abraham",
+          "ur": "تم لوگوں کے لیے ابراہیمؑ اور اُس کے ساتھیوں میں ایک اچھا نمونہ ہے"
+        },
+        {
+          "line": 4,
+          "q": "37:109",
+          "w": [
+            1,
+            3
+          ],
+          "en": "Peace upon Abraham",
+          "ur": "سلام ہے ابراہیمؑ پر"
+        },
+        {
+          "line": 5,
+          "end": true
+        }
+      ]
+    }
+  ],
+  "sound": [
+    {
+      "ch": 0,
+      "gain": -12,
+      "src": "../../shorts/03-cave/assets/sfx/03b5f68efefc.mp3",
+      "prompt": "lib",
+      "dur": 3,
+      "fade_in": 0.03,
+      "fade_out": 1
+    },
+    {
+      "ch": 0,
+      "gain": -11,
+      "prompt": "a huge bonfire roaring and crackling, strong wind, a large crowd murmuring far away, no music",
+      "until": [
+        0,
+        3
+      ]
+    },
+    {
+      "ch": 0,
+      "gain": -12,
+      "prompt": "a roaring fire suddenly dying down into a soft calm breeze, gentle birdsong, peaceful",
+      "line": 2,
+      "offset": 1.2,
+      "dur": 8,
+      "fade_in": 0.5
+    },
+    {
+      "ch": 0,
+      "gain": -16,
+      "src": "../../shorts/03-cave/assets/sfx/1a9908bb62c8.mp3",
+      "prompt": "lib",
+      "line": 3,
+      "until_end": true,
+      "fade_in": 2
+    },
+    {
+      "ch": 1,
+      "gain": -14,
+      "prompt": "a large crowd in an ancient town murmuring and chanting softly, distant, no music",
+      "until_end": true
+    },
+    {
+      "ch": 1,
+      "gain": -17,
+      "src": "../01-yusuf/assets/sfx/59352a0d56de.mp3",
+      "prompt": "lib",
+      "until_end": true
+    },
+    {
+      "ch": 2,
+      "gain": -15,
+      "src": "../../shorts/05-trunk/assets/sfx/beb74bb8b482.mp3",
+      "prompt": "lib",
+      "until": [
+        2,
+        3
+      ]
+    },
+    {
+      "ch": 2,
+      "gain": -14,
+      "src": "../../shorts/04-ease/assets/sfx/61e97fb787a5.mp3",
+      "prompt": "lib",
+      "line": 3,
+      "until": [
+        2,
+        4
+      ]
+    },
+    {
+      "ch": 2,
+      "gain": -17,
+      "src": "../../shorts/03-cave/assets/sfx/1a9908bb62c8.mp3",
+      "prompt": "lib",
+      "until_end": true,
+      "fade_in": 2
+    },
+    {
+      "ch": 2,
+      "gain": -14,
+      "src": "../../shorts/14-sun/assets/sfx/80dbb7b38479.mp3",
+      "prompt": "lib",
+      "line": 5,
+      "dur": 6
+    },
+    {
+      "ch": 3,
+      "gain": -15,
+      "src": "../../shorts/05-trunk/assets/sfx/beb74bb8b482.mp3",
+      "prompt": "lib",
+      "until_end": true
+    },
+    {
+      "ch": 3,
+      "gain": -16,
+      "src": "../../shorts/05-trunk/assets/sfx/562217fe60ac.mp3",
+      "prompt": "lib",
+      "line": 1,
+      "until_end": true,
+      "fade_in": 2
+    },
+    {
+      "ch": 3,
+      "gain": -14,
+      "src": "../01-yusuf/assets/sfx/b026f60a103d.mp3",
+      "prompt": "lib",
+      "line": 6,
+      "dur": 4,
+      "fade_in": 0
+    },
+    {
+      "ch": 4,
+      "gain": -13,
+      "src": "../01-yusuf/assets/sfx/992f69b875be.mp3",
+      "prompt": "lib",
+      "until_end": true
+    },
+    {
+      "ch": 4,
+      "gain": -8,
+      "src": "../../shorts/20-idols/assets/sfx/fe3e9620a15e.mp3",
+      "prompt": "lib",
+      "line": 4,
+      "offset": 0.3,
+      "dur": 6,
+      "fade_in": 0.05
+    },
+    {
+      "ch": 4,
+      "gain": -13,
+      "prompt": "a large crowd in an ancient town murmuring and chanting softly, distant, no music",
+      "line": 5,
+      "until_end": true
+    },
+    {
+      "ch": 4,
+      "gain": -17,
+      "src": "../../shorts/03-cave/assets/sfx/1a9908bb62c8.mp3",
+      "prompt": "lib",
+      "line": 7,
+      "until_end": true,
+      "fade_in": 2
+    },
+    {
+      "ch": 5,
+      "gain": -9,
+      "prompt": "a huge bonfire roaring and crackling, strong wind, a large crowd murmuring far away, no music",
+      "until": [
+        5,
+        5
+      ]
+    },
+    {
+      "ch": 5,
+      "gain": -10,
+      "src": "../../shorts/06-ant/assets/sfx/2ed870b01b8e.mp3",
+      "prompt": "lib",
+      "line": 1,
+      "dur": 4,
+      "fade_in": 0
+    },
+    {
+      "ch": 5,
+      "gain": -10,
+      "prompt": "a roaring fire suddenly dying down into a soft calm breeze, gentle birdsong, peaceful",
+      "line": 4,
+      "offset": 2.0,
+      "dur": 8,
+      "fade_in": 0.5
+    },
+    {
+      "ch": 5,
+      "gain": -14,
+      "src": "../../shorts/04-ease/assets/sfx/ed4334fb2fbf.mp3",
+      "prompt": "lib",
+      "line": 4,
+      "offset": 2.5,
+      "until_end": true,
+      "fade_in": 2
+    },
+    {
+      "ch": 6,
+      "gain": -14,
+      "src": "../01-yusuf/assets/sfx/992f69b875be.mp3",
+      "prompt": "lib",
+      "until_end": true
+    },
+    {
+      "ch": 6,
+      "gain": -12,
+      "src": "../../shorts/14-sun/assets/sfx/80dbb7b38479.mp3",
+      "prompt": "lib",
+      "line": 4,
+      "dur": 6
+    },
+    {
+      "ch": 6,
+      "gain": -11,
+      "src": "../../shorts/06-ant/assets/sfx/2ed870b01b8e.mp3",
+      "prompt": "lib",
+      "line": 5,
+      "dur": 4,
+      "fade_in": 0
+    },
+    {
+      "ch": 7,
+      "gain": -13,
+      "src": "../01-yusuf/assets/sfx/59352a0d56de.mp3",
+      "prompt": "lib",
+      "until_end": true
+    },
+    {
+      "ch": 7,
+      "gain": -13,
+      "src": "../../shorts/16-hundred/assets/sfx/56ee79f5b289.mp3",
+      "prompt": "lib",
+      "line": 2,
+      "dur": 10
+    },
+    {
+      "ch": 7,
+      "gain": -17,
+      "src": "../01-yusuf/assets/sfx/1830ee4b40ad.mp3",
+      "prompt": "lib",
+      "until": [
+        7,
+        5
+      ],
+      "fade_in": 2
+    },
+    {
+      "ch": 7,
+      "gain": -15,
+      "src": "../../shorts/06-ant/assets/sfx/cabf6e6577de.mp3",
+      "prompt": "lib",
+      "line": 5,
+      "until_end": true,
+      "fade_in": 2
+    },
+    {
+      "ch": 8,
+      "gain": -14,
+      "src": "../01-yusuf/assets/sfx/59352a0d56de.mp3",
+      "prompt": "lib",
+      "until_end": true
+    },
+    {
+      "ch": 8,
+      "gain": -16,
+      "src": "../../shorts/05-trunk/assets/sfx/562217fe60ac.mp3",
+      "prompt": "lib",
+      "line": 1,
+      "until": [
+        8,
+        5
+      ],
+      "fade_in": 2
+    },
+    {
+      "ch": 8,
+      "gain": -12,
+      "src": "../../shorts/16-hundred/assets/sfx/56ee79f5b289.mp3",
+      "prompt": "lib",
+      "line": 4,
+      "dur": 10
+    },
+    {
+      "ch": 8,
+      "gain": -8,
+      "src": "../../shorts/12-ayyub/assets/sfx/118662cd6dfb.mp3",
+      "prompt": "lib",
+      "line": 5,
+      "offset": 0.6,
+      "until_end": true,
+      "fade_in": 0.1
+    },
+    {
+      "ch": 8,
+      "gain": -14,
+      "src": "../../shorts/04-ease/assets/sfx/ed4334fb2fbf.mp3",
+      "prompt": "lib",
+      "line": 5,
+      "until_end": true,
+      "fade_in": 2
+    },
+    {
+      "ch": 9,
+      "gain": -14,
+      "src": "../../shorts/04-ease/assets/sfx/61e97fb787a5.mp3",
+      "prompt": "lib",
+      "until_end": true
+    },
+    {
+      "ch": 9,
+      "gain": -10,
+      "src": "../../shorts/11-four-birds/assets/sfx/831dd07bc705.mp3",
+      "prompt": "lib",
+      "line": 3,
+      "offset": 1.5,
+      "dur": 4
+    },
+    {
+      "ch": 9,
+      "gain": -7,
+      "src": "../../shorts/06-ant/assets/sfx/5245d986054f.mp3",
+      "prompt": "lib",
+      "line": 4,
+      "offset": 0.6,
+      "dur": 4,
+      "fade_in": 0
+    },
+    {
+      "ch": 9,
+      "gain": -17,
+      "src": "../../shorts/03-cave/assets/sfx/1a9908bb62c8.mp3",
+      "prompt": "lib",
+      "until_end": true,
+      "fade_in": 2
+    },
+    {
+      "ch": 10,
+      "gain": -15,
+      "src": "../../shorts/05-trunk/assets/sfx/beb74bb8b482.mp3",
+      "prompt": "lib",
+      "until": [
+        10,
+        3
+      ]
+    },
+    {
+      "ch": 10,
+      "gain": -15,
+      "src": "../../shorts/05-trunk/assets/sfx/562217fe60ac.mp3",
+      "prompt": "lib",
+      "line": 2,
+      "until": [
+        10,
+        6
+      ],
+      "fade_in": 2
+    },
+    {
+      "ch": 10,
+      "gain": -13,
+      "src": "../../shorts/04-ease/assets/sfx/61e97fb787a5.mp3",
+      "prompt": "lib",
+      "line": 3,
+      "until_end": true
+    },
+    {
+      "ch": 10,
+      "gain": -9,
+      "src": "../../shorts/03-cave/assets/sfx/f73090a5a6a6.mp3",
+      "prompt": "lib",
+      "line": 6,
+      "dur": 3,
+      "fade_in": 0
+    },
+    {
+      "ch": 10,
+      "gain": -15,
+      "src": "../../shorts/06-ant/assets/sfx/cabf6e6577de.mp3",
+      "prompt": "lib",
+      "line": 6,
+      "until_end": true,
+      "fade_in": 2
+    },
+    {
+      "ch": 11,
+      "gain": -14,
+      "src": "../../shorts/05-trunk/assets/sfx/beb74bb8b482.mp3",
+      "prompt": "lib",
+      "until_end": true
+    },
+    {
+      "ch": 11,
+      "gain": -15,
+      "src": "../../shorts/04-ease/assets/sfx/ed4334fb2fbf.mp3",
+      "prompt": "lib",
+      "line": 5,
+      "until_end": true,
+      "fade_in": 2
+    },
+    {
+      "ch": 11,
+      "gain": -11,
+      "src": "../../shorts/03-cave/assets/sfx/f73090a5a6a6.mp3",
+      "prompt": "lib",
+      "line": 5,
+      "dur": 3,
+      "fade_in": 0
+    },
+    {
+      "ch": 12,
+      "gain": -14,
+      "src": "../../shorts/06-ant/assets/sfx/e71b1db494fd.mp3",
+      "prompt": "lib",
+      "until_end": true
+    },
+    {
+      "ch": 12,
+      "gain": -10,
+      "prompt": "stones being lifted and set in place one by one, tapping and scraping, in an open valley, wind",
+      "line": 1,
+      "dur": 12
+    },
+    {
+      "ch": 12,
+      "gain": -15,
+      "src": "../../shorts/06-ant/assets/sfx/cabf6e6577de.mp3",
+      "prompt": "lib",
+      "line": 2,
+      "until_end": true,
+      "fade_in": 2
+    },
+    {
+      "ch": 12,
+      "gain": -14,
+      "prompt": "a large crowd in an ancient town murmuring and chanting softly, distant, no music",
+      "line": 5,
+      "until_end": true
+    },
+    {
+      "ch": 13,
+      "gain": -15,
+      "src": "../../shorts/05-trunk/assets/sfx/beb74bb8b482.mp3",
+      "prompt": "lib",
+      "until_end": true
+    },
+    {
+      "ch": 13,
+      "gain": -15,
+      "src": "../../shorts/05-trunk/assets/sfx/562217fe60ac.mp3",
+      "prompt": "lib",
+      "until_end": true,
+      "fade_in": 2
+    },
+    {
+      "ch": 14,
+      "gain": -16,
+      "src": "../../shorts/05-trunk/assets/sfx/beb74bb8b482.mp3",
+      "prompt": "lib",
+      "until_end": true
+    },
+    {
+      "ch": 14,
+      "gain": -14,
+      "src": "../../shorts/04-ease/assets/sfx/ed4334fb2fbf.mp3",
+      "prompt": "lib",
+      "until_end": true,
+      "fade_in": 2
+    }
+  ],
+  "lang": "ur"
+}

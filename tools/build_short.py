@@ -1238,7 +1238,405 @@ def drown_scene(spec: dict, beats: list, total: float) -> tuple[str, str, str]:
     return css, markup, "\n    ".join(js)
 
 
-SCENES = {"ruins": ruins_scene, "sea": sea_scene, "river": river_scene, "birds": birds_scene, "ayyub": ayyub_scene, "drown": drown_scene}
+def walker(x: float, h: float) -> str:
+    """A faceless walking silhouette (the soldier shape without a spear)."""
+    return re.sub(r'<rect [^>]*width="2"[^>]*/>', "", soldier(x, h))
+
+
+def sunhold_scene(spec, beats, total):
+    """Bukhari 3124: a prophet's army before a city at sunset; the sun is held back. The prophet is
+    never shown: the army is a crowd of faceless silhouettes."""
+    b = lambda k, d: beats[spec.get(k, d)]
+    march, call, hold, win = b("march_beat", 1), b("call_beat", 2), b("hold_beat", 3), b("win_beat", 4)
+    rnd = random.Random(141)
+    army = re.sub(r'fill="[^"]*"', "", "".join(soldier(rnd.uniform(-300, 420), rnd.uniform(70, 100)) for _ in range(34)))
+    css = """
+    #ssky { position: absolute; inset: 0; background: linear-gradient(180deg, #1a1030 0%, #6a3040 40%, #e07040 60%, #f6b45a 66%, #3a1e14 74%); }
+    #sbright { position: absolute; inset: 0; opacity: 0; background: linear-gradient(180deg, #3a2a50 0%, #c9785a 40%, #ffd08a 62%, #6a4024 74%); }
+    #ssun { position: absolute; left: 400px; top: 900px; width: 280px; height: 280px; border-radius: 50%;
+      background: radial-gradient(circle, #fff6dc 0%, #ffcf70 38%, rgba(255,150,60,0.4) 58%, rgba(255,120,40,0) 72%); }
+    .sring { position: absolute; left: 540px; top: 1260px; width: 300px; height: 300px; margin: -150px; border-radius: 50%;
+      border: 5px solid rgba(255,220,150,0.8); opacity: 0; }
+    #scity { position: absolute; inset: 0; width: 100%; height: 100%; }
+    #sarmy { position: absolute; left: 0; top: 0; width: 1500px; height: 1920px; }
+    #sflag { opacity: 0; }
+"""
+    rings = "".join(f'<div id="sr{k}" class="sring"></div>' for k in range(3))
+    markup = f"""
+    <div id="sunhold" class="clip" data-start="0" data-duration="{total:.2f}">
+      <div id="ssky"></div><div id="sbright"></div><div id="ssun"></div>{rings}
+      <svg id="scity" viewBox="0 0 1080 1920" preserveAspectRatio="none"><g fill="#1a0e0c">
+        <path d="M 560 1460 L 560 1320 L 600 1320 L 600 1290 L 640 1290 L 640 1320 L 700 1320 L 700 1270 L 760 1270 L 760 1320 L 840 1320 L 840 1280 L 900 1280 L 900 1320 L 1080 1320 L 1080 1460 Z"/>
+        <rect x="0" y="1450" width="1080" height="470" fill="#2a160e"/></g>
+        <g id="sflag"><rect x="728" y="1150" width="6" height="125" fill="#1a0e0c"/><rect x="734" y="1152" width="80" height="48" fill="#c98a3a"/></g></svg>
+      <svg id="sarmy" viewBox="0 0 1500 1920"><g fill="#0d0706" transform="translate(0,1540)">{army}</g></svg>
+    </div>"""
+    js = []
+    h0 = hold["start"] + 0.6
+    js.append(f'tl.fromTo("#ssun", {{y: -80}}, {{y: 300, duration: {h0:.2f}, ease: "none"}}, 0);')
+    for k in range(3):
+        js.append(f'tl.fromTo("#sr{k}", {{scale: 0.4, opacity: 0.85}}, {{scale: 2.8, opacity: 0, duration: 2, ease: "power1.out", '
+                  f'repeat: {max(int((total - h0) / 2) - 1, 0)}, immediateRender: false}}, {h0 + 0.6 * k:.2f});')
+    js.append(f'tl.fromTo("#ssun", {{scale: 1}}, {{scale: 1.12, duration: 0.8, ease: "sine.inOut", yoyo: true, repeat: {int((total - h0) / 0.8)}, immediateRender: false}}, {h0:.2f});')
+    js.append(f'tl.fromTo("#sarmy", {{x: -200}}, {{x: 260, duration: {win["start"]:.2f}, ease: "none"}}, 0);')
+    js.append(fade("#sbright", 0, 1, win["start"], 2.0))
+    js.append(f'tl.fromTo("#sflag", {{opacity: 0, y: 60}}, {{opacity: 1, y: 0, duration: 1.2, ease: "power2.out", immediateRender: false}}, {win["start"] + win["spoken"] * 0.6:.2f});')
+    return css, markup, "\n    ".join(js)
+
+
+def wall_scene(spec, beats, total):
+    """Al-Kahf 18:94–98: a gap between two mountains closed by a wall of iron, heated red and
+    covered in molten copper. Gog and Magog stay unseen behind it."""
+    b = lambda k, d: beats[spec.get(k, d)]
+    build, hold, promise = b("build_beat", 2), b("hold_beat", 3), b("promise_beat", 4)
+    rows = 8
+    css = """
+    #wsky { position: absolute; inset: 0; background: linear-gradient(180deg, #120c1c 0%, #3a2438 45%, #8a4a3a 62%, #2a1a16 72%); }
+    #wmtn { position: absolute; inset: 0; width: 100%; height: 100%; }
+    .wrow { position: absolute; left: 330px; width: 420px; height: 70px; background: linear-gradient(180deg, #5a5a62, #2e2e36);
+      border-top: 3px solid #7a7a84; transform-origin: 50% 100%; }
+    #wheat { position: absolute; left: 330px; width: 420px; top: 1180px; height: 560px; opacity: 0;
+      background: linear-gradient(180deg, #ffd08a, #ff7a2a 40%, #c02a10); box-shadow: 0 0 120px 40px rgba(255,120,40,0.55); }
+    #wcopper { position: absolute; left: 330px; width: 420px; top: 1180px; height: 560px; opacity: 0;
+      background: linear-gradient(180deg, #e8a060 0%, #b06a34 35%, #6a3a1c 100%); }
+    #wcrack { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; }
+    #wdust { position: absolute; left: 280px; top: 1120px; width: 520px; height: 200px; border-radius: 50%; opacity: 0;
+      background: radial-gradient(ellipse, rgba(200,170,140,0.5), rgba(0,0,0,0) 70%); }
+"""
+    rows_html = "".join(f'<div id="wr{k}" class="wrow" style="top:{1670 - k * 70}px"></div>' for k in range(rows))
+    markup = f"""
+    <div id="wallsc" class="clip" data-start="0" data-duration="{total:.2f}">
+      <div id="wsky"></div>
+      <svg id="wmtn" viewBox="0 0 1080 1920" preserveAspectRatio="none"><g fill="#1c1418">
+        <path d="M -20 1920 L -20 1000 L 120 900 L 260 1060 L 340 1140 L 340 1920 Z"/>
+        <path d="M 1100 1920 L 1100 980 L 950 880 L 820 1060 L 740 1140 L 740 1920 Z"/></g></svg>
+      {rows_html}<div id="wheat"></div><div id="wcopper"></div>
+      <svg id="wcrack" viewBox="0 0 1080 1920"><path d="M 540 1190 L 520 1300 L 560 1380 L 530 1480 L 570 1560" stroke="#ffb46a" stroke-width="6" fill="none"/></svg>
+      <div id="wdust"></div>
+    </div>"""
+    js = []
+    for k in range(rows):
+        js.append(f'tl.set("#wr{k}", {{opacity: 0}}, 0);')
+        js.append(f'tl.fromTo("#wr{k}", {{opacity: 0, scaleY: 0}}, {{opacity: 1, scaleY: 1, duration: 0.35, ease: "back.out(2)", immediateRender: false}}, {build["start"] + 0.15 + k * 0.28:.2f});')
+    h_at = build["start"] + build["spoken"] * 0.35
+    js.append(fade("#wheat", 0, 1, h_at, 1.0))
+    js.append(f'tl.fromTo("#wheat", {{filter: "brightness(1)"}}, {{filter: "brightness(1.3)", duration: 0.4, yoyo: true, repeat: 5, immediateRender: false}}, {h_at + 1:.2f});')
+    c_at = build["start"] + build["spoken"] * 0.75
+    js.append(fade("#wcopper", 0, 1, c_at, 1.4))
+    js.append(fade("#wheat", 1, 0, c_at + 0.8, 1.2))
+    js.append(f'tl.fromTo("#wallsc", {{x: 0}}, {{x: 4, duration: 0.06, yoyo: true, repeat: {int(hold["dur"] / 0.12)}, immediateRender: false}}, {hold["start"]:.2f});')
+    js.append(f'tl.to("#wallsc", {{x: 0, duration: 0.05}}, {hold["start"] + hold["dur"] - 0.1:.2f});')
+    js.append(fade("#wcrack", 0, 1, promise["start"] + promise["spoken"] * 0.4, 1.5))
+    js.append(fade("#wdust", 0, 1, promise["start"] + promise["spoken"] * 0.45, 1.5))
+    return css, markup, "\n    ".join(js)
+
+
+def road_scene(spec, beats, total):
+    """Bukhari 3470: a night road between a dark town and a lit one; a man walks it, dies on the
+    way, and the distance is measured. Angels are never shown."""
+    b = lambda k, d: beats[spec.get(k, d)]
+    walk, fall, measure = b("walk_beat", 2), b("fall_beat", 3), b("measure_beat", 4)
+    css = """
+    #rsky2 { position: absolute; inset: 0; background: linear-gradient(180deg, #03040c 0%, #142046 60%, #3a3a5a 100%); }
+    #rwarm { position: absolute; inset: 0; opacity: 0; background: radial-gradient(ellipse at 85% 72%, rgba(255,200,120,0.55), rgba(0,0,0,0) 60%); }
+    #rland { position: absolute; inset: 0; width: 100%; height: 100%; }
+    #rman { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; overflow: visible; }
+    #rline1, #rline2 { opacity: 0; }
+"""
+    good = "".join(f'<rect x="{x}" y="{1250 - h}" width="60" height="{h}" fill="#1a1620"/><rect x="{x + 20}" y="{1270 - h}" width="18" height="22" class="rlit" fill="#ffc670"/>'
+                   for x, h in [(840, 110), (900, 150), (960, 120), (1020, 90)])
+    bad = "".join(f'<rect x="{x}" y="{1250 - h}" width="60" height="{h}" fill="#0c0a10"/>' for x, h in [(0, 120), (60, 90), (120, 140), (180, 100)])
+    markup = f"""
+    <div id="roadsc" class="clip" data-start="0" data-duration="{total:.2f}">
+      <div id="rsky2"></div>{starfield_markup("rst", 70, 151, total)}
+      <svg id="rland" viewBox="0 0 1080 1920" preserveAspectRatio="none">
+        <rect x="0" y="1250" width="1080" height="670" fill="#2c2834"/>
+        <path d="M 230 1250 Q 540 1400 840 1250 L 840 1290 Q 540 1460 230 1290 Z" fill="#6a5a44"/>
+        {bad}{good}
+        <path id="rline1" d="M 250 1330 L 470 1400" stroke="#9ab0e0" stroke-width="5" stroke-dasharray="14 10"/>
+        <path id="rline2" d="M 520 1408 L 820 1300" stroke="#ffd08a" stroke-width="5" stroke-dasharray="14 10"/>
+      </svg>
+      <div id="rwarm"></div>
+      <svg id="rman" viewBox="0 0 1080 1920"><g fill="#05040a"><g id="rwk" transform="translate(0,1330)">{walker(260, 110)}</g></g></svg>
+    </div>"""
+    js = []
+    js.append(f'tl.fromTo("#rwk", {{x: 0, y: 0}}, {{x: 230, y: 70, duration: {fall["start"] + 1.5 - walk["start"]:.2f}, ease: "none", immediateRender: false}}, {walk["start"]:.2f});')
+    js.append(f'tl.fromTo("#rwk", {{rotation: 0}}, {{rotation: 4, duration: 0.3, yoyo: true, repeat: {int((fall["start"] + 1.5 - walk["start"]) / 0.3)}, immediateRender: false, transformOrigin: "50% 100%"}}, {walk["start"]:.2f});')
+    f0 = fall["start"] + fall["spoken"] * 0.7
+    js.append(f'tl.fromTo("#rwk", {{rotation: 0}}, {{rotation: 84, duration: 0.8, ease: "power2.in", immediateRender: false, transformOrigin: "50% 100%"}}, {f0:.2f});')
+    m0 = measure["start"] + 0.4
+    js.append(fade("#rline1", 0, 1, m0, 0.6))
+    js.append(fade("#rline2", 0, 1, m0 + 0.9, 0.6))
+    js.append(fade("#rwarm", 0, 1, measure["start"] + measure["spoken"] * 0.55, 2))
+    return css, markup, "\n    ".join(js)
+
+
+def starfield_markup(p, n, seed, total, top=1150):
+    rnd = random.Random(seed)
+    return "".join(f'<div style="position:absolute;left:{rnd.uniform(0, 1080):.0f}px;top:{rnd.uniform(0, top):.0f}px;width:3px;height:3px;'
+                   f'border-radius:50%;background:#eef4ff;opacity:{rnd.uniform(0.3, 0.9):.2f}"></div>' for _ in range(n))
+
+
+def qarun_scene(spec, beats, total):
+    """Al-Qasas 28:76–81: Qarun's palace and treasure; heavy keys; his parade; the earth swallows
+    him and his home (no figure of him is shown, only the procession of silhouettes)."""
+    b = lambda k, d: beats[spec.get(k, d)]
+    keys, parade, sink = b("keys_beat", 1), b("parade_beat", 3), b("sink_beat", 4)
+    rnd = random.Random(161)
+    coins = "".join(f'<circle cx="{rnd.uniform(140, 940):.0f}" cy="{rnd.uniform(1560, 1640):.0f}" r="{rnd.uniform(10, 18):.0f}" fill="#e8b84a"/>' for _ in range(40))
+    procession = re.sub(r'fill="[^"]*"', "", "".join(walker(x, 90) for x in range(0, 900, 60)))
+    keyshape = '<g fill="#d8a83a"><circle cx="0" cy="0" r="34" fill="none" stroke="#d8a83a" stroke-width="14"/><rect x="30" y="-8" width="150" height="16"/><rect x="150" y="8" width="14" height="30"/><rect x="120" y="8" width="14" height="22"/></g>'
+    css = """
+    #qsky { position: absolute; inset: 0; background: linear-gradient(180deg, #1a1028 0%, #5a3040 45%, #c9804a 62%, #3a2216 72%); }
+    #qpal { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
+    #qgold { position: absolute; left: 240px; top: 1200px; width: 600px; height: 300px; border-radius: 50%;
+      background: radial-gradient(ellipse, rgba(255,210,110,0.55), rgba(255,180,80,0) 70%); }
+    #qkeys, #qpar { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+    #qkeys { opacity: 0; } #qpar { opacity: 0; }
+    #qcrack { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; }
+    #qdust { position: absolute; left: 100px; top: 1300px; width: 880px; height: 500px; border-radius: 50%; opacity: 0;
+      background: radial-gradient(ellipse, rgba(170,140,110,0.75), rgba(0,0,0,0) 70%); }
+"""
+    markup = f"""
+    <div id="qarunsc" class="clip" data-start="0" data-duration="{total:.2f}">
+      <div id="qsky"></div><div id="qgold"></div>
+      <svg id="qpal" viewBox="0 0 1080 1920"><g id="qp">
+        <path d="M 200 1520 L 200 1260 L 260 1260 L 260 1200 L 340 1200 L 340 1260 L 740 1260 L 740 1200 L 820 1200 L 820 1260 L 880 1260 L 880 1520 Z" fill="#2a1a10"/>
+        <path d="M 420 1260 Q 540 1110 660 1260 Z" fill="#3a2414"/>
+        {"".join(f'<rect x="{x}" y="1320" width="40" height="70" rx="20" fill="#ffcf70"/>' for x in (270, 380, 500, 620, 740))}
+        <rect x="120" y="1520" width="840" height="140" fill="#3a2414"/>{coins}</g>
+        <rect x="0" y="1660" width="1080" height="260" fill="#1e140c"/></svg>
+      <svg id="qkeys" viewBox="0 0 1080 1920">{"".join(f'<g transform="translate({x},{y}) rotate({r})">{keyshape}</g>' for x, y, r in [(180, 1720, -10), (420, 1760, 6), (660, 1730, -4), (880, 1780, 12)])}</svg>
+      <svg id="qpar" viewBox="0 0 1080 1920"><g id="qprow" fill="#0c0806" transform="translate(-400,1800)">{procession}</g></svg>
+      <svg id="qcrack" viewBox="0 0 1080 1920"><path d="M 0 1660 L 160 1690 L 260 1650 L 420 1700 L 560 1640 L 700 1710 L 860 1650 L 1080 1690" stroke="#000" stroke-width="22" fill="none"/></svg>
+      <div id="qdust"></div>
+    </div>"""
+    js = [loop("#qgold", "opacity: 0.7", "opacity: 1", 1.2, total)]
+    js.append(fade("#qkeys", 0, 1, keys["start"] + 0.5, 0.8))
+    js.append(fade("#qkeys", 1, 0, parade["start"] - 0.3, 0.6))
+    js.append(fade("#qpar", 0, 1, parade["start"], 0.5))
+    js.append(f'tl.fromTo("#qprow", {{x: -400}}, {{x: 500, duration: {parade["dur"]:.2f}, ease: "none", immediateRender: false}}, {parade["start"]:.2f});')
+    js.append(fade("#qpar", 1, 0, sink["start"], 0.4))
+    s0 = sink["start"] + sink["spoken"] * 0.35
+    js.append(fade("#qcrack", 0, 1, s0, 0.3))
+    js.append(f'tl.fromTo("#qp", {{y: 0}}, {{y: 520, duration: 2.6, ease: "power2.in", immediateRender: false}}, {s0 + 0.2:.2f});')
+    js.append(f'tl.fromTo("#qarunsc", {{x: 0}}, {{x: 6, duration: 0.05, yoyo: true, repeat: 50, immediateRender: false}}, {s0:.2f});')
+    js.append(f'tl.to("#qarunsc", {{x: 0, duration: 0.05}}, {s0 + 2.6:.2f});')
+    js.append(fade("#qdust", 0, 1, s0 + 0.6, 1.2))
+    js.append(fade("#qgold", 1, 0, s0 + 0.6, 1.2))
+    return css, markup, "\n    ".join(js)
+
+
+HOOPOE = ('<g><ellipse cx="0" cy="0" rx="36" ry="18" fill="#d9884a"/><circle cx="34" cy="-10" r="14" fill="#d9884a"/>'
+          '<path d="M 46 -12 L 74 -6 L 46 -6 Z" fill="#2a2420"/><path d="M 24 -20 L 18 -46 L 30 -24 L 32 -50 L 38 -24 L 46 -44 L 42 -20 Z" fill="#c9783a"/>'
+          '<path d="M 22 -40 L 18 -46 M 32 -46 L 32 -50 M 44 -40 L 46 -44" stroke="#1a1410" stroke-width="5"/>'
+          '<g class="hwing"><path d="M -20 -4 Q 0 -60 30 -6 Z" fill="#1a1410"/><path d="M -10 -20 L 14 -26 M -4 -32 L 18 -34" stroke="#f2ead8" stroke-width="5"/></g>'
+          '<path d="M -36 0 L -64 -6 L -64 6 Z" fill="#1a1410"/></g>')
+
+
+def hoopoe_scene(spec, beats, total):
+    """An-Naml 27:20–44: the hoopoe flies to Sheba, a palace and a great throne under the sun,
+    then a palace floor of glass like water. Sulaiman (AS) and the queen are never shown."""
+    b = lambda k, d: beats[spec.get(k, d)]
+    fly, sheba, glass = b("fly_beat", 2), b("sheba_beat", 3), b("glass_beat", 4)
+    css = """
+    #hsky { position: absolute; inset: 0; background: linear-gradient(180deg, #14243e 0%, #2e4e74 32%, #8ab0cc 54%, #f0d8a8 64%, #c9a070 72%); }
+    #hsun { position: absolute; left: 700px; top: 980px; width: 180px; height: 180px; border-radius: 50%;
+      background: radial-gradient(circle, #fffbe8 0%, #ffe4a0 45%, rgba(255,220,140,0) 72%); }
+    #hland { position: absolute; inset: 0; width: 100%; height: 100%; }
+    #hbird { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; overflow: visible; }
+    #hsheba { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; }
+    #hthrone { position: absolute; left: 440px; top: 1380px; width: 200px; height: 220px; opacity: 0; }
+    #hglass { position: absolute; left: 0; right: 0; top: 1560px; bottom: 0; opacity: 0;
+      background: linear-gradient(180deg, rgba(200,230,250,0.9), rgba(120,170,210,0.8)); }
+    .hrip { position: absolute; left: 540px; top: 1720px; width: 400px; height: 80px; margin: -40px -200px; border-radius: 50%;
+      border: 3px solid rgba(255,255,255,0.7); opacity: 0; }
+"""
+    rips = "".join(f'<div id="hr{k}" class="hrip"></div>' for k in range(3))
+    markup = f"""
+    <div id="hoopoesc" class="clip" data-start="0" data-duration="{total:.2f}">
+      <div id="hsky"></div><div id="hsun"></div>
+      <svg id="hland" viewBox="0 0 1080 1920" preserveAspectRatio="none"><path d="M 0 1300 Q 540 1240 1080 1300 V 1920 H 0 Z" fill="#c9a070"/>
+        <path d="M 0 1420 Q 540 1360 1080 1420 V 1920 H 0 Z" fill="#a8804e"/></svg>
+      <svg id="hsheba" viewBox="0 0 1080 1920"><g fill="#6a4a30">
+        <path d="M 260 1420 L 260 1240 L 330 1240 L 330 1180 L 400 1180 L 400 1240 L 680 1240 L 680 1180 L 750 1180 L 750 1240 L 820 1240 L 820 1420 Z"/>
+        <path d="M 440 1240 Q 540 1110 640 1240 Z" fill="#7a5638"/></g></svg>
+      <svg id="hthrone" viewBox="0 0 200 220"><rect x="40" y="10" width="120" height="140" rx="16" fill="#e8b84a"/><rect x="20" y="130" width="160" height="40" fill="#d8a83a"/>
+        <rect x="30" y="170" width="20" height="50" fill="#c9983a"/><rect x="150" y="170" width="20" height="50" fill="#c9983a"/></svg>
+      <div id="hglass"></div>{rips}
+      <svg id="hbird" viewBox="0 0 1080 1920"><g id="hb" transform="translate(-200,1180) scale(1.6)">{HOOPOE}</g></svg>
+    </div>"""
+    js = [f'tl.fromTo("#hb", {{x: -200, y: 1180}}, {{x: 1300, y: 1100, duration: {max(fly["start"] + fly["dur"] - 0.5, 2):.2f}, ease: "none"}}, 0);']
+    js.append(f'tl.fromTo("#hbird .hwing", {{scaleY: 1}}, {{scaleY: -0.6, duration: 0.14, yoyo: true, repeat: {int(total / 0.14)}, transformOrigin: "50% 100%"}}, 0);')
+    js.append(fade("#hsheba", 0, 1, sheba["start"], 1.0))
+    js.append(fade("#hthrone", 0, 1, sheba["start"] + 0.8, 1.0))
+    js.append(f'tl.fromTo("#hthrone", {{filter: "drop-shadow(0 0 0px #ffd070)"}}, {{filter: "drop-shadow(0 0 30px #ffd070)", duration: 0.8, yoyo: true, repeat: 5, immediateRender: false}}, {sheba["start"] + 1.4:.2f});')
+    js.append(f'tl.fromTo("#hsun", {{scale: 1}}, {{scale: 1.25, duration: 1.2, yoyo: true, repeat: 3, immediateRender: false}}, {sheba["start"] + sheba["spoken"] * 0.6:.2f});')
+    js.append(fade("#hglass", 0, 1, glass["start"], 1.2))
+    for k in range(3):
+        js.append(f'tl.fromTo("#hr{k}", {{scale: 0.3, opacity: 0.8}}, {{scale: 2.2, opacity: 0, duration: 2, ease: "power1.out", repeat: {max(int((total - glass["start"]) / 2) - 1, 0)}, immediateRender: false}}, {glass["start"] + 0.8 + 0.6 * k:.2f});')
+    return css, markup, "\n    ".join(js)
+
+
+def flood_scene(spec, beats, total):
+    """Nuh (AS): land and hills, a ship built plank by plank, the flood with rain and mountain-high
+    waves, then the ship at rest on a mountain at dawn. Nuh (AS) is never shown."""
+    b = lambda k, d: beats[spec.get(k, d)]
+    build, flood, calm = b("build_beat", 2), b("flood_beat", 3), b("calm_beat", 4)
+    drops, rain_js = rain_markup("fd", 80, 171, total)
+    css = """
+    #fsky { position: absolute; inset: 0; background: linear-gradient(180deg, #2a2e3a 0%, #5a5e6a 55%, #6a5a48 66%); }
+    #fstorm { position: absolute; inset: 0; opacity: 0; background: linear-gradient(180deg, #06080e 0%, #141a26 60%, #0a0e16 100%); }
+    #fdawn { position: absolute; inset: 0; opacity: 0; background: linear-gradient(180deg, #2a3a5e 0%, #c9876a 48%, #f3c08a 58%, #6a8aa0 64%); }
+    #fland { position: absolute; inset: 0; width: 100%; height: 100%; }
+    #fship { position: absolute; left: 290px; top: 1260px; width: 500px; height: 220px; }
+    #fsea { position: absolute; left: 0; top: 700px; width: 1080px; height: 1920px; opacity: 0; }
+    .wv { position: absolute; left: 0; top: 0; width: 2160px; height: 1920px; }
+    .drop { position: absolute; top: 0; width: 2px; background: linear-gradient(180deg, rgba(200,215,240,0), rgba(200,215,240,0.8)); }
+    #frain { position: absolute; inset: 0; opacity: 0; }
+    #fmtn { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; }
+"""
+    planks = "".join(f'<path id="fpl{k}" d="M {40 + k * 10} {120 + k * 14} Q 250 {210 + k * 4} {460 - k * 10} {120 + k * 14}" stroke="#7a5634" stroke-width="16" fill="none"/>' for k in range(6))
+    ribs = "".join(f'<rect x="{x}" y="70" width="8" height="120" fill="#5a3e24"/>' for x in range(80, 440, 50))
+    markup = f"""
+    <div id="floodsc" class="clip" data-start="0" data-duration="{total:.2f}">
+      <div id="fsky"></div><div id="fstorm"></div><div id="fdawn"></div>
+      <svg id="fland" viewBox="0 0 1080 1920" preserveAspectRatio="none"><path d="M 0 1400 Q 300 1330 540 1380 Q 800 1430 1080 1360 V 1920 H 0 Z" fill="#3a3024"/></svg>
+      <svg id="fmtn" viewBox="0 0 1080 1920" preserveAspectRatio="none"><path d="M 180 1700 L 540 1380 L 900 1700 Z" fill="#3a3a44"/></svg>
+      <div id="fsea">{waves_svg("fw1", 600, 60, "#1c2a44")}{waves_svg("fw2", 760, 80, "#13203a")}</div>
+      <svg id="fship" viewBox="0 0 500 220"><g id="fribs">{ribs}</g><g id="fpls">{planks}</g>
+        <path id="fhull" d="M 20 110 L 480 110 L 420 210 L 80 210 Z" fill="#6a4a2c" opacity="0"/><rect id="fhouse" x="170" y="40" width="160" height="72" fill="#5a3e24" opacity="0"/></svg>
+      <div id="frain">{drops}</div>
+    </div>"""
+    js = [rain_js]
+    for k in range(6):
+        js.append(f'tl.set("#fpl{k}", {{opacity: 0}}, 0);')
+        js.append(fade(f"#fpl{k}", 0, 1, build["start"] + 0.3 + k * 0.35, 0.3))
+    js.append(fade("#fhull", 0, 1, build["start"] + 2.6, 0.6))
+    js.append(fade("#fhouse", 0, 1, build["start"] + 3.0, 0.6))
+    f0 = flood["start"]
+    js.append(fade("#fstorm", 0, 1, f0, 0.8))
+    js.append(fade("#frain", 0, 1, f0 + 0.2, 0.8))
+    js.append(fade("#fsea", 0, 1, f0 + 0.6, 1.0))
+    js.append(f'tl.fromTo("#fsea", {{y: 500}}, {{y: 0, duration: 3, ease: "power1.out", immediateRender: false}}, {f0 + 0.6:.2f});')
+    js.append(f'tl.fromTo("#fw1", {{x: 0}}, {{x: -1080, duration: 5, ease: "none", repeat: {int(total / 5) + 1}}}, 0);')
+    js.append(f'tl.fromTo("#fw2", {{x: 0}}, {{x: -1080, duration: 3.5, ease: "none", repeat: {int(total / 3.5) + 1}}}, 0);')
+    js.append(f'tl.fromTo("#fship", {{y: 0, rotation: -6}}, {{y: -140, rotation: 6, duration: 1.1, ease: "sine.inOut", yoyo: true, repeat: {int((calm["start"] - f0) / 1.1)}, immediateRender: false}}, {f0 + 0.8:.2f});')
+    c0 = calm["start"]
+    js.append(fade("#frain", 1, 0, c0, 1.2))
+    js.append(fade("#fstorm", 1, 0, c0, 1.5))
+    js.append(fade("#fdawn", 0, 1, c0, 1.8))
+    js.append(f'tl.to("#fsea", {{y: 420, duration: 3, ease: "power1.inOut"}}, {c0:.2f});')
+    js.append(fade("#fmtn", 0, 1, c0 + 0.6, 1.5))
+    js.append(f'tl.to("#fship", {{y: -60, rotation: 0, duration: 2.2, ease: "sine.out"}}, {c0 + 0.2:.2f});')
+    return css, markup, "\n    ".join(js)
+
+
+def idol(x, h, iid):
+    w = h * 0.42
+    return (f'<g id="{iid}" transform="translate({x},0)"><rect x="{-w * 0.7:.0f}" y="-14" width="{w * 1.4:.0f}" height="14" fill="#3a2a1c"/>'
+            f'<path d="M {-w / 2:.0f} -14 L {-w / 2:.0f} {-h * 0.62:.0f} Q 0 {-h * 0.72:.0f} {w / 2:.0f} {-h * 0.62:.0f} L {w / 2:.0f} -14 Z" fill="#7a6a58"/>'
+            f'<circle cx="0" cy="{-h * 0.78:.0f}" r="{w * 0.36:.0f}" fill="#8a7a66"/></g>')
+
+
+def idols_scene(spec, beats, total):
+    """Al-Anbiya 21:57–63: a temple of idols; all but the largest are broken; the people return.
+    Ibrahim (AS) is never shown."""
+    b = lambda k, d: beats[spec.get(k, d)]
+    wait, brk, ret, ans = b("wait_beat", 1), b("break_beat", 2), b("return_beat", 3), b("answer_beat", 4)
+    rnd = random.Random(191)
+    small = [(140, 200), (260, 230), (380, 210), (700, 210), (820, 230), (940, 200)]
+    idols_svg = "".join(idol(x, h, f"id{k}") for k, (x, h) in enumerate(small)) + idol(540, 430, "idbig")
+    shards = "".join(f'<rect id="sh{k}" x="{x + rnd.uniform(-30, 30):.0f}" y="{1560 - h * 0.5 + rnd.uniform(-40, 40):.0f}" width="{rnd.uniform(14, 34):.0f}" height="{rnd.uniform(14, 30):.0f}" fill="#7a6a58" opacity="0"/>'
+                     for k, (x, h) in enumerate([s for s in small for _ in range(4)]))
+    crowd_svg = re.sub(r'fill="[^"]*"', "", "".join(walker(x, 120) for x in range(60, 1080, 80)))
+    css = """
+    #itemple { position: absolute; inset: 0; background: linear-gradient(180deg, #120c08 0%, #2a1c12 55%, #1a120c 100%); }
+    #iscene { position: absolute; inset: 0; width: 100%; height: 100%; }
+    #ilight { position: absolute; left: 340px; top: 1060px; width: 400px; height: 600px; opacity: 0;
+      background: radial-gradient(ellipse 50% 60% at 50% 40%, rgba(255,220,160,0.5), rgba(0,0,0,0) 70%); }
+    #icrowd { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; }
+    #iaxe { opacity: 0; }
+    .itorch { position: absolute; width: 22px; height: 22px; margin: -11px; border-radius: 50%;
+      background: radial-gradient(circle, #fff1c9 0%, #ffae4a 50%, rgba(255,140,40,0) 75%); box-shadow: 0 0 50px 20px rgba(255,150,60,0.35); }
+"""
+    torches = "".join(f'<div id="it{k}" class="itorch" style="left:{x}px;top:1220px"></div>' for k, x in enumerate((60, 1020)))
+    markup = f"""
+    <div id="idolsc" class="clip" data-start="0" data-duration="{total:.2f}">
+      <div id="itemple"></div>{torches}
+      <svg id="iscene" viewBox="0 0 1080 1920">
+        <rect x="0" y="1560" width="1080" height="360" fill="#241810"/>
+        {"".join(f'<rect x="{x}" y="1060" width="40" height="500" fill="#3a2a1c"/>' for x in (20, 1020))}
+        <g transform="translate(0,1560)">{idols_svg}</g>{shards}
+        <g id="iaxe" transform="translate(470,1700) rotate(-30)"><rect x="0" y="-6" width="160" height="12" fill="#6a4a30"/><path d="M 150 -40 L 200 -30 L 200 30 L 150 40 Z" fill="#9a9aa4"/></g>
+      </svg>
+      <div id="ilight"></div>
+      <svg id="icrowd" viewBox="0 0 1080 1920"><g fill="#070504" transform="translate(0,1920)">{crowd_svg}</g></svg>
+    </div>"""
+    js = [loop(f"#it{k}", "opacity: 0.7", "opacity: 1", 0.4 + k * 0.1, total) for k in range(2)]
+    b0 = brk["start"] + 0.3
+    for k in range(len(small)):
+        at = b0 + k * 0.45
+        js.append(fade(f"#id{k}", 1, 0, at, 0.15))
+        for j in range(4):
+            sid = f"sh{k * 4 + j}"
+            js.append(f'tl.fromTo("#{sid}", {{opacity: 0, y: 0, rotation: 0}}, {{opacity: 1, y: {rnd.uniform(60, 140):.0f}, rotation: {rnd.uniform(-120, 120):.0f}, duration: 0.6, ease: "power2.in", immediateRender: false}}, {at:.2f});')
+    js.append(fade("#iaxe", 0, 1, b0 + 2.8, 0.5))
+    js.append(fade("#icrowd", 0, 1, ret["start"], 0.6))
+    js.append(f'tl.fromTo("#icrowd", {{y: 200}}, {{y: 0, duration: 1.4, ease: "power2.out", immediateRender: false}}, {ret["start"]:.2f});')
+    js.append(fade("#ilight", 0, 1, ans["start"] + 0.5, 1.2))
+    return css, markup, "\n    ".join(js)
+
+
+RAM = ('<g fill="#e8e0cc"><ellipse cx="0" cy="0" rx="70" ry="42"/><rect x="-50" y="30" width="12" height="54" fill="#3a2a20"/><rect x="-20" y="34" width="12" height="50" fill="#3a2a20"/>'
+       '<rect x="20" y="34" width="12" height="50" fill="#3a2a20"/><rect x="46" y="30" width="12" height="54" fill="#3a2a20"/>'
+       '<ellipse cx="78" cy="-24" rx="26" ry="20"/><path d="M 70 -40 Q 46 -70 72 -78 Q 100 -76 96 -50 Q 92 -36 80 -40" stroke="#b09878" stroke-width="12" fill="none"/></g>')
+
+
+def sacrifice_scene(spec, beats, total):
+    """As-Saffat 37:102–107: a rocky valley under the night of the dream, dawn, a knife on a rock,
+    and a ram given as ransom. Ibrahim (AS) and his son are never shown."""
+    b = lambda k, d: beats[spec.get(k, d)]
+    dream, ask, reply, ransom = b("dream_beat", 1), b("ask_beat", 2), b("reply_beat", 3), b("ransom_beat", 4)
+    css = """
+    #xnight { position: absolute; inset: 0; background: linear-gradient(180deg, #03040c 0%, #0b1228 60%, #141a2c 100%); }
+    #xdream { position: absolute; inset: 0; opacity: 0; background: radial-gradient(ellipse at 50% 45%, rgba(160,180,255,0.35), rgba(0,0,0,0) 65%); }
+    #xdawn { position: absolute; inset: 0; opacity: 0; background: linear-gradient(180deg, #2a3a5e 0%, #c9876a 50%, #f3c08a 60%, #8a6a4a 70%); }
+    #xland { position: absolute; inset: 0; width: 100%; height: 100%; }
+    #xknife { opacity: 0; }
+    #xsun { position: absolute; left: 440px; top: 1280px; width: 200px; height: 200px; border-radius: 50%; opacity: 0;
+      background: radial-gradient(circle, #fff3d6 0%, #ffd08a 40%, rgba(255,180,90,0) 72%); }
+    #xram { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; opacity: 0; }
+    #xglow { position: absolute; left: 340px; top: 1260px; width: 400px; height: 400px; border-radius: 50%; opacity: 0;
+      background: radial-gradient(circle, rgba(255,230,170,0.6), rgba(0,0,0,0) 70%); }
+"""
+    markup = f"""
+    <div id="sacsc" class="clip" data-start="0" data-duration="{total:.2f}">
+      <div id="xnight"></div>{starfield_markup("xst", 80, 201, total)}<div id="xdream"></div><div id="xdawn"></div>
+      <svg id="xland" viewBox="0 0 1080 1920" preserveAspectRatio="none">
+        <path d="M 0 1360 L 200 1240 L 360 1320 L 560 1200 L 760 1300 L 940 1220 L 1080 1300 V 1920 H 0 Z" fill="#2a1e18"/>
+        <path d="M 0 1520 Q 540 1460 1080 1520 V 1920 H 0 Z" fill="#3a2a1e"/>
+        <ellipse cx="540" cy="1600" rx="200" ry="60" fill="#4a3826"/>
+        <g id="xknife" transform="translate(480,1570) rotate(-8)"><rect x="0" y="-6" width="60" height="14" rx="4" fill="#4a3020"/><path d="M 60 -8 L 170 -2 L 170 4 L 60 10 Z" fill="#c8ccd6"/></g>
+      </svg>
+      <div id="xsun"></div><div id="xglow"></div>
+      <svg id="xram" viewBox="0 0 1080 1920"><g transform="translate(540,1460) scale(1.3)">{RAM}</g></svg>
+    </div>"""
+    js = [fade("#xdream", 0, 1, dream["start"], 1.5), fade("#xdream", 1, 0, ask["start"] + 1, 1.5)]
+    js.append(fade("#xdawn", 0, 1, ask["start"] + 0.5, 4))
+    js.append(fade("#xknife", 0, 1, ask["start"] + ask["spoken"] * 0.5, 0.8))
+    js.append(f'tl.fromTo("#xsun", {{opacity: 0, y: 120}}, {{opacity: 1, y: -260, duration: {total - ask["start"]:.2f}, ease: "none", immediateRender: false}}, {ask["start"]:.2f});')
+    js.append(f'tl.fromTo("#xknife", {{filter: "brightness(1)"}}, {{filter: "brightness(1.8)", duration: 0.3, yoyo: true, repeat: 3, immediateRender: false}}, {reply["start"] + 0.5:.2f});')
+    r0 = ransom["start"] + ransom["spoken"] * 0.65
+    js.append(fade("#xknife", 1, 0, r0, 0.6))
+    js.append(fade("#xglow", 0, 1, r0, 1.0))
+    js.append(f'tl.fromTo("#xram", {{opacity: 0, y: 40}}, {{opacity: 1, y: 0, duration: 1.2, ease: "power2.out", immediateRender: false}}, {r0 + 0.3:.2f});')
+    return css, markup, "\n    ".join(js)
+
+
+SCENES = {"sunhold": sunhold_scene, "wall": wall_scene, "road": road_scene, "qarun": qarun_scene, "hoopoe": hoopoe_scene,
+          "flood": flood_scene, "idols": idols_scene, "sacrifice": sacrifice_scene}
+SCENES.update({"ruins": ruins_scene, "sea": sea_scene, "river": river_scene, "birds": birds_scene, "ayyub": ayyub_scene, "drown": drown_scene})
 
 
 def vo_len(spec: dict) -> float:

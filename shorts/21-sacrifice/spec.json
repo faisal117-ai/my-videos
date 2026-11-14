@@ -1,0 +1,169 @@
+{
+  "accent": "#f2b04a",
+  "embers": false,
+  "flash": 0.4,
+  "bed_volume": 1.0,
+  "hold_end": 0.5,
+  "text_top": 300,
+  "text_bottom": 780,
+  "tr_size": 56,
+  "scene": "sacrifice",
+  "dream_beat": 1,
+  "ask_beat": 2,
+  "reply_beat": 3,
+  "ransom_beat": 4,
+  "beats": [
+    {
+      "hook": true,
+      "text": "A father saw a *dream*…",
+      "sub": "…and his son said: do as you are commanded.",
+      "ur": "ایک باپ نے خواب دیکھا… اور بیٹے نے کہا: جو حکم ملا ہے، کر ڈالیے",
+      "mood": {
+        "warm": 0.2,
+        "cool": 0.1
+      },
+      "reveal": false
+    },
+    {
+      "text": "In a dream, he saw himself *sacrificing* his son.",
+      "size": 104,
+      "ur": "خواب میں دیکھا کہ وہ اپنے بیٹے کو ذبح کر رہے ہیں",
+      "ref": "As-Saffat 37:102",
+      "mood": {
+        "warm": 0.1,
+        "cool": 0.3
+      }
+    },
+    {
+      "q": "37:102",
+      "ar_words": [
+        6,
+        15
+      ],
+      "en": "O my son, indeed I have seen in a dream that I [must] sacrifice you, so see what you think",
+      "ur_a": [
+        "بیٹا",
+        "تیرا کیا خیال ہے"
+      ],
+      "ref": "As-Saffat 37:102",
+      "mood": {
+        "warm": 0.2,
+        "cool": 0.3
+      },
+      "arabic": "يَٰبُنَيَّ إِنِّيٓ أَرَىٰ فِي ٱلۡمَنَامِ أَنِّيٓ أَذۡبَحُكَ فَٱنظُرۡ مَاذَا تَرَىٰۚ",
+      "translation": "“O my son, indeed I have seen in a dream that I [must] sacrifice you, so see what you think”",
+      "ur": "بیٹا، میں خواب میں دیکھتا ہوں کہ میں تجھے ذبح کر رہا ہوں، اب تو بتا، تیرا کیا خیال ہے"
+    },
+    {
+      "q": "37:102",
+      "ar_words": [
+        17,
+        26
+      ],
+      "en": "O my father, do as you are commanded. You will find me, if Allah wills, of the steadfast",
+      "ur_a": [
+        "ابا جان",
+        "صابروں میں سے پائیں گے"
+      ],
+      "ref": "As-Saffat 37:102",
+      "mood": {
+        "warm": 0.3,
+        "cool": 0.3
+      },
+      "arabic": "يَـٰٓأَبَتِ ٱفۡعَلۡ مَا تُؤۡمَرُۖ سَتَجِدُنِيٓ إِن شَآءَ ٱللَّهُ مِنَ ٱلصَّـٰبِرِينَ",
+      "translation": "“O my father, do as you are commanded. You will find me, if Allah wills, of the steadfast”",
+      "ur": "ابا جان، جو کچھ آپ کو حکم دیا جا رہا ہے اسے کر ڈالیے، آپ انشاءاللہ مجھے صابروں میں سے پائیں گے"
+    },
+    {
+      "q": "37:107",
+      "ar_words": [
+        1,
+        3
+      ],
+      "en": "And We ransomed him with a great sacrifice",
+      "ur_a": [
+        "اور ہم نے",
+        "چھڑا لیا"
+      ],
+      "ref": "As-Saffat 37:107",
+      "mood": {
+        "warm": 0.6,
+        "cool": 0.2
+      },
+      "arabic": "وَفَدَيۡنَٰهُ بِذِبۡحٍ عَظِيمࣲ",
+      "translation": "“And We ransomed him with a great sacrifice”",
+      "ur": "اور ہم نے ایک بڑی قربانی فدیے میں دے کر اس بچے کو چھڑا لیا"
+    },
+    {
+      "cta": true,
+      "text": "Follow for more.",
+      "ur": "فالو کریں",
+      "mood": {
+        "warm": 0.3,
+        "cool": 0.3
+      }
+    }
+  ],
+  "sound": [
+    {
+      "prompt": "lib",
+      "src": "../03-cave/assets/sfx/03b5f68efefc.mp3",
+      "beat": 0,
+      "offset": 0,
+      "dur": 3,
+      "gain": -7,
+      "fade_in": 0,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "lib",
+      "src": "../05-trunk/assets/sfx/beb74bb8b482.mp3",
+      "beat": 0,
+      "offset": 0,
+      "dur": 8,
+      "gain": -14,
+      "fade_in": 0.3,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "lib",
+      "src": "../05-trunk/assets/sfx/562217fe60ac.mp3",
+      "beat": 1,
+      "offset": 0,
+      "dur": 14,
+      "gain": -15,
+      "fade_in": 2,
+      "fade_out": 2
+    },
+    {
+      "prompt": "lib",
+      "src": "../04-ease/assets/sfx/61e97fb787a5.mp3",
+      "beat": 3,
+      "offset": 0,
+      "dur": 12,
+      "gain": -13,
+      "fade_in": 1,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "lib",
+      "src": "../03-cave/assets/sfx/f73090a5a6a6.mp3",
+      "beat": 4,
+      "offset": 2.0,
+      "dur": 3,
+      "gain": -9,
+      "fade_in": 0,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "lib",
+      "src": "../06-ant/assets/sfx/cabf6e6577de.mp3",
+      "beat": 4,
+      "offset": 0,
+      "dur": 10,
+      "gain": -14,
+      "fade_in": 1.5,
+      "fade_out": 2
+    }
+  ]
+}

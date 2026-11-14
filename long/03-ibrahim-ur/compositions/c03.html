@@ -1,0 +1,109 @@
+<template>
+  <style>
+    #c03 { position: absolute; inset: 0; overflow: hidden; background: #000; }
+    .c03-st { position: absolute; border-radius: 50%; background: #eef4ff; box-shadow: 0 0 6px rgba(220,235,255,0.9); }
+    .c03-mote { position: absolute; border-radius: 50%; }
+    .c03-full { position: absolute; inset: 0; }
+    .c03-svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+
+    .c03-cam { position: absolute; inset: 0; transform-origin: 50% 55%; }
+    .c03-scrim { position: absolute; left: 0; right: 0; bottom: 0; height: 300px;
+      background: linear-gradient(0deg, rgba(0,0,0,0.75), rgba(0,0,0,0)); }
+    .c03-cap { position: absolute; left: 210px; right: 210px; bottom: 64px; text-align: center;
+      font-family: "Cormorant Garamond"; font-weight: 600; font-size: 54px; line-height: 1.12; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c03-cardwrap { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+      background: radial-gradient(ellipse at 50% 50%, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.45) 50%, rgba(0,0,0,0) 80%); }
+    .c03-card { max-width: 1400px; display: flex; flex-direction: column; align-items: center; gap: 26px; text-align: center; }
+    .c03-ar { font-family: "Amiri Quran"; font-size: 70px; line-height: 1.8; color: #fff6e6; text-shadow: 0 0 30px rgba(215,236,255,0.4); }
+    .c03-en { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 50px; line-height: 1.18; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c03-ctext { font-family: "Cormorant Garamond"; font-weight: 600; font-size: 76px; line-height: 1.1; color: #f5ead6;
+      text-shadow: 0 3px 22px rgba(0,0,0,0.9); }
+    .c03-hi { color: var(--accent); }
+    .c03-ref { font-family: Inter, sans-serif; font-weight: 700; font-size: 28px; letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--accent); border: 2px solid var(--accent); border-radius: 999px; padding: 10px 24px; background: rgba(0,0,0,0.4); }
+    .c03-title { font-family: "Cormorant Garamond"; font-weight: 600; font-size: 118px; line-height: 1.02; color: #f5ead6;
+      text-shadow: 0 4px 30px rgba(0,0,0,0.8); }
+    .c03-tsub { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 52px; color: var(--accent); }
+    .c03-mark { font-family: Inter, sans-serif; font-weight: 700; font-size: 64px; letter-spacing: 0.32em; color: #f5ead6; }
+    .c03-mark span { color: var(--accent); }
+    .c03-endt { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 52px; color: #f5ead6; }
+    .c03-btn { font-family: Inter, sans-serif; font-weight: 700; font-size: 34px; letter-spacing: 0.08em; color: #120b08;
+      background: var(--accent); border-radius: 999px; padding: 18px 48px; }
+    .c03-label { position: absolute; left: 90px; top: 70px; }
+    .c03-label b { display: block; font-family: Inter, sans-serif; font-weight: 700; font-size: 28px; letter-spacing: 0.3em; color: var(--accent); }
+    .c03-label i { display: block; font-family: "Cormorant Garamond"; font-style: normal; font-weight: 600; font-size: 60px; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c03-brand { position: absolute; right: 80px; top: 70px; font-family: Inter, sans-serif; font-weight: 700; font-size: 28px;
+      letter-spacing: 0.32em; color: rgba(245,234,214,0.7); }
+    .c03-brand span { color: var(--accent); }
+    .c03-fade { position: absolute; inset: 0; background: #000; }
+
+    #c03-room { background: linear-gradient(180deg, #140e0a 0%, #2a1c12 60%, #1a120c 100%); }
+    #c03-lamp { position: absolute; left: 1300px; top: 520px; width: 40px; height: 40px; margin: -20px; border-radius: 50%;
+      background: radial-gradient(circle, #fff1c9 0%, #ffbe5c 50%, rgba(255,160,60,0) 75%); box-shadow: 0 0 120px 50px rgba(255,170,70,0.3); }
+    #c03-door { position: absolute; left: 260px; top: 300px; width: 300px; height: 560px; background: #050812; }
+    #c03-doorw { position: absolute; left: 260px; top: 300px; width: 300px; height: 560px; background: #3a2a1c; transform-origin: 0% 50%; }
+
+    .c03-cap { font-family: "Noto Nastaliq Urdu"; font-weight: 400; font-size: 44px; line-height: 1.9; direction: rtl; bottom: 40px; }
+    .c03-urtr { font-family: "Noto Nastaliq Urdu"; font-style: normal; font-weight: 400; font-size: 44px; line-height: 1.9; }
+    .c03-ctext { font-family: "Noto Nastaliq Urdu"; font-weight: 400; font-size: 60px; line-height: 1.9; direction: rtl; }
+    .c03-label i, .c03-title, .c03-tsub, .c03-endt { font-family: "Noto Nastaliq Urdu"; font-style: normal; font-weight: 400; direction: rtl; line-height: 1.8; }
+    .c03-title { font-size: 92px; } .c03-tsub { font-size: 46px; } .c03-label i { font-size: 48px; } .c03-endt { font-size: 44px; }
+    .c03-label b { letter-spacing: 0; font-family: "Noto Nastaliq Urdu"; font-weight: 400; font-size: 30px; }
+
+  </style>
+  <div id="c03" data-composition-id="c03" data-width="1920" data-height="1080">
+    <div id="c03-scene" class="clip" data-start="0" data-duration="64.50" style="position:absolute;inset:0" data-layout-allow-overflow>
+      <div id="c03-cam" class="c03-cam">
+      <div id="c03-room" class="c03-full"></div>
+      <div id="c03-door"><div id="c03-dst0" class="c03-st" style="left:4px;top:45px;width:2.5px;height:2.5px"></div><div id="c03-dst1" class="c03-st" style="left:70px;top:303px;width:1.9px;height:1.9px"></div><div id="c03-dst2" class="c03-st" style="left:222px;top:265px;width:1.8px;height:1.8px"></div><div id="c03-dst3" class="c03-st" style="left:299px;top:37px;width:1.6px;height:1.6px"></div><div id="c03-dst4" class="c03-st" style="left:282px;top:161px;width:2.0px;height:2.0px"></div><div id="c03-dst5" class="c03-st" style="left:63px;top:87px;width:3.0px;height:3.0px"></div><div id="c03-dst6" class="c03-st" style="left:164px;top:381px;width:3.6px;height:3.6px"></div><div id="c03-dst7" class="c03-st" style="left:297px;top:12px;width:3.3px;height:3.3px"></div><div id="c03-dst8" class="c03-st" style="left:261px;top:260px;width:2.0px;height:2.0px"></div><div id="c03-dst9" class="c03-st" style="left:192px;top:88px;width:1.6px;height:1.6px"></div><div id="c03-dst10" class="c03-st" style="left:101px;top:134px;width:2.5px;height:2.5px"></div><div id="c03-dst11" class="c03-st" style="left:293px;top:397px;width:3.5px;height:3.5px"></div><div id="c03-dst12" class="c03-st" style="left:92px;top:71px;width:3.1px;height:3.1px"></div><div id="c03-dst13" class="c03-st" style="left:58px;top:368px;width:3.0px;height:3.0px"></div><div id="c03-dst14" class="c03-st" style="left:209px;top:38px;width:2.5px;height:2.5px"></div><div id="c03-dst15" class="c03-st" style="left:59px;top:182px;width:3.5px;height:3.5px"></div><div id="c03-dst16" class="c03-st" style="left:133px;top:316px;width:2.9px;height:2.9px"></div><div id="c03-dst17" class="c03-st" style="left:36px;top:78px;width:2.3px;height:2.3px"></div><div id="c03-dst18" class="c03-st" style="left:214px;top:342px;width:2.7px;height:2.7px"></div><div id="c03-dst19" class="c03-st" style="left:112px;top:245px;width:3.1px;height:3.1px"></div></div><div id="c03-doorw"></div>
+      <svg class="c03-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none"><rect x="0" y="860" width="1920" height="220" fill="#24170e"/><rect x="900" y="560" width="440" height="20" fill="#4a3220"/><g transform="translate(1120,560)"><g transform="translate(0,0)"><rect x="-44" y="-14" width="88" height="14" fill="#3a2a1c"/><path d="M -32 -14 L -32 -93 Q 0 -108 32 -93 L 32 -14 Z" fill="#7a6a58"/><circle cx="0" cy="-117" r="23" fill="#8a7a66"/></g></g></svg>
+      <div id="c03-lamp"></div>
+      </div>
+    </div>
+    <div id="c03-scr" class="c03-scrim clip" data-start="0" data-duration="64.50"></div>
+    <div id="c03-lab" class="c03-label clip" data-start="0.3" data-duration="4.6"><b>باب 3</b><i>ابا جان</i></div>
+    <div id="c03-cp0" class="c03-cap clip" data-start="0.22" data-duration="3.64">اللہ کی طرف بلانے میں سب سے مشکل وہ شخص</div>
+    <div id="c03-cp1" class="c03-cap clip" data-start="3.86" data-duration="3.93">تھا جس سے وہ سب سے زیادہ محبت کرتے تھے:</div>
+    <div id="c03-cp2" class="c03-cap clip" data-start="7.79" data-duration="1.67">ان کا اپنا باپ۔</div>
+    <div id="c03-cp3" class="c03-cap clip" data-start="25.42" data-duration="2.72">آیا ہے جو آپ کے پاس نہیں آیا۔</div>
+    <div id="c03-cp4" class="c03-cap clip" data-start="28.14" data-duration="3.95">آپ میرے پیچھے چلیں، میں آپ کو سیدھا راستہ بتاؤں گا۔</div>
+    <div id="c03-cp5" class="c03-cap clip" data-start="32.09" data-duration="5.97">ابا جان، مجھے ڈر ہے کہ کہیں آپ رحمان کے عذاب میں مبتلا نہ ہو جائیں۔</div>
+    <div id="c03-cp6" class="c03-cap clip" data-start="38.06" data-duration="4.76">چار بار انہوں نے کہا: ابا جان۔ ایک بار بھی آواز اونچی نہیں کی۔</div>
+    <div id="c03-k0w" class="c03-cardwrap clip" data-start="9.51" data-duration="13.59"><div id="c03-k0" class="c03-card"><div class="c03-ar" dir="rtl" lang="ar">يَـٰٓأَبَتِ لِمَ تَعۡبُدُ مَا لَا يَسۡمَعُ وَلَا يُبۡصِرُ وَلَا يُغۡنِي عَنكَ شَيۡـࣰٔا</div><div class="c03-en c03-urtr" dir="rtl" lang="ur">ابّا جان، آپ کیوں اُن چیزوں کی عبادت کرتے ہیں جو نہ سنتی ہیں نہ دیکھتی ہیں اور نہ آپ کا کوئی کام بنا سکتی ہیں</div><div class="c03-ref">Maryam 19:42</div></div></div>
+    <div id="c03-k1w" class="c03-cardwrap clip" data-start="42.87" data-duration="11.62"><div id="c03-k1" class="c03-card"><div class="c03-ar" dir="rtl" lang="ar">أَرَاغِبٌ أَنتَ عَنۡ ءَالِهَتِي يَـٰٓإِبۡرَٰهِيمُۖ لَئِن لَّمۡ تَنتَهِ لَأَرۡجُمَنَّكَۖ</div><div class="c03-en c03-urtr" dir="rtl" lang="ur">ابراہیمؑ، کیا تو میرے معبُودوں سے پھر گیا ہے؟ اگر تو باز نہ آیا تو میں تجھے سنگسار کر دوں گا</div><div class="c03-ref">Maryam 19:46</div></div></div>
+    <div id="c03-k2w" class="c03-cardwrap clip" data-start="54.59" data-duration="8.51"><div id="c03-k2" class="c03-card"><div class="c03-ar" dir="rtl" lang="ar">سَلَٰمٌ عَلَيۡكَۖ سَأَسۡتَغۡفِرُ لَكَ رَبِّيٓۖ إِنَّهُۥ كَانَ بِي حَفِيࣰّا</div><div class="c03-en c03-urtr" dir="rtl" lang="ur">سلام ہے آپ کو میں اپنے رب سے دُعا کروں گا کہ آپ کو معاف کر دے، میرا رب مجھ پر بڑا ہی مہربان ہے</div><div class="c03-ref">Maryam 19:47</div></div></div>
+    <div id="c03-fadeIn" class="c03-fade clip" data-start="0" data-duration="0.55" style="opacity:1"></div>
+    <div id="c03-fadeOut" class="c03-fade clip" data-start="64.00" data-duration="0.50" style="opacity:0"></div>
+    <div id="c03-br" class="c03-brand clip" data-start="0" data-duration="64.50">HAQ <span>·</span> STORIES</div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#c03-dst0", {opacity: 0.51}, {opacity: 1, duration: 1.02, ease: "sine.inOut", yoyo: true, repeat: 63, immediateRender: false}, 0.11);
+    tl.fromTo("#c03-dst2", {opacity: 0.46}, {opacity: 1, duration: 1.30, ease: "sine.inOut", yoyo: true, repeat: 50, immediateRender: false}, 0.41);
+    tl.fromTo("#c03-dst4", {opacity: 0.40}, {opacity: 1, duration: 1.23, ease: "sine.inOut", yoyo: true, repeat: 52, immediateRender: false}, 0.96);
+    tl.fromTo("#c03-dst6", {opacity: 0.41}, {opacity: 1, duration: 1.08, ease: "sine.inOut", yoyo: true, repeat: 59, immediateRender: false}, 0.84);
+    tl.fromTo("#c03-dst8", {opacity: 0.54}, {opacity: 1, duration: 1.56, ease: "sine.inOut", yoyo: true, repeat: 42, immediateRender: false}, 0.19);
+    tl.fromTo("#c03-dst10", {opacity: 0.49}, {opacity: 1, duration: 1.65, ease: "sine.inOut", yoyo: true, repeat: 39, immediateRender: false}, 0.96);
+    tl.fromTo("#c03-dst12", {opacity: 0.46}, {opacity: 1, duration: 1.51, ease: "sine.inOut", yoyo: true, repeat: 43, immediateRender: false}, 0.09);
+    tl.fromTo("#c03-dst14", {opacity: 0.57}, {opacity: 1, duration: 1.48, ease: "sine.inOut", yoyo: true, repeat: 43, immediateRender: false}, 0.99);
+    tl.fromTo("#c03-dst16", {opacity: 0.34}, {opacity: 1, duration: 0.99, ease: "sine.inOut", yoyo: true, repeat: 65, immediateRender: false}, 0.98);
+    tl.fromTo("#c03-dst18", {opacity: 0.45}, {opacity: 1, duration: 1.61, ease: "sine.inOut", yoyo: true, repeat: 40, immediateRender: false}, 0.28);
+    tl.fromTo("#c03-lamp", {opacity: 0.8, scale: 0.95}, {opacity: 1, scale: 1.05, duration: 0.45, ease: "sine.inOut", yoyo: true, repeat: 144, immediateRender: false}, 0.00);
+    tl.fromTo("#c03-doorw", {scaleX: 1}, {scaleX: 0.08, duration: 2.00, ease: "power2.inOut", immediateRender: false}, 54.74);
+    tl.fromTo("#c03-k0w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 9.51);
+    tl.fromTo("#c03-k0", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 9.51);
+    tl.fromTo("#c03-k1w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 42.87);
+    tl.fromTo("#c03-k1", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 42.87);
+    tl.fromTo("#c03-k2w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 54.59);
+    tl.fromTo("#c03-k2", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 54.59);
+    tl.fromTo("#c03-lab", {opacity: 0, x: -20}, {opacity: 1, x: 0, duration: 0.60, ease: "power2.out", immediateRender: false}, 0.30);
+    tl.fromTo("#c03-lab", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 4.40);
+    tl.fromTo("#c03-scene", {scale: 1.0, x: 0}, {scale: 1.06, x: -30, duration: 64.50, ease: "none", immediateRender: false}, 0.00);
+    tl.fromTo("#c03-fadeIn", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 0.00);
+    tl.fromTo("#c03-fadeOut", {opacity: 0}, {opacity: 1, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 64.00);
+    window.__timelines["c03"] = tl;
+  </script>
+</template>

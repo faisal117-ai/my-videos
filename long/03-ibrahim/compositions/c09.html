@@ -1,0 +1,151 @@
+<template>
+  <style>
+    #c09 { position: absolute; inset: 0; overflow: hidden; background: #000; }
+    .c09-st { position: absolute; border-radius: 50%; background: #eef4ff; box-shadow: 0 0 6px rgba(220,235,255,0.9); }
+    .c09-mote { position: absolute; border-radius: 50%; }
+    .c09-full { position: absolute; inset: 0; }
+    .c09-svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+
+    .c09-cam { position: absolute; inset: 0; transform-origin: 50% 55%; }
+    .c09-scrim { position: absolute; left: 0; right: 0; bottom: 0; height: 300px;
+      background: linear-gradient(0deg, rgba(0,0,0,0.75), rgba(0,0,0,0)); }
+    .c09-cap { position: absolute; left: 210px; right: 210px; bottom: 64px; text-align: center;
+      font-family: "Cormorant Garamond"; font-weight: 600; font-size: 54px; line-height: 1.12; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c09-cardwrap { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+      background: radial-gradient(ellipse at 50% 50%, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.45) 50%, rgba(0,0,0,0) 80%); }
+    .c09-card { max-width: 1400px; display: flex; flex-direction: column; align-items: center; gap: 26px; text-align: center; }
+    .c09-ar { font-family: "Amiri Quran"; font-size: 70px; line-height: 1.8; color: #fff6e6; text-shadow: 0 0 30px rgba(215,236,255,0.4); }
+    .c09-en { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 50px; line-height: 1.18; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c09-ctext { font-family: "Cormorant Garamond"; font-weight: 600; font-size: 76px; line-height: 1.1; color: #f5ead6;
+      text-shadow: 0 3px 22px rgba(0,0,0,0.9); }
+    .c09-hi { color: var(--accent); }
+    .c09-ref { font-family: Inter, sans-serif; font-weight: 700; font-size: 28px; letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--accent); border: 2px solid var(--accent); border-radius: 999px; padding: 10px 24px; background: rgba(0,0,0,0.4); }
+    .c09-title { font-family: "Cormorant Garamond"; font-weight: 600; font-size: 118px; line-height: 1.02; color: #f5ead6;
+      text-shadow: 0 4px 30px rgba(0,0,0,0.8); }
+    .c09-tsub { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 52px; color: var(--accent); }
+    .c09-mark { font-family: Inter, sans-serif; font-weight: 700; font-size: 64px; letter-spacing: 0.32em; color: #f5ead6; }
+    .c09-mark span { color: var(--accent); }
+    .c09-endt { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 52px; color: #f5ead6; }
+    .c09-btn { font-family: Inter, sans-serif; font-weight: 700; font-size: 34px; letter-spacing: 0.08em; color: #120b08;
+      background: var(--accent); border-radius: 999px; padding: 18px 48px; }
+    .c09-label { position: absolute; left: 90px; top: 70px; }
+    .c09-label b { display: block; font-family: Inter, sans-serif; font-weight: 700; font-size: 28px; letter-spacing: 0.3em; color: var(--accent); }
+    .c09-label i { display: block; font-family: "Cormorant Garamond"; font-style: normal; font-weight: 600; font-size: 60px; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c09-brand { position: absolute; right: 80px; top: 70px; font-family: Inter, sans-serif; font-weight: 700; font-size: 28px;
+      letter-spacing: 0.32em; color: rgba(245,234,214,0.7); }
+    .c09-brand span { color: var(--accent); }
+    .c09-fade { position: absolute; inset: 0; background: #000; }
+
+    #c09-sky { background: linear-gradient(180deg, #121a34 0%, #3a3e66 40%, #c27f68 60%, #f2b880 68%, #4a3a3a 76%); }
+
+  </style>
+  <div id="c09" data-composition-id="c09" data-width="1920" data-height="1080">
+    <div id="c09-scene" class="clip" data-start="0" data-duration="41.15" style="position:absolute;inset:0" data-layout-allow-overflow>
+      <div id="c09-cam" class="c09-cam">
+      <div id="c09-sky" class="c09-full"></div>
+      <svg class="c09-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none"><path fill="#2a2026" d="M -100 1080 L -100 960 Q 320 630 740 960 L 740 1080 Z"/><path fill="#241b22" d="M 340 1080 L 340 900 Q 760 570 1180 900 L 1180 1080 Z"/><path fill="#2c2128" d="M 760 1080 L 760 930 Q 1180 600 1600 930 L 1600 1080 Z"/><path fill="#20181e" d="M 1180 1080 L 1180 970 Q 1600 640 2020 970 L 2020 1080 Z"/><g transform="translate(270,723)"><g id="c09-ft00"><path d="M 0 -22 Q 11 0 0 22 Q -11 0 0 -22 Z" fill="#f4efe4"/></g></g><g transform="translate(279,739)"><g id="c09-ft01"><path d="M 0 -22 Q 11 0 0 22 Q -11 0 0 -22 Z" fill="#f4efe4"/></g></g><g transform="translate(349,729)"><g id="c09-ft02"><path d="M 0 -22 Q 11 0 0 22 Q -11 0 0 -22 Z" fill="#f4efe4"/></g></g><g transform="translate(289,732)"><g id="c09-ft03"><path d="M 0 -22 Q 11 0 0 22 Q -11 0 0 -22 Z" fill="#f4efe4"/></g></g><g transform="translate(319,739)"><g id="c09-ft04"><path d="M 0 -22 Q 11 0 0 22 Q -11 0 0 -22 Z" fill="#f4efe4"/></g></g><g transform="translate(791,675)"><g id="c09-ft10"><path d="M 0 -22 Q 11 0 0 22 Q -11 0 0 -22 Z" fill="#f4efe4"/></g></g><g transform="translate(819,669)"><g id="c09-ft11"><path d="M 0 -22 Q 11 0 0 22 Q -11 0 0 -22 Z" fill="#f4efe4"/></g></g><g transform="translate(736,671)"><g id="c09-ft12"><path d="M 0 -22 Q 11 0 0 22 Q -11 0 0 -22 Z" fill="#f4efe4"/></g></g><g transform="translate(742,675)"><g id="c09-ft13"><path d="M 0 -22 Q 11 0 0 22 Q -11 0 0 -22 Z" fill="#f4efe4"/></g></g><g transform="translate(804,674)"><g id="c09-ft14"><path d="M 0 -22 Q 11 0 0 22 Q -11 0 0 -22 Z" fill="#f4efe4"/></g></g><g transform="translate(1161,698)"><g id="c09-ft20"><path d="M 0 -22 Q 11 0 0 22 Q -11 0 0 -22 Z" fill="#f4efe4"/></g></g><g transform="translate(1226,707)"><g id="c09-ft21"><path d="M 0 -22 Q 11 0 0 22 Q -11 0 0 -22 Z" fill="#f4efe4"/></g></g><g transform="translate(1152,691)"><g id="c09-ft22"><path d="M 0 -22 Q 11 0 0 22 Q -11 0 0 -22 Z" fill="#f4efe4"/></g></g><g transform="translate(1127,698)"><g id="c09-ft23"><path d="M 0 -22 Q 11 0 0 22 Q -11 0 0 -22 Z" fill="#f4efe4"/></g></g><g transform="translate(1144,709)"><g id="c09-ft24"><path d="M 0 -22 Q 11 0 0 22 Q -11 0 0 -22 Z" fill="#f4efe4"/></g></g><g transform="translate(1616,747)"><g id="c09-ft30"><path d="M 0 -22 Q 11 0 0 22 Q -11 0 0 -22 Z" fill="#f4efe4"/></g></g><g transform="translate(1638,745)"><g id="c09-ft31"><path d="M 0 -22 Q 11 0 0 22 Q -11 0 0 -22 Z" fill="#f4efe4"/></g></g><g transform="translate(1608,748)"><g id="c09-ft32"><path d="M 0 -22 Q 11 0 0 22 Q -11 0 0 -22 Z" fill="#f4efe4"/></g></g><g transform="translate(1581,748)"><g id="c09-ft33"><path d="M 0 -22 Q 11 0 0 22 Q -11 0 0 -22 Z" fill="#f4efe4"/></g></g><g transform="translate(1654,743)"><g id="c09-ft34"><path d="M 0 -22 Q 11 0 0 22 Q -11 0 0 -22 Z" fill="#f4efe4"/></g></g><g transform="translate(420,420) scale(2)"><g id="c09-bd0"><g><path d="M -34 0 Q -14 -26 0 -4 Q 14 -26 34 0 Q 14 -8 0 6 Q -14 -8 -34 0 Z" fill="#f4efe4"/><ellipse cx="0" cy="2" rx="9" ry="6" fill="#f4efe4"/></g></g></g><g transform="translate(800,380) scale(2)"><g id="c09-bd1"><g><path d="M -34 0 Q -14 -26 0 -4 Q 14 -26 34 0 Q 14 -8 0 6 Q -14 -8 -34 0 Z" fill="#f4efe4"/><ellipse cx="0" cy="2" rx="9" ry="6" fill="#f4efe4"/></g></g></g><g transform="translate(1140,400) scale(2)"><g id="c09-bd2"><g><path d="M -34 0 Q -14 -26 0 -4 Q 14 -26 34 0 Q 14 -8 0 6 Q -14 -8 -34 0 Z" fill="#f4efe4"/><ellipse cx="0" cy="2" rx="9" ry="6" fill="#f4efe4"/></g></g></g><g transform="translate(1500,360) scale(2)"><g id="c09-bd3"><g><path d="M -34 0 Q -14 -26 0 -4 Q 14 -26 34 0 Q 14 -8 0 6 Q -14 -8 -34 0 Z" fill="#f4efe4"/><ellipse cx="0" cy="2" rx="9" ry="6" fill="#f4efe4"/></g></g></g></svg>
+      </div>
+    </div>
+    <div id="c09-scr" class="c09-scrim clip" data-start="0" data-duration="41.15"></div>
+    <div id="c09-lab" class="c09-label clip" data-start="0.3" data-duration="4.6"><b>CHAPTER 9</b><i>Show Me How</i></div>
+    <div id="c09-cp0" class="c09-cap clip" data-start="0.22" data-duration="3.50">Ibrahim had seen the fire turn cool.</div>
+    <div id="c09-cp1" class="c09-cap clip" data-start="3.71" data-duration="6.31">He had seen water rise from a desert. And still, he asked his Lord for one more thing.</div>
+    <div id="c09-cp2" class="c09-cap clip" data-start="24.90" data-duration="4.36">and put a part of them on each hill. Then call them.</div>
+    <div id="c09-cp3" class="c09-cap clip" data-start="29.27" data-duration="5.25">He called... and they came flying back to him, alive, in haste.</div>
+    <div id="c09-cp4" class="c09-cap clip" data-start="34.52" data-duration="6.03">Faith does not mean you never ask. It means you ask the One who has the answer.</div>
+    <div id="c09-k0w" class="c09-cardwrap clip" data-start="10.08" data-duration="3.28"><div id="c09-k0" class="c09-card"><div class="c09-ar" dir="rtl" lang="ar">رَبِّ أَرِنِي كَيۡفَ تُحۡيِ ٱلۡمَوۡتَىٰۖ</div><div class="c09-en">“…My Lord, show me how You give life to the dead…”</div><div class="c09-ref">Al-Baqarah 2:260</div></div></div>
+    <div id="c09-k1w" class="c09-cardwrap clip" data-start="13.46" data-duration="7.67"><div id="c09-k1" class="c09-card"><div class="c09-ar" dir="rtl" lang="ar">بَلَىٰ وَلَٰكِن لِّيَطۡمَئِنَّ قَلۡبِيۖ</div><div class="c09-en">“…Yes, but [I ask] only that my heart may be satisfied…”</div><div class="c09-ref">Al-Baqarah 2:260</div></div></div>
+    <div id="c09-fadeIn" class="c09-fade clip" data-start="0" data-duration="0.55" style="opacity:1"></div>
+    <div id="c09-fadeOut" class="c09-fade clip" data-start="40.65" data-duration="0.50" style="opacity:0"></div>
+    <div id="c09-br" class="c09-brand clip" data-start="0" data-duration="41.15">HAQ <span>·</span> STORIES</div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#c09-bd0", {scaleY: 1}, {scaleY: -0.5, duration: 0.18, ease: "sine.inOut", yoyo: true, repeat: 229, immediateRender: false}, 0.07);
+    tl.fromTo("#c09-bd1", {scaleY: 1}, {scaleY: -0.5, duration: 0.18, ease: "sine.inOut", yoyo: true, repeat: 228, immediateRender: false}, 0.12);
+    tl.fromTo("#c09-bd2", {scaleY: 1}, {scaleY: -0.5, duration: 0.18, ease: "sine.inOut", yoyo: true, repeat: 229, immediateRender: false}, 0.04);
+    tl.fromTo("#c09-bd3", {scaleY: 1}, {scaleY: -0.5, duration: 0.18, ease: "sine.inOut", yoyo: true, repeat: 228, immediateRender: false}, 0.15);
+    tl.fromTo("#c09-bd0", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 21.70);
+    tl.fromTo("#c09-bd1", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 21.90);
+    tl.fromTo("#c09-bd2", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 22.10);
+    tl.fromTo("#c09-bd3", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 22.30);
+    tl.set("#c09-ft00", {opacity: 0}, 0);
+    tl.fromTo("#c09-ft00", {x: 150, y: -303, rotation: 0, opacity: 0}, {x: 0, y: 0, rotation: 22, opacity: 0.95, duration: 3.08, ease: "sine.out", immediateRender: false}, 21.98);
+    tl.set("#c09-ft01", {opacity: 0}, 0);
+    tl.fromTo("#c09-ft01", {x: 141, y: -319, rotation: 0, opacity: 0}, {x: 0, y: 0, rotation: 41, opacity: 0.95, duration: 2.78, ease: "sine.out", immediateRender: false}, 21.79);
+    tl.set("#c09-ft02", {opacity: 0}, 0);
+    tl.fromTo("#c09-ft02", {x: 71, y: -309, rotation: 0, opacity: 0}, {x: 0, y: 0, rotation: 39, opacity: 0.95, duration: 2.80, ease: "sine.out", immediateRender: false}, 21.92);
+    tl.set("#c09-ft03", {opacity: 0}, 0);
+    tl.fromTo("#c09-ft03", {x: 131, y: -312, rotation: 0, opacity: 0}, {x: 0, y: 0, rotation: -16, opacity: 0.95, duration: 2.21, ease: "sine.out", immediateRender: false}, 21.86);
+    tl.set("#c09-ft04", {opacity: 0}, 0);
+    tl.fromTo("#c09-ft04", {x: 101, y: -319, rotation: 0, opacity: 0}, {x: 0, y: 0, rotation: -34, opacity: 0.95, duration: 3.10, ease: "sine.out", immediateRender: false}, 22.07);
+    tl.set("#c09-ft10", {opacity: 0}, 0);
+    tl.fromTo("#c09-ft10", {x: 9, y: -295, rotation: 0, opacity: 0}, {x: 0, y: 0, rotation: -50, opacity: 0.95, duration: 3.11, ease: "sine.out", immediateRender: false}, 21.96);
+    tl.set("#c09-ft11", {opacity: 0}, 0);
+    tl.fromTo("#c09-ft11", {x: -19, y: -289, rotation: 0, opacity: 0}, {x: 0, y: 0, rotation: 5, opacity: 0.95, duration: 2.21, ease: "sine.out", immediateRender: false}, 22.14);
+    tl.set("#c09-ft12", {opacity: 0}, 0);
+    tl.fromTo("#c09-ft12", {x: 64, y: -291, rotation: 0, opacity: 0}, {x: 0, y: 0, rotation: 55, opacity: 0.95, duration: 2.50, ease: "sine.out", immediateRender: false}, 22.15);
+    tl.set("#c09-ft13", {opacity: 0}, 0);
+    tl.fromTo("#c09-ft13", {x: 58, y: -295, rotation: 0, opacity: 0}, {x: 0, y: 0, rotation: 34, opacity: 0.95, duration: 2.31, ease: "sine.out", immediateRender: false}, 22.05);
+    tl.set("#c09-ft14", {opacity: 0}, 0);
+    tl.fromTo("#c09-ft14", {x: -4, y: -294, rotation: 0, opacity: 0}, {x: 0, y: 0, rotation: -8, opacity: 0.95, duration: 2.85, ease: "sine.out", immediateRender: false}, 22.23);
+    tl.set("#c09-ft20", {opacity: 0}, 0);
+    tl.fromTo("#c09-ft20", {x: -21, y: -298, rotation: 0, opacity: 0}, {x: 0, y: 0, rotation: -15, opacity: 0.95, duration: 2.77, ease: "sine.out", immediateRender: false}, 22.19);
+    tl.set("#c09-ft21", {opacity: 0}, 0);
+    tl.fromTo("#c09-ft21", {x: -86, y: -307, rotation: 0, opacity: 0}, {x: 0, y: 0, rotation: -34, opacity: 0.95, duration: 3.18, ease: "sine.out", immediateRender: false}, 22.27);
+    tl.set("#c09-ft22", {opacity: 0}, 0);
+    tl.fromTo("#c09-ft22", {x: -12, y: -291, rotation: 0, opacity: 0}, {x: 0, y: 0, rotation: 52, opacity: 0.95, duration: 2.88, ease: "sine.out", immediateRender: false}, 22.18);
+    tl.set("#c09-ft23", {opacity: 0}, 0);
+    tl.fromTo("#c09-ft23", {x: 13, y: -298, rotation: 0, opacity: 0}, {x: 0, y: 0, rotation: -38, opacity: 0.95, duration: 3.09, ease: "sine.out", immediateRender: false}, 22.42);
+    tl.set("#c09-ft24", {opacity: 0}, 0);
+    tl.fromTo("#c09-ft24", {x: -4, y: -309, rotation: 0, opacity: 0}, {x: 0, y: 0, rotation: -8, opacity: 0.95, duration: 3.07, ease: "sine.out", immediateRender: false}, 22.21);
+    tl.set("#c09-ft30", {opacity: 0}, 0);
+    tl.fromTo("#c09-ft30", {x: -116, y: -387, rotation: 0, opacity: 0}, {x: 0, y: 0, rotation: 3, opacity: 0.95, duration: 2.35, ease: "sine.out", immediateRender: false}, 22.37);
+    tl.set("#c09-ft31", {opacity: 0}, 0);
+    tl.fromTo("#c09-ft31", {x: -138, y: -385, rotation: 0, opacity: 0}, {x: 0, y: 0, rotation: 13, opacity: 0.95, duration: 3.10, ease: "sine.out", immediateRender: false}, 22.55);
+    tl.set("#c09-ft32", {opacity: 0}, 0);
+    tl.fromTo("#c09-ft32", {x: -108, y: -388, rotation: 0, opacity: 0}, {x: 0, y: 0, rotation: 21, opacity: 0.95, duration: 2.38, ease: "sine.out", immediateRender: false}, 22.46);
+    tl.set("#c09-ft33", {opacity: 0}, 0);
+    tl.fromTo("#c09-ft33", {x: -81, y: -388, rotation: 0, opacity: 0}, {x: 0, y: 0, rotation: 39, opacity: 0.95, duration: 2.61, ease: "sine.out", immediateRender: false}, 22.34);
+    tl.set("#c09-ft34", {opacity: 0}, 0);
+    tl.fromTo("#c09-ft34", {x: -154, y: -383, rotation: 0, opacity: 0}, {x: 0, y: 0, rotation: -7, opacity: 0.95, duration: 2.83, ease: "sine.out", immediateRender: false}, 22.65);
+    tl.to("#c09-ft00", {x: 150, y: -303, rotation: 0, opacity: 0, duration: 0.9, ease: "power2.in"}, 29.95);
+    tl.to("#c09-ft01", {x: 141, y: -319, rotation: 0, opacity: 0, duration: 0.9, ease: "power2.in"}, 29.95);
+    tl.to("#c09-ft02", {x: 71, y: -309, rotation: 0, opacity: 0, duration: 0.9, ease: "power2.in"}, 29.95);
+    tl.to("#c09-ft03", {x: 131, y: -312, rotation: 0, opacity: 0, duration: 0.9, ease: "power2.in"}, 29.95);
+    tl.to("#c09-ft04", {x: 101, y: -319, rotation: 0, opacity: 0, duration: 0.9, ease: "power2.in"}, 29.95);
+    tl.to("#c09-ft10", {x: 9, y: -295, rotation: 0, opacity: 0, duration: 0.9, ease: "power2.in"}, 30.05);
+    tl.to("#c09-ft11", {x: -19, y: -289, rotation: 0, opacity: 0, duration: 0.9, ease: "power2.in"}, 30.05);
+    tl.to("#c09-ft12", {x: 64, y: -291, rotation: 0, opacity: 0, duration: 0.9, ease: "power2.in"}, 30.05);
+    tl.to("#c09-ft13", {x: 58, y: -295, rotation: 0, opacity: 0, duration: 0.9, ease: "power2.in"}, 30.05);
+    tl.to("#c09-ft14", {x: -4, y: -294, rotation: 0, opacity: 0, duration: 0.9, ease: "power2.in"}, 30.05);
+    tl.to("#c09-ft20", {x: -21, y: -298, rotation: 0, opacity: 0, duration: 0.9, ease: "power2.in"}, 30.15);
+    tl.to("#c09-ft21", {x: -86, y: -307, rotation: 0, opacity: 0, duration: 0.9, ease: "power2.in"}, 30.15);
+    tl.to("#c09-ft22", {x: -12, y: -291, rotation: 0, opacity: 0, duration: 0.9, ease: "power2.in"}, 30.15);
+    tl.to("#c09-ft23", {x: 13, y: -298, rotation: 0, opacity: 0, duration: 0.9, ease: "power2.in"}, 30.15);
+    tl.to("#c09-ft24", {x: -4, y: -309, rotation: 0, opacity: 0, duration: 0.9, ease: "power2.in"}, 30.15);
+    tl.to("#c09-ft30", {x: -116, y: -387, rotation: 0, opacity: 0, duration: 0.9, ease: "power2.in"}, 30.25);
+    tl.to("#c09-ft31", {x: -138, y: -385, rotation: 0, opacity: 0, duration: 0.9, ease: "power2.in"}, 30.25);
+    tl.to("#c09-ft32", {x: -108, y: -388, rotation: 0, opacity: 0, duration: 0.9, ease: "power2.in"}, 30.25);
+    tl.to("#c09-ft33", {x: -81, y: -388, rotation: 0, opacity: 0, duration: 0.9, ease: "power2.in"}, 30.25);
+    tl.to("#c09-ft34", {x: -154, y: -383, rotation: 0, opacity: 0, duration: 0.9, ease: "power2.in"}, 30.25);
+    tl.fromTo("#c09-bd0", {opacity: 0}, {opacity: 1, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 30.75);
+    tl.fromTo("#c09-bd1", {opacity: 0}, {opacity: 1, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 30.85);
+    tl.fromTo("#c09-bd2", {opacity: 0}, {opacity: 1, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 30.95);
+    tl.fromTo("#c09-bd3", {opacity: 0}, {opacity: 1, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 31.05);
+    tl.fromTo("#c09-k0w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 10.08);
+    tl.fromTo("#c09-k0", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 10.08);
+    tl.fromTo("#c09-k1w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 13.46);
+    tl.fromTo("#c09-k1", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 13.46);
+    tl.fromTo("#c09-lab", {opacity: 0, x: -20}, {opacity: 1, x: 0, duration: 0.60, ease: "power2.out", immediateRender: false}, 0.30);
+    tl.fromTo("#c09-lab", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 4.40);
+    tl.fromTo("#c09-scene", {scale: 1.0, x: 0}, {scale: 1.06, x: -30, duration: 41.15, ease: "none", immediateRender: false}, 0.00);
+    tl.fromTo("#c09-fadeIn", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 0.00);
+    tl.fromTo("#c09-fadeOut", {opacity: 0}, {opacity: 1, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 40.65);
+    window.__timelines["c09"] = tl;
+  </script>
+</template>

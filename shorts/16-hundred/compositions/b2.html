@@ -1,0 +1,23 @@
+<template>
+  <style>
+    #b2 { position: absolute; inset: 0; }
+    #b2-wrap { position: absolute; left: 90px; right: 140px; top: 300px; bottom: 780px;
+      display: flex; flex-direction: column; justify-content: center; gap: 34px; }
+  </style>
+  <div id="b2" data-composition-id="b2" data-width="1080" data-height="1920">
+    <div id="b2-wrap" class="clip" data-start="0" data-duration="8.34">
+      <div id="b2-txt" class="txt" style="font-size:104px"><span class="w" id="b2-w0">He</span> <span class="w" id="b2-w1">asked</span> <span class="w" id="b2-w2">a</span> <span class="w" id="b2-w3">monk:</span> <span class="w" id="b2-w4">is</span> <span class="w" id="b2-w5">there</span> <span class="w hi" id="b2-w6">forgiveness</span> <span class="w" id="b2-w7">for</span> <span class="w" id="b2-w8">me?</span> <span class="w" id="b2-w9">“No.”</span></div>
+      <div id="b2-ur" class="ur" dir="rtl" lang="ur" data-layout-allow-overflow>اس نے ایک راہب سے پوچھا: کیا میرے لیے معافی ہے؟ جواب ملا: نہیں</div>
+      <div id="b2-ref" class="ref">Bukhari 3470 · Muslim 2766</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#b2 .w", {opacity: 0, y: 22, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.32, ease: "power2.out", stagger: 0.616}, 0.12);
+    tl.fromTo("#b2 .hi", {textShadow: "0 0 0px rgba(0,0,0,0)"}, {textShadow: "0 0 28px var(--accent)", duration: 0.6, ease: "power1.out"}, 3.95);
+    tl.fromTo("#b2-ur", {opacity: 0, y: 10}, {opacity: 1, y: 0, duration: 0.35, ease: "power2.out"}, 0.15);
+    tl.fromTo("#b2-ref", {opacity: 0, y: 12}, {opacity: 1, y: 0, duration: 0.45, ease: "power2.out"}, 0.35);
+    tl.fromTo("#b2-wrap", {opacity: 1}, {opacity: 0, duration: 0.22, ease: "power1.in"}, 8.10);
+    window.__timelines["b2"] = tl;
+  </script>
+</template>

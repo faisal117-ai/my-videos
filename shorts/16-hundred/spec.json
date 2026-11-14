@@ -1,0 +1,146 @@
+{
+  "accent": "#f2b04a",
+  "embers": false,
+  "flash": 0.4,
+  "bed_volume": 1.0,
+  "hold_end": 0.5,
+  "text_top": 300,
+  "text_bottom": 780,
+  "tr_size": 56,
+  "scene": "road",
+  "walk_beat": 2,
+  "fall_beat": 3,
+  "measure_beat": 4,
+  "beats": [
+    {
+      "hook": true,
+      "text": "He killed *100* people…",
+      "sub": "…and asked: can I be forgiven?",
+      "ur": "اس نے سو قتل کیے… اور پوچھا: کیا میری توبہ ہو سکتی ہے؟",
+      "mood": {
+        "warm": 0,
+        "cool": 0.1
+      },
+      "reveal": false
+    },
+    {
+      "text": "He asked a monk: is there *forgiveness* for me? “No.”",
+      "size": 104,
+      "ur": "اس نے ایک راہب سے پوچھا: کیا میرے لیے معافی ہے؟ جواب ملا: نہیں",
+      "ref": "Bukhari 3470 · Muslim 2766",
+      "mood": {
+        "warm": 0,
+        "cool": 0.1
+      }
+    },
+    {
+      "text": "“Who can stand between you and *repentance*?”",
+      "ur": "تمہارے اور توبہ کے درمیان کون حائل ہو سکتا ہے؟",
+      "ref": "Bukhari 3470 · Muslim 2766",
+      "mood": {
+        "warm": 0.2,
+        "cool": 0.3
+      }
+    },
+    {
+      "text": "He set out… but died on the *way*.",
+      "size": 116,
+      "ur": "وہ چل پڑا… مگر راستے ہی میں موت آ گئی",
+      "ref": "Bukhari 3470 · Muslim 2766",
+      "mood": {
+        "warm": 0.1,
+        "cool": 0.3
+      }
+    },
+    {
+      "text": "Closer to the good land by a *hand's span*… and Allah forgave him.",
+      "size": 100,
+      "ur": "نیکوں کی بستی سے ایک بالشت قریب… اور اللہ نے اسے بخش دیا",
+      "ref": "Bukhari 3470 · Muslim 2766",
+      "mood": {
+        "warm": 0.5,
+        "cool": 0.3
+      }
+    },
+    {
+      "cta": true,
+      "text": "Follow for more.",
+      "ur": "فالو کریں",
+      "mood": {
+        "warm": 0.3,
+        "cool": 0.3
+      }
+    }
+  ],
+  "sound": [
+    {
+      "prompt": "lib",
+      "src": "../03-cave/assets/sfx/03b5f68efefc.mp3",
+      "beat": 0,
+      "offset": 0,
+      "dur": 3,
+      "gain": -7,
+      "fade_in": 0,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "lib",
+      "src": "../05-trunk/assets/sfx/beb74bb8b482.mp3",
+      "beat": 0,
+      "offset": 0,
+      "dur": 12,
+      "gain": -14,
+      "fade_in": 0.3,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "lib",
+      "src": "../../long/01-yusuf/assets/sfx/1830ee4b40ad.mp3",
+      "beat": 1,
+      "offset": 0,
+      "dur": 10,
+      "gain": -16,
+      "fade_in": 2,
+      "fade_out": 2
+    },
+    {
+      "prompt": "slow footsteps walking on a dirt road at night, wind",
+      "beat": 2,
+      "offset": 0,
+      "dur": 9,
+      "gain": -11,
+      "fade_in": 0.2,
+      "fade_out": 1.0
+    },
+    {
+      "prompt": "lib",
+      "src": "../../long/01-yusuf/assets/sfx/59352a0d56de.mp3",
+      "beat": 3,
+      "offset": 0,
+      "dur": 6,
+      "gain": -14,
+      "fade_in": 0.5,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "lib",
+      "src": "../04-ease/assets/sfx/ed4334fb2fbf.mp3",
+      "beat": 4,
+      "offset": 0,
+      "dur": 10,
+      "gain": -13,
+      "fade_in": 1.5,
+      "fade_out": 2
+    },
+    {
+      "prompt": "lib",
+      "src": "../03-cave/assets/sfx/f73090a5a6a6.mp3",
+      "beat": 4,
+      "offset": 2.5,
+      "dur": 3,
+      "gain": -10,
+      "fade_in": 0,
+      "fade_out": 1.5
+    }
+  ]
+}

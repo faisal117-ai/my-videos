@@ -1,0 +1,23 @@
+<template>
+  <style>
+    #b3 { position: absolute; inset: 0; }
+    #b3-wrap { position: absolute; left: 90px; right: 140px; top: 300px; bottom: 780px;
+      display: flex; flex-direction: column; justify-content: center; gap: 34px; }
+  </style>
+  <div id="b3" data-composition-id="b3" data-width="1080" data-height="1920">
+    <div id="b3-wrap" class="clip" data-start="0" data-duration="7.44">
+      <div id="b3-txt" class="txt"><span class="w" id="b3-w0">“Who</span> <span class="w" id="b3-w1">can</span> <span class="w" id="b3-w2">stand</span> <span class="w" id="b3-w3">between</span> <span class="w" id="b3-w4">you</span> <span class="w" id="b3-w5">and</span> <span class="w hi" id="b3-w6">repentance?”</span></div>
+      <div id="b3-ur" class="ur" dir="rtl" lang="ur" data-layout-allow-overflow>تمہارے اور توبہ کے درمیان کون حائل ہو سکتا ہے؟</div>
+      <div id="b3-ref" class="ref">Bukhari 3470 · Muslim 2766</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#b3 .w", {opacity: 0, y: 22, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.32, ease: "power2.out", stagger: 0.786}, 0.12);
+    tl.fromTo("#b3 .hi", {textShadow: "0 0 0px rgba(0,0,0,0)"}, {textShadow: "0 0 28px var(--accent)", duration: 0.6, ease: "power1.out"}, 3.53);
+    tl.fromTo("#b3-ur", {opacity: 0, y: 10}, {opacity: 1, y: 0, duration: 0.35, ease: "power2.out"}, 0.15);
+    tl.fromTo("#b3-ref", {opacity: 0, y: 12}, {opacity: 1, y: 0, duration: 0.45, ease: "power2.out"}, 0.35);
+    tl.fromTo("#b3-wrap", {opacity: 1}, {opacity: 0, duration: 0.22, ease: "power1.in"}, 7.20);
+    window.__timelines["b3"] = tl;
+  </script>
+</template>

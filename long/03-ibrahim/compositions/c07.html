@@ -1,0 +1,112 @@
+<template>
+  <style>
+    #c07 { position: absolute; inset: 0; overflow: hidden; background: #000; }
+    .c07-st { position: absolute; border-radius: 50%; background: #eef4ff; box-shadow: 0 0 6px rgba(220,235,255,0.9); }
+    .c07-mote { position: absolute; border-radius: 50%; }
+    .c07-full { position: absolute; inset: 0; }
+    .c07-svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+
+    .c07-cam { position: absolute; inset: 0; transform-origin: 50% 55%; }
+    .c07-scrim { position: absolute; left: 0; right: 0; bottom: 0; height: 300px;
+      background: linear-gradient(0deg, rgba(0,0,0,0.75), rgba(0,0,0,0)); }
+    .c07-cap { position: absolute; left: 210px; right: 210px; bottom: 64px; text-align: center;
+      font-family: "Cormorant Garamond"; font-weight: 600; font-size: 54px; line-height: 1.12; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c07-cardwrap { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+      background: radial-gradient(ellipse at 50% 50%, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.45) 50%, rgba(0,0,0,0) 80%); }
+    .c07-card { max-width: 1400px; display: flex; flex-direction: column; align-items: center; gap: 26px; text-align: center; }
+    .c07-ar { font-family: "Amiri Quran"; font-size: 70px; line-height: 1.8; color: #fff6e6; text-shadow: 0 0 30px rgba(215,236,255,0.4); }
+    .c07-en { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 50px; line-height: 1.18; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c07-ctext { font-family: "Cormorant Garamond"; font-weight: 600; font-size: 76px; line-height: 1.1; color: #f5ead6;
+      text-shadow: 0 3px 22px rgba(0,0,0,0.9); }
+    .c07-hi { color: var(--accent); }
+    .c07-ref { font-family: Inter, sans-serif; font-weight: 700; font-size: 28px; letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--accent); border: 2px solid var(--accent); border-radius: 999px; padding: 10px 24px; background: rgba(0,0,0,0.4); }
+    .c07-title { font-family: "Cormorant Garamond"; font-weight: 600; font-size: 118px; line-height: 1.02; color: #f5ead6;
+      text-shadow: 0 4px 30px rgba(0,0,0,0.8); }
+    .c07-tsub { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 52px; color: var(--accent); }
+    .c07-mark { font-family: Inter, sans-serif; font-weight: 700; font-size: 64px; letter-spacing: 0.32em; color: #f5ead6; }
+    .c07-mark span { color: var(--accent); }
+    .c07-endt { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 52px; color: #f5ead6; }
+    .c07-btn { font-family: Inter, sans-serif; font-weight: 700; font-size: 34px; letter-spacing: 0.08em; color: #120b08;
+      background: var(--accent); border-radius: 999px; padding: 18px 48px; }
+    .c07-label { position: absolute; left: 90px; top: 70px; }
+    .c07-label b { display: block; font-family: Inter, sans-serif; font-weight: 700; font-size: 28px; letter-spacing: 0.3em; color: var(--accent); }
+    .c07-label i { display: block; font-family: "Cormorant Garamond"; font-style: normal; font-weight: 600; font-size: 60px; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c07-brand { position: absolute; right: 80px; top: 70px; font-family: Inter, sans-serif; font-weight: 700; font-size: 28px;
+      letter-spacing: 0.32em; color: rgba(245,234,214,0.7); }
+    .c07-brand span { color: var(--accent); }
+    .c07-fade { position: absolute; inset: 0; background: #000; }
+
+    #c07-sky { background: linear-gradient(180deg, #1a2440 0%, #6a5a7a 40%, #e09a6a 62%, #f2c48a 68%, #6a4a30 74%); }
+    #c07-night { opacity: 0; background: linear-gradient(180deg, #02030a 0%, #0b1026 70%, #151a2c 100%); }
+    #c07-bstar { position: absolute; left: 1360px; top: 160px; width: 60px; height: 60px; margin: -30px; border-radius: 50%; opacity: 0;
+      background: radial-gradient(circle, #fff 0%, #dfe8ff 35%, rgba(200,215,255,0) 70%); box-shadow: 0 0 60px 20px rgba(200,215,255,0.5); }
+
+  </style>
+  <div id="c07" data-composition-id="c07" data-width="1920" data-height="1080">
+    <div id="c07-scene" class="clip" data-start="0" data-duration="41.47" style="position:absolute;inset:0" data-layout-allow-overflow>
+      <div id="c07-cam" class="c07-cam">
+      <div id="c07-sky" class="c07-full"></div><div id="c07-night" class="c07-full"></div><div id="c07-bstar"></div>
+      <svg class="c07-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none"><path fill="#7a5636" d="M -100 747 Q 60 733 220 760 Q 380 743 540 743 Q 700 731 860 776 Q 1020 758 1180 747 Q 1340 733 1500 763 Q 1660 749 1820 781 Q 1980 764 2140 755 V 1100 H -100 Z"/><path fill="#5a3e26" d="M -100 869 Q 60 845 220 813 Q 380 799 540 854 Q 700 834 860 839 Q 1020 824 1180 867 Q 1340 845 1500 834 Q 1660 819 1820 865 Q 1980 843 2140 820 V 1100 H -100 Z"/><path fill="#3a2818" d="M -100 947 Q 60 931 220 963 Q 380 943 540 937 Q 700 921 860 953 Q 1020 936 1180 966 Q 1340 946 1500 941 Q 1660 925 1820 954 Q 1980 936 2140 954 V 1100 H -100 Z"/><path d="M 900 1080 Q 960 900 940 640 L 980 640 Q 1000 900 1020 1080 Z" fill="#8a6a46" opacity="0.6"/><ellipse id="c07-fp0" cx="897" cy="1060" rx="12" ry="6" fill="#4a3220" opacity="0"/><ellipse id="c07-fp1" cx="931" cy="1042" rx="12" ry="6" fill="#4a3220" opacity="0"/><ellipse id="c07-fp2" cx="905" cy="1024" rx="11" ry="6" fill="#4a3220" opacity="0"/><ellipse id="c07-fp3" cx="939" cy="1006" rx="11" ry="6" fill="#4a3220" opacity="0"/><ellipse id="c07-fp4" cx="913" cy="988" rx="11" ry="5" fill="#4a3220" opacity="0"/><ellipse id="c07-fp5" cx="947" cy="970" rx="10" ry="5" fill="#4a3220" opacity="0"/><ellipse id="c07-fp6" cx="921" cy="952" rx="10" ry="5" fill="#4a3220" opacity="0"/><ellipse id="c07-fp7" cx="955" cy="934" rx="10" ry="5" fill="#4a3220" opacity="0"/><ellipse id="c07-fp8" cx="929" cy="916" rx="10" ry="5" fill="#4a3220" opacity="0"/><ellipse id="c07-fp9" cx="963" cy="898" rx="9" ry="5" fill="#4a3220" opacity="0"/><ellipse id="c07-fp10" cx="937" cy="880" rx="9" ry="4" fill="#4a3220" opacity="0"/><ellipse id="c07-fp11" cx="971" cy="862" rx="9" ry="4" fill="#4a3220" opacity="0"/><ellipse id="c07-fp12" cx="945" cy="844" rx="8" ry="4" fill="#4a3220" opacity="0"/><ellipse id="c07-fp13" cx="979" cy="826" rx="8" ry="4" fill="#4a3220" opacity="0"/><ellipse id="c07-fp14" cx="953" cy="808" rx="8" ry="4" fill="#4a3220" opacity="0"/><ellipse id="c07-fp15" cx="987" cy="790" rx="8" ry="4" fill="#4a3220" opacity="0"/><ellipse id="c07-fp16" cx="961" cy="772" rx="7" ry="4" fill="#4a3220" opacity="0"/><ellipse id="c07-fp17" cx="995" cy="754" rx="7" ry="3" fill="#4a3220" opacity="0"/><ellipse id="c07-fp18" cx="969" cy="736" rx="7" ry="3" fill="#4a3220" opacity="0"/><ellipse id="c07-fp19" cx="1003" cy="718" rx="6" ry="3" fill="#4a3220" opacity="0"/><ellipse id="c07-fp20" cx="977" cy="700" rx="6" ry="3" fill="#4a3220" opacity="0"/><ellipse id="c07-fp21" cx="1011" cy="682" rx="6" ry="3" fill="#4a3220" opacity="0"/><ellipse id="c07-fp22" cx="985" cy="664" rx="5" ry="3" fill="#4a3220" opacity="0"/><ellipse id="c07-fp23" cx="1019" cy="646" rx="5" ry="3" fill="#4a3220" opacity="0"/></svg>
+      </div>
+    </div>
+    <div id="c07-scr" class="c07-scrim clip" data-start="0" data-duration="41.47"></div>
+    <div id="c07-lab" class="c07-label clip" data-start="0.3" data-duration="4.6"><b>CHAPTER 7</b><i>Leaving Home</i></div>
+    <div id="c07-cp0" class="c07-cap clip" data-start="0.22" data-duration="2.29">His father had rejected him.</div>
+    <div id="c07-cp1" class="c07-cap clip" data-start="2.51" data-duration="5.02">His people had tried to burn him. His king had become his enemy.</div>
+    <div id="c07-cp2" class="c07-cap clip" data-start="7.52" data-duration="4.77">Only a few believed in him. Among them was his nephew, Lut.</div>
+    <div id="c07-cp3" class="c07-cap clip" data-start="12.29" data-duration="4.91">So Ibrahim left the land of his birth, with nothing but his faith.</div>
+    <div id="c07-cp4" class="c07-cap clip" data-start="26.18" data-duration="3.18">calling people to Allah wherever he went.</div>
+    <div id="c07-k0w" class="c07-cardwrap clip" data-start="17.25" data-duration="5.74"><div id="c07-k0" class="c07-card"><div class="c07-ar" dir="rtl" lang="ar">إِنِّي ذَاهِبٌ إِلَىٰ رَبِّي سَيَهۡدِينِ</div><div class="c07-en">“…Indeed, I will go to [where I am ordered by] my Lord; He will guide me”</div><div class="c07-ref">As-Saffat 37:99</div></div></div>
+    <div id="c07-k1w" class="c07-cardwrap clip" data-start="29.41" data-duration="7.44"><div id="c07-k1" class="c07-card"><div class="c07-ar" dir="rtl" lang="ar">رَبِّ هَبۡ لِي مِنَ ٱلصَّـٰلِحِينَ</div><div class="c07-en">“My Lord, grant me [a child] from among the righteous”</div><div class="c07-ref">As-Saffat 37:100</div></div></div>
+    <div id="c07-k2w" class="c07-cardwrap clip" data-start="36.94" data-duration="4.03"><div id="c07-k2" class="c07-card"><div class="c07-ar" dir="rtl" lang="ar">فَبَشَّرۡنَٰهُ بِغُلَٰمٍ حَلِيمࣲ</div><div class="c07-en">“So We gave him good tidings of a forbearing boy”</div><div class="c07-ref">As-Saffat 37:101</div></div></div>
+    <div id="c07-fadeIn" class="c07-fade clip" data-start="0" data-duration="0.55" style="opacity:1"></div>
+    <div id="c07-fadeOut" class="c07-fade clip" data-start="40.97" data-duration="0.50" style="opacity:0"></div>
+    <div id="c07-br" class="c07-brand clip" data-start="0" data-duration="41.47">HAQ <span>·</span> STORIES</div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#c07-fp0", {opacity: 0}, {opacity: 1, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 12.37);
+    tl.fromTo("#c07-fp1", {opacity: 0}, {opacity: 1, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 12.82);
+    tl.fromTo("#c07-fp2", {opacity: 0}, {opacity: 1, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 13.27);
+    tl.fromTo("#c07-fp3", {opacity: 0}, {opacity: 1, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 13.72);
+    tl.fromTo("#c07-fp4", {opacity: 0}, {opacity: 1, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 14.17);
+    tl.fromTo("#c07-fp5", {opacity: 0}, {opacity: 1, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 14.62);
+    tl.fromTo("#c07-fp6", {opacity: 0}, {opacity: 1, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 15.07);
+    tl.fromTo("#c07-fp7", {opacity: 0}, {opacity: 1, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 15.52);
+    tl.fromTo("#c07-fp8", {opacity: 0}, {opacity: 1, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 15.97);
+    tl.fromTo("#c07-fp9", {opacity: 0}, {opacity: 1, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 16.42);
+    tl.fromTo("#c07-fp10", {opacity: 0}, {opacity: 1, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 16.87);
+    tl.fromTo("#c07-fp11", {opacity: 0}, {opacity: 1, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 17.32);
+    tl.fromTo("#c07-fp12", {opacity: 0}, {opacity: 1, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 17.77);
+    tl.fromTo("#c07-fp13", {opacity: 0}, {opacity: 1, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 18.22);
+    tl.fromTo("#c07-fp14", {opacity: 0}, {opacity: 1, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 18.67);
+    tl.fromTo("#c07-fp15", {opacity: 0}, {opacity: 1, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 19.12);
+    tl.fromTo("#c07-fp16", {opacity: 0}, {opacity: 1, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 19.57);
+    tl.fromTo("#c07-fp17", {opacity: 0}, {opacity: 1, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 20.02);
+    tl.fromTo("#c07-fp18", {opacity: 0}, {opacity: 1, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 20.47);
+    tl.fromTo("#c07-fp19", {opacity: 0}, {opacity: 1, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 20.92);
+    tl.fromTo("#c07-fp20", {opacity: 0}, {opacity: 1, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 21.37);
+    tl.fromTo("#c07-fp21", {opacity: 0}, {opacity: 1, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 21.82);
+    tl.fromTo("#c07-fp22", {opacity: 0}, {opacity: 1, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 22.27);
+    tl.fromTo("#c07-fp23", {opacity: 0}, {opacity: 1, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 22.72);
+    tl.fromTo("#c07-night", {opacity: 0}, {opacity: 1, duration: 1.50, ease: "sine.inOut", immediateRender: false}, 29.26);
+    tl.fromTo("#c07-bstar", {opacity: 0}, {opacity: 1, duration: 1.50, ease: "sine.inOut", immediateRender: false}, 30.16);
+    tl.fromTo("#c07-bstar", {scale: 1}, {scale: 1.2, duration: 1.20, ease: "sine.inOut", yoyo: true, repeat: 9, immediateRender: false}, 31.06);
+    tl.fromTo("#c07-k0w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 17.25);
+    tl.fromTo("#c07-k0", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 17.25);
+    tl.fromTo("#c07-k1w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 29.41);
+    tl.fromTo("#c07-k1", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 29.41);
+    tl.fromTo("#c07-k2w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 36.94);
+    tl.fromTo("#c07-k2", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 36.94);
+    tl.fromTo("#c07-lab", {opacity: 0, x: -20}, {opacity: 1, x: 0, duration: 0.60, ease: "power2.out", immediateRender: false}, 0.30);
+    tl.fromTo("#c07-lab", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 4.40);
+    tl.fromTo("#c07-scene", {scale: 1.0, x: 0}, {scale: 1.06, x: -30, duration: 41.47, ease: "none", immediateRender: false}, 0.00);
+    tl.fromTo("#c07-fadeIn", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 0.00);
+    tl.fromTo("#c07-fadeOut", {opacity: 0}, {opacity: 1, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 40.97);
+    window.__timelines["c07"] = tl;
+  </script>
+</template>

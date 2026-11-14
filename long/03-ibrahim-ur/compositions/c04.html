@@ -1,0 +1,142 @@
+<template>
+  <style>
+    #c04 { position: absolute; inset: 0; overflow: hidden; background: #000; }
+    .c04-st { position: absolute; border-radius: 50%; background: #eef4ff; box-shadow: 0 0 6px rgba(220,235,255,0.9); }
+    .c04-mote { position: absolute; border-radius: 50%; }
+    .c04-full { position: absolute; inset: 0; }
+    .c04-svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+
+    .c04-cam { position: absolute; inset: 0; transform-origin: 50% 55%; }
+    .c04-scrim { position: absolute; left: 0; right: 0; bottom: 0; height: 300px;
+      background: linear-gradient(0deg, rgba(0,0,0,0.75), rgba(0,0,0,0)); }
+    .c04-cap { position: absolute; left: 210px; right: 210px; bottom: 64px; text-align: center;
+      font-family: "Cormorant Garamond"; font-weight: 600; font-size: 54px; line-height: 1.12; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c04-cardwrap { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+      background: radial-gradient(ellipse at 50% 50%, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.45) 50%, rgba(0,0,0,0) 80%); }
+    .c04-card { max-width: 1400px; display: flex; flex-direction: column; align-items: center; gap: 26px; text-align: center; }
+    .c04-ar { font-family: "Amiri Quran"; font-size: 70px; line-height: 1.8; color: #fff6e6; text-shadow: 0 0 30px rgba(215,236,255,0.4); }
+    .c04-en { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 50px; line-height: 1.18; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c04-ctext { font-family: "Cormorant Garamond"; font-weight: 600; font-size: 76px; line-height: 1.1; color: #f5ead6;
+      text-shadow: 0 3px 22px rgba(0,0,0,0.9); }
+    .c04-hi { color: var(--accent); }
+    .c04-ref { font-family: Inter, sans-serif; font-weight: 700; font-size: 28px; letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--accent); border: 2px solid var(--accent); border-radius: 999px; padding: 10px 24px; background: rgba(0,0,0,0.4); }
+    .c04-title { font-family: "Cormorant Garamond"; font-weight: 600; font-size: 118px; line-height: 1.02; color: #f5ead6;
+      text-shadow: 0 4px 30px rgba(0,0,0,0.8); }
+    .c04-tsub { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 52px; color: var(--accent); }
+    .c04-mark { font-family: Inter, sans-serif; font-weight: 700; font-size: 64px; letter-spacing: 0.32em; color: #f5ead6; }
+    .c04-mark span { color: var(--accent); }
+    .c04-endt { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 52px; color: #f5ead6; }
+    .c04-btn { font-family: Inter, sans-serif; font-weight: 700; font-size: 34px; letter-spacing: 0.08em; color: #120b08;
+      background: var(--accent); border-radius: 999px; padding: 18px 48px; }
+    .c04-label { position: absolute; left: 90px; top: 70px; }
+    .c04-label b { display: block; font-family: Inter, sans-serif; font-weight: 700; font-size: 28px; letter-spacing: 0.3em; color: var(--accent); }
+    .c04-label i { display: block; font-family: "Cormorant Garamond"; font-style: normal; font-weight: 600; font-size: 60px; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c04-brand { position: absolute; right: 80px; top: 70px; font-family: Inter, sans-serif; font-weight: 700; font-size: 28px;
+      letter-spacing: 0.32em; color: rgba(245,234,214,0.7); }
+    .c04-brand span { color: var(--accent); }
+    .c04-fade { position: absolute; inset: 0; background: #000; }
+
+    .c04-torch { position: absolute; width: 18px; height: 18px; margin: -9px; border-radius: 50%;
+      background: radial-gradient(circle, #fff1c9 0%, #ffae4a 50%, rgba(255,140,40,0) 75%); box-shadow: 0 0 30px 12px rgba(255,150,60,0.35); }
+
+    #c04-bg { background: linear-gradient(180deg, #120c08 0%, #2a1c12 55%, #1a120c 100%); }
+    #c04-light { position: absolute; left: 760px; top: 260px; width: 400px; height: 700px; opacity: 0;
+      background: radial-gradient(ellipse 50% 60% at 50% 40%, rgba(255,220,160,0.5), rgba(0,0,0,0) 70%); }
+    #c04-people { position: absolute; inset: 0; opacity: 0; }
+
+    .c04-cap { font-family: "Noto Nastaliq Urdu"; font-weight: 400; font-size: 44px; line-height: 1.9; direction: rtl; bottom: 40px; }
+    .c04-urtr { font-family: "Noto Nastaliq Urdu"; font-style: normal; font-weight: 400; font-size: 44px; line-height: 1.9; }
+    .c04-ctext { font-family: "Noto Nastaliq Urdu"; font-weight: 400; font-size: 60px; line-height: 1.9; direction: rtl; }
+    .c04-label i, .c04-title, .c04-tsub, .c04-endt { font-family: "Noto Nastaliq Urdu"; font-style: normal; font-weight: 400; direction: rtl; line-height: 1.8; }
+    .c04-title { font-size: 92px; } .c04-tsub { font-size: 46px; } .c04-label i { font-size: 48px; } .c04-endt { font-size: 44px; }
+    .c04-label b { letter-spacing: 0; font-family: "Noto Nastaliq Urdu"; font-weight: 400; font-size: 30px; }
+
+  </style>
+  <div id="c04" data-composition-id="c04" data-width="1920" data-height="1080">
+    <div id="c04-scene" class="clip" data-start="0" data-duration="91.22" style="position:absolute;inset:0" data-layout-allow-overflow>
+      <div id="c04-cam" class="c04-cam">
+      <div id="c04-bg" class="c04-full"></div><div id="c04-t0" class="c04-torch" style="left:80px;top:500px"></div><div id="c04-t1" class="c04-torch" style="left:1840px;top:500px"></div>
+      <svg class="c04-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none"><rect x="0" y="860" width="1920" height="220" fill="#241810"/><rect x="40" y="200" width="60" height="660" fill="#3a2a1c"/><rect x="1820" y="200" width="60" height="660" fill="#3a2a1c"/><g transform="translate(0,860)"><g id="c04-i0" transform="translate(220,0)"><rect x="-65" y="-14" width="129" height="14" fill="#3a2a1c"/><path d="M -46 -14 L -46 -136 Q 0 -158 46 -136 L 46 -14 Z" fill="#7a6a58"/><circle cx="0" cy="-172" r="33" fill="#8a7a66"/></g><g id="c04-i1" transform="translate(420,0)"><rect x="-74" y="-14" width="147" height="14" fill="#3a2a1c"/><path d="M -52 -14 L -52 -155 Q 0 -180 52 -155 L 52 -14 Z" fill="#7a6a58"/><circle cx="0" cy="-195" r="38" fill="#8a7a66"/></g><g id="c04-i2" transform="translate(620,0)"><rect x="-68" y="-14" width="135" height="14" fill="#3a2a1c"/><path d="M -48 -14 L -48 -143 Q 0 -166 48 -143 L 48 -14 Z" fill="#7a6a58"/><circle cx="0" cy="-179" r="35" fill="#8a7a66"/></g><g id="c04-i3" transform="translate(1300,0)"><rect x="-68" y="-14" width="135" height="14" fill="#3a2a1c"/><path d="M -48 -14 L -48 -143 Q 0 -166 48 -143 L 48 -14 Z" fill="#7a6a58"/><circle cx="0" cy="-179" r="35" fill="#8a7a66"/></g><g id="c04-i4" transform="translate(1500,0)"><rect x="-74" y="-14" width="147" height="14" fill="#3a2a1c"/><path d="M -52 -14 L -52 -155 Q 0 -180 52 -155 L 52 -14 Z" fill="#7a6a58"/><circle cx="0" cy="-195" r="38" fill="#8a7a66"/></g><g id="c04-i5" transform="translate(1700,0)"><rect x="-65" y="-14" width="129" height="14" fill="#3a2a1c"/><path d="M -46 -14 L -46 -136 Q 0 -158 46 -136 L 46 -14 Z" fill="#7a6a58"/><circle cx="0" cy="-172" r="33" fill="#8a7a66"/></g><g id="c04-big" transform="translate(960,0)"><rect x="-138" y="-14" width="276" height="14" fill="#3a2a1c"/><path d="M -99 -14 L -99 -291 Q 0 -338 99 -291 L 99 -14 Z" fill="#7a6a58"/><circle cx="0" cy="-367" r="71" fill="#8a7a66"/></g></g><rect id="c04-sh0" x="210" y="728" width="19" height="29" fill="#7a6a58" opacity="0"/><rect id="c04-sh1" x="226" y="765" width="27" height="20" fill="#7a6a58" opacity="0"/><rect id="c04-sh2" x="239" y="756" width="32" height="25" fill="#7a6a58" opacity="0"/><rect id="c04-sh3" x="247" y="745" width="19" height="16" fill="#7a6a58" opacity="0"/><rect id="c04-sh4" x="438" y="708" width="29" height="24" fill="#7a6a58" opacity="0"/><rect id="c04-sh5" x="385" y="758" width="17" height="28" fill="#7a6a58" opacity="0"/><rect id="c04-sh6" x="447" y="712" width="31" height="26" fill="#7a6a58" opacity="0"/><rect id="c04-sh7" x="390" y="749" width="18" height="29" fill="#7a6a58" opacity="0"/><rect id="c04-sh8" x="635" y="783" width="17" height="19" fill="#7a6a58" opacity="0"/><rect id="c04-sh9" x="630" y="754" width="20" height="28" fill="#7a6a58" opacity="0"/><rect id="c04-sh10" x="648" y="729" width="19" height="25" fill="#7a6a58" opacity="0"/><rect id="c04-sh11" x="613" y="758" width="26" height="20" fill="#7a6a58" opacity="0"/><rect id="c04-sh12" x="1262" y="716" width="25" height="26" fill="#7a6a58" opacity="0"/><rect id="c04-sh13" x="1294" y="765" width="27" height="28" fill="#7a6a58" opacity="0"/><rect id="c04-sh14" x="1312" y="731" width="19" height="15" fill="#7a6a58" opacity="0"/><rect id="c04-sh15" x="1263" y="774" width="33" height="26" fill="#7a6a58" opacity="0"/><rect id="c04-sh16" x="1469" y="748" width="19" height="28" fill="#7a6a58" opacity="0"/><rect id="c04-sh17" x="1512" y="755" width="28" height="21" fill="#7a6a58" opacity="0"/><rect id="c04-sh18" x="1528" y="772" width="21" height="21" fill="#7a6a58" opacity="0"/><rect id="c04-sh19" x="1519" y="749" width="24" height="21" fill="#7a6a58" opacity="0"/><rect id="c04-sh20" x="1737" y="732" width="20" height="25" fill="#7a6a58" opacity="0"/><rect id="c04-sh21" x="1682" y="782" width="23" height="29" fill="#7a6a58" opacity="0"/><rect id="c04-sh22" x="1690" y="781" width="31" height="26" fill="#7a6a58" opacity="0"/><rect id="c04-sh23" x="1677" y="723" width="17" height="17" fill="#7a6a58" opacity="0"/></svg>
+      <div id="c04-light"></div>
+      <div id="c04-people"><svg class="c04-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none"><g fill="#070504" transform="translate(0,1080)"><g transform="translate(1228,0) skewX(0)"><circle cx="0" cy="-110.1" r="15.7"/><path d="M -14.0 -93.5 Q 0 -101.4 14.0 -93.5 L 24.5 0 L -24.5 0 Z"/></g><g transform="translate(528,0) skewX(0)"><circle cx="0" cy="-116.5" r="16.6"/><path d="M -14.8 -98.9 Q 0 -107.2 14.8 -98.9 L 25.9 0 L -25.9 0 Z"/></g><g transform="translate(1414,0) skewX(0)"><circle cx="0" cy="-131.0" r="18.7"/><path d="M -16.6 -111.3 Q 0 -120.6 16.6 -111.3 L 29.1 0 L -29.1 0 Z"/></g><g transform="translate(1713,0) skewX(0)"><circle cx="0" cy="-112.1" r="16.0"/><path d="M -14.2 -95.2 Q 0 -103.2 14.2 -95.2 L 24.9 0 L -24.9 0 Z"/></g><g transform="translate(810,0) skewX(0)"><circle cx="0" cy="-110.3" r="15.7"/><path d="M -14.0 -93.6 Q 0 -101.5 14.0 -93.6 L 24.5 0 L -24.5 0 Z"/></g><g transform="translate(420,0) skewX(0)"><circle cx="0" cy="-125.5" r="17.9"/><path d="M -15.9 -106.6 Q 0 -115.6 15.9 -106.6 L 27.9 0 L -27.9 0 Z"/></g><g transform="translate(51,0) skewX(0)"><circle cx="0" cy="-115.7" r="16.5"/><path d="M -14.7 -98.2 Q 0 -106.5 14.7 -98.2 L 25.7 0 L -25.7 0 Z"/></g><g transform="translate(1248,0) skewX(0)"><circle cx="0" cy="-126.8" r="18.1"/><path d="M -16.1 -107.7 Q 0 -116.8 16.1 -107.7 L 28.2 0 L -28.2 0 Z"/></g><g transform="translate(423,0) skewX(0)"><circle cx="0" cy="-128.2" r="18.3"/><path d="M -16.3 -108.9 Q 0 -118.1 16.3 -108.9 L 28.5 0 L -28.5 0 Z"/></g><g transform="translate(1554,0) skewX(0)"><circle cx="0" cy="-109.5" r="15.6"/><path d="M -13.9 -93.0 Q 0 -100.8 13.9 -93.0 L 24.3 0 L -24.3 0 Z"/></g><g transform="translate(1547,0) skewX(0)"><circle cx="0" cy="-131.7" r="18.8"/><path d="M -16.7 -111.9 Q 0 -121.3 16.7 -111.9 L 29.3 0 L -29.3 0 Z"/></g><g transform="translate(653,0) skewX(0)"><circle cx="0" cy="-114.3" r="16.3"/><path d="M -14.5 -97.1 Q 0 -105.2 14.5 -97.1 L 25.4 0 L -25.4 0 Z"/></g><g transform="translate(1838,0) skewX(0)"><circle cx="0" cy="-120.1" r="17.2"/><path d="M -15.2 -102.0 Q 0 -110.6 15.2 -102.0 L 26.7 0 L -26.7 0 Z"/></g><g transform="translate(178,0) skewX(0)"><circle cx="0" cy="-112.4" r="16.0"/><path d="M -14.3 -95.5 Q 0 -103.5 14.3 -95.5 L 25.0 0 L -25.0 0 Z"/></g><g transform="translate(1627,0) skewX(0)"><circle cx="0" cy="-128.7" r="18.4"/><path d="M -16.3 -109.3 Q 0 -118.5 16.3 -109.3 L 28.6 0 L -28.6 0 Z"/></g><g transform="translate(1550,0) skewX(0)"><circle cx="0" cy="-132.8" r="19.0"/><path d="M -16.8 -112.7 Q 0 -122.2 16.8 -112.7 L 29.5 0 L -29.5 0 Z"/></g><g transform="translate(1030,0) skewX(0)"><circle cx="0" cy="-140.6" r="20.1"/><path d="M -17.8 -119.4 Q 0 -129.4 17.8 -119.4 L 31.2 0 L -31.2 0 Z"/></g><g transform="translate(727,0) skewX(0)"><circle cx="0" cy="-127.0" r="18.1"/><path d="M -16.1 -107.9 Q 0 -117.0 16.1 -107.9 L 28.2 0 L -28.2 0 Z"/></g><g transform="translate(1592,0) skewX(0)"><circle cx="0" cy="-129.2" r="18.4"/><path d="M -16.4 -109.7 Q 0 -118.9 16.4 -109.7 L 28.7 0 L -28.7 0 Z"/></g><g transform="translate(1654,0) skewX(0)"><circle cx="0" cy="-127.9" r="18.3"/><path d="M -16.2 -108.6 Q 0 -117.7 16.2 -108.6 L 28.4 0 L -28.4 0 Z"/></g><g transform="translate(1353,0) skewX(0)"><circle cx="0" cy="-110.8" r="15.8"/><path d="M -14.1 -94.1 Q 0 -102.0 14.1 -94.1 L 24.6 0 L -24.6 0 Z"/></g><g transform="translate(438,0) skewX(0)"><circle cx="0" cy="-118.6" r="16.9"/><path d="M -15.1 -100.7 Q 0 -109.2 15.1 -100.7 L 26.3 0 L -26.3 0 Z"/></g><g transform="translate(153,0) skewX(0)"><circle cx="0" cy="-116.8" r="16.7"/><path d="M -14.8 -99.2 Q 0 -107.5 14.8 -99.2 L 25.9 0 L -25.9 0 Z"/></g><g transform="translate(194,0) skewX(0)"><circle cx="0" cy="-118.2" r="16.9"/><path d="M -15.0 -100.4 Q 0 -108.8 15.0 -100.4 L 26.3 0 L -26.3 0 Z"/></g><g transform="translate(1221,0) skewX(0)"><circle cx="0" cy="-121.0" r="17.3"/><path d="M -15.4 -102.8 Q 0 -111.4 15.4 -102.8 L 26.9 0 L -26.9 0 Z"/></g><g transform="translate(711,0) skewX(0)"><circle cx="0" cy="-116.0" r="16.6"/><path d="M -14.7 -98.5 Q 0 -106.8 14.7 -98.5 L 25.8 0 L -25.8 0 Z"/></g><g transform="translate(513,0) skewX(0)"><circle cx="0" cy="-139.4" r="19.9"/><path d="M -17.7 -118.4 Q 0 -128.3 17.7 -118.4 L 31.0 0 L -31.0 0 Z"/></g><g transform="translate(1244,0) skewX(0)"><circle cx="0" cy="-128.9" r="18.4"/><path d="M -16.4 -109.4 Q 0 -118.7 16.4 -109.4 L 28.6 0 L -28.6 0 Z"/></g><g transform="translate(329,0) skewX(0)"><circle cx="0" cy="-132.7" r="19.0"/><path d="M -16.8 -112.7 Q 0 -122.2 16.8 -112.7 L 29.5 0 L -29.5 0 Z"/></g><g transform="translate(314,0) skewX(0)"><circle cx="0" cy="-121.5" r="17.3"/><path d="M -15.4 -103.2 Q 0 -111.9 15.4 -103.2 L 27.0 0 L -27.0 0 Z"/></g><g transform="translate(1900,0) skewX(0)"><circle cx="0" cy="-129.9" r="18.5"/><path d="M -16.5 -110.3 Q 0 -119.6 16.5 -110.3 L 28.8 0 L -28.8 0 Z"/></g><g transform="translate(1069,0) skewX(0)"><circle cx="0" cy="-131.3" r="18.7"/><path d="M -16.7 -111.5 Q 0 -120.9 16.7 -111.5 L 29.2 0 L -29.2 0 Z"/></g><g transform="translate(1618,0) skewX(0)"><circle cx="0" cy="-134.2" r="19.2"/><path d="M -17.0 -114.0 Q 0 -123.6 17.0 -114.0 L 29.8 0 L -29.8 0 Z"/></g><g transform="translate(440,0) skewX(0)"><circle cx="0" cy="-110.3" r="15.8"/><path d="M -14.0 -93.7 Q 0 -101.6 14.0 -93.7 L 24.5 0 L -24.5 0 Z"/></g><g transform="translate(606,0) skewX(0)"><circle cx="0" cy="-117.9" r="16.8"/><path d="M -15.0 -100.1 Q 0 -108.5 15.0 -100.1 L 26.2 0 L -26.2 0 Z"/></g><g transform="translate(405,0) skewX(0)"><circle cx="0" cy="-139.6" r="19.9"/><path d="M -17.7 -118.6 Q 0 -128.5 17.7 -118.6 L 31.0 0 L -31.0 0 Z"/></g><g transform="translate(1683,0) skewX(0)"><circle cx="0" cy="-119.4" r="17.1"/><path d="M -15.2 -101.4 Q 0 -109.9 15.2 -101.4 L 26.5 0 L -26.5 0 Z"/></g><g transform="translate(1258,0) skewX(0)"><circle cx="0" cy="-122.0" r="17.4"/><path d="M -15.5 -103.6 Q 0 -112.3 15.5 -103.6 L 27.1 0 L -27.1 0 Z"/></g><g transform="translate(1756,0) skewX(0)"><circle cx="0" cy="-124.0" r="17.7"/><path d="M -15.7 -105.3 Q 0 -114.2 15.7 -105.3 L 27.6 0 L -27.6 0 Z"/></g><g transform="translate(509,0) skewX(0)"><circle cx="0" cy="-117.2" r="16.7"/><path d="M -14.9 -99.6 Q 0 -107.9 14.9 -99.6 L 26.0 0 L -26.0 0 Z"/></g></g></svg></div>
+      </div>
+    </div>
+    <div id="c04-scr" class="c04-scrim clip" data-start="0" data-duration="91.22"></div>
+    <div id="c04-lab" class="c04-label clip" data-start="0.3" data-duration="4.6"><b>باب 4</b><i>ٹوٹے ہوئے بت</i></div>
+    <div id="c04-cp0" class="c04-cap clip" data-start="0.22" data-duration="4.23">باتوں سے وہ نہ مانے۔ تو ابراہیم نے ایک تدبیر کی۔</div>
+    <div id="c04-cp1" class="c04-cap clip" data-start="21.88" data-duration="1.46">اور قسم کھائی:</div>
+    <div id="c04-cp2" class="c04-cap clip" data-start="23.34" data-duration="3.04">اللہ کی قسم، تمہارے پیٹھ پھیرتے ہی</div>
+    <div id="c04-cp3" class="c04-cap clip" data-start="26.38" data-duration="2.99">میں تمہارے بتوں کی خبر لوں گا۔</div>
+    <div id="c04-cp4" class="c04-cap clip" data-start="29.37" data-duration="3.65">ایک میلے کے دن، پورا شہر باہر چلا گیا۔</div>
+    <div id="c04-cp5" class="c04-cap clip" data-start="33.02" data-duration="2.28">بت خانہ خالی تھا۔</div>
+    <div id="c04-cp6" class="c04-cap clip" data-start="35.30" data-duration="2.43">اور ابراہیم اکیلے اندر گئے۔</div>
+    <div id="c04-cp7" class="c04-cap clip" data-start="45.66" data-duration="4.00">ہمارے خداؤں کے ساتھ یہ کس نے کیا؟ کچھ بولے:</div>
+    <div id="c04-cp8" class="c04-cap clip" data-start="49.66" data-duration="4.66">ہم نے ایک نوجوان کو ان کا ذکر کرتے سنا تھا، جس کا نام ابراہیم ہے۔</div>
+    <div id="c04-cp9" class="c04-cap clip" data-start="54.32" data-duration="2.70">وہ انہیں سب کے سامنے لائے اور پوچھا:</div>
+    <div id="c04-cp10" class="c04-cap clip" data-start="57.02" data-duration="3.64">کیوں ابراہیم، تو نے ہمارے خداؤں کے ساتھ یہ حرکت کی ہے؟</div>
+    <div id="c04-cp11" class="c04-cap clip" data-start="72.60" data-duration="5.58">پھر سر جھکا کر بولے: تم تو جانتے ہو کہ یہ بولتے نہیں۔ تو انہوں نے فرمایا:</div>
+    <div id="c04-cp12" class="c04-cap clip" data-start="78.18" data-duration="3.00">پھر کیا تم اللہ کو چھوڑ کر ان چیزوں کو پوج</div>
+    <div id="c04-cp13" class="c04-cap clip" data-start="81.18" data-duration="3.73">رہے ہو جو نہ تمہیں نفع پہنچا سکتی ہیں نہ نقصان؟</div>
+    <div id="c04-cp14" class="c04-cap clip" data-start="84.91" data-duration="3.43">تف ہے تم پر اور تمہارے ان معبودوں پر۔</div>
+    <div id="c04-cp15" class="c04-cap clip" data-start="88.34" data-duration="2.28">کیا تم کچھ بھی عقل نہیں رکھتے؟</div>
+    <div id="c04-k0w" class="c04-cardwrap clip" data-start="4.50" data-duration="13.64"><div id="c04-k0" class="c04-card"><div class="c04-ar" dir="rtl" lang="ar">مَا هَٰذِهِ ٱلتَّمَاثِيلُ ٱلَّتِيٓ أَنتُمۡ لَهَا عَٰكِفُونَ</div><div class="c04-en c04-urtr" dir="rtl" lang="ur">یہ مورتیں کیسی ہیں جن کے تم لوگ گرویدہ ہو رہے ہو</div><div class="c04-ref">Al-Anbya 21:52</div></div></div>
+    <div id="c04-k1w" class="c04-cardwrap clip" data-start="37.78" data-duration="6.58"><div id="c04-k1" class="c04-card"><div class="c04-ar" dir="rtl" lang="ar">فَجَعَلَهُمۡ جُذَٰذًا إِلَّا كَبِيرࣰا لَّهُمۡ</div><div class="c04-en c04-urtr" dir="rtl" lang="ur">چنانچہ اس نے اُن کو ٹکڑے ٹکڑے کر دیا اور صرف ان کے بڑے کو چھوڑ دیا</div><div class="c04-ref">Al-Anbya 21:58</div></div></div>
+    <div id="c04-k2w" class="c04-cardwrap clip" data-start="60.71" data-duration="8.51"><div id="c04-k2" class="c04-card"><div class="c04-ar" dir="rtl" lang="ar">بَلۡ فَعَلَهُۥ كَبِيرُهُمۡ هَٰذَا فَسۡـَٔلُوهُمۡ إِن كَانُواْ يَنطِقُونَ</div><div class="c04-en c04-urtr" dir="rtl" lang="ur">بلکہ یہ سب کچھ ان کے اس سردار نے کیا ہے، اِن ہی سے پوچھ لو اگر یہ بولتے ہوں</div><div class="c04-ref">Al-Anbya 21:63</div></div></div>
+    <div id="c04-fadeIn" class="c04-fade clip" data-start="0" data-duration="0.55" style="opacity:1"></div>
+    <div id="c04-fadeOut" class="c04-fade clip" data-start="90.72" data-duration="0.50" style="opacity:0"></div>
+    <div id="c04-br" class="c04-brand clip" data-start="0" data-duration="91.22">HAQ <span>·</span> STORIES</div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#c04-t0", {opacity: 0.65, scale: 0.9}, {opacity: 1, scale: 1.1, duration: 0.25, ease: "sine.inOut", yoyo: true, repeat: 365, immediateRender: false}, 0.00);
+    tl.fromTo("#c04-t1", {opacity: 0.65, scale: 0.9}, {opacity: 1, scale: 1.1, duration: 0.29, ease: "sine.inOut", yoyo: true, repeat: 315, immediateRender: false}, 0.05);
+    tl.fromTo("#c04-i0", {opacity: 1}, {opacity: 0, duration: 0.15, ease: "sine.inOut", immediateRender: false}, 38.33);
+    tl.fromTo("#c04-sh0", {opacity: 0, y: 0, rotation: 0}, {opacity: 1, y: 113, rotation: -105, duration: 0.60, ease: "power2.in", immediateRender: false}, 38.33);
+    tl.fromTo("#c04-sh1", {opacity: 0, y: 0, rotation: 0}, {opacity: 1, y: 79, rotation: 16, duration: 0.60, ease: "power2.in", immediateRender: false}, 38.33);
+    tl.fromTo("#c04-sh2", {opacity: 0, y: 0, rotation: 0}, {opacity: 1, y: 72, rotation: -41, duration: 0.60, ease: "power2.in", immediateRender: false}, 38.33);
+    tl.fromTo("#c04-sh3", {opacity: 0, y: 0, rotation: 0}, {opacity: 1, y: 78, rotation: 42, duration: 0.60, ease: "power2.in", immediateRender: false}, 38.33);
+    tl.fromTo("#c04-i1", {opacity: 1}, {opacity: 0, duration: 0.15, ease: "sine.inOut", immediateRender: false}, 38.83);
+    tl.fromTo("#c04-sh4", {opacity: 0, y: 0, rotation: 0}, {opacity: 1, y: 69, rotation: 119, duration: 0.60, ease: "power2.in", immediateRender: false}, 38.83);
+    tl.fromTo("#c04-sh5", {opacity: 0, y: 0, rotation: 0}, {opacity: 1, y: 108, rotation: 51, duration: 0.60, ease: "power2.in", immediateRender: false}, 38.83);
+    tl.fromTo("#c04-sh6", {opacity: 0, y: 0, rotation: 0}, {opacity: 1, y: 104, rotation: -1, duration: 0.60, ease: "power2.in", immediateRender: false}, 38.83);
+    tl.fromTo("#c04-sh7", {opacity: 0, y: 0, rotation: 0}, {opacity: 1, y: 138, rotation: 94, duration: 0.60, ease: "power2.in", immediateRender: false}, 38.83);
+    tl.fromTo("#c04-i2", {opacity: 1}, {opacity: 0, duration: 0.15, ease: "sine.inOut", immediateRender: false}, 39.33);
+    tl.fromTo("#c04-sh8", {opacity: 0, y: 0, rotation: 0}, {opacity: 1, y: 126, rotation: -113, duration: 0.60, ease: "power2.in", immediateRender: false}, 39.33);
+    tl.fromTo("#c04-sh9", {opacity: 0, y: 0, rotation: 0}, {opacity: 1, y: 107, rotation: 106, duration: 0.60, ease: "power2.in", immediateRender: false}, 39.33);
+    tl.fromTo("#c04-sh10", {opacity: 0, y: 0, rotation: 0}, {opacity: 1, y: 111, rotation: 3, duration: 0.60, ease: "power2.in", immediateRender: false}, 39.33);
+    tl.fromTo("#c04-sh11", {opacity: 0, y: 0, rotation: 0}, {opacity: 1, y: 112, rotation: -78, duration: 0.60, ease: "power2.in", immediateRender: false}, 39.33);
+    tl.fromTo("#c04-i3", {opacity: 1}, {opacity: 0, duration: 0.15, ease: "sine.inOut", immediateRender: false}, 39.83);
+    tl.fromTo("#c04-sh12", {opacity: 0, y: 0, rotation: 0}, {opacity: 1, y: 118, rotation: 68, duration: 0.60, ease: "power2.in", immediateRender: false}, 39.83);
+    tl.fromTo("#c04-sh13", {opacity: 0, y: 0, rotation: 0}, {opacity: 1, y: 66, rotation: 2, duration: 0.60, ease: "power2.in", immediateRender: false}, 39.83);
+    tl.fromTo("#c04-sh14", {opacity: 0, y: 0, rotation: 0}, {opacity: 1, y: 108, rotation: -36, duration: 0.60, ease: "power2.in", immediateRender: false}, 39.83);
+    tl.fromTo("#c04-sh15", {opacity: 0, y: 0, rotation: 0}, {opacity: 1, y: 115, rotation: 101, duration: 0.60, ease: "power2.in", immediateRender: false}, 39.83);
+    tl.fromTo("#c04-i4", {opacity: 1}, {opacity: 0, duration: 0.15, ease: "sine.inOut", immediateRender: false}, 40.33);
+    tl.fromTo("#c04-sh16", {opacity: 0, y: 0, rotation: 0}, {opacity: 1, y: 132, rotation: -46, duration: 0.60, ease: "power2.in", immediateRender: false}, 40.33);
+    tl.fromTo("#c04-sh17", {opacity: 0, y: 0, rotation: 0}, {opacity: 1, y: 72, rotation: 85, duration: 0.60, ease: "power2.in", immediateRender: false}, 40.33);
+    tl.fromTo("#c04-sh18", {opacity: 0, y: 0, rotation: 0}, {opacity: 1, y: 109, rotation: 79, duration: 0.60, ease: "power2.in", immediateRender: false}, 40.33);
+    tl.fromTo("#c04-sh19", {opacity: 0, y: 0, rotation: 0}, {opacity: 1, y: 130, rotation: -53, duration: 0.60, ease: "power2.in", immediateRender: false}, 40.33);
+    tl.fromTo("#c04-i5", {opacity: 1}, {opacity: 0, duration: 0.15, ease: "sine.inOut", immediateRender: false}, 40.83);
+    tl.fromTo("#c04-sh20", {opacity: 0, y: 0, rotation: 0}, {opacity: 1, y: 107, rotation: -47, duration: 0.60, ease: "power2.in", immediateRender: false}, 40.83);
+    tl.fromTo("#c04-sh21", {opacity: 0, y: 0, rotation: 0}, {opacity: 1, y: 124, rotation: 46, duration: 0.60, ease: "power2.in", immediateRender: false}, 40.83);
+    tl.fromTo("#c04-sh22", {opacity: 0, y: 0, rotation: 0}, {opacity: 1, y: 79, rotation: 0, duration: 0.60, ease: "power2.in", immediateRender: false}, 40.83);
+    tl.fromTo("#c04-sh23", {opacity: 0, y: 0, rotation: 0}, {opacity: 1, y: 108, rotation: -64, duration: 0.60, ease: "power2.in", immediateRender: false}, 40.83);
+    tl.fromTo("#c04-people", {opacity: 0}, {opacity: 1, duration: 1.00, ease: "sine.inOut", immediateRender: false}, 43.29);
+    tl.fromTo("#c04-light", {opacity: 0}, {opacity: 1, duration: 1.20, ease: "sine.inOut", immediateRender: false}, 60.86);
+    tl.fromTo("#c04-k0w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 4.50);
+    tl.fromTo("#c04-k0", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 4.50);
+    tl.fromTo("#c04-k1w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 37.78);
+    tl.fromTo("#c04-k1", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 37.78);
+    tl.fromTo("#c04-k2w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 60.71);
+    tl.fromTo("#c04-k2", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 60.71);
+    tl.fromTo("#c04-lab", {opacity: 0, x: -20}, {opacity: 1, x: 0, duration: 0.60, ease: "power2.out", immediateRender: false}, 0.30);
+    tl.fromTo("#c04-lab", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 4.40);
+    tl.fromTo("#c04-scene", {scale: 1.0, x: 0}, {scale: 1.06, x: 30, duration: 91.22, ease: "none", immediateRender: false}, 0.00);
+    tl.fromTo("#c04-fadeIn", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 0.00);
+    tl.fromTo("#c04-fadeOut", {opacity: 0}, {opacity: 1, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 90.72);
+    window.__timelines["c04"] = tl;
+  </script>
+</template>
