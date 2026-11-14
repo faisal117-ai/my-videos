@@ -51,6 +51,15 @@ def main() -> None:
         for k, val in NAMES.items():
             tr = re.sub(rf"\b{k}\b", val, tr)
         b["translation"] = f"“{tr}”"
+        if "ur_a" in b:  # Maududi excerpt cut by its first and last words: never typed
+            full = UR[s - 1]["verses"][v - 1]["translation"]
+            a0, z0 = b["ur_a"]
+            p0 = full.find(a0)
+            p1 = full.find(z0, max(p0, 0))
+            if p0 < 0 or p1 < 0:
+                bad.append(f"beat {i}: Urdu anchors not found in Maududi {s}:{v}: {b['ur_a']}")
+            else:
+                b["ur"] = full[p0:p1 + len(z0)].replace('"', "").replace("“", "").strip()
         if "ur_q" in b:
             ur_full = UR[s - 1]["verses"][v - 1]["translation"]
             if norm(b["ur_q"]) not in norm(ur_full):

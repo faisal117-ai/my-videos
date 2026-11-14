@@ -1,0 +1,24 @@
+<template>
+  <style>
+    #b5 { position: absolute; inset: 0; }
+    #b5-wrap { position: absolute; left: 60px; right: 60px; top: 300px; bottom: 780px;
+      display: flex; flex-direction: column; justify-content: center; gap: 34px; }
+  </style>
+  <div id="b5" data-composition-id="b5" data-width="1080" data-height="1920">
+    <div id="b5-wrap" class="clip" data-start="0" data-duration="7.07">
+      <div id="b5-ar" class="ar" dir="rtl" lang="ar">قَالَ بَلۡ فَعَلَهُۥ كَبِيرُهُمۡ هَٰذَا فَسۡـَٔلُوهُمۡ إِن كَانُواْ يَنطِقُونَ</div>
+      <div id="b5-tr" class="tr">“Rather, this - the largest of them - did it, so ask them, if they should [be able to] speak”</div>
+      <div id="b5-ur" class="ur" dir="rtl" lang="ur" data-layout-allow-overflow>بلکہ یہ سب کچھ ان کے اس سردار نے کیا ہے، اِن ہی سے پوچھ لو اگر یہ بولتے ہوں</div>
+      <div id="b5-ref" class="ref">Al-Anbiya 21:63</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#b5-ar", {opacity: 0, y: 30, filter: "blur(10px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.9, ease: "power2.out"}, 0.05);
+    tl.fromTo("#b5-tr", {opacity: 0, y: 20}, {opacity: 1, y: 0, duration: 0.7, ease: "power2.out"}, 0.6);
+    tl.fromTo("#b5-ur", {opacity: 0, y: 10}, {opacity: 1, y: 0, duration: 0.35, ease: "power2.out"}, 0.15);
+    tl.fromTo("#b5-ref", {opacity: 0, y: 12}, {opacity: 1, y: 0, duration: 0.45, ease: "power2.out"}, 0.35);
+    tl.fromTo("#b5-wrap", {opacity: 1}, {opacity: 0, duration: 0.22, ease: "power1.in"}, 6.83);
+    window.__timelines["b5"] = tl;
+  </script>
+</template>

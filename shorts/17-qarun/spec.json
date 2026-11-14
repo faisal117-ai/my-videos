@@ -1,0 +1,157 @@
+{
+  "accent": "#f2b04a",
+  "embers": false,
+  "flash": 0.4,
+  "bed_volume": 1.0,
+  "hold_end": 0.5,
+  "text_top": 300,
+  "text_bottom": 780,
+  "tr_size": 56,
+  "scene": "qarun",
+  "keys_beat": 1,
+  "parade_beat": 3,
+  "sink_beat": 4,
+  "beats": [
+    {
+      "hook": true,
+      "text": "The richest man on earth…",
+      "sub": "…the ground swallowed him.",
+      "ur": "زمین کا سب سے امیر آدمی… زمین نے اسے نگل لیا",
+      "mood": {
+        "warm": 0.5,
+        "cool": 0
+      },
+      "reveal": false
+    },
+    {
+      "text": "Even his *keys* were too heavy for a band of strong men.",
+      "size": 104,
+      "ur": "اس کے خزانوں کی کنجیاں طاقتور آدمیوں کی ایک جماعت پر بھی بھاری تھیں",
+      "ref": "Al-Qasas 28:76",
+      "mood": {
+        "warm": 0.6,
+        "cool": 0
+      }
+    },
+    {
+      "q": "28:78",
+      "ar_words": [
+        1,
+        6
+      ],
+      "en": "I was only given it because of knowledge I have",
+      "ur_a": [
+        "یہ سب کچھ",
+        "حاصل ہے"
+      ],
+      "ref": "Al-Qasas 28:78",
+      "mood": {
+        "warm": 0.5,
+        "cool": 0
+      },
+      "arabic": "قَالَ إِنَّمَآ أُوتِيتُهُۥ عَلَىٰ عِلۡمٍ عِندِيٓۚ",
+      "translation": "“I was only given it because of knowledge I have”",
+      "ur": "یہ سب کچھ تو مجھے اُس علم کی بنا پر دیا گیا ہے جو مجھ کو حاصل ہے"
+    },
+    {
+      "text": "“If only we had what *Qarun* has.”",
+      "size": 116,
+      "ur": "کاش ہمیں بھی وہی ملتا جو قارون کو دیا گیا ہے",
+      "ref": "Al-Qasas 28:79",
+      "mood": {
+        "warm": 0.6,
+        "cool": 0
+      }
+    },
+    {
+      "q": "28:81",
+      "ar_words": [
+        1,
+        4
+      ],
+      "en": "And We caused the earth to swallow him and his home",
+      "ur_a": [
+        "آخر کار",
+        "دَھنسا دیا"
+      ],
+      "ref": "Al-Qasas 28:81",
+      "mood": {
+        "warm": 0.2,
+        "cool": 0.2
+      },
+      "arabic": "فَخَسَفۡنَا بِهِۦ وَبِدَارِهِ ٱلۡأَرۡضَ",
+      "translation": "“And We caused the earth to swallow him and his home”",
+      "ur": "آخر کار ہم نے اسے اور اس کے گھر کو زمین میں دَھنسا دیا"
+    },
+    {
+      "cta": true,
+      "text": "Follow for more.",
+      "ur": "فالو کریں",
+      "mood": {
+        "warm": 0.3,
+        "cool": 0.3
+      }
+    }
+  ],
+  "sound": [
+    {
+      "prompt": "lib",
+      "src": "../03-cave/assets/sfx/03b5f68efefc.mp3",
+      "beat": 0,
+      "offset": 0,
+      "dur": 3,
+      "gain": -6,
+      "fade_in": 0,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "lib",
+      "src": "../../long/01-yusuf/assets/sfx/258404e5a9af.mp3",
+      "beat": 0,
+      "offset": 0,
+      "dur": 4,
+      "gain": -10,
+      "fade_in": 0,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "lib",
+      "src": "../../long/01-yusuf/assets/sfx/992f69b875be.mp3",
+      "beat": 1,
+      "offset": 0,
+      "dur": 12,
+      "gain": -14,
+      "fade_in": 0.5,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "lib",
+      "src": "../06-ant/assets/sfx/71389a05d7ab.mp3",
+      "beat": 3,
+      "offset": 0,
+      "dur": 6,
+      "gain": -17,
+      "fade_in": 0.5,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "a violent earthquake, ground cracking open, a stone palace collapsing and sinking into the earth",
+      "beat": 4,
+      "offset": 0,
+      "dur": 6,
+      "gain": -6,
+      "fade_in": 0.2,
+      "fade_out": 1.0
+    },
+    {
+      "prompt": "lib",
+      "src": "../../long/01-yusuf/assets/sfx/1830ee4b40ad.mp3",
+      "beat": 4,
+      "offset": 0,
+      "dur": 9,
+      "gain": -16,
+      "fade_in": 1.5,
+      "fade_out": 2
+    }
+  ]
+}

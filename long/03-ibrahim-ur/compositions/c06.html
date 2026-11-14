@@ -1,0 +1,102 @@
+<template>
+  <style>
+    #c06 { position: absolute; inset: 0; overflow: hidden; background: #000; }
+    .c06-st { position: absolute; border-radius: 50%; background: #eef4ff; box-shadow: 0 0 6px rgba(220,235,255,0.9); }
+    .c06-mote { position: absolute; border-radius: 50%; }
+    .c06-full { position: absolute; inset: 0; }
+    .c06-svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+
+    .c06-cam { position: absolute; inset: 0; transform-origin: 50% 55%; }
+    .c06-scrim { position: absolute; left: 0; right: 0; bottom: 0; height: 300px;
+      background: linear-gradient(0deg, rgba(0,0,0,0.75), rgba(0,0,0,0)); }
+    .c06-cap { position: absolute; left: 210px; right: 210px; bottom: 64px; text-align: center;
+      font-family: "Cormorant Garamond"; font-weight: 600; font-size: 54px; line-height: 1.12; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c06-cardwrap { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+      background: radial-gradient(ellipse at 50% 50%, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.45) 50%, rgba(0,0,0,0) 80%); }
+    .c06-card { max-width: 1400px; display: flex; flex-direction: column; align-items: center; gap: 26px; text-align: center; }
+    .c06-ar { font-family: "Amiri Quran"; font-size: 70px; line-height: 1.8; color: #fff6e6; text-shadow: 0 0 30px rgba(215,236,255,0.4); }
+    .c06-en { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 50px; line-height: 1.18; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c06-ctext { font-family: "Cormorant Garamond"; font-weight: 600; font-size: 76px; line-height: 1.1; color: #f5ead6;
+      text-shadow: 0 3px 22px rgba(0,0,0,0.9); }
+    .c06-hi { color: var(--accent); }
+    .c06-ref { font-family: Inter, sans-serif; font-weight: 700; font-size: 28px; letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--accent); border: 2px solid var(--accent); border-radius: 999px; padding: 10px 24px; background: rgba(0,0,0,0.4); }
+    .c06-title { font-family: "Cormorant Garamond"; font-weight: 600; font-size: 118px; line-height: 1.02; color: #f5ead6;
+      text-shadow: 0 4px 30px rgba(0,0,0,0.8); }
+    .c06-tsub { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 52px; color: var(--accent); }
+    .c06-mark { font-family: Inter, sans-serif; font-weight: 700; font-size: 64px; letter-spacing: 0.32em; color: #f5ead6; }
+    .c06-mark span { color: var(--accent); }
+    .c06-endt { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 52px; color: #f5ead6; }
+    .c06-btn { font-family: Inter, sans-serif; font-weight: 700; font-size: 34px; letter-spacing: 0.08em; color: #120b08;
+      background: var(--accent); border-radius: 999px; padding: 18px 48px; }
+    .c06-label { position: absolute; left: 90px; top: 70px; }
+    .c06-label b { display: block; font-family: Inter, sans-serif; font-weight: 700; font-size: 28px; letter-spacing: 0.3em; color: var(--accent); }
+    .c06-label i { display: block; font-family: "Cormorant Garamond"; font-style: normal; font-weight: 600; font-size: 60px; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c06-brand { position: absolute; right: 80px; top: 70px; font-family: Inter, sans-serif; font-weight: 700; font-size: 28px;
+      letter-spacing: 0.32em; color: rgba(245,234,214,0.7); }
+    .c06-brand span { color: var(--accent); }
+    .c06-fade { position: absolute; inset: 0; background: #000; }
+
+    .c06-torch { position: absolute; width: 18px; height: 18px; margin: -9px; border-radius: 50%;
+      background: radial-gradient(circle, #fff1c9 0%, #ffae4a 50%, rgba(255,140,40,0) 75%); box-shadow: 0 0 30px 12px rgba(255,150,60,0.35); }
+
+    #c06-bg { background: linear-gradient(180deg, #1a100a 0%, #2e1c10 50%, #120a06 100%); }
+    #c06-king { position: absolute; inset: 0; transform-origin: 960px 760px; }
+    #c06-east { position: absolute; left: 520px; top: 300px; width: 880px; height: 300px; opacity: 0; border-radius: 40px;
+      background: linear-gradient(90deg, #f2c48a 0%, #6a7aa0 100%); }
+    #c06-esun { position: absolute; left: 540px; top: 470px; width: 140px; height: 140px; border-radius: 50%; opacity: 0;
+      background: radial-gradient(circle, #fff3d6 0%, #ffd08a 40%, rgba(255,170,80,0) 72%); }
+
+    .c06-cap { font-family: "Noto Nastaliq Urdu"; font-weight: 400; font-size: 44px; line-height: 1.9; direction: rtl; bottom: 40px; }
+    .c06-urtr { font-family: "Noto Nastaliq Urdu"; font-style: normal; font-weight: 400; font-size: 44px; line-height: 1.9; }
+    .c06-ctext { font-family: "Noto Nastaliq Urdu"; font-weight: 400; font-size: 60px; line-height: 1.9; direction: rtl; }
+    .c06-label i, .c06-title, .c06-tsub, .c06-endt { font-family: "Noto Nastaliq Urdu"; font-style: normal; font-weight: 400; direction: rtl; line-height: 1.8; }
+    .c06-title { font-size: 92px; } .c06-tsub { font-size: 46px; } .c06-label i { font-size: 48px; } .c06-endt { font-size: 44px; }
+    .c06-label b { letter-spacing: 0; font-family: "Noto Nastaliq Urdu"; font-weight: 400; font-size: 30px; }
+
+  </style>
+  <div id="c06" data-composition-id="c06" data-width="1920" data-height="1080">
+    <div id="c06-scene" class="clip" data-start="0" data-duration="43.06" style="position:absolute;inset:0" data-layout-allow-overflow>
+      <div id="c06-cam" class="c06-cam">
+      <div id="c06-bg" class="c06-full"></div><div id="c06-east"></div><div id="c06-esun"></div>
+      <svg class="c06-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none"><rect x="0" y="760" width="1920" height="320" fill="#24170e"/><rect x="760" y="700" width="400" height="70" fill="#4a3220"/><rect x="120" y="120" width="90" height="760" fill="#5a4026"/><rect x="380" y="120" width="90" height="760" fill="#5a4026"/><rect x="1450" y="120" width="90" height="760" fill="#5a4026"/><rect x="1710" y="120" width="90" height="760" fill="#5a4026"/><g fill="#0a0604" transform="translate(0,940)"><g transform="translate(488,0) skewX(0)"><circle cx="0" cy="-101.8" r="14.5"/><path d="M -12.9 -86.4 Q 0 -93.7 12.9 -86.4 L 22.6 0 L -22.6 0 Z"/></g><g transform="translate(620,0) skewX(0)"><circle cx="0" cy="-95.7" r="13.7"/><path d="M -12.1 -81.3 Q 0 -88.1 12.1 -81.3 L 21.3 0 L -21.3 0 Z"/></g><g transform="translate(415,0) skewX(0)"><circle cx="0" cy="-105.3" r="15.0"/><path d="M -13.4 -89.4 Q 0 -96.9 13.4 -89.4 L 23.4 0 L -23.4 0 Z"/></g><g transform="translate(484,0) skewX(0)"><circle cx="0" cy="-96.7" r="13.8"/><path d="M -12.3 -82.1 Q 0 -89.0 12.3 -82.1 L 21.5 0 L -21.5 0 Z"/></g><g transform="translate(450,0) skewX(0)"><circle cx="0" cy="-95.9" r="13.7"/><path d="M -12.2 -81.5 Q 0 -88.3 12.2 -81.5 L 21.3 0 L -21.3 0 Z"/></g><g transform="translate(350,0) skewX(0)"><circle cx="0" cy="-103.7" r="14.8"/><path d="M -13.2 -88.1 Q 0 -95.5 13.2 -88.1 L 23.0 0 L -23.0 0 Z"/></g><g transform="translate(655,0) skewX(0)"><circle cx="0" cy="-105.1" r="15.0"/><path d="M -13.3 -89.3 Q 0 -96.8 13.3 -89.3 L 23.4 0 L -23.4 0 Z"/></g><g transform="translate(547,0) skewX(0)"><circle cx="0" cy="-96.1" r="13.7"/><path d="M -12.2 -81.6 Q 0 -88.5 12.2 -81.6 L 21.3 0 L -21.3 0 Z"/></g><g transform="translate(462,0) skewX(0)"><circle cx="0" cy="-91.1" r="13.0"/><path d="M -11.6 -77.4 Q 0 -83.9 11.6 -77.4 L 20.2 0 L -20.2 0 Z"/></g><g transform="translate(586,0) skewX(0)"><circle cx="0" cy="-95.1" r="13.6"/><path d="M -12.1 -80.7 Q 0 -87.5 12.1 -80.7 L 21.1 0 L -21.1 0 Z"/></g><g transform="translate(1610,0) skewX(0)"><circle cx="0" cy="-91.9" r="13.1"/><path d="M -11.7 -78.0 Q 0 -84.6 11.7 -78.0 L 20.4 0 L -20.4 0 Z"/></g><g transform="translate(1628,0) skewX(0)"><circle cx="0" cy="-93.6" r="13.4"/><path d="M -11.9 -79.5 Q 0 -86.1 11.9 -79.5 L 20.8 0 L -20.8 0 Z"/></g><g transform="translate(1415,0) skewX(0)"><circle cx="0" cy="-110.5" r="15.8"/><path d="M -14.0 -93.9 Q 0 -101.8 14.0 -93.9 L 24.5 0 L -24.5 0 Z"/></g><g transform="translate(1369,0) skewX(0)"><circle cx="0" cy="-100.5" r="14.4"/><path d="M -12.8 -85.4 Q 0 -92.5 12.8 -85.4 L 22.3 0 L -22.3 0 Z"/></g><g transform="translate(1288,0) skewX(0)"><circle cx="0" cy="-112.2" r="16.0"/><path d="M -14.2 -95.2 Q 0 -103.3 14.2 -95.2 L 24.9 0 L -24.9 0 Z"/></g><g transform="translate(1634,0) skewX(0)"><circle cx="0" cy="-91.8" r="13.1"/><path d="M -11.7 -78.0 Q 0 -84.6 11.7 -78.0 L 20.4 0 L -20.4 0 Z"/></g><g transform="translate(1272,0) skewX(0)"><circle cx="0" cy="-99.6" r="14.2"/><path d="M -12.6 -84.6 Q 0 -91.7 12.6 -84.6 L 22.1 0 L -22.1 0 Z"/></g><g transform="translate(1438,0) skewX(0)"><circle cx="0" cy="-107.4" r="15.3"/><path d="M -13.6 -91.2 Q 0 -98.9 13.6 -91.2 L 23.8 0 L -23.8 0 Z"/></g><g transform="translate(1364,0) skewX(0)"><circle cx="0" cy="-102.6" r="14.7"/><path d="M -13.0 -87.1 Q 0 -94.5 13.0 -87.1 L 22.8 0 L -22.8 0 Z"/></g><g transform="translate(1287,0) skewX(0)"><circle cx="0" cy="-92.9" r="13.3"/><path d="M -11.8 -78.9 Q 0 -85.5 11.8 -78.9 L 20.6 0 L -20.6 0 Z"/></g></g></svg>
+      <div id="c06-bz0" class="c06-torch" style="left:560px;top:690px"></div><div id="c06-bz1" class="c06-torch" style="left:1360px;top:690px"></div>
+      <div id="c06-king"><svg class="c06-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none"><g id="c06-kg" transform="translate(960,660) scale(1.3)"><rect x="-70" y="-120" width="140" height="160" rx="10" fill="#1a1208"/><rect x="-90" y="-250" width="20" height="290" fill="#2a1c0e"/><rect x="70" y="-250" width="20" height="290" fill="#2a1c0e"/><g fill="#050403"><path d="M -40 -40 L -46 -150 Q 0 -170 46 -150 L 40 -40 Z"/><circle cx="0" cy="-185" r="30"/><path d="M -24 -205 L -18 -280 L 18 -280 L 24 -205 Z"/></g></g></svg></div>
+      </div>
+    </div>
+    <div id="c06-scr" class="c06-scrim clip" data-start="0" data-duration="43.06"></div>
+    <div id="c06-lab" class="c06-label clip" data-start="0.3" data-duration="4.6"><b>باب 6</b><i>بادشاہ جو جھگڑا</i></div>
+    <div id="c06-cp0" class="c06-cap clip" data-start="0.22" data-duration="4.56">آگ میں پھینکے گئے نوجوان کی خبر بادشاہ تک پہنچی۔</div>
+    <div id="c06-cp1" class="c06-cap clip" data-start="4.78" data-duration="3.44">وہ اپنی حکومت پر اتنا مغرور تھا کہ ابراہیم</div>
+    <div id="c06-cp2" class="c06-cap clip" data-start="8.22" data-duration="4.44">سے ان کے رب کے بارے میں جھگڑنے لگا۔ ابراہیم نے کہا:</div>
+    <div id="c06-cp3" class="c06-cap clip" data-start="12.66" data-duration="4.86">میرا رب وہ ہے جس کے اختیار میں زندگی اور موت ہے۔</div>
+    <div id="c06-cp4" class="c06-cap clip" data-start="17.52" data-duration="3.90">بادشاہ نے کہا: زندگی اور موت میرے اختیار میں ہے۔</div>
+    <div id="c06-cp5" class="c06-cap clip" data-start="21.42" data-duration="4.01">میں کسی کو معاف کر سکتا ہوں، کسی کو قتل کروا سکتا ہوں۔</div>
+    <div id="c06-k0w" class="c06-cardwrap clip" data-start="25.48" data-duration="7.25"><div id="c06-k0" class="c06-card"><div class="c06-ar" dir="rtl" lang="ar">فَإِنَّ ٱللَّهَ يَأۡتِي بِٱلشَّمۡسِ مِنَ ٱلۡمَشۡرِقِ فَأۡتِ بِهَا مِنَ ٱلۡمَغۡرِبِ</div><div class="c06-en c06-urtr" dir="rtl" lang="ur">اچھا، اللہ سورج کو مشرق سے نکالتا ہے، تو ذرا اُسے مغرب سے نکال لا</div><div class="c06-ref">Al-Baqarah 2:258</div></div></div>
+    <div id="c06-k1w" class="c06-cardwrap clip" data-start="32.83" data-duration="9.73"><div id="c06-k1" class="c06-card"><div class="c06-ar" dir="rtl" lang="ar">فَبُهِتَ ٱلَّذِي كَفَرَۗ</div><div class="c06-en c06-urtr" dir="rtl" lang="ur">یہ سن کر وہ منکر حق ششدر رہ گیا</div><div class="c06-ref">Al-Baqarah 2:258</div></div></div>
+    <div id="c06-fadeIn" class="c06-fade clip" data-start="0" data-duration="0.55" style="opacity:1"></div>
+    <div id="c06-fadeOut" class="c06-fade clip" data-start="42.56" data-duration="0.50" style="opacity:0"></div>
+    <div id="c06-br" class="c06-brand clip" data-start="0" data-duration="43.06">HAQ <span>·</span> STORIES</div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#c06-bz0", {opacity: 0.65, scale: 0.9}, {opacity: 1, scale: 1.1, duration: 0.25, ease: "sine.inOut", yoyo: true, repeat: 173, immediateRender: false}, 0.00);
+    tl.fromTo("#c06-bz1", {opacity: 0.65, scale: 0.9}, {opacity: 1, scale: 1.1, duration: 0.29, ease: "sine.inOut", yoyo: true, repeat: 149, immediateRender: false}, 0.05);
+    tl.fromTo("#c06-east", {opacity: 0}, {opacity: 0.9, duration: 1.20, ease: "sine.inOut", immediateRender: false}, 25.63);
+    tl.fromTo("#c06-esun", {opacity: 0, y: 60}, {opacity: 1, y: -100, duration: 3.00, ease: "sine.out", immediateRender: false}, 26.13);
+    tl.fromTo("#c06-king", {scale: 1, y: 0}, {scale: 0.9, y: 30, duration: 1.50, ease: "power2.inOut", immediateRender: false}, 32.98);
+    tl.fromTo("#c06-k0w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 25.48);
+    tl.fromTo("#c06-k0", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 25.48);
+    tl.fromTo("#c06-k1w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 32.83);
+    tl.fromTo("#c06-k1", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 32.83);
+    tl.fromTo("#c06-lab", {opacity: 0, x: -20}, {opacity: 1, x: 0, duration: 0.60, ease: "power2.out", immediateRender: false}, 0.30);
+    tl.fromTo("#c06-lab", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 4.40);
+    tl.fromTo("#c06-scene", {scale: 1.0, x: 0}, {scale: 1.06, x: 30, duration: 43.06, ease: "none", immediateRender: false}, 0.00);
+    tl.fromTo("#c06-fadeIn", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 0.00);
+    tl.fromTo("#c06-fadeOut", {opacity: 0}, {opacity: 1, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 42.56);
+    window.__timelines["c06"] = tl;
+  </script>
+</template>

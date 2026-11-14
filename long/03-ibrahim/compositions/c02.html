@@ -1,0 +1,132 @@
+<template>
+  <style>
+    #c02 { position: absolute; inset: 0; overflow: hidden; background: #000; }
+    .c02-st { position: absolute; border-radius: 50%; background: #eef4ff; box-shadow: 0 0 6px rgba(220,235,255,0.9); }
+    .c02-mote { position: absolute; border-radius: 50%; }
+    .c02-full { position: absolute; inset: 0; }
+    .c02-svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+
+    .c02-cam { position: absolute; inset: 0; transform-origin: 50% 55%; }
+    .c02-scrim { position: absolute; left: 0; right: 0; bottom: 0; height: 300px;
+      background: linear-gradient(0deg, rgba(0,0,0,0.75), rgba(0,0,0,0)); }
+    .c02-cap { position: absolute; left: 210px; right: 210px; bottom: 64px; text-align: center;
+      font-family: "Cormorant Garamond"; font-weight: 600; font-size: 54px; line-height: 1.12; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c02-cardwrap { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+      background: radial-gradient(ellipse at 50% 50%, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.45) 50%, rgba(0,0,0,0) 80%); }
+    .c02-card { max-width: 1400px; display: flex; flex-direction: column; align-items: center; gap: 26px; text-align: center; }
+    .c02-ar { font-family: "Amiri Quran"; font-size: 70px; line-height: 1.8; color: #fff6e6; text-shadow: 0 0 30px rgba(215,236,255,0.4); }
+    .c02-en { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 50px; line-height: 1.18; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c02-ctext { font-family: "Cormorant Garamond"; font-weight: 600; font-size: 76px; line-height: 1.1; color: #f5ead6;
+      text-shadow: 0 3px 22px rgba(0,0,0,0.9); }
+    .c02-hi { color: var(--accent); }
+    .c02-ref { font-family: Inter, sans-serif; font-weight: 700; font-size: 28px; letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--accent); border: 2px solid var(--accent); border-radius: 999px; padding: 10px 24px; background: rgba(0,0,0,0.4); }
+    .c02-title { font-family: "Cormorant Garamond"; font-weight: 600; font-size: 118px; line-height: 1.02; color: #f5ead6;
+      text-shadow: 0 4px 30px rgba(0,0,0,0.8); }
+    .c02-tsub { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 52px; color: var(--accent); }
+    .c02-mark { font-family: Inter, sans-serif; font-weight: 700; font-size: 64px; letter-spacing: 0.32em; color: #f5ead6; }
+    .c02-mark span { color: var(--accent); }
+    .c02-endt { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 52px; color: #f5ead6; }
+    .c02-btn { font-family: Inter, sans-serif; font-weight: 700; font-size: 34px; letter-spacing: 0.08em; color: #120b08;
+      background: var(--accent); border-radius: 999px; padding: 18px 48px; }
+    .c02-label { position: absolute; left: 90px; top: 70px; }
+    .c02-label b { display: block; font-family: Inter, sans-serif; font-weight: 700; font-size: 28px; letter-spacing: 0.3em; color: var(--accent); }
+    .c02-label i { display: block; font-family: "Cormorant Garamond"; font-style: normal; font-weight: 600; font-size: 60px; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c02-brand { position: absolute; right: 80px; top: 70px; font-family: Inter, sans-serif; font-weight: 700; font-size: 28px;
+      letter-spacing: 0.32em; color: rgba(245,234,214,0.7); }
+    .c02-brand span { color: var(--accent); }
+    .c02-fade { position: absolute; inset: 0; background: #000; }
+
+    #c02-night { background: linear-gradient(180deg, #02030a 0%, #0b1026 60%, #151a2c 100%); }
+    #c02-day { opacity: 0; background: linear-gradient(180deg, #2a4a7a 0%, #9ab8d8 50%, #f0d0a0 68%, #6a4a30 76%); }
+    #c02-star { position: absolute; left: 1240px; top: 200px; width: 40px; height: 40px; margin: -20px; border-radius: 50%; opacity: 0;
+      background: radial-gradient(circle, #fff 0%, #dfe8ff 35%, rgba(200,215,255,0) 70%); box-shadow: 0 0 40px 14px rgba(200,215,255,0.5); }
+    #c02-moon2 { position: absolute; left: 300px; top: 820px; opacity: 0; }
+    #c02-sun2 { position: absolute; left: 820px; top: 860px; width: 240px; height: 240px; border-radius: 50%; opacity: 0;
+      background: radial-gradient(circle, #fff6dc 0%, #ffd08a 40%, rgba(255,170,80,0) 72%); }
+
+  </style>
+  <div id="c02" data-composition-id="c02" data-width="1920" data-height="1080">
+    <div id="c02-scene" class="clip" data-start="0" data-duration="68.82" style="position:absolute;inset:0" data-layout-allow-overflow>
+      <div id="c02-cam" class="c02-cam">
+      <div id="c02-night" class="c02-full"></div><div id="c02-day" class="c02-full"></div>
+      <div id="c02-sst0" class="c02-st" style="left:317px;top:414px;width:3.1px;height:3.1px"></div><div id="c02-sst1" class="c02-st" style="left:1551px;top:307px;width:2.8px;height:2.8px"></div><div id="c02-sst2" class="c02-st" style="left:453px;top:2px;width:2.4px;height:2.4px"></div><div id="c02-sst3" class="c02-st" style="left:446px;top:140px;width:1.6px;height:1.6px"></div><div id="c02-sst4" class="c02-st" style="left:1915px;top:443px;width:3.7px;height:3.7px"></div><div id="c02-sst5" class="c02-st" style="left:955px;top:69px;width:3.9px;height:3.9px"></div><div id="c02-sst6" class="c02-st" style="left:707px;top:93px;width:3.5px;height:3.5px"></div><div id="c02-sst7" class="c02-st" style="left:1060px;top:206px;width:2.7px;height:2.7px"></div><div id="c02-sst8" class="c02-st" style="left:359px;top:22px;width:3.7px;height:3.7px"></div><div id="c02-sst9" class="c02-st" style="left:1860px;top:536px;width:3.4px;height:3.4px"></div><div id="c02-sst10" class="c02-st" style="left:1465px;top:348px;width:3.3px;height:3.3px"></div><div id="c02-sst11" class="c02-st" style="left:386px;top:554px;width:3.7px;height:3.7px"></div><div id="c02-sst12" class="c02-st" style="left:786px;top:219px;width:2.6px;height:2.6px"></div><div id="c02-sst13" class="c02-st" style="left:52px;top:56px;width:3.3px;height:3.3px"></div><div id="c02-sst14" class="c02-st" style="left:1906px;top:298px;width:2.7px;height:2.7px"></div><div id="c02-sst15" class="c02-st" style="left:1169px;top:334px;width:3.1px;height:3.1px"></div><div id="c02-sst16" class="c02-st" style="left:347px;top:102px;width:2.4px;height:2.4px"></div><div id="c02-sst17" class="c02-st" style="left:589px;top:62px;width:1.7px;height:1.7px"></div><div id="c02-sst18" class="c02-st" style="left:1562px;top:466px;width:2.4px;height:2.4px"></div><div id="c02-sst19" class="c02-st" style="left:1840px;top:244px;width:4.0px;height:4.0px"></div><div id="c02-sst20" class="c02-st" style="left:1846px;top:354px;width:3.7px;height:3.7px"></div><div id="c02-sst21" class="c02-st" style="left:1682px;top:97px;width:1.7px;height:1.7px"></div><div id="c02-sst22" class="c02-st" style="left:1546px;top:464px;width:2.7px;height:2.7px"></div><div id="c02-sst23" class="c02-st" style="left:557px;top:252px;width:1.9px;height:1.9px"></div><div id="c02-sst24" class="c02-st" style="left:133px;top:203px;width:3.7px;height:3.7px"></div><div id="c02-sst25" class="c02-st" style="left:484px;top:575px;width:2.8px;height:2.8px"></div><div id="c02-sst26" class="c02-st" style="left:1399px;top:17px;width:2.0px;height:2.0px"></div><div id="c02-sst27" class="c02-st" style="left:1155px;top:256px;width:3.0px;height:3.0px"></div><div id="c02-sst28" class="c02-st" style="left:1631px;top:185px;width:2.8px;height:2.8px"></div><div id="c02-sst29" class="c02-st" style="left:1316px;top:572px;width:1.6px;height:1.6px"></div><div id="c02-sst30" class="c02-st" style="left:1140px;top:386px;width:3.6px;height:3.6px"></div><div id="c02-sst31" class="c02-st" style="left:1841px;top:543px;width:1.8px;height:1.8px"></div><div id="c02-sst32" class="c02-st" style="left:182px;top:56px;width:1.6px;height:1.6px"></div><div id="c02-sst33" class="c02-st" style="left:1258px;top:76px;width:2.8px;height:2.8px"></div><div id="c02-sst34" class="c02-st" style="left:623px;top:296px;width:2.0px;height:2.0px"></div><div id="c02-sst35" class="c02-st" style="left:1363px;top:330px;width:1.6px;height:1.6px"></div><div id="c02-sst36" class="c02-st" style="left:1365px;top:524px;width:3.4px;height:3.4px"></div><div id="c02-sst37" class="c02-st" style="left:122px;top:458px;width:1.9px;height:1.9px"></div><div id="c02-sst38" class="c02-st" style="left:1366px;top:152px;width:3.2px;height:3.2px"></div><div id="c02-sst39" class="c02-st" style="left:594px;top:540px;width:2.2px;height:2.2px"></div><div id="c02-sst40" class="c02-st" style="left:966px;top:330px;width:3.9px;height:3.9px"></div><div id="c02-sst41" class="c02-st" style="left:1410px;top:580px;width:2.3px;height:2.3px"></div><div id="c02-sst42" class="c02-st" style="left:1343px;top:315px;width:2.9px;height:2.9px"></div><div id="c02-sst43" class="c02-st" style="left:682px;top:191px;width:4.0px;height:4.0px"></div><div id="c02-sst44" class="c02-st" style="left:207px;top:46px;width:1.7px;height:1.7px"></div><div id="c02-sst45" class="c02-st" style="left:1193px;top:12px;width:3.1px;height:3.1px"></div><div id="c02-sst46" class="c02-st" style="left:850px;top:310px;width:2.5px;height:2.5px"></div><div id="c02-sst47" class="c02-st" style="left:833px;top:148px;width:3.3px;height:3.3px"></div><div id="c02-sst48" class="c02-st" style="left:1569px;top:434px;width:2.6px;height:2.6px"></div><div id="c02-sst49" class="c02-st" style="left:1213px;top:578px;width:1.7px;height:1.7px"></div><div id="c02-sst50" class="c02-st" style="left:921px;top:295px;width:3.3px;height:3.3px"></div><div id="c02-sst51" class="c02-st" style="left:1456px;top:401px;width:3.6px;height:3.6px"></div><div id="c02-sst52" class="c02-st" style="left:1342px;top:410px;width:2.1px;height:2.1px"></div><div id="c02-sst53" class="c02-st" style="left:1584px;top:578px;width:4.0px;height:4.0px"></div><div id="c02-sst54" class="c02-st" style="left:12px;top:188px;width:2.3px;height:2.3px"></div><div id="c02-sst55" class="c02-st" style="left:153px;top:182px;width:3.9px;height:3.9px"></div><div id="c02-sst56" class="c02-st" style="left:1425px;top:277px;width:1.8px;height:1.8px"></div><div id="c02-sst57" class="c02-st" style="left:644px;top:385px;width:3.2px;height:3.2px"></div><div id="c02-sst58" class="c02-st" style="left:501px;top:571px;width:2.3px;height:2.3px"></div><div id="c02-sst59" class="c02-st" style="left:1308px;top:120px;width:3.0px;height:3.0px"></div>
+      <div id="c02-star"></div><div id="c02-moon2"><div style="position:absolute;left:0px;top:0px;width:150px;height:150px;border-radius:50%;background:radial-gradient(circle at 40% 38%,#fffdf3,#e6dfc8 65%,#cfc7ae);box-shadow:0 0 70px 24px rgba(230,236,255,0.3)"></div></div><div id="c02-sun2"></div>
+      <svg class="c02-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none"><path fill="#1a1612" d="M -100 780 Q 60 765 220 783 Q 380 769 540 795 Q 700 778 860 771 Q 1020 756 1180 771 Q 1340 758 1500 790 Q 1660 774 1820 779 Q 1980 764 2140 773 V 1100 H -100 Z"/><path fill="#100e0c" d="M -100 881 Q 60 863 220 844 Q 380 833 540 884 Q 700 865 860 847 Q 1020 833 1180 858 Q 1340 845 1500 880 Q 1660 862 1820 853 Q 1980 839 2140 860 V 1100 H -100 Z"/></svg>
+      </div>
+    </div>
+    <div id="c02-scr" class="c02-scrim clip" data-start="0" data-duration="68.82"></div>
+    <div id="c02-lab" class="c02-label clip" data-start="0.3" data-duration="4.6"><b>CHAPTER 2</b><i>The Star, the Moon and the Sun</i></div>
+    <div id="c02-cp0" class="c02-cap clip" data-start="0.22" data-duration="2.34">His people also worshipped the sky:</div>
+    <div id="c02-cp1" class="c02-cap clip" data-start="2.56" data-duration="2.45">the stars, the moon, the sun.</div>
+    <div id="c02-cp2" class="c02-cap clip" data-start="5.01" data-duration="2.94">So Ibrahim showed them, step by step,</div>
+    <div id="c02-cp3" class="c02-cap clip" data-start="7.95" data-duration="2.18">why none of these could be a god.</div>
+    <div id="c02-cp4" class="c02-cap clip" data-start="24.44" data-duration="1.73">this is my lord.</div>
+    <div id="c02-cp5" class="c02-cap clip" data-start="26.17" data-duration="3.83">But when it set, he said: unless my Lord guides me,</div>
+    <div id="c02-cp6" class="c02-cap clip" data-start="30.00" data-duration="3.42">I will surely be among those who go astray.</div>
+    <div id="c02-cp7" class="c02-cap clip" data-start="33.42" data-duration="3.68">Then the sun rose, the greatest light of all.</div>
+    <div id="c02-cp8" class="c02-cap clip" data-start="37.10" data-duration="3.47">This is my lord, he said, this is greater.</div>
+    <div id="c02-cp9" class="c02-cap clip" data-start="40.58" data-duration="4.18">But when the sun set too, he turned to his people and said:</div>
+    <div id="c02-cp10" class="c02-cap clip" data-start="44.75" data-duration="5.15">O my people, I am free from all that you associate with Allah.</div>
+    <div id="c02-cp11" class="c02-cap clip" data-start="64.47" data-duration="3.75">Only the One who made them never disappears.</div>
+    <div id="c02-k0w" class="c02-cardwrap clip" data-start="10.18" data-duration="10.97"><div id="c02-k0" class="c02-card"><div class="c02-ar" dir="rtl" lang="ar">لَآ أُحِبُّ ٱلۡأٓفِلِينَ</div><div class="c02-en">“…I like not those that disappear”</div><div class="c02-ref">Al-An&#x27;am 6:76</div></div></div>
+    <div id="c02-k1w" class="c02-cardwrap clip" data-start="49.96" data-duration="12.24"><div id="c02-k1" class="c02-card"><div class="c02-ar" dir="rtl" lang="ar">إِنِّي وَجَّهۡتُ وَجۡهِيَ لِلَّذِي فَطَرَ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضَ حَنِيفࣰاۖ وَمَآ أَنَا۠ مِنَ ٱلۡمُشۡرِكِينَ</div><div class="c02-en">“Indeed, I have turned my face toward He who created the heavens and the earth, inclining toward truth, and I am not of those who associate others with Allah”</div><div class="c02-ref">Al-An&#x27;am 6:79</div></div></div>
+    <div id="c02-fadeIn" class="c02-fade clip" data-start="0" data-duration="0.55" style="opacity:1"></div>
+    <div id="c02-fadeOut" class="c02-fade clip" data-start="68.32" data-duration="0.50" style="opacity:0"></div>
+    <div id="c02-br" class="c02-brand clip" data-start="0" data-duration="68.82">HAQ <span>·</span> STORIES</div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#c02-sst0", {opacity: 0.44}, {opacity: 1, duration: 1.09, ease: "sine.inOut", yoyo: true, repeat: 63, immediateRender: false}, 0.79);
+    tl.fromTo("#c02-sst2", {opacity: 0.48}, {opacity: 1, duration: 0.96, ease: "sine.inOut", yoyo: true, repeat: 71, immediateRender: false}, 0.79);
+    tl.fromTo("#c02-sst4", {opacity: 0.48}, {opacity: 1, duration: 0.93, ease: "sine.inOut", yoyo: true, repeat: 74, immediateRender: false}, 0.33);
+    tl.fromTo("#c02-sst6", {opacity: 0.34}, {opacity: 1, duration: 1.74, ease: "sine.inOut", yoyo: true, repeat: 40, immediateRender: false}, 0.45);
+    tl.fromTo("#c02-sst8", {opacity: 0.37}, {opacity: 1, duration: 1.60, ease: "sine.inOut", yoyo: true, repeat: 43, immediateRender: false}, 0.21);
+    tl.fromTo("#c02-sst10", {opacity: 0.34}, {opacity: 1, duration: 1.33, ease: "sine.inOut", yoyo: true, repeat: 52, immediateRender: false}, 0.83);
+    tl.fromTo("#c02-sst12", {opacity: 0.42}, {opacity: 1, duration: 1.80, ease: "sine.inOut", yoyo: true, repeat: 39, immediateRender: false}, 0.39);
+    tl.fromTo("#c02-sst14", {opacity: 0.47}, {opacity: 1, duration: 1.57, ease: "sine.inOut", yoyo: true, repeat: 44, immediateRender: false}, 0.22);
+    tl.fromTo("#c02-sst16", {opacity: 0.58}, {opacity: 1, duration: 1.21, ease: "sine.inOut", yoyo: true, repeat: 57, immediateRender: false}, 0.60);
+    tl.fromTo("#c02-sst18", {opacity: 0.51}, {opacity: 1, duration: 1.51, ease: "sine.inOut", yoyo: true, repeat: 46, immediateRender: false}, 0.90);
+    tl.fromTo("#c02-sst20", {opacity: 0.45}, {opacity: 1, duration: 1.24, ease: "sine.inOut", yoyo: true, repeat: 56, immediateRender: false}, 0.25);
+    tl.fromTo("#c02-sst22", {opacity: 0.55}, {opacity: 1, duration: 0.95, ease: "sine.inOut", yoyo: true, repeat: 73, immediateRender: false}, 0.26);
+    tl.fromTo("#c02-sst24", {opacity: 0.60}, {opacity: 1, duration: 1.57, ease: "sine.inOut", yoyo: true, repeat: 44, immediateRender: false}, 0.48);
+    tl.fromTo("#c02-sst26", {opacity: 0.55}, {opacity: 1, duration: 1.62, ease: "sine.inOut", yoyo: true, repeat: 43, immediateRender: false}, 0.88);
+    tl.fromTo("#c02-sst28", {opacity: 0.38}, {opacity: 1, duration: 1.59, ease: "sine.inOut", yoyo: true, repeat: 44, immediateRender: false}, 0.01);
+    tl.fromTo("#c02-sst30", {opacity: 0.48}, {opacity: 1, duration: 1.13, ease: "sine.inOut", yoyo: true, repeat: 61, immediateRender: false}, 0.41);
+    tl.fromTo("#c02-sst32", {opacity: 0.43}, {opacity: 1, duration: 1.03, ease: "sine.inOut", yoyo: true, repeat: 67, immediateRender: false}, 0.87);
+    tl.fromTo("#c02-sst34", {opacity: 0.35}, {opacity: 1, duration: 1.07, ease: "sine.inOut", yoyo: true, repeat: 65, immediateRender: false}, 0.38);
+    tl.fromTo("#c02-sst36", {opacity: 0.54}, {opacity: 1, duration: 0.91, ease: "sine.inOut", yoyo: true, repeat: 76, immediateRender: false}, 0.46);
+    tl.fromTo("#c02-sst38", {opacity: 0.39}, {opacity: 1, duration: 0.94, ease: "sine.inOut", yoyo: true, repeat: 73, immediateRender: false}, 0.39);
+    tl.fromTo("#c02-sst40", {opacity: 0.33}, {opacity: 1, duration: 1.44, ease: "sine.inOut", yoyo: true, repeat: 48, immediateRender: false}, 0.51);
+    tl.fromTo("#c02-sst42", {opacity: 0.32}, {opacity: 1, duration: 1.63, ease: "sine.inOut", yoyo: true, repeat: 42, immediateRender: false}, 0.98);
+    tl.fromTo("#c02-sst44", {opacity: 0.54}, {opacity: 1, duration: 1.58, ease: "sine.inOut", yoyo: true, repeat: 44, immediateRender: false}, 0.45);
+    tl.fromTo("#c02-sst46", {opacity: 0.42}, {opacity: 1, duration: 1.10, ease: "sine.inOut", yoyo: true, repeat: 63, immediateRender: false}, 0.05);
+    tl.fromTo("#c02-sst48", {opacity: 0.37}, {opacity: 1, duration: 1.25, ease: "sine.inOut", yoyo: true, repeat: 55, immediateRender: false}, 0.49);
+    tl.fromTo("#c02-sst50", {opacity: 0.57}, {opacity: 1, duration: 1.60, ease: "sine.inOut", yoyo: true, repeat: 43, immediateRender: false}, 0.63);
+    tl.fromTo("#c02-sst52", {opacity: 0.58}, {opacity: 1, duration: 1.25, ease: "sine.inOut", yoyo: true, repeat: 55, immediateRender: false}, 0.61);
+    tl.fromTo("#c02-sst54", {opacity: 0.42}, {opacity: 1, duration: 1.03, ease: "sine.inOut", yoyo: true, repeat: 67, immediateRender: false}, 0.55);
+    tl.fromTo("#c02-sst56", {opacity: 0.59}, {opacity: 1, duration: 1.53, ease: "sine.inOut", yoyo: true, repeat: 45, immediateRender: false}, 0.21);
+    tl.fromTo("#c02-sst58", {opacity: 0.38}, {opacity: 1, duration: 1.66, ease: "sine.inOut", yoyo: true, repeat: 42, immediateRender: false}, 0.15);
+    tl.fromTo("#c02-star", {opacity: 0, y: 0}, {opacity: 1, y: 40, duration: 1.50, ease: "sine.out", immediateRender: false}, 10.33);
+    tl.fromTo("#c02-star", {y: 40, opacity: 1}, {y: 640, opacity: 0, duration: 4.02, ease: "sine.in", immediateRender: false}, 15.85);
+    tl.fromTo("#c02-moon2", {opacity: 0, y: 0, x: 0}, {opacity: 1, y: -560, x: 500, duration: 7.22, ease: "sine.out", immediateRender: false}, 20.37);
+    tl.fromTo("#c02-moon2", {y: -560, x: 500, opacity: 1}, {y: 0, x: 1100, opacity: 0, duration: 5.25, ease: "sine.in", immediateRender: false}, 28.25);
+    tl.fromTo("#c02-day", {opacity: 0}, {opacity: 1, duration: 2.00, ease: "sine.inOut", immediateRender: false}, 33.50);
+    tl.fromTo("#c02-sun2", {opacity: 0, y: 0}, {opacity: 1, y: -620, duration: 5.67, ease: "sine.out", immediateRender: false}, 33.50);
+    tl.fromTo("#c02-sun2", {y: -620, opacity: 1}, {y: 0, opacity: 0, duration: 5.10, ease: "sine.in", immediateRender: false}, 39.74);
+    tl.fromTo("#c02-day", {opacity: 1}, {opacity: 0, duration: 2.00, ease: "sine.inOut", immediateRender: false}, 44.34);
+    tl.fromTo("#c02-k0w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 10.18);
+    tl.fromTo("#c02-k0", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 10.18);
+    tl.fromTo("#c02-k1w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 49.96);
+    tl.fromTo("#c02-k1", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 49.96);
+    tl.fromTo("#c02-lab", {opacity: 0, x: -20}, {opacity: 1, x: 0, duration: 0.60, ease: "power2.out", immediateRender: false}, 0.30);
+    tl.fromTo("#c02-lab", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 4.40);
+    tl.fromTo("#c02-scene", {scale: 1.0, x: 0}, {scale: 1.06, x: 30, duration: 68.82, ease: "none", immediateRender: false}, 0.00);
+    tl.fromTo("#c02-fadeIn", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 0.00);
+    tl.fromTo("#c02-fadeOut", {opacity: 0}, {opacity: 1, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 68.32);
+    window.__timelines["c02"] = tl;
+  </script>
+</template>

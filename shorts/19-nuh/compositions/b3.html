@@ -1,0 +1,24 @@
+<template>
+  <style>
+    #b3 { position: absolute; inset: 0; }
+    #b3-wrap { position: absolute; left: 60px; right: 60px; top: 300px; bottom: 780px;
+      display: flex; flex-direction: column; justify-content: center; gap: 34px; }
+  </style>
+  <div id="b3" data-composition-id="b3" data-width="1080" data-height="1920">
+    <div id="b3-wrap" class="clip" data-start="0" data-duration="4.62">
+      <div id="b3-ar" class="ar" dir="rtl" lang="ar">وَٱصۡنَعِ ٱلۡفُلۡكَ بِأَعۡيُنِنَا وَوَحۡيِنَا</div>
+      <div id="b3-tr" class="tr">“And construct the ship under Our observation and Our inspiration”</div>
+      <div id="b3-ur" class="ur" dir="rtl" lang="ur" data-layout-allow-overflow>ہماری نگرانی میں ہماری وحی کے مطابق ایک کشتی بنانی شروع کر دو</div>
+      <div id="b3-ref" class="ref">Hud 11:37</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#b3-ar", {opacity: 0, y: 30, filter: "blur(10px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.9, ease: "power2.out"}, 0.05);
+    tl.fromTo("#b3-tr", {opacity: 0, y: 20}, {opacity: 1, y: 0, duration: 0.7, ease: "power2.out"}, 0.6);
+    tl.fromTo("#b3-ur", {opacity: 0, y: 10}, {opacity: 1, y: 0, duration: 0.35, ease: "power2.out"}, 0.15);
+    tl.fromTo("#b3-ref", {opacity: 0, y: 12}, {opacity: 1, y: 0, duration: 0.45, ease: "power2.out"}, 0.35);
+    tl.fromTo("#b3-wrap", {opacity: 1}, {opacity: 0, duration: 0.22, ease: "power1.in"}, 4.38);
+    window.__timelines["b3"] = tl;
+  </script>
+</template>

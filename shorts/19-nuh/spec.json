@@ -1,0 +1,177 @@
+{
+  "accent": "#f2b04a",
+  "embers": false,
+  "flash": 0.4,
+  "bed_volume": 1.0,
+  "hold_end": 0.5,
+  "text_top": 300,
+  "text_bottom": 780,
+  "tr_size": 56,
+  "scene": "flood",
+  "build_beat": 2,
+  "flood_beat": 3,
+  "calm_beat": 4,
+  "beats": [
+    {
+      "hook": true,
+      "text": "*950* years he called them…",
+      "sub": "…then the flood came.",
+      "ur": "ساڑھے نو سو برس دعوت دی… پھر طوفان آ گیا",
+      "mood": {
+        "warm": 0.1,
+        "cool": 0
+      },
+      "reveal": false
+    },
+    {
+      "q": "29:14",
+      "ar_words": [
+        6,
+        12
+      ],
+      "en": "he remained among them a thousand years minus fifty years",
+      "ur_a": [
+        "وہ پچاس",
+        "درمیان رہا"
+      ],
+      "ref": "Al-Ankabut 29:14",
+      "mood": {
+        "warm": 0.2,
+        "cool": 0.1
+      },
+      "arabic": "فَلَبِثَ فِيهِمۡ أَلۡفَ سَنَةٍ إِلَّا خَمۡسِينَ عَامࣰا",
+      "translation": "“he remained among them a thousand years minus fifty years”",
+      "ur": "وہ پچاس کم ایک ہزار برس اُن کے درمیان رہا"
+    },
+    {
+      "q": "11:37",
+      "ar_words": [
+        1,
+        4
+      ],
+      "en": "And construct the ship under Our observation and Our inspiration",
+      "ur_a": [
+        "ہماری نگرانی",
+        "کشتی بنانی شروع کر دو"
+      ],
+      "ref": "Hud 11:37",
+      "mood": {
+        "warm": 0.3,
+        "cool": 0
+      },
+      "arabic": "وَٱصۡنَعِ ٱلۡفُلۡكَ بِأَعۡيُنِنَا وَوَحۡيِنَا",
+      "translation": "“And construct the ship under Our observation and Our inspiration”",
+      "ur": "ہماری نگرانی میں ہماری وحی کے مطابق ایک کشتی بنانی شروع کر دو"
+    },
+    {
+      "text": "Rain from the *sky*. Springs from the earth. Waves like mountains.",
+      "size": 100,
+      "ur": "آسمان سے موسلا دھار بارش… زمین سے چشمے… اور پہاڑوں جیسی موجیں",
+      "ref": "Al-Qamar 54:11–12 · Hud 11:42",
+      "mood": {
+        "warm": 0,
+        "cool": 0.2
+      }
+    },
+    {
+      "q": "11:44",
+      "ar_words": [
+        1,
+        6
+      ],
+      "en": "O earth, swallow your water, and O sky, withhold [your rain]",
+      "ur_a": [
+        "اے زمین",
+        "رک جا"
+      ],
+      "ref": "Hud 11:44",
+      "mood": {
+        "warm": 0.4,
+        "cool": 0.3
+      },
+      "arabic": "وَقِيلَ يَـٰٓأَرۡضُ ٱبۡلَعِي مَآءَكِ وَيَٰسَمَآءُ أَقۡلِعِي",
+      "translation": "“O earth, swallow your water, and O sky, withhold [your rain]”",
+      "ur": "اے زمین، اپنا سارا پانی نگل جا اور اے آسمان، رک جا"
+    },
+    {
+      "cta": true,
+      "text": "Follow for more.",
+      "ur": "فالو کریں",
+      "mood": {
+        "warm": 0.3,
+        "cool": 0.3
+      }
+    }
+  ],
+  "sound": [
+    {
+      "prompt": "lib",
+      "src": "../03-cave/assets/sfx/03b5f68efefc.mp3",
+      "beat": 0,
+      "offset": 0,
+      "dur": 3,
+      "gain": -6,
+      "fade_in": 0,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "lib",
+      "src": "../../long/01-yusuf/assets/sfx/59352a0d56de.mp3",
+      "beat": 0,
+      "offset": 0,
+      "dur": 9,
+      "gain": -13,
+      "fade_in": 0.3,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "wooden hammering and sawing, a large wooden ship being built, wind",
+      "beat": 2,
+      "offset": 0,
+      "dur": 7,
+      "gain": -11,
+      "fade_in": 0.2,
+      "fade_out": 1.0
+    },
+    {
+      "prompt": "lib",
+      "src": "../04-ease/assets/sfx/3835e3c98c45.mp3",
+      "beat": 3,
+      "offset": 0,
+      "dur": 9,
+      "gain": -8,
+      "fade_in": 0.5,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "lib",
+      "src": "../04-ease/assets/sfx/13fce06b48a0.mp3",
+      "beat": 3,
+      "offset": 0.8,
+      "dur": 4,
+      "gain": -7,
+      "fade_in": 0,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "lib",
+      "src": "../04-ease/assets/sfx/61e97fb787a5.mp3",
+      "beat": 4,
+      "offset": 0,
+      "dur": 10,
+      "gain": -13,
+      "fade_in": 1.5,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "lib",
+      "src": "../04-ease/assets/sfx/ed4334fb2fbf.mp3",
+      "beat": 4,
+      "offset": 0,
+      "dur": 10,
+      "gain": -14,
+      "fade_in": 1.5,
+      "fade_out": 2
+    }
+  ]
+}
