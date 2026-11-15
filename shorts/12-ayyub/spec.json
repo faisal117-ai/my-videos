@@ -12,12 +12,13 @@
     {
       "hook": true,
       "text": "He lost *everything*…",
-      "ur": "سب کچھ کھو دیا…",
+      "ur": "سب کچھ کھو دیا… پھر اللہ نے سب لوٹا دیا، اور اس سے بڑھ کر",
       "mood": {
-        "warm": 0.1,
+        "warm": 0.35,
         "cool": 0
       },
-      "reveal": false
+      "reveal": false,
+      "sub": "…then Allah gave it all back, and more."
     },
     {
       "text": "His *health*, his family, his wealth… for years. And he never complained.",
@@ -162,5 +163,6 @@
   "years_beat": 1,
   "dua_beat": 2,
   "answer_beat": 3,
-  "mercy_beat": 4
+  "mercy_beat": 4,
+  "bright_hook": true
 }

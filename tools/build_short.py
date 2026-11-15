@@ -855,9 +855,23 @@ def sea_scene(spec: dict, beats: list, total: float) -> tuple[str, str, str]:
 """
     ribs = "".join(f'<path d="M {x} 1100 Q {540 + (x - 540) * 1.25:.0f} 1500 {x} 1900" stroke="rgba(120,90,110,0.35)" stroke-width="10" fill="none"/>'
                    for x in (120, 300, 780, 960))
+    # Bright opening (spec "bright_hook"): a glowing sunset and the great fish already visible under
+    # the water, so the first frame is not a dark screen; it fades into the dusk when the story starts.
+    bright = spec.get("bright_hook", False)
+    hook_sky = ('<div id="shook"></div><div id="shsun"></div>' if bright else "")
+    hook_fish = ('<svg id="shfish" viewBox="0 0 900 360"><g fill="#0a1424">'
+                 '<ellipse cx="420" cy="180" rx="380" ry="130"/><path d="M 60 180 L -60 60 L -20 180 L -60 300 Z"/>'
+                 '<path d="M 360 60 Q 420 -20 480 60 Z"/></g><circle cx="720" cy="150" r="12" fill="#ffd38a"/></svg>' if bright else "")
+    if bright:
+        css += """
+    #shook { position: absolute; inset: 0; background: linear-gradient(180deg, #2a2a5a 0%, #8a4a6a 34%, #e7875a 54%, #ffc27a 66%, #2a3a5a 70%); }
+    #shsun { position: absolute; left: 380px; top: 1150px; width: 320px; height: 320px; border-radius: 50%;
+      background: radial-gradient(circle, #fff3d0 0%, #ffd38a 35%, rgba(255,170,90,0) 70%); }
+    #shfish { position: absolute; left: 120px; top: 1380px; width: 900px; height: 360px; opacity: 0.9; }
+"""
     markup = f"""
     <div id="sea" class="clip" data-start="0" data-duration="{total:.2f}">
-      <div id="sdusk"></div><div id="sstorm"></div><div id="sbolt"></div>
+      <div id="sdusk"></div>{hook_sky}<div id="sstorm"></div><div id="sbolt"></div>
       <svg id="scoast" viewBox="0 0 1080 1920" preserveAspectRatio="none"><g fill="#141826">
         <path d="M 0 1300 L 0 1180 L 60 1180 L 60 1140 L 110 1140 L 110 1190 L 170 1190 L 170 1160 L 230 1160 L 230 1210 L 300 1230 L 330 1300 Z"/></g></svg>
       <svg id="sship" viewBox="0 0 320 300">
@@ -870,6 +884,7 @@ def sea_scene(spec: dict, beats: list, total: float) -> tuple[str, str, str]:
       <svg id="sfish" viewBox="0 0 900 360"><g fill="#05070d">
         <ellipse cx="420" cy="180" rx="380" ry="130"/><path d="M 60 180 L -60 60 L -20 180 L -60 300 Z"/>
         <path d="M 360 60 Q 420 -20 480 60 Z"/></g><circle cx="720" cy="150" r="10" fill="#1a2440"/></svg>
+      {hook_fish}
       {waves_svg("sw3", 1560, 40, "#0c1628")}
       <div id="srain">{drops}</div>
       <div id="sd1" style="opacity:0"></div><div id="sd2" style="opacity:0"></div><div id="sd3" style="opacity:0"></div>
@@ -887,6 +902,11 @@ def sea_scene(spec: dict, beats: list, total: float) -> tuple[str, str, str]:
     js = [rain_js]
     for k, (sp, dist) in enumerate([(9, 1080), (7, 1080), (5.5, 1080)]):
         js.append(f'tl.fromTo("#sw{k + 1}", {{x: 0}}, {{x: -{dist}, duration: {sp:.2f}, ease: "none", repeat: {int(total / sp) + 1}}}, 0);')
+    if bright:
+        h1 = leave["start"]
+        js.append(f'tl.fromTo("#shfish", {{x: 0}}, {{x: -140, duration: {h1 + 1:.2f}, ease: "sine.inOut"}}, 0);')
+        for sel in ("#shook", "#shsun", "#shfish"):
+            js.append(fade(sel, 1, 0, max(h1 - 0.4, 0.5), 1.2))
     # The coast drifts away as he leaves.
     js.append(f'tl.fromTo("#scoast", {{x: 0}}, {{x: -360, duration: {storm["start"]:.2f}, ease: "none"}}, 0);')
     # Storm: the ship rocks, rain, lightning; then the fish passes under.
@@ -1123,9 +1143,17 @@ def ayyub_scene(spec: dict, beats: list, total: float) -> tuple[str, str, str]:
     #apool { position: absolute; left: 380px; top: 1680px; width: 320px; height: 60px; border-radius: 50%; opacity: 0;
       background: radial-gradient(ellipse, #bfe6f6, #5aa8d0 60%, rgba(90,168,208,0) 72%); }
 """
+    bright = spec.get("bright_hook", False)
+    hook_sky = '<div id="ahook"></div><div id="ahsun"></div>' if bright else ""
+    if bright:
+        css += """
+    #ahook { position: absolute; inset: 0; background: linear-gradient(180deg, #3a2a50 0%, #a85a50 40%, #f0995a 58%, #ffd08a 68%, #6a4a30 76%); }
+    #ahsun { position: absolute; left: 600px; top: 1180px; width: 340px; height: 340px; border-radius: 50%;
+      background: radial-gradient(circle, #fff3d0 0%, #ffcf80 35%, rgba(255,170,90,0) 70%); }
+"""
     markup = f"""
     <div id="ayyub" class="clip" data-start="0" data-duration="{total:.2f}">
-      <div id="asky"></div><div id="agreen"></div><div id="anight"></div><div id="astars">{stars}</div>
+      <div id="asky"></div>{hook_sky}<div id="agreen"></div><div id="anight"></div><div id="astars">{stars}</div>
       <svg id="aland" viewBox="0 0 1080 1920" preserveAspectRatio="none">
         <path fill="#5a4330" d="M 0 1470 Q 540 1420 1080 1470 V 1920 H 0 Z"/>{cracks}</svg>
       <svg id="alush" viewBox="0 0 1080 1920" preserveAspectRatio="none">
@@ -1146,6 +1174,9 @@ def ayyub_scene(spec: dict, beats: list, total: float) -> tuple[str, str, str]:
       <div id="apool"></div><div id="aspring">{drops}</div>
     </div>"""
     js = []
+    if bright:
+        for sel in ("#ahook", "#ahsun"):
+            js.append(fade(sel, 1, 0, max(years["start"] - 0.4, 0.5), 1.4))
     # Years pass: day and night flicker over the same dry field, leaves fall.
     y0, ysp = years["start"] + 0.2, years["dur"] - 0.4
     per = ysp / 5
