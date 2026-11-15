@@ -82,3 +82,9 @@ Check YouTube Studio → Earn for the current thresholds.
 - Batch production: about 10 Shorts a week, made in batches of 5 so the queue never runs dry.
 - Weekly: Studio → Earn, note subscribers and hours.
 - Every 2 weeks: export the CSV again (or read it from Metricool, connected 13 Nov) and update this plan.
+
+## Decisions, 15 Nov 2026 (weekly review)
+- **Film thumbnails:** bright, 5–6 bold words (the user's preference). The Musa thumbnails are the user's own design (English) and its Urdu version (`thumbs/musa-ur.jpg`); villains such as Pharaoh may be drawn with a face. Prophets, righteous women and angels are never shown.
+- **Short openings:** after "Musa's mother" (dark night opening, 30% viewed vs. swiped), Yunus and Ayyub got a bright opening with the twist line on screen in the first 1–2 s (`bright_hook` in `build_short.py`). The other scheduled dark openings (wall, Nuh, idols, sacrifice) stay as they are, by the user's choice; compare their viewed % with Yunus and Ayyub.
+- **Rules for new Shorts:** bright warm first frame, the main object visible from the first second, setup + twist on screen within 2 s, hope shown early.
+- **Google Ads:** video-views campaign since 14 Nov, prepaid PKR 4,250, PKR 850/day, target CPV PKR 5, Pakistan, India, Bangladesh, UAE, Saudi Arabia, UK. English Musa film; Urdu Musa film added 15 Nov (AI label on). First day: 392 paid views at Rs 2, 2:44 average watched. Ad watch time does not count toward monetisation; judge it on whether free (non-ad) impressions and views grow.
