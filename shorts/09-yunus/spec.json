@@ -12,12 +12,13 @@
     {
       "hook": true,
       "text": "Swallowed… in the *darkness* of the sea",
-      "ur": "سمندر کی تاریکی میں… نگل لیا گیا",
+      "ur": "سمندر کی تاریکی میں نگل لیا گیا… پھر ایک جملے نے بچا لیا",
       "mood": {
-        "warm": 0,
+        "warm": 0.35,
         "cool": 0
       },
-      "reveal": false
+      "reveal": false,
+      "sub": "…then one sentence saved him."
     },
     {
       "text": "A storm. The sea. And a huge *fish* swallowed him.",
@@ -169,5 +170,6 @@
   "storm_beat": 1,
   "dark_beat": 2,
   "call_beat": 3,
-  "saved_beat": 4
+  "saved_beat": 4,
+  "bright_hook": true
 }
