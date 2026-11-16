@@ -7,7 +7,7 @@
 **When:** Tue 17 Nov 2026, 7:00 PM PKT (scheduled in Metricool).
 
 ## Title
-Hazrat Yusuf AS Ka Mukammal Waqia | Full Movie in Urdu | حضرت یوسفؑ
+Hazrat Yusuf AS Ka Mukammal Waqia | Full Movie in Urdu/Hindi | حضرت یوسفؑ
 
 ## Description
 جنہیں ان کے اپنے بھائیوں نے کنویں میں پھینک دیا… وہ ایک دن مصر کے خزانوں کے نگران بنے۔ کنواں، غلامی، قید خانہ… اور پھر تخت۔ اور جب وہی بھائی ان کے سامنے کھڑے تھے، تو انہوں نے فرمایا: آج تم پر کوئی گرفت نہیں۔
@@ -15,6 +15,7 @@ Hazrat Yusuf AS Ka Mukammal Waqia | Full Movie in Urdu | حضرت یوسفؑ
 یہ قرآن سے حضرت یوسف علیہ السلام کا مکمل قصہ ہے، سورۃ یوسف سے: گیارہ ستاروں کا خواب، کنواں، چند درہموں میں فروخت، بند دروازے، قید خانہ، بادشاہ کا خواب، سنہری پیالہ، حضرت یعقوب علیہ السلام کا صبرِ جمیل، اور تیسرا قمیص۔
 
 Hazrat Yusuf AS ka mukammal waqia, Quran se, Urdu mein: bhaiyon ka hasad, kunwan, Misr, qaid khana, badshah ka khwab aur sabr-e-jameel.
+हज़रत यूसुफ़ (अ.स.) का मुकम्मल वाक़िया, क़ुरआन से
 
 "اگلے لوگوں کے ان قصوں میں عقل و ہوش رکھنے والوں کے لیے عبرت ہے" (یوسف 12:111)
 
@@ -46,7 +47,7 @@ English version: https://youtu.be/2l7eG427nRY
 #HazratYusuf #QasasUlAnbiya #IslamicStoriesUrdu
 
 ## Tags
-hazrat yusuf ka waqia, hazrat yousuf ka qissa, hazrat yusuf story in urdu, yusuf as aur zulekha, surah yusuf ka waqia, qasas ul anbiya urdu, anbiya ke waqiat, islamic movie urdu, full movie in urdu, quran ke waqiat, prophet yusuf story urdu, haq stories
+hazrat yusuf ka waqia, hazrat yousuf ka qissa, hazrat yusuf story in urdu, hazrat yusuf story in hindi, हज़रत यूसुफ़, yusuf as aur zulekha, surah yusuf ka waqia, qasas ul anbiya urdu, anbiya ke waqiat, islamic movie urdu, full movie in urdu, quran ke waqiat, prophet yusuf story urdu, haq stories
 
 ## Upload settings
 - **Video language:** Urdu. **Made for kids:** No. **Category:** Education. **Altered or synthetic content:** No.
