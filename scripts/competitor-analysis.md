@@ -161,3 +161,44 @@ channels sit in the hundreds, as our Yusuf film (17 views) does so far.
 2. **Try the numbered-series format** for one long story (e.g. Ibrahim (AS) in 5–6 episodes of
    12–15 min), alongside the complete film.
 3. **Keep English**, but expect it to grow through search slowly; Shorts are what reach English viewers now.
+
+---
+
+## Part 3: topic search (16 Nov 2026)
+16 YouTube searches in English and Urdu (prophet stories, Quran stories, Islamic movies, qiyamat, jannah,
+iblis…), about 400 unique videos. Recitation and kids' songs excluded from the conclusions. The sample
+follows the search terms, so it shows what ranks, not the whole of YouTube.
+
+Biggest story hits: Prophet Yousuf (Urdu dubbed drama) 41.6M · Urdu Stories of the Prophets, Nuh 20.6M ·
+Towards Eternity, Life of Prophet Muhammad ﷺ (AI-visualised Sirah) 15.9M · Deen Stories TV, ALI – The Movie
+15.3M · Stories of the Prophets, Nuh (English) 12.8M · Islam Studio 9, Hazrat Musa Ka Waqia (131 min) 12.7M ·
+Ibrahim (English) 8.2M · Hazrat Yousaf ka Waqia (Islamic LifeCycle) 8.0M · Ramsha Sultan, Yusuf in Urdu/Hindi
+7.2M · Qaum-e-Aad, why Allah destroyed them (13 min) 4.1M · Shab-e-Miraj ka mukammal waqia 3.8M ·
+25 Nabi ki kahani, full movie 3.8M.
+
+| Topic | Videos found | Median views | Biggest |
+|---|---|---|---|
+| Nuh and the flood | 4 | 6.6M | 20.6M |
+| Yunus | 6 | 2.0M | 3.1M |
+| Ibrahim | 9 | 1.8M | 20.9M (kids' song) / 8.2M story |
+| Ayyub | 2 | 1.6M | 2.3M |
+| Lut, Salih, Hud (destroyed nations) | 5 | 1.3M | 3.3M (Aad 4.1M) |
+| Musa and Pharaoh | 34 | 484K | 12.7M |
+| Muhammad ﷺ (Sirah, Isra and Mi'raj) | 54 | 465K | 15.9M |
+| Yusuf | 39 | 350K | 41.6M (most total views: 98M) |
+| Adam | 11 | 290K | 5.2M |
+| Grave and Barzakh | 10 | 200K | 3.0M |
+| Jannah and Jahannam | 41 | 121K | 3.0M |
+| Day of Judgment, signs | 65 | 110K | 3.0M |
+| Iblis and jinn | 44 | 8K | 2.2M |
+
+Length: 10–20 min median 531K, 20–40 min 495K, 1–10 min 337K, 40+ min 287K (but the biggest single hits are long).
+
+What it adds:
+1. Nuh is the strongest single topic: our next film (28/29 Nov) is the right pick.
+2. Yusuf has the most total views, and the biggest Yusuf hits are in Urdu. Our Yusuf film exists only in
+   English: an Urdu Yusuf film (same scenes, new Urdu voice) is the cheapest strong next film.
+3. Destroyed nations (Aad, Thamud, Lut) do well in 10–15 min films: a film of its own.
+4. Isra and Mi'raj (27 Rajab ≈ early Jan 2027) is a seasonal hit; would have to be told without showing the
+   Prophet ﷺ or the angels: sky, stars, Masjid al-Aqsa and Makkah only.
+5. Unseen-world topics (Iblis, Dajjal, signs) did weakly in this sample; prophet stories lead.
