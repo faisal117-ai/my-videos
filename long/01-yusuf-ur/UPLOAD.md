@@ -7,7 +7,7 @@
 **When:** Tue 17 Nov 2026, 7:00 PM PKT (scheduled in Metricool).
 
 ## Title
-Qasas ul Anbiya EP 1: Hazrat Yusuf AS Ka Mukammal Waqia | Full Movie in Urdu/Hindi | حضرت یوسفؑ
+Qasas ul Anbiya EP 2: Hazrat Yusuf AS Ka Mukammal Waqia | Full Movie in Urdu/Hindi | حضرت یوسفؑ
 
 ## Description
 جنہیں ان کے اپنے بھائیوں نے کنویں میں پھینک دیا… وہ ایک دن مصر کے خزانوں کے نگران بنے۔ کنواں، غلامی، قید خانہ… اور پھر تخت۔ اور جب وہی بھائی ان کے سامنے کھڑے تھے، تو انہوں نے فرمایا: آج تم پر کوئی گرفت نہیں۔
