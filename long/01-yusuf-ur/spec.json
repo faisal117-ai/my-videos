@@ -1,0 +1,1069 @@
+{
+  "accent": "#f2b04a",
+  "gap": 0.7,
+  "chapters": [
+    {
+      "title": null,
+      "scene": "hall",
+      "cards": [
+        {
+          "line": 1,
+          "en": "give us full measure and be charitable to us",
+          "q": "12:88",
+          "w": [
+            13,
+            17
+          ],
+          "ur": "آپ ہمیں بھر پور غلہ عنایت فرمائیں"
+        },
+        {
+          "line": 2,
+          "en": "he recognized them, but he was to them unknown",
+          "q": "12:58",
+          "w": [
+            6,
+            9
+          ],
+          "ur": "اس نے انہیں پہچان لیا مگر وہ اس سے نا آشنا تھے"
+        },
+        {
+          "line": 5,
+          "en": "the best of stories",
+          "q": "12:3",
+          "w": [
+            4,
+            5
+          ],
+          "ur": "بہترین پیرایہ میں واقعات اور حقائق تم سے بیان کرتے ہیں"
+        },
+        {
+          "line": 6,
+          "title": "کنویں سے تخت تک",
+          "sub": "حضرت یوسف علیہ السلام کا مکمل قصہ"
+        }
+      ]
+    },
+    {
+      "title": "گیارہ ستاروں کا خواب",
+      "scene": "dream",
+      "cards": [
+        {
+          "line": 1,
+          "en": "O my father, indeed I have seen [in a dream] eleven stars and the sun and the moon; I saw them prostrating to me",
+          "q": "12:4",
+          "w": [
+            5,
+            15
+          ],
+          "ur": "ابا جان، میں نے خواب دیکھا ہے کہ گیارہ ستارے ہیں اور سورج اور چاند ہیں اور وہ مجھے سجدہ کر رہے ہیں"
+        },
+        {
+          "line": 3,
+          "en": "O my son, do not relate your vision to your brothers or they will contrive against you a plan",
+          "q": "12:5",
+          "w": [
+            1,
+            10
+          ],
+          "ur": "بیٹا، اپنا یہ خواب اپنے بھائیوں کو نہ سنانا ورنہ وہ تیرے درپے آزار ہو جائیں گے"
+        },
+        {
+          "line": 4,
+          "en": "And thus will your Lord choose you",
+          "q": "12:6",
+          "w": [
+            1,
+            3
+          ],
+          "ur": "تیرا رب تجھے (اپنے کام کے لیے) منتخب کرے گا اور تجھے باتوں کی تہ تک پہنچنا سکھائے گا"
+        }
+      ]
+    },
+    {
+      "title": "کنواں",
+      "scene": "well",
+      "cards": [
+        {
+          "line": 1,
+          "en": "Do not kill Joseph but throw him into the bottom of the well",
+          "q": "12:10",
+          "w": [
+            4,
+            10
+          ],
+          "ur": "یوسفؑ کو قتل نہ کرو، اگر کچھ کرنا ہی ہے تو اسے کسی اندھے کنویں میں ڈال دو"
+        },
+        {
+          "line": 3,
+          "en": "I fear that a wolf would eat him while you are of him unaware",
+          "q": "12:13",
+          "w": [
+            7,
+            13
+          ],
+          "ur": "اور مجھ کو اندیشہ ہے کہ کہیں اسے بھیڑیا نہ پھاڑ کھا ئے جبکہ تم اس سے غافل ہو"
+        },
+        {
+          "line": 7,
+          "en": "You will surely inform them [someday] about this affair of theirs while they do not perceive",
+          "q": "12:15",
+          "w": [
+            10,
+            17
+          ],
+          "ur": "ایک وقت آئے گا جب تو ان لوگوں کو ان کی یہ حرکت جتائے گا"
+        },
+        {
+          "line": 10,
+          "en": "And they brought upon his shirt false blood",
+          "q": "12:18",
+          "w": [
+            1,
+            5
+          ],
+          "ur": "اور وہ یوسفؑ کے قمیص پر جھوٹ موٹ کا خون لگا کر آئے تھے"
+        },
+        {
+          "line": 11,
+          "en": "so patience is most fitting. And Allah is the one sought for help",
+          "q": "12:18",
+          "w": [
+            12,
+            15
+          ],
+          "ur": "اچھا، صبر کروں گا اور بخوبی کروں گا، جو بات تم بنا رہے ہو اس پر اللہ ہی سے مدد مانگی جا سکتی ہے"
+        }
+      ]
+    },
+    {
+      "title": "چند درہموں میں فروخت",
+      "scene": "caravan",
+      "cards": [
+        {
+          "line": 2,
+          "en": "they sold him for a reduced price - a few dirhams",
+          "q": "12:20",
+          "w": [
+            1,
+            5
+          ],
+          "ur": "آخر کار انہوں نے اس کو تھوڑی سی قیمت پر چند درہموں کے عوض بیچ ڈالا"
+        },
+        {
+          "line": 5,
+          "en": "And Allah is predominant over His affair, but most of the people do not know",
+          "q": "12:21",
+          "w": [
+            24,
+            32
+          ],
+          "ur": "اللہ اپنا کام کر کے رہتا ہے، مگر اکثر لوگ جانتے نہیں ہیں"
+        }
+      ]
+    },
+    {
+      "title": "بند دروازے",
+      "scene": "doors",
+      "cards": [
+        {
+          "line": 0,
+          "en": "She closed the doors",
+          "q": "12:23",
+          "w": [
+            8,
+            9
+          ],
+          "ur": "ایک روز دروازے بند کر کے"
+        },
+        {
+          "line": 1,
+          "en": "[I seek] the refuge of Allah",
+          "q": "12:23",
+          "w": [
+            13,
+            15
+          ],
+          "ur": "خدا کی پناہ"
+        },
+        {
+          "line": 7,
+          "en": "But if his shirt is torn from the back, then she has lied, and he is of the truthful",
+          "q": "12:27",
+          "w": [
+            1,
+            10
+          ],
+          "ur": "اور اگر اس کا قمیص پیچھے سے پھٹا ہو تو عورت جھوٹی ہے"
+        }
+      ]
+    },
+    {
+      "title": "شہر کی عورتیں",
+      "scene": "banquet",
+      "cards": [
+        {
+          "line": 3,
+          "en": "and cut their hands",
+          "q": "12:31",
+          "w": [
+            20,
+            21
+          ],
+          "ur": "اور اپنے ہاتھ کاٹ بیٹھیں"
+        },
+        {
+          "line": 6,
+          "en": "My Lord, prison is more to my liking than that to which they invite me",
+          "q": "12:33",
+          "w": [
+            1,
+            8
+          ],
+          "ur": "اے میرے رب، قید مجھے منظور ہے بہ نسبت اس کے کہ میں وہ کام کروں جو یہ لوگ مجھ سے چاہتے ہیں"
+        }
+      ]
+    },
+    {
+      "title": "قید خانہ اور دو خواب",
+      "scene": "prison",
+      "cards": [
+        {
+          "line": 5,
+          "en": "O [my] two companions of prison, are separate lords better or Allah, the One, the Prevailing",
+          "q": "12:39",
+          "w": [
+            1,
+            9
+          ],
+          "ur": "اے زنداں کے ساتھیو، تم خود ہی سوچو کہ بہت سے متفرق رب بہتر ہیں یا وہ ایک اللہ جو سب غالب ہے؟"
+        },
+        {
+          "line": 7,
+          "en": "Mention me before your master",
+          "q": "12:42",
+          "w": [
+            7,
+            9
+          ],
+          "ur": "اپنے رب (شاہ مصر) سے میرا ذکر کرنا"
+        }
+      ]
+    },
+    {
+      "title": "بادشاہ کا خواب",
+      "scene": "cows",
+      "cards": [
+        {
+          "line": 1,
+          "en": "Indeed, I have seen [in a dream] seven fat cows being eaten by seven [that were] lean, and seven green spikes [of grain] and others [that were] dry",
+          "q": "12:43",
+          "w": [
+            3,
+            15
+          ],
+          "ur": "میں نے خواب میں دیکھا ہے کہ سات موٹی گائیں ہیں جن کو سات دبلی گائیں کھا رہی ہیں، اور اناج کی سات بالیں ہری ہیں اور دوسری سات سوکھی"
+        },
+        {
+          "line": 8,
+          "text": "7 سال *خوشحالی* · 7 سال سختی · پھر بارش",
+          "ref": "یوسف ⁦12:47–49⁩"
+        }
+      ]
+    },
+    {
+      "title": "قید خانے سے خزانوں تک",
+      "scene": "granary",
+      "cards": [
+        {
+          "line": 3,
+          "en": "Now the truth has become evident. It was I who sought to seduce him, and indeed, he is of the truthful",
+          "q": "12:51",
+          "w": [
+            20,
+            29
+          ],
+          "ur": "اب حق کھل چکا ہے، وہ میں ہی تھی جس نے اُس کو پھسلانے کی کوشش کی تھی، بے شک وہ بالکل سچا ہے"
+        },
+        {
+          "line": 5,
+          "en": "Appoint me over the storehouses of the land. Indeed, I will be a knowing guardian",
+          "q": "12:55",
+          "w": [
+            1,
+            8
+          ],
+          "ur": "ملک کے خزانے میرے سپرد کیجیے، میں حفاظت کرنے والا بھی ہوں اور علم بھی رکھتا ہوں"
+        },
+        {
+          "line": 7,
+          "en": "We do not allow to be lost the reward of those who do good",
+          "q": "12:56",
+          "w": [
+            14,
+            17
+          ],
+          "ur": "نیک لوگوں کا اجر ہمارے ہاں مارا نہیں جاتا"
+        }
+      ]
+    },
+    {
+      "title": "بھائی اور سنہری پیالہ",
+      "scene": "store",
+      "cards": [
+        {
+          "line": 3,
+          "en": "But Allah is the best guardian, and He is the most merciful of the merciful",
+          "q": "12:64",
+          "w": [
+            12,
+            17
+          ],
+          "ur": "اللہ ہی بہتر محافظ ہے اور وہ سب سے بڑھ کر رحم فرمانے والا ہے"
+        },
+        {
+          "line": 5,
+          "en": "Indeed, I am your brother, so do not despair over what they used to do",
+          "q": "12:69",
+          "w": [
+            9,
+            16
+          ],
+          "ur": "میں تیرا وہی بھائی ہوں (جو کھویا گیا تھا) اب تو اُن باتوں کا غم نہ کر جو یہ لوگ کرتے رہے ہیں"
+        },
+        {
+          "line": 8,
+          "text": "حضرت یوسفؑ کے بھائی، جن کا نام *بنیامین* بیان کیا جاتا ہے",
+          "ref": "یوسف ⁦12:76⁩"
+        }
+      ]
+    },
+    {
+      "title": "میں اپنے غم کی فریاد اللہ سے کرتا ہوں",
+      "scene": "home",
+      "cards": [
+        {
+          "line": 3,
+          "en": "so patience is most fitting. Perhaps Allah will bring them to me all together",
+          "q": "12:83",
+          "w": [
+            7,
+            14
+          ],
+          "ur": "کیا بعید ہے کہ اللہ ان سب کو مجھ سے لا ملا ئے"
+        },
+        {
+          "line": 6,
+          "en": "I only complain of my suffering and my grief to Allah, and I know from Allah that which you do not know",
+          "q": "12:86",
+          "w": [
+            1,
+            13
+          ],
+          "ur": "میں اپنی پریشانی اور اپنے غم کی فریاد اللہ کے سوا کسی سے نہیں کرتا، اور اللہ سے جیسا میں واقف ہوں تم نہیں ہو"
+        },
+        {
+          "line": 7,
+          "en": "despair not of relief from Allah",
+          "q": "12:87",
+          "w": [
+            7,
+            11
+          ],
+          "ur": "اللہ کی رحمت سے مایوس نہ ہو"
+        }
+      ]
+    },
+    {
+      "title": "میں یوسف ہوں",
+      "scene": "reveal",
+      "cards": [
+        {
+          "line": 3,
+          "en": "Do you know what you did with Joseph and his brother when you were ignorant",
+          "q": "12:89",
+          "w": [
+            2,
+            10
+          ],
+          "ur": "تمہیں کچھ یہ بھی معلوم ہے کہ تم نے یوسفؑ اور اُس کے بھائی کے ساتھ کیا کیا تھا جبکہ تم نادان تھے"
+        },
+        {
+          "line": 6,
+          "en": "I am Joseph, and this is my brother",
+          "q": "12:90",
+          "w": [
+            5,
+            9
+          ],
+          "ur": "ہاں، میں یوسفؑ ہوں اور یہ میرا بھائی ہے"
+        },
+        {
+          "line": 11,
+          "en": "No blame will there be upon you today. Allah will forgive you; and He is the most merciful of the merciful",
+          "q": "12:92",
+          "w": [
+            2,
+            11
+          ],
+          "ur": "آج تم پر کوئی گرفت نہیں، اللہ تمہیں معاف کرے، وہ سب سے بڑھ کر رحم فرمانے والا ہے"
+        }
+      ]
+    },
+    {
+      "title": "تیسرا قمیص",
+      "scene": "shirt",
+      "cards": [
+        {
+          "line": 0,
+          "en": "Take this, my shirt, and cast it over the face of my father; he will become seeing",
+          "q": "12:93",
+          "w": [
+            1,
+            9
+          ],
+          "ur": "جاؤ، میرا یہ قمیص لے جاؤ اور میرے والد کے منہ پر ڈال دو، اُن کی بینائی پلٹ آئے گی"
+        },
+        {
+          "line": 4,
+          "en": "Did I not tell you that I know from Allah that which you do not know",
+          "q": "12:96",
+          "w": [
+            10,
+            20
+          ],
+          "ur": "میں تم سے کہتا نہ تھا؟ میں اللہ کی طرف سے وہ کچھ جانتا ہوں جو تم نہیں جانتے"
+        },
+        {
+          "line": 7,
+          "en": "O my father, this is the explanation of my vision of before. My Lord has made it reality",
+          "q": "12:100",
+          "w": [
+            9,
+            18
+          ],
+          "ur": "ابا جان، یہ تعبیر ہے میرے اُس خواب کی جو میں نے پہلے دیکھا تھا، میرے رب نے اسے حقیقت بنا دیا"
+        }
+      ]
+    },
+    {
+      "title": "سبق",
+      "scene": "lesson",
+      "cards": [
+        {
+          "line": 2,
+          "en": "There was certainly in their stories a lesson for those of understanding",
+          "q": "12:111",
+          "w": [
+            1,
+            7
+          ],
+          "ur": "اگلے لوگوں کے ان قصوں میں عقل و ہوش رکھنے والوں کے لیے عبرت ہے"
+        },
+        {
+          "line": 4,
+          "end": true
+        }
+      ]
+    }
+  ],
+  "sound": [
+    {
+      "ch": 0,
+      "src": "../../shorts/03-cave/assets/sfx/03b5f68efefc.mp3",
+      "prompt": "boom",
+      "dur": 3,
+      "gain": -14,
+      "fade_in": 0.03,
+      "fade_out": 1
+    },
+    {
+      "ch": 0,
+      "prompt": "inside a vast ancient stone palace hall, wind through high windows, distant footsteps echoing, low murmur far away, no music",
+      "until_end": true,
+      "gain": -12,
+      "fade_in": 0.3
+    },
+    {
+      "ch": 0,
+      "line": 6,
+      "src": "../../shorts/03-cave/assets/sfx/1a9908bb62c8.mp3",
+      "prompt": "hum_myst",
+      "offset": -0.5,
+      "until_end": true,
+      "gain": -16,
+      "fade_in": 1.5
+    },
+    {
+      "ch": 1,
+      "src": "../../shorts/05-trunk/assets/sfx/beb74bb8b482.mp3",
+      "prompt": "room",
+      "until_end": true,
+      "gain": -16
+    },
+    {
+      "ch": 1,
+      "src": "../../shorts/03-cave/assets/sfx/1a9908bb62c8.mp3",
+      "prompt": "hum_myst",
+      "until_end": true,
+      "gain": -16,
+      "fade_in": 2
+    },
+    {
+      "ch": 1,
+      "line": 1,
+      "src": "../../shorts/03-cave/assets/sfx/f73090a5a6a6.mp3",
+      "prompt": "shimmer",
+      "offset": 4.0,
+      "dur": 2.5,
+      "gain": -10,
+      "fade_in": 0,
+      "fade_out": 1
+    },
+    {
+      "ch": 1,
+      "line": 3,
+      "prompt": "desert wind at dusk, sand blowing across dunes, open and lonely, no music",
+      "until_end": true,
+      "gain": -18,
+      "fade_in": 2
+    },
+    {
+      "ch": 2,
+      "prompt": "desert wind at dusk, sand blowing across dunes, open and lonely, no music",
+      "until": [
+        2,
+        6
+      ],
+      "gain": -12,
+      "fade_in": 0.5
+    },
+    {
+      "ch": 2,
+      "line": 6,
+      "src": "../../shorts/07-yusuf-1/assets/sfx/ff40eca5ae8d.mp3",
+      "prompt": "splash",
+      "offset": 2.2,
+      "dur": 3,
+      "gain": -13,
+      "fade_in": 0.02,
+      "fade_out": 1
+    },
+    {
+      "ch": 2,
+      "line": 6,
+      "src": "../../shorts/03-cave/assets/sfx/a84b989967d0.mp3",
+      "prompt": "drips",
+      "until": [
+        2,
+        8
+      ],
+      "gain": -14
+    },
+    {
+      "ch": 2,
+      "line": 7,
+      "src": "../../shorts/04-ease/assets/sfx/ed4334fb2fbf.mp3",
+      "prompt": "hum_hope",
+      "until": [
+        2,
+        8
+      ],
+      "offset": 0.5,
+      "gain": -15,
+      "fade_in": 2
+    },
+    {
+      "ch": 2,
+      "line": 8,
+      "src": "../../shorts/05-trunk/assets/sfx/beb74bb8b482.mp3",
+      "prompt": "room",
+      "until_end": true,
+      "gain": -15
+    },
+    {
+      "ch": 2,
+      "line": 11,
+      "src": "../../shorts/05-trunk/assets/sfx/562217fe60ac.mp3",
+      "prompt": "hum_tender",
+      "until_end": true,
+      "gain": -17,
+      "fade_in": 2
+    },
+    {
+      "ch": 3,
+      "prompt": "camel caravan walking slowly on sand, soft camel bells, hooves on sand, camel grunts, desert wind, no music",
+      "until": [
+        3,
+        2
+      ],
+      "gain": -11,
+      "fade_in": 0.5
+    },
+    {
+      "ch": 3,
+      "line": 2,
+      "prompt": "a few old silver coins dropping and clinking onto a cloth and wooden table",
+      "offset": 0.3,
+      "dur": 4,
+      "gain": -8,
+      "gen": 4,
+      "fade_in": 0,
+      "fade_out": 1
+    },
+    {
+      "ch": 3,
+      "line": 3,
+      "src": "../../shorts/04-ease/assets/sfx/61e97fb787a5.mp3",
+      "prompt": "dawn",
+      "until_end": true,
+      "gain": -15
+    },
+    {
+      "ch": 4,
+      "prompt": "room",
+      "until_end": true,
+      "gain": -14,
+      "fade_in": 0.5,
+      "src": "../../shorts/05-trunk/assets/sfx/beb74bb8b482.mp3"
+    },
+    {
+      "ch": 4,
+      "line": 0,
+      "prompt": "heavy wooden doors slamming shut one after another down a corridor, iron bolts sliding, echo",
+      "offset": 0.7,
+      "dur": 4,
+      "gen": 4,
+      "gain": -9,
+      "fade_in": 0,
+      "fade_out": 1
+    },
+    {
+      "ch": 4,
+      "line": 3,
+      "prompt": "cloth fabric tearing, a shirt ripping, close",
+      "offset": 2.4,
+      "dur": 2,
+      "gen": 2,
+      "gain": -8,
+      "fade_in": 0,
+      "fade_out": 1
+    },
+    {
+      "ch": 4,
+      "line": 4,
+      "prompt": "a heavy old wooden door creaking open slowly",
+      "offset": -0.3,
+      "dur": 3,
+      "gen": 3,
+      "gain": -10,
+      "fade_in": 0,
+      "fade_out": 1
+    },
+    {
+      "ch": 4,
+      "line": 6,
+      "src": "../../shorts/03-cave/assets/sfx/1a9908bb62c8.mp3",
+      "prompt": "hum_myst",
+      "until_end": true,
+      "gain": -18,
+      "fade_in": 2
+    },
+    {
+      "ch": 5,
+      "prompt": "room",
+      "until_end": true,
+      "gain": -14,
+      "fade_in": 0.5,
+      "src": "../../shorts/05-trunk/assets/sfx/beb74bb8b482.mp3"
+    },
+    {
+      "ch": 5,
+      "line": 3,
+      "prompt": "a small metal knife falling and clattering onto a wooden table",
+      "offset": 0.8,
+      "dur": 2,
+      "gen": 2,
+      "gain": -9,
+      "fade_in": 0,
+      "fade_out": 1
+    },
+    {
+      "ch": 5,
+      "line": 6,
+      "src": "../../shorts/05-trunk/assets/sfx/562217fe60ac.mp3",
+      "prompt": "hum_tender",
+      "until_end": true,
+      "gain": -16,
+      "fade_in": 2
+    },
+    {
+      "ch": 5,
+      "line": 8,
+      "src": "../../shorts/05-trunk/assets/sfx/1e1da3b5b373.mp3",
+      "prompt": "knock",
+      "offset": 0.6,
+      "dur": 2.5,
+      "gain": -8,
+      "fade_in": 0,
+      "fade_out": 1
+    },
+    {
+      "ch": 6,
+      "prompt": "ancient stone prison cell at night, slow water drips, distant chains, wind through a small barred window, no music",
+      "until_end": true,
+      "gain": -12,
+      "fade_in": 0.5
+    },
+    {
+      "ch": 6,
+      "line": 2,
+      "src": "../../shorts/06-ant/assets/sfx/5245d986054f.mp3",
+      "prompt": "birds",
+      "offset": 1.5,
+      "dur": 5,
+      "gain": -16
+    },
+    {
+      "ch": 6,
+      "line": 5,
+      "src": "../../shorts/03-cave/assets/sfx/1a9908bb62c8.mp3",
+      "prompt": "hum_myst",
+      "until": [
+        6,
+        8
+      ],
+      "gain": -16,
+      "fade_in": 2
+    },
+    {
+      "ch": 6,
+      "line": 9,
+      "src": "../../shorts/03-cave/assets/sfx/c0a62b45d83e.mp3",
+      "prompt": "clock",
+      "offset": -0.3,
+      "until_end": true,
+      "gain": -14,
+      "fade_in": 0.3
+    },
+    {
+      "ch": 7,
+      "prompt": "cattle grazing in a meadow by a river at night, occasional cow moo, crickets, no music",
+      "until": [
+        7,
+        8
+      ],
+      "gain": -13,
+      "fade_in": 0.5
+    },
+    {
+      "ch": 7,
+      "line": 0,
+      "src": "../../shorts/03-cave/assets/sfx/1a9908bb62c8.mp3",
+      "prompt": "hum_myst",
+      "until": [
+        7,
+        6
+      ],
+      "gain": -18,
+      "fade_in": 2
+    },
+    {
+      "ch": 7,
+      "line": 7,
+      "prompt": "desert wind at dusk, sand blowing across dunes, open and lonely, no music",
+      "until": [
+        7,
+        8
+      ],
+      "gain": -14
+    },
+    {
+      "ch": 7,
+      "line": 8,
+      "src": "../../shorts/04-ease/assets/sfx/3835e3c98c45.mp3",
+      "prompt": "rain",
+      "until_end": true,
+      "gain": -12,
+      "fade_in": 1
+    },
+    {
+      "ch": 8,
+      "prompt": "wide river flowing gently at sunrise, water lapping, morning birds, breeze, no music",
+      "until": [
+        8,
+        8
+      ],
+      "gain": -13,
+      "fade_in": 0.5
+    },
+    {
+      "ch": 8,
+      "src": "../../shorts/04-ease/assets/sfx/61e97fb787a5.mp3",
+      "prompt": "dawn",
+      "until": [
+        8,
+        8
+      ],
+      "gain": -17
+    },
+    {
+      "ch": 8,
+      "line": 5,
+      "src": "../../shorts/06-ant/assets/sfx/cabf6e6577de.mp3",
+      "prompt": "hum_grate",
+      "until": [
+        8,
+        8
+      ],
+      "gain": -17,
+      "fade_in": 2
+    },
+    {
+      "ch": 8,
+      "line": 8,
+      "prompt": "desert wind at dusk, sand blowing across dunes, open and lonely, no music",
+      "until_end": true,
+      "gain": -11,
+      "fade_in": 1.5
+    },
+    {
+      "ch": 9,
+      "prompt": "inside an ancient grain storehouse, grain pouring from sacks, footsteps on stone, sacks dragged, no music",
+      "until_end": true,
+      "gain": -13,
+      "fade_in": 0.5
+    },
+    {
+      "ch": 9,
+      "line": 6,
+      "prompt": "a small metal cup dropping into a sack of grain, soft clink and rustle",
+      "offset": 2.1,
+      "dur": 2,
+      "gen": 2,
+      "gain": -8,
+      "fade_in": 0,
+      "fade_out": 1
+    },
+    {
+      "ch": 9,
+      "line": 7,
+      "src": "../../shorts/05-trunk/assets/sfx/1e1da3b5b373.mp3",
+      "prompt": "knock",
+      "offset": 0.3,
+      "dur": 2.5,
+      "gain": -9,
+      "fade_in": 0,
+      "fade_out": 1
+    },
+    {
+      "ch": 9,
+      "line": 7,
+      "prompt": "camel caravan walking slowly on sand, soft camel bells, hooves on sand, camel grunts, desert wind, no music",
+      "until": [
+        9,
+        8
+      ],
+      "gain": -14
+    },
+    {
+      "ch": 9,
+      "line": 8,
+      "src": "../../shorts/03-cave/assets/sfx/f73090a5a6a6.mp3",
+      "prompt": "shimmer",
+      "offset": 3.4,
+      "dur": 2.5,
+      "gain": -10,
+      "fade_in": 0,
+      "fade_out": 1
+    },
+    {
+      "ch": 9,
+      "line": 12,
+      "prompt": "desert wind at dusk, sand blowing across dunes, open and lonely, no music",
+      "until_end": true,
+      "gain": -15,
+      "fade_in": 2
+    },
+    {
+      "ch": 10,
+      "src": "../../shorts/05-trunk/assets/sfx/beb74bb8b482.mp3",
+      "prompt": "room",
+      "until_end": true,
+      "gain": -13,
+      "fade_in": 0.5
+    },
+    {
+      "ch": 10,
+      "line": 3,
+      "prompt": "soft male choir humming a slow, sorrowful, aching melody, voices only, no instruments, warm reverb",
+      "until": [
+        10,
+        7
+      ],
+      "gain": -15,
+      "fade_in": 2
+    },
+    {
+      "ch": 10,
+      "line": 7,
+      "src": "../../shorts/04-ease/assets/sfx/ed4334fb2fbf.mp3",
+      "prompt": "hum_hope",
+      "until_end": true,
+      "gain": -16,
+      "fade_in": 2
+    },
+    {
+      "ch": 10,
+      "line": 8,
+      "src": "../../shorts/04-ease/assets/sfx/61e97fb787a5.mp3",
+      "prompt": "dawn",
+      "until_end": true,
+      "gain": -18,
+      "fade_in": 2
+    },
+    {
+      "ch": 11,
+      "prompt": "inside a vast ancient stone palace hall, wind through high windows, distant footsteps echoing, low murmur far away, no music",
+      "until_end": true,
+      "gain": -13,
+      "fade_in": 0.5
+    },
+    {
+      "ch": 11,
+      "line": 3,
+      "src": "../../shorts/03-cave/assets/sfx/1a9908bb62c8.mp3",
+      "prompt": "hum_myst",
+      "until": [
+        11,
+        6
+      ],
+      "gain": -17,
+      "fade_in": 2
+    },
+    {
+      "ch": 11,
+      "line": 6,
+      "src": "../../shorts/03-cave/assets/sfx/f73090a5a6a6.mp3",
+      "prompt": "shimmer",
+      "dur": 2.5,
+      "gain": -10,
+      "fade_in": 0,
+      "fade_out": 1
+    },
+    {
+      "ch": 11,
+      "line": 6,
+      "src": "../../shorts/05-trunk/assets/sfx/562217fe60ac.mp3",
+      "prompt": "hum_tender",
+      "until": [
+        11,
+        11
+      ],
+      "gain": -16,
+      "fade_in": 2
+    },
+    {
+      "ch": 11,
+      "line": 11,
+      "src": "../../shorts/06-ant/assets/sfx/cabf6e6577de.mp3",
+      "prompt": "hum_grate",
+      "offset": -0.3,
+      "until_end": true,
+      "gain": -13,
+      "fade_in": 1.5
+    },
+    {
+      "ch": 12,
+      "prompt": "camel caravan walking slowly on sand, soft camel bells, hooves on sand, camel grunts, desert wind, no music",
+      "until": [
+        12,
+        3
+      ],
+      "gain": -13,
+      "fade_in": 0.5
+    },
+    {
+      "ch": 12,
+      "line": 2,
+      "prompt": "desert wind at dusk, sand blowing across dunes, open and lonely, no music",
+      "until": [
+        12,
+        3
+      ],
+      "gain": -12
+    },
+    {
+      "ch": 12,
+      "line": 3,
+      "src": "../../shorts/05-trunk/assets/sfx/beb74bb8b482.mp3",
+      "prompt": "room",
+      "until": [
+        12,
+        5
+      ],
+      "gain": -15
+    },
+    {
+      "ch": 12,
+      "line": 3,
+      "src": "../../shorts/03-cave/assets/sfx/f73090a5a6a6.mp3",
+      "prompt": "shimmer",
+      "offset": 2.5,
+      "dur": 2.5,
+      "gain": -8,
+      "fade_in": 0,
+      "fade_out": 1
+    },
+    {
+      "ch": 12,
+      "line": 3,
+      "src": "../../shorts/04-ease/assets/sfx/ed4334fb2fbf.mp3",
+      "prompt": "hum_hope",
+      "until": [
+        12,
+        5
+      ],
+      "offset": 2.5,
+      "gain": -15,
+      "fade_in": 1.5
+    },
+    {
+      "ch": 12,
+      "line": 5,
+      "src": "../../shorts/06-ant/assets/sfx/cabf6e6577de.mp3",
+      "prompt": "hum_grate",
+      "until_end": true,
+      "gain": -14,
+      "fade_in": 2
+    },
+    {
+      "ch": 12,
+      "line": 6,
+      "src": "../../shorts/03-cave/assets/sfx/f73090a5a6a6.mp3",
+      "prompt": "shimmer",
+      "offset": 0.3,
+      "dur": 2.5,
+      "gain": -10,
+      "fade_in": 0,
+      "fade_out": 1
+    },
+    {
+      "ch": 13,
+      "src": "../../shorts/05-trunk/assets/sfx/beb74bb8b482.mp3",
+      "prompt": "room",
+      "until_end": true,
+      "gain": -18,
+      "fade_in": 0.5
+    },
+    {
+      "ch": 13,
+      "src": "../../shorts/04-ease/assets/sfx/ed4334fb2fbf.mp3",
+      "prompt": "hum_hope",
+      "until_end": true,
+      "gain": -15,
+      "fade_in": 2,
+      "fade_out": 3
+    }
+  ],
+  "lang": "ur"
+}

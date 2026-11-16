@@ -90,3 +90,22 @@ Check YouTube Studio → Earn for the current thresholds.
 - **Google Ads:** video-views campaign since 14 Nov, prepaid PKR 4,250, PKR 850/day, target CPV PKR 5, Pakistan, India, Bangladesh, UAE, Saudi Arabia, UK. English Musa film; Urdu Musa film added 15 Nov (AI label on). First day: 392 paid views at Rs 2, 2:44 average watched. Ad watch time does not count toward monetisation; judge it on whether free (non-ad) impressions and views grow.
 - **No more paid ads** after the current PKR 4,250 balance runs out (decided by the user, 15 Nov). Growth from here is free: Related video on every Short, end screens, pinned comments, playlists, thumbnails that get clicked, searchable titles, and longer films (20+ min), English and Urdu.
 - **Goal for the coming weeks:** the first long film with 1,000 free (non-ad) views. Then 10,000, then 100,000 via search.
+
+## Improvements adopted (16 Nov 2026, after web research)
+1. **Numbered series.** Films are episodes: English "Stories of the Prophets | EP n: Prophet X (AS)", Urdu
+   "Qasas ul Anbiya | EP n: Hazrat X AS". Yusuf = EP 1, Musa = EP 2, Ibrahim = EP 3, **Nuh = EP 4** (first with the
+   new titles). One playlist per language, in order. Every film ends with a ~10 s "up next" teaser of the next one.
+   One consistent thumbnail style (bright, 5–6 bold words).
+2. **Islamic calendar.** Rajab / Isra and Mi'raj (early Jan 2027): a Night Journey film, never showing the Prophet ﷺ
+   or angels. **Ramadan (about mid-Feb – mid-Mar 2027): "30 Nights, 30 Stories"** daily series plus 2–3 big films;
+   plan drafted by mid-December, produced in January. Dhul Hijjah (about mid-May): re-promote Ibrahim, Hajj and
+   Zamzam. Muharram / Ashura (about mid-June): re-promote Musa.
+3. **Urdu/Hindi.** Urdu titles say "Full Movie in Urdu/Hindi"; Hindi-script keywords in tags and description.
+   Later languages to consider: Arabic (Gulf, high pay), then Bengali or Indonesian.
+4. **Topics:** prophets → Companions → Muslim heroes, plus **Quranic wonders** (Ashab al-Kahf, Dhul-Qarnayn, the
+   Elephant army, People of the Ditch, the Two Gardens) as Shorts and 10–15 min films between the big films;
+   one Quran-wonders Short a week.
+5. **Longer films, stronger openings:** aim 18–25 min; open on the most dramatic moment; read each film's
+   retention graph and fix openings that lose viewers.
+6. Smaller: community polls ("Which prophet next?"), a channel trailer in the user's own voice, vary the Shorts'
+   look now and then, reply to comments in the first hour.
