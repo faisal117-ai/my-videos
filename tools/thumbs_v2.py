@@ -288,7 +288,18 @@ def ur_three():
                         'زندہ <span class="b">آگ میں</span></div>') + h[end:]
 
 
-FINAL = {"final-yusuf": lambda: three(yusuf_well, 'Down the<br><span class="y">well</span>', top=70, size=150),
+def yusuf_well_ur():
+    h = yusuf_well()
+    font = (ROOT / "long/02-musa/assets/fonts/noto-nastaliq-urdu-arabic-400-normal.woff2").as_uri()
+    h = h.replace("</style>", '@font-face { font-family: U; src: url("' + font + '"); }'
+                  ' .u { font-family: U; text-transform:none; line-height:1.75; letter-spacing:0; -webkit-text-stroke: 12px #000; }</style>')
+    a = h.index('<div class="t"'); b = h.rindex('<div class="chip">')
+    text = ('<div class="t u" dir="rtl" style="right:610px;top:70px;font-size:84px;text-align:right;white-space:nowrap">کنویں میں پھینکا گیا…</div>'
+            '<div class="t u y" dir="rtl" style="right:610px;top:380px;font-size:104px;text-align:right;white-space:nowrap">…بادشاہ بن گیا</div>')
+    return (h[:a] + text + h[b:]).replace("PROPHET YUSUF (AS)", "HAZRAT YUSUF AS")
+
+
+FINAL = {"yusuf-ur-well": yusuf_well_ur, "final-yusuf": lambda: three(yusuf_well, 'Down the<br><span class="y">well</span>', top=70, size=150),
          "final-musa": musa_old_bold,
          "final-ibrahim": lambda: three(ibrahim_fire, 'Thrown in<br><span class="y">alive</span>', top=60, size=150),
          "final-ibrahim-ur": ur_three}
