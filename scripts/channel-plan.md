@@ -109,3 +109,33 @@ Check YouTube Studio → Earn for the current thresholds.
    retention graph and fix openings that lose viewers.
 6. Smaller: community polls ("Which prophet next?"), a channel trailer in the user's own voice, vary the Shorts'
    look now and then, reply to comments in the first hour.
+
+## Second series: "Battles and Conquests of Islam" (decided 16 Nov 2026)
+**Option A: alternate weekends.** Prophet film one weekend, battle film the next (English Sat 18:30, Urdu/Hindi
+Sun 18:30), so the ElevenLabs budget stays as it is.
+
+| Weekend | Film |
+|---|---|
+| 28–29 Nov | Stories of the Prophets EP 4: Nuh (AS) |
+| **5–6 Dec** | **Battles of Islam EP 1: Badr: 313 vs 1,000** |
+| 12–13 Dec | Prophets EP 5 |
+| 19–20 Dec | Battles EP 2: Uhud |
+| … | alternating |
+
+**Chronological order:** Badr → Uhud → the Trench (Ahzab) → Hudaybiyyah ("a clear victory", Al-Fath 48:1) →
+Khaybar → Mu'tah → the Conquest of Makkah → Hunayn → Tabuk → Yamamah → Yarmouk → Qadisiyyah → Jerusalem
+(Umar (RA)) → Egypt → Nahavand → Sindh (Muhammad bin Qasim) → Spain (Tariq ibn Ziyad) → Hattin and Jerusalem
+(Salahuddin) → Ain Jalut → Constantinople (Muhammad al-Fatih). Left out on purpose: conflicts between Muslims
+(Jamal, Siffin, Karbala).
+
+**Each film:** background → the battle (maps, strategy, suspense; never graphic) → lessons and recommendations.
+**Rules:** the Prophet ﷺ and the Companions are never shown; armies only as distant faceless silhouettes, banners,
+dust and maps. Sources on screen: Quran first (Badr: Al-Anfal 8; Uhud: Aal-Imran 3:121–175; the Trench: Al-Ahzab
+33:9–27; Hunayn: At-Tawbah 9:25–26; Tabuk: At-Tawbah 9), then sahih hadith, then the standard seerah books, named;
+details found only in seerah books are said to be so. No titles that blame a group.
+
+**Anniversaries (Islamic calendar, dates approximate):** films come out in chronological order; on each battle's
+anniversary, new Shorts and a community post point back to its film. Badr 17 Ramadan (~24 Feb 2027), Conquest of
+Makkah 20 Ramadan (~27 Feb 2027), Uhud mid-Shawwal (~mid-Mar), Hunayn Shawwal (~Mar), the Trench Shawwal/Dhul
+Qadah (~Mar–Apr), Khaybar Muharram (~Jun), Mu'tah Jumada al-Ula (~Oct), Tabuk Rajab (~Dec/Jan). Badr and the
+Conquest of Makkah must be published before Ramadan 2027.
