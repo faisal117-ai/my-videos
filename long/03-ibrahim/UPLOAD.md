@@ -8,7 +8,7 @@
 **When:** Saturday 21 Nov, 6:30 PM PKT
 
 ## Title
-The Complete Story of Prophet Ibrahim (AS) | Stories of the Prophets
+Thrown Into the Fire… It Became Cool | Stories of the Prophets EP 3: Prophet Ibrahim (AS)
 
 ## Description
 They built a fire so large that no one could come near it, and threw one young man into it, for saying "my Lord is Allah." And Allah said: "O fire, be coolness and safety upon Abraham [Ibrahim]." (Al-Anbiya 21:69)
