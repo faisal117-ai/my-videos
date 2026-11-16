@@ -70,32 +70,52 @@ blocked-words list, so sectarian arguments do not take over the comments.
 his hand in one day", "He wanted to die a martyr… he died in his bed", "He slept in the Prophet's ﷺ bed the
 night of the Hijrah", "Who will carry the flag tomorrow?" (Khaybar), "As Harun was to Musa".
 
+## Arcs: multi-part stories run on consecutive weekends (revised 16 Nov)
+A mini-series is released **part after part on consecutive weekends**, so viewers wait one week, never months.
+Between arcs, 2–3 single films (prophets, battles, specials). Each arc:
+- starts with a **trailer Short** a few days before Part 1, and its playlist is made the day Part 1 goes out;
+- every part ends on a **cliffhanger** and a "Part 2 next Saturday" card; the description and pinned comment
+  link all parts;
+- a part that tells a battle **also counts as that battle's episode** in the Battles playlist (one film, two
+  playlists, nothing made twice): Mu'tah = Khalid Part 1, Yamamah = Khalid Part 2, Yarmouk = Khalid Part 3,
+  Khaybar = Ali Part 2, Jerusalem = Umar Part 3.
+
+**Arcs planned (by search demand):** Khalid (RA) 3 parts · Ali (RA) 3 · Umar (RA) 3 · Salahuddin 2 ·
+Abu Bakr (RA) 2 · Muhammad al-Fatih 2 · Ertugrul and Osman 2 (interest boosted by the Turkish dramas) ·
+later a **Seerah season** of the Prophet ﷺ (10+ parts, the Prophet ﷺ never shown) starting before
+12 Rabi al-Awwal (≈ Aug 2027).
+
 ## Calendar (Saturdays; Hijri dates approximate ±1–2 days)
 | Weekend | Film | Note |
 |---|---|---|
 | 28–29 Nov | Prophets EP 4: **Nuh** | |
 | 5–6 Dec | Battles EP 1: **Badr** | |
-| 12–13 Dec | Prophets EP 5: **Adam** | |
-| 19–20 Dec | Companions EP 1: **Khalid (RA) Part 1, The Enemy Who Became the Sword of Allah** | |
-| 26–27 Dec | Prophets EP 6: **Yunus** | |
-| 2–3 Jan | **Special: Isra and Mi'raj** | 27 Rajab ≈ 6 Jan 2027; the Prophet ﷺ and angels never shown |
-| 9–10 Jan | Prophets EP 7: **Isa** | Maryam (AS) never shown |
-| 16–17 Jan | Companions EP 2: **Ali (RA) Part 1, The First Youth to Believe** | comment filter on first |
-| 23–24 Jan | Prophets EP 8: **Sulaiman** | |
-| 30–31 Jan | Battles EP 2: **Uhud** | |
-| 6–7 Feb | Prophets EP 9: **Dawud** | Ramadan begins ≈ 8 Feb: "30 Nights, 30 Stories" Shorts start |
-| 13–14 Feb | Companions EP 3: **Khalid (RA) Part 2, Undefeated** | |
-| 20–21 Feb | Prophets EP 10: **Ayyub** | Badr anniversary Shorts ≈ 24 Feb (17 Ramadan) |
-| 27–28 Feb | **Ramadan special: the Conquest of Makkah** | 20 Ramadan ≈ 27 Feb; later shown in the Battles playlist as EP 7 |
-| 6–7 Mar | Companions EP 4: **Ali (RA) Part 2, The Flag at Khaybar** | Eid al-Fitr ≈ 10 Mar |
-| 13–14 Mar | Prophets EP 11: **Hud and Salih** | |
-| 20–21 Mar | Battles EP 3: **The Trench** | Uhud anniversary Shorts (mid-Shawwal) |
-| 27–28 Mar | Prophets EP 12: **Lut** | |
-| 3–4 Apr | Companions EP 5: **Khalid (RA) Part 3, Yarmouk and the Last Wish** | also the Battles series' Yarmouk film |
-| 17–18 Apr | Companions EP 6: **Ali (RA) Part 3, The Fourth Khalifa** | |
-| from May | Heroes EP 1: Tariq ibn Ziyad; then the normal rotation (Battles → Companions: Abu Bakr, Umar… → Heroes) | |
-| Apr–May | the rotation continues | Dhul Hijjah ≈ 7 May: Hajj and Zamzam special + re-promote Ibrahim; Eid al-Adha ≈ 16 May |
-| Jun | the rotation continues | Ashura ≈ 15 Jun: re-promote Musa |
+| 12–13 Dec | **Khalid (RA) Part 1:** The Enemy Who Became the Sword of Allah | arc 1; also Battles: Mu'tah |
+| 19–20 Dec | **Khalid (RA) Part 2:** Undefeated | also Battles: Yamamah |
+| 26–27 Dec | **Khalid (RA) Part 3:** Yarmouk and the Last Wish | also Battles: Yarmouk |
+| 2–3 Jan | **Special: Isra and Mi'raj** | 27 Rajab ≈ 6 Jan |
+| 9–10 Jan | Prophets EP 5: **Adam** | |
+| 16–17 Jan | Battles EP 2: **Uhud** | |
+| 23–24 Jan | Prophets EP 6: **Yunus** | |
+| 30–31 Jan | **Special: the Conquest of Makkah** | out before Ramadan, for the 20 Ramadan anniversary Shorts |
+| 6–7 Feb | Prophets EP 7: **Isa** | Ramadan ≈ 8 Feb: "30 Nights, 30 Stories" Shorts begin; comment filter on |
+| 13–14 Feb | **Ali (RA) Part 1:** The First Youth to Believe | arc 2 |
+| 20–21 Feb | **Ali (RA) Part 2:** The Flag at Khaybar | also Battles: Khaybar; Badr anniversary Shorts ≈ 24 Feb |
+| 27–28 Feb | **Ali (RA) Part 3:** The Fourth Khalifa | his martyrdom ≈ 21 Ramadan (≈ 28 Feb) |
+| 6–7 Mar | Prophets EP 8: **Sulaiman** | Eid al-Fitr ≈ 10 Mar |
+| 13–14 Mar | Battles EP 3: **The Trench** | Uhud anniversary Shorts (mid-Shawwal) |
+| 20–21 Mar | Prophets EP 9: **Dawud** | |
+| 27–28 Mar | **Umar (RA) Part 1:** From Enemy to Al-Faruq | arc 3 |
+| 3–4 Apr | **Umar (RA) Part 2:** The Khalifa Who Walked at Night | |
+| 10–11 Apr | **Umar (RA) Part 3:** The Keys of Jerusalem | also Battles: Jerusalem |
+| 17–18 Apr | Prophets EP 10: **Ayyub** | |
+| 24–25 Apr | Battles EP 4: **Hudaybiyyah** | |
+| 1–2 May | Prophets EP 11: **Hud and Salih** | |
+| 8–9 May | **Special: Hajj and Zamzam** | Dhul Hijjah ≈ 7 May; re-promote Ibrahim |
+| 15–16 May | Prophets EP 12: **Ismail** (the sacrifice) | Eid al-Adha ≈ 16 May |
+| 22–23 May | **Salahuddin Part 1:** The Boy Who Would Free Jerusalem | arc 4 (Heroes) |
+| 29–30 May | **Salahuddin Part 2:** Hattin and the Mercy of Jerusalem | |
+| June | Prophets, Battles (Hunayn, Tabuk), then arc 5: Abu Bakr (RA) | Ashura ≈ 15 Jun: re-promote Musa |
 
 ## Shorts (14 a week)
 - 4–5 from the coming film (the strongest moments, each pointing to it with Related video).
