@@ -35,27 +35,65 @@ Baybars (Ain Jalut, 1260) → Ertugrul and Osman → Muhammad al-Fatih (Constant
 **Cross-links:** Khalid (Companions) ↔ Mu'tah and Yarmouk (Battles); Umar (Companions) ↔ Jerusalem (Battles);
 Salahuddin (Heroes) ↔ Jerusalem; Abu Bakr ↔ Yamamah.
 
+## Khalid ibn al-Walid (RA) and Ali ibn Abi Talib (RA): the two flagship Companion mini-series (16 Nov)
+Why first: they are the most-watched Companions in our searches (Ali: 15.3M, 8.6M, 6.0M, 3.8M; Khalid: 6.8M,
+5.7M, 3.9M, plus Yarmouk with Khalid 6.0M), and both are loved across the whole Muslim audience. They lead the
+Companions series instead of the original order; Abu Bakr and Umar follow.
+
+**Khalid ibn al-Walid (RA): "The Sword of Allah", 3 parts (20–25 min each)**
+1. *The Enemy Who Became the Sword of Allah*: Makkah and his tribe; the turn at Uhud; Hudaybiyyah; coming to
+   Madinah with Amr ibn al-As; Mu'tah: he takes the flag and brings the army home. Sahih al-Bukhari reports the
+   Prophet ﷺ calling him "a sword from the swords of Allah" at Mu'tah, and Khalid saying nine swords broke in his
+   hand that day (verify both numbers on sunnah.com before the script is final).
+2. *Undefeated*: the Conquest of Makkah, Hunayn, the Ridda wars and Yamamah, the Iraq campaign, the march across
+   the desert to Syria (al-Tabari / Ibn Kathir; said to be from the history books).
+3. *Yarmouk and the Last Wish*: Yarmouk; Umar (RA) removes him from command and he keeps serving; his death in
+   bed despite a life of battles (history books, attributed). This part is also the Battles series' Yarmouk film,
+   so it is not made twice.
+
+**Ali ibn Abi Talib (RA): "Lion of Allah", 3 parts (20–25 min each)**
+1. *The First Youth to Believe*: growing up in the Prophet's ﷺ house; accepting Islam young; the night of the
+   Hijrah (Ibn Hisham); Badr; the Trench.
+2. *The Flag at Khaybar*: "I will give the flag to a man who loves Allah and His Messenger…" (Sahih al-Bukhari
+   and Sahih Muslim); Tabuk: "Are you not pleased to be to me as Harun was to Musa?" (Bukhari and Muslim); his
+   knowledge and judgements.
+3. *The Fourth Khalifa*: his justice and simple life; martyrdom in Kufa by a Kharijite. The conflicts of his
+   khilafah are mentioned in one neutral sentence, never told in detail.
+
+**Safeguards for these two:** never shown (no figure, no stylised two-bladed sword icon): banners, horses
+without riders, maps, places and the voice carry the story. Sources: Quran, Bukhari and Muslim, Ibn Hisham, Ibn
+Kathir, al-Tabari, all named; no contested sources. Respectful, neutral titles ("Hazrat Ali (RA)"). Before Ali
+Part 1: turn on Studio → Settings → Community → hold potentially inappropriate comments, and add a short
+blocked-words list, so sectarian arguments do not take over the comments.
+
+**Shorts that feed them:** "He beat the Muslims at Uhud… then became the Sword of Allah", "Nine swords broke in
+his hand in one day", "He wanted to die a martyr… he died in his bed", "He slept in the Prophet's ﷺ bed the
+night of the Hijrah", "Who will carry the flag tomorrow?" (Khaybar), "As Harun was to Musa".
+
 ## Calendar (Saturdays; Hijri dates approximate ±1–2 days)
 | Weekend | Film | Note |
 |---|---|---|
 | 28–29 Nov | Prophets EP 4: **Nuh** | |
 | 5–6 Dec | Battles EP 1: **Badr** | |
 | 12–13 Dec | Prophets EP 5: **Adam** | |
-| 19–20 Dec | Companions EP 1: **Abu Bakr (RA)** | |
+| 19–20 Dec | Companions EP 1: **Khalid (RA) Part 1, The Enemy Who Became the Sword of Allah** | |
 | 26–27 Dec | Prophets EP 6: **Yunus** | |
 | 2–3 Jan | **Special: Isra and Mi'raj** | 27 Rajab ≈ 6 Jan 2027; the Prophet ﷺ and angels never shown |
 | 9–10 Jan | Prophets EP 7: **Isa** | Maryam (AS) never shown |
-| 16–17 Jan | Heroes EP 1: **Tariq ibn Ziyad** | |
+| 16–17 Jan | Companions EP 2: **Ali (RA) Part 1, The First Youth to Believe** | comment filter on first |
 | 23–24 Jan | Prophets EP 8: **Sulaiman** | |
 | 30–31 Jan | Battles EP 2: **Uhud** | |
 | 6–7 Feb | Prophets EP 9: **Dawud** | Ramadan begins ≈ 8 Feb: "30 Nights, 30 Stories" Shorts start |
-| 13–14 Feb | Companions EP 2: **Umar (RA)** | |
+| 13–14 Feb | Companions EP 3: **Khalid (RA) Part 2, Undefeated** | |
 | 20–21 Feb | Prophets EP 10: **Ayyub** | Badr anniversary Shorts ≈ 24 Feb (17 Ramadan) |
 | 27–28 Feb | **Ramadan special: the Conquest of Makkah** | 20 Ramadan ≈ 27 Feb; later shown in the Battles playlist as EP 7 |
-| 6–7 Mar | Heroes EP 2: **Muhammad bin Qasim** | Eid al-Fitr ≈ 10 Mar |
+| 6–7 Mar | Companions EP 4: **Ali (RA) Part 2, The Flag at Khaybar** | Eid al-Fitr ≈ 10 Mar |
 | 13–14 Mar | Prophets EP 11: **Hud and Salih** | |
 | 20–21 Mar | Battles EP 3: **The Trench** | Uhud anniversary Shorts (mid-Shawwal) |
 | 27–28 Mar | Prophets EP 12: **Lut** | |
+| 3–4 Apr | Companions EP 5: **Khalid (RA) Part 3, Yarmouk and the Last Wish** | also the Battles series' Yarmouk film |
+| 17–18 Apr | Companions EP 6: **Ali (RA) Part 3, The Fourth Khalifa** | |
+| from May | Heroes EP 1: Tariq ibn Ziyad; then the normal rotation (Battles → Companions: Abu Bakr, Umar… → Heroes) | |
 | Apr–May | the rotation continues | Dhul Hijjah ≈ 7 May: Hajj and Zamzam special + re-promote Ibrahim; Eid al-Adha ≈ 16 May |
 | Jun | the rotation continues | Ashura ≈ 15 Jun: re-promote Musa |
 
