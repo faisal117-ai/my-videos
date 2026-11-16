@@ -1,5 +1,14 @@
 # Haq Stories: channel analysis and plan (13 Nov 2026)
 
+> **Start here.** The living plans (read these before any planning or production work):
+> - `scripts/series-plan.md`: the four series (Prophets, Battles, Companions, Heroes), arcs on consecutive
+>   weekends (Khalid, Ali, Umar, Salahuddin…), title templates, the calendar to June 2027, rules, budget.
+> - `scripts/shorts-plan.md`: the role of Shorts, the five named Shorts series, craft rules, the weekly mix,
+>   what to measure, and what makes the channel worth remembering.
+> - `scripts/competitor-analysis.md`: the niche data behind these decisions (parts 1–3).
+> - `scripts/voice.md`: the channel's voice for titles and packaging.
+> - This file: the history of decisions, newest at the bottom.
+
 From the YouTube Studio export (55 videos, lifetime to 11 Nov 2026), analysed in the
 "Yusuf long video script" session. The export itself was not saved to the repo.
 
