@@ -5,7 +5,7 @@
 >   weekends (Khalid, Ali, Umar, Salahuddin…), title templates, the calendar to June 2027, rules, budget.
 > - `scripts/shorts-plan.md`: the role of Shorts, the five named Shorts series, craft rules, the weekly mix,
 >   what to measure, and what makes the channel worth remembering.
-> - `scripts/competitor-analysis.md`: the niche data behind these decisions (parts 1–3).
+> - `scripts/competitor-analysis.md`: the niche data behind these decisions (parts 1–4); `scripts/miracle-of-islam-research.md`: the channel that inspired us.
 > - `scripts/voice.md`: the channel's voice for titles and packaging.
 > - This file: the history of decisions, newest at the bottom.
 

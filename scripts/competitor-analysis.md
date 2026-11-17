@@ -222,3 +222,4 @@ public listings (96 newest Shorts, 30 newest long videos).
 clips or audio). Stay sourced and never sensational: that is how we stand apart and stay safe. Add evergreen
 question films people search ("Why…", "What does the Quran say about…") as Quran-wonders films. Build on films
 and series, not on Shorts alone.
+Full research: `scripts/miracle-of-islam-research.md`.
