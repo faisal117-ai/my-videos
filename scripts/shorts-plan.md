@@ -41,6 +41,30 @@ pinned comment). Shorts that do not lead anywhere are not made.
   One hardship line only; the dua or turn by ~6 s (Ayyub lost half its viewers at 7–10 s on a second hardship
   line). The first frame must really be lit: check every render's cover frame (Yunus went out near-black).
 
+## Adopted from Miracle of Islam (17 Nov, user: "copy all good things"; see competitor-analysis.md part 4)
+We copy their topics, formats and habits, never their videos, scripts, titles or clips (reused content breaks
+YouTube's rules), and only topics with a sound source.
+1. **Their proven topics, our own scripts.** Sourced ones go into the Shorts queue (one or two a week):
+   - the three men trapped in the cave by a rock, each praying by one good deed (Bukhari 2272, Muslim 2743);
+   - the leper, the bald man and the blind man, tested with wealth (Bukhari 3464, Muslim 2964);
+   - the man who sent 1,000 dinars across the sea in a piece of wood (Bukhari 2291);
+   - Uwais al-Qarani, honoured for serving his mother (Muslim 2542; a Tabi'i: "rahimahullah");
+   - Abu Lubaba (RA) tying himself to a pillar of the mosque (seerah and tafsir of 9:102, said so);
+   - Dawud (AS) and the two men who climbed into his prayer room (Sad 38:21–25);
+   - Ashab al-Kahf, Khidr and the boat, the cow (already planned).
+   Skipped (no reliable source): Musa's neighbour in Paradise, one bread vs 70 years of worship, Salahuddin and
+   the Christian girl, and their invented "news" stories.
+2. **Title test:** some Shorts get their style, short (2–6 words), often a question, one emoji ("Why Did He Tie
+   Himself to a Pillar? 😢"), next to our "X… then Y" style; compare views at the Friday reviews. Never a title
+   near-identical to theirs or to one of ours.
+3. **Companions and righteous people in Shorts,** not only prophets (Umar, Ali, Abu Lubaba, Uwais): their recent
+   Shorts are mostly these, and it feeds our Companions series.
+4. **Evergreen question films** (their two biggest long videos, 245K and 171K, are everyday questions): one
+   10–15 min Quran-wonders film now and then, built on a question people search, e.g. "Why did Allah mention
+   honey in the Quran?" (An-Nahl 16:68–69), "What happened to the army of the Elephant?" (Al-Fil).
+5. **Volume and consistency:** they reached 218K with 151 videos in under 3 years; we keep 2 a day plus films.
+Not copied: sensational, unverifiable stories; hype ("SHOCKED everyone", "TERRIFIED the world").
+
 ## A typical week (14 Shorts)
 | | 11:00 | 18:30 |
 |---|---|---|
