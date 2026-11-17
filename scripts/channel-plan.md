@@ -9,6 +9,17 @@
 > - `scripts/voice.md`: the channel's voice for titles and packaging.
 > - This file: the history of decisions, newest at the bottom.
 
+## The core message (17 Nov 2026)
+**Help, prayer, hope and Allah's mercy.** Every one of the channel's biggest hits is about Allah's help or mercy in
+a hard moment: "Ease With Every Hardship" (2,900), "Allah forgave a man for one small virtue" (1,500), "Allah
+showed mercy to an animal" (1,300), "100 years… his food hadn't spoiled" (1,400), "Allah gave the fire one
+command" (1,300); Ayyub's dua (1,043 in a day). So in every film and Short:
+- the hardship is real, but **the turn comes through prayer (dua) and Allah's help**;
+- **hope and mercy** are reached early and sealed at the end; the lesson says what it means for the viewer today;
+- titles and thumbnails promise that turn ("…then Allah…", "…and said only this", "…it became cool").
+The battles, Companions and heroes series follow it too: victory and courage come from trust in Allah, sincerity
+and dua, and mercy after victory (the Conquest of Makkah, Salahuddin and Jerusalem).
+
 From the YouTube Studio export (55 videos, lifetime to 11 Nov 2026), analysed in the
 "Yusuf long video script" session. The export itself was not saved to the repo.
 
