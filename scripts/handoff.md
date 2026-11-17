@@ -25,7 +25,7 @@ Read next: `scripts/channel-plan.md` (start-here index, core message, decisions)
   (English 27 lines spliced with tools/respeak_lines.py; Urdu 11 chapters re-recorded whole, since eleven_v3
   timings are too loose to splice). New lengths EN 14:53, UR 15:23; renders swapped into Metricool with the new
   chapter times. ElevenLabs used ~15,500 characters (about 64,000 left if it was 80,000 before). The published
-  Yusuf and Musa films were not checked yet; the sun Short (18 Nov) keeps "one of the prophets" (user's choice).
+  Yusuf and Musa films stay as they are (user's choice, already live); the sun Short (18 Nov) keeps "one of the prophets" (user's choice).
   This session runs on the "my-videos" environment (the one with the ElevenLabs key).
 - Translations ready to paste (user does it in Studio): `scripts/translations/*.md` (Arabic, Indonesian, Bengali,
   Turkish for English films; Hindi for Urdu films).
