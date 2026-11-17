@@ -64,7 +64,16 @@ YouTube's rules), and only topics with a sound source.
 4. **Evergreen question films** (their two biggest long videos, 245K and 171K, are everyday questions): one
    10–15 min Quran-wonders film now and then, built on a question people search, e.g. "Why did Allah mention
    honey in the Quran?" (An-Nahl 16:68–69), "What happened to the army of the Elephant?" (Al-Fil).
-5. **Volume and consistency:** they reached 218K with 151 videos in under 3 years; we keep 2 a day plus films.
+5. **Volume and consistency, never a gap:** their 60 daily Shorts in Mar–Apr 2026 built the channel; after a
+   2-month gap their Shorts fell ~6× and never recovered. We keep at least 7 days of Shorts scheduled ahead in
+   Metricool at all times; if the queue drops below that, making Shorts comes before anything else.
+6. **Captions test:** big word-by-word captions, centred, one highlighted word (their style), on half of a
+   week's Shorts vs our current text cards; compare "stayed to watch" at the Friday review.
+7. **Compilations of our own work** (from mid-December, once there are enough films and Shorts): e.g.
+   "Stories of the Prophets: 1 Hour" built from our films and re-voiced links, with a new intro, chapters and
+   end screen, so it is a new, useful video and not a re-upload. They earn long-video watch hours.
+8. **Film thumbnails:** one bold two-line headline plus one arrow or circle on the key object, honest words;
+   never "BREAKING NEWS", "LIVE", real people's faces or shock text.
 Not copied: sensational, unverifiable stories; hype ("SHOCKED everyone", "TERRIFIED the world").
 
 ## A typical week (14 Shorts)
