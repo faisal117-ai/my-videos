@@ -148,3 +148,8 @@ anniversary, new Shorts and a community post point back to its film. Badr 17 Ram
 Makkah 20 Ramadan (~27 Feb 2027), Uhud mid-Shawwal (~mid-Mar), Hunayn Shawwal (~Mar), the Trench Shawwal/Dhul
 Qadah (~Mar–Apr), Khaybar Muharram (~Jun), Mu'tah Jumada al-Ula (~Oct), Tabuk Rajab (~Dec/Jan). Badr and the
 Conquest of Makkah must be published before Ramadan 2027.
+- **17 Nov:** no Facebook or Instagram cross-posting (the user's choice): YouTube only. From the AI-influencer
+  video review, kept: test several formats and double down on the winner; make the life themes (sabr, rizq,
+  family and forgiveness) explicit in each film's lessons and in some Shorts titles; patience and a tight budget.
+  Open idea, not yet approved: a small digital product (e.g. a Ramadan 2027 journal), only after checking which
+  payment platforms pay out in Pakistan.
