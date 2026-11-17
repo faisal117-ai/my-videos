@@ -19,18 +19,18 @@ Chapters
 0:00 Intro
 0:38 A Boy Among Idols
 1:34 The Star, the Moon and the Sun
-2:43 O My Father
-3:39 The Broken Idols
-5:01 The Fire
-5:42 The King Who Argued
-6:20 Leaving Home
-7:02 The Valley Without Water
-8:15 Show Me How
-8:57 The Dream
-9:52 The Honoured Guests
-11:13 The House
-12:18 The Dua of Ibrahim
-13:10 The Lesson
+2:47 O My Father
+3:44 The Broken Idols
+5:11 The Fire
+5:51 The King Who Argued
+6:37 Leaving Home
+7:22 The Valley Without Water
+8:41 Show Me How
+9:24 The Dream
+10:26 The Honoured Guests
+11:57 The House
+13:07 The Dua of Ibrahim
+14:02 The Lesson
 
 Sources: Al-Anbiya (21), Al-An'am (6), Maryam (19), Al-Baqarah (2), As-Saffat (37), Ibrahim (14), Hud (11), Adh-Dhariyat (51), Al-Hajj (22), An-Nisa (4), Al-Mumtahanah (60); Hajar and Zamzam: Sahih al-Bukhari 3364. English translation: Sahih International. Every quoted verse is shown on screen with its reference.
 
