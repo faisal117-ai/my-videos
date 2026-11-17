@@ -17,7 +17,7 @@ Read next: `scripts/channel-plan.md` (start-here index, core message, decisions)
   **37.8%** (237 views, 8 h) · four birds (bright) 31% · Musa's mother (dark) 30% · Ayyub (bright) 29.8% (325 views;
   avg 0:23 = 82% of the Short; one big drop around 7–10 s, the second "hardship" line, then flat) · Yunus (bright,
   but its first frame is a near-black sea) **19.8%** (173 views). So brightness alone did not lift it; the first
-  line did. Proposed rule (awaiting the user's OK): open on a named person + defiance or a surprising act and a
+  line did. Rule approved by the user 17 Nov (now in scripts/shorts-plan.md craft rules): open on a named person + defiance or a surprising act and a
   promise of a turn ("…until", "…then Allah"), not a list of suffering or a gruesome detail; no second hardship
   line, go to the dua by ~6 s; a truly lit first frame. Dark-opening Shorts (wall, Nuh, idols, sacrifice) still
   to compare at the Friday review.

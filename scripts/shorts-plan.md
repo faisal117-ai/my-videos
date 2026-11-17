@@ -35,6 +35,12 @@ pinned comment). Shorts that do not lead anywhere are not made.
   alive" had 4 public views in its first hour next to the older "Four birds… came back alive again"). A topic
   already covered gets a new angle and a clearly different title, or is not made.
 
+- **Opening rule (approved 17 Nov, from the opening test):** the first line names a person and a defiant or
+  surprising act, then promises a turn ("…until", "…then Allah"): Pharaoh "He called himself a god… until the sea"
+  held 37.8% vs Ayyub 29.8%, four birds 31%, Yunus 19.8%. Never open on a list of suffering or a gruesome detail.
+  One hardship line only; the dua or turn by ~6 s (Ayyub lost half its viewers at 7–10 s on a second hardship
+  line). The first frame must really be lit: check every render's cover frame (Yunus went out near-black).
+
 ## A typical week (14 Shorts)
 | | 11:00 | 18:30 |
 |---|---|---|
