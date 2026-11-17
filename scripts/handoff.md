@@ -10,7 +10,7 @@ Read next: `scripts/channel-plan.md` (start-here index, core message, decisions)
 - Scheduled in Metricool through Sun 22 Nov: two Shorts a day (11:00, 18:30); Ibrahim English EP 3 Sat 21 18:30,
   Ibrahim Urdu EP 3 Sun 22 18:30 (titles with EP numbers, Urdu/Hindi).
 - Google Ads: prepaid PKR 4,250 campaign (English + Urdu Musa) runs out by itself; no more paid ads after it.
-- ElevenLabs: 80,000 characters left on 17 Nov; the user keeps the full schedule; warn before the Khalid arc (12 Dec).
+- ElevenLabs: about 64,000 characters left on 17 Nov evening (80,000 before the honorific fixes); the user keeps the full schedule; warn before the Khalid arc (12 Dec).
 
 ## Open items
 - **Opening test, "stayed to watch" (17 Nov, Studio):** Pharaoh (medium, "He called himself a god… until the sea")
@@ -21,6 +21,12 @@ Read next: `scripts/channel-plan.md` (start-here index, core message, decisions)
   promise of a turn ("…until", "…then Allah"), not a list of suffering or a gruesome detail; no second hardship
   line, go to the dua by ~6 s; a truly lit first frame. Dark-opening Shorts (wall, Nuh, idols, sacrifice) still
   to compare at the Friday review.
+- **Honorifics (17 Nov):** both Ibrahim EP 3 films re-voiced with "alayhis salaam" / "peace be upon him"
+  (English 27 lines spliced with tools/respeak_lines.py; Urdu 11 chapters re-recorded whole, since eleven_v3
+  timings are too loose to splice). New lengths EN 14:53, UR 15:23; renders swapped into Metricool with the new
+  chapter times. ElevenLabs used ~15,500 characters (about 64,000 left if it was 80,000 before). The published
+  Yusuf and Musa films were not checked yet; the sun Short (18 Nov) keeps "one of the prophets" (user's choice).
+  This session runs on the "my-videos" environment (the one with the ElevenLabs key).
 - Translations ready to paste (user does it in Studio): `scripts/translations/*.md` (Arabic, Indonesian, Bengali,
   Turkish for English films; Hindi for Urdu films).
 - Upcoming Shorts with dark openings are kept as they are (user's choice, a test): wall Wed, Nuh Fri, idols Sat,
