@@ -153,3 +153,6 @@ Conquest of Makkah must be published before Ramadan 2027.
   family and forgiveness) explicit in each film's lessons and in some Shorts titles; patience and a tight budget.
   Open idea, not yet approved: a small digital product (e.g. a Ramadan 2027 journal), only after checking which
   payment platforms pay out in Pakistan.
+- **17 Nov, ElevenLabs:** 80,000 characters left; the user chose to keep the full schedule (films 18–20 min,
+  14 Shorts a week, ~36,000 a week). That covers Nuh and Badr; before the Khalid arc (12 Dec), warn the user
+  when the balance drops near what the next film needs.
