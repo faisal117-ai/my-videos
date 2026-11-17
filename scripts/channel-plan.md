@@ -178,3 +178,10 @@ A Hindi-speaking creator whose first two channels were blocked, then grew to 20,
 4. **Topics people already look for** bring views even with simple editing.
 5. **Thumbnails decide clicks:** the same video did better with a better thumbnail.
 6. **Simple production is enough:** don't overspend on equipment or editors.
+
+## Decision, 17 Nov 2026 (evening): no paid promotion of any kind
+After the Urdu Yusuf film (EP 2) got 2 views in its first hours (low exposure, not packaging), the user looked
+at paid shout-outs and chose not to pay for anything: no ads, no shout-outs. Growth stays free: Shorts that send
+viewers to the films (Related video), end screens and pinned comments from the films with the most viewers,
+playlists, community posts, searchable titles, and steady uploads. Judge the long films by free views over
+weeks, not hours.
