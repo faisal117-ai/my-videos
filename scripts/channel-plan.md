@@ -1,6 +1,6 @@
 # Haq Stories: channel analysis and plan (13 Nov 2026)
 
-> **Start here.** The living plans (read these before any planning or production work):
+> **Start here.** First `scripts/handoff.md` (current state and open items). The living plans (read these before any planning or production work):
 > - `scripts/series-plan.md`: the four series (Prophets, Battles, Companions, Heroes), arcs on consecutive
 >   weekends (Khalid, Ali, Umar, Salahuddin…), title templates, the calendar to June 2027, rules, budget.
 > - `scripts/shorts-plan.md`: the role of Shorts, the five named Shorts series, craft rules, the weekly mix,
