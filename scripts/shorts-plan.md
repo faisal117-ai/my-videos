@@ -31,6 +31,9 @@ pinned comment). Shorts that do not lead anywhere are not made.
 - Title "X… then Y" + one emoji, a number where the source gives one; never an advice title.
 - Ends on "Follow for more." so it loops; Arabic only from the packages, sources on screen.
 - Never shown: prophets, the Prophet ﷺ, Companions, righteous women, angels.
+- **No remakes with near-identical titles** of a Short the channel already has (17 Nov: "Four birds… flew back
+  alive" had 4 public views in its first hour next to the older "Four birds… came back alive again"). A topic
+  already covered gets a new angle and a clearly different title, or is not made.
 
 ## A typical week (14 Shorts)
 | | 11:00 | 18:30 |
