@@ -54,9 +54,11 @@ YouTube's rules), and only topics with a sound source.
    - Ashab al-Kahf, Khidr and the boat, the cow (already planned).
    Skipped (no reliable source): Musa's neighbour in Paradise, one bread vs 70 years of worship, Salahuddin and
    the Christian girl, and their invented "news" stories.
-2. **Title test:** some Shorts get their style, short (2–6 words), often a question, one emoji ("Why Did He Tie
-   Himself to a Pillar? 😢"), next to our "X… then Y" style; compare views at the Friday reviews. Never a title
-   near-identical to theirs or to one of ours.
+2. **Title test, 50-50 (user, 17 Nov):** 7 of 14 Shorts a week get their style, a short question about a moment
+   in the story with one emoji ("Why Did He Tie Himself to a Pillar? 😢"); 7 keep our "X… then Y". One of each
+   every day, swapping slots daily. Story questions only, never advice questions ("Why Is Charity Powerful?":
+   our advice titles went 0 for 14). Same opening rules and length for both. Decide after 2 weeks (~14 each) on
+   views and "stayed to watch"; the winner gets 70% or more. Never a title near-identical to theirs or ours.
 3. **Companions and righteous people in Shorts,** not only prophets (Umar, Ali, Abu Lubaba, Uwais): their recent
    Shorts are mostly these, and it feeds our Companions series.
 4. **Evergreen question films** (their two biggest long videos, 245K and 171K, are everyday questions): one
