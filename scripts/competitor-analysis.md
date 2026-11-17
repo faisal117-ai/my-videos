@@ -202,3 +202,23 @@ What it adds:
 4. Isra and Mi'raj (27 Rajab ≈ early Jan 2027) is a seasonal hit; would have to be told without showing the
    Prophet ﷺ or the angels: sky, stars, Masjid al-Aqsa and Makkah only.
 5. Unseen-world topics (Iblis, Dajjal, signs) did weakly in this sample; prophet stories lead.
+
+## Part 4: Miracle of Islam (@miracleofislamm), the channel that inspired Haq Stories (17 Nov 2026)
+Public data, 17 Nov: **218K subscribers, ~11.95M views, 151 videos, joined Jan 2023.** English. Read from the
+public listings (96 newest Shorts, 30 newest long videos).
+- **Grown by Shorts.** Biggest Shorts: "A Worshipper, Iblees & Allah's Mercy" 1.1M, "Ashab-e-Kahf" 836K, "From
+  Well to Jannah" 713K, "Musa (A.S.) and His Neighbor in Paradise" 523K, "Where Is Jannah's Soil?" 470K, "Prophet
+  Ibrahim" 322K. Same kind of stories as ours: mercy, hope, prophets, Quran wonders.
+- **Their Shorts reach has fallen hard.** Median views by age: older Shorts ~58–82K, the newest 40 ~10–12K (best
+  recent: "Hazrat Uzair Slept 100 Years 😱" 28K, "Why Did Hazrat Khizar Break the Boat? 😨" 12K). Shorts alone are
+  not a stable base.
+- **Long videos (10–17 min):** median ~7K for the newest 15, ~3K before. Two evergreen hits: "Why Do Dogs Bark
+  During Azan?" 245K and "Hidden Fig Benefits In The Quran" 171K, both everyday-curiosity questions people search.
+  Recent long videos lean on sensational, hard-to-verify "news" stories ("Christian Pilots Burn QURAN at Atlanta
+  Airport… see what miracle", "What JUST Happened in Mecca TERRIFIED the Entire World!", 1–33K views).
+- **Titles:** Shorts titles are short (2–6 words), often a question, with 😱/😢; long titles are curiosity
+  questions or "…then see what happened".
+**For Haq Stories:** the topics are proven (keep them, always our own script, scenes and sources; never their
+clips or audio). Stay sourced and never sensational: that is how we stand apart and stay safe. Add evergreen
+question films people search ("Why…", "What does the Quran say about…") as Quran-wonders films. Build on films
+and series, not on Shorts alone.
