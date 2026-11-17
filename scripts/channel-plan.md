@@ -167,3 +167,14 @@ Conquest of Makkah must be published before Ramadan 2027.
 - **17 Nov, ElevenLabs:** 80,000 characters left; the user chose to keep the full schedule (films 18–20 min,
   14 Shorts a week, ~36,000 a week). That covers Nuh and Badr; before the Khalid arc (12 Dec), warn the user
   when the balance drops near what the next film needs.
+
+## Lessons from a creator's story (transcript shared by the user, 14 Nov 2026)
+A Hindi-speaking creator whose first two channels were blocked, then grew to 20,000 subscribers and monetisation:
+1. **Never fake engagement:** no asking relatives or groups to subscribe or re-watch, no links in other creators'
+   comments, no new channel from the same device after a block. Uninterested viewers who leave in seconds hurt reach.
+2. **Shorts watch time never counts;** only public long-video hours do (4,000 now; widely reported 8,000 for new
+   applicants from 1 Feb 2027).
+3. **Consistency wins:** her channel only took off with daily uploads, long videos plus regular Shorts.
+4. **Topics people already look for** bring views even with simple editing.
+5. **Thumbnails decide clicks:** the same video did better with a better thumbnail.
+6. **Simple production is enough:** don't overspend on equipment or editors.
