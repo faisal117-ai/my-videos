@@ -185,3 +185,11 @@ at paid shout-outs and chose not to pay for anything: no ads, no shout-outs. Gro
 viewers to the films (Related video), end screens and pinned comments from the films with the most viewers,
 playlists, community posts, searchable titles, and steady uploads. Judge the long films by free views over
 weeks, not hours.
+
+## Goal and checkpoints (17 Nov 2026)
+The user's long-term goal: **$5,000 a month** (realistic in 2–3+ years if growth continues; ads plus sponsors,
+memberships and a product). Realistic next 2 years: $100–500 a month after monetisation. Track at every monthly
+review: long-video views per month, watch time per view, viewers' countries, sponsors, then subscribers.
+Checkpoints: **mid-January 2027** at least 500 subscribers and one film with 1,000+ free views; **end of
+Ramadan 2027 (~mid-March)** close to monetisation (1,000 subscribers, growing watch hours). The user chose to
+continue with Haq Stories (17 Nov), for the reward that lasts as well as the income.
