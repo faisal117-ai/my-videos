@@ -21,8 +21,9 @@ Read next: `scripts/channel-plan.md` (start-here index, core message, decisions)
 - Upcoming Shorts with dark openings are kept as they are (user's choice, a test): wall Wed, Nuh Fri, idols Sat,
   sacrifice Sun.
 
-## Reminders already scheduled (they fire into the OLD session session_019ZSVGVAbgGHBF1NT9wYQik)
-- Fri 20 Nov 20:00 PKT, weekly review + scripts (trig_01RXw1oCMbojRK9QmRX24mZg): numbers, Shorts test,
-  films' reach, then Nuh film EP 4 script (28–29 Nov), 12 Shorts for 23–29 Nov, Badr outline (5–6 Dec).
-- Sat 21 Nov 19:15 PKT (trig_013d8uKtT1FYWLAk6A9BVE3S): Ibrahim translations + Test & Compare thumbnails.
+## Reminders already scheduled (they fire into session session_019ZSVGUajUktRZV46QR3pPi)
+- Fri 20 Nov 20:00 PKT, weekly review + scripts (trig_01KAksZiQFRiZw9MvWhuAx4b): numbers, Shorts test
+  (incl. four birds 31%), films' reach, then Nuh film EP 4 script (28–29 Nov), 12 Shorts for 23–29 Nov, Badr outline (5–6 Dec).
+- Sat 21 Nov 19:15 PKT (trig_019fjXXLAADao9mehepfRs9y): Ibrahim translations + Test & Compare thumbnails.
+The old reminders (trig_01RXw1oCMbojRK9QmRX24mZg, trig_013d8uKtT1FYWLAk6A9BVE3S, old session) were deleted 17 Nov.
 A new session can recreate these for itself (send_later / create_trigger) and delete the old ones.
