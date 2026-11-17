@@ -13,9 +13,14 @@ Read next: `scripts/channel-plan.md` (start-here index, core message, decisions)
 - ElevenLabs: 80,000 characters left on 17 Nov; the user keeps the full schedule; warn before the Khalid arc (12 Dec).
 
 ## Open items
-- Four birds Short (17 Nov 18:30): 18 views in 71 min, **31% stayed / 69% swiped** despite a bright opening →
-  likely the first line ("cut into pieces") reads gruesome before the miracle, plus remake effect. Asked the user
-  for "stayed to watch" % of Ayyub, Yunus and Pharaoh to compare and set the opening rule.
+- **Opening test, "stayed to watch" (17 Nov, Studio):** Pharaoh (medium, "He called himself a god… until the sea")
+  **37.8%** (237 views, 8 h) · four birds (bright) 31% · Musa's mother (dark) 30% · Ayyub (bright) 29.8% (325 views;
+  avg 0:23 = 82% of the Short; one big drop around 7–10 s, the second "hardship" line, then flat) · Yunus (bright,
+  but its first frame is a near-black sea) **19.8%** (173 views). So brightness alone did not lift it; the first
+  line did. Proposed rule (awaiting the user's OK): open on a named person + defiance or a surprising act and a
+  promise of a turn ("…until", "…then Allah"), not a list of suffering or a gruesome detail; no second hardship
+  line, go to the dua by ~6 s; a truly lit first frame. Dark-opening Shorts (wall, Nuh, idols, sacrifice) still
+  to compare at the Friday review.
 - Translations ready to paste (user does it in Studio): `scripts/translations/*.md` (Arabic, Indonesian, Bengali,
   Turkish for English films; Hindi for Urdu films).
 - Upcoming Shorts with dark openings are kept as they are (user's choice, a test): wall Wed, Nuh Fri, idols Sat,
