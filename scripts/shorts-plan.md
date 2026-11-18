@@ -72,8 +72,13 @@ YouTube's rules), and only topics with a sound source.
 7. **Compilations of our own work** (from mid-December, once there are enough films and Shorts): e.g.
    "Stories of the Prophets: 1 Hour" built from our films and re-voiced links, with a new intro, chapters and
    end screen, so it is a new, useful video and not a re-upload. They earn long-video watch hours.
-8. **Film thumbnails:** one bold two-line headline plus one arrow or circle on the key object, honest words;
-   never "BREAKING NEWS", "LIVE", real people's faces or shock text.
+8. **Film thumbnails (user's rule, 18 Nov): always the style of YouTube's suggested Urdu Yusuf thumbnail**
+   (`thumbs/yt-yusuf-ur-well-throne.png`): a rich, detailed illustrated scene in warm light; a split or contrast
+   that shows the story's turn (dark hardship → bright help from Allah); a big two-line headline (the hardship…
+   / …the turn) in the film's language, the turn in yellow; a small chip with the prophet's name and honorific
+   (حضرت یوسفؑ / Prophet Yusuf (AS)); the key object glowing. No people ever; honest words, no news badges, no
+   real faces, no shock text. Made with YouTube Studio's thumbnail generator from a prompt and headline Claude
+   writes for each film (Claude checks the result), or drawn by Claude when the generator can't.
 Not copied: sensational, unverifiable stories; hype ("SHOCKED everyone", "TERRIFIED the world").
 
 ## A typical week (14 Shorts)
