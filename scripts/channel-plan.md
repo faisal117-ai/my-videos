@@ -193,3 +193,20 @@ review: long-video views per month, watch time per view, viewers' countries, spo
 Checkpoints: **mid-January 2027** at least 500 subscribers and one film with 1,000+ free views; **end of
 Ramadan 2027 (~mid-March)** close to monetisation (1,000 subscribers, growing watch hours). The user chose to
 continue with Haq Stories (17 Nov), for the reward that lasts as well as the income.
+
+## From a creator's session on 0 → 1,000 subscribers (Hindi/Urdu transcript shared by the user, 18 Nov 2026)
+Already in the plan: 1,000/4,000 is a door, not the goal; never fake subscribers, watch time, sub4sub or groups
+(it is also deception, so the income would not be halal); one niche; Shorts and long videos together; read the
+analytics and improve; hooks and open loops; consistency; playlists and series. Added from it:
+1. **Community tab, daily:** one post a day (a poll "which prophet next?", a verse or dua card, the next film's
+   announcement, "what did you learn?" after a film). Claude drafts the week's posts at each Friday review.
+2. **Talk to the viewer:** every film ends with one question for the comments ("Which part of Ibrahim's (AS)
+   story moved you most?") and points to one of our other films; every Short's pinned comment asks a question.
+3. **Replies:** reply in the first hour; thank du'as with "JazakAllah khair ❤️"; thank anyone who corrects a
+   mistake, fix it, and say so.
+4. **Series playlists:** set the "Stories of the Prophets" / "Qasas ul Anbiya" playlists as official series
+   playlists in Studio, so YouTube plays the episodes in order.
+5. **Links in bios:** put the channel link in the user's own WhatsApp, Facebook and Instagram bios and share each
+   new film once there (sharing only; the 17 Nov decision of no cross-posting stays).
+6. **Brand deals and affiliate links can start before monetisation** (halal products only: Quran and prayer
+   apps, Islamic books, Ramadan items), once films get steady views.
