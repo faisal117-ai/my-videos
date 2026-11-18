@@ -35,6 +35,21 @@ Read next: `scripts/channel-plan.md` (start-here index, core message, decisions)
 - Upcoming Shorts with dark openings are kept as they are (user's choice, a test): wall Wed, Nuh Fri, idols Sat,
   sacrifice Sun.
 
+## Decisions of 17–18 Nov (all recorded in the plan files; apply them to every new script)
+- **Honorifics every time** (scripts/voice.md): alayhis salaam / (AS), peace be upon him / ﷺ, Razi Allah hu Anhu / (RA).
+- **Core message:** help, prayer (dua), hope and Allah's mercy; the turn comes through dua and Allah's help.
+- **Shorts** (scripts/shorts-plan.md): opening rule (named person + surprising act + turn; one hardship line;
+  turn by ~6 s; lit first frame); 50-50 title test (story questions vs "X… then Y"); word-by-word captions test;
+  sourced topics adopted from Miracle of Islam; no remakes; always 7 days scheduled ahead.
+- **Films** (scripts/channel-plan.md): hook → 2–3 open loops → each chapter opens with a question → suspense in
+  between (chapter cliffhangers, pause and sound before each turn, the answer held back, never invented drama)
+  → takeaway → spoken call to the next film + comment question + end screen.
+- **Thumbnails:** the rich split-scene style of thumbs/yt-yusuf-ur-well-throne.png (shorts-plan item 8).
+- **Growth:** no paid promotion of any kind; daily Community post; reply in the first hour; series playlists;
+  channel link in the user's bios; sponsors and halal affiliate links later.
+- **Goal:** $5,000 a month long-term; checkpoints mid-January (500 subscribers, a film with 1,000 free views)
+  and end of Ramadan 2027 (close to monetisation). Research: scripts/miracle-of-islam-research.md.
+
 ## Reminders already scheduled (they fire into session session_019ZSVGUajUktRZV46QR3pPi)
 - Fri 20 Nov 20:00 PKT, weekly review + scripts (trig_01KAksZiQFRiZw9MvWhuAx4b): numbers, Shorts test
   (incl. four birds 31%), films' reach, then Nuh film EP 4 script (28–29 Nov), 12 Shorts for 23–29 Nov, Badr outline (5–6 Dec).
