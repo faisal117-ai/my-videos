@@ -210,3 +210,7 @@ analytics and improve; hooks and open loops; consistency; playlists and series. 
    new film once there (sharing only; the 17 Nov decision of no cross-posting stays).
 6. **Brand deals and affiliate links can start before monetisation** (halal products only: Quran and prayer
    apps, Islamic books, Ramadan items), once films get steady views.
+7. **Film structure (from the same session):** hook (opening rule) → 2–3 open loops through the film ("But that
+   well was not the last time his brothers would see him…") → each chapter opens with a question it answers →
+   the story with sources → a takeaway to keep ("Save this dua", one action for today) → a spoken call to the
+   next film + one comment question + end screen. Check every film script against this before voicing.
