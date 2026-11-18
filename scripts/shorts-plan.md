@@ -19,11 +19,11 @@ pinned comment). Shorts that do not lead anywhere are not made.
 ## Five named Shorts series (each with its own look, so the channel never feels templated)
 | Series (on-screen label) | What it is | Example | Look |
 |---|---|---|---|
-| **The Moment** | the strongest moment of the coming or latest film, ending on a cliffhanger → the film | "He took the flag when three commanders had fallen…" (Mu'tah, Khalid Part 1) | the film's own scene, full colour |
+| **The Moment** | the strongest moment of the coming or latest film, ending on a cliffhanger → the film | "The water reached the mountains… and his own son refused the ship" (Nuh EP 4) | the film's own scene, full colour |
 | **Quran Wonders** | one impossible event from the Quran, weekly | "They slept 309 years…", "An army of elephants stopped at Makkah" | starry night / gold, big Arabic word |
-| **Words That Changed History** | one sourced sentence and its story | "Whoever worshipped Muhammad… Muhammad has died; whoever worships Allah, Allah is alive" (Abu Bakr (RA), Bukhari) | parchment, the quote building word by word |
+| **Words That Changed History** | one sourced sentence and its story | "No blame upon you today" (Yusuf (AS) to his brothers, 12:92) | parchment, the quote building word by word |
 | **Duas of the Prophets** | a prophet's dua from the Quran and the moment he said it (shareable, saved) | Yunus in the fish (21:87), Ayyub (21:83), Musa (28:24), Ibrahim (14:35–41) | calm dawn light, Arabic + translation, ends with "Save this dua" |
-| **On This Day** | Islamic-calendar anniversaries | 17 Ramadan: "On this day, 313 faced 1,000…" → Badr film | map + date stamp |
+| **On This Day** | Islamic-calendar anniversaries | 17 Ramadan: "On this day, Allah sent help from the sky…" (Al-Anfal 8:9–12, Allah's help only, no Companion as the subject) → Badr film | map + date stamp |
 
 ## The craft rules (every Short)
 - About 30 s, never over 35; a bright, warm first frame; the main object visible from frame 1.
@@ -49,18 +49,21 @@ YouTube's rules), and only topics with a sound source.
    - the leper, the bald man and the blind man, tested with wealth (Bukhari 3464, Muslim 2964);
    - the man who sent 1,000 dinars across the sea in a piece of wood (Bukhari 2291);
    - Uwais al-Qarani, honoured for serving his mother (Muslim 2542; a Tabi'i: "rahimahullah");
-   - Abu Lubaba (RA) tying himself to a pillar of the mosque (seerah and tafsir of 9:102, said so);
    - Dawud (AS) and the two men who climbed into his prayer room (Sad 38:21–25);
    - Ashab al-Kahf, Khidr and the boat, the cow (already planned).
    Skipped (no reliable source): Musa's neighbour in Paradise, one bread vs 70 years of worship, Salahuddin and
    the Christian girl, and their invented "news" stories.
 2. **Title test, 50-50 (user, 17 Nov):** 7 of 14 Shorts a week get their style, a short question about a moment
-   in the story with one emoji ("Why Did He Tie Himself to a Pillar? 😢"); 7 keep our "X… then Y". One of each
+   in the story with one emoji ("Why Did the Rock Move Away? 🤲"); 7 keep our "X… then Y". One of each
    every day, swapping slots daily. Story questions only, never advice questions ("Why Is Charity Powerful?":
    our advice titles went 0 for 14). Same opening rules and length for both. Decide after 2 weeks (~14 each) on
    views and "stayed to watch"; the winner gets 70% or more. Never a title near-identical to theirs or ours.
-3. **Companions and righteous people in Shorts,** not only prophets (Umar, Ali, Abu Lubaba, Uwais): their recent
-   Shorts are mostly these, and it feeds our Companions series.
+3. **No Companions in Shorts (user's rule, 18 Nov).** The Companions of the Prophet ﷺ appear only in the long
+   films (Companions and Battles series), never in Shorts. Shorts stay with prophets, Quran wonders and the
+   righteous people of the hadith stories (the three men in the cave; the leper, bald and blind men; the man
+   with 1,000 dinars; Uwais al-Qarani, a Tabi'i, not a Companion). In Companions or battle film weeks, "The
+   Moment" Shorts are replaced by prophet or Quran-wonder Shorts, and the film is promoted by Community posts,
+   end screens and pinned comments instead.
 4. **Evergreen question films** (their two biggest long videos, 245K and 171K, are everyday questions): one
    10–15 min Quran-wonders film now and then, built on a question people search, e.g. "Why did Allah mention
    honey in the Quran?" (An-Nahl 16:68–69), "What happened to the army of the Elephant?" (Al-Fil).

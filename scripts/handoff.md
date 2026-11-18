@@ -40,7 +40,7 @@ Read next: `scripts/channel-plan.md` (start-here index, core message, decisions)
 - **Core message:** help, prayer (dua), hope and Allah's mercy; the turn comes through dua and Allah's help.
 - **Shorts** (scripts/shorts-plan.md): opening rule (named person + surprising act + turn; one hardship line;
   turn by ~6 s; lit first frame); 50-50 title test (story questions vs "X… then Y"); word-by-word captions test;
-  sourced topics adopted from Miracle of Islam; no remakes; always 7 days scheduled ahead.
+  sourced topics adopted from Miracle of Islam; no Companions in Shorts (films only); no remakes; always 7 days scheduled ahead.
 - **Films** (scripts/channel-plan.md): hook → 2–3 open loops → each chapter opens with a question → suspense in
   between (chapter cliffhangers, pause and sound before each turn, the answer held back, never invented drama)
   → takeaway → spoken call to the next film + comment question + end screen.
