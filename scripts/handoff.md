@@ -27,6 +27,9 @@ Read next: `scripts/channel-plan.md` (start-here index, core message, decisions)
   chapter times. ElevenLabs used ~15,500 characters (about 64,000 left if it was 80,000 before). The published
   Yusuf and Musa films stay as they are (user's choice, already live); the sun Short (18 Nov) keeps "one of the prophets" (user's choice).
   This session runs on the "my-videos" environment (the one with the ElevenLabs key).
+- **Title test started early (18 Nov):** question titles on Thu 19 11:00 ("Can a Man Who Killed 100 Be Forgiven? 🤲"),
+  Fri 20 18:30 ("What Happened After 950 Years? 🌧️"), Sat 21 11:00 ("Why Did He Leave the Biggest Idol Standing? 🪓");
+  "X… then Y" kept on Qarun (Thu 18:30), hoopoe (Fri 11:00), sacrifice (Sun 11:00). Videos unchanged.
 - Translations ready to paste (user does it in Studio): `scripts/translations/*.md` (Arabic, Indonesian, Bengali,
   Turkish for English films; Hindi for Urdu films).
 - Upcoming Shorts with dark openings are kept as they are (user's choice, a test): wall Wed, Nuh Fri, idols Sat,
