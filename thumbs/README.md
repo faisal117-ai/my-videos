@@ -44,3 +44,5 @@ circle on the key object, honest words.
 | `v3-yusuf-ur-a-well.jpg` (use first) | the well in daylight, arrow into it, crown above | بھائیوں نے کنویں میں پھینکا… / …اللہ نے بادشاہ بنا دیا |
 | `v3-yusuf-ur-b-throne.jpg` | the well → the crown, circled | کنویں سے… / …تخت تک |
 | `v3-yusuf-ur-c-stars.jpg` | the 11 stars, sun and moon, circled | گیارہ ستارے، سورج اور چاند… / …سب سجدے میں! |
+| `yt-yusuf-ur-well-throne.png` (YouTube Studio's suggestion, 18 Nov) | dark well left, golden throne in an Egyptian hall right | اندھیرے کنویں سے… / …شاہی تخت تک! |
+Test & Compare set: YouTube's suggestion, A (well in daylight) and C (11 stars): three different ideas.
