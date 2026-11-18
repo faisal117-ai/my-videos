@@ -34,3 +34,13 @@ Back in use: Yusuf `yusuf-a-well.jpg` (changed in Studio by the user), Ibrahim `
 "Thrown Into the Fire… It Became Cool | Prophet Ibrahim (AS) Full Story", Ibrahim Urdu `ibrahim-ur-fire.jpg`
 (Metricool updated). Musa keeps its original thumbnail. The `final-*` three-word versions stay here for a
 Test & Compare later; the CTR numbers will decide.
+
+## Update (18 Nov): Urdu Yusuf EP 2, new layout (tools/thumbs_v3.py)
+The Urdu Yusuf film had ~1,000 impressions and about 1% CTR. The old `yusuf-ur-well.jpg` reads as a white disc at
+phone size. New layout from the Miracle of Islam research: full bright scene, two-line headline, one red arrow or
+circle on the key object, honest words.
+| File | Scene | Headline |
+|---|---|---|
+| `v3-yusuf-ur-a-well.jpg` (use first) | the well in daylight, arrow into it, crown above | بھائیوں نے کنویں میں پھینکا… / …اللہ نے بادشاہ بنا دیا |
+| `v3-yusuf-ur-b-throne.jpg` | the well → the crown, circled | کنویں سے… / …تخت تک |
+| `v3-yusuf-ur-c-stars.jpg` | the 11 stars, sun and moon, circled | گیارہ ستارے، سورج اور چاند… / …سب سجدے میں! |
