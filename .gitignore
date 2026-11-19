@@ -10,3 +10,11 @@ long/*/assets/ambience.wav
 long/*/assets/narration.wav
 long/*/*-raw.mp4
 long/*/*-new.mp4
+shorts/*/film/.sfxcache/
+shorts/*/film/shots/
+shorts/*/film/audio.wav
+shorts/*/film/film.json
+shorts/*/*-raw.mp4
+shorts/*/film/silent.mp4
+shorts/*/film/list.txt
+shorts/*/film/contact_sheet.jpg
