@@ -217,3 +217,8 @@ analytics and improve; hooks and open loops; consistency; playlists and series. 
 8. **Colour (user, 19 Nov):** films follow the same colour rule as Shorts (shorts-plan.md): each chapter opens
    in a bright, warm scene; night and storm scenes are short; the turn brightens the screen; the lesson and the
    end are in full light.
+9. **First 30 seconds of a film (from the Urdu Yusuf retention, 19 Nov: 43 views, avg 4:02 = 25%):** about 60% of
+   viewers left in the first 30–45 s; almost everyone still there at 1:00 watched to the end (flat ~35% line).
+   So: the hook in one short sentence in the first 5 s (no 12-second line), the promise of the payoff by 0:15
+   ("…and how one dua changed everything"), into the story by 0:20–0:30, a bright first scene; the title card
+   comes after the hook, never before it.
