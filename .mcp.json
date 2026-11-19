@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "atlascloud": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "atlascloud-mcp"
+      ],
+      "env": {
+        "ATLASCLOUD_API_KEY": "proxy-injected"
+      }
+    }
+  }
+}
