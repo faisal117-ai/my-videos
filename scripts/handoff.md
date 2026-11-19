@@ -30,6 +30,8 @@ Read next: `scripts/channel-plan.md` (start-here index, core message, decisions)
 - **Title test started early (18 Nov):** question titles on Thu 19 11:00 ("Can a Man Who Killed 100 Be Forgiven? 🤲"),
   Fri 20 18:30 ("What Happened After 950 Years? 🌧️"), Sat 21 11:00 ("Why Did He Leave the Biggest Idol Standing? 🪓");
   "X… then Y" kept on Qarun (Thu 18:30), hoopoe (Fri 11:00), sacrifice (Sun 11:00). Videos unchanged.
+- **Core message added to this week's Shorts (19 Nov):** Qarun (+28:82, 19 Nov 18:30), Nuh (+54:10 dua, 20 Nov 18:30),
+  idols (+21:69, 21 Nov 11:00) re-voiced, re-rendered and swapped in Metricool. Hoopoe and sacrifice unchanged.
 - Translations ready to paste (user does it in Studio): `scripts/translations/*.md` (Arabic, Indonesian, Bengali,
   Turkish for English films; Hindi for Urdu films).
 - Upcoming Shorts with dark openings are kept as they are (user's choice, a test): wall Wed, Nuh Fri, idols Sat,
