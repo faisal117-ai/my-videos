@@ -85,7 +85,7 @@ YouTube's rules), and only topics with a sound source.
    (حضرت یوسفؑ / Prophet Yusuf (AS)); the key object glowing. No people ever; honest words, no news badges, no
    real faces, no shock text. Made with YouTube Studio's thumbnail generator from a prompt and headline Claude
    writes for each film (Claude checks the result), or drawn by Claude when the generator can't.
-   **After every upload, Claude asks the user to change the thumbnail to YouTube's suggestion** (Studio's
+   **After every upload, Claude asks the user to change the thumbnail to YouTube's suggestion, and schedules a reminder for 15 min after each film goes live** (Studio's
    generator, with Claude's prompt and headline), and checks the result before it is applied (user's rule, 19 Nov).
 Not copied: sensational, unverifiable stories; hype ("SHOCKED everyone", "TERRIFIED the world").
 

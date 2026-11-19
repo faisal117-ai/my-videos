@@ -61,6 +61,7 @@ Read next: `scripts/channel-plan.md` (start-here index, core message, decisions)
 ## Reminders already scheduled (they fire into session session_019ZSVGUajUktRZV46QR3pPi)
 - Fri 20 Nov 20:00 PKT, weekly review + scripts (trig_01KAksZiQFRiZw9MvWhuAx4b): numbers, Shorts test
   (incl. four birds 31%), films' reach, then Nuh film EP 4 script (28–29 Nov), 12 Shorts for 23–29 Nov, Badr outline (5–6 Dec).
+- Sat 21 Nov 18:45 PKT (trig_011f8FxKtHGsCYUpgxGrgkTS) and Sun 22 Nov 18:45 PKT (trig_017D9yP7GadUrptijSAUTz1D): remind the user to remake the Ibrahim EN / UR thumbnail from YouTube Studio's suggestion (user's rule: a reminder after every film upload).
 - Sat 21 Nov 19:15 PKT (trig_019fjXXLAADao9mehepfRs9y): Ibrahim translations + Test & Compare thumbnails.
 The old reminders (trig_01RXw1oCMbojRK9QmRX24mZg, trig_013d8uKtT1FYWLAk6A9BVE3S, old session) were deleted 17 Nov.
 A new session can recreate these for itself (send_later / create_trigger) and delete the old ones.
