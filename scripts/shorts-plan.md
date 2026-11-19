@@ -48,7 +48,12 @@ YouTube's rules), and only topics with a sound source.
    - the three men trapped in the cave by a rock, each praying by one good deed (Bukhari 2272, Muslim 2743);
    - the leper, the bald man and the blind man, tested with wealth (Bukhari 3464, Muslim 2964);
    - the man who sent 1,000 dinars across the sea in a piece of wood (Bukhari 2291);
-   - Uwais al-Qarani, honoured for serving his mother (Muslim 2542; a Tabi'i: "rahimahullah");
+   - **Uwais al-Qarani and his love for his mother** (user's pick, 18 Nov: in the 23–29 Nov Shorts). Sahih Muslim
+     2542: the Prophet ﷺ told of a man from Yemen, Uwais, cured of leprosy but for a spot the size of a dirham, who
+     was devoted to his mother; if he swore by Allah, Allah would fulfil it; and he told Umar (RA) to ask Uwais to
+     pray for his forgiveness. Uwais stayed home to serve his mother instead of travelling to meet the Prophet ﷺ.
+     A Tabi'i ("rahimahullah"); no one shown: his mother, Uwais, the Prophet ﷺ and Umar (RA) only by voice, text
+     and places (a Yemeni village, a lamp, the road to Madinah, a caravan). Lesson: serving one's parents.
    - Abu Lubaba (RA) tying himself to a pillar of the mosque (seerah and tafsir of 9:102, said so);
    - Dawud (AS) and the two men who climbed into his prayer room (Sad 38:21–25);
    - Ashab al-Kahf, Khidr and the boat, the cow (already planned).
