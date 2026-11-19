@@ -59,6 +59,10 @@ Read next: `scripts/channel-plan.md` (start-here index, core message, decisions)
   empty prefix -> models list works (200). Image models: gemini-2.5-flash-image, gemini-3.1-flash-image(-preview),
   gemini-3.1-flash-lite-image, gemini-3-pro-image(-preview). Every image model answers 429 "free tier limit: 0",
   so billing must be turned on before any image can be made (test prompt: an ordinary market crowd, 9:16).
+- 19 Nov 18:00: billing on (prepaid $5 credit, user's choice; tell the user before it runs out). Qarun Short
+  rebuilt with 6 Gemini scenes (shorts/17-qarun/assets/gen, scene "photos" in tools/build_short.py: one still per
+  beat, slow push-in, cross-fades, shake_beat), moved to 19:00 PKT, swapped in Metricool with isAiGeneratedContent
+  true. ~7 images used so far (~$0.28). Next: hoopoe (Fri 11:00), Nuh (Fri 18:30), idols (Sat 11:00).
 - Billing: the image model probably needs billing turned on in AI Studio (~$0.04/image); the user has not added
   any yet. If generation fails with a billing/quota error, tell them how (AI Studio -> Set up billing, set a cap).
 - Then: make one test image (an ordinary crowd scene, no prophet, Companion, righteous woman or angel) and

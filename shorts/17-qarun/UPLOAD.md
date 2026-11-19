@@ -1,7 +1,7 @@
 # Short: 17-qarun: Upload details
 
 **File:** `17-qarun.mp4` (1080×1920, about 30–37 s, English narration (Callum), Urdu subtitles on screen)
-**Post:** Thu 19 Nov, 18:30 PKT
+**Post:** Thu 19 Nov, 19:00 PKT (moved from 18:30 for the Gemini rebuild)
 
 ## Title
 The richest man on earth… the ground swallowed him 💰
@@ -20,7 +20,7 @@ Follow Haq Stories | حق کہانیاں for a new story from the Quran, every d
 qarun story, korah in islam, qarun ka waqia, richest man in quran, surah qasas 28 81, earth swallowed him, quran stories, islamic shorts, haq stories
 
 ## Settings
-- Altered or synthetic content: No. Made for kids: No. Category: Education.
+- Altered or synthetic content: Yes (Gemini scenes with realistic people; set in Metricool). Made for kids: No. Category: Education.
 - Add to the playlist "Quran Stories in 60 Seconds".
 
 ## After you publish
