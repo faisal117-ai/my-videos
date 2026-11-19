@@ -29,7 +29,7 @@
   <div id="atmos" data-composition-id="atmos" data-width="1080" data-height="1920" data-layout-allow-overflow>
     <div id="sky" class="clip" data-start="0" data-duration="77.54"></div>
 
-    <div id="phsc" class="clip" data-start="0" data-duration="77.54"><div id="ph0" class="ph"><img src="assets/gen/s1.jpg" alt=""></div><div id="ph1" class="ph"><img src="assets/gen/s2.jpg" alt=""></div><div id="ph2" class="ph"><img src="assets/gen/s3.jpg" alt=""></div><div id="ph3" class="ph"><video id="phv3" class="clip" src="assets/gen/talk_s4.mp4" muted playsinline data-start="22.69" data-duration="8.61" data-track-index="6" data-volume="0" style="width:100%;height:100%;object-fit:cover;display:block"></video></div><div id="ph4" class="ph"><video id="phv4" class="clip" src="assets/gen/talk_s5.mp4" muted playsinline data-start="30.70" data-duration="4.62" data-track-index="7" data-volume="0" style="width:100%;height:100%;object-fit:cover;display:block"></video></div><div id="ph5" class="ph"><img src="assets/gen/s6.jpg" alt=""></div><div id="ph6" class="ph"><img src="assets/gen/s7.jpg" alt=""></div><div id="ph7" class="ph"><img src="assets/gen/s8.jpg" alt=""></div><div id="ph8" class="ph"><img src="assets/gen/s9.jpg" alt=""></div><div id="ph9" class="ph"><video id="phv9" class="clip" src="assets/gen/talk_s3.mp4" muted playsinline data-start="51.85" data-duration="4.96" data-track-index="12" data-volume="0" style="width:100%;height:100%;object-fit:cover;display:block"></video></div><div id="ph10" class="ph"><img src="assets/gen/s10.jpg" alt=""></div><div id="ph11" class="ph"><img src="assets/gen/s11.jpg" alt=""></div><div id="ph12" class="ph"><img src="assets/gen/s11.jpg" alt=""></div><div id="phg0" class="phglow"></div><div id="phg1" class="phglow"></div><div id="phg2" class="phglow"></div><div id="phshade"></div></div>
+    <div id="phsc" class="clip" data-start="0" data-duration="77.54"><div id="ph0" class="ph"><img src="assets/gen/s1.jpg" alt=""></div><div id="ph1" class="ph"><img src="assets/gen/s2.jpg" alt=""></div><div id="ph2" class="ph"><img src="assets/gen/s3.jpg" alt=""></div><div id="ph3" class="ph"><img src="assets/gen/s4.jpg" alt=""></div><div id="ph4" class="ph"><img src="assets/gen/s5.jpg" alt=""></div><div id="ph5" class="ph"><img src="assets/gen/s6.jpg" alt=""></div><div id="ph6" class="ph"><img src="assets/gen/s7.jpg" alt=""></div><div id="ph7" class="ph"><img src="assets/gen/s8.jpg" alt=""></div><div id="ph8" class="ph"><img src="assets/gen/s9.jpg" alt=""></div><div id="ph9" class="ph"><img src="assets/gen/s3.jpg" alt=""></div><div id="ph10" class="ph"><img src="assets/gen/s10.jpg" alt=""></div><div id="ph11" class="ph"><img src="assets/gen/s11.jpg" alt=""></div><div id="ph12" class="ph"><img src="assets/gen/s11.jpg" alt=""></div><div id="phg0" class="phglow"></div><div id="phg1" class="phglow"></div><div id="phg2" class="phglow"></div><div id="phshade"></div></div>
     <div id="warm" class="clip" data-start="0" data-duration="77.54"><div id="warm-g" style="opacity:0"><div id="warm-b"></div></div></div>
     <div id="cool" class="clip" data-start="0" data-duration="77.54"><div id="cool-g" style="opacity:0.1"></div></div>
     <div id="embers" class="clip" data-start="0" data-duration="77.54"><div id="embers-g" style="opacity:0.35">
@@ -52,10 +52,10 @@
     tl.fromTo("#ph2", {scale: 1.0, x: 0}, {scale: 1.08, x: 0, duration: 10.50, ease: "none", immediateRender: false}, 12.89);
     tl.to("#ph2", {opacity: 0, duration: 0.3, immediateRender: false}, 23.19);
     tl.fromTo("#ph3", {opacity: 0}, {opacity: 1, duration: 0.7, ease: "sine.inOut", immediateRender: false}, 22.49);
-    tl.fromTo("#ph3", {scale: 1.0, x: 0}, {scale: 1.02, x: 0, duration: 8.91, ease: "none", immediateRender: false}, 22.49);
+    tl.fromTo("#ph3", {scale: 1.08, x: -20}, {scale: 1.0, x: 20, duration: 8.91, ease: "none", immediateRender: false}, 22.49);
     tl.to("#ph3", {opacity: 0, duration: 0.3, immediateRender: false}, 31.20);
     tl.fromTo("#ph4", {opacity: 0}, {opacity: 1, duration: 0.7, ease: "sine.inOut", immediateRender: false}, 30.50);
-    tl.fromTo("#ph4", {scale: 1.0, x: 0}, {scale: 1.02, x: 0, duration: 4.92, ease: "none", immediateRender: false}, 30.50);
+    tl.fromTo("#ph4", {scale: 1.0, x: 0}, {scale: 1.08, x: 0, duration: 4.92, ease: "none", immediateRender: false}, 30.50);
     tl.to("#ph4", {opacity: 0, duration: 0.3, immediateRender: false}, 35.22);
     tl.fromTo("#ph5", {opacity: 0}, {opacity: 1, duration: 0.7, ease: "sine.inOut", immediateRender: false}, 34.52);
     tl.fromTo("#ph5", {scale: 1.08, x: -20}, {scale: 1.0, x: 20, duration: 3.26, ease: "none", immediateRender: false}, 34.52);
@@ -70,7 +70,7 @@
     tl.fromTo("#ph8", {scale: 1.0, x: 0}, {scale: 1.08, x: 0, duration: 7.59, ease: "none", immediateRender: false}, 44.96);
     tl.to("#ph8", {opacity: 0, duration: 0.3, immediateRender: false}, 52.35);
     tl.fromTo("#ph9", {opacity: 0}, {opacity: 1, duration: 0.7, ease: "sine.inOut", immediateRender: false}, 51.65);
-    tl.fromTo("#ph9", {scale: 1.0, x: 0}, {scale: 1.02, x: 0, duration: 5.26, ease: "none", immediateRender: false}, 51.65);
+    tl.fromTo("#ph9", {scale: 1.08, x: -20}, {scale: 1.0, x: 20, duration: 5.26, ease: "none", immediateRender: false}, 51.65);
     tl.to("#ph9", {opacity: 0, duration: 0.3, immediateRender: false}, 56.71);
     tl.fromTo("#ph10", {opacity: 0}, {opacity: 1, duration: 0.7, ease: "sine.inOut", immediateRender: false}, 56.01);
     tl.fromTo("#ph10", {scale: 1.0, x: 0}, {scale: 1.08, x: 0, duration: 5.87, ease: "none", immediateRender: false}, 56.01);

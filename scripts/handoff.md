@@ -77,6 +77,9 @@ Read next: `scripts/channel-plan.md` (start-here index, core message, decisions)
   62/100, user chose A; "No one knew they were there" removed, not in Bukhari 2272). Next for it: yt-package, yt-seo.
 - shorts/23-cave = stickman cartoon test (not for upload); shorts/24-cave = the Gemini version being built
   (11 scenes made, ~$0.44; hook re-voiced in 24-cave/hook/).
+- **Code-made mouth movement rejected** (user, 19 Nov: "not good for the channel"). tools/talk_clip.py stays in the
+  repo but is not used. Talking characters only with real AI video (Gemini Omni, needs credit) or not at all;
+  otherwise still Gemini pictures + camera moves, shakes, light blooms, dust.
 
 ## Decision of 19 Nov
 - **19 Nov 23:37 PKT:** test Short 22-gardens (Al-Kahf 18:32–42, first real animation: two Gemini Omni 1.2 Flash
