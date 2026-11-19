@@ -188,3 +188,7 @@ video), `scripts/channel-plan.md`, `scripts/shorts-plan.md`, `scripts/series-pla
 - Sat 21 Nov 19:15 PKT (trig_019fjXXLAADao9mehepfRs9y): Ibrahim translations + Test & Compare thumbnails.
 The old reminders (trig_01RXw1oCMbojRK9QmRX24mZg, trig_013d8uKtT1FYWLAk6A9BVE3S, old session) were deleted 17 Nov.
 A new session can recreate these for itself (send_later / create_trigger) and delete the old ones.
+
+### 19/20 Nov late: Sulaiman EP 3 re-made (EN + UR)
+- Both films re-rendered with the fixed script, house-style shakes/light blooms, exact verse cards; mixed (-14.5 / -14.3 LUFS), CRF 27: EN 11:03 80 MB, UR 11:43 83 MB. Commit 067251a.
+- Waiting for the user's approval. Then swap media, titles, descriptions, chapters and thumbnails in Metricool posts 434496552 (EN, Sat 21 Nov 18:30) and 434526077 (UR, Sun 22 Nov 18:30).
