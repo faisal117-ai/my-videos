@@ -71,6 +71,13 @@ Read next: `scripts/channel-plan.md` (start-here index, core message, decisions)
   returning, 21:59); sacrifice has no ordinary people, leave it. Videos with realistic synthetic people go up
   with isAiGeneratedContent true.
 
+## Decision of 19 Nov (late): skills
+- **Use every stored skill that applies, without being reminded** (user, 19 Nov). The step-by-step list is in
+  CLAUDE.md (root, loaded every session) and checklist.md. Cave Short: yt-script ran (old hook 37/100 → hook A
+  62/100, user chose A; "No one knew they were there" removed, not in Bukhari 2272). Next for it: yt-package, yt-seo.
+- shorts/23-cave = stickman cartoon test (not for upload); shorts/24-cave = the Gemini version being built
+  (11 scenes made, ~$0.44; hook re-voiced in 24-cave/hook/).
+
 ## Decision of 19 Nov
 - **19 Nov 23:37 PKT:** test Short 22-gardens (Al-Kahf 18:32–42, first real animation: two Gemini Omni 1.2 Flash
   lip-synced clips of ordinary people; question + held-back answer + pauses + humming + lesson) published now at the
