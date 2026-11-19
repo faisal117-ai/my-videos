@@ -4,6 +4,13 @@ Read next: root `CLAUDE.md` (standing rules + which skill runs at each step), `s
 video), `scripts/channel-plan.md`, `scripts/shorts-plan.md`, `scripts/series-plan.md`, `scripts/voice.md`.
 
 ## NOW (19 Nov night): the current state in one place
+- **20 Nov (session_019ZSVGSKwArszmxSEYesnzJ, "my-videos" env): cave talking clips priced, waiting on the user.**
+  Atlas works but the balance is **$0.00**: nothing can be generated until the user tops up atlascloud.ai.
+  Atlas itself sells `sync/lipsync-v3` ($0.22/s), so the separate Sync MCP / mcp.sync.so secret is NOT needed.
+  Men's lines = beats 3, 4, 6, 8, 9 (23.7 s of speech; clips ~26 s with padding). Options (image + our
+  Declan/Peter/Adam audio → talking clip): Kling v2.6 Std Avatar $0.048/s ≈ $1.25 (recommended);
+  OmniHuman 1.5 $0.12/s ≈ $3.10; Kling video + Sync lipsync-v3 ≈ $7+. The old assets/gen/talk_s*.mp4 are the
+  rejected code-made mouths: replace them, don't reuse.
 - **20 Nov 00:xx PKT, START NEW SESSIONS ON THE "my-videos" ENVIRONMENT.** Session session_019ZSVGScBUUkyUorGhVgReh
   opened on "Default", which has no keys: api.atlascloud.ai is blocked there (proxy 403) and the Gemini/ElevenLabs
   keys are missing. A running session can't be moved onto "my-videos", so the cave Short wasn't touched.
