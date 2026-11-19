@@ -1,0 +1,21 @@
+<template>
+  <style>
+    #b8 { position: absolute; inset: 0; }
+    #b8-wrap { position: absolute; left: 90px; right: 140px; top: 250px; bottom: 1120px;
+      display: flex; flex-direction: column; justify-content: flex-start; gap: 20px; }
+  </style>
+  <div id="b8" data-composition-id="b8" data-width="1080" data-height="1920">
+    <div id="b8-wrap" class="clip" data-start="0" data-duration="6.09">
+      <div id="b8-txt" class="txt"><span class="w" id="b8-w0">When</span> <span class="w" id="b8-w1">you</span> <span class="w" id="b8-w2">see</span> <span class="w" id="b8-w3">a</span> <span class="w" id="b8-w4">blessing,</span> <span class="w" id="b8-w5">say:</span> <span class="w hi" id="b8-w6">Masha&#x27;Allah,</span> <span class="w" id="b8-w7">la</span> <span class="w" id="b8-w8">quwwata</span> <span class="w" id="b8-w9">illa</span> <span class="w hi" id="b8-w10">billah.</span></div>
+      <div id="b8-ur" class="ur" dir="rtl" lang="ur" data-layout-allow-overflow>جب کوئی نعمت دیکھیں تو کہیں: ماشاءاللہ، لا قوة الّا باللہ</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#b8 .w", {opacity: 0, y: 22, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.32, ease: "power2.out", stagger: 0.395}, 0.12);
+    tl.fromTo("#b8 .hi", {textShadow: "0 0 0px rgba(0,0,0,0)"}, {textShadow: "0 0 28px var(--accent)", duration: 0.6, ease: "power1.out"}, 2.79);
+    tl.fromTo("#b8-ur", {opacity: 0, y: 10}, {opacity: 1, y: 0, duration: 0.35, ease: "power2.out"}, 0.15);
+    tl.fromTo("#b8-wrap", {opacity: 1}, {opacity: 0, duration: 0.22, ease: "power1.in"}, 5.85);
+    window.__timelines["b8"] = tl;
+  </script>
+</template>

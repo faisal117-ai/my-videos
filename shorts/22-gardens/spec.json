@@ -1,0 +1,212 @@
+{
+  "accent": "#f2b04a",
+  "embers": false,
+  "flash": 0.4,
+  "bed_volume": 1.0,
+  "hold_end": 0.5,
+  "text_top": 300,
+  "text_bottom": 780,
+  "tr_size": 56,
+  "scene": "photos",
+  "photos": [
+    "assets/gen/s1.jpg",
+    "assets/gen/s1.jpg",
+    "assets/gen/s2.jpg",
+    "assets/gen/clip_s3.mp4",
+    "assets/gen/s4.jpg",
+    "assets/gen/s5.jpg",
+    "assets/gen/clip_s6.mp4",
+    "assets/gen/s7.jpg",
+    "assets/gen/s7.jpg"
+  ],
+  "beats": [
+    {
+      "hook": true,
+      "text": "He said his garden would never die…",
+      "sub": "…by morning, it was gone.",
+      "ur": "اس نے کہا میرا باغ کبھی ختم نہیں ہو گا… صبح تک وہ اجڑ چکا تھا",
+      "reveal": false,
+      "mood": {
+        "warm": 0.12,
+        "cool": 0
+      }
+    },
+    {
+      "text": "Two gardens of *grapevines*, bordered with palm trees.",
+      "ur": "انگور کے دو باغ، جن کے گرد کھجور کے درختوں کی باڑھ تھی",
+      "ref": "Al-Kahf 18:32",
+      "mood": {
+        "warm": 0.12,
+        "cool": 0
+      }
+    },
+    {
+      "text": "He walked in, *proud* of all he had…",
+      "ur": "وہ اپنی دولت پر فخر کرتا ہوا باغ میں داخل ہوا",
+      "mood": {
+        "warm": 0.12,
+        "cool": 0
+      }
+    },
+    {
+      "q": "18:35",
+      "ar_words": [
+        6,
+        12
+      ],
+      "en": "I do not think that this will perish - ever",
+      "ur_q": "میں نہیں سمجھتا کہ یہ دولت کبھی فنا ہو جائے گی",
+      "ref": "Al-Kahf 18:35",
+      "mood": {
+        "warm": 0.12,
+        "cool": 0
+      },
+      "arabic": "قَالَ مَآ أَظُنُّ أَن تَبِيدَ هَٰذِهِۦٓ أَبَدࣰا",
+      "translation": "“I do not think that this will perish - ever”",
+      "ur": "میں نہیں سمجھتا کہ یہ دولت کبھی فنا ہو جائے گی"
+    },
+    {
+      "q": "18:39",
+      "ar_words": [
+        1,
+        12
+      ],
+      "en": "why did you, when you entered your garden, not say, 'What Allah willed [has occurred]; there is no power except in Allah",
+      "ur_q": "تو اپنی جنت میں داخل ہو رہا تھا تو اس وقت تیری زبان سے یہ کیوں نہ نکلا کہ ماشاءاللہ، لا قوة الّا باللہ",
+      "ref": "Al-Kahf 18:39",
+      "mood": {
+        "warm": 0.12,
+        "cool": 0
+      },
+      "arabic": "وَلَوۡلَآ إِذۡ دَخَلۡتَ جَنَّتَكَ قُلۡتَ مَا شَآءَ ٱللَّهُ لَا قُوَّةَ إِلَّا بِٱللَّهِۚ",
+      "translation": "“why did you, when you entered your garden, not say, 'What Allah willed [has occurred]; there is no power except in Allah”",
+      "ur": "تو اپنی جنت میں داخل ہو رہا تھا تو اس وقت تیری زبان سے یہ کیوں نہ نکلا کہ ماشاءاللہ، لا قوة الّا باللہ"
+    },
+    {
+      "text": "That night, his fruit was *destroyed*.",
+      "ur": "اسی رات اس کا سارا پھل برباد ہو گیا",
+      "ref": "Al-Kahf 18:42",
+      "mood": {
+        "warm": 0,
+        "cool": 0.1
+      }
+    },
+    {
+      "q": "18:42",
+      "ar_words": [
+        14,
+        19
+      ],
+      "en": "Oh, I wish I had not associated with my Lord anyone",
+      "ur_q": "کاش! میں نے اپنے رب کے ساتھ کسی کو شریک نہ ٹھیرایا ہوتا",
+      "ref": "Al-Kahf 18:42",
+      "mood": {
+        "warm": 0.12,
+        "cool": 0
+      },
+      "arabic": "وَيَقُولُ يَٰلَيۡتَنِي لَمۡ أُشۡرِكۡ بِرَبِّيٓ أَحَدࣰا",
+      "translation": "“Oh, I wish I had not associated with my Lord anyone”",
+      "ur": "کاش! میں نے اپنے رب کے ساتھ کسی کو شریک نہ ٹھیرایا ہوتا"
+    },
+    {
+      "text": "When you see a blessing, say: *Masha'Allah, la quwwata illa billah*.",
+      "ur": "جب کوئی نعمت دیکھیں تو کہیں: ماشاءاللہ، لا قوة الّا باللہ",
+      "mood": {
+        "warm": 0.12,
+        "cool": 0
+      }
+    },
+    {
+      "cta": true,
+      "text": "Watch the *full movie*, link below.",
+      "ur": "مکمل فلم دیکھیں، لنک نیچے",
+      "btn": "Full movie ↓",
+      "mood": {
+        "warm": 0.12,
+        "cool": 0
+      }
+    }
+  ],
+  "sound": [
+    {
+      "prompt": "lib",
+      "src": "../04-ease/assets/sfx/61e97fb787a5.mp3",
+      "beat": 0,
+      "offset": 0,
+      "dur": 34,
+      "gain": -13,
+      "fade_in": 1.0,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "lib",
+      "src": "../../long/04-sulaiman/assets/sfx/f0b78dedaad6.mp3",
+      "beat": 0,
+      "offset": 0,
+      "dur": 3,
+      "gain": -10,
+      "fade_in": 0.02,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "lib",
+      "src": "../../long/04-sulaiman/assets/sfx/93fa1b20e45f.mp3",
+      "beat": 4,
+      "offset": 0,
+      "dur": 8,
+      "gain": -12,
+      "fade_in": 1.0,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "lib",
+      "src": "../../long/04-sulaiman/assets/sfx/72cc4baec592.mp3",
+      "beat": 5,
+      "offset": -3.4,
+      "dur": 3.8,
+      "gain": -9,
+      "fade_in": 0.4,
+      "fade_out": 0.3
+    },
+    {
+      "prompt": "lib",
+      "src": "../04-ease/assets/sfx/3835e3c98c45.mp3",
+      "beat": 5,
+      "offset": 0,
+      "dur": 7,
+      "gain": -12,
+      "fade_in": 1.0,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "lib",
+      "src": "../04-ease/assets/sfx/13fce06b48a0.mp3",
+      "beat": 5,
+      "offset": 1.0,
+      "dur": 4,
+      "gain": -10,
+      "fade_in": 0.02,
+      "fade_out": 2
+    },
+    {
+      "prompt": "lib",
+      "src": "../08-hundred-years/assets/sfx/0f64aa9a96eb.mp3",
+      "beat": 6,
+      "offset": 0,
+      "dur": 6,
+      "gain": -18,
+      "fade_in": 1.0,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "lib",
+      "src": "../06-ant/assets/sfx/cabf6e6577de.mp3",
+      "beat": 7,
+      "offset": 0,
+      "dur": 9,
+      "gain": -13,
+      "fade_in": 1.0,
+      "fade_out": 1.5
+    }
+  ]
+}

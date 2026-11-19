@@ -1676,7 +1676,15 @@ def photos_scene(spec, beats, total):
     #phshade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.38) 25%,
       rgba(0,0,0,0.18) 40%, rgba(0,0,0,0.0) 50%, rgba(0,0,0,0) 80%, rgba(0,0,0,0.35) 100%); }
 """
-    layers = "".join(f'<div id="ph{i}" class="ph"><img src="{photos[i]}" alt=""></div>' for i in range(len(beats)))
+    def layer(i):
+        src = photos[i]
+        if src.endswith(".mp4"):  # an animated clip (Gemini Omni): plays from its beat, muted (its voice is in the narration)
+            b = beats[i]
+            return (f'<div id="ph{i}" class="ph"><video id="phv{i}" class="clip" src="{src}" muted playsinline '
+                    f'data-start="{b["start"]:.2f}" data-duration="{b["dur"] + 0.6:.2f}" data-track-index="{3 + i}" data-volume="0" '
+                    f'style="width:100%;height:100%;object-fit:cover;display:block"></video></div>')
+        return f'<div id="ph{i}" class="ph"><img src="{src}" alt=""></div>'
+    layers = "".join(layer(i) for i in range(len(beats)))
     markup = f"""
     <div id="phsc" class="clip" data-start="0" data-duration="{total:.2f}">{layers}<div id="phshade"></div></div>"""
     js = []
@@ -1687,6 +1695,8 @@ def photos_scene(spec, beats, total):
         else:
             js.append(fade(f"#ph{i}", 0, 1, a - 0.2, 0.7))
         frm, to = ("scale: 1.0, x: 0", "scale: 1.08, x: 0") if i % 2 == 0 else ("scale: 1.08, x: -20", "scale: 1.0, x: 20")
+        if photos[i].endswith(".mp4"):
+            frm, to = "scale: 1.0, x: 0", "scale: 1.02, x: 0"
         js.append(f'tl.fromTo("#ph{i}", {{{frm}}}, {{{to}, duration: {d + 0.9:.2f}, ease: "none", immediateRender: false}}, {max(0, a - 0.2):.2f});')
         if i + 1 < len(beats):
             js.append(f'tl.to("#ph{i}", {{opacity: 0, duration: 0.3, immediateRender: false}}, {beats[i + 1]["start"] + 0.5:.2f});')
