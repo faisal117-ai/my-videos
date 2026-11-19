@@ -1720,7 +1720,7 @@ COMPACT_CSS = """
       .ar { font-size: 58px; line-height: 1.75; text-shadow: 0 3px 16px rgba(0,0,0,0.9); }
       .tr { font-size: 46px !important; text-shadow: 0 3px 14px rgba(0,0,0,0.9); }
       .ur { font-size: 36px; line-height: 1.85; background: rgba(0,0,0,0.38); padding: 8px 22px 18px; }
-      .ref { font-size: 25px; }
+      .ref { font-size: 28px; }
       .mark { font-size: 96px; }
       .btn { font-size: 34px; padding: 18px 40px; }"""
 

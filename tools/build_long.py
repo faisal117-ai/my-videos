@@ -708,6 +708,27 @@ def lesson(t, L, E, D):
     return css, markup
 
 
+def photo_scene(t, L, E, D, photos, at):
+    """Gemini stills for a chapter: photo k appears at the start of line at[k], cross-fades in, and
+    drifts slowly (the chapter camera adds a push-in on top). Paths are relative to the project."""
+    css = """
+    .§ph { position: absolute; left: -60px; top: -34px; width: 2040px; height: 1148px; opacity: 0; }
+    .§ph img { width: 100%; height: 100%; object-fit: cover; display: block; }"""
+    m = "".join(f'<div id="§ph{k}" class="§ph"><img src="{src}" alt=""></div>' for k, src in enumerate(photos))
+    starts = [0.0 if k == 0 else max(L[a] - 0.6, 0.1) for k, a in enumerate(at)]
+    for k, s0 in enumerate(starts):
+        if k == 0:
+            t.js.append('tl.set("#§ph0", {opacity: 1}, 0);')
+        else:
+            t.fade(f"#§ph{k}", 0, 1, s0, 1.0)
+        e0 = starts[k + 1] + 1.0 if k + 1 < len(starts) else D
+        dx = 26 if k % 2 == 0 else -26
+        t.to(f"#§ph{k}", "x: 0, scale: 1.0", f"x: {dx}, scale: 1.05", s0, max(e0 - s0, 1), "none")
+        if k + 1 < len(starts):
+            t.js.append(f'tl.to("#§ph{k}", {{opacity: 0, duration: 0.3}}, {starts[k + 1] + 1.05:.2f});')
+    return css, m
+
+
 SCENES = {"hall": hall, "dream": dream, "well": well, "caravan": caravan, "doors": doors, "banquet": banquet,
           "prison": prison, "cows": cows, "granary": granary, "store": store, "home": home, "reveal": reveal,
           "shirt": shirt, "lesson": lesson}
@@ -750,7 +771,7 @@ def chunks(line: str, max_words=13):
 OPEN_TANWEEN = str.maketrans({"\u0657": "\u08F0", "\u065E": "\u08F1", "\u0656": "\u08F2"})
 
 
-NAMES = {"Joseph": "Joseph [Yusuf]", "Jacob": "Jacob [Yaqub]", "Moses": "Moses [Musa]", "Aaron": "Aaron [Harun]"}
+NAMES = {"Solomon": "Solomon [Sulaiman]", "David": "David [Dawud]", "Abraham": "Abraham [Ibrahim]", "Joseph": "Joseph [Yusuf]", "Jacob": "Jacob [Yaqub]", "Moses": "Moses [Musa]", "Aaron": "Aaron [Harun]"}
 
 
 def show_en(s: str) -> str:
@@ -883,7 +904,10 @@ def chapter_html(n: int, ch: dict, lines, timings, align, dur: float, quran: dic
     t = TL(dur)
     L = [x["start"] for x in timings]
     E = [x["end"] for x in timings]
-    scss, smarkup = SCENES[ch["scene"]](t, L, E, dur)
+    if ch.get("photos"):
+        scss, smarkup = photo_scene(t, L, E, dur, ch["photos"], ch.get("photo_at") or [0])
+    else:
+        scss, smarkup = SCENES[ch["scene"]](t, L, E, dur)
     scene_js = list(t.js)
     t.js = []
 
