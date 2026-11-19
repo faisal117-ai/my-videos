@@ -118,9 +118,9 @@
     },
     {
       "cta": true,
-      "text": "Watch the *full movie*, link below.",
-      "ur": "مکمل فلم دیکھیں، لنک نیچے",
-      "btn": "Full movie ↓",
+      "text": "Watch the full movies of *Prophet Musa (AS)* and *Prophet Yusuf (AS)*, links below.",
+      "ur": "حضرت موسیٰؑ اور حضرت یوسفؑ کی مکمل فلمیں دیکھیں، لنک نیچے",
+      "btn": "Full movies ↓",
       "mood": {
         "warm": 0.12,
         "cool": 0
