@@ -48,3 +48,5 @@ circle on the key object, honest words.
 Test & Compare set: YouTube's suggestion, A (well in daylight) and C (11 stars): three different ideas.
 **18 Nov:** the user changed the Urdu Yusuf thumbnail to YouTube's suggestion (`yt-yusuf-ur-well-throne.png`). Views went from 16 (18 Nov) to 42 (19 Nov 10:30), the first
 real rise in free views. Check CTR in Reach at the Friday review to confirm it is the thumbnail.
+
+19 Nov 13:15: Urdu Yusuf at 43 views in 42 h, 2.8 free watch hours, avg 4:02 (25%); views rose after the new thumbnail, then flattened.
