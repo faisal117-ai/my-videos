@@ -22,3 +22,7 @@
   version "Callum - Husky Trickster" (**5OSluWlAJntR1KG2pWaB**, tested 19 Nov: works in English and Urdu, sounds
   slightly deeper). Switch every narration.json before the first video made after 31 Dec. The user should add it to
   My Voices in ElevenLabs so it stays available.
+- 19 Nov (later): the user's own clone "Faisal Narrator (Haq Stories)" (lxAuND1y6e93CWiS40Uz, made from a cleaned
+  3.2 min recording, works only with eleven_v3) tested best in Urdu (native, 6.3 st expressive), but the user chose
+  **C: keep Callum** for everything. Do not switch voices unless the user asks.
+
