@@ -9,6 +9,22 @@
 > - `scripts/voice.md`: the channel's voice for titles and packaging.
 > - This file: the history of decisions, newest at the bottom.
 
+## House style (films too) approved 20 Nov 2026 (user: "follow this style for future Shorts and videos")
+Reference: shorts/24-cave/24-cave.mp4 (spec.json = the template). Use it for every Short and, scaled up, every film.
+- **Pictures:** one Gemini still per beat (near-real animated-movie look, 9:16 for Shorts, 16:9 for films),
+  slow push-in, cross-fades; a scene may return when the story returns to it (e.g. the cave).
+- **No talking clips** for now (no code-made mouths; no paid lip-sync until the user says so). Characters'
+  words are carried by their own voices (Declan / Peter / Adam) over the still.
+- **Code effects at the turns:** a shake on the hook and before each turn, light blooms growing each time
+  (0.35 → 0.5 → 0.85 at the release), warm dust motes; dark at the hardship, bright at the turn.
+- **Text:** compact top band, "HAQ · STORIES" label, English line with *gold accent words*, Urdu line under it,
+  source chip (e.g. "SAHIH AL-BUKHARI 2272") on every quoted line.
+- **Story beats:** hook (one sentence) → open question to the viewer → the source quoted → each step with
+  a pause before the turn ("a little… still not enough… rolled away") → one-line lesson → ending card naming
+  the films with "Full movies ↓". About 75–80 s.
+- **Sound:** Callum + character voices, story soundscape, booms/risers at the turns, mix.py at -14.5 LUFS.
+- Then checklist.md line by line and the skills table in CLAUDE.md, as always.
+
 ## The core message (17 Nov 2026)
 **Help, prayer, hope and Allah's mercy.** Every one of the channel's biggest hits is about Allah's help or mercy in
 a hard moment: "Ease With Every Hardship" (2,900), "Allah forgave a man for one small virtue" (1,500), "Allah
