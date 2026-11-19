@@ -99,9 +99,11 @@ YouTube's rules), and only topics with a sound source.
    portrait as the main subject. **Never, in any form:** a prophet, the Prophet ﷺ, a Companion, a righteous
    woman (Maryam, Asiya, Hajar, Sarah, Uwais's mother…), or an angel; where one is in the scene, show only the
    place, light or object (the fire, the well, the staff). Never a real person's face or likeness.
-   - **Thumbnails:** made in YouTube Studio's generator from Claude's prompt (which names the ordinary people to
-     show and says "no prophet, no holy figure shown"); Claude checks every result for a figure that could read
-     as the prophet or a righteous person before it is applied.
+   - **Thumbnails:** Claude draws the people into every thumbnail it makes (user, 19 Nov), e.g. the crowd
+     and soldiers from behind at Ibrahim's fire (`tools/thumbs_ibrahim_v3.py`, `person()`/`crowd()`). The
+     red ring or arrow never marks a person, so no figure can be taken for the prophet. After upload the user
+     also gets YouTube Studio's suggestion; Claude's prompt for it names the ordinary people and says "no
+     prophet or holy figure shown", and Claude checks the result before it is applied.
    - **Inside videos:** Claude's animation draws ordinary people as fuller, more lifelike figures (bodies,
      clothing, gestures, crowds) in the same bright style. Photoreal people in the video itself need an
      image generator this setup does not have; if one is added, a video with realistic synthetic people is

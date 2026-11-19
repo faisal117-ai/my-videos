@@ -2,7 +2,8 @@
 
 Left, the hardship: a huge fire at night inside the city walls. Right, the turn: the same place made
 "coolness and safety" (Al-Anbiya 21:69), bright and green under a clear sky. The headline adds to the
-title instead of repeating it: their order "Burn him" (21:68) and Allah's command. No person is drawn.
+title instead of repeating it: their order "Burn him" (21:68) and Allah's command. Ordinary people (the crowd
+and Namrud's soldiers) are drawn from behind (rule 9); nobody is drawn in or near the fire's centre, and no prophet.
 Usage: python3 tools/thumbs_ibrahim_v3.py  -> thumbs/v3-ibrahim-en.jpg, thumbs/v3-ibrahim-ur.jpg
 """
 import random
@@ -40,6 +41,49 @@ def flowers(x0, x1, y0, y1, n, seed):
     return "".join(out)
 
 
+def person(x, base, s, robe, skin, rim, kind="man", seed=0):
+    """One ordinary man seen from behind: robe, shoulders, neck, head with hair, turban or helmet."""
+    rnd = random.Random(seed)
+    w, h = 62 * s, 150 * s
+    lean = rnd.uniform(-6, 6) * s
+    body = (f'<path d="M {x - w/2:.0f} {base} Q {x - w*0.62:.0f} {base - h*0.55:.0f} {x - w*0.42 + lean:.0f} {base - h*0.8:.0f} '
+            f'Q {x + lean:.0f} {base - h*0.9:.0f} {x + w*0.42 + lean:.0f} {base - h*0.8:.0f} '
+            f'Q {x + w*0.62:.0f} {base - h*0.55:.0f} {x + w/2:.0f} {base} Z" fill="{robe}" stroke="#000" stroke-width="{5*s:.1f}"/>')
+    fold = f'<path d="M {x + lean*0.5:.0f} {base - h*0.75:.0f} Q {x - 4*s:.0f} {base - h*0.4:.0f} {x + 3*s:.0f} {base}" stroke="rgba(0,0,0,0.35)" stroke-width="{4*s:.1f}" fill="none"/>'
+    rim_l = f'<path d="M {x - w/2:.0f} {base} Q {x - w*0.62:.0f} {base - h*0.55:.0f} {x - w*0.42 + lean:.0f} {base - h*0.8:.0f}" stroke="{rim}" stroke-width="{4*s:.1f}" fill="none" opacity="0.9"/>'
+    hx, hy, hr = x + lean, base - h * 0.93, 17 * s
+    neck = f'<rect x="{hx - 8*s:.0f}" y="{hy:.0f}" width="{16*s:.0f}" height="{h*0.1:.0f}" fill="{skin}" stroke="#000" stroke-width="{3*s:.1f}"/>'
+    head = f'<circle cx="{hx:.0f}" cy="{hy - 4*s:.0f}" r="{hr:.0f}" fill="#2a1a10" stroke="#000" stroke-width="{4*s:.1f}"/>'
+    ear = f'<ellipse cx="{hx - hr*0.95:.0f}" cy="{hy - 2*s:.0f}" rx="{4*s:.0f}" ry="{6*s:.0f}" fill="{skin}" stroke="#000" stroke-width="{2*s:.1f}"/>'
+    top = ""
+    if kind == "soldier":
+        top = (f'<path d="M {hx - hr*1.15:.0f} {hy - 2*s:.0f} Q {hx:.0f} {hy - hr*2.4:.0f} {hx + hr*1.15:.0f} {hy - 2*s:.0f} Z" '
+               f'fill="#b08a3a" stroke="#000" stroke-width="{4*s:.1f}"/>'
+               f'<path d="M {x + w*0.5:.0f} {base - h*0.2:.0f} L {x + w*0.75:.0f} {base - h*1.45:.0f}" stroke="#5a3a1a" stroke-width="{6*s:.1f}"/>'
+               f'<path d="M {x + w*0.75:.0f} {base - h*1.45:.0f} l {-7*s:.0f} {22*s:.0f} l {14*s:.0f} 0 Z" fill="#cfd6dc" stroke="#000" stroke-width="{3*s:.1f}"/>')
+    elif kind == "turban":
+        top = (f'<ellipse cx="{hx:.0f}" cy="{hy - hr*0.9:.0f}" rx="{hr*1.15:.0f}" ry="{hr*0.75:.0f}" fill="{rnd.choice(["#e9e2d0", "#c9b48a", "#a33a2a"])}" '
+               f'stroke="#000" stroke-width="{4*s:.1f}"/>')
+    arm = ""
+    if rnd.random() < 0.35:  # one arm raised, pointing or in shock
+        ax = x + (w*0.45 if rnd.random() < 0.5 else -w*0.45)
+        arm = (f'<path d="M {ax:.0f} {base - h*0.72:.0f} L {ax + (14*s if ax > x else -14*s):.0f} {base - h*1.15:.0f}" '
+               f'stroke="{robe}" stroke-width="{16*s:.1f}" stroke-linecap="round"/>'
+               f'<circle cx="{ax + (14*s if ax > x else -14*s):.0f}" cy="{base - h*1.17:.0f}" r="{7*s:.0f}" fill="{skin}" stroke="#000" stroke-width="{3*s:.1f}"/>')
+    return arm + body + fold + rim_l + neck + head + ear + top
+
+
+def crowd(x0, x1, base, s, robes, rim, seed, n):
+    rnd = random.Random(seed)
+    out = []
+    for i in range(n):
+        x = x0 + (i + 0.5) * (x1 - x0) / n + rnd.uniform(-14, 14)
+        kind = rnd.choice(["man", "turban", "turban", "soldier"])
+        out.append(person(x, base + rnd.uniform(-6, 10), s * rnd.uniform(0.9, 1.08), rnd.choice(robes),
+                          rnd.choice(["#c68c5a", "#a8714a", "#d9a271"]), rim, kind, seed * 31 + i))
+    return "".join(out)
+
+
 def scene() -> str:
     defs = ('<defs><linearGradient id="night" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#12030a"/>'
             '<stop offset="1" stop-color="#4a0c02"/></linearGradient>'
@@ -55,7 +99,8 @@ def scene() -> str:
             walls(-20, 720, 560, "#3a1a10", 5) + '<rect width="1280" height="720" fill="url(#heat)"/>'
             '<rect y="560" width="1280" height="160" fill="#2a0d05" stroke="#000" stroke-width="8"/>'
             + flames(330, 690, 700, 560, 9, 4, HOT) +
-            '<path d="M 60 690 L 600 690 L 560 650 L 100 650 Z" fill="#5a2c12" stroke="#000" stroke-width="8"/></g>')
+            '<path d="M 60 690 L 600 690 L 560 650 L 100 650 Z" fill="#5a2c12" stroke="#000" stroke-width="8"/>'
+            + crowd(-10, 640, 735, 1.35, ["#3a2416", "#4a2a1a", "#2e2a3a", "#5a3020"], "#ff9a3a", 2, 6) + '</g>')
     right = ('<g clip-path="url(#R)"><rect width="1280" height="720" fill="url(#day)"/>'
              '<circle cx="1222" cy="345" r="40" fill="#fff6c8" stroke="#000" stroke-width="8"/>'
              + walls(560, 1300, 560, "#e8c48a", 5) +
@@ -63,9 +108,11 @@ def scene() -> str:
              '<path d="M 560 640 Q 900 600 1280 640 L 1280 720 L 560 720 Z" fill="#3fae45" stroke="#000" stroke-width="8"/>'
              '<circle cx="960" cy="560" r="230" fill="url(#peace)"/>'
              '<path d="M 760 690 L 1160 690 L 1130 650 L 790 650 Z" fill="#8a6a44" stroke="#000" stroke-width="8"/>'
-             + flowers(780, 1140, 560, 690, 26, 9) + '</g>')
+             + flowers(780, 1140, 560, 690, 26, 9)
+             + crowd(590, 770, 740, 1.3, ["#7a5a9a", "#3a7ac0", "#b0603a"], "#fff6c8", 7, 2)
+             + crowd(1150, 1310, 740, 1.3, ["#5a8a4a", "#c9a46a", "#3a7ac0"], "#fff6c8", 8, 2) + '</g>')
     seam = '<path d="M 700 0 L 580 720" stroke="#000" stroke-width="12"/><path d="M 700 0 L 580 720" stroke="#ffd21f" stroke-width="5"/>'
-    return defs + left + right + seam + ring(960, 625, 230, 95)
+    return defs + left + right + seam + ring(960, 600, 210, 80)
 
 
 def en() -> str:
