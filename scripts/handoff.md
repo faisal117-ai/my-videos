@@ -37,6 +37,28 @@ Read next: `scripts/channel-plan.md` (start-here index, core message, decisions)
 - Upcoming Shorts with dark openings are kept as they are (user's choice, a test): wall Wed, Nuh Fri, idols Sat,
   sacrifice Sun.
 
+## Gemini image generation (19 Nov, in progress)
+- The user wants ordinary people that look like animated movies, close to real (Pixar/Disney-style), in Shorts,
+  films and thumbnails (film rule 9 in shorts-plan.md). Our SVG/HyperFrames drawing cannot do that look, so we
+  use Google's Gemini image model (e.g. gemini-2.5-flash-image) to make the scenes, then animate them (slow
+  camera moves, light, effects) under our voice and captions. A flat-figure attempt was rejected and reverted.
+- The key: a network secret on the "my-videos" environment, host generativelanguage.googleapis.com, header
+  x-goog-api-key, no prefix. The key is a new-style Google "auth key" starting with "AQ." (AI Studio's cURL
+  quickstart confirms the X-goog-api-key header). Send "x-goog-api-key: proxy-injected"; the proxy fills it in.
+- In the old session (session_019ZSVGUajUktRZV46QR3pPi) Google kept answering 400 API_KEY_INVALID (the first
+  version of the secret had a "Bearer" prefix; the user re-added it without one). First job in a new session:
+  curl https://generativelanguage.googleapis.com/v1beta/models?pageSize=200 with that header. If 400 again,
+  ask the user to create a fresh key in AI Studio (Create API key -> Create in new project) and re-save the
+  secret. The user is on an iPhone only (no computer): secrets are added in Safari at claude.ai/code (desktop
+  view), environment menu -> Edit -> Network secrets.
+- Billing: the image model probably needs billing turned on in AI Studio (~$0.04/image); the user has not added
+  any yet. If generation fails with a billing/quota error, tell them how (AI Studio -> Set up billing, set a cap).
+- Then: make one test image (an ordinary crowd scene, no prophet, Companion, righteous woman or angel) and
+  show the user; then rebuild this week's Shorts with people: Qarun (procession + envious onlookers, 28:79),
+  hoopoe (Sheba's people bowing to the sun, 27:24), Nuh (chiefs mocking the ship, 11:38), idols (the people
+  returning, 21:59); sacrifice has no ordinary people, leave it. Videos with realistic synthetic people go up
+  with isAiGeneratedContent true.
+
 ## Decision of 19 Nov
 - Near-real ordinary people (crowds, soldiers, kings, the man who killed 100…) are now shown in thumbnails and scenes, as a rule (shorts-plan.md film rule 9). Never prophets, the Prophet ﷺ, Companions, righteous women or angels. Film titles lead with a story question.
 
