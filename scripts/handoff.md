@@ -5,7 +5,7 @@ video), `scripts/channel-plan.md`, `scripts/shorts-plan.md`, `scripts/series-pla
 
 ## NOW (19 Nov night): the current state in one place
 - **20 Nov: the cave Short's look is the HOUSE STYLE for every Short and film** (user). Details in shorts-plan.md
-  "House style approved 20 Nov 2026" (also in channel-plan.md). Cave Short liked; slot to be chosen.
+  "House style approved 20 Nov 2026" (also in channel-plan.md). Cave Short scheduled Fri 20 Nov 13:00 PKT (post 434738300, user's slot); after it goes live: Related video → Musa film, pin the first comment.
 - **20 Nov (session_019ZSVGSKwArszmxSEYesnzJ, "my-videos" env): cave talking clips priced, waiting on the user.**
   Atlas works but the balance is **$0.00**: nothing can be generated until the user tops up atlascloud.ai.
   Atlas itself sells `sync/lipsync-v3` ($0.22/s), so the separate Sync MCP / mcp.sync.so secret is NOT needed.
