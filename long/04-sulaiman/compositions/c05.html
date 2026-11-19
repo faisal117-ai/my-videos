@@ -1,0 +1,81 @@
+<template>
+  <style>
+    #c05 { position: absolute; inset: 0; overflow: hidden; background: #000; }
+    .c05-st { position: absolute; border-radius: 50%; background: #eef4ff; box-shadow: 0 0 6px rgba(220,235,255,0.9); }
+    .c05-mote { position: absolute; border-radius: 50%; }
+    .c05-full { position: absolute; inset: 0; }
+    .c05-svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+
+    .c05-cam { position: absolute; inset: 0; transform-origin: 50% 55%; }
+    .c05-scrim { position: absolute; left: 0; right: 0; bottom: 0; height: 300px;
+      background: linear-gradient(0deg, rgba(0,0,0,0.75), rgba(0,0,0,0)); }
+    .c05-cap { position: absolute; left: 210px; right: 210px; bottom: 64px; text-align: center;
+      font-family: "Cormorant Garamond"; font-weight: 600; font-size: 54px; line-height: 1.12; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c05-cardwrap { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+      background: radial-gradient(ellipse at 50% 50%, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.45) 50%, rgba(0,0,0,0) 80%); }
+    .c05-card { max-width: 1400px; display: flex; flex-direction: column; align-items: center; gap: 26px; text-align: center; }
+    .c05-ar { font-family: "Amiri Quran"; font-size: 70px; line-height: 1.8; color: #fff6e6; text-shadow: 0 0 30px rgba(215,236,255,0.4); }
+    .c05-en { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 50px; line-height: 1.18; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c05-ctext { font-family: "Cormorant Garamond"; font-weight: 600; font-size: 76px; line-height: 1.1; color: #f5ead6;
+      text-shadow: 0 3px 22px rgba(0,0,0,0.9); }
+    .c05-hi { color: var(--accent); }
+    .c05-ref { font-family: Inter, sans-serif; font-weight: 700; font-size: 28px; letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--accent); border: 2px solid var(--accent); border-radius: 999px; padding: 10px 24px; background: rgba(0,0,0,0.4); }
+    .c05-title { font-family: "Cormorant Garamond"; font-weight: 600; font-size: 118px; line-height: 1.02; color: #f5ead6;
+      text-shadow: 0 4px 30px rgba(0,0,0,0.8); }
+    .c05-tsub { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 52px; color: var(--accent); }
+    .c05-mark { font-family: Inter, sans-serif; font-weight: 700; font-size: 64px; letter-spacing: 0.32em; color: #f5ead6; }
+    .c05-mark span { color: var(--accent); }
+    .c05-endt { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 52px; color: #f5ead6; }
+    .c05-btn { font-family: Inter, sans-serif; font-weight: 700; font-size: 34px; letter-spacing: 0.08em; color: #120b08;
+      background: var(--accent); border-radius: 999px; padding: 18px 48px; }
+    .c05-label { position: absolute; left: 90px; top: 70px; }
+    .c05-label b { display: block; font-family: Inter, sans-serif; font-weight: 700; font-size: 28px; letter-spacing: 0.3em; color: var(--accent); }
+    .c05-label i { display: block; font-family: "Cormorant Garamond"; font-style: normal; font-weight: 600; font-size: 60px; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c05-brand { position: absolute; right: 80px; top: 70px; font-family: Inter, sans-serif; font-weight: 700; font-size: 28px;
+      letter-spacing: 0.32em; color: rgba(245,234,214,0.7); }
+    .c05-brand span { color: var(--accent); }
+    .c05-fade { position: absolute; inset: 0; background: #000; }
+
+    .c05-ph { position: absolute; left: -60px; top: -34px; width: 2040px; height: 1148px; opacity: 0; }
+    .c05-ph img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  </style>
+  <div id="c05" data-composition-id="c05" data-width="1920" data-height="1080">
+    <div id="c05-scene" class="clip" data-start="0" data-duration="30.42" style="position:absolute;inset:0" data-layout-allow-overflow>
+      <div id="c05-cam" class="c05-cam"><div id="c05-ph0" class="c05-ph"><img src="assets/gen/c05a.jpg" alt=""></div><div id="c05-ph1" class="c05-ph"><img src="assets/gen/c05b.jpg" alt=""></div><div id="c05-ph2" class="c05-ph"><img src="assets/gen/c05c.jpg" alt=""></div>
+      </div>
+    </div>
+    <div id="c05-scr" class="c05-scrim clip" data-start="0" data-duration="30.42"></div>
+    <div id="c05-lab" class="c05-label clip" data-start="0.3" data-duration="4.6"><b>CHAPTER 5</b><i>The Missing Hoopoe</i></div>
+    <div id="c05-cp0" class="c05-cap clip" data-start="13.26" data-duration="6.36">He said the hoopoe would be punished, unless it brought a clear reason. Then the hoopoe came back.</div>
+    <div id="c05-k0w" class="c05-cardwrap clip" data-start="0.15" data-duration="10.43"><div id="c05-k0" class="c05-card"><div class="c05-ar" dir="rtl" lang="ar">وَتَفَقَّدَ ٱلطَّيۡرَ فَقَالَ مَالِيَ لَآ أَرَى ٱلۡهُدۡهُدَ أَمۡ كَانَ مِنَ ٱلۡغَآئِبِينَ</div><div class="c05-en">“…Why do I not see the hoopoe - or is he among the absent”</div><div class="c05-ref">An-Naml 27:20</div></div></div>
+    <div id="c05-k1w" class="c05-cardwrap clip" data-start="19.67" data-duration="7.77"><div id="c05-k1" class="c05-card"><div class="c05-ar" dir="rtl" lang="ar">أَحَطتُ بِمَا لَمۡ تُحِطۡ بِهِۦ وَجِئۡتُكَ مِن سَبَإِۭ بِنَبَإࣲ يَقِينٍ</div><div class="c05-en">“…I have encompassed [in knowledge] that which you have not encompassed, and I have come to you from Sheba with certain news”</div><div class="c05-ref">An-Naml 27:22</div></div></div>
+    <div id="c05-fadeIn" class="c05-fade clip" data-start="0" data-duration="0.55" style="opacity:1"></div>
+    <div id="c05-fadeOut" class="c05-fade clip" data-start="29.92" data-duration="0.50" style="opacity:0"></div>
+    <div id="c05-br" class="c05-brand clip" data-start="0" data-duration="30.42">HAQ <span>·</span> STORIES</div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.set("#c05-ph0", {opacity: 1}, 0);
+    tl.fromTo("#c05-ph0", {x: 0, scale: 1.0}, {x: 26, scale: 1.05, duration: 18.09, ease: "none", immediateRender: false}, 0.00);
+    tl.to("#c05-ph0", {opacity: 0, duration: 0.3}, 18.14);
+    tl.fromTo("#c05-ph1", {opacity: 0}, {opacity: 1, duration: 1.00, ease: "sine.inOut", immediateRender: false}, 17.09);
+    tl.fromTo("#c05-ph1", {x: 0, scale: 1.0}, {x: -26, scale: 1.05, duration: 3.12, ease: "none", immediateRender: false}, 17.09);
+    tl.to("#c05-ph1", {opacity: 0, duration: 0.3}, 20.27);
+    tl.fromTo("#c05-ph2", {opacity: 0}, {opacity: 1, duration: 1.00, ease: "sine.inOut", immediateRender: false}, 19.22);
+    tl.fromTo("#c05-ph2", {x: 0, scale: 1.0}, {x: 26, scale: 1.05, duration: 11.20, ease: "none", immediateRender: false}, 19.22);
+    tl.fromTo("#c05-k0w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 0.15);
+    tl.fromTo("#c05-k0", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 0.15);
+    tl.fromTo("#c05-k1w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 19.67);
+    tl.fromTo("#c05-k1", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 19.67);
+    tl.fromTo("#c05-lab", {opacity: 0, x: -20}, {opacity: 1, x: 0, duration: 0.60, ease: "power2.out", immediateRender: false}, 0.30);
+    tl.fromTo("#c05-lab", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 4.40);
+    tl.fromTo("#c05-scene", {scale: 1.0, x: 0}, {scale: 1.06, x: -30, duration: 30.42, ease: "none", immediateRender: false}, 0.00);
+    tl.fromTo("#c05-fadeIn", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 0.00);
+    tl.fromTo("#c05-fadeOut", {opacity: 0}, {opacity: 1, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 29.92);
+    window.__timelines["c05"] = tl;
+  </script>
+</template>

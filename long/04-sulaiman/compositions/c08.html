@@ -1,0 +1,80 @@
+<template>
+  <style>
+    #c08 { position: absolute; inset: 0; overflow: hidden; background: #000; }
+    .c08-st { position: absolute; border-radius: 50%; background: #eef4ff; box-shadow: 0 0 6px rgba(220,235,255,0.9); }
+    .c08-mote { position: absolute; border-radius: 50%; }
+    .c08-full { position: absolute; inset: 0; }
+    .c08-svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+
+    .c08-cam { position: absolute; inset: 0; transform-origin: 50% 55%; }
+    .c08-scrim { position: absolute; left: 0; right: 0; bottom: 0; height: 300px;
+      background: linear-gradient(0deg, rgba(0,0,0,0.75), rgba(0,0,0,0)); }
+    .c08-cap { position: absolute; left: 210px; right: 210px; bottom: 64px; text-align: center;
+      font-family: "Cormorant Garamond"; font-weight: 600; font-size: 54px; line-height: 1.12; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c08-cardwrap { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+      background: radial-gradient(ellipse at 50% 50%, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.45) 50%, rgba(0,0,0,0) 80%); }
+    .c08-card { max-width: 1400px; display: flex; flex-direction: column; align-items: center; gap: 26px; text-align: center; }
+    .c08-ar { font-family: "Amiri Quran"; font-size: 70px; line-height: 1.8; color: #fff6e6; text-shadow: 0 0 30px rgba(215,236,255,0.4); }
+    .c08-en { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 50px; line-height: 1.18; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c08-ctext { font-family: "Cormorant Garamond"; font-weight: 600; font-size: 76px; line-height: 1.1; color: #f5ead6;
+      text-shadow: 0 3px 22px rgba(0,0,0,0.9); }
+    .c08-hi { color: var(--accent); }
+    .c08-ref { font-family: Inter, sans-serif; font-weight: 700; font-size: 28px; letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--accent); border: 2px solid var(--accent); border-radius: 999px; padding: 10px 24px; background: rgba(0,0,0,0.4); }
+    .c08-title { font-family: "Cormorant Garamond"; font-weight: 600; font-size: 118px; line-height: 1.02; color: #f5ead6;
+      text-shadow: 0 4px 30px rgba(0,0,0,0.8); }
+    .c08-tsub { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 52px; color: var(--accent); }
+    .c08-mark { font-family: Inter, sans-serif; font-weight: 700; font-size: 64px; letter-spacing: 0.32em; color: #f5ead6; }
+    .c08-mark span { color: var(--accent); }
+    .c08-endt { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 52px; color: #f5ead6; }
+    .c08-btn { font-family: Inter, sans-serif; font-weight: 700; font-size: 34px; letter-spacing: 0.08em; color: #120b08;
+      background: var(--accent); border-radius: 999px; padding: 18px 48px; }
+    .c08-label { position: absolute; left: 90px; top: 70px; }
+    .c08-label b { display: block; font-family: Inter, sans-serif; font-weight: 700; font-size: 28px; letter-spacing: 0.3em; color: var(--accent); }
+    .c08-label i { display: block; font-family: "Cormorant Garamond"; font-style: normal; font-weight: 600; font-size: 60px; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c08-brand { position: absolute; right: 80px; top: 70px; font-family: Inter, sans-serif; font-weight: 700; font-size: 28px;
+      letter-spacing: 0.32em; color: rgba(245,234,214,0.7); }
+    .c08-brand span { color: var(--accent); }
+    .c08-fade { position: absolute; inset: 0; background: #000; }
+
+    .c08-ph { position: absolute; left: -60px; top: -34px; width: 2040px; height: 1148px; opacity: 0; }
+    .c08-ph img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  </style>
+  <div id="c08" data-composition-id="c08" data-width="1920" data-height="1080">
+    <div id="c08-scene" class="clip" data-start="0" data-duration="30.70" style="position:absolute;inset:0" data-layout-allow-overflow>
+      <div id="c08-cam" class="c08-cam"><div id="c08-ph0" class="c08-ph"><img src="assets/gen/c08a.jpg" alt=""></div><div id="c08-ph1" class="c08-ph"><img src="assets/gen/c08b.jpg" alt=""></div><div id="c08-ph2" class="c08-ph"><img src="assets/gen/c08c.jpg" alt=""></div>
+      </div>
+    </div>
+    <div id="c08-scr" class="c08-scrim clip" data-start="0" data-duration="30.70"></div>
+    <div id="c08-lab" class="c08-label clip" data-start="0.3" data-duration="4.6"><b>CHAPTER 8</b><i>The Gift</i></div>
+    <div id="c08-cp0" class="c08-cap clip" data-start="0.22" data-duration="3.10">The messengers arrived with the queen&#x27;s treasure.</div>
+    <div id="c08-cp1" class="c08-cap clip" data-start="19.77" data-duration="3.56">And the queen set out herself, to come to him.</div>
+    <div id="c08-cp2" class="c08-cap clip" data-start="23.34" data-duration="6.76">Then Prophet Sulaiman, alayhis salaam, asked his court something that sounds impossible.</div>
+    <div id="c08-k0w" class="c08-cardwrap clip" data-start="3.37" data-duration="15.89"><div id="c08-k0" class="c08-card"><div class="c08-ar" dir="rtl" lang="ar">أَتُمِدُّونَنِ بِمَالࣲ فَمَآ ءَاتَىٰنِۦَ ٱللَّهُ خَيۡرࣱ مِّمَّآ ءَاتَىٰكُمۚ بَلۡ أَنتُم بِهَدِيَّتِكُمۡ تَفۡرَحُونَ</div><div class="c08-en">“…Do you provide me with wealth? But what Allah has given me is better than what He has given you. Rather, it is you who rejoice in your gift”</div><div class="c08-ref">An-Naml 27:36</div></div></div>
+    <div id="c08-fadeIn" class="c08-fade clip" data-start="0" data-duration="0.55" style="opacity:1"></div>
+    <div id="c08-fadeOut" class="c08-fade clip" data-start="30.20" data-duration="0.50" style="opacity:0"></div>
+    <div id="c08-br" class="c08-brand clip" data-start="0" data-duration="30.70">HAQ <span>·</span> STORIES</div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.set("#c08-ph0", {opacity: 1}, 0);
+    tl.fromTo("#c08-ph0", {x: 0, scale: 1.0}, {x: 26, scale: 1.05, duration: 18.78, ease: "none", immediateRender: false}, 0.00);
+    tl.to("#c08-ph0", {opacity: 0, duration: 0.3}, 18.83);
+    tl.fromTo("#c08-ph1", {opacity: 0}, {opacity: 1, duration: 1.00, ease: "sine.inOut", immediateRender: false}, 17.78);
+    tl.fromTo("#c08-ph1", {x: 0, scale: 1.0}, {x: -26, scale: 1.05, duration: 2.47, ease: "none", immediateRender: false}, 17.78);
+    tl.to("#c08-ph1", {opacity: 0, duration: 0.3}, 20.30);
+    tl.fromTo("#c08-ph2", {opacity: 0}, {opacity: 1, duration: 1.00, ease: "sine.inOut", immediateRender: false}, 19.25);
+    tl.fromTo("#c08-ph2", {x: 0, scale: 1.0}, {x: 26, scale: 1.05, duration: 11.45, ease: "none", immediateRender: false}, 19.25);
+    tl.fromTo("#c08-k0w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 3.37);
+    tl.fromTo("#c08-k0", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 3.37);
+    tl.fromTo("#c08-lab", {opacity: 0, x: -20}, {opacity: 1, x: 0, duration: 0.60, ease: "power2.out", immediateRender: false}, 0.30);
+    tl.fromTo("#c08-lab", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 4.40);
+    tl.fromTo("#c08-scene", {scale: 1.0, x: 0}, {scale: 1.06, x: 30, duration: 30.70, ease: "none", immediateRender: false}, 0.00);
+    tl.fromTo("#c08-fadeIn", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 0.00);
+    tl.fromTo("#c08-fadeOut", {opacity: 0}, {opacity: 1, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 30.20);
+    window.__timelines["c08"] = tl;
+  </script>
+</template>

@@ -1,0 +1,80 @@
+<template>
+  <style>
+    #c00 { position: absolute; inset: 0; overflow: hidden; background: #000; }
+    .c00-st { position: absolute; border-radius: 50%; background: #eef4ff; box-shadow: 0 0 6px rgba(220,235,255,0.9); }
+    .c00-mote { position: absolute; border-radius: 50%; }
+    .c00-full { position: absolute; inset: 0; }
+    .c00-svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+
+    .c00-cam { position: absolute; inset: 0; transform-origin: 50% 55%; }
+    .c00-scrim { position: absolute; left: 0; right: 0; bottom: 0; height: 300px;
+      background: linear-gradient(0deg, rgba(0,0,0,0.75), rgba(0,0,0,0)); }
+    .c00-cap { position: absolute; left: 210px; right: 210px; bottom: 64px; text-align: center;
+      font-family: "Cormorant Garamond"; font-weight: 600; font-size: 54px; line-height: 1.12; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c00-cardwrap { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+      background: radial-gradient(ellipse at 50% 50%, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.45) 50%, rgba(0,0,0,0) 80%); }
+    .c00-card { max-width: 1400px; display: flex; flex-direction: column; align-items: center; gap: 26px; text-align: center; }
+    .c00-ar { font-family: "Amiri Quran"; font-size: 70px; line-height: 1.8; color: #fff6e6; text-shadow: 0 0 30px rgba(215,236,255,0.4); }
+    .c00-en { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 50px; line-height: 1.18; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c00-ctext { font-family: "Cormorant Garamond"; font-weight: 600; font-size: 76px; line-height: 1.1; color: #f5ead6;
+      text-shadow: 0 3px 22px rgba(0,0,0,0.9); }
+    .c00-hi { color: var(--accent); }
+    .c00-ref { font-family: Inter, sans-serif; font-weight: 700; font-size: 28px; letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--accent); border: 2px solid var(--accent); border-radius: 999px; padding: 10px 24px; background: rgba(0,0,0,0.4); }
+    .c00-title { font-family: "Cormorant Garamond"; font-weight: 600; font-size: 118px; line-height: 1.02; color: #f5ead6;
+      text-shadow: 0 4px 30px rgba(0,0,0,0.8); }
+    .c00-tsub { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 52px; color: var(--accent); }
+    .c00-mark { font-family: Inter, sans-serif; font-weight: 700; font-size: 64px; letter-spacing: 0.32em; color: #f5ead6; }
+    .c00-mark span { color: var(--accent); }
+    .c00-endt { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 52px; color: #f5ead6; }
+    .c00-btn { font-family: Inter, sans-serif; font-weight: 700; font-size: 34px; letter-spacing: 0.08em; color: #120b08;
+      background: var(--accent); border-radius: 999px; padding: 18px 48px; }
+    .c00-label { position: absolute; left: 90px; top: 70px; }
+    .c00-label b { display: block; font-family: Inter, sans-serif; font-weight: 700; font-size: 28px; letter-spacing: 0.3em; color: var(--accent); }
+    .c00-label i { display: block; font-family: "Cormorant Garamond"; font-style: normal; font-weight: 600; font-size: 60px; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c00-brand { position: absolute; right: 80px; top: 70px; font-family: Inter, sans-serif; font-weight: 700; font-size: 28px;
+      letter-spacing: 0.32em; color: rgba(245,234,214,0.7); }
+    .c00-brand span { color: var(--accent); }
+    .c00-fade { position: absolute; inset: 0; background: #000; }
+
+    .c00-ph { position: absolute; left: -60px; top: -34px; width: 2040px; height: 1148px; opacity: 0; }
+    .c00-ph img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  </style>
+  <div id="c00" data-composition-id="c00" data-width="1920" data-height="1080">
+    <div id="c00-scene" class="clip" data-start="0" data-duration="24.06" style="position:absolute;inset:0" data-layout-allow-overflow>
+      <div id="c00-cam" class="c00-cam"><div id="c00-ph0" class="c00-ph"><img src="assets/gen/c00a.jpg" alt=""></div><div id="c00-ph1" class="c00-ph"><img src="assets/gen/c00b.jpg" alt=""></div><div id="c00-ph2" class="c00-ph"><img src="assets/gen/c00c.jpg" alt=""></div>
+      </div>
+    </div>
+    <div id="c00-scr" class="c00-scrim clip" data-start="0" data-duration="24.06"></div>
+    
+    <div id="c00-cp0" class="c00-cap clip" data-start="0.22" data-duration="3.06">A queen&#x27;s throne came from a far-off land...</div>
+    <div id="c00-cp1" class="c00-cap clip" data-start="3.28" data-duration="2.31">before an eye could blink.</div>
+    <div id="c00-cp2" class="c00-cap clip" data-start="5.59" data-duration="3.77">This is the story of Prophet Sulaiman, alayhis salaam,</div>
+    <div id="c00-cp3" class="c00-cap clip" data-start="9.37" data-duration="5.65">and how one grateful heart turned a whole nation from the sun to Allah.</div>
+    <div id="c00-cp4" class="c00-cap clip" data-start="15.02" data-duration="2.14">But first, a question:</div>
+    <div id="c00-cp5" class="c00-cap clip" data-start="17.16" data-duration="3.72">what does a man say, when Allah gives him everything?</div>
+    <div id="c00-k0w" class="c00-cardwrap clip" data-start="20.93" data-duration="2.63"><div id="c00-k0" class="c00-card"><div class="c00-title">The King Who Was Grateful</div><div class="c00-tsub">The Story of Prophet Sulaiman (AS)</div></div></div>
+    <div id="c00-fadeIn" class="c00-fade clip" data-start="0" data-duration="0.55" style="opacity:0"></div>
+    <div id="c00-fadeOut" class="c00-fade clip" data-start="23.56" data-duration="0.50" style="opacity:0"></div>
+    <div id="c00-br" class="c00-brand clip" data-start="0" data-duration="24.06">HAQ <span>·</span> STORIES</div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.set("#c00-ph0", {opacity: 1}, 0);
+    tl.fromTo("#c00-ph0", {x: 0, scale: 1.0}, {x: 26, scale: 1.05, duration: 6.08, ease: "none", immediateRender: false}, 0.00);
+    tl.to("#c00-ph0", {opacity: 0, duration: 0.3}, 6.12);
+    tl.fromTo("#c00-ph1", {opacity: 0}, {opacity: 1, duration: 1.00, ease: "sine.inOut", immediateRender: false}, 5.08);
+    tl.fromTo("#c00-ph1", {x: 0, scale: 1.0}, {x: -26, scale: 1.05, duration: 10.43, ease: "none", immediateRender: false}, 5.08);
+    tl.to("#c00-ph1", {opacity: 0, duration: 0.3}, 15.55);
+    tl.fromTo("#c00-ph2", {opacity: 0}, {opacity: 1, duration: 1.00, ease: "sine.inOut", immediateRender: false}, 14.50);
+    tl.fromTo("#c00-ph2", {x: 0, scale: 1.0}, {x: 26, scale: 1.05, duration: 9.56, ease: "none", immediateRender: false}, 14.50);
+    tl.fromTo("#c00-k0w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 20.93);
+    tl.fromTo("#c00-k0", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 20.93);
+    tl.fromTo("#c00-scene", {scale: 1.0, x: 0}, {scale: 1.06, x: 30, duration: 24.06, ease: "none", immediateRender: false}, 0.00);
+    tl.fromTo("#c00-fadeOut", {opacity: 0}, {opacity: 1, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 23.56);
+    window.__timelines["c00"] = tl;
+  </script>
+</template>
