@@ -89,6 +89,14 @@ YouTube's rules), and only topics with a sound source.
    generator, with Claude's prompt and headline), and checks the result before it is applied (user's rule, 19 Nov).
 Not copied: sensational, unverifiable stories; hype ("SHOCKED everyone", "TERRIFIED the world").
 
+## "Watch the full movie" ending (user, 19 Nov)
+- Every Short ends with the voice and an end card: **"Watch the full movie, link below 🎥"** (Urdu: "مکمل فلم
+  دیکھیں، لنک نیچے 🎥"), instead of only "Follow for more."
+- "The link below" is the Short's **Related video** (the tappable link under a Short), set to the matching film;
+  the description's first line repeats it: "🎥 Watch the full movie: <link>", and the pinned comment too.
+- Which film: the Short's own film, else the closest story (same prophet, people or surah), else the film that
+  needs viewers most; English Shorts → English films, Urdu → Urdu films.
+
 ## Colour rule (user, 19 Nov): bright by default, dark only briefly
 - **Default palette:** daylight, golden hour, warm lamplight; rich detail and strong contrast, in the spirit of the
   new film thumbnails. No Short spends most of its time in night or muted browns.
