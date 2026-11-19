@@ -87,11 +87,25 @@ YouTube's rules), and only topics with a sound source.
    (`thumbs/yt-yusuf-ur-well-throne.png`): a rich, detailed illustrated scene in warm light; a split or contrast
    that shows the story's turn (dark hardship → bright help from Allah); a big two-line headline (the hardship…
    / …the turn) in the film's language, the turn in yellow; a small chip with the prophet's name and honorific
-   (حضرت یوسفؑ / Prophet Yusuf (AS)); the key object glowing. No people ever; honest words, no news badges, no
-   real faces, no shock text. Made with YouTube Studio's thumbnail generator from a prompt and headline Claude
+   (حضرت یوسفؑ / Prophet Yusuf (AS)); the key object glowing. Ordinary people may appear (see rule 9); honest words, no news badges, no
+   real (living or historical) people's faces, no shock text. Made with YouTube Studio's thumbnail generator from a prompt and headline Claude
    writes for each film (Claude checks the result), or drawn by Claude when the generator can't.
    **After every upload, Claude asks the user to change the thumbnail to YouTube's suggestion, and schedules a reminder for 15 min after each film goes live** (Studio's
    generator, with Claude's prompt and headline), and checks the result before it is applied (user's rule, 19 Nov).
+9. **Near-real ordinary people (user's rule, 19 Nov; a rule, not a test):** thumbnails and scenes may show
+   ordinary people close to real: crowds, soldiers, kings' courts (Pharaoh, Namrud), Qarun and his people, Nuh's
+   mockers, the man who killed 100, the three men in the cave, the leper, bald and blind men, travellers, traders.
+   Shown in full scenes, often from behind, at a distance or in half-light; expressions allowed, no close-up
+   portrait as the main subject. **Never, in any form:** a prophet, the Prophet ﷺ, a Companion, a righteous
+   woman (Maryam, Asiya, Hajar, Sarah, Uwais's mother…), or an angel; where one is in the scene, show only the
+   place, light or object (the fire, the well, the staff). Never a real person's face or likeness.
+   - **Thumbnails:** made in YouTube Studio's generator from Claude's prompt (which names the ordinary people to
+     show and says "no prophet, no holy figure shown"); Claude checks every result for a figure that could read
+     as the prophet or a righteous person before it is applied.
+   - **Inside videos:** Claude's animation draws ordinary people as fuller, more lifelike figures (bodies,
+     clothing, gestures, crowds) in the same bright style. Photoreal people in the video itself need an
+     image generator this setup does not have; if one is added, a video with realistic synthetic people is
+     uploaded with YouTube's "altered or synthetic content" box ticked.
 Not copied: sensational, unverifiable stories; hype ("SHOCKED everyone", "TERRIFIED the world").
 
 ## "Watch the full movie" ending (user, 19 Nov)

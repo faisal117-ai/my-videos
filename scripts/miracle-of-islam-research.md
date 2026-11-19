@@ -67,8 +67,8 @@ everyday questions) · "Christian Pilots Burn QURAN at Atlanta Airport…" 33K.
 - Showing prophets, the Prophet ﷺ, Companions or righteous women in any form (even with a glowing face).
 - Invented stories, invented "news", real people's faces, "BREAKING NEWS"/"LIVE" badges, fear-bait titles.
 - Their stories without a reliable source (Musa's neighbour in Paradise, Salahuddin and the Christian girl…).
-- Photorealistic AI people: our stylised animation keeps the no-faces rule and the "altered or synthetic"
-  answer simple, and it was our best-performing Short style (November: 4 of 4 pushed).
+- ~~Photorealistic AI people~~ **Changed 19 Nov (user):** near-real *ordinary* people are now allowed in
+  thumbnails and scenes (shorts-plan.md, film rule 9); prophets, Companions, righteous women and angels never.
 
 ## 8. Where Haq Stories can win
 - **Trust:** every verse and hadith sourced on screen, nothing invented.

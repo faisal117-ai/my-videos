@@ -37,6 +37,9 @@ Read next: `scripts/channel-plan.md` (start-here index, core message, decisions)
 - Upcoming Shorts with dark openings are kept as they are (user's choice, a test): wall Wed, Nuh Fri, idols Sat,
   sacrifice Sun.
 
+## Decision of 19 Nov
+- Near-real ordinary people (crowds, soldiers, kings, the man who killed 100…) are now shown in thumbnails and scenes, as a rule (shorts-plan.md film rule 9). Never prophets, the Prophet ﷺ, Companions, righteous women or angels. Film titles lead with a story question.
+
 ## Decisions of 17–18 Nov (all recorded in the plan files; apply them to every new script)
 - **Honorifics every time** (scripts/voice.md): alayhis salaam / (AS), peace be upon him / ﷺ, Razi Allah hu Anhu / (RA).
 - **Core message:** help, prayer (dua), hope and Allah's mercy; the turn comes through dua and Allah's help.
