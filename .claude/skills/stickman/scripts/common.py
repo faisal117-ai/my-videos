@@ -32,3 +32,9 @@ def is_3d(folder):
 
 
 FRAME_JS = "i=>{const s=renderAt(i/30);return [JSON.stringify(s),document.getElementById('c').toDataURL('image/jpeg',.94)]}"
+
+# Frame size: 1920x1080 by default; set STICKMAN_W/STICKMAN_H (e.g. 1080x1920) for vertical Shorts.
+VW = int(os.environ.get("STICKMAN_W", "1920"))
+VH = int(os.environ.get("STICKMAN_H", "1080"))
+# Use an already-installed Chromium (e.g. STICKMAN_CHROME=/opt/pw-browsers/chromium) instead of Playwright's download.
+LAUNCH = {"executable_path": os.environ["STICKMAN_CHROME"]} if os.environ.get("STICKMAN_CHROME") else {}

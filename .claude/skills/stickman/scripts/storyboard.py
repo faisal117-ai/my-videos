@@ -5,11 +5,11 @@ import base64, io, json, sys
 from pathlib import Path
 from PIL import Image, ImageDraw
 from playwright.sync_api import sync_playwright
-from common import browser_args, is_3d, page_url
+from common import browser_args, is_3d, page_url, VW, VH, LAUNCH
 
 folder = Path(sys.argv[1]); ims = []
 with sync_playwright() as p:
-    b = p.chromium.launch(args=browser_args(is_3d(folder))); g = b.new_page(viewport={"width": 1920, "height": 1080})
+    b = p.chromium.launch(args=browser_args(is_3d(folder)), **LAUNCH); g = b.new_page(viewport={"width": VW, "height": VH})
     g.on("pageerror", lambda e: print("PAGE ERROR", e))
     g.goto(page_url(folder)); g.wait_for_function("window.READY", timeout=120000); c = g.evaluate("CUTF")
     for i in range(len(c) - 1):

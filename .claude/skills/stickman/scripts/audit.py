@@ -5,7 +5,7 @@ import base64, glob, json, math, os, re, subprocess, sys
 from pathlib import Path
 import numpy as np
 from PIL import Image
-from common import browser_args, ffmpeg, is_3d, page_url
+from common import browser_args, ffmpeg, is_3d, page_url, VW, VH, LAUNCH
 
 folder = Path(sys.argv[1]).resolve(); mp4 = folder / sys.argv[2]; os.chdir(folder)
 S = []
@@ -61,7 +61,7 @@ print("lowest 1 s motion", round(lo, 2), "brightness", fr.mean((1, 2)).min().rou
 # determinism: a frame must render the same after jumping around
 from playwright.sync_api import sync_playwright
 with sync_playwright() as p:
-    b = p.chromium.launch(args=browser_args(is_3d("."))); g = b.new_page(viewport={"width": 1920, "height": 1080}); g.goto(page_url(".")); g.wait_for_function("window.READY", timeout=120000)
+    b = p.chromium.launch(args=browser_args(is_3d(".")), **LAUNCH); g = b.new_page(viewport={"width": VW, "height": VH}); g.goto(page_url(".")); g.wait_for_function("window.READY", timeout=120000)
     js = "f=>{renderAt(f/30);return document.getElementById('c').toDataURL('image/png')}"; n = CUT[-1]
     for f in (n // 5, n // 2, n * 4 // 5):
         a_ = g.evaluate(js, f); g.evaluate("n=>{renderAt(n*.11);renderAt(n*.031)}", n / 30); c_ = g.evaluate(js, f)

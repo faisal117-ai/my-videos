@@ -4,7 +4,7 @@ usage: build.py <folder> --out name.mp4 [--shots 3 7] [--audio-only] [--jobs N] 
 Each shot renders to its own file, so a stopped or timed-out run resumes where it left off and a fix re-renders only that shot."""
 import argparse, base64, json, multiprocessing as mp, os, subprocess, sys
 from pathlib import Path
-from common import FRAME_JS, browser_args, ffmpeg, is_3d, page_url
+from common import FRAME_JS, browser_args, ffmpeg, is_3d, page_url, VW, VH, LAUNCH
 
 SCRIPTS = Path(__file__).resolve().parent
 
@@ -12,7 +12,7 @@ SCRIPTS = Path(__file__).resolve().parent
 def info(folder):
     from playwright.sync_api import sync_playwright
     with sync_playwright() as p:
-        b = p.chromium.launch(args=browser_args(is_3d(folder))); g = b.new_page()
+        b = p.chromium.launch(args=browser_args(is_3d(folder)), **LAUNCH); g = b.new_page()
         errs = []; g.on("pageerror", lambda e: errs.append(str(e)))
         g.goto(page_url(folder))
         try:
@@ -28,7 +28,7 @@ def worker(a):
     from playwright.sync_api import sync_playwright
     os.chdir(folder)
     with sync_playwright() as p:
-        b = p.chromium.launch(args=browser_args(is_3d("."))); g = b.new_page(viewport={"width": 1920, "height": 1080})
+        b = p.chromium.launch(args=browser_args(is_3d(".")), **LAUNCH); g = b.new_page(viewport={"width": VW, "height": VH})
         g.goto(page_url(".")); g.wait_for_function("window.READY", timeout=120000)
         for sh in shots:
             t_ = Path(tmp) / f"tmp_{sh:03d}.mp4"
