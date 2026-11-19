@@ -71,6 +71,15 @@ Read next: `scripts/channel-plan.md` (start-here index, core message, decisions)
   returning, 21:59); sacrifice has no ordinary people, leave it. Videos with realistic synthetic people go up
   with isAiGeneratedContent true.
 
+## MCP servers added 19 Nov (late), in .mcp.json, load at session start
+- **atlascloud** (npx atlascloud-mcp): paid image/video models (Kling, Seedance, Veo; talking avatars). API key saved as a
+  network secret for api.atlascloud.ai (Bearer); env ATLASCLOUD_API_KEY=proxy-injected. Tested: 200.
+- **sync** (https://mcp.sync.so/mcp): lip-sync. NOT working yet: host blocked and no key. The user is to add a network
+  secret in the environment settings (host mcp.sync.so, header x-api-key, empty prefix).
+- Next: cave Short (shorts/24-cave) with real talking shots (Atlas video + Sync lips to our Declan/Peter/Adam voices).
+  Check prices first and tell the user the cost before generating. The render of 24-cave was stopped by the user;
+  spec.json has still pictures only.
+
 ## Decision of 19 Nov (late): skills
 - **Use every stored skill that applies, without being reminded** (user, 19 Nov). The step-by-step list is in
   CLAUDE.md (root, loaded every session) and checklist.md. Cave Short: yt-script ran (old hook 37/100 → hook A
