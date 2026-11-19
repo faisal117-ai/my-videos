@@ -1,0 +1,101 @@
+<template>
+  <style>
+    #c02 { position: absolute; inset: 0; overflow: hidden; background: #000; }
+    .c02-st { position: absolute; border-radius: 50%; background: #eef4ff; box-shadow: 0 0 6px rgba(220,235,255,0.9); }
+    .c02-mote { position: absolute; border-radius: 50%; }
+    .c02-full { position: absolute; inset: 0; }
+    .c02-svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+
+    .c02-cam { position: absolute; inset: 0; transform-origin: 50% 55%; }
+    .c02-scrim { position: absolute; left: 0; right: 0; bottom: 0; height: 300px;
+      background: linear-gradient(0deg, rgba(0,0,0,0.75), rgba(0,0,0,0)); }
+    .c02-cap { position: absolute; left: 210px; right: 210px; bottom: 64px; text-align: center;
+      font-family: "Cormorant Garamond"; font-weight: 600; font-size: 54px; line-height: 1.12; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c02-cardwrap { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+      background: radial-gradient(ellipse at 50% 50%, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.45) 50%, rgba(0,0,0,0) 80%); }
+    .c02-card { max-width: 1400px; display: flex; flex-direction: column; align-items: center; gap: 26px; text-align: center; }
+    .c02-ar { font-family: "Amiri Quran"; font-size: 70px; line-height: 1.8; color: #fff6e6; text-shadow: 0 0 30px rgba(215,236,255,0.4); }
+    .c02-en { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 50px; line-height: 1.18; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c02-ctext { font-family: "Cormorant Garamond"; font-weight: 600; font-size: 76px; line-height: 1.1; color: #f5ead6;
+      text-shadow: 0 3px 22px rgba(0,0,0,0.9); }
+    .c02-hi { color: var(--accent); }
+    .c02-ref { font-family: Inter, sans-serif; font-weight: 700; font-size: 28px; letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--accent); border: 2px solid var(--accent); border-radius: 999px; padding: 10px 24px; background: rgba(0,0,0,0.4); }
+    .c02-title { font-family: "Cormorant Garamond"; font-weight: 600; font-size: 118px; line-height: 1.02; color: #f5ead6;
+      text-shadow: 0 4px 30px rgba(0,0,0,0.8); }
+    .c02-tsub { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 52px; color: var(--accent); }
+    .c02-mark { font-family: Inter, sans-serif; font-weight: 700; font-size: 64px; letter-spacing: 0.32em; color: #f5ead6; }
+    .c02-mark span { color: var(--accent); }
+    .c02-endt { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 52px; color: #f5ead6; }
+    .c02-btn { font-family: Inter, sans-serif; font-weight: 700; font-size: 34px; letter-spacing: 0.08em; color: #120b08;
+      background: var(--accent); border-radius: 999px; padding: 18px 48px; }
+    .c02-label { position: absolute; left: 90px; top: 70px; }
+    .c02-label b { display: block; font-family: Inter, sans-serif; font-weight: 700; font-size: 28px; letter-spacing: 0.3em; color: var(--accent); }
+    .c02-label i { display: block; font-family: "Cormorant Garamond"; font-style: normal; font-weight: 600; font-size: 60px; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c02-brand { position: absolute; right: 80px; top: 70px; font-family: Inter, sans-serif; font-weight: 700; font-size: 28px;
+      letter-spacing: 0.32em; color: rgba(245,234,214,0.7); }
+    .c02-brand span { color: var(--accent); }
+    .c02-fade { position: absolute; inset: 0; background: #000; }
+
+    .c02-ph { position: absolute; left: -60px; top: -34px; width: 2040px; height: 1148px; opacity: 0; }
+    .c02-ph img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .c02-cap { font-family: "Noto Nastaliq Urdu"; font-weight: 400; font-size: 44px; line-height: 1.9; direction: rtl; bottom: 40px; }
+    .c02-urtr { font-family: "Noto Nastaliq Urdu"; font-style: normal; font-weight: 400; font-size: 44px; line-height: 1.9; }
+    .c02-ctext { font-family: "Noto Nastaliq Urdu"; font-weight: 400; font-size: 60px; line-height: 1.9; direction: rtl; }
+    .c02-label i, .c02-title, .c02-tsub, .c02-endt { font-family: "Noto Nastaliq Urdu"; font-style: normal; font-weight: 400; direction: rtl; line-height: 1.8; }
+    .c02-title { font-size: 92px; } .c02-tsub { font-size: 46px; } .c02-label i { font-size: 48px; } .c02-endt { font-size: 44px; }
+    .c02-label b { letter-spacing: 0; font-family: "Noto Nastaliq Urdu"; font-weight: 400; font-size: 30px; }
+
+  </style>
+  <div id="c02" data-composition-id="c02" data-width="1920" data-height="1080">
+    <div id="c02-scene" class="clip" data-start="0" data-duration="72.02" style="position:absolute;inset:0" data-layout-allow-overflow>
+      <div id="c02-cam" class="c02-cam"><div id="c02-ph0" class="c02-ph"><img src="assets/gen/c02a.jpg" alt=""></div><div id="c02-ph1" class="c02-ph"><img src="assets/gen/c02b.jpg" alt=""></div><div id="c02-ph2" class="c02-ph"><img src="assets/gen/c02c.jpg" alt=""></div><div id="c02-ph3" class="c02-ph"><img src="assets/gen/c02d.jpg" alt=""></div>
+      </div>
+    </div>
+    <div id="c02-scr" class="c02-scrim clip" data-start="0" data-duration="72.02"></div>
+    <div id="c02-lab" class="c02-label clip" data-start="0.3" data-duration="4.6"><b>باب 2</b><i>بے مثال بادشاہی</i></div>
+    <div id="c02-cp0" class="c02-cap clip" data-start="0.22" data-duration="4.08">&quot;اور داؤد کا وارث سلیمان ہوا۔&quot; اپنے والد</div>
+    <div id="c02-cp1" class="c02-cap clip" data-start="4.30" data-duration="3.08">کے بعد وہ نبی بھی بنے اور بادشاہ بھی۔</div>
+    <div id="c02-cp2" class="c02-cap clip" data-start="36.62" data-duration="4.04">راہ تک، اور شام کے وقت ایک مہینے کی راہ تک۔</div>
+    <div id="c02-cp3" class="c02-cap clip" data-start="40.66" data-duration="4.24">اور اللہ نے ان کے لیے پگھلے ہوئے تانبے کا چشمہ بہا دیا،</div>
+    <div id="c02-cp4" class="c02-cap clip" data-start="44.90" data-duration="4.48">اور جن اپنے رب کے حکم سے ان کے لیے کام کرتے تھے:</div>
+    <div id="c02-cp5" class="c02-cap clip" data-start="49.38" data-duration="3.43">اونچی عمارتیں، حوض جیسے بڑے لگن، اور</div>
+    <div id="c02-cp6" class="c02-cap clip" data-start="52.81" data-duration="3.07">اپنی جگہ سے نہ ہٹنے والی بھاری دیگیں۔</div>
+    <div id="c02-cp7" class="c02-cap clip" data-start="67.22" data-duration="4.20">کیا حضرت سلیمان علیہ السلام اُن تھوڑے لوگوں میں سے ہوں گے؟</div>
+    <div id="c02-k0w" class="c02-cardwrap clip" data-start="7.43" data-duration="13.91"><div id="c02-k0" class="c02-card"><div class="c02-ar" dir="rtl" lang="ar">قَالَ رَبِّ ٱغۡفِرۡ لِي وَهَبۡ لِي مُلۡكࣰا لَّا يَنۢبَغِي لِأَحَدࣲ مِّنۢ بَعۡدِيٓۖ إِنَّكَ أَنتَ ٱلۡوَهَّابُ</div><div class="c02-en c02-urtr" dir="rtl" lang="ur">اے میرے رب، مجھے معاف کر دے اور مجھے وہ بادشاہی دے جو میرے بعد کسی کے لیے سزاوار نہ ہو، بیشک تو ہی اصل داتا ہے</div><div class="c02-ref">Sad 38:35</div></div></div>
+    <div id="c02-k1w" class="c02-cardwrap clip" data-start="22.99" data-duration="11.71"><div id="c02-k1" class="c02-card"><div class="c02-ar" dir="rtl" lang="ar">فَسَخَّرۡنَا لَهُ ٱلرِّيحَ تَجۡرِي بِأَمۡرِهِۦ رُخَآءً حَيۡثُ أَصَابَ</div><div class="c02-en c02-urtr" dir="rtl" lang="ur">تب ہم نے اس کے لیے ہوا کو مسخر کر دیا جو اس کے حکم سے نرمی کے ساتھ چلتی تھی جدھر وہ چاہتا تھا</div><div class="c02-ref">Sad 38:36</div></div></div>
+    <div id="c02-k2w" class="c02-cardwrap clip" data-start="55.93" data-duration="10.77"><div id="c02-k2" class="c02-card"><div class="c02-ar" dir="rtl" lang="ar">ٱعۡمَلُوٓاْ ءَالَ دَاوُۥدَ شُكۡرࣰاۚ وَقَلِيلࣱ مِّنۡ عِبَادِيَ ٱلشَّكُورُ</div><div class="c02-en c02-urtr" dir="rtl" lang="ur">اے آلِ داؤدؑ، عمل کرو شکر کے طریقے پر، میرے بندوں میں کم ہی شکر گزار ہیں</div><div class="c02-ref">Saba 34:13</div></div></div>
+    <div id="c02-fadeIn" class="c02-fade clip" data-start="0" data-duration="0.55" style="opacity:1"></div>
+    <div id="c02-fadeOut" class="c02-fade clip" data-start="71.52" data-duration="0.50" style="opacity:0"></div>
+    <div id="c02-br" class="c02-brand clip" data-start="0" data-duration="72.02">HAQ <span>·</span> STORIES</div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.set("#c02-ph0", {opacity: 1}, 0);
+    tl.fromTo("#c02-ph0", {x: 0, scale: 1.0}, {x: 26, scale: 1.05, duration: 23.54, ease: "none", immediateRender: false}, 0.00);
+    tl.to("#c02-ph0", {opacity: 0, duration: 0.3}, 23.59);
+    tl.fromTo("#c02-ph1", {opacity: 0}, {opacity: 1, duration: 1.00, ease: "sine.inOut", immediateRender: false}, 22.54);
+    tl.fromTo("#c02-ph1", {x: 0, scale: 1.0}, {x: -26, scale: 1.05, duration: 18.60, ease: "none", immediateRender: false}, 22.54);
+    tl.to("#c02-ph1", {opacity: 0, duration: 0.3}, 41.19);
+    tl.fromTo("#c02-ph2", {opacity: 0}, {opacity: 1, duration: 1.00, ease: "sine.inOut", immediateRender: false}, 40.14);
+    tl.fromTo("#c02-ph2", {x: 0, scale: 1.0}, {x: 26, scale: 1.05, duration: 16.34, ease: "none", immediateRender: false}, 40.14);
+    tl.to("#c02-ph2", {opacity: 0, duration: 0.3}, 56.53);
+    tl.fromTo("#c02-ph3", {opacity: 0}, {opacity: 1, duration: 1.00, ease: "sine.inOut", immediateRender: false}, 55.48);
+    tl.fromTo("#c02-ph3", {x: 0, scale: 1.0}, {x: -26, scale: 1.05, duration: 16.54, ease: "none", immediateRender: false}, 55.48);
+    tl.fromTo("#c02-k0w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 7.43);
+    tl.fromTo("#c02-k0", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 7.43);
+    tl.fromTo("#c02-k1w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 22.99);
+    tl.fromTo("#c02-k1", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 22.99);
+    tl.fromTo("#c02-k2w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 55.93);
+    tl.fromTo("#c02-k2", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 55.93);
+    tl.fromTo("#c02-lab", {opacity: 0, x: -20}, {opacity: 1, x: 0, duration: 0.60, ease: "power2.out", immediateRender: false}, 0.30);
+    tl.fromTo("#c02-lab", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 4.40);
+    tl.fromTo("#c02-scene", {scale: 1.0, x: 0}, {scale: 1.06, x: 30, duration: 72.02, ease: "none", immediateRender: false}, 0.00);
+    tl.fromTo("#c02-fadeIn", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 0.00);
+    tl.fromTo("#c02-fadeOut", {opacity: 0}, {opacity: 1, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 71.52);
+    window.__timelines["c02"] = tl;
+  </script>
+</template>

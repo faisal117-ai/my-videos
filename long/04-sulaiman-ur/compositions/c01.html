@@ -1,0 +1,92 @@
+<template>
+  <style>
+    #c01 { position: absolute; inset: 0; overflow: hidden; background: #000; }
+    .c01-st { position: absolute; border-radius: 50%; background: #eef4ff; box-shadow: 0 0 6px rgba(220,235,255,0.9); }
+    .c01-mote { position: absolute; border-radius: 50%; }
+    .c01-full { position: absolute; inset: 0; }
+    .c01-svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+
+    .c01-cam { position: absolute; inset: 0; transform-origin: 50% 55%; }
+    .c01-scrim { position: absolute; left: 0; right: 0; bottom: 0; height: 300px;
+      background: linear-gradient(0deg, rgba(0,0,0,0.75), rgba(0,0,0,0)); }
+    .c01-cap { position: absolute; left: 210px; right: 210px; bottom: 64px; text-align: center;
+      font-family: "Cormorant Garamond"; font-weight: 600; font-size: 54px; line-height: 1.12; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c01-cardwrap { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+      background: radial-gradient(ellipse at 50% 50%, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.45) 50%, rgba(0,0,0,0) 80%); }
+    .c01-card { max-width: 1400px; display: flex; flex-direction: column; align-items: center; gap: 26px; text-align: center; }
+    .c01-ar { font-family: "Amiri Quran"; font-size: 70px; line-height: 1.8; color: #fff6e6; text-shadow: 0 0 30px rgba(215,236,255,0.4); }
+    .c01-en { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 50px; line-height: 1.18; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c01-ctext { font-family: "Cormorant Garamond"; font-weight: 600; font-size: 76px; line-height: 1.1; color: #f5ead6;
+      text-shadow: 0 3px 22px rgba(0,0,0,0.9); }
+    .c01-hi { color: var(--accent); }
+    .c01-ref { font-family: Inter, sans-serif; font-weight: 700; font-size: 28px; letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--accent); border: 2px solid var(--accent); border-radius: 999px; padding: 10px 24px; background: rgba(0,0,0,0.4); }
+    .c01-title { font-family: "Cormorant Garamond"; font-weight: 600; font-size: 118px; line-height: 1.02; color: #f5ead6;
+      text-shadow: 0 4px 30px rgba(0,0,0,0.8); }
+    .c01-tsub { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 52px; color: var(--accent); }
+    .c01-mark { font-family: Inter, sans-serif; font-weight: 700; font-size: 64px; letter-spacing: 0.32em; color: #f5ead6; }
+    .c01-mark span { color: var(--accent); }
+    .c01-endt { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 52px; color: #f5ead6; }
+    .c01-btn { font-family: Inter, sans-serif; font-weight: 700; font-size: 34px; letter-spacing: 0.08em; color: #120b08;
+      background: var(--accent); border-radius: 999px; padding: 18px 48px; }
+    .c01-label { position: absolute; left: 90px; top: 70px; }
+    .c01-label b { display: block; font-family: Inter, sans-serif; font-weight: 700; font-size: 28px; letter-spacing: 0.3em; color: var(--accent); }
+    .c01-label i { display: block; font-family: "Cormorant Garamond"; font-style: normal; font-weight: 600; font-size: 60px; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c01-brand { position: absolute; right: 80px; top: 70px; font-family: Inter, sans-serif; font-weight: 700; font-size: 28px;
+      letter-spacing: 0.32em; color: rgba(245,234,214,0.7); }
+    .c01-brand span { color: var(--accent); }
+    .c01-fade { position: absolute; inset: 0; background: #000; }
+
+    .c01-ph { position: absolute; left: -60px; top: -34px; width: 2040px; height: 1148px; opacity: 0; }
+    .c01-ph img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .c01-cap { font-family: "Noto Nastaliq Urdu"; font-weight: 400; font-size: 44px; line-height: 1.9; direction: rtl; bottom: 40px; }
+    .c01-urtr { font-family: "Noto Nastaliq Urdu"; font-style: normal; font-weight: 400; font-size: 44px; line-height: 1.9; }
+    .c01-ctext { font-family: "Noto Nastaliq Urdu"; font-weight: 400; font-size: 60px; line-height: 1.9; direction: rtl; }
+    .c01-label i, .c01-title, .c01-tsub, .c01-endt { font-family: "Noto Nastaliq Urdu"; font-style: normal; font-weight: 400; direction: rtl; line-height: 1.8; }
+    .c01-title { font-size: 92px; } .c01-tsub { font-size: 46px; } .c01-label i { font-size: 48px; } .c01-endt { font-size: 44px; }
+    .c01-label b { letter-spacing: 0; font-family: "Noto Nastaliq Urdu"; font-weight: 400; font-size: 30px; }
+
+  </style>
+  <div id="c01" data-composition-id="c01" data-width="1920" data-height="1080">
+    <div id="c01-scene" class="clip" data-start="0" data-duration="51.46" style="position:absolute;inset:0" data-layout-allow-overflow>
+      <div id="c01-cam" class="c01-cam"><div id="c01-ph0" class="c01-ph"><img src="assets/gen/c01a.jpg" alt=""></div><div id="c01-ph1" class="c01-ph"><img src="assets/gen/c01b.jpg" alt=""></div><div id="c01-ph2" class="c01-ph"><img src="assets/gen/c01c.jpg" alt=""></div>
+      </div>
+    </div>
+    <div id="c01-scr" class="c01-scrim clip" data-start="0" data-duration="51.46"></div>
+    <div id="c01-lab" class="c01-label clip" data-start="0.3" data-duration="4.6"><b>باب 1</b><i>حضرت داؤدؑ کے بیٹے</i></div>
+    <div id="c01-cp0" class="c01-cap clip" data-start="0.22" data-duration="5.16">حضرت سلیمان علیہ السلام کون تھے، اور اللہ نے انہیں کیا عطا کیا؟</div>
+    <div id="c01-cp1" class="c01-cap clip" data-start="24.10" data-duration="5.03">کچھ لوگوں کی بکریاں رات کے وقت ایک کھیت میں پھیل گئیں اور فصل کھا گئیں۔</div>
+    <div id="c01-cp2" class="c01-cap clip" data-start="29.13" data-duration="5.73">حضرت داؤد علیہ السلام نے فیصلہ کیا، اور حضرت سلیمان علیہ السلام نے بھی فیصلہ کیا۔</div>
+    <div id="c01-cp3" class="c01-cap clip" data-start="46.66" data-duration="1.84">یہ پہلا تحفہ تھا۔</div>
+    <div id="c01-cp4" class="c01-cap clip" data-start="48.50" data-duration="2.36">اور یہ آخری نہیں تھا۔</div>
+    <div id="c01-k0w" class="c01-cardwrap clip" data-start="5.43" data-duration="16.39"><div id="c01-k0" class="c01-card"><div class="c01-ar" dir="rtl" lang="ar">وَوَهَبۡنَا لِدَاوُۥدَ سُلَيۡمَٰنَۚ نِعۡمَ ٱلۡعَبۡدُ إِنَّهُۥٓ أَوَّابٌ</div><div class="c01-en c01-urtr" dir="rtl" lang="ur">اور داؤدؑ کو ہم نے سلیمانؑ (جیسا بیٹا) عطا کیا، بہترین بندہ، کثرت سے اپنے رب کی طرف رجوع کرنے والا</div><div class="c01-ref">Sad 38:30</div></div></div>
+    <div id="c01-k1w" class="c01-cardwrap clip" data-start="34.91" data-duration="10.43"><div id="c01-k1" class="c01-card"><div class="c01-ar" dir="rtl" lang="ar">فَفَهَّمۡنَٰهَا سُلَيۡمَٰنَۚ وَكُلًّا ءَاتَيۡنَا حُكۡمࣰا وَعِلۡمࣰاۚ</div><div class="c01-en c01-urtr" dir="rtl" lang="ur">اُس وقت ہم نے صحیح فیصلہ سلیمانؑ کو سمجھا دیا، حالانکہ حکم اور علم ہم نے دونوں ہی کو عطا کیا تھا</div><div class="c01-ref">Al-Anbya 21:79</div></div></div>
+    <div id="c01-fadeIn" class="c01-fade clip" data-start="0" data-duration="0.55" style="opacity:1"></div>
+    <div id="c01-fadeOut" class="c01-fade clip" data-start="50.96" data-duration="0.50" style="opacity:0"></div>
+    <div id="c01-br" class="c01-brand clip" data-start="0" data-duration="51.46">HAQ <span>·</span> STORIES</div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.set("#c01-ph0", {opacity: 1}, 0);
+    tl.fromTo("#c01-ph0", {x: 0, scale: 1.0}, {x: 26, scale: 1.05, duration: 21.24, ease: "none", immediateRender: false}, 0.00);
+    tl.to("#c01-ph0", {opacity: 0, duration: 0.3}, 21.29);
+    tl.fromTo("#c01-ph1", {opacity: 0}, {opacity: 1, duration: 1.00, ease: "sine.inOut", immediateRender: false}, 20.24);
+    tl.fromTo("#c01-ph1", {x: 0, scale: 1.0}, {x: -26, scale: 1.05, duration: 9.37, ease: "none", immediateRender: false}, 20.24);
+    tl.to("#c01-ph1", {opacity: 0, duration: 0.3}, 29.66);
+    tl.fromTo("#c01-ph2", {opacity: 0}, {opacity: 1, duration: 1.00, ease: "sine.inOut", immediateRender: false}, 28.61);
+    tl.fromTo("#c01-ph2", {x: 0, scale: 1.0}, {x: 26, scale: 1.05, duration: 22.85, ease: "none", immediateRender: false}, 28.61);
+    tl.fromTo("#c01-k0w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 5.43);
+    tl.fromTo("#c01-k0", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 5.43);
+    tl.fromTo("#c01-k1w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 34.91);
+    tl.fromTo("#c01-k1", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 34.91);
+    tl.fromTo("#c01-lab", {opacity: 0, x: -20}, {opacity: 1, x: 0, duration: 0.60, ease: "power2.out", immediateRender: false}, 0.30);
+    tl.fromTo("#c01-lab", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 4.40);
+    tl.fromTo("#c01-scene", {scale: 1.0, x: 0}, {scale: 1.06, x: -30, duration: 51.46, ease: "none", immediateRender: false}, 0.00);
+    tl.fromTo("#c01-fadeIn", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 0.00);
+    tl.fromTo("#c01-fadeOut", {opacity: 0}, {opacity: 1, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 50.96);
+    window.__timelines["c01"] = tl;
+  </script>
+</template>

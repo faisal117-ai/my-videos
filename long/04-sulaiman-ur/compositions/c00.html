@@ -1,0 +1,87 @@
+<template>
+  <style>
+    #c00 { position: absolute; inset: 0; overflow: hidden; background: #000; }
+    .c00-st { position: absolute; border-radius: 50%; background: #eef4ff; box-shadow: 0 0 6px rgba(220,235,255,0.9); }
+    .c00-mote { position: absolute; border-radius: 50%; }
+    .c00-full { position: absolute; inset: 0; }
+    .c00-svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+
+    .c00-cam { position: absolute; inset: 0; transform-origin: 50% 55%; }
+    .c00-scrim { position: absolute; left: 0; right: 0; bottom: 0; height: 300px;
+      background: linear-gradient(0deg, rgba(0,0,0,0.75), rgba(0,0,0,0)); }
+    .c00-cap { position: absolute; left: 210px; right: 210px; bottom: 64px; text-align: center;
+      font-family: "Cormorant Garamond"; font-weight: 600; font-size: 54px; line-height: 1.12; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c00-cardwrap { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+      background: radial-gradient(ellipse at 50% 50%, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.45) 50%, rgba(0,0,0,0) 80%); }
+    .c00-card { max-width: 1400px; display: flex; flex-direction: column; align-items: center; gap: 26px; text-align: center; }
+    .c00-ar { font-family: "Amiri Quran"; font-size: 70px; line-height: 1.8; color: #fff6e6; text-shadow: 0 0 30px rgba(215,236,255,0.4); }
+    .c00-en { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 50px; line-height: 1.18; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c00-ctext { font-family: "Cormorant Garamond"; font-weight: 600; font-size: 76px; line-height: 1.1; color: #f5ead6;
+      text-shadow: 0 3px 22px rgba(0,0,0,0.9); }
+    .c00-hi { color: var(--accent); }
+    .c00-ref { font-family: Inter, sans-serif; font-weight: 700; font-size: 28px; letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--accent); border: 2px solid var(--accent); border-radius: 999px; padding: 10px 24px; background: rgba(0,0,0,0.4); }
+    .c00-title { font-family: "Cormorant Garamond"; font-weight: 600; font-size: 118px; line-height: 1.02; color: #f5ead6;
+      text-shadow: 0 4px 30px rgba(0,0,0,0.8); }
+    .c00-tsub { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 52px; color: var(--accent); }
+    .c00-mark { font-family: Inter, sans-serif; font-weight: 700; font-size: 64px; letter-spacing: 0.32em; color: #f5ead6; }
+    .c00-mark span { color: var(--accent); }
+    .c00-endt { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 52px; color: #f5ead6; }
+    .c00-btn { font-family: Inter, sans-serif; font-weight: 700; font-size: 34px; letter-spacing: 0.08em; color: #120b08;
+      background: var(--accent); border-radius: 999px; padding: 18px 48px; }
+    .c00-label { position: absolute; left: 90px; top: 70px; }
+    .c00-label b { display: block; font-family: Inter, sans-serif; font-weight: 700; font-size: 28px; letter-spacing: 0.3em; color: var(--accent); }
+    .c00-label i { display: block; font-family: "Cormorant Garamond"; font-style: normal; font-weight: 600; font-size: 60px; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c00-brand { position: absolute; right: 80px; top: 70px; font-family: Inter, sans-serif; font-weight: 700; font-size: 28px;
+      letter-spacing: 0.32em; color: rgba(245,234,214,0.7); }
+    .c00-brand span { color: var(--accent); }
+    .c00-fade { position: absolute; inset: 0; background: #000; }
+
+    .c00-ph { position: absolute; left: -60px; top: -34px; width: 2040px; height: 1148px; opacity: 0; }
+    .c00-ph img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .c00-cap { font-family: "Noto Nastaliq Urdu"; font-weight: 400; font-size: 44px; line-height: 1.9; direction: rtl; bottom: 40px; }
+    .c00-urtr { font-family: "Noto Nastaliq Urdu"; font-style: normal; font-weight: 400; font-size: 44px; line-height: 1.9; }
+    .c00-ctext { font-family: "Noto Nastaliq Urdu"; font-weight: 400; font-size: 60px; line-height: 1.9; direction: rtl; }
+    .c00-label i, .c00-title, .c00-tsub, .c00-endt { font-family: "Noto Nastaliq Urdu"; font-style: normal; font-weight: 400; direction: rtl; line-height: 1.8; }
+    .c00-title { font-size: 92px; } .c00-tsub { font-size: 46px; } .c00-label i { font-size: 48px; } .c00-endt { font-size: 44px; }
+    .c00-label b { letter-spacing: 0; font-family: "Noto Nastaliq Urdu"; font-weight: 400; font-size: 30px; }
+
+  </style>
+  <div id="c00" data-composition-id="c00" data-width="1920" data-height="1080">
+    <div id="c00-scene" class="clip" data-start="0" data-duration="23.14" style="position:absolute;inset:0" data-layout-allow-overflow>
+      <div id="c00-cam" class="c00-cam"><div id="c00-ph0" class="c00-ph"><img src="assets/gen/c00a.jpg" alt=""></div><div id="c00-ph1" class="c00-ph"><img src="assets/gen/c00b.jpg" alt=""></div><div id="c00-ph2" class="c00-ph"><img src="assets/gen/c00c.jpg" alt=""></div>
+      </div>
+    </div>
+    <div id="c00-scr" class="c00-scrim clip" data-start="0" data-duration="23.14"></div>
+    
+    <div id="c00-cp0" class="c00-cap clip" data-start="0.22" data-duration="2.16">ایک ملکہ کا تخت…</div>
+    <div id="c00-cp1" class="c00-cap clip" data-start="2.38" data-duration="2.71">پلک جھپکنے سے پہلے آ پہنچا۔</div>
+    <div id="c00-cp2" class="c00-cap clip" data-start="5.09" data-duration="6.44">یہ حضرت سلیمان علیہ السلام کا قصہ ہے: ایک شکر گزار دل، جس نے پوری قوم</div>
+    <div id="c00-cp3" class="c00-cap clip" data-start="11.53" data-duration="3.17">کو سورج سے اللہ کی طرف موڑ دیا۔</div>
+    <div id="c00-cp4" class="c00-cap clip" data-start="14.70" data-duration="1.90">لیکن پہلے ایک سوال:</div>
+    <div id="c00-cp5" class="c00-cap clip" data-start="16.60" data-duration="3.58">جب اللہ کسی کو سب کچھ دے دے، تو وہ کیا کہتا ہے؟</div>
+    <div id="c00-k0w" class="c00-cardwrap clip" data-start="20.23" data-duration="2.41"><div id="c00-k0" class="c00-card"><div class="c00-title">شکر گزار بادشاہ</div><div class="c00-tsub">حضرت سلیمان علیہ السلام کا قصہ</div></div></div>
+    <div id="c00-fadeIn" class="c00-fade clip" data-start="0" data-duration="0.55" style="opacity:0"></div>
+    <div id="c00-fadeOut" class="c00-fade clip" data-start="22.64" data-duration="0.50" style="opacity:0"></div>
+    <div id="c00-br" class="c00-brand clip" data-start="0" data-duration="23.14">HAQ <span>·</span> STORIES</div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.set("#c00-ph0", {opacity: 1}, 0);
+    tl.fromTo("#c00-ph0", {x: 0, scale: 1.0}, {x: 26, scale: 1.05, duration: 5.57, ease: "none", immediateRender: false}, 0.00);
+    tl.to("#c00-ph0", {opacity: 0, duration: 0.3}, 5.62);
+    tl.fromTo("#c00-ph1", {opacity: 0}, {opacity: 1, duration: 1.00, ease: "sine.inOut", immediateRender: false}, 4.57);
+    tl.fromTo("#c00-ph1", {x: 0, scale: 1.0}, {x: -26, scale: 1.05, duration: 10.61, ease: "none", immediateRender: false}, 4.57);
+    tl.to("#c00-ph1", {opacity: 0, duration: 0.3}, 15.23);
+    tl.fromTo("#c00-ph2", {opacity: 0}, {opacity: 1, duration: 1.00, ease: "sine.inOut", immediateRender: false}, 14.18);
+    tl.fromTo("#c00-ph2", {x: 0, scale: 1.0}, {x: 26, scale: 1.05, duration: 8.96, ease: "none", immediateRender: false}, 14.18);
+    tl.fromTo("#c00-k0w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 20.23);
+    tl.fromTo("#c00-k0", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 20.23);
+    tl.fromTo("#c00-scene", {scale: 1.0, x: 0}, {scale: 1.06, x: 30, duration: 23.14, ease: "none", immediateRender: false}, 0.00);
+    tl.fromTo("#c00-fadeOut", {opacity: 0}, {opacity: 1, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 22.64);
+    window.__timelines["c00"] = tl;
+  </script>
+</template>

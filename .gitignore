@@ -6,3 +6,5 @@ render.log
 work-*/
 *.mix.mp4
 .*.hf-transaction-*/
+long/*/assets/ambience.wav
+long/*/assets/narration.wav

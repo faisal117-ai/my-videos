@@ -15,13 +15,11 @@ Every quoted verse: Sahih International on screen with its reference; Urdu: Maud
 
 ---
 
-## 0. Hook (0:00–0:35)
+## 0. Hook (0:00–0:20; tightened 19 Nov for the first-30-seconds rule: payoff promised by 0:13, story from 0:20)
 1. A queen's throne came from a far-off land… before an eye could blink.
-2. And the king who received it did not boast. He said: "This is from the favour of my Lord, to test me."
-3. This is the story of Prophet Sulaiman, alayhis salaam: the king who understood the birds, heard an ant, commanded the wind…
-4. …and how one grateful heart turned a whole nation from the sun to Allah.
-5. But first, a question: what does a man say, when Allah gives him everything?
-6. *(Title card)* The King Who Was Grateful: The Story of Prophet Sulaiman (AS).
+2. This is the story of Prophet Sulaiman, alayhis salaam, and how one grateful heart turned a whole nation from the sun to Allah.
+3. But first, a question: what does a man say, when Allah gives him everything?
+4. *(Title card)* The King Who Was Grateful.
 
 ## 1. The Son of Dawud (AS) (what was his first gift?)
 1. Who was Prophet Sulaiman, alayhis salaam, and what did Allah give him?
@@ -116,7 +114,7 @@ Every quoted verse: Sahih International on screen with its reference; Urdu: Maud
 2. "And when We decreed for him death, nothing showed the jinn his death except a creature of the earth, eating his staff." *(34:14)*
 3. He was still upright on his staff, and the jinn kept working, not knowing he had passed away.
 4. "But when he fell…" *(34:14)*
-5. "Then it became clear to the jinn that if they had known the unseen, they would not have remained in humiliating work." *(34:14)*
+5. "Then it became clear to the jinn that if they had known the unseen, they would not have remained in humiliating punishment." *(34:14)*
 6. The jinn, who could carry a throne before a man could stand up… did not know the unseen. Only Allah knows it.
 
 ## 12. The Lesson

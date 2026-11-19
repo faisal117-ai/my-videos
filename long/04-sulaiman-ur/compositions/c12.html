@@ -1,0 +1,98 @@
+<template>
+  <style>
+    #c12 { position: absolute; inset: 0; overflow: hidden; background: #000; }
+    .c12-st { position: absolute; border-radius: 50%; background: #eef4ff; box-shadow: 0 0 6px rgba(220,235,255,0.9); }
+    .c12-mote { position: absolute; border-radius: 50%; }
+    .c12-full { position: absolute; inset: 0; }
+    .c12-svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+
+    .c12-cam { position: absolute; inset: 0; transform-origin: 50% 55%; }
+    .c12-scrim { position: absolute; left: 0; right: 0; bottom: 0; height: 300px;
+      background: linear-gradient(0deg, rgba(0,0,0,0.75), rgba(0,0,0,0)); }
+    .c12-cap { position: absolute; left: 210px; right: 210px; bottom: 64px; text-align: center;
+      font-family: "Cormorant Garamond"; font-weight: 600; font-size: 54px; line-height: 1.12; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c12-cardwrap { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+      background: radial-gradient(ellipse at 50% 50%, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.45) 50%, rgba(0,0,0,0) 80%); }
+    .c12-card { max-width: 1400px; display: flex; flex-direction: column; align-items: center; gap: 26px; text-align: center; }
+    .c12-ar { font-family: "Amiri Quran"; font-size: 70px; line-height: 1.8; color: #fff6e6; text-shadow: 0 0 30px rgba(215,236,255,0.4); }
+    .c12-en { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 50px; line-height: 1.18; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c12-ctext { font-family: "Cormorant Garamond"; font-weight: 600; font-size: 76px; line-height: 1.1; color: #f5ead6;
+      text-shadow: 0 3px 22px rgba(0,0,0,0.9); }
+    .c12-hi { color: var(--accent); }
+    .c12-ref { font-family: Inter, sans-serif; font-weight: 700; font-size: 28px; letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--accent); border: 2px solid var(--accent); border-radius: 999px; padding: 10px 24px; background: rgba(0,0,0,0.4); }
+    .c12-title { font-family: "Cormorant Garamond"; font-weight: 600; font-size: 118px; line-height: 1.02; color: #f5ead6;
+      text-shadow: 0 4px 30px rgba(0,0,0,0.8); }
+    .c12-tsub { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 52px; color: var(--accent); }
+    .c12-mark { font-family: Inter, sans-serif; font-weight: 700; font-size: 64px; letter-spacing: 0.32em; color: #f5ead6; }
+    .c12-mark span { color: var(--accent); }
+    .c12-endt { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 52px; color: #f5ead6; }
+    .c12-btn { font-family: Inter, sans-serif; font-weight: 700; font-size: 34px; letter-spacing: 0.08em; color: #120b08;
+      background: var(--accent); border-radius: 999px; padding: 18px 48px; }
+    .c12-label { position: absolute; left: 90px; top: 70px; }
+    .c12-label b { display: block; font-family: Inter, sans-serif; font-weight: 700; font-size: 28px; letter-spacing: 0.3em; color: var(--accent); }
+    .c12-label i { display: block; font-family: "Cormorant Garamond"; font-style: normal; font-weight: 600; font-size: 60px; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c12-brand { position: absolute; right: 80px; top: 70px; font-family: Inter, sans-serif; font-weight: 700; font-size: 28px;
+      letter-spacing: 0.32em; color: rgba(245,234,214,0.7); }
+    .c12-brand span { color: var(--accent); }
+    .c12-fade { position: absolute; inset: 0; background: #000; }
+
+    .c12-ph { position: absolute; left: -60px; top: -34px; width: 2040px; height: 1148px; opacity: 0; }
+    .c12-ph img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .c12-cap { font-family: "Noto Nastaliq Urdu"; font-weight: 400; font-size: 44px; line-height: 1.9; direction: rtl; bottom: 40px; }
+    .c12-urtr { font-family: "Noto Nastaliq Urdu"; font-style: normal; font-weight: 400; font-size: 44px; line-height: 1.9; }
+    .c12-ctext { font-family: "Noto Nastaliq Urdu"; font-weight: 400; font-size: 60px; line-height: 1.9; direction: rtl; }
+    .c12-label i, .c12-title, .c12-tsub, .c12-endt { font-family: "Noto Nastaliq Urdu"; font-style: normal; font-weight: 400; direction: rtl; line-height: 1.8; }
+    .c12-title { font-size: 92px; } .c12-tsub { font-size: 46px; } .c12-label i { font-size: 48px; } .c12-endt { font-size: 44px; }
+    .c12-label b { letter-spacing: 0; font-family: "Noto Nastaliq Urdu"; font-weight: 400; font-size: 30px; }
+
+  </style>
+  <div id="c12" data-composition-id="c12" data-width="1920" data-height="1080">
+    <div id="c12-scene" class="clip" data-start="0" data-duration="72.74" style="position:absolute;inset:0" data-layout-allow-overflow>
+      <div id="c12-cam" class="c12-cam"><div id="c12-ph0" class="c12-ph"><img src="assets/gen/c12b.jpg" alt=""></div><div id="c12-ph1" class="c12-ph"><img src="assets/gen/c12a.jpg" alt=""></div><div id="c12-ph2" class="c12-ph"><img src="assets/gen/c12c.jpg" alt=""></div>
+      </div>
+    </div>
+    <div id="c12-scr" class="c12-scrim clip" data-start="0" data-duration="72.74"></div>
+    <div id="c12-lab" class="c12-label clip" data-start="0.3" data-duration="4.6"><b>باب 12</b><i>سبق</i></div>
+    <div id="c12-cp0" class="c12-cap clip" data-start="0.22" data-duration="6.22">اللہ نے حضرت سلیمان علیہ السلام کو وہ بادشاہی دی جو پھر کسی کو نہیں ملے گی۔</div>
+    <div id="c12-cp1" class="c12-cap clip" data-start="6.44" data-duration="4.26">اور جو بات وہ بار بار کہتے رہے، وہ تھی: شکر۔</div>
+    <div id="c12-cp2" class="c12-cap clip" data-start="33.21" data-duration="4.53">تو آج، اللہ کی دی ہوئی کسی ایک نعمت کو دیکھیے:</div>
+    <div id="c12-cp3" class="c12-cap clip" data-start="37.74" data-duration="5.44">آپ کی صحت، آپ کا گھر، آپ کے گھر والے، اور ان کی دعا پڑھیے:</div>
+    <div id="c12-cp4" class="c12-cap clip" data-start="43.18" data-duration="2.91">&quot;اے میرے رب، مجھے قابو میں رکھ کہ</div>
+    <div id="c12-cp5" class="c12-cap clip" data-start="46.09" data-duration="6.51">میں تیرے اس احسان کا شکر ادا کرتا رہوں۔&quot; حضرت سلیمان علیہ السلام کے قصے کا کون سا</div>
+    <div id="c12-cp6" class="c12-cap clip" data-start="52.59" data-duration="6.03">حصہ آپ کو سب سے زیادہ حیران کر گیا: چیونٹی، ہُد ہُد، یا تخت؟</div>
+    <div id="c12-cp7" class="c12-cap clip" data-start="58.62" data-duration="1.60">کمنٹس میں ضرور بتائیے۔</div>
+    <div id="c12-k0w" class="c12-cardwrap clip" data-start="10.75" data-duration="11.49"><div id="c12-k0" class="c12-card"><div class="c12-ar" dir="rtl" lang="ar">قَالَ إِنَّمَآ أُوتِيتُهُۥ عَلَىٰ عِلۡمٍ عِندِيٓۚ</div><div class="c12-en c12-urtr" dir="rtl" lang="ur">یہ سب کچھ تو مجھے اُس علم کی بنا پر دیا گیا ہے جو مجھ کو حاصل ہے</div><div class="c12-ref">Al-Qasas 28:78</div></div></div>
+    <div id="c12-k1w" class="c12-cardwrap clip" data-start="22.34" data-duration="8.36"><div id="c12-k1" class="c12-card"><div class="c12-ar" dir="rtl" lang="ar">هَٰذَا مِن فَضۡلِ رَبِّي لِيَبۡلُوَنِيٓ</div><div class="c12-en c12-urtr" dir="rtl" lang="ur">یہ میرے رب کا فضل ہے</div><div class="c12-ref">An-Naml 27:40</div></div></div>
+    <div id="c12-k2w" class="c12-cardwrap clip" data-start="60.27" data-duration="12.42"><div id="c12-k2" class="c12-card c12-end"><div class="c12-mark">HAQ <span>·</span> STORIES</div><div class="c12-endt">قرآن سے انبیاء کے قصے</div><div class="c12-btn">سبسکرائب کریں</div></div></div>
+    <div id="c12-fadeIn" class="c12-fade clip" data-start="0" data-duration="0.55" style="opacity:1"></div>
+    <div id="c12-fadeOut" class="c12-fade clip" data-start="72.24" data-duration="0.50" style="opacity:0"></div>
+    <div id="c12-br" class="c12-brand clip" data-start="0" data-duration="72.74">HAQ <span>·</span> STORIES</div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.set("#c12-ph0", {opacity: 1}, 0);
+    tl.fromTo("#c12-ph0", {x: 0, scale: 1.0}, {x: 26, scale: 1.05, duration: 33.69, ease: "none", immediateRender: false}, 0.00);
+    tl.to("#c12-ph0", {opacity: 0, duration: 0.3}, 33.74);
+    tl.fromTo("#c12-ph1", {opacity: 0}, {opacity: 1, duration: 1.00, ease: "sine.inOut", immediateRender: false}, 32.69);
+    tl.fromTo("#c12-ph1", {x: 0, scale: 1.0}, {x: -26, scale: 1.05, duration: 28.13, ease: "none", immediateRender: false}, 32.69);
+    tl.to("#c12-ph1", {opacity: 0, duration: 0.3}, 60.87);
+    tl.fromTo("#c12-ph2", {opacity: 0}, {opacity: 1, duration: 1.00, ease: "sine.inOut", immediateRender: false}, 59.82);
+    tl.fromTo("#c12-ph2", {x: 0, scale: 1.0}, {x: 26, scale: 1.05, duration: 12.92, ease: "none", immediateRender: false}, 59.82);
+    tl.fromTo("#c12-k0w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 10.75);
+    tl.fromTo("#c12-k0", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 10.75);
+    tl.fromTo("#c12-k1w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 22.34);
+    tl.fromTo("#c12-k1", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 22.34);
+    tl.fromTo("#c12-k2w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 60.27);
+    tl.fromTo("#c12-k2", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 60.27);
+    tl.fromTo("#c12-lab", {opacity: 0, x: -20}, {opacity: 1, x: 0, duration: 0.60, ease: "power2.out", immediateRender: false}, 0.30);
+    tl.fromTo("#c12-lab", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 4.40);
+    tl.fromTo("#c12-scene", {scale: 1.0, x: 0}, {scale: 1.06, x: 30, duration: 72.74, ease: "none", immediateRender: false}, 0.00);
+    tl.fromTo("#c12-fadeIn", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 0.00);
+    tl.fromTo("#c12-fadeOut", {opacity: 0}, {opacity: 1, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 72.24);
+    window.__timelines["c12"] = tl;
+  </script>
+</template>

@@ -1,0 +1,98 @@
+<template>
+  <style>
+    #c09 { position: absolute; inset: 0; overflow: hidden; background: #000; }
+    .c09-st { position: absolute; border-radius: 50%; background: #eef4ff; box-shadow: 0 0 6px rgba(220,235,255,0.9); }
+    .c09-mote { position: absolute; border-radius: 50%; }
+    .c09-full { position: absolute; inset: 0; }
+    .c09-svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+
+    .c09-cam { position: absolute; inset: 0; transform-origin: 50% 55%; }
+    .c09-scrim { position: absolute; left: 0; right: 0; bottom: 0; height: 300px;
+      background: linear-gradient(0deg, rgba(0,0,0,0.75), rgba(0,0,0,0)); }
+    .c09-cap { position: absolute; left: 210px; right: 210px; bottom: 64px; text-align: center;
+      font-family: "Cormorant Garamond"; font-weight: 600; font-size: 54px; line-height: 1.12; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c09-cardwrap { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+      background: radial-gradient(ellipse at 50% 50%, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.45) 50%, rgba(0,0,0,0) 80%); }
+    .c09-card { max-width: 1400px; display: flex; flex-direction: column; align-items: center; gap: 26px; text-align: center; }
+    .c09-ar { font-family: "Amiri Quran"; font-size: 70px; line-height: 1.8; color: #fff6e6; text-shadow: 0 0 30px rgba(215,236,255,0.4); }
+    .c09-en { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 50px; line-height: 1.18; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c09-ctext { font-family: "Cormorant Garamond"; font-weight: 600; font-size: 76px; line-height: 1.1; color: #f5ead6;
+      text-shadow: 0 3px 22px rgba(0,0,0,0.9); }
+    .c09-hi { color: var(--accent); }
+    .c09-ref { font-family: Inter, sans-serif; font-weight: 700; font-size: 28px; letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--accent); border: 2px solid var(--accent); border-radius: 999px; padding: 10px 24px; background: rgba(0,0,0,0.4); }
+    .c09-title { font-family: "Cormorant Garamond"; font-weight: 600; font-size: 118px; line-height: 1.02; color: #f5ead6;
+      text-shadow: 0 4px 30px rgba(0,0,0,0.8); }
+    .c09-tsub { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 52px; color: var(--accent); }
+    .c09-mark { font-family: Inter, sans-serif; font-weight: 700; font-size: 64px; letter-spacing: 0.32em; color: #f5ead6; }
+    .c09-mark span { color: var(--accent); }
+    .c09-endt { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 52px; color: #f5ead6; }
+    .c09-btn { font-family: Inter, sans-serif; font-weight: 700; font-size: 34px; letter-spacing: 0.08em; color: #120b08;
+      background: var(--accent); border-radius: 999px; padding: 18px 48px; }
+    .c09-label { position: absolute; left: 90px; top: 70px; }
+    .c09-label b { display: block; font-family: Inter, sans-serif; font-weight: 700; font-size: 28px; letter-spacing: 0.3em; color: var(--accent); }
+    .c09-label i { display: block; font-family: "Cormorant Garamond"; font-style: normal; font-weight: 600; font-size: 60px; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c09-brand { position: absolute; right: 80px; top: 70px; font-family: Inter, sans-serif; font-weight: 700; font-size: 28px;
+      letter-spacing: 0.32em; color: rgba(245,234,214,0.7); }
+    .c09-brand span { color: var(--accent); }
+    .c09-fade { position: absolute; inset: 0; background: #000; }
+
+    .c09-ph { position: absolute; left: -60px; top: -34px; width: 2040px; height: 1148px; opacity: 0; }
+    .c09-ph img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .c09-cap { font-family: "Noto Nastaliq Urdu"; font-weight: 400; font-size: 44px; line-height: 1.9; direction: rtl; bottom: 40px; }
+    .c09-urtr { font-family: "Noto Nastaliq Urdu"; font-style: normal; font-weight: 400; font-size: 44px; line-height: 1.9; }
+    .c09-ctext { font-family: "Noto Nastaliq Urdu"; font-weight: 400; font-size: 60px; line-height: 1.9; direction: rtl; }
+    .c09-label i, .c09-title, .c09-tsub, .c09-endt { font-family: "Noto Nastaliq Urdu"; font-style: normal; font-weight: 400; direction: rtl; line-height: 1.8; }
+    .c09-title { font-size: 92px; } .c09-tsub { font-size: 46px; } .c09-label i { font-size: 48px; } .c09-endt { font-size: 44px; }
+    .c09-label b { letter-spacing: 0; font-family: "Noto Nastaliq Urdu"; font-weight: 400; font-size: 30px; }
+
+  </style>
+  <div id="c09" data-composition-id="c09" data-width="1920" data-height="1080">
+    <div id="c09-scene" class="clip" data-start="0" data-duration="82.42" style="position:absolute;inset:0" data-layout-allow-overflow>
+      <div id="c09-cam" class="c09-cam"><div id="c09-ph0" class="c09-ph"><img src="assets/gen/c09a.jpg" alt=""></div><div id="c09-ph1" class="c09-ph"><img src="assets/gen/c09b.jpg" alt=""></div><div id="c09-ph2" class="c09-ph"><img src="assets/gen/c09c.jpg" alt=""></div>
+      </div>
+    </div>
+    <div id="c09-scr" class="c09-scrim clip" data-start="0" data-duration="82.42"></div>
+    <div id="c09-lab" class="c09-label clip" data-start="0.3" data-duration="4.6"><b>باب 9</b><i>پلک جھپکنے سے پہلے</i></div>
+    <div id="c09-cp0" class="c09-cap clip" data-start="0.22" data-duration="4.80">&quot;اے اہل دربار، تم میں سے کون اس کا تخت میرے پاس لاتا</div>
+    <div id="c09-cp1" class="c09-cap clip" data-start="5.02" data-duration="5.51">ہے قبل اس کے کہ وہ لوگ مطیع ہو کر میرے پاس حاضر ہوں؟&quot;</div>
+    <div id="c09-cp2" class="c09-cap clip" data-start="24.92" data-duration="1.86">یہ جن کی پیشکش تھی۔</div>
+    <div id="c09-cp3" class="c09-cap clip" data-start="37.38" data-duration="1.85">اور وہ سامنے تھا۔</div>
+    <div id="c09-cp4" class="c09-cap clip" data-start="39.23" data-duration="4.72">سبا کی ملکہ کا عظیم تخت، ان کے پاس رکھا ہوا۔</div>
+    <div id="c09-cp5" class="c09-cap clip" data-start="43.95" data-duration="2.47">اب شروع والا سوال یاد کیجیے:</div>
+    <div id="c09-cp6" class="c09-cap clip" data-start="46.42" data-duration="3.97">جب اللہ کسی کو سب کچھ دے دے، تو وہ کیا کہتا ہے؟</div>
+    <div id="c09-cp7" class="c09-cap clip" data-start="77.26" data-duration="4.56">اور ان کا پہلا خیال یہ تھا: یہ ایک آزمائش ہے۔</div>
+    <div id="c09-k0w" class="c09-cardwrap clip" data-start="10.58" data-duration="13.59"><div id="c09-k0" class="c09-card"><div class="c09-ar" dir="rtl" lang="ar">قَالَ عِفۡرِيتࣱ مِّنَ ٱلۡجِنِّ أَنَا۠ ءَاتِيكَ بِهِۦ قَبۡلَ أَن تَقُومَ مِن مَّقَامِكَۖ وَإِنِّي عَلَيۡهِ لَقَوِيٌّ أَمِينࣱ</div><div class="c09-en c09-urtr" dir="rtl" lang="ur">میں اسے حاضر کر دوں گا قبل اس کے کہ آپ اپنی جگہ سے اٹھیں</div><div class="c09-ref">An-Naml 27:39</div></div></div>
+    <div id="c09-k1w" class="c09-cardwrap clip" data-start="26.83" data-duration="9.69"><div id="c09-k1" class="c09-card"><div class="c09-ar" dir="rtl" lang="ar">قَالَ ٱلَّذِي عِندَهُۥ عِلۡمࣱ مِّنَ ٱلۡكِتَٰبِ أَنَا۠ ءَاتِيكَ بِهِۦ قَبۡلَ أَن يَرۡتَدَّ إِلَيۡكَ طَرۡفُكَۚ</div><div class="c09-en c09-urtr" dir="rtl" lang="ur">میں آپ کی پلک جھپکنے سے پہلے اسے لائے دیتا ہوں</div><div class="c09-ref">An-Naml 27:40</div></div></div>
+    <div id="c09-k2w" class="c09-cardwrap clip" data-start="50.44" data-duration="24.02"><div id="c09-k2" class="c09-card"><div class="c09-ar" dir="rtl" lang="ar">هَٰذَا مِن فَضۡلِ رَبِّي لِيَبۡلُوَنِيٓ ءَأَشۡكُرُ أَمۡ أَكۡفُرُۖ وَمَن شَكَرَ فَإِنَّمَا يَشۡكُرُ لِنَفۡسِهِۦۖ وَمَن كَفَرَ فَإِنَّ رَبِّي غَنِيࣱّ كَرِيمࣱ</div><div class="c09-en c09-urtr" dir="rtl" lang="ur">یہ میرے رب کا فضل ہے تاکہ وہ مجھے آزمائے کہ میں شکر کرتا ہوں یا کافر نعمت بن جاتا ہوں اور جو کوئی شکر کرتا ہے اس کا شکر اس کے اپنے ہی لیے مفید ہے، ورنہ کوئی ناشکری کرے تو میرا رب بے نیاز اور اپنی ذات میں آپ بزرگ ہے</div><div class="c09-ref">An-Naml 27:40</div></div></div>
+    <div id="c09-fadeIn" class="c09-fade clip" data-start="0" data-duration="0.55" style="opacity:1"></div>
+    <div id="c09-fadeOut" class="c09-fade clip" data-start="81.92" data-duration="0.50" style="opacity:0"></div>
+    <div id="c09-br" class="c09-brand clip" data-start="0" data-duration="82.42">HAQ <span>·</span> STORIES</div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.set("#c09-ph0", {opacity: 1}, 0);
+    tl.fromTo("#c09-ph0", {x: 0, scale: 1.0}, {x: 26, scale: 1.05, duration: 37.86, ease: "none", immediateRender: false}, 0.00);
+    tl.to("#c09-ph0", {opacity: 0, duration: 0.3}, 37.91);
+    tl.fromTo("#c09-ph1", {opacity: 0}, {opacity: 1, duration: 1.00, ease: "sine.inOut", immediateRender: false}, 36.86);
+    tl.fromTo("#c09-ph1", {x: 0, scale: 1.0}, {x: -26, scale: 1.05, duration: 14.13, ease: "none", immediateRender: false}, 36.86);
+    tl.to("#c09-ph1", {opacity: 0, duration: 0.3}, 51.04);
+    tl.fromTo("#c09-ph2", {opacity: 0}, {opacity: 1, duration: 1.00, ease: "sine.inOut", immediateRender: false}, 49.99);
+    tl.fromTo("#c09-ph2", {x: 0, scale: 1.0}, {x: 26, scale: 1.05, duration: 32.43, ease: "none", immediateRender: false}, 49.99);
+    tl.fromTo("#c09-k0w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 10.58);
+    tl.fromTo("#c09-k0", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 10.58);
+    tl.fromTo("#c09-k1w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 26.83);
+    tl.fromTo("#c09-k1", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 26.83);
+    tl.fromTo("#c09-k2w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 50.44);
+    tl.fromTo("#c09-k2", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 50.44);
+    tl.fromTo("#c09-lab", {opacity: 0, x: -20}, {opacity: 1, x: 0, duration: 0.60, ease: "power2.out", immediateRender: false}, 0.30);
+    tl.fromTo("#c09-lab", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 4.40);
+    tl.fromTo("#c09-scene", {scale: 1.0, x: 0}, {scale: 1.06, x: -30, duration: 82.42, ease: "none", immediateRender: false}, 0.00);
+    tl.fromTo("#c09-fadeIn", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 0.00);
+    tl.fromTo("#c09-fadeOut", {opacity: 0}, {opacity: 1, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 81.92);
+    window.__timelines["c09"] = tl;
+  </script>
+</template>

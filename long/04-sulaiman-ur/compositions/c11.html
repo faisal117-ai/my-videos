@@ -1,0 +1,93 @@
+<template>
+  <style>
+    #c11 { position: absolute; inset: 0; overflow: hidden; background: #000; }
+    .c11-st { position: absolute; border-radius: 50%; background: #eef4ff; box-shadow: 0 0 6px rgba(220,235,255,0.9); }
+    .c11-mote { position: absolute; border-radius: 50%; }
+    .c11-full { position: absolute; inset: 0; }
+    .c11-svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+
+    .c11-cam { position: absolute; inset: 0; transform-origin: 50% 55%; }
+    .c11-scrim { position: absolute; left: 0; right: 0; bottom: 0; height: 300px;
+      background: linear-gradient(0deg, rgba(0,0,0,0.75), rgba(0,0,0,0)); }
+    .c11-cap { position: absolute; left: 210px; right: 210px; bottom: 64px; text-align: center;
+      font-family: "Cormorant Garamond"; font-weight: 600; font-size: 54px; line-height: 1.12; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c11-cardwrap { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+      background: radial-gradient(ellipse at 50% 50%, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.45) 50%, rgba(0,0,0,0) 80%); }
+    .c11-card { max-width: 1400px; display: flex; flex-direction: column; align-items: center; gap: 26px; text-align: center; }
+    .c11-ar { font-family: "Amiri Quran"; font-size: 70px; line-height: 1.8; color: #fff6e6; text-shadow: 0 0 30px rgba(215,236,255,0.4); }
+    .c11-en { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 50px; line-height: 1.18; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c11-ctext { font-family: "Cormorant Garamond"; font-weight: 600; font-size: 76px; line-height: 1.1; color: #f5ead6;
+      text-shadow: 0 3px 22px rgba(0,0,0,0.9); }
+    .c11-hi { color: var(--accent); }
+    .c11-ref { font-family: Inter, sans-serif; font-weight: 700; font-size: 28px; letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--accent); border: 2px solid var(--accent); border-radius: 999px; padding: 10px 24px; background: rgba(0,0,0,0.4); }
+    .c11-title { font-family: "Cormorant Garamond"; font-weight: 600; font-size: 118px; line-height: 1.02; color: #f5ead6;
+      text-shadow: 0 4px 30px rgba(0,0,0,0.8); }
+    .c11-tsub { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 52px; color: var(--accent); }
+    .c11-mark { font-family: Inter, sans-serif; font-weight: 700; font-size: 64px; letter-spacing: 0.32em; color: #f5ead6; }
+    .c11-mark span { color: var(--accent); }
+    .c11-endt { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600; font-size: 52px; color: #f5ead6; }
+    .c11-btn { font-family: Inter, sans-serif; font-weight: 700; font-size: 34px; letter-spacing: 0.08em; color: #120b08;
+      background: var(--accent); border-radius: 999px; padding: 18px 48px; }
+    .c11-label { position: absolute; left: 90px; top: 70px; }
+    .c11-label b { display: block; font-family: Inter, sans-serif; font-weight: 700; font-size: 28px; letter-spacing: 0.3em; color: var(--accent); }
+    .c11-label i { display: block; font-family: "Cormorant Garamond"; font-style: normal; font-weight: 600; font-size: 60px; color: #f5ead6;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.9); }
+    .c11-brand { position: absolute; right: 80px; top: 70px; font-family: Inter, sans-serif; font-weight: 700; font-size: 28px;
+      letter-spacing: 0.32em; color: rgba(245,234,214,0.7); }
+    .c11-brand span { color: var(--accent); }
+    .c11-fade { position: absolute; inset: 0; background: #000; }
+
+    .c11-ph { position: absolute; left: -60px; top: -34px; width: 2040px; height: 1148px; opacity: 0; }
+    .c11-ph img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .c11-cap { font-family: "Noto Nastaliq Urdu"; font-weight: 400; font-size: 44px; line-height: 1.9; direction: rtl; bottom: 40px; }
+    .c11-urtr { font-family: "Noto Nastaliq Urdu"; font-style: normal; font-weight: 400; font-size: 44px; line-height: 1.9; }
+    .c11-ctext { font-family: "Noto Nastaliq Urdu"; font-weight: 400; font-size: 60px; line-height: 1.9; direction: rtl; }
+    .c11-label i, .c11-title, .c11-tsub, .c11-endt { font-family: "Noto Nastaliq Urdu"; font-style: normal; font-weight: 400; direction: rtl; line-height: 1.8; }
+    .c11-title { font-size: 92px; } .c11-tsub { font-size: 46px; } .c11-label i { font-size: 48px; } .c11-endt { font-size: 44px; }
+    .c11-label b { letter-spacing: 0; font-family: "Noto Nastaliq Urdu"; font-weight: 400; font-size: 30px; }
+
+  </style>
+  <div id="c11" data-composition-id="c11" data-width="1920" data-height="1080">
+    <div id="c11-scene" class="clip" data-start="0" data-duration="46.50" style="position:absolute;inset:0" data-layout-allow-overflow>
+      <div id="c11-cam" class="c11-cam"><div id="c11-ph0" class="c11-ph"><img src="assets/gen/c11a.jpg" alt=""></div><div id="c11-ph1" class="c11-ph"><img src="assets/gen/c11b.jpg" alt=""></div><div id="c11-ph2" class="c11-ph"><img src="assets/gen/c11c.jpg" alt=""></div>
+      </div>
+    </div>
+    <div id="c11-scr" class="c11-scrim clip" data-start="0" data-duration="46.50"></div>
+    <div id="c11-lab" class="c11-label clip" data-start="0.3" data-duration="4.6"><b>باب 11</b><i>عصا</i></div>
+    <div id="c11-cp0" class="c11-cap clip" data-start="0.22" data-duration="4.54">حضرت سلیمان علیہ السلام شکر کے ساتھ حکومت کرتے رہے۔</div>
+    <div id="c11-cp1" class="c11-cap clip" data-start="4.76" data-duration="5.08">اور پھر وہ گھڑی آئی جسے کوئی بادشاہی نہیں روک سکتی۔</div>
+    <div id="c11-cp2" class="c11-cap clip" data-start="24.50" data-duration="4.26">رہے، یہ جانے بغیر کہ ان کا انتقال ہو چکا ہے۔</div>
+    <div id="c11-cp3" class="c11-cap clip" data-start="28.76" data-duration="0.98">&quot;جب وہ گر پڑے…&quot;</div>
+    <div id="c11-cp4" class="c11-cap clip" data-start="41.66" data-duration="1.80">غیب نہیں جانتے تھے۔</div>
+    <div id="c11-cp5" class="c11-cap clip" data-start="43.46" data-duration="2.44">غیب صرف اللہ جانتا ہے۔</div>
+    <div id="c11-k0w" class="c11-cardwrap clip" data-start="9.89" data-duration="12.41"><div id="c11-k0" class="c11-card"><div class="c11-ar" dir="rtl" lang="ar">فَلَمَّا قَضَيۡنَا عَلَيۡهِ ٱلۡمَوۡتَ مَا دَلَّهُمۡ عَلَىٰ مَوۡتِهِۦٓ إِلَّا دَآبَّةُ ٱلۡأَرۡضِ تَأۡكُلُ مِنسَأَتَهُۥۖ</div><div class="c11-en c11-urtr" dir="rtl" lang="ur">جنوں کو اس کی موت کا پتہ دینے والی کوئی چیز اُس گھن کے سوا نہ تھی جو اس کے عصا کو کھا رہا تھا</div><div class="c11-ref">Saba 34:14</div></div></div>
+    <div id="c11-k1w" class="c11-cardwrap clip" data-start="29.79" data-duration="9.07"><div id="c11-k1" class="c11-card"><div class="c11-ar" dir="rtl" lang="ar">فَلَمَّا خَرَّ تَبَيَّنَتِ ٱلۡجِنُّ أَن لَّوۡ كَانُواْ يَعۡلَمُونَ ٱلۡغَيۡبَ مَا لَبِثُواْ فِي ٱلۡعَذَابِ ٱلۡمُهِينِ</div><div class="c11-en c11-urtr" dir="rtl" lang="ur">جنوں پر یہ بات کھل گئی کہ اگر وہ غیب کے جاننے والے ہوتے تو اس ذلت کے عذاب میں مبتلا نہ رہتے</div><div class="c11-ref">Saba 34:14</div></div></div>
+    <div id="c11-fadeIn" class="c11-fade clip" data-start="0" data-duration="0.55" style="opacity:1"></div>
+    <div id="c11-fadeOut" class="c11-fade clip" data-start="46.00" data-duration="0.50" style="opacity:0"></div>
+    <div id="c11-br" class="c11-brand clip" data-start="0" data-duration="46.50">HAQ <span>·</span> STORIES</div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.set("#c11-ph0", {opacity: 1}, 0);
+    tl.fromTo("#c11-ph0", {x: 0, scale: 1.0}, {x: 26, scale: 1.05, duration: 10.44, ease: "none", immediateRender: false}, 0.00);
+    tl.to("#c11-ph0", {opacity: 0, duration: 0.3}, 10.49);
+    tl.fromTo("#c11-ph1", {opacity: 0}, {opacity: 1, duration: 1.00, ease: "sine.inOut", immediateRender: false}, 9.44);
+    tl.fromTo("#c11-ph1", {x: 0, scale: 1.0}, {x: -26, scale: 1.05, duration: 19.80, ease: "none", immediateRender: false}, 9.44);
+    tl.to("#c11-ph1", {opacity: 0, duration: 0.3}, 29.29);
+    tl.fromTo("#c11-ph2", {opacity: 0}, {opacity: 1, duration: 1.00, ease: "sine.inOut", immediateRender: false}, 28.24);
+    tl.fromTo("#c11-ph2", {x: 0, scale: 1.0}, {x: 26, scale: 1.05, duration: 18.26, ease: "none", immediateRender: false}, 28.24);
+    tl.fromTo("#c11-k0w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 9.89);
+    tl.fromTo("#c11-k0", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 9.89);
+    tl.fromTo("#c11-k1w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 29.79);
+    tl.fromTo("#c11-k1", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 29.79);
+    tl.fromTo("#c11-lab", {opacity: 0, x: -20}, {opacity: 1, x: 0, duration: 0.60, ease: "power2.out", immediateRender: false}, 0.30);
+    tl.fromTo("#c11-lab", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 4.40);
+    tl.fromTo("#c11-scene", {scale: 1.0, x: 0}, {scale: 1.06, x: -30, duration: 46.50, ease: "none", immediateRender: false}, 0.00);
+    tl.fromTo("#c11-fadeIn", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 0.00);
+    tl.fromTo("#c11-fadeOut", {opacity: 0}, {opacity: 1, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 46.00);
+    window.__timelines["c11"] = tl;
+  </script>
+</template>
