@@ -1665,8 +1665,42 @@ def sacrifice_scene(spec, beats, total):
     return css, markup, "\n    ".join(js)
 
 
+def photos_scene(spec, beats, total):
+    """Generated stills (Gemini), one per beat: slow push-in / drift, cross-fades between beats,
+    a shake on the beat named by "shake_beat". spec["photos"][i] is the image for beat i."""
+    photos = spec["photos"]
+    css = """
+    #phsc { position: absolute; inset: 0; overflow: hidden; }
+    .ph { position: absolute; left: -54px; top: -96px; width: 1188px; height: 2112px; opacity: 0; }
+    .ph img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    #phshade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0.42) 0%, rgba(0,0,0,0.25) 22%,
+      rgba(0,0,0,0.35) 42%, rgba(0,0,0,0.0) 62%, rgba(0,0,0,0) 80%, rgba(0,0,0,0.35) 100%); }
+"""
+    layers = "".join(f'<div id="ph{i}" class="ph"><img src="{photos[i]}" alt=""></div>' for i in range(len(beats)))
+    markup = f"""
+    <div id="phsc" class="clip" data-start="0" data-duration="{total:.2f}">{layers}<div id="phshade"></div></div>"""
+    js = []
+    for i, b in enumerate(beats):
+        a, d = b["start"], b["dur"]
+        if i == 0:
+            js.append(f'tl.set("#ph0", {{opacity: 1}}, 0);')
+        else:
+            js.append(fade(f"#ph{i}", 0, 1, a - 0.2, 0.7))
+        frm, to = ("scale: 1.0, x: 0", "scale: 1.08, x: 0") if i % 2 == 0 else ("scale: 1.08, x: -20", "scale: 1.0, x: 20")
+        js.append(f'tl.fromTo("#ph{i}", {{{frm}}}, {{{to}, duration: {d + 0.9:.2f}, ease: "none", immediateRender: false}}, {max(0, a - 0.2):.2f});')
+        if i + 1 < len(beats):
+            js.append(f'tl.to("#ph{i}", {{opacity: 0, duration: 0.3, immediateRender: false}}, {beats[i + 1]["start"] + 0.5:.2f});')
+    sb = spec.get("shake_beat")
+    if sb is not None:
+        s0 = beats[sb]["start"] + 0.3
+        js.append(f'tl.fromTo("#phsc", {{x: 0}}, {{x: 7, duration: 0.05, yoyo: true, repeat: 40, immediateRender: false}}, {s0:.2f});')
+        js.append(f'tl.to("#phsc", {{x: 0, duration: 0.05}}, {s0 + 2.1:.2f});')
+    return css, markup, "\n    ".join(js)
+
+
 SCENES = {"sunhold": sunhold_scene, "wall": wall_scene, "road": road_scene, "qarun": qarun_scene, "hoopoe": hoopoe_scene,
           "flood": flood_scene, "idols": idols_scene, "sacrifice": sacrifice_scene}
+SCENES["photos"] = photos_scene
 SCENES.update({"ruins": ruins_scene, "sea": sea_scene, "river": river_scene, "birds": birds_scene, "ayyub": ayyub_scene, "drown": drown_scene})
 
 

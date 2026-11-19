@@ -7,7 +7,7 @@
   "text_top": 300,
   "text_bottom": 780,
   "tr_size": 56,
-  "scene": "qarun",
+  "scene": "photos",
   "keys_beat": 1,
   "parade_beat": 3,
   "sink_beat": 4,
@@ -18,7 +18,7 @@
       "sub": "…the ground swallowed him.",
       "ur": "زمین کا سب سے امیر آدمی… زمین نے اسے نگل لیا",
       "mood": {
-        "warm": 0.5,
+        "warm": 0.12,
         "cool": 0
       },
       "reveal": false
@@ -29,7 +29,7 @@
       "ur": "اس کے خزانوں کی کنجیاں طاقتور آدمیوں کی ایک جماعت پر بھی بھاری تھیں",
       "ref": "Al-Qasas 28:76",
       "mood": {
-        "warm": 0.6,
+        "warm": 0.12,
         "cool": 0
       }
     },
@@ -46,7 +46,7 @@
       ],
       "ref": "Al-Qasas 28:78",
       "mood": {
-        "warm": 0.5,
+        "warm": 0.12,
         "cool": 0
       },
       "arabic": "قَالَ إِنَّمَآ أُوتِيتُهُۥ عَلَىٰ عِلۡمٍ عِندِيٓۚ",
@@ -59,7 +59,7 @@
       "ur": "کاش ہمیں بھی وہی ملتا جو قارون کو دیا گیا ہے",
       "ref": "Al-Qasas 28:79",
       "mood": {
-        "warm": 0.6,
+        "warm": 0.12,
         "cool": 0
       }
     },
@@ -76,8 +76,8 @@
       ],
       "ref": "Al-Qasas 28:81",
       "mood": {
-        "warm": 0.2,
-        "cool": 0.2
+        "warm": 0,
+        "cool": 0.1
       },
       "arabic": "فَخَسَفۡنَا بِهِۦ وَبِدَارِهِ ٱلۡأَرۡضَ",
       "translation": "“And We caused the earth to swallow him and his home”",
@@ -96,7 +96,7 @@
       ],
       "ref": "Al-Qasas 28:82",
       "mood": {
-        "warm": 0.6,
+        "warm": 0.12,
         "cool": 0
       },
       "arabic": "لَوۡلَآ أَن مَّنَّ ٱللَّهُ عَلَيۡنَا لَخَسَفَ بِنَاۖ",
@@ -108,8 +108,8 @@
       "text": "Follow for more.",
       "ur": "فالو کریں",
       "mood": {
-        "warm": 0.3,
-        "cool": 0.3
+        "warm": 0.12,
+        "cool": 0
       }
     }
   ],
@@ -173,5 +173,15 @@
       "fade_in": 1.5,
       "fade_out": 2
     }
-  ]
+  ],
+  "photos": [
+    "assets/gen/s1.jpg",
+    "assets/gen/s2.jpg",
+    "assets/gen/s3.jpg",
+    "assets/gen/s4.jpg",
+    "assets/gen/s5.jpg",
+    "assets/gen/s6.jpg",
+    "assets/gen/s6.jpg"
+  ],
+  "shake_beat": 4
 }
