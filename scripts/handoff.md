@@ -1,9 +1,37 @@
-# Handoff (17 Nov 2026, evening): read this first in a new session
+# Handoff (updated 19 Nov 2026, night): read this first in a new session
 
-Read next: `scripts/channel-plan.md` (start-here index, core message, decisions), `scripts/series-plan.md`,
-`scripts/shorts-plan.md`, `scripts/competitor-analysis.md`, `scripts/voice.md`.
+Read next: root `CLAUDE.md` (standing rules + which skill runs at each step), `scripts/checklist.md` (run on every
+video), `scripts/channel-plan.md`, `scripts/shorts-plan.md`, `scripts/series-plan.md`, `scripts/voice.md`.
 
-## Where things stand
+## NOW (19 Nov night): the current state in one place
+- **Process rules the user insists on** (they were upset when rules were missed): run checklist.md on every video
+  and report each line; use every applicable skill without being reminded (CLAUDE.md table); only what the source
+  says; ask before publishing; push to the branch and main after every change; the user is on an iPhone only.
+- **Schedule (Metricool, brand 8081200, Asia/Karachi):** Shorts 11:00 and 17:00 PKT, films 18:30. Shorts are
+  scheduled through Sun 22 Nov (hoopoe, Nuh, idols, sacrifice; Gemini scenes, mixed). Keep 7 days ahead (Friday review).
+- **Films:** Sulaiman EP 3 EN Sat 21 18:30 (post 434496552), UR Sun 22 18:30 (post 434526077), thumbnails set;
+  reminders trig_011MzyGvnFdPT5WKHemEMjVJ / trig_01N1XxjsgYTHa8iGgi7qPFCd fire into session_019ZSVGUB7fBBbYPfjP19HVe.
+  **Ibrahim = EP 4, Sat 28 EN / Sun 29 UR 18:30** (posts 434202929 / 434203028 still hold OLD renders and "EP 3"
+  text): rebuild both with Gemini scenes before then and swap them in. Nuh film = EP 5 (5–6 Dec).
+- **Published:** 22-gardens Short (19 Nov 23:57, post 434622811). Still to tell the user: set its Related video to
+  the Musa film and pin the comment (Musa https://youtu.be/I9d00aHMQrQ · Yusuf https://youtu.be/2l7eG427nRY).
+  After Sulaiman is live (Sat), the hoopoe Short's Related video can point to it.
+- **Gemini credit:** $5 prepaid, about $4.5 used (≈90 images + 2 Omni clips). Ask the user to top up before the
+  Ibrahim rebuild (Wednesday). Image ~$0.04; Omni video ~$0.07/s at 720p.
+- **Voice:** Callum narrates everything (user's choice). After 31 Dec 2026 (default voices retire) switch to the
+  library voice "Callum 2.0 - Husky Trickster (Default)", ID 5OSluWlAJntR1KG2pWaB (already in My Voices). The
+  user's own clone "Faisal Narrator (Haq Stories)" lxAuND1y6e93CWiS40Uz (eleven_v3 only) is saved but not used.
+  Character voices for ordinary men: Declan nmmIJ8k3ukOa1CSFlor3, Peter ZthjuvLPty3kTMaNKVKb, Adam IRHApOXLvnW57QJPQH2P.
+- **Cave Short (Bukhari 2272):** shorts/23-cave = stickman cartoon test (not for upload). shorts/24-cave = the
+  Gemini version: hook A (yt-script 62/100), title "How Did 3 Men Escape a Sealed Cave? 🪨" (yt-package),
+  UPLOAD.md with yt-seo description; 11 scenes, code effects (shakes, light blooms, dust), voices, soundscape.
+  Not rendered yet (user stopped it). Code-made mouth movement was rejected by the user. Next: real talking shots
+  with Atlas Cloud video + Sync lip-sync (both paid: price it and ask first), then render → mix.py → checklist →
+  send the raw.githubusercontent link (the user can't open the in-chat file on the iPhone).
+- **Stickman skill:** saved in .claude/skills/stickman, patched for vertical; run with
+  `STICKMAN_W=1080 STICKMAN_H=1920 STICKMAN_CHROME=/opt/pw-browsers/chromium`.
+
+## Where things stood on 17 Nov (older detail)
 - Channel: Haq Stories | حق کہانیاں (UCVWzdTZ9UL_fxTgOV3mCOGQ), 141 subscribers (16 Nov). Metricool brand 8081200,
   tz Asia/Karachi. Repo working branch → merged to `main` after every change (user's rule).
 - Published films: English Yusuf (EP 1), Musa (EP 2); Urdu Musa (EP 1), Urdu Yusuf (EP 2, live 17 Nov 19:00).
