@@ -72,6 +72,11 @@ Read next: `scripts/channel-plan.md` (start-here index, core message, decisions)
   with isAiGeneratedContent true.
 
 ## Decision of 19 Nov
+- **19 Nov evening:** Sulaiman EP 3 EN rendered (10:44), mixed, re-encoded CRF 27 (80 MB, GitHub limit 100 MB;
+  raw renders are git-ignored), scheduled in Metricool Sat 21 18:30 with thumbnail-en.jpg and isAiGeneratedContent
+  true; reminder trig_011MzyGvnFdPT5WKHemEMjVJ (Sat 18:45, this session). Urdu film rendering; schedule Sun 22 18:30
+  and set its reminder. **Process lessons:** Shorts need `tools/mix.py` after render (README); films need
+  `soundscape_long.py` → build → render → `mix.py` → CRF 27 re-encode. Gemini spend ~80 images (~$3.20).
 - **Schedule change (19 Nov, user):** Ibrahim films moved to Sat 28 (EN) / Sun 29 (UR) 18:30 and become **EP 4**;
   they are to be rebuilt with Gemini scenes (same narration) and swapped in Metricool before then (old renders
   are in the slots as placeholders). **Sulaiman (AS) film = EP 3, Sat 21 (EN) / Sun 22 (UR) 18:30**, script in
