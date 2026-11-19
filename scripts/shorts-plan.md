@@ -104,7 +104,13 @@ YouTube's rules), and only topics with a sound source.
      red ring or arrow never marks a person, so no figure can be taken for the prophet. After upload the user
      also gets YouTube Studio's suggestion; Claude's prompt for it names the ordinary people and says "no
      prophet or holy figure shown", and Claude checks the result before it is applied.
-   - **Inside videos:** Claude's animation draws ordinary people as fuller, more lifelike figures (bodies,
+   - **Gemini scenes for everything (user's rule, 19 Nov):** from now on every Short and every film is built
+     on close-to-real animated-movie stills made with Gemini (gemini-2.5-flash-image, 9:16 for Shorts, 16:9 for
+     films; scene "photos" in tools/build_short.py), with slow camera moves, cross-fades and our voice and
+     captions on top. The same rules apply in every prompt: no prophet, Companion, righteous woman or angel,
+     only places, light, objects and ordinary people; no text in the image. Each upload has YouTube's
+     "altered or synthetic content" box ticked. Tell the user the image spend after each Short/film.
+   - **Inside videos (before 19 Nov):** Claude's animation draws ordinary people as fuller, more lifelike figures (bodies,
      clothing, gestures, crowds) in the same bright style. Photoreal people in the video itself need an
      image generator this setup does not have; if one is added, a video with realistic synthetic people is
      uploaded with YouTube's "altered or synthetic content" box ticked.
