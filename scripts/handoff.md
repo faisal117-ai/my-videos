@@ -55,6 +55,10 @@ Read next: `scripts/channel-plan.md` (start-here index, core message, decisions)
   proxy is sending the saved value and Google rejects it. Correction: since mid-2026 AI Studio only issues
   "AQ." auth keys, so the prefix is fine; the saved value itself is wrong (copy, spaces, prefix or old key). The secure key form was declined (it may not show on the iPhone); the user is to re-save the secret
   by hand (new AQ. key, empty prefix), then say "try again".
+- FIXED 19 Nov: the secret had the website typed into the Header name box. Re-added with header x-goog-api-key,
+  empty prefix -> models list works (200). Image models: gemini-2.5-flash-image, gemini-3.1-flash-image(-preview),
+  gemini-3.1-flash-lite-image, gemini-3-pro-image(-preview). Every image model answers 429 "free tier limit: 0",
+  so billing must be turned on before any image can be made (test prompt: an ordinary market crowd, 9:16).
 - Billing: the image model probably needs billing turned on in AI Studio (~$0.04/image); the user has not added
   any yet. If generation fails with a billing/quota error, tell them how (AI Studio -> Set up billing, set a cap).
 - Then: make one test image (an ordinary crowd scene, no prophet, Companion, righteous woman or angel) and
