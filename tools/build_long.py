@@ -708,13 +708,31 @@ def lesson(t, L, E, D):
     return css, markup
 
 
-def photo_scene(t, L, E, D, photos, at):
+def photo_scene(t, L, E, D, photos, at, shakes=(), glows=()):
     """Gemini stills for a chapter: photo k appears at the start of line at[k], cross-fades in, and
     drifts slowly (the chapter camera adds a push-in on top). Paths are relative to the project."""
     css = """
     .§ph { position: absolute; left: -60px; top: -34px; width: 2040px; height: 1148px; opacity: 0; }
     .§ph img { width: 100%; height: 100%; object-fit: cover; display: block; }"""
     m = "".join(f'<div id="§ph{k}" class="§ph"><img src="{src}" alt=""></div>' for k, src in enumerate(photos))
+    # House style (20 Nov): a shake before each turn and a warm light bloom that grows at each turn.
+    # Chapter spec: "shakes": [{"line", "at", "amp", "dur"}], "glows": [{"line", "at", "dur", "peak"}].
+    if shakes or glows:
+        css += """
+    #§phsc { position: absolute; inset: 0; }
+    .§phglow { position: absolute; inset: 0; opacity: 0; mix-blend-mode: screen; pointer-events: none;
+      background: radial-gradient(ellipse 60% 70% at 50% 55%, rgba(255,214,140,0.95) 0%, rgba(255,170,80,0.45) 40%, rgba(0,0,0,0) 75%); }"""
+        m = f'<div id="§phsc">{m}</div>' + "".join(f'<div id="§phg{k}" class="§phglow"></div>' for k in range(len(glows)))
+        for s_ in shakes:
+            s0, amp, dur = L[s_["line"]] + s_.get("at", 0), s_.get("amp", 8), s_.get("dur", 1.2)
+            reps = max(2, int(dur / 0.05)) // 2 * 2
+            t.js.append(f'tl.fromTo("#§phsc", {{x: 0, y: 0}}, {{x: {amp}, y: {amp * 0.6:.1f}, duration: 0.05, yoyo: true, repeat: {reps}, '
+                        f'ease: "none", immediateRender: false}}, {max(s0, 0):.2f});')
+            t.js.append(f'tl.to("#§phsc", {{x: 0, y: 0, duration: 0.08}}, {max(s0, 0) + dur + 0.05:.2f});')
+        for k, g in enumerate(glows):
+            g0, gd = L[g["line"]] + g.get("at", 0), g.get("dur", 2.5)
+            t.js.append(f'tl.fromTo("#§phg{k}", {{opacity: 0}}, {{keyframes: [{{opacity: {g.get("peak", 0.6)}, duration: {gd * 0.35:.2f}, ease: "power2.out"}}, '
+                        f'{{opacity: 0, duration: {gd * 0.65:.2f}, ease: "sine.in"}}], immediateRender: false}}, {max(g0, 0):.2f});')
     starts = [0.0 if k == 0 else max(L[a] - 0.6, 0.1) for k, a in enumerate(at)]
     for k, s0 in enumerate(starts):
         if k == 0:
@@ -905,7 +923,8 @@ def chapter_html(n: int, ch: dict, lines, timings, align, dur: float, quran: dic
     L = [x["start"] for x in timings]
     E = [x["end"] for x in timings]
     if ch.get("photos"):
-        scss, smarkup = photo_scene(t, L, E, dur, ch["photos"], ch.get("photo_at") or [0])
+        scss, smarkup = photo_scene(t, L, E, dur, ch["photos"], ch.get("photo_at") or [0],
+                                     ch.get("shakes", ()), ch.get("glows", ()))
     else:
         scss, smarkup = SCENES[ch["scene"]](t, L, E, dur)
     scene_js = list(t.js)

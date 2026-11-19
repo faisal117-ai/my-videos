@@ -42,6 +42,9 @@
 
     .c00-ph { position: absolute; left: -60px; top: -34px; width: 2040px; height: 1148px; opacity: 0; }
     .c00-ph img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    #c00-phsc { position: absolute; inset: 0; }
+    .c00-phglow { position: absolute; inset: 0; opacity: 0; mix-blend-mode: screen; pointer-events: none;
+      background: radial-gradient(ellipse 60% 70% at 50% 55%, rgba(255,214,140,0.95) 0%, rgba(255,170,80,0.45) 40%, rgba(0,0,0,0) 75%); }
     .c00-cap { font-family: "Noto Nastaliq Urdu"; font-weight: 400; font-size: 44px; line-height: 1.9; direction: rtl; bottom: 40px; }
     .c00-urtr { font-family: "Noto Nastaliq Urdu"; font-style: normal; font-weight: 400; font-size: 44px; line-height: 1.9; }
     .c00-ctext { font-family: "Noto Nastaliq Urdu"; font-weight: 400; font-size: 60px; line-height: 1.9; direction: rtl; }
@@ -51,37 +54,38 @@
 
   </style>
   <div id="c00" data-composition-id="c00" data-width="1920" data-height="1080">
-    <div id="c00-scene" class="clip" data-start="0" data-duration="23.54" style="position:absolute;inset:0" data-layout-allow-overflow>
-      <div id="c00-cam" class="c00-cam"><div id="c00-ph0" class="c00-ph"><img src="assets/gen/c00a.jpg" alt=""></div><div id="c00-ph1" class="c00-ph"><img src="assets/gen/c00b.jpg" alt=""></div><div id="c00-ph2" class="c00-ph"><img src="assets/gen/c00c.jpg" alt=""></div>
+    <div id="c00-scene" class="clip" data-start="0" data-duration="17.54" style="position:absolute;inset:0" data-layout-allow-overflow>
+      <div id="c00-cam" class="c00-cam"><div id="c00-phsc"><div id="c00-ph0" class="c00-ph"><img src="assets/gen/c00a.jpg" alt=""></div><div id="c00-ph1" class="c00-ph"><img src="assets/gen/c00b.jpg" alt=""></div><div id="c00-ph2" class="c00-ph"><img src="assets/gen/c00c.jpg" alt=""></div></div><div id="c00-phg0" class="c00-phglow"></div>
       </div>
     </div>
-    <div id="c00-scr" class="c00-scrim clip" data-start="0" data-duration="23.54"></div>
+    <div id="c00-scr" class="c00-scrim clip" data-start="0" data-duration="17.54"></div>
     
-    <div id="c00-cp0" class="c00-cap clip" data-start="0.22" data-duration="2.16">ایک ملکہ کا تخت…</div>
-    <div id="c00-cp1" class="c00-cap clip" data-start="2.38" data-duration="2.71">پلک جھپکنے سے پہلے آ پہنچا۔</div>
-    <div id="c00-cp2" class="c00-cap clip" data-start="5.09" data-duration="6.44">یہ حضرت سلیمان علیہ السلام کا قصہ ہے: ایک شکر گزار دل، جس نے پوری قوم</div>
-    <div id="c00-cp3" class="c00-cap clip" data-start="11.53" data-duration="3.17">کو سورج سے اللہ کی طرف موڑ دیا۔</div>
-    <div id="c00-cp4" class="c00-cap clip" data-start="14.70" data-duration="1.90">لیکن پہلے ایک سوال:</div>
-    <div id="c00-cp5" class="c00-cap clip" data-start="16.60" data-duration="3.58">جب اللہ کسی کو سب کچھ دے دے، تو وہ کیا کہتا ہے؟</div>
-    <div id="c00-k0w" class="c00-cardwrap clip" data-start="20.23" data-duration="2.81"><div id="c00-k0" class="c00-card"><div class="c00-title">شکر گزار بادشاہ</div><div class="c00-tsub">حضرت سلیمان علیہ السلام کا قصہ</div></div></div>
+    <div id="c00-cp0" class="c00-cap clip" data-start="0.22" data-duration="1.76">ایک ملکہ کا تخت…</div>
+    <div id="c00-cp1" class="c00-cap clip" data-start="1.98" data-duration="2.88">پلک جھپکنے سے پہلے آ پہنچا۔</div>
+    <div id="c00-cp2" class="c00-cap clip" data-start="4.86" data-duration="5.32">یہ کون کر سکتا تھا؟ اور اگر یہ آپ کا ہوتا، تو آپ کیا کہتے؟</div>
+    <div id="c00-cp3" class="c00-cap clip" data-start="10.18" data-duration="3.56">یہ حضرت سلیمان علیہ السلام کا قصہ ہے۔</div>
+    <div id="c00-k0w" class="c00-cardwrap clip" data-start="13.79" data-duration="3.25"><div id="c00-k0" class="c00-card"><div class="c00-title">شکر گزار بادشاہ</div><div class="c00-tsub">حضرت سلیمان علیہ السلام کا قصہ</div></div></div>
     <div id="c00-fadeIn" class="c00-fade clip" data-start="0" data-duration="0.55" style="opacity:0"></div>
-    <div id="c00-fadeOut" class="c00-fade clip" data-start="23.04" data-duration="0.50" style="opacity:0"></div>
-    <div id="c00-br" class="c00-brand clip" data-start="0" data-duration="23.54">HAQ <span>·</span> STORIES</div>
+    <div id="c00-fadeOut" class="c00-fade clip" data-start="17.04" data-duration="0.50" style="opacity:0"></div>
+    <div id="c00-br" class="c00-brand clip" data-start="0" data-duration="17.54">HAQ <span>·</span> STORIES</div>
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#c00-phsc", {x: 0, y: 0}, {x: 8, y: 4.8, duration: 0.05, yoyo: true, repeat: 20, ease: "none", immediateRender: false}, 0.60);
+    tl.to("#c00-phsc", {x: 0, y: 0, duration: 0.08}, 1.65);
+    tl.fromTo("#c00-phg0", {opacity: 0}, {keyframes: [{opacity: 0.3, duration: 0.88, ease: "power2.out"}, {opacity: 0, duration: 1.62, ease: "sine.in"}], immediateRender: false}, 1.10);
     tl.set("#c00-ph0", {opacity: 1}, 0);
-    tl.fromTo("#c00-ph0", {x: 0, scale: 1.0}, {x: 26, scale: 1.05, duration: 5.57, ease: "none", immediateRender: false}, 0.00);
-    tl.to("#c00-ph0", {opacity: 0, duration: 0.3}, 5.62);
-    tl.fromTo("#c00-ph1", {opacity: 0}, {opacity: 1, duration: 1.00, ease: "sine.inOut", immediateRender: false}, 4.57);
-    tl.fromTo("#c00-ph1", {x: 0, scale: 1.0}, {x: -26, scale: 1.05, duration: 10.61, ease: "none", immediateRender: false}, 4.57);
-    tl.to("#c00-ph1", {opacity: 0, duration: 0.3}, 15.23);
-    tl.fromTo("#c00-ph2", {opacity: 0}, {opacity: 1, duration: 1.00, ease: "sine.inOut", immediateRender: false}, 14.18);
-    tl.fromTo("#c00-ph2", {x: 0, scale: 1.0}, {x: 26, scale: 1.05, duration: 9.36, ease: "none", immediateRender: false}, 14.18);
-    tl.fromTo("#c00-k0w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 20.23);
-    tl.fromTo("#c00-k0", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 20.23);
-    tl.fromTo("#c00-scene", {scale: 1.0, x: 0}, {scale: 1.06, x: 30, duration: 23.54, ease: "none", immediateRender: false}, 0.00);
-    tl.fromTo("#c00-fadeOut", {opacity: 0}, {opacity: 1, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 23.04);
+    tl.fromTo("#c00-ph0", {x: 0, scale: 1.0}, {x: 26, scale: 1.05, duration: 5.34, ease: "none", immediateRender: false}, 0.00);
+    tl.to("#c00-ph0", {opacity: 0, duration: 0.3}, 5.39);
+    tl.fromTo("#c00-ph1", {opacity: 0}, {opacity: 1, duration: 1.00, ease: "sine.inOut", immediateRender: false}, 4.34);
+    tl.fromTo("#c00-ph1", {x: 0, scale: 1.0}, {x: -26, scale: 1.05, duration: 6.32, ease: "none", immediateRender: false}, 4.34);
+    tl.to("#c00-ph1", {opacity: 0, duration: 0.3}, 10.71);
+    tl.fromTo("#c00-ph2", {opacity: 0}, {opacity: 1, duration: 1.00, ease: "sine.inOut", immediateRender: false}, 9.66);
+    tl.fromTo("#c00-ph2", {x: 0, scale: 1.0}, {x: 26, scale: 1.05, duration: 7.88, ease: "none", immediateRender: false}, 9.66);
+    tl.fromTo("#c00-k0w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 13.79);
+    tl.fromTo("#c00-k0", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 13.79);
+    tl.fromTo("#c00-scene", {scale: 1.0, x: 0}, {scale: 1.06, x: 30, duration: 17.54, ease: "none", immediateRender: false}, 0.00);
+    tl.fromTo("#c00-fadeOut", {opacity: 0}, {opacity: 1, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 17.04);
     window.__timelines["c00"] = tl;
   </script>
 </template>

@@ -21,7 +21,23 @@
      "sub": "The Story of Prophet Sulaiman (AS)"
     }
    ],
-   "scene": "photos"
+   "scene": "photos",
+   "shakes": [
+    {
+     "line": 0,
+     "at": 0.3,
+     "amp": 8,
+     "dur": 1.0
+    }
+   ],
+   "glows": [
+    {
+     "line": 0,
+     "at": 0.8,
+     "dur": 2.5,
+     "peak": 0.3
+    }
+   ]
   },
   {
    "title": "The Son of Dawud (AS)",
@@ -100,7 +116,15 @@
      "en": "Work, O family of David, in gratitude.\" And few of My servants are grateful"
     }
    ],
-   "scene": "photos"
+   "scene": "photos",
+   "glows": [
+    {
+     "line": 3,
+     "at": 0.2,
+     "dur": 2.5,
+     "peak": 0.35
+    }
+   ]
   },
   {
    "title": "The Language of the Birds",
@@ -177,7 +201,23 @@
      "en": "My Lord, enable me to be grateful for Your favor which You have bestowed upon me and upon my parents and to do righteousness of which You approve. And admit me by Your mercy into [the ranks of] Your righteous servants"
     }
    ],
-   "scene": "photos"
+   "scene": "photos",
+   "shakes": [
+    {
+     "line": 1,
+     "at": -0.4,
+     "amp": 5,
+     "dur": 0.8
+    }
+   ],
+   "glows": [
+    {
+     "line": 4,
+     "at": 0.1,
+     "dur": 2.2,
+     "peak": 0.3
+    }
+   ]
   },
   {
    "title": "The Missing Hoopoe",
@@ -211,7 +251,15 @@
      "en": "I have encompassed [in knowledge] that which you have not encompassed, and I have come to you from Sheba with certain news"
     }
    ],
-   "scene": "photos"
+   "scene": "photos",
+   "shakes": [
+    {
+     "line": 2,
+     "at": -0.6,
+     "amp": 6,
+     "dur": 0.9
+    }
+   ]
   },
   {
    "title": "The Queen of Sheba",
@@ -299,7 +347,15 @@
      "en": "Indeed kings - when they enter a city, they ruin it"
     }
    ],
-   "scene": "photos"
+   "scene": "photos",
+   "shakes": [
+    {
+     "line": 6,
+     "at": -0.4,
+     "amp": 5,
+     "dur": 0.8
+    }
+   ]
   },
   {
    "title": "The Gift",
@@ -324,7 +380,15 @@
      "en": "Do you provide me with wealth? But what Allah has given me is better than what He has given you. Rather, it is you who rejoice in your gift"
     }
    ],
-   "scene": "photos"
+   "scene": "photos",
+   "shakes": [
+    {
+     "line": 1,
+     "at": -0.4,
+     "amp": 6,
+     "dur": 0.9
+    }
+   ]
   },
   {
    "title": "Before an Eye Could Blink",
@@ -367,7 +431,35 @@
      "en": "This is from the favor of my Lord to test me whether I will be grateful or ungrateful. And whoever is grateful - his gratitude is only for [the benefit of] himself. And whoever is ungrateful - then indeed, my Lord is Free of need and Generous"
     }
    ],
-   "scene": "photos"
+   "scene": "photos",
+   "shakes": [
+    {
+     "line": 3,
+     "at": -0.6,
+     "amp": 7,
+     "dur": 1.0
+    },
+    {
+     "line": 5,
+     "at": -0.5,
+     "amp": 10,
+     "dur": 1.6
+    }
+   ],
+   "glows": [
+    {
+     "line": 5,
+     "at": 0.0,
+     "dur": 3.5,
+     "peak": 0.85
+    },
+    {
+     "line": 7,
+     "at": 0.2,
+     "dur": 3.0,
+     "peak": 0.5
+    }
+   ]
   },
   {
    "title": "The Floor of Glass",
@@ -412,7 +504,23 @@
      "en": "My Lord, indeed I have wronged myself, and I submit with Solomon to Allah, Lord of the worlds"
     }
    ],
-   "scene": "photos"
+   "scene": "photos",
+   "shakes": [
+    {
+     "line": 4,
+     "at": -0.5,
+     "amp": 6,
+     "dur": 0.9
+    }
+   ],
+   "glows": [
+    {
+     "line": 5,
+     "at": 0.2,
+     "dur": 3.0,
+     "peak": 0.6
+    }
+   ]
   },
   {
    "title": "The Staff",
@@ -446,7 +554,15 @@
      "en": "it became clear to the jinn that if they had known the unseen, they would not have remained in humiliating punishment"
     }
    ],
-   "scene": "photos"
+   "scene": "photos",
+   "shakes": [
+    {
+     "line": 3,
+     "at": -0.5,
+     "amp": 9,
+     "dur": 1.2
+    }
+   ]
   },
   {
    "title": "The Lesson",
@@ -484,7 +600,15 @@
      "end": true
     }
    ],
-   "scene": "photos"
+   "scene": "photos",
+   "glows": [
+    {
+     "line": 4,
+     "at": 0.3,
+     "dur": 3.0,
+     "peak": 0.4
+    }
+   ]
   }
  ],
  "sound": [
