@@ -51,6 +51,10 @@ Read next: `scripts/channel-plan.md` (start-here index, core message, decisions)
   ask the user to create a fresh key in AI Studio (Create API key -> Create in new project) and re-save the
   secret. The user is on an iPhone only (no computer): secrets are added in Safari at claude.ai/code (desktop
   view), environment menu -> Edit -> Network secrets.
+- 19 Nov, new session (session_019ZSVGUB7fBBbYPfjP19HVe): still 400 API_KEY_INVALID, with or without the header, so the
+  proxy is sending the saved value and Google rejects it. A real AI Studio key starts with "AIza"; the "AQ." value
+  is not one. The secure key form was declined (it may not show on the iPhone); the user is to re-save the secret
+  by hand with an AIza key, then say "try again".
 - Billing: the image model probably needs billing turned on in AI Studio (~$0.04/image); the user has not added
   any yet. If generation fails with a billing/quota error, tell them how (AI Studio -> Set up billing, set a cap).
 - Then: make one test image (an ordinary crowd scene, no prophet, Companion, righteous woman or angel) and
