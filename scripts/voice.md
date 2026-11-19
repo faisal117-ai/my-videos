@@ -14,3 +14,11 @@
 - Never: hype words ("INSANE", "SHOCKING", "you won't believe"), invented details, numbers not in the
   Quran or sahih hadith, drawing any prophet, righteous woman, Companion or angel.
 - Hope and mercy at the end of every story.
+
+## Narrator voice (user's choice, 19 Nov 2026)
+- **Callum** stays the channel's voice, English and Urdu (user tested Adam, Brian, George, Daniel, David, Declan and the
+  Urdu library voices Kamran, Amjid, Naqsh; results in scripts/voice-samples/RESULTS.md).
+- The default Callum (N2lVS1w4EtoT3dr4eOWO) stops working on **31 Dec 2026**. From then on use the Voice Library
+  version "Callum - Husky Trickster" (**5OSluWlAJntR1KG2pWaB**, tested 19 Nov: works in English and Urdu, sounds
+  slightly deeper). Switch every narration.json before the first video made after 31 Dec. The user should add it to
+  My Voices in ElevenLabs so it stays available.
