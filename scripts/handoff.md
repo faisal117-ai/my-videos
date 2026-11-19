@@ -72,6 +72,7 @@ Read next: `scripts/channel-plan.md` (start-here index, core message, decisions)
   with isAiGeneratedContent true.
 
 ## Decision of 19 Nov
+- **Evening Shorts at 17:00 PKT from 20 Nov** (user's choice; Metricool best-time data peaks 16:00, falls after 17:00). Morning Shorts stay 11:00, films stay 18:30. Nuh moved to Fri 20 Nov 17:00.
 - Near-real ordinary people (crowds, soldiers, kings, the man who killed 100…) are now shown in thumbnails and scenes, as a rule (shorts-plan.md film rule 9). Never prophets, the Prophet ﷺ, Companions, righteous women or angels. Film titles lead with a story question.
 
 ## Decisions of 17–18 Nov (all recorded in the plan files; apply them to every new script)

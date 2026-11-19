@@ -128,7 +128,7 @@ Not copied: sensational, unverifiable stories; hype ("SHOCKED everyone", "TERRIF
 - A standing rule, not a test (titles and captions are being tested already).
 
 ## A typical week (14 Shorts)
-| | 11:00 | 18:30 |
+| | 11:00 | 17:00 |
 |---|---|---|
 | Mon | The Moment (this weekend's film) | Quran Wonders |
 | Tue | Duas of the Prophets | The Moment (this weekend's film) |
@@ -137,7 +137,7 @@ Not copied: sensational, unverifiable stories; hype ("SHOCKED everyone", "TERRIF
 | Fri | On This Day / Duas | The Moment (this weekend's film) |
 | Sat | story Short | **film (English)** |
 | Sun | story Short | **film (Urdu/Hindi)** |
-Ramadan: "30 Nights, 30 Stories" replaces the 18:30 Shorts on weekdays.
+Ramadan: "30 Nights, 30 Stories" replaces the 17:00 Shorts on weekdays.
 
 ## Urdu/Hindi Shorts: a careful test
 Two a week ("The Moment" from the Urdu film, Thu and Sat), pointing to the Urdu film. Keep only if they reach
