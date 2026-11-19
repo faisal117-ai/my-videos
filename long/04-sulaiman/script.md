@@ -11,7 +11,7 @@ ordinary soldiers from behind, palaces, the throne, the glass floor, the wind ov
 Every quoted verse: Sahih International on screen with its reference; Urdu: Maududi.
 
 **Title (EN):** A Throne Moved Before an Eye Could Blink… How? | Stories of the Prophets EP 3: Prophet Sulaiman (AS)
-**Title (UR):** Takht Palak Jhapakne Se Pehle Kaise Aaya? Hazrat Sulaiman AS Ka Waqia | Qasas ul Anbiya EP 3
+**Title (UR):** Palak Jhapakte Takht Kaise Aaya? Hazrat Sulaiman AS Ka Waqia | Qasas ul Anbiya EP 3 | Urdu/Hindi
 
 ---
 

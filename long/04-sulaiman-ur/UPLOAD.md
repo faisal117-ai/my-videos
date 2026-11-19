@@ -4,7 +4,7 @@
 **When:** Sunday 22 Nov, 6:30 PM PKT (scheduled in Metricool)
 
 ## Title
-Takht Palak Jhapakne Se Pehle Kaise Aaya? Hazrat Sulaiman AS Ka Waqia | Qasas ul Anbiya EP 3 | Full Movie in Urdu/Hindi
+Palak Jhapakte Takht Kaise Aaya? Hazrat Sulaiman AS Ka Waqia | Qasas ul Anbiya EP 3 | Urdu/Hindi
 
 ## Description
 ایک ملکہ کا تخت دور دراز ملک سے پلک جھپکنے سے پہلے آ پہنچا۔ اور جس بادشاہ کے سامنے وہ رکھا گیا، اس نے کہا: "یہ میرے رب کا فضل ہے تاکہ وہ مجھے آزمائے کہ میں شکر کرتا ہوں یا کافر نعمت بن جاتا ہوں۔" (النمل 27:40)
