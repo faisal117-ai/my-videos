@@ -1,21 +1,24 @@
 <template>
   <style>
     #b8 { position: absolute; inset: 0; }
-    #b8-wrap { position: absolute; left: 90px; right: 140px; top: 250px; bottom: 1120px;
+    #b8-wrap { position: absolute; left: 60px; right: 60px; top: 250px; bottom: 1120px;
       display: flex; flex-direction: column; justify-content: flex-start; gap: 20px; }
   </style>
   <div id="b8" data-composition-id="b8" data-width="1080" data-height="1920">
-    <div id="b8-wrap" class="clip" data-start="0" data-duration="6.09">
-      <div id="b8-txt" class="txt"><span class="w" id="b8-w0">When</span> <span class="w" id="b8-w1">you</span> <span class="w" id="b8-w2">see</span> <span class="w" id="b8-w3">a</span> <span class="w" id="b8-w4">blessing,</span> <span class="w" id="b8-w5">say:</span> <span class="w hi" id="b8-w6">Masha&#x27;Allah,</span> <span class="w" id="b8-w7">la</span> <span class="w" id="b8-w8">quwwata</span> <span class="w" id="b8-w9">illa</span> <span class="w hi" id="b8-w10">billah.</span></div>
-      <div id="b8-ur" class="ur" dir="rtl" lang="ur" data-layout-allow-overflow>جب کوئی نعمت دیکھیں تو کہیں: ماشاءاللہ، لا قوة الّا باللہ</div>
+    <div id="b8-wrap" class="clip" data-start="0" data-duration="7.19">
+      <div id="b8-ar" class="ar" dir="rtl" lang="ar">وَيَقُولُ يَٰلَيۡتَنِي لَمۡ أُشۡرِكۡ بِرَبِّيٓ أَحَدࣰا</div>
+      <div id="b8-tr" class="tr">“Oh, I wish I had not associated with my Lord anyone”</div>
+      <div id="b8-ur" class="ur" dir="rtl" lang="ur" data-layout-allow-overflow>کاش! میں نے اپنے رب کے ساتھ کسی کو شریک نہ ٹھیرایا ہوتا</div>
+      <div id="b8-ref" class="ref">Al-Kahf 18:42</div>
     </div>
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
-    tl.fromTo("#b8 .w", {opacity: 0, y: 22, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.32, ease: "power2.out", stagger: 0.395}, 0.12);
-    tl.fromTo("#b8 .hi", {textShadow: "0 0 0px rgba(0,0,0,0)"}, {textShadow: "0 0 28px var(--accent)", duration: 0.6, ease: "power1.out"}, 2.79);
+    tl.fromTo("#b8-ar", {opacity: 0, y: 30, filter: "blur(10px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.9, ease: "power2.out"}, 0.05);
+    tl.fromTo("#b8-tr", {opacity: 0, y: 20}, {opacity: 1, y: 0, duration: 0.7, ease: "power2.out"}, 0.6);
     tl.fromTo("#b8-ur", {opacity: 0, y: 10}, {opacity: 1, y: 0, duration: 0.35, ease: "power2.out"}, 0.15);
-    tl.fromTo("#b8-wrap", {opacity: 1}, {opacity: 0, duration: 0.22, ease: "power1.in"}, 5.85);
+    tl.fromTo("#b8-ref", {opacity: 0, y: 12}, {opacity: 1, y: 0, duration: 0.45, ease: "power2.out"}, 0.35);
+    tl.fromTo("#b8-wrap", {opacity: 1}, {opacity: 0, duration: 0.22, ease: "power1.in"}, 6.95);
     window.__timelines["b8"] = tl;
   </script>
 </template>

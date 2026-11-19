@@ -5,19 +5,17 @@
       display: flex; flex-direction: column; justify-content: flex-start; gap: 20px; }
   </style>
   <div id="b2" data-composition-id="b2" data-width="1080" data-height="1920">
-    <div id="b2-wrap" class="clip" data-start="0" data-duration="8.32">
-      <div id="b2-txt" class="txt"><span class="w" id="b2-w0">Two</span> <span class="w" id="b2-w1">gardens</span> <span class="w" id="b2-w2">of</span> <span class="w hi" id="b2-w3">grapevines,</span> <span class="w" id="b2-w4">bordered</span> <span class="w" id="b2-w5">with</span> <span class="w" id="b2-w6">palm</span> <span class="w" id="b2-w7">trees.</span></div>
-      <div id="b2-ur" class="ur" dir="rtl" lang="ur" data-layout-allow-overflow>انگور کے دو باغ، جن کے گرد کھجور کے درختوں کی باڑھ تھی</div>
-      <div id="b2-ref" class="ref">Al-Kahf 18:32</div>
+    <div id="b2-wrap" class="clip" data-start="0" data-duration="6.82">
+      <div id="b2-txt" class="txt"><span class="w hi" id="b2-w0">One</span> <span class="w hi" id="b2-w1">sentence</span> <span class="w" id="b2-w2">he</span> <span class="w" id="b2-w3">forgot</span> <span class="w" id="b2-w4">to</span> <span class="w" id="b2-w5">say…</span> <span class="w" id="b2-w6">could</span> <span class="w" id="b2-w7">have</span> <span class="w" id="b2-w8">saved</span> <span class="w" id="b2-w9">everything.</span></div>
+      <div id="b2-ur" class="ur" dir="rtl" lang="ur" data-layout-allow-overflow>ایک جملہ جو وہ کہنا بھول گیا… سب کچھ بچا سکتا تھا</div>
     </div>
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
-    tl.fromTo("#b2 .w", {opacity: 0, y: 22, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.32, ease: "power2.out", stagger: 0.761}, 0.12);
-    tl.fromTo("#b2 .hi", {textShadow: "0 0 0px rgba(0,0,0,0)"}, {textShadow: "0 0 28px var(--accent)", duration: 0.6, ease: "power1.out"}, 3.90);
+    tl.fromTo("#b2 .w", {opacity: 0, y: 22, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.32, ease: "power2.out", stagger: 0.487}, 0.12);
+    tl.fromTo("#b2 .hi", {textShadow: "0 0 0px rgba(0,0,0,0)"}, {textShadow: "0 0 28px var(--accent)", duration: 0.6, ease: "power1.out"}, 3.12);
     tl.fromTo("#b2-ur", {opacity: 0, y: 10}, {opacity: 1, y: 0, duration: 0.35, ease: "power2.out"}, 0.15);
-    tl.fromTo("#b2-ref", {opacity: 0, y: 12}, {opacity: 1, y: 0, duration: 0.45, ease: "power2.out"}, 0.35);
-    tl.fromTo("#b2-wrap", {opacity: 1}, {opacity: 0, duration: 0.22, ease: "power1.in"}, 8.08);
+    tl.fromTo("#b2-wrap", {opacity: 1}, {opacity: 0, duration: 0.22, ease: "power1.in"}, 6.58);
     window.__timelines["b2"] = tl;
   </script>
 </template>

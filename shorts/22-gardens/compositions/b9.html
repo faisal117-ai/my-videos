@@ -5,19 +5,20 @@
       display: flex; flex-direction: column; justify-content: flex-start; gap: 20px; }
   </style>
   <div id="b9" data-composition-id="b9" data-width="1080" data-height="1920">
-    <div id="b9-wrap" class="clip" data-start="0" data-duration="7.16">
-      <div id="b9-cta-mark" class="mark">حق کہانیاں</div>
-      <div id="b9-txt" class="txt cta"><span class="w" id="b9-w0">Watch</span> <span class="w" id="b9-w1">the</span> <span class="w" id="b9-w2">full</span> <span class="w" id="b9-w3">movies</span> <span class="w" id="b9-w4">of</span> <span class="w hi" id="b9-w5">Prophet</span> <span class="w" id="b9-w6">Musa</span> <span class="w hi" id="b9-w7">(AS)</span> <span class="w" id="b9-w8">and</span> <span class="w hi" id="b9-w9">Prophet</span> <span class="w" id="b9-w10">Yusuf</span> <span class="w hi" id="b9-w11">(AS),</span> <span class="w" id="b9-w12">links</span> <span class="w" id="b9-w13">below.</span></div>
-      <div id="b9-btn" class="btn">Full movies ↓</div>
-      <div id="b9-ur" class="ur" dir="rtl" lang="ur" data-layout-allow-overflow>حضرت موسیٰؑ اور حضرت یوسفؑ کی مکمل فلمیں دیکھیں، لنک نیچے</div>
+    <div id="b9-wrap" class="clip" data-start="0" data-duration="9.98">
+      <div id="b9-ar" class="ar" dir="rtl" lang="ar">مَا شَآءَ ٱللَّهُ لَا قُوَّةَ إِلَّا بِٱللَّهِۚ</div>
+      <div id="b9-tr" class="tr">“What Allah willed [has occurred]; there is no power except in Allah”</div>
+      <div id="b9-ur" class="ur" dir="rtl" lang="ur" data-layout-allow-overflow>ماشاءاللہ، لا قوة الّا باللہ</div>
+      <div id="b9-ref" class="ref">Al-Kahf 18:39</div>
     </div>
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
-    tl.fromTo("#b9-cta-mark", {opacity: 0, scale: 0.92}, {opacity: 1, scale: 1, duration: 0.8, ease: "power2.out"}, 0);
-    tl.fromTo("#b9 .w", {opacity: 0, y: 18}, {opacity: 1, y: 0, duration: 0.35, ease: "power2.out", stagger: 0.326}, 0.15);
-    tl.fromTo("#b9-btn", {opacity: 0, y: 24}, {opacity: 1, y: 0, duration: 0.5, ease: "back.out(1.6)"}, 0.5);
+    tl.fromTo("#b9-ar", {opacity: 0, y: 30, filter: "blur(10px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.9, ease: "power2.out"}, 0.05);
+    tl.fromTo("#b9-tr", {opacity: 0, y: 20}, {opacity: 1, y: 0, duration: 0.7, ease: "power2.out"}, 0.6);
     tl.fromTo("#b9-ur", {opacity: 0, y: 10}, {opacity: 1, y: 0, duration: 0.35, ease: "power2.out"}, 0.15);
+    tl.fromTo("#b9-ref", {opacity: 0, y: 12}, {opacity: 1, y: 0, duration: 0.45, ease: "power2.out"}, 0.35);
+    tl.fromTo("#b9-wrap", {opacity: 1}, {opacity: 0, duration: 0.22, ease: "power1.in"}, 9.74);
     window.__timelines["b9"] = tl;
   </script>
 </template>
