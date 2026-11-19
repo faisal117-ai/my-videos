@@ -46,5 +46,5 @@ circle on the key object, honest words.
 | `v3-yusuf-ur-c-stars.jpg` | the 11 stars, sun and moon, circled | گیارہ ستارے، سورج اور چاند… / …سب سجدے میں! |
 | `yt-yusuf-ur-well-throne.png` (YouTube Studio's suggestion, 18 Nov) | dark well left, golden throne in an Egyptian hall right | اندھیرے کنویں سے… / …شاہی تخت تک! |
 Test & Compare set: YouTube's suggestion, A (well in daylight) and C (11 stars): three different ideas.
-**18 Nov:** the user changed the Urdu Yusuf thumbnail. Views went from 16 (18 Nov) to 42 (19 Nov 10:30), the first
+**18 Nov:** the user changed the Urdu Yusuf thumbnail to YouTube's suggestion (`yt-yusuf-ur-well-throne.png`). Views went from 16 (18 Nov) to 42 (19 Nov 10:30), the first
 real rise in free views. Check CTR in Reach at the Friday review to confirm it is the thumbnail.
