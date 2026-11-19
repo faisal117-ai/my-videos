@@ -24,17 +24,17 @@
     #brand span { color: #f2b04a; }
   </style>
   <div id="atmos" data-composition-id="atmos" data-width="1080" data-height="1920" data-layout-allow-overflow>
-    <div id="sky" class="clip" data-start="0" data-duration="69.82"></div>
+    <div id="sky" class="clip" data-start="0" data-duration="69.62"></div>
 
-    <div id="phsc" class="clip" data-start="0" data-duration="69.82"><div id="ph0" class="ph"><img src="assets/gen/s1.jpg" alt=""></div><div id="ph1" class="ph"><img src="assets/gen/s5.jpg" alt=""></div><div id="ph2" class="ph"><img src="assets/gen/s1.jpg" alt=""></div><div id="ph3" class="ph"><img src="assets/gen/s2.jpg" alt=""></div><div id="ph4" class="ph"><video id="phv4" class="clip" src="assets/gen/clip_s3.mp4" muted playsinline data-start="22.42" data-duration="7.09" data-track-index="7" data-volume="0" style="width:100%;height:100%;object-fit:cover;display:block"></video></div><div id="ph5" class="ph"><img src="assets/gen/s4.jpg" alt=""></div><div id="ph6" class="ph"><img src="assets/gen/s5.jpg" alt=""></div><div id="ph7" class="ph"><video id="phv7" class="clip" src="assets/gen/clip_s6.mp4" muted playsinline data-start="37.83" data-duration="7.79" data-track-index="10" data-volume="0" style="width:100%;height:100%;object-fit:cover;display:block"></video></div><div id="ph8" class="ph"><img src="assets/gen/s7.jpg" alt=""></div><div id="ph9" class="ph"><img src="assets/gen/s8.jpg" alt=""></div><div id="ph10" class="ph"><img src="assets/gen/s8.jpg" alt=""></div><div id="phshade"></div></div>
-    <div id="warm" class="clip" data-start="0" data-duration="69.82"><div id="warm-g" style="opacity:0.12"><div id="warm-b"></div></div></div>
-    <div id="cool" class="clip" data-start="0" data-duration="69.82"><div id="cool-g" style="opacity:0"></div></div>
-    <div id="embers" class="clip" data-start="0" data-duration="69.82"><div id="embers-g" style="opacity:0.17">
+    <div id="phsc" class="clip" data-start="0" data-duration="69.62"><div id="ph0" class="ph"><img src="assets/gen/s1.jpg" alt=""></div><div id="ph1" class="ph"><img src="assets/gen/s5.jpg" alt=""></div><div id="ph2" class="ph"><img src="assets/gen/s1.jpg" alt=""></div><div id="ph3" class="ph"><img src="assets/gen/s2.jpg" alt=""></div><div id="ph4" class="ph"><video id="phv4" class="clip" src="assets/gen/clip_s3.mp4" muted playsinline data-start="22.42" data-duration="7.09" data-track-index="7" data-volume="0" style="width:100%;height:100%;object-fit:cover;display:block"></video></div><div id="ph5" class="ph"><img src="assets/gen/s4.jpg" alt=""></div><div id="ph6" class="ph"><img src="assets/gen/s5.jpg" alt=""></div><div id="ph7" class="ph"><video id="phv7" class="clip" src="assets/gen/clip_s6.mp4" muted playsinline data-start="37.83" data-duration="7.74" data-track-index="10" data-volume="0" style="width:100%;height:100%;object-fit:cover;display:block"></video></div><div id="ph8" class="ph"><img src="assets/gen/s7.jpg" alt=""></div><div id="ph9" class="ph"><img src="assets/gen/s8.jpg" alt=""></div><div id="ph10" class="ph"><img src="assets/gen/s8.jpg" alt=""></div><div id="phshade"></div></div>
+    <div id="warm" class="clip" data-start="0" data-duration="69.62"><div id="warm-g" style="opacity:0.12"><div id="warm-b"></div></div></div>
+    <div id="cool" class="clip" data-start="0" data-duration="69.62"><div id="cool-g" style="opacity:0"></div></div>
+    <div id="embers" class="clip" data-start="0" data-duration="69.62"><div id="embers-g" style="opacity:0.17">
       
     </div></div>
-    <div id="vig" class="clip" data-start="0" data-duration="69.82"></div>
+    <div id="vig" class="clip" data-start="0" data-duration="69.62"></div>
     <div id="flash-host" class="clip" data-start="0" data-duration="0.6"><div id="flash"></div></div>
-    <div id="brand" class="clip" data-start="0" data-duration="69.82">HAQ <span>·</span> STORIES</div>
+    <div id="brand" class="clip" data-start="0" data-duration="69.62">HAQ <span>·</span> STORIES</div>
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
@@ -61,16 +61,16 @@
     tl.fromTo("#ph6", {scale: 1.0, x: 0}, {scale: 1.08, x: 0, duration: 4.11, ease: "none", immediateRender: false}, 34.42);
     tl.to("#ph6", {opacity: 0, duration: 0.3, immediateRender: false}, 38.33);
     tl.fromTo("#ph7", {opacity: 0}, {opacity: 1, duration: 0.7, ease: "sine.inOut", immediateRender: false}, 37.63);
-    tl.fromTo("#ph7", {scale: 1.0, x: 0}, {scale: 1.02, x: 0, duration: 8.09, ease: "none", immediateRender: false}, 37.63);
-    tl.to("#ph7", {opacity: 0, duration: 0.3, immediateRender: false}, 45.52);
-    tl.fromTo("#ph8", {opacity: 0}, {opacity: 1, duration: 0.7, ease: "sine.inOut", immediateRender: false}, 44.82);
-    tl.fromTo("#ph8", {scale: 1.0, x: 0}, {scale: 1.08, x: 0, duration: 10.88, ease: "none", immediateRender: false}, 44.82);
-    tl.to("#ph8", {opacity: 0, duration: 0.3, immediateRender: false}, 55.50);
-    tl.fromTo("#ph9", {opacity: 0}, {opacity: 1, duration: 0.7, ease: "sine.inOut", immediateRender: false}, 54.80);
-    tl.fromTo("#ph9", {scale: 1.08, x: -20}, {scale: 1.0, x: 20, duration: 8.02, ease: "none", immediateRender: false}, 54.80);
-    tl.to("#ph9", {opacity: 0, duration: 0.3, immediateRender: false}, 62.62);
-    tl.fromTo("#ph10", {opacity: 0}, {opacity: 1, duration: 0.7, ease: "sine.inOut", immediateRender: false}, 61.92);
-    tl.fromTo("#ph10", {scale: 1.0, x: 0}, {scale: 1.08, x: 0, duration: 8.60, ease: "none", immediateRender: false}, 61.92);
+    tl.fromTo("#ph7", {scale: 1.0, x: 0}, {scale: 1.02, x: 0, duration: 8.04, ease: "none", immediateRender: false}, 37.63);
+    tl.to("#ph7", {opacity: 0, duration: 0.3, immediateRender: false}, 45.47);
+    tl.fromTo("#ph8", {opacity: 0}, {opacity: 1, duration: 0.7, ease: "sine.inOut", immediateRender: false}, 44.77);
+    tl.fromTo("#ph8", {scale: 1.0, x: 0}, {scale: 1.08, x: 0, duration: 10.72, ease: "none", immediateRender: false}, 44.77);
+    tl.to("#ph8", {opacity: 0, duration: 0.3, immediateRender: false}, 55.29);
+    tl.fromTo("#ph9", {opacity: 0}, {opacity: 1, duration: 0.7, ease: "sine.inOut", immediateRender: false}, 54.59);
+    tl.fromTo("#ph9", {scale: 1.08, x: -20}, {scale: 1.0, x: 20, duration: 8.02, ease: "none", immediateRender: false}, 54.59);
+    tl.to("#ph9", {opacity: 0, duration: 0.3, immediateRender: false}, 62.41);
+    tl.fromTo("#ph10", {opacity: 0}, {opacity: 1, duration: 0.7, ease: "sine.inOut", immediateRender: false}, 61.71);
+    tl.fromTo("#ph10", {scale: 1.0, x: 0}, {scale: 1.08, x: 0, duration: 8.61, ease: "none", immediateRender: false}, 61.71);
     tl.fromTo("#warm-b", {scaleY: 1}, {scaleY: 1.06, duration: 0.8, ease: "sine.inOut", yoyo: true, repeat: 43}, 0);
     tl.fromTo("#warm-g", {opacity: 0.12}, {opacity: 0.12, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 5.31);
     tl.fromTo("#cool-g", {opacity: 0}, {opacity: 0, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 5.31);
@@ -93,19 +93,19 @@
     tl.fromTo("#warm-g", {opacity: 0}, {opacity: 0.12, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 37.83);
     tl.fromTo("#cool-g", {opacity: 0.1}, {opacity: 0, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 37.83);
     tl.fromTo("#embers-g", {opacity: 0.00}, {opacity: 0.17, duration: 0.9, immediateRender: false}, 37.83);
-    tl.fromTo("#warm-g", {opacity: 0.12}, {opacity: 0.12, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 45.02);
-    tl.fromTo("#cool-g", {opacity: 0}, {opacity: 0, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 45.02);
-    tl.fromTo("#embers-g", {opacity: 0.17}, {opacity: 0.17, duration: 0.9, immediateRender: false}, 45.02);
-    tl.fromTo("#warm-g", {opacity: 0.12}, {opacity: 0.12, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 55.00);
-    tl.fromTo("#cool-g", {opacity: 0}, {opacity: 0, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 55.00);
-    tl.fromTo("#embers-g", {opacity: 0.17}, {opacity: 0.17, duration: 0.9, immediateRender: false}, 55.00);
-    tl.fromTo("#warm-g", {opacity: 0.12}, {opacity: 0.12, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 62.12);
-    tl.fromTo("#cool-g", {opacity: 0}, {opacity: 0, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 62.12);
-    tl.fromTo("#embers-g", {opacity: 0.17}, {opacity: 0.17, duration: 0.9, immediateRender: false}, 62.12);
+    tl.fromTo("#warm-g", {opacity: 0.12}, {opacity: 0.12, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 44.97);
+    tl.fromTo("#cool-g", {opacity: 0}, {opacity: 0, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 44.97);
+    tl.fromTo("#embers-g", {opacity: 0.17}, {opacity: 0.17, duration: 0.9, immediateRender: false}, 44.97);
+    tl.fromTo("#warm-g", {opacity: 0.12}, {opacity: 0.12, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 54.79);
+    tl.fromTo("#cool-g", {opacity: 0}, {opacity: 0, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 54.79);
+    tl.fromTo("#embers-g", {opacity: 0.17}, {opacity: 0.17, duration: 0.9, immediateRender: false}, 54.79);
+    tl.fromTo("#warm-g", {opacity: 0.12}, {opacity: 0.12, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 61.91);
+    tl.fromTo("#cool-g", {opacity: 0}, {opacity: 0, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 61.91);
+    tl.fromTo("#embers-g", {opacity: 0.17}, {opacity: 0.17, duration: 0.9, immediateRender: false}, 61.91);
     const et = gsap.timeline({ paused: true });
     
     // Sparks are already mid-flight on frame 0: play their own timeline from 7 s in.
-    tl.add(et.tweenFromTo(7, 76.82, { ease: "none" }), 0);
+    tl.add(et.tweenFromTo(7, 76.62, { ease: "none" }), 0);
     window.__timelines["atmos"] = tl;
   </script>
 </template>
