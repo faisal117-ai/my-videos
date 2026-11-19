@@ -28,3 +28,16 @@ Report the result (each line ✅ or ❌ + fix) to the user together with the vid
 - [ ] Title: story question or "X… then Y" (50-50 test), ≤ 100 characters.
 - [ ] Description first line "🎥 Watch the full movie: … 👉 link"; Related video set after upload; AI-content box ticked.
 - [ ] Evening Shorts 17:00, morning 11:00, films 18:30 PKT; 7 days scheduled ahead.
+
+## Skills: use every stored skill that applies (user's rule, 19 Nov 2026)
+Report which skills ran with each video. Skills live in the session list (anthropic-skills:yt-*, stickman, deep-research, dataviz, docs).
+- [ ] **Plan (Friday review):** `yt-viral` (what beats its channel in our niche this week) → `yt-plan` (next week's Shorts + film).
+- [ ] **Research (films):** `deep-research` for the Quran / sahih sources of each story before the script.
+- [ ] **Script:** `yt-script`: 5 hooks scored with its hookscore.py, the best two shown to the user, ON SCREEN notes per beat.
+- [ ] **Picture:** Gemini scenes; `stickman` engine for code-made effects (dust, light, shake) or cartoon tests.
+- [ ] **Shorts from films:** `yt-shorts` picks the self-contained moments of each film.
+- [ ] **Edit (user's own recordings):** `yt-edit`.
+- [ ] **Title + thumbnail:** `yt-package` lints the pair (truncation, vagueness, duplicates).
+- [ ] **Description + tags:** `yt-seo`.
+- [ ] **Films:** `yt-chapters` validates the chapter list.
+- [ ] **After publishing:** `yt-comment` drafts replies; `yt-retention` on each retention chart the user sends; `yt-audit` once a month; `dataviz` / `docs` for any report.
