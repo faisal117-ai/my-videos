@@ -42,52 +42,58 @@
 
     .c04-ph { position: absolute; left: -60px; top: -34px; width: 2040px; height: 1148px; opacity: 0; }
     .c04-ph img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    #c04-phsc { position: absolute; inset: 0; }
+    .c04-phglow { position: absolute; inset: 0; opacity: 0; mix-blend-mode: screen; pointer-events: none;
+      background: radial-gradient(ellipse 60% 70% at 50% 55%, rgba(255,214,140,0.95) 0%, rgba(255,170,80,0.45) 40%, rgba(0,0,0,0) 75%); }
   </style>
   <div id="c04" data-composition-id="c04" data-width="1920" data-height="1080">
-    <div id="c04-scene" class="clip" data-start="0" data-duration="72.18" style="position:absolute;inset:0" data-layout-allow-overflow>
-      <div id="c04-cam" class="c04-cam"><div id="c04-ph0" class="c04-ph"><img src="assets/gen/c04a.jpg" alt=""></div><div id="c04-ph1" class="c04-ph"><img src="assets/gen/c04b.jpg" alt=""></div><div id="c04-ph2" class="c04-ph"><img src="assets/gen/c04c.jpg" alt=""></div><div id="c04-ph3" class="c04-ph"><img src="assets/gen/c04d.jpg" alt=""></div>
+    <div id="c04-scene" class="clip" data-start="0" data-duration="71.92" style="position:absolute;inset:0" data-layout-allow-overflow>
+      <div id="c04-cam" class="c04-cam"><div id="c04-phsc"><div id="c04-ph0" class="c04-ph"><img src="assets/gen/c04a.jpg" alt=""></div><div id="c04-ph1" class="c04-ph"><img src="assets/gen/c04b.jpg" alt=""></div><div id="c04-ph2" class="c04-ph"><img src="assets/gen/c04c.jpg" alt=""></div><div id="c04-ph3" class="c04-ph"><img src="assets/gen/c04d.jpg" alt=""></div></div><div id="c04-phg0" class="c04-phglow"></div>
       </div>
     </div>
-    <div id="c04-scr" class="c04-scrim clip" data-start="0" data-duration="72.18"></div>
+    <div id="c04-scr" class="c04-scrim clip" data-start="0" data-duration="71.92"></div>
     <div id="c04-lab" class="c04-label clip" data-start="0.3" data-duration="4.6"><b>CHAPTER 4</b><i>The Valley of the Ants</i></div>
     <div id="c04-cp0" class="c04-cap clip" data-start="0.22" data-duration="5.80">What would you do, if an army that size was coming toward your home?</div>
-    <div id="c04-cp1" class="c04-cap clip" data-start="21.51" data-duration="4.50">She warned her people. And she even made an excuse for the army:</div>
-    <div id="c04-cp2" class="c04-cap clip" data-start="26.02" data-duration="4.81">&quot;while they do not perceive.&quot; They would not mean to harm you.</div>
-    <div id="c04-cp3" class="c04-cap clip" data-start="30.82" data-duration="3.94">And Prophet Sulaiman, alayhis salaam, heard her.</div>
-    <div id="c04-cp4" class="c04-cap clip" data-start="41.71" data-duration="1.87">stopped for an ant.</div>
-    <div id="c04-cp5" class="c04-cap clip" data-start="64.39" data-duration="2.95">He asked to be grateful.</div>
-    <div id="c04-cp6" class="c04-cap clip" data-start="67.34" data-duration="3.85">But one bird in his army... was missing.</div>
-    <div id="c04-k0w" class="c04-cardwrap clip" data-start="6.07" data-duration="14.66"><div id="c04-k0" class="c04-card"><div class="c04-ar" dir="rtl" lang="ar">قَالَتۡ نَمۡلَةࣱ يَـٰٓأَيُّهَا ٱلنَّمۡلُ ٱدۡخُلُواْ مَسَٰكِنَكُمۡ لَا يَحۡطِمَنَّكُمۡ سُلَيۡمَٰنُ وَجُنُودُهُۥ وَهُمۡ لَا يَشۡعُرُونَ</div><div class="c04-en">“…O ants, enter your dwellings that you not be crushed by Solomon [Sulaiman] and his soldiers while they perceive not”</div><div class="c04-ref">An-Naml 27:18</div></div></div>
-    <div id="c04-k1w" class="c04-cardwrap clip" data-start="34.82" data-duration="5.50"><div id="c04-k1" class="c04-card"><div class="c04-ar" dir="rtl" lang="ar">فَتَبَسَّمَ ضَاحِكࣰا مِّن قَوۡلِهَا</div><div class="c04-en">“So [Solomon [Sulaiman]] smiled, amused at her speech…”</div><div class="c04-ref">An-Naml 27:19</div></div></div>
-    <div id="c04-k2w" class="c04-cardwrap clip" data-start="43.63" data-duration="19.60"><div id="c04-k2" class="c04-card"><div class="c04-ar" dir="rtl" lang="ar">رَبِّ أَوۡزِعۡنِيٓ أَنۡ أَشۡكُرَ نِعۡمَتَكَ ٱلَّتِيٓ أَنۡعَمۡتَ عَلَيَّ وَعَلَىٰ وَٰلِدَيَّ وَأَنۡ أَعۡمَلَ صَٰلِحࣰا تَرۡضَىٰهُ وَأَدۡخِلۡنِي بِرَحۡمَتِكَ فِي عِبَادِكَ ٱلصَّـٰلِحِينَ</div><div class="c04-en">“…My Lord, enable me to be grateful for Your favor which You have bestowed upon me and upon my parents and to do righteousness of which You approve. And admit me by Your mercy into [the ranks of] Your righteous servants”</div><div class="c04-ref">An-Naml 27:19</div></div></div>
+    <div id="c04-cp1" class="c04-cap clip" data-start="20.90" data-duration="4.44">She warned her people. And she even made an excuse for the army:</div>
+    <div id="c04-cp2" class="c04-cap clip" data-start="25.33" data-duration="5.21">&quot;while they perceive not.&quot; They would not mean to harm you.</div>
+    <div id="c04-cp3" class="c04-cap clip" data-start="30.55" data-duration="3.94">And Prophet Sulaiman, alayhis salaam, heard her.</div>
+    <div id="c04-cp4" class="c04-cap clip" data-start="40.94" data-duration="2.37">smiled at the words of an ant.</div>
+    <div id="c04-cp5" class="c04-cap clip" data-start="64.12" data-duration="2.95">He asked to be grateful.</div>
+    <div id="c04-cp6" class="c04-cap clip" data-start="67.07" data-duration="3.85">But one bird in his army... was missing.</div>
+    <div id="c04-k0w" class="c04-cardwrap clip" data-start="6.07" data-duration="14.03"><div id="c04-k0" class="c04-card"><div class="c04-ar" dir="rtl" lang="ar">قَالَتۡ نَمۡلَةࣱ يَـٰٓأَيُّهَا ٱلنَّمۡلُ ٱدۡخُلُواْ مَسَٰكِنَكُمۡ لَا يَحۡطِمَنَّكُمۡ سُلَيۡمَٰنُ وَجُنُودُهُۥ وَهُمۡ لَا يَشۡعُرُونَ</div><div class="c04-en">“…O ants, enter your dwellings that you not be crushed by Solomon [Sulaiman] and his soldiers while they perceive not”</div><div class="c04-ref">An-Naml 27:18</div></div></div>
+    <div id="c04-k1w" class="c04-cardwrap clip" data-start="34.54" data-duration="5.50"><div id="c04-k1" class="c04-card"><div class="c04-ar" dir="rtl" lang="ar">فَتَبَسَّمَ ضَاحِكࣰا مِّن قَوۡلِهَا</div><div class="c04-en">“So [Solomon [Sulaiman]] smiled, amused at her speech…”</div><div class="c04-ref">An-Naml 27:19</div></div></div>
+    <div id="c04-k2w" class="c04-cardwrap clip" data-start="43.36" data-duration="19.60"><div id="c04-k2" class="c04-card"><div class="c04-ar" dir="rtl" lang="ar">رَبِّ أَوۡزِعۡنِيٓ أَنۡ أَشۡكُرَ نِعۡمَتَكَ ٱلَّتِيٓ أَنۡعَمۡتَ عَلَيَّ وَعَلَىٰ وَٰلِدَيَّ وَأَنۡ أَعۡمَلَ صَٰلِحࣰا تَرۡضَىٰهُ وَأَدۡخِلۡنِي بِرَحۡمَتِكَ فِي عِبَادِكَ ٱلصَّـٰلِحِينَ</div><div class="c04-en">“…My Lord, enable me to be grateful for Your favor which You have bestowed upon me and upon my parents and to do righteousness of which You approve. And admit me by Your mercy into [the ranks of] Your righteous servants”</div><div class="c04-ref">An-Naml 27:19</div></div></div>
     <div id="c04-fadeIn" class="c04-fade clip" data-start="0" data-duration="0.55" style="opacity:1"></div>
-    <div id="c04-fadeOut" class="c04-fade clip" data-start="71.68" data-duration="0.50" style="opacity:0"></div>
-    <div id="c04-br" class="c04-brand clip" data-start="0" data-duration="72.18">HAQ <span>·</span> STORIES</div>
+    <div id="c04-fadeOut" class="c04-fade clip" data-start="71.42" data-duration="0.50" style="opacity:0"></div>
+    <div id="c04-br" class="c04-brand clip" data-start="0" data-duration="71.92">HAQ <span>·</span> STORIES</div>
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#c04-phsc", {x: 0, y: 0}, {x: 5, y: 3.0, duration: 0.05, yoyo: true, repeat: 16, ease: "none", immediateRender: false}, 5.82);
+    tl.to("#c04-phsc", {x: 0, y: 0, duration: 0.08}, 6.67);
+    tl.fromTo("#c04-phg0", {opacity: 0}, {keyframes: [{opacity: 0.3, duration: 0.77, ease: "power2.out"}, {opacity: 0, duration: 1.43, ease: "sine.in"}], immediateRender: false}, 34.79);
     tl.set("#c04-ph0", {opacity: 1}, 0);
-    tl.fromTo("#c04-ph0", {x: 0, scale: 1.0}, {x: 26, scale: 1.05, duration: 20.31, ease: "none", immediateRender: false}, 0.00);
-    tl.to("#c04-ph0", {opacity: 0, duration: 0.3}, 20.36);
-    tl.fromTo("#c04-ph1", {opacity: 0}, {opacity: 1, duration: 1.00, ease: "sine.inOut", immediateRender: false}, 19.31);
-    tl.fromTo("#c04-ph1", {x: 0, scale: 1.0}, {x: -26, scale: 1.05, duration: 16.06, ease: "none", immediateRender: false}, 19.31);
-    tl.to("#c04-ph1", {opacity: 0, duration: 0.3}, 35.42);
-    tl.fromTo("#c04-ph2", {opacity: 0}, {opacity: 1, duration: 1.00, ease: "sine.inOut", immediateRender: false}, 34.37);
-    tl.fromTo("#c04-ph2", {x: 0, scale: 1.0}, {x: 26, scale: 1.05, duration: 9.81, ease: "none", immediateRender: false}, 34.37);
-    tl.to("#c04-ph2", {opacity: 0, duration: 0.3}, 44.23);
-    tl.fromTo("#c04-ph3", {opacity: 0}, {opacity: 1, duration: 1.00, ease: "sine.inOut", immediateRender: false}, 43.18);
-    tl.fromTo("#c04-ph3", {x: 0, scale: 1.0}, {x: -26, scale: 1.05, duration: 29.00, ease: "none", immediateRender: false}, 43.18);
+    tl.fromTo("#c04-ph0", {x: 0, scale: 1.0}, {x: 26, scale: 1.05, duration: 19.68, ease: "none", immediateRender: false}, 0.00);
+    tl.to("#c04-ph0", {opacity: 0, duration: 0.3}, 19.73);
+    tl.fromTo("#c04-ph1", {opacity: 0}, {opacity: 1, duration: 1.00, ease: "sine.inOut", immediateRender: false}, 18.68);
+    tl.fromTo("#c04-ph1", {x: 0, scale: 1.0}, {x: -26, scale: 1.05, duration: 16.41, ease: "none", immediateRender: false}, 18.68);
+    tl.to("#c04-ph1", {opacity: 0, duration: 0.3}, 35.14);
+    tl.fromTo("#c04-ph2", {opacity: 0}, {opacity: 1, duration: 1.00, ease: "sine.inOut", immediateRender: false}, 34.09);
+    tl.fromTo("#c04-ph2", {x: 0, scale: 1.0}, {x: 26, scale: 1.05, duration: 9.82, ease: "none", immediateRender: false}, 34.09);
+    tl.to("#c04-ph2", {opacity: 0, duration: 0.3}, 43.96);
+    tl.fromTo("#c04-ph3", {opacity: 0}, {opacity: 1, duration: 1.00, ease: "sine.inOut", immediateRender: false}, 42.91);
+    tl.fromTo("#c04-ph3", {x: 0, scale: 1.0}, {x: -26, scale: 1.05, duration: 29.01, ease: "none", immediateRender: false}, 42.91);
     tl.fromTo("#c04-k0w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 6.07);
     tl.fromTo("#c04-k0", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 6.07);
-    tl.fromTo("#c04-k1w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 34.82);
-    tl.fromTo("#c04-k1", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 34.82);
-    tl.fromTo("#c04-k2w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 43.63);
-    tl.fromTo("#c04-k2", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 43.63);
+    tl.fromTo("#c04-k1w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 34.54);
+    tl.fromTo("#c04-k1", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 34.54);
+    tl.fromTo("#c04-k2w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 43.36);
+    tl.fromTo("#c04-k2", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 43.36);
     tl.fromTo("#c04-lab", {opacity: 0, x: -20}, {opacity: 1, x: 0, duration: 0.60, ease: "power2.out", immediateRender: false}, 0.30);
     tl.fromTo("#c04-lab", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 4.40);
-    tl.fromTo("#c04-scene", {scale: 1.0, x: 0}, {scale: 1.06, x: 30, duration: 72.18, ease: "none", immediateRender: false}, 0.00);
+    tl.fromTo("#c04-scene", {scale: 1.0, x: 0}, {scale: 1.06, x: 30, duration: 71.92, ease: "none", immediateRender: false}, 0.00);
     tl.fromTo("#c04-fadeIn", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 0.00);
-    tl.fromTo("#c04-fadeOut", {opacity: 0}, {opacity: 1, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 71.68);
+    tl.fromTo("#c04-fadeOut", {opacity: 0}, {opacity: 1, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 71.42);
     window.__timelines["c04"] = tl;
   </script>
 </template>

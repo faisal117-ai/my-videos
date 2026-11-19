@@ -42,24 +42,29 @@
 
     .c05-ph { position: absolute; left: -60px; top: -34px; width: 2040px; height: 1148px; opacity: 0; }
     .c05-ph img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    #c05-phsc { position: absolute; inset: 0; }
+    .c05-phglow { position: absolute; inset: 0; opacity: 0; mix-blend-mode: screen; pointer-events: none;
+      background: radial-gradient(ellipse 60% 70% at 50% 55%, rgba(255,214,140,0.95) 0%, rgba(255,170,80,0.45) 40%, rgba(0,0,0,0) 75%); }
   </style>
   <div id="c05" data-composition-id="c05" data-width="1920" data-height="1080">
-    <div id="c05-scene" class="clip" data-start="0" data-duration="32.02" style="position:absolute;inset:0" data-layout-allow-overflow>
-      <div id="c05-cam" class="c05-cam"><div id="c05-ph0" class="c05-ph"><img src="assets/gen/c05a.jpg" alt=""></div><div id="c05-ph1" class="c05-ph"><img src="assets/gen/c05b.jpg" alt=""></div><div id="c05-ph2" class="c05-ph"><img src="assets/gen/c05c.jpg" alt=""></div>
+    <div id="c05-scene" class="clip" data-start="0" data-duration="32.89" style="position:absolute;inset:0" data-layout-allow-overflow>
+      <div id="c05-cam" class="c05-cam"><div id="c05-phsc"><div id="c05-ph0" class="c05-ph"><img src="assets/gen/c05a.jpg" alt=""></div><div id="c05-ph1" class="c05-ph"><img src="assets/gen/c05b.jpg" alt=""></div><div id="c05-ph2" class="c05-ph"><img src="assets/gen/c05c.jpg" alt=""></div></div>
       </div>
     </div>
-    <div id="c05-scr" class="c05-scrim clip" data-start="0" data-duration="32.02"></div>
+    <div id="c05-scr" class="c05-scrim clip" data-start="0" data-duration="32.89"></div>
     <div id="c05-lab" class="c05-label clip" data-start="0.3" data-duration="4.6"><b>CHAPTER 5</b><i>The Missing Hoopoe</i></div>
     <div id="c05-cp0" class="c05-cap clip" data-start="13.26" data-duration="5.55">He said the hoopoe would be punished, unless it brought a clear reason.</div>
     <div id="c05-cp1" class="c05-cap clip" data-start="18.81" data-duration="2.00">Then the hoopoe came back.</div>
     <div id="c05-k0w" class="c05-cardwrap clip" data-start="0.15" data-duration="10.43"><div id="c05-k0" class="c05-card"><div class="c05-ar" dir="rtl" lang="ar">وَتَفَقَّدَ ٱلطَّيۡرَ فَقَالَ مَالِيَ لَآ أَرَى ٱلۡهُدۡهُدَ أَمۡ كَانَ مِنَ ٱلۡغَآئِبِينَ</div><div class="c05-en">“…Why do I not see the hoopoe - or is he among the absent”</div><div class="c05-ref">An-Naml 27:20</div></div></div>
-    <div id="c05-k1w" class="c05-cardwrap clip" data-start="20.87" data-duration="7.77"><div id="c05-k1" class="c05-card"><div class="c05-ar" dir="rtl" lang="ar">أَحَطتُ بِمَا لَمۡ تُحِطۡ بِهِۦ وَجِئۡتُكَ مِن سَبَإِۭ بِنَبَإࣲ يَقِينٍ</div><div class="c05-en">“…I have encompassed [in knowledge] that which you have not encompassed, and I have come to you from Sheba with certain news”</div><div class="c05-ref">An-Naml 27:22</div></div></div>
+    <div id="c05-k1w" class="c05-cardwrap clip" data-start="20.87" data-duration="8.64"><div id="c05-k1" class="c05-card"><div class="c05-ar" dir="rtl" lang="ar">أَحَطتُ بِمَا لَمۡ تُحِطۡ بِهِۦ وَجِئۡتُكَ مِن سَبَإِۭ بِنَبَإࣲ يَقِينٍ</div><div class="c05-en">“…I have encompassed [in knowledge] that which you have not encompassed, and I have come to you from Sheba with certain news”</div><div class="c05-ref">An-Naml 27:22</div></div></div>
     <div id="c05-fadeIn" class="c05-fade clip" data-start="0" data-duration="0.55" style="opacity:1"></div>
-    <div id="c05-fadeOut" class="c05-fade clip" data-start="31.52" data-duration="0.50" style="opacity:0"></div>
-    <div id="c05-br" class="c05-brand clip" data-start="0" data-duration="32.02">HAQ <span>·</span> STORIES</div>
+    <div id="c05-fadeOut" class="c05-fade clip" data-start="32.39" data-duration="0.50" style="opacity:0"></div>
+    <div id="c05-br" class="c05-brand clip" data-start="0" data-duration="32.89">HAQ <span>·</span> STORIES</div>
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#c05-phsc", {x: 0, y: 0}, {x: 6, y: 3.6, duration: 0.05, yoyo: true, repeat: 18, ease: "none", immediateRender: false}, 18.29);
+    tl.to("#c05-phsc", {x: 0, y: 0, duration: 0.08}, 19.24);
     tl.set("#c05-ph0", {opacity: 1}, 0);
     tl.fromTo("#c05-ph0", {x: 0, scale: 1.0}, {x: 26, scale: 1.05, duration: 19.29, ease: "none", immediateRender: false}, 0.00);
     tl.to("#c05-ph0", {opacity: 0, duration: 0.3}, 19.34);
@@ -67,16 +72,16 @@
     tl.fromTo("#c05-ph1", {x: 0, scale: 1.0}, {x: -26, scale: 1.05, duration: 3.12, ease: "none", immediateRender: false}, 18.29);
     tl.to("#c05-ph1", {opacity: 0, duration: 0.3}, 21.47);
     tl.fromTo("#c05-ph2", {opacity: 0}, {opacity: 1, duration: 1.00, ease: "sine.inOut", immediateRender: false}, 20.42);
-    tl.fromTo("#c05-ph2", {x: 0, scale: 1.0}, {x: 26, scale: 1.05, duration: 11.60, ease: "none", immediateRender: false}, 20.42);
+    tl.fromTo("#c05-ph2", {x: 0, scale: 1.0}, {x: 26, scale: 1.05, duration: 12.47, ease: "none", immediateRender: false}, 20.42);
     tl.fromTo("#c05-k0w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 0.15);
     tl.fromTo("#c05-k0", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 0.15);
     tl.fromTo("#c05-k1w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 20.87);
     tl.fromTo("#c05-k1", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 20.87);
     tl.fromTo("#c05-lab", {opacity: 0, x: -20}, {opacity: 1, x: 0, duration: 0.60, ease: "power2.out", immediateRender: false}, 0.30);
     tl.fromTo("#c05-lab", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 4.40);
-    tl.fromTo("#c05-scene", {scale: 1.0, x: 0}, {scale: 1.06, x: -30, duration: 32.02, ease: "none", immediateRender: false}, 0.00);
+    tl.fromTo("#c05-scene", {scale: 1.0, x: 0}, {scale: 1.06, x: -30, duration: 32.89, ease: "none", immediateRender: false}, 0.00);
     tl.fromTo("#c05-fadeIn", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 0.00);
-    tl.fromTo("#c05-fadeOut", {opacity: 0}, {opacity: 1, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 31.52);
+    tl.fromTo("#c05-fadeOut", {opacity: 0}, {opacity: 1, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 32.39);
     window.__timelines["c05"] = tl;
   </script>
 </template>

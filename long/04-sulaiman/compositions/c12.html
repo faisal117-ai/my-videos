@@ -42,13 +42,16 @@
 
     .c12-ph { position: absolute; left: -60px; top: -34px; width: 2040px; height: 1148px; opacity: 0; }
     .c12-ph img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    #c12-phsc { position: absolute; inset: 0; }
+    .c12-phglow { position: absolute; inset: 0; opacity: 0; mix-blend-mode: screen; pointer-events: none;
+      background: radial-gradient(ellipse 60% 70% at 50% 55%, rgba(255,214,140,0.95) 0%, rgba(255,170,80,0.45) 40%, rgba(0,0,0,0) 75%); }
   </style>
   <div id="c12" data-composition-id="c12" data-width="1920" data-height="1080">
-    <div id="c12-scene" class="clip" data-start="0" data-duration="63.46" style="position:absolute;inset:0" data-layout-allow-overflow>
-      <div id="c12-cam" class="c12-cam"><div id="c12-ph0" class="c12-ph"><img src="assets/gen/c12b.jpg" alt=""></div><div id="c12-ph1" class="c12-ph"><img src="assets/gen/c12a.jpg" alt=""></div><div id="c12-ph2" class="c12-ph"><img src="assets/gen/c12c.jpg" alt=""></div>
+    <div id="c12-scene" class="clip" data-start="0" data-duration="72.55" style="position:absolute;inset:0" data-layout-allow-overflow>
+      <div id="c12-cam" class="c12-cam"><div id="c12-phsc"><div id="c12-ph0" class="c12-ph"><img src="assets/gen/c12b.jpg" alt=""></div><div id="c12-ph1" class="c12-ph"><img src="assets/gen/c12a.jpg" alt=""></div><div id="c12-ph2" class="c12-ph"><img src="assets/gen/c12c.jpg" alt=""></div></div><div id="c12-phg0" class="c12-phglow"></div>
       </div>
     </div>
-    <div id="c12-scr" class="c12-scrim clip" data-start="0" data-duration="63.46"></div>
+    <div id="c12-scr" class="c12-scrim clip" data-start="0" data-duration="72.55"></div>
     <div id="c12-lab" class="c12-label clip" data-start="0.3" data-duration="4.6"><b>CHAPTER 12</b><i>The Lesson</i></div>
     <div id="c12-cp0" class="c12-cap clip" data-start="0.22" data-duration="3.37">Allah gave Prophet Sulaiman, alayhis salaam,</div>
     <div id="c12-cp1" class="c12-cap clip" data-start="3.59" data-duration="2.98">a kingdom no one will ever have again.</div>
@@ -61,13 +64,14 @@
     <div id="c12-cp8" class="c12-cap clip" data-start="50.28" data-duration="1.60">Tell us in the comments.</div>
     <div id="c12-k0w" class="c12-cardwrap clip" data-start="9.89" data-duration="8.49"><div id="c12-k0" class="c12-card"><div class="c12-ar" dir="rtl" lang="ar">قَالَ إِنَّمَآ أُوتِيتُهُۥ عَلَىٰ عِلۡمٍ عِندِيٓۚ</div><div class="c12-en">“…I was only given it because of knowledge I have…”</div><div class="c12-ref">Al-Qasas 28:78</div></div></div>
     <div id="c12-k1w" class="c12-cardwrap clip" data-start="18.48" data-duration="7.94"><div id="c12-k1" class="c12-card"><div class="c12-ar" dir="rtl" lang="ar">هَٰذَا مِن فَضۡلِ رَبِّي لِيَبۡلُوَنِيٓ</div><div class="c12-en">“…This is from the favor of my Lord…”</div><div class="c12-ref">An-Naml 27:40</div></div></div>
-    <div id="c12-k2w" class="c12-cardwrap clip" data-start="51.93" data-duration="11.48"><div id="c12-k2" class="c12-card c12-end"><div class="c12-mark">HAQ <span>·</span> STORIES</div><div class="c12-endt">Stories of the prophets, from the Quran</div><div class="c12-btn">Subscribe</div></div></div>
+    <div id="c12-k2w" class="c12-cardwrap clip" data-start="51.93" data-duration="20.57"><div id="c12-k2" class="c12-card c12-end"><div class="c12-mark">HAQ <span>·</span> STORIES</div><div class="c12-endt">Stories of the prophets, from the Quran</div><div class="c12-btn">Subscribe</div></div></div>
     <div id="c12-fadeIn" class="c12-fade clip" data-start="0" data-duration="0.55" style="opacity:1"></div>
-    <div id="c12-fadeOut" class="c12-fade clip" data-start="62.96" data-duration="0.50" style="opacity:0"></div>
-    <div id="c12-br" class="c12-brand clip" data-start="0" data-duration="63.46">HAQ <span>·</span> STORIES</div>
+    <div id="c12-fadeOut" class="c12-fade clip" data-start="72.05" data-duration="0.50" style="opacity:0"></div>
+    <div id="c12-br" class="c12-brand clip" data-start="0" data-duration="72.55">HAQ <span>·</span> STORIES</div>
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#c12-phg0", {opacity: 0}, {keyframes: [{opacity: 0.4, duration: 1.05, ease: "power2.out"}, {opacity: 0, duration: 1.95, ease: "sine.in"}], immediateRender: false}, 29.36);
     tl.set("#c12-ph0", {opacity: 1}, 0);
     tl.fromTo("#c12-ph0", {x: 0, scale: 1.0}, {x: 26, scale: 1.05, duration: 29.46, ease: "none", immediateRender: false}, 0.00);
     tl.to("#c12-ph0", {opacity: 0, duration: 0.3}, 29.51);
@@ -75,7 +79,7 @@
     tl.fromTo("#c12-ph1", {x: 0, scale: 1.0}, {x: -26, scale: 1.05, duration: 24.02, ease: "none", immediateRender: false}, 28.46);
     tl.to("#c12-ph1", {opacity: 0, duration: 0.3}, 52.53);
     tl.fromTo("#c12-ph2", {opacity: 0}, {opacity: 1, duration: 1.00, ease: "sine.inOut", immediateRender: false}, 51.48);
-    tl.fromTo("#c12-ph2", {x: 0, scale: 1.0}, {x: 26, scale: 1.05, duration: 11.98, ease: "none", immediateRender: false}, 51.48);
+    tl.fromTo("#c12-ph2", {x: 0, scale: 1.0}, {x: 26, scale: 1.05, duration: 21.07, ease: "none", immediateRender: false}, 51.48);
     tl.fromTo("#c12-k0w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 9.89);
     tl.fromTo("#c12-k0", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 9.89);
     tl.fromTo("#c12-k1w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 18.48);
@@ -84,9 +88,9 @@
     tl.fromTo("#c12-k2", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 51.93);
     tl.fromTo("#c12-lab", {opacity: 0, x: -20}, {opacity: 1, x: 0, duration: 0.60, ease: "power2.out", immediateRender: false}, 0.30);
     tl.fromTo("#c12-lab", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 4.40);
-    tl.fromTo("#c12-scene", {scale: 1.0, x: 0}, {scale: 1.06, x: 30, duration: 63.46, ease: "none", immediateRender: false}, 0.00);
+    tl.fromTo("#c12-scene", {scale: 1.0, x: 0}, {scale: 1.06, x: 30, duration: 72.55, ease: "none", immediateRender: false}, 0.00);
     tl.fromTo("#c12-fadeIn", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 0.00);
-    tl.fromTo("#c12-fadeOut", {opacity: 0}, {opacity: 1, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 62.96);
+    tl.fromTo("#c12-fadeOut", {opacity: 0}, {opacity: 1, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 72.05);
     window.__timelines["c12"] = tl;
   </script>
 </template>

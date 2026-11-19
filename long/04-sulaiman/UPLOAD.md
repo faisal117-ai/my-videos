@@ -13,7 +13,19 @@ The story of Prophet Sulaiman (AS) from the Quran: the ant who warned her people
 And the king who received it said: "This is from the favor of my Lord to test me whether I will be grateful or ungrateful." (An-Naml 27:40)
 
 Chapters
-{CHAPTERS}
+0:00 Intro
+0:17 The Son of Dawud (AS)
+1:09 A Kingdom Like No Other
+2:23 The Language of the Birds
+3:08 The Valley of the Ants
+4:20 The Missing Hoopoe
+4:53 The Queen of Sheba
+5:28 The Letter
+6:28 The Gift
+7:00 Before an Eye Could Blink
+8:13 The Floor of Glass
+9:07 The Staff
+9:50 The Lesson
 
 Told in order from the Quran: the judgement given with Prophet Dawud (AS), his dua for a kingdom, the wind and the spring of copper, the valley of the ants, the missing hoopoe, the Queen of Sheba, the letter, the gift he sent back, the throne brought in a blink, the palace of glass, and the staff.
 

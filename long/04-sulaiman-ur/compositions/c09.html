@@ -42,6 +42,9 @@
 
     .c09-ph { position: absolute; left: -60px; top: -34px; width: 2040px; height: 1148px; opacity: 0; }
     .c09-ph img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    #c09-phsc { position: absolute; inset: 0; }
+    .c09-phglow { position: absolute; inset: 0; opacity: 0; mix-blend-mode: screen; pointer-events: none;
+      background: radial-gradient(ellipse 60% 70% at 50% 55%, rgba(255,214,140,0.95) 0%, rgba(255,170,80,0.45) 40%, rgba(0,0,0,0) 75%); }
     .c09-cap { font-family: "Noto Nastaliq Urdu"; font-weight: 400; font-size: 44px; line-height: 1.9; direction: rtl; bottom: 40px; }
     .c09-urtr { font-family: "Noto Nastaliq Urdu"; font-style: normal; font-weight: 400; font-size: 44px; line-height: 1.9; }
     .c09-ctext { font-family: "Noto Nastaliq Urdu"; font-weight: 400; font-size: 60px; line-height: 1.9; direction: rtl; }
@@ -51,48 +54,53 @@
 
   </style>
   <div id="c09" data-composition-id="c09" data-width="1920" data-height="1080">
-    <div id="c09-scene" class="clip" data-start="0" data-duration="85.82" style="position:absolute;inset:0" data-layout-allow-overflow>
-      <div id="c09-cam" class="c09-cam"><div id="c09-ph0" class="c09-ph"><img src="assets/gen/c09a.jpg" alt=""></div><div id="c09-ph1" class="c09-ph"><img src="assets/gen/c09b.jpg" alt=""></div><div id="c09-ph2" class="c09-ph"><img src="assets/gen/c09c.jpg" alt=""></div>
+    <div id="c09-scene" class="clip" data-start="0" data-duration="77.34" style="position:absolute;inset:0" data-layout-allow-overflow>
+      <div id="c09-cam" class="c09-cam"><div id="c09-phsc"><div id="c09-ph0" class="c09-ph"><img src="assets/gen/c09a.jpg" alt=""></div><div id="c09-ph1" class="c09-ph"><img src="assets/gen/c09b.jpg" alt=""></div><div id="c09-ph2" class="c09-ph"><img src="assets/gen/c09c.jpg" alt=""></div></div><div id="c09-phg0" class="c09-phglow"></div><div id="c09-phg1" class="c09-phglow"></div>
       </div>
     </div>
-    <div id="c09-scr" class="c09-scrim clip" data-start="0" data-duration="85.82"></div>
+    <div id="c09-scr" class="c09-scrim clip" data-start="0" data-duration="77.34"></div>
     <div id="c09-lab" class="c09-label clip" data-start="0.3" data-duration="4.6"><b>باب 9</b><i>پلک جھپکنے سے پہلے</i></div>
-    <div id="c09-cp0" class="c09-cap clip" data-start="0.22" data-duration="4.80">&quot;اے اہل دربار، تم میں سے کون اس کا تخت میرے پاس لاتا</div>
-    <div id="c09-cp1" class="c09-cap clip" data-start="5.02" data-duration="5.51">ہے قبل اس کے کہ وہ لوگ مطیع ہو کر میرے پاس حاضر ہوں؟&quot;</div>
-    <div id="c09-cp2" class="c09-cap clip" data-start="24.92" data-duration="3.06">یہ جن کی پیشکش تھی۔</div>
-    <div id="c09-cp3" class="c09-cap clip" data-start="39.58" data-duration="1.85">اور وہ سامنے تھا۔</div>
-    <div id="c09-cp4" class="c09-cap clip" data-start="41.43" data-duration="4.72">سبا کی ملکہ کا عظیم تخت، ان کے پاس رکھا ہوا۔</div>
-    <div id="c09-cp5" class="c09-cap clip" data-start="46.15" data-duration="2.47">اب شروع والا سوال یاد کیجیے:</div>
-    <div id="c09-cp6" class="c09-cap clip" data-start="48.62" data-duration="4.77">جب اللہ کسی کو سب کچھ دے دے، تو وہ کیا کہتا ہے؟</div>
-    <div id="c09-cp7" class="c09-cap clip" data-start="80.26" data-duration="4.56">اور ان کا پہلا خیال یہ تھا: یہ ایک آزمائش ہے۔</div>
-    <div id="c09-k0w" class="c09-cardwrap clip" data-start="10.58" data-duration="13.59"><div id="c09-k0" class="c09-card"><div class="c09-ar" dir="rtl" lang="ar">قَالَ عِفۡرِيتࣱ مِّنَ ٱلۡجِنِّ أَنَا۠ ءَاتِيكَ بِهِۦ قَبۡلَ أَن تَقُومَ مِن مَّقَامِكَۖ وَإِنِّي عَلَيۡهِ لَقَوِيٌّ أَمِينࣱ</div><div class="c09-en c09-urtr" dir="rtl" lang="ur">میں اسے حاضر کر دوں گا قبل اس کے کہ آپ اپنی جگہ سے اٹھیں</div><div class="c09-ref">An-Naml 27:39</div></div></div>
-    <div id="c09-k1w" class="c09-cardwrap clip" data-start="28.03" data-duration="9.69"><div id="c09-k1" class="c09-card"><div class="c09-ar" dir="rtl" lang="ar">قَالَ ٱلَّذِي عِندَهُۥ عِلۡمࣱ مِّنَ ٱلۡكِتَٰبِ أَنَا۠ ءَاتِيكَ بِهِۦ قَبۡلَ أَن يَرۡتَدَّ إِلَيۡكَ طَرۡفُكَۚ</div><div class="c09-en c09-urtr" dir="rtl" lang="ur">میں آپ کی پلک جھپکنے سے پہلے اسے لائے دیتا ہوں</div><div class="c09-ref">An-Naml 27:40</div></div></div>
-    <div id="c09-k2w" class="c09-cardwrap clip" data-start="53.44" data-duration="24.02"><div id="c09-k2" class="c09-card"><div class="c09-ar" dir="rtl" lang="ar">هَٰذَا مِن فَضۡلِ رَبِّي لِيَبۡلُوَنِيٓ ءَأَشۡكُرُ أَمۡ أَكۡفُرُۖ وَمَن شَكَرَ فَإِنَّمَا يَشۡكُرُ لِنَفۡسِهِۦۖ وَمَن كَفَرَ فَإِنَّ رَبِّي غَنِيࣱّ كَرِيمࣱ</div><div class="c09-en c09-urtr" dir="rtl" lang="ur">یہ میرے رب کا فضل ہے تاکہ وہ مجھے آزمائے کہ میں شکر کرتا ہوں یا کافر نعمت بن جاتا ہوں اور جو کوئی شکر کرتا ہے اس کا شکر اس کے اپنے ہی لیے مفید ہے، ورنہ کوئی ناشکری کرے تو میرا رب بے نیاز اور اپنی ذات میں آپ بزرگ ہے</div><div class="c09-ref">An-Naml 27:40</div></div></div>
+    <div id="c09-cp0" class="c09-cap clip" data-start="0.22" data-duration="4.84">&quot;اے اہل دربار، تم میں سے کون اس کا تخت میرے پاس لاتا</div>
+    <div id="c09-cp1" class="c09-cap clip" data-start="5.06" data-duration="5.36">ہے قبل اس کے کہ وہ لوگ مطیع ہو کر میرے پاس حاضر ہوں؟&quot;</div>
+    <div id="c09-cp2" class="c09-cap clip" data-start="22.92" data-duration="3.20">یہ جن کی پیشکش تھی۔</div>
+    <div id="c09-cp3" class="c09-cap clip" data-start="36.34" data-duration="5.81">اور وہ سامنے تھا۔ سبا کی ملکہ کا عظیم تخت، ان کے پاس رکھا ہوا۔</div>
+    <div id="c09-cp4" class="c09-cap clip" data-start="42.15" data-duration="2.15">اب شروع والا سوال یاد کیجیے:</div>
+    <div id="c09-cp5" class="c09-cap clip" data-start="44.30" data-duration="4.10">جب اللہ کسی کو سب کچھ دے دے، تو وہ کیا کہتا ہے؟</div>
+    <div id="c09-cp6" class="c09-cap clip" data-start="72.68" data-duration="2.38">اور ان کا پہلا خیال یہ تھا: یہ ایک آزمائش ہے۔</div>
+    <div id="c09-k0w" class="c09-cardwrap clip" data-start="10.47" data-duration="12.07"><div id="c09-k0" class="c09-card"><div class="c09-ar" dir="rtl" lang="ar">قَالَ عِفۡرِيتࣱ مِّنَ ٱلۡجِنِّ أَنَا۠ ءَاتِيكَ بِهِۦ قَبۡلَ أَن تَقُومَ مِن مَّقَامِكَۖ وَإِنِّي عَلَيۡهِ لَقَوِيٌّ أَمِينࣱ</div><div class="c09-en c09-urtr" dir="rtl" lang="ur">میں اسے حاضر کر دوں گا قبل اس کے کہ آپ اپنی جگہ سے اٹھیں</div><div class="c09-ref">An-Naml 27:39</div></div></div>
+    <div id="c09-k1w" class="c09-cardwrap clip" data-start="26.17" data-duration="8.53"><div id="c09-k1" class="c09-card"><div class="c09-ar" dir="rtl" lang="ar">قَالَ ٱلَّذِي عِندَهُۥ عِلۡمࣱ مِّنَ ٱلۡكِتَٰبِ أَنَا۠ ءَاتِيكَ بِهِۦ قَبۡلَ أَن يَرۡتَدَّ إِلَيۡكَ طَرۡفُكَۚ</div><div class="c09-en c09-urtr" dir="rtl" lang="ur">میں آپ کی پلک جھپکنے سے پہلے اسے لائے دیتا ہوں</div><div class="c09-ref">An-Naml 27:40</div></div></div>
+    <div id="c09-k2w" class="c09-cardwrap clip" data-start="48.45" data-duration="21.41"><div id="c09-k2" class="c09-card"><div class="c09-ar" dir="rtl" lang="ar">هَٰذَا مِن فَضۡلِ رَبِّي لِيَبۡلُوَنِيٓ ءَأَشۡكُرُ أَمۡ أَكۡفُرُۖ وَمَن شَكَرَ فَإِنَّمَا يَشۡكُرُ لِنَفۡسِهِۦۖ وَمَن كَفَرَ فَإِنَّ رَبِّي غَنِيࣱّ كَرِيمࣱ</div><div class="c09-en c09-urtr" dir="rtl" lang="ur">یہ میرے رب کا فضل ہے تاکہ وہ مجھے آزمائے کہ میں شکر کرتا ہوں یا کافر نعمت بن جاتا ہوں اور جو کوئی شکر کرتا ہے اس کا شکر اس کے اپنے ہی لیے مفید ہے، ورنہ کوئی ناشکری کرے تو میرا رب بے نیاز اور اپنی ذات میں آپ بزرگ ہے</div><div class="c09-ref">An-Naml 27:40</div></div></div>
     <div id="c09-fadeIn" class="c09-fade clip" data-start="0" data-duration="0.55" style="opacity:1"></div>
-    <div id="c09-fadeOut" class="c09-fade clip" data-start="85.32" data-duration="0.50" style="opacity:0"></div>
-    <div id="c09-br" class="c09-brand clip" data-start="0" data-duration="85.82">HAQ <span>·</span> STORIES</div>
+    <div id="c09-fadeOut" class="c09-fade clip" data-start="76.84" data-duration="0.50" style="opacity:0"></div>
+    <div id="c09-br" class="c09-brand clip" data-start="0" data-duration="77.34">HAQ <span>·</span> STORIES</div>
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#c09-phsc", {x: 0, y: 0}, {x: 7, y: 4.2, duration: 0.05, yoyo: true, repeat: 20, ease: "none", immediateRender: false}, 25.72);
+    tl.to("#c09-phsc", {x: 0, y: 0, duration: 0.08}, 26.77);
+    tl.fromTo("#c09-phsc", {x: 0, y: 0}, {x: 10, y: 6.0, duration: 0.05, yoyo: true, repeat: 32, ease: "none", immediateRender: false}, 35.92);
+    tl.to("#c09-phsc", {x: 0, y: 0, duration: 0.08}, 37.57);
+    tl.fromTo("#c09-phg0", {opacity: 0}, {keyframes: [{opacity: 0.85, duration: 1.22, ease: "power2.out"}, {opacity: 0, duration: 2.27, ease: "sine.in"}], immediateRender: false}, 36.42);
+    tl.fromTo("#c09-phg1", {opacity: 0}, {keyframes: [{opacity: 0.5, duration: 1.05, ease: "power2.out"}, {opacity: 0, duration: 1.95, ease: "sine.in"}], immediateRender: false}, 48.80);
     tl.set("#c09-ph0", {opacity: 1}, 0);
-    tl.fromTo("#c09-ph0", {x: 0, scale: 1.0}, {x: 26, scale: 1.05, duration: 40.06, ease: "none", immediateRender: false}, 0.00);
-    tl.to("#c09-ph0", {opacity: 0, duration: 0.3}, 40.11);
-    tl.fromTo("#c09-ph1", {opacity: 0}, {opacity: 1, duration: 1.00, ease: "sine.inOut", immediateRender: false}, 39.06);
-    tl.fromTo("#c09-ph1", {x: 0, scale: 1.0}, {x: -26, scale: 1.05, duration: 14.93, ease: "none", immediateRender: false}, 39.06);
-    tl.to("#c09-ph1", {opacity: 0, duration: 0.3}, 54.04);
-    tl.fromTo("#c09-ph2", {opacity: 0}, {opacity: 1, duration: 1.00, ease: "sine.inOut", immediateRender: false}, 52.99);
-    tl.fromTo("#c09-ph2", {x: 0, scale: 1.0}, {x: 26, scale: 1.05, duration: 32.83, ease: "none", immediateRender: false}, 52.99);
-    tl.fromTo("#c09-k0w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 10.58);
-    tl.fromTo("#c09-k0", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 10.58);
-    tl.fromTo("#c09-k1w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 28.03);
-    tl.fromTo("#c09-k1", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 28.03);
-    tl.fromTo("#c09-k2w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 53.44);
-    tl.fromTo("#c09-k2", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 53.44);
+    tl.fromTo("#c09-ph0", {x: 0, scale: 1.0}, {x: 26, scale: 1.05, duration: 36.82, ease: "none", immediateRender: false}, 0.00);
+    tl.to("#c09-ph0", {opacity: 0, duration: 0.3}, 36.87);
+    tl.fromTo("#c09-ph1", {opacity: 0}, {opacity: 1, duration: 1.00, ease: "sine.inOut", immediateRender: false}, 35.82);
+    tl.fromTo("#c09-ph1", {x: 0, scale: 1.0}, {x: -26, scale: 1.05, duration: 13.18, ease: "none", immediateRender: false}, 35.82);
+    tl.to("#c09-ph1", {opacity: 0, duration: 0.3}, 49.05);
+    tl.fromTo("#c09-ph2", {opacity: 0}, {opacity: 1, duration: 1.00, ease: "sine.inOut", immediateRender: false}, 48.00);
+    tl.fromTo("#c09-ph2", {x: 0, scale: 1.0}, {x: 26, scale: 1.05, duration: 29.34, ease: "none", immediateRender: false}, 48.00);
+    tl.fromTo("#c09-k0w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 10.47);
+    tl.fromTo("#c09-k0", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 10.47);
+    tl.fromTo("#c09-k1w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 26.17);
+    tl.fromTo("#c09-k1", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 26.17);
+    tl.fromTo("#c09-k2w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 48.45);
+    tl.fromTo("#c09-k2", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 48.45);
     tl.fromTo("#c09-lab", {opacity: 0, x: -20}, {opacity: 1, x: 0, duration: 0.60, ease: "power2.out", immediateRender: false}, 0.30);
     tl.fromTo("#c09-lab", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 4.40);
-    tl.fromTo("#c09-scene", {scale: 1.0, x: 0}, {scale: 1.06, x: -30, duration: 85.82, ease: "none", immediateRender: false}, 0.00);
+    tl.fromTo("#c09-scene", {scale: 1.0, x: 0}, {scale: 1.06, x: -30, duration: 77.34, ease: "none", immediateRender: false}, 0.00);
     tl.fromTo("#c09-fadeIn", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 0.00);
-    tl.fromTo("#c09-fadeOut", {opacity: 0}, {opacity: 1, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 85.32);
+    tl.fromTo("#c09-fadeOut", {opacity: 0}, {opacity: 1, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 76.84);
     window.__timelines["c09"] = tl;
   </script>
 </template>

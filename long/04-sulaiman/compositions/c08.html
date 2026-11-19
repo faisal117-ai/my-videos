@@ -42,10 +42,13 @@
 
     .c08-ph { position: absolute; left: -60px; top: -34px; width: 2040px; height: 1148px; opacity: 0; }
     .c08-ph img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    #c08-phsc { position: absolute; inset: 0; }
+    .c08-phglow { position: absolute; inset: 0; opacity: 0; mix-blend-mode: screen; pointer-events: none;
+      background: radial-gradient(ellipse 60% 70% at 50% 55%, rgba(255,214,140,0.95) 0%, rgba(255,170,80,0.45) 40%, rgba(0,0,0,0) 75%); }
   </style>
   <div id="c08" data-composition-id="c08" data-width="1920" data-height="1080">
     <div id="c08-scene" class="clip" data-start="0" data-duration="31.90" style="position:absolute;inset:0" data-layout-allow-overflow>
-      <div id="c08-cam" class="c08-cam"><div id="c08-ph0" class="c08-ph"><img src="assets/gen/c08a.jpg" alt=""></div><div id="c08-ph1" class="c08-ph"><img src="assets/gen/c08b.jpg" alt=""></div><div id="c08-ph2" class="c08-ph"><img src="assets/gen/c08c.jpg" alt=""></div>
+      <div id="c08-cam" class="c08-cam"><div id="c08-phsc"><div id="c08-ph0" class="c08-ph"><img src="assets/gen/c08a.jpg" alt=""></div><div id="c08-ph1" class="c08-ph"><img src="assets/gen/c08b.jpg" alt=""></div><div id="c08-ph2" class="c08-ph"><img src="assets/gen/c08c.jpg" alt=""></div></div>
       </div>
     </div>
     <div id="c08-scr" class="c08-scrim clip" data-start="0" data-duration="31.90"></div>
@@ -60,6 +63,8 @@
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#c08-phsc", {x: 0, y: 0}, {x: 6, y: 3.6, duration: 0.05, yoyo: true, repeat: 18, ease: "none", immediateRender: false}, 3.92);
+    tl.to("#c08-phsc", {x: 0, y: 0, duration: 0.08}, 4.87);
     tl.set("#c08-ph0", {opacity: 1}, 0);
     tl.fromTo("#c08-ph0", {x: 0, scale: 1.0}, {x: 26, scale: 1.05, duration: 19.58, ease: "none", immediateRender: false}, 0.00);
     tl.to("#c08-ph0", {opacity: 0, duration: 0.3}, 19.63);

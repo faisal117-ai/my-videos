@@ -42,6 +42,9 @@
 
     .c07-ph { position: absolute; left: -60px; top: -34px; width: 2040px; height: 1148px; opacity: 0; }
     .c07-ph img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    #c07-phsc { position: absolute; inset: 0; }
+    .c07-phglow { position: absolute; inset: 0; opacity: 0; mix-blend-mode: screen; pointer-events: none;
+      background: radial-gradient(ellipse 60% 70% at 50% 55%, rgba(255,214,140,0.95) 0%, rgba(255,170,80,0.45) 40%, rgba(0,0,0,0) 75%); }
     .c07-cap { font-family: "Noto Nastaliq Urdu"; font-weight: 400; font-size: 44px; line-height: 1.9; direction: rtl; bottom: 40px; }
     .c07-urtr { font-family: "Noto Nastaliq Urdu"; font-style: normal; font-weight: 400; font-size: 44px; line-height: 1.9; }
     .c07-ctext { font-family: "Noto Nastaliq Urdu"; font-weight: 400; font-size: 60px; line-height: 1.9; direction: rtl; }
@@ -51,44 +54,46 @@
 
   </style>
   <div id="c07" data-composition-id="c07" data-width="1920" data-height="1080">
-    <div id="c07-scene" class="clip" data-start="0" data-duration="60.02" style="position:absolute;inset:0" data-layout-allow-overflow>
-      <div id="c07-cam" class="c07-cam"><div id="c07-ph0" class="c07-ph"><img src="assets/gen/c07a.jpg" alt=""></div><div id="c07-ph1" class="c07-ph"><img src="assets/gen/c07b.jpg" alt=""></div><div id="c07-ph2" class="c07-ph"><img src="assets/gen/c07c.jpg" alt=""></div>
+    <div id="c07-scene" class="clip" data-start="0" data-duration="61.38" style="position:absolute;inset:0" data-layout-allow-overflow>
+      <div id="c07-cam" class="c07-cam"><div id="c07-phsc"><div id="c07-ph0" class="c07-ph"><img src="assets/gen/c07a.jpg" alt=""></div><div id="c07-ph1" class="c07-ph"><img src="assets/gen/c07b.jpg" alt=""></div><div id="c07-ph2" class="c07-ph"><img src="assets/gen/c07c.jpg" alt=""></div></div>
       </div>
     </div>
-    <div id="c07-scr" class="c07-scrim clip" data-start="0" data-duration="60.02"></div>
+    <div id="c07-scr" class="c07-scrim clip" data-start="0" data-duration="61.38"></div>
     <div id="c07-lab" class="c07-label clip" data-start="0.3" data-duration="4.6"><b>باب 7</b><i>خط</i></div>
-    <div id="c07-cp0" class="c07-cap clip" data-start="31.42" data-duration="4.74">ہم طاقت ور اور لڑنے والے لوگ ہیں، آگے فیصلہ آپ کے ہاتھ میں ہے۔</div>
-    <div id="c07-cp1" class="c07-cap clip" data-start="47.98" data-duration="4.08">دیکھتی ہوں کہ میرے ایلچی کیا جواب لے کر پلٹتے ہیں۔&quot;</div>
-    <div id="c07-cp2" class="c07-cap clip" data-start="52.06" data-duration="2.07">دولت کا تحفہ…</div>
-    <div id="c07-cp3" class="c07-cap clip" data-start="54.13" data-duration="4.89">اُس شخص کو جسے اللہ نے سب کچھ دے رکھا تھا۔ وہ کیا جواب دیں گے؟</div>
-    <div id="c07-k0w" class="c07-cardwrap clip" data-start="0.15" data-duration="9.83"><div id="c07-k0" class="c07-card"><div class="c07-ar" dir="rtl" lang="ar">ٱذۡهَب بِّكِتَٰبِي هَٰذَا فَأَلۡقِهۡ إِلَيۡهِمۡ ثُمَّ تَوَلَّ عَنۡهُمۡ فَٱنظُرۡ مَاذَا يَرۡجِعُونَ</div><div class="c07-en c07-urtr" dir="rtl" lang="ur">میرا یہ خط لے جا اور اسے ان لوگوں کی طرف ڈال دے، پھر الگ ہٹ کر دیکھ کہ وہ کیا رد عمل ظاہر کرتے ہیں</div><div class="c07-ref">An-Naml 27:28</div></div></div>
-    <div id="c07-k1w" class="c07-cardwrap clip" data-start="10.50" data-duration="20.12"><div id="c07-k1" class="c07-card"><div class="c07-ar" dir="rtl" lang="ar">إِنَّهُۥ مِن سُلَيۡمَٰنَ وَإِنَّهُۥ بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ</div><div class="c07-en c07-urtr" dir="rtl" lang="ur">وہ سلیمانؑ کی جانب سے ہے اور اللہ رحمٰن و رحیم کے نام سے شروع کیا گیا ہے</div><div class="c07-ref">An-Naml 27:30</div></div></div>
-    <div id="c07-k2w" class="c07-cardwrap clip" data-start="36.21" data-duration="9.81"><div id="c07-k2" class="c07-card"><div class="c07-ar" dir="rtl" lang="ar">قَالَتۡ إِنَّ ٱلۡمُلُوكَ إِذَا دَخَلُواْ قَرۡيَةً أَفۡسَدُوهَا وَجَعَلُوٓاْ أَعِزَّةَ أَهۡلِهَآ أَذِلَّةࣰۚ وَكَذَٰلِكَ يَفۡعَلُونَ</div><div class="c07-en c07-urtr" dir="rtl" lang="ur">بادشاہ جب کسی مُلک میں گھس آتے ہیں تو اسے خراب اور اس کے عزت والوں کو ذلیل کر دیتے ہیں</div><div class="c07-ref">An-Naml 27:34</div></div></div>
+    <div id="c07-cp0" class="c07-cap clip" data-start="30.70" data-duration="4.62">ہم طاقت ور اور لڑنے والے لوگ ہیں، آگے فیصلہ آپ کے ہاتھ میں ہے۔</div>
+    <div id="c07-cp1" class="c07-cap clip" data-start="49.58" data-duration="4.18">دیکھتی ہوں کہ میرے ایلچی کیا جواب لے کر پلٹتے ہیں۔&quot;</div>
+    <div id="c07-cp2" class="c07-cap clip" data-start="53.76" data-duration="1.54">دولت کا تحفہ…</div>
+    <div id="c07-cp3" class="c07-cap clip" data-start="55.30" data-duration="5.08">اُس شخص کو جسے اللہ نے سب کچھ دے رکھا تھا۔ وہ کیا جواب دیں گے؟</div>
+    <div id="c07-k0w" class="c07-cardwrap clip" data-start="0.15" data-duration="10.07"><div id="c07-k0" class="c07-card"><div class="c07-ar" dir="rtl" lang="ar">ٱذۡهَب بِّكِتَٰبِي هَٰذَا فَأَلۡقِهۡ إِلَيۡهِمۡ ثُمَّ تَوَلَّ عَنۡهُمۡ فَٱنظُرۡ مَاذَا يَرۡجِعُونَ</div><div class="c07-en c07-urtr" dir="rtl" lang="ur">میرا یہ خط لے جا اور اسے ان لوگوں کی طرف ڈال دے، پھر الگ ہٹ کر دیکھ کہ وہ کیا رد عمل ظاہر کرتے ہیں</div><div class="c07-ref">An-Naml 27:28</div></div></div>
+    <div id="c07-k1w" class="c07-cardwrap clip" data-start="10.66" data-duration="19.24"><div id="c07-k1" class="c07-card"><div class="c07-ar" dir="rtl" lang="ar">إِنَّهُۥ مِن سُلَيۡمَٰنَ وَإِنَّهُۥ بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ</div><div class="c07-en c07-urtr" dir="rtl" lang="ur">وہ سلیمانؑ کی جانب سے ہے اور اللہ رحمٰن و رحیم کے نام سے شروع کیا گیا ہے</div><div class="c07-ref">An-Naml 27:30</div></div></div>
+    <div id="c07-k2w" class="c07-cardwrap clip" data-start="35.37" data-duration="12.65"><div id="c07-k2" class="c07-card"><div class="c07-ar" dir="rtl" lang="ar">قَالَتۡ إِنَّ ٱلۡمُلُوكَ إِذَا دَخَلُواْ قَرۡيَةً أَفۡسَدُوهَا وَجَعَلُوٓاْ أَعِزَّةَ أَهۡلِهَآ أَذِلَّةࣰۚ وَكَذَٰلِكَ يَفۡعَلُونَ</div><div class="c07-en c07-urtr" dir="rtl" lang="ur">بادشاہ جب کسی مُلک میں گھس آتے ہیں تو اسے خراب اور اس کے عزت والوں کو ذلیل کر دیتے ہیں</div><div class="c07-ref">An-Naml 27:34</div></div></div>
     <div id="c07-fadeIn" class="c07-fade clip" data-start="0" data-duration="0.55" style="opacity:1"></div>
-    <div id="c07-fadeOut" class="c07-fade clip" data-start="59.52" data-duration="0.50" style="opacity:0"></div>
-    <div id="c07-br" class="c07-brand clip" data-start="0" data-duration="60.02">HAQ <span>·</span> STORIES</div>
+    <div id="c07-fadeOut" class="c07-fade clip" data-start="60.88" data-duration="0.50" style="opacity:0"></div>
+    <div id="c07-br" class="c07-brand clip" data-start="0" data-duration="61.38">HAQ <span>·</span> STORIES</div>
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#c07-phsc", {x: 0, y: 0}, {x: 5, y: 3.0, duration: 0.05, yoyo: true, repeat: 16, ease: "none", immediateRender: false}, 53.44);
+    tl.to("#c07-phsc", {x: 0, y: 0, duration: 0.08}, 54.29);
     tl.set("#c07-ph0", {opacity: 1}, 0);
-    tl.fromTo("#c07-ph0", {x: 0, scale: 1.0}, {x: 26, scale: 1.05, duration: 11.05, ease: "none", immediateRender: false}, 0.00);
-    tl.to("#c07-ph0", {opacity: 0, duration: 0.3}, 11.10);
-    tl.fromTo("#c07-ph1", {opacity: 0}, {opacity: 1, duration: 1.00, ease: "sine.inOut", immediateRender: false}, 10.05);
-    tl.fromTo("#c07-ph1", {x: 0, scale: 1.0}, {x: -26, scale: 1.05, duration: 35.35, ease: "none", immediateRender: false}, 10.05);
-    tl.to("#c07-ph1", {opacity: 0, duration: 0.3}, 45.45);
-    tl.fromTo("#c07-ph2", {opacity: 0}, {opacity: 1, duration: 1.00, ease: "sine.inOut", immediateRender: false}, 44.40);
-    tl.fromTo("#c07-ph2", {x: 0, scale: 1.0}, {x: 26, scale: 1.05, duration: 15.62, ease: "none", immediateRender: false}, 44.40);
+    tl.fromTo("#c07-ph0", {x: 0, scale: 1.0}, {x: 26, scale: 1.05, duration: 11.21, ease: "none", immediateRender: false}, 0.00);
+    tl.to("#c07-ph0", {opacity: 0, duration: 0.3}, 11.26);
+    tl.fromTo("#c07-ph1", {opacity: 0}, {opacity: 1, duration: 1.00, ease: "sine.inOut", immediateRender: false}, 10.21);
+    tl.fromTo("#c07-ph1", {x: 0, scale: 1.0}, {x: -26, scale: 1.05, duration: 37.03, ease: "none", immediateRender: false}, 10.21);
+    tl.to("#c07-ph1", {opacity: 0, duration: 0.3}, 47.29);
+    tl.fromTo("#c07-ph2", {opacity: 0}, {opacity: 1, duration: 1.00, ease: "sine.inOut", immediateRender: false}, 46.24);
+    tl.fromTo("#c07-ph2", {x: 0, scale: 1.0}, {x: 26, scale: 1.05, duration: 15.14, ease: "none", immediateRender: false}, 46.24);
     tl.fromTo("#c07-k0w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 0.15);
     tl.fromTo("#c07-k0", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 0.15);
-    tl.fromTo("#c07-k1w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 10.50);
-    tl.fromTo("#c07-k1", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 10.50);
-    tl.fromTo("#c07-k2w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 36.21);
-    tl.fromTo("#c07-k2", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 36.21);
+    tl.fromTo("#c07-k1w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 10.66);
+    tl.fromTo("#c07-k1", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 10.66);
+    tl.fromTo("#c07-k2w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 35.37);
+    tl.fromTo("#c07-k2", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 35.37);
     tl.fromTo("#c07-lab", {opacity: 0, x: -20}, {opacity: 1, x: 0, duration: 0.60, ease: "power2.out", immediateRender: false}, 0.30);
     tl.fromTo("#c07-lab", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 4.40);
-    tl.fromTo("#c07-scene", {scale: 1.0, x: 0}, {scale: 1.06, x: -30, duration: 60.02, ease: "none", immediateRender: false}, 0.00);
+    tl.fromTo("#c07-scene", {scale: 1.0, x: 0}, {scale: 1.06, x: -30, duration: 61.38, ease: "none", immediateRender: false}, 0.00);
     tl.fromTo("#c07-fadeIn", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 0.00);
-    tl.fromTo("#c07-fadeOut", {opacity: 0}, {opacity: 1, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 59.52);
+    tl.fromTo("#c07-fadeOut", {opacity: 0}, {opacity: 1, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 60.88);
     window.__timelines["c07"] = tl;
   </script>
 </template>

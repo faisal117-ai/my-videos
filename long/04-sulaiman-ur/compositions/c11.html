@@ -42,6 +42,9 @@
 
     .c11-ph { position: absolute; left: -60px; top: -34px; width: 2040px; height: 1148px; opacity: 0; }
     .c11-ph img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    #c11-phsc { position: absolute; inset: 0; }
+    .c11-phglow { position: absolute; inset: 0; opacity: 0; mix-blend-mode: screen; pointer-events: none;
+      background: radial-gradient(ellipse 60% 70% at 50% 55%, rgba(255,214,140,0.95) 0%, rgba(255,170,80,0.45) 40%, rgba(0,0,0,0) 75%); }
     .c11-cap { font-family: "Noto Nastaliq Urdu"; font-weight: 400; font-size: 44px; line-height: 1.9; direction: rtl; bottom: 40px; }
     .c11-urtr { font-family: "Noto Nastaliq Urdu"; font-style: normal; font-weight: 400; font-size: 44px; line-height: 1.9; }
     .c11-ctext { font-family: "Noto Nastaliq Urdu"; font-weight: 400; font-size: 60px; line-height: 1.9; direction: rtl; }
@@ -51,43 +54,45 @@
 
   </style>
   <div id="c11" data-composition-id="c11" data-width="1920" data-height="1080">
-    <div id="c11-scene" class="clip" data-start="0" data-duration="47.90" style="position:absolute;inset:0" data-layout-allow-overflow>
-      <div id="c11-cam" class="c11-cam"><div id="c11-ph0" class="c11-ph"><img src="assets/gen/c11a.jpg" alt=""></div><div id="c11-ph1" class="c11-ph"><img src="assets/gen/c11b.jpg" alt=""></div><div id="c11-ph2" class="c11-ph"><img src="assets/gen/c11c.jpg" alt=""></div>
+    <div id="c11-scene" class="clip" data-start="0" data-duration="48.38" style="position:absolute;inset:0" data-layout-allow-overflow>
+      <div id="c11-cam" class="c11-cam"><div id="c11-phsc"><div id="c11-ph0" class="c11-ph"><img src="assets/gen/c11a.jpg" alt=""></div><div id="c11-ph1" class="c11-ph"><img src="assets/gen/c11b.jpg" alt=""></div><div id="c11-ph2" class="c11-ph"><img src="assets/gen/c11c.jpg" alt=""></div></div>
       </div>
     </div>
-    <div id="c11-scr" class="c11-scrim clip" data-start="0" data-duration="47.90"></div>
+    <div id="c11-scr" class="c11-scrim clip" data-start="0" data-duration="48.38"></div>
     <div id="c11-lab" class="c11-label clip" data-start="0.3" data-duration="4.6"><b>باب 11</b><i>عصا</i></div>
-    <div id="c11-cp0" class="c11-cap clip" data-start="0.22" data-duration="4.54">حضرت سلیمان علیہ السلام شکر کے ساتھ حکومت کرتے رہے۔</div>
-    <div id="c11-cp1" class="c11-cap clip" data-start="4.76" data-duration="5.08">اور پھر وہ گھڑی آئی جسے کوئی بادشاہی نہیں روک سکتی۔</div>
-    <div id="c11-cp2" class="c11-cap clip" data-start="24.50" data-duration="5.26">رہے، یہ جانے بغیر کہ ان کا انتقال ہو چکا ہے۔</div>
-    <div id="c11-cp3" class="c11-cap clip" data-start="29.76" data-duration="0.98">&quot;جب وہ گر پڑے…&quot;</div>
-    <div id="c11-cp4" class="c11-cap clip" data-start="42.66" data-duration="1.80">غیب نہیں جانتے تھے۔</div>
-    <div id="c11-cp5" class="c11-cap clip" data-start="44.46" data-duration="2.44">غیب صرف اللہ جانتا ہے۔</div>
-    <div id="c11-k0w" class="c11-cardwrap clip" data-start="9.89" data-duration="12.41"><div id="c11-k0" class="c11-card"><div class="c11-ar" dir="rtl" lang="ar">فَلَمَّا قَضَيۡنَا عَلَيۡهِ ٱلۡمَوۡتَ مَا دَلَّهُمۡ عَلَىٰ مَوۡتِهِۦٓ إِلَّا دَآبَّةُ ٱلۡأَرۡضِ تَأۡكُلُ مِنسَأَتَهُۥۖ</div><div class="c11-en c11-urtr" dir="rtl" lang="ur">جنوں کو اس کی موت کا پتہ دینے والی کوئی چیز اُس گھن کے سوا نہ تھی جو اس کے عصا کو کھا رہا تھا</div><div class="c11-ref">Saba 34:14</div></div></div>
-    <div id="c11-k1w" class="c11-cardwrap clip" data-start="30.79" data-duration="9.07"><div id="c11-k1" class="c11-card"><div class="c11-ar" dir="rtl" lang="ar">فَلَمَّا خَرَّ تَبَيَّنَتِ ٱلۡجِنُّ أَن لَّوۡ كَانُواْ يَعۡلَمُونَ ٱلۡغَيۡبَ مَا لَبِثُواْ فِي ٱلۡعَذَابِ ٱلۡمُهِينِ</div><div class="c11-en c11-urtr" dir="rtl" lang="ur">جنوں پر یہ بات کھل گئی کہ اگر وہ غیب کے جاننے والے ہوتے تو اس ذلت کے عذاب میں مبتلا نہ رہتے</div><div class="c11-ref">Saba 34:14</div></div></div>
+    <div id="c11-cp0" class="c11-cap clip" data-start="0.22" data-duration="4.36">حضرت سلیمان علیہ السلام شکر کے ساتھ حکومت کرتے رہے۔</div>
+    <div id="c11-cp1" class="c11-cap clip" data-start="4.58" data-duration="5.56">اور پھر وہ گھڑی آئی جسے کوئی بادشاہی نہیں روک سکتی۔</div>
+    <div id="c11-cp2" class="c11-cap clip" data-start="24.36" data-duration="4.94">رہے، یہ جانے بغیر کہ ان کا انتقال ہو چکا ہے۔</div>
+    <div id="c11-cp3" class="c11-cap clip" data-start="29.30" data-duration="1.36">&quot;جب وہ گر پڑے…&quot;</div>
+    <div id="c11-cp4" class="c11-cap clip" data-start="40.58" data-duration="4.52">پہلے تخت لانے کی پیشکش کر رہے تھے… غیب نہیں جانتے تھے۔</div>
+    <div id="c11-cp5" class="c11-cap clip" data-start="45.10" data-duration="2.28">غیب صرف اللہ جانتا ہے۔</div>
+    <div id="c11-k0w" class="c11-cardwrap clip" data-start="10.19" data-duration="11.63"><div id="c11-k0" class="c11-card"><div class="c11-ar" dir="rtl" lang="ar">فَلَمَّا قَضَيۡنَا عَلَيۡهِ ٱلۡمَوۡتَ مَا دَلَّهُمۡ عَلَىٰ مَوۡتِهِۦٓ إِلَّا دَآبَّةُ ٱلۡأَرۡضِ تَأۡكُلُ مِنسَأَتَهُۥۖ</div><div class="c11-en c11-urtr" dir="rtl" lang="ur">جنوں کو اس کی موت کا پتہ دینے والی کوئی چیز اُس گھن کے سوا نہ تھی جو اس کے عصا کو کھا رہا تھا</div><div class="c11-ref">Saba 34:14</div></div></div>
+    <div id="c11-k1w" class="c11-cardwrap clip" data-start="30.71" data-duration="8.43"><div id="c11-k1" class="c11-card"><div class="c11-ar" dir="rtl" lang="ar">فَلَمَّا خَرَّ تَبَيَّنَتِ ٱلۡجِنُّ أَن لَّوۡ كَانُواْ يَعۡلَمُونَ ٱلۡغَيۡبَ مَا لَبِثُواْ فِي ٱلۡعَذَابِ ٱلۡمُهِينِ</div><div class="c11-en c11-urtr" dir="rtl" lang="ur">جنوں پر یہ بات کھل گئی کہ اگر وہ غیب کے جاننے والے ہوتے تو اس ذلت کے عذاب میں مبتلا نہ رہتے</div><div class="c11-ref">Saba 34:14</div></div></div>
     <div id="c11-fadeIn" class="c11-fade clip" data-start="0" data-duration="0.55" style="opacity:1"></div>
-    <div id="c11-fadeOut" class="c11-fade clip" data-start="47.40" data-duration="0.50" style="opacity:0"></div>
-    <div id="c11-br" class="c11-brand clip" data-start="0" data-duration="47.90">HAQ <span>·</span> STORIES</div>
+    <div id="c11-fadeOut" class="c11-fade clip" data-start="47.88" data-duration="0.50" style="opacity:0"></div>
+    <div id="c11-br" class="c11-brand clip" data-start="0" data-duration="48.38">HAQ <span>·</span> STORIES</div>
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#c11-phsc", {x: 0, y: 0}, {x: 9, y: 5.4, duration: 0.05, yoyo: true, repeat: 22, ease: "none", immediateRender: false}, 28.88);
+    tl.to("#c11-phsc", {x: 0, y: 0, duration: 0.08}, 30.13);
     tl.set("#c11-ph0", {opacity: 1}, 0);
-    tl.fromTo("#c11-ph0", {x: 0, scale: 1.0}, {x: 26, scale: 1.05, duration: 10.44, ease: "none", immediateRender: false}, 0.00);
-    tl.to("#c11-ph0", {opacity: 0, duration: 0.3}, 10.49);
-    tl.fromTo("#c11-ph1", {opacity: 0}, {opacity: 1, duration: 1.00, ease: "sine.inOut", immediateRender: false}, 9.44);
-    tl.fromTo("#c11-ph1", {x: 0, scale: 1.0}, {x: -26, scale: 1.05, duration: 20.80, ease: "none", immediateRender: false}, 9.44);
-    tl.to("#c11-ph1", {opacity: 0, duration: 0.3}, 30.29);
-    tl.fromTo("#c11-ph2", {opacity: 0}, {opacity: 1, duration: 1.00, ease: "sine.inOut", immediateRender: false}, 29.24);
-    tl.fromTo("#c11-ph2", {x: 0, scale: 1.0}, {x: 26, scale: 1.05, duration: 18.66, ease: "none", immediateRender: false}, 29.24);
-    tl.fromTo("#c11-k0w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 9.89);
-    tl.fromTo("#c11-k0", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 9.89);
-    tl.fromTo("#c11-k1w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 30.79);
-    tl.fromTo("#c11-k1", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 30.79);
+    tl.fromTo("#c11-ph0", {x: 0, scale: 1.0}, {x: 26, scale: 1.05, duration: 10.74, ease: "none", immediateRender: false}, 0.00);
+    tl.to("#c11-ph0", {opacity: 0, duration: 0.3}, 10.79);
+    tl.fromTo("#c11-ph1", {opacity: 0}, {opacity: 1, duration: 1.00, ease: "sine.inOut", immediateRender: false}, 9.74);
+    tl.fromTo("#c11-ph1", {x: 0, scale: 1.0}, {x: -26, scale: 1.05, duration: 20.04, ease: "none", immediateRender: false}, 9.74);
+    tl.to("#c11-ph1", {opacity: 0, duration: 0.3}, 29.83);
+    tl.fromTo("#c11-ph2", {opacity: 0}, {opacity: 1, duration: 1.00, ease: "sine.inOut", immediateRender: false}, 28.78);
+    tl.fromTo("#c11-ph2", {x: 0, scale: 1.0}, {x: 26, scale: 1.05, duration: 19.60, ease: "none", immediateRender: false}, 28.78);
+    tl.fromTo("#c11-k0w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 10.19);
+    tl.fromTo("#c11-k0", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 10.19);
+    tl.fromTo("#c11-k1w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 30.71);
+    tl.fromTo("#c11-k1", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 30.71);
     tl.fromTo("#c11-lab", {opacity: 0, x: -20}, {opacity: 1, x: 0, duration: 0.60, ease: "power2.out", immediateRender: false}, 0.30);
     tl.fromTo("#c11-lab", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 4.40);
-    tl.fromTo("#c11-scene", {scale: 1.0, x: 0}, {scale: 1.06, x: -30, duration: 47.90, ease: "none", immediateRender: false}, 0.00);
+    tl.fromTo("#c11-scene", {scale: 1.0, x: 0}, {scale: 1.06, x: -30, duration: 48.38, ease: "none", immediateRender: false}, 0.00);
     tl.fromTo("#c11-fadeIn", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 0.00);
-    tl.fromTo("#c11-fadeOut", {opacity: 0}, {opacity: 1, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 47.40);
+    tl.fromTo("#c11-fadeOut", {opacity: 0}, {opacity: 1, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 47.88);
     window.__timelines["c11"] = tl;
   </script>
 </template>
