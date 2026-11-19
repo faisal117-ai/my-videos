@@ -72,6 +72,16 @@ Read next: `scripts/channel-plan.md` (start-here index, core message, decisions)
   with isAiGeneratedContent true.
 
 ## Decision of 19 Nov
+- **Schedule change (19 Nov, user):** Ibrahim films moved to Sat 28 (EN) / Sun 29 (UR) 18:30 and become **EP 4**;
+  they are to be rebuilt with Gemini scenes (same narration) and swapped in Metricool before then (old renders
+  are in the slots as placeholders). **Sulaiman (AS) film = EP 3, Sat 21 (EN) / Sun 22 (UR) 18:30**, script in
+  long/04-sulaiman/script.md, waiting for the user's approval before voicing. Nuh film becomes EP 5 (5–6 Dec).
+  The old-session reminders for Ibrahim (trig_011f8…, trig_017D9…, trig_013xr…, trig_019fj…) were moved to
+  28/29 Nov; their texts still say "EP 3" (prompts can only be edited from that session): read them as EP 4.
+- **Shorts ending fixed (19 Nov):** hoopoe, Nuh, idols, sacrifice now end with the voice and card "Watch the full
+  movie… link below" (tools/respeak_last_short.py re-voices only the last line). Earlier Shorts this week still
+  ended "Follow for more." Apply the ending to every new Short.
+- **Captions on photo Shorts:** compact top band (COMPACT_CSS in tools/build_short.py) so the picture is clear.
 - **Every Short and film from now on is made with Gemini scenes** (user's rule; shorts-plan.md rule 9).
 - **Evening Shorts at 17:00 PKT from 20 Nov** (user's choice; Metricool best-time data peaks 16:00, falls after 17:00). Morning Shorts stay 11:00, films stay 18:30. Nuh moved to Fri 20 Nov 17:00.
 - Near-real ordinary people (crowds, soldiers, kings, the man who killed 100…) are now shown in thumbnails and scenes, as a rule (shorts-plan.md film rule 9). Never prophets, the Prophet ﷺ, Companions, righteous women or angels. Film titles lead with a story question.

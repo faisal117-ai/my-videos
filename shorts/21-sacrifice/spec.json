@@ -96,12 +96,13 @@
     },
     {
       "cta": true,
-      "text": "Follow for more.",
-      "ur": "فالو کریں",
+      "text": "Watch the *full movie*, link below.",
+      "ur": "مکمل فلم دیکھیں، لنک نیچے",
       "mood": {
         "warm": 0.12,
         "cool": 0
-      }
+      },
+      "btn": "Full movie ↓"
     }
   ],
   "sound": [

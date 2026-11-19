@@ -75,7 +75,7 @@ def beat_html(i: int, beat: dict, dur: float, spoken: float, accent: str) -> str
         words, n = words_html(beat["text"], bid)
         parts.append(f'<div id="{bid}-cta-mark" class="mark">حق کہانیاں</div>')
         parts.append(f'<div id="{bid}-txt" class="txt cta">{words}</div>')
-        parts.append(f'<div id="{bid}-btn" class="btn">Follow · Haq Stories</div>')
+        parts.append(f'<div id="{bid}-btn" class="btn">{esc(beat.get("btn", "Follow · Haq Stories"))}</div>')
         js.append(f'tl.fromTo("#{bid}-cta-mark", {{opacity: 0, scale: 0.92}}, '
                   f'{{opacity: 1, scale: 1, duration: 0.8, ease: "power2.out"}}, 0);')
         js.append(f'tl.fromTo("#{bid} .w", {{opacity: 0, y: 18}}, {{opacity: 1, y: 0, duration: 0.35, '
