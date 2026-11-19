@@ -1,6 +1,6 @@
 # Short: 24-cave (three men in the cave, Sahih al-Bukhari 2272): upload details
 
-**Status:** being built (Gemini scenes + code effects); waiting for the user's approval before scheduling.
+**Status:** rendered 20 Nov (24-cave.mp4, 1:18, Gemini stills + code effects, no talking clips), mixed -14.5 LUFS; waiting for the user's approval before scheduling. Upload with the AI-content box ticked.
 **Skills run:** yt-script (hook A 62/100, chosen by the user), yt-package (title 100/100), yt-seo (below).
 
 ## Title (yt-package: 37 chars, 100/100)

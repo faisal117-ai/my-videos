@@ -11,6 +11,9 @@ video), `scripts/channel-plan.md`, `scripts/shorts-plan.md`, `scripts/series-pla
   Declan/Peter/Adam audio → talking clip): Kling v2.6 Std Avatar $0.048/s ≈ $1.25 (recommended);
   OmniHuman 1.5 $0.12/s ≈ $3.10; Kling video + Sync lipsync-v3 ≈ $7+. The old assets/gen/talk_s*.mp4 are the
   rejected code-made mouths: replace them, don't reuse.
+- **User's decision (20 Nov): no talking clips for now.** SadTalker (free, CPU) was too slow; Atlas has $0. Shorts
+  and films use Gemini still scenes + code effects, plus the skills and rules as usual. Cave Short rendered
+  (shorts/24-cave/24-cave.mp4), waiting for approval; then schedule it (11:00 or 17:00 PKT slot after Sun 22).
 - **20 Nov 00:xx PKT, START NEW SESSIONS ON THE "my-videos" ENVIRONMENT.** Session session_019ZSVGScBUUkyUorGhVgReh
   opened on "Default", which has no keys: api.atlascloud.ai is blocked there (proxy 403) and the Gemini/ElevenLabs
   keys are missing. A running session can't be moved onto "my-videos", so the cave Short wasn't touched.
