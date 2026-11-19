@@ -7,7 +7,7 @@
 Palak Jhapakte Takht Kisne Laya? Hazrat Sulaiman AS Ka Waqia | Qasas ul Anbiya EP 3 | Urdu/Hindi
 
 ## Description (yt-seo 20 Nov)
-🎥 مکمل فلمیں دیکھیے: حضرت موسیٰؑ (اردو) 👉 https://youtu.be/h59TV5hdSew · حضرت یوسفؑ (اردو) 👉 {UR_YUSUF}
+🎥 مکمل فلمیں دیکھیے: حضرت موسیٰؑ (اردو) 👉 https://youtu.be/h59TV5hdSew · حضرت یوسفؑ (اردو) 👉 https://youtu.be/DSOlTSSiRHs
 Hazrat Sulaiman AS ka mukammal waqia, Quran se, Urdu mein: chyunti, hud hud, Malika Saba (Bilqis) aur palak jhapakte aaya takht.
 हज़रत सुलैमान (अ.स.) का मुकम्मल वाक़िया, क़ुरआन से: चींटी, हुदहुद, मलिका सबा और तख़्त
 

@@ -17,7 +17,7 @@ speakers understand. (No Quran translation in Hindi is quoted here: the package 
 Haq Stories | حق کہانیاں को सब्सक्राइब करें, क़ुरआन से नबियों के क़िस्सों के लिए।
 ```
 
-## EP 2: Hazrat Yusuf (goes live Tue 17 Nov, 7 PM)
+## EP 2: Hazrat Yusuf (https://youtu.be/DSOlTSSiRHs)
 **Title**
 ```
 क़सस-उल-अंबिया EP 2: हज़रत यूसुफ़ (अ.स.) का मुकम्मल वाक़िया | फ़ुल मूवी उर्दू/हिंदी

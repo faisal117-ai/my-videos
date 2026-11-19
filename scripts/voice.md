@@ -26,3 +26,5 @@
   3.2 min recording, works only with eleven_v3) tested best in Urdu (native, 6.3 st expressive), but the user chose
   **C: keep Callum** for everything. Do not switch voices unless the user asks.
 
+
+- **Urdu honorific for two prophets (user, 20 Nov 2026):** use "علیہ السلام" (not "علیہما السلام") in Urdu narration and captions, e.g. "حضرت موسیٰ اور حضرت یوسف علیہ السلام".
