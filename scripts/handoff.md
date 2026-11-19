@@ -72,6 +72,12 @@ Read next: `scripts/channel-plan.md` (start-here index, core message, decisions)
   with isAiGeneratedContent true.
 
 ## Decision of 19 Nov
+- **19 Nov 23:37 PKT:** test Short 22-gardens (Al-Kahf 18:32–42, first real animation: two Gemini Omni 1.2 Flash
+  lip-synced clips of ordinary people; question + held-back answer + pauses + humming + lesson) published now at the
+  user's request, title "Why Did His Garden Disappear Overnight? 🍇", AI box ticked, links to Musa and Yusuf films.
+  Omni request format: POST v1beta/interactions, model gemini-omni-1.2-flash, input [image(b64,mime), text],
+  generation_config.video_config.task "image_to_video", response_modalities "video", background true; poll GET
+  interactions/<id>; no aspect setting (it follows the image). Every Short/film now goes through scripts/checklist.md.
 - **19 Nov evening:** Sulaiman EP 3 EN rendered (10:44), mixed, re-encoded CRF 27 (80 MB, GitHub limit 100 MB;
   raw renders are git-ignored), scheduled in Metricool Sat 21 18:30 with thumbnail-en.jpg and isAiGeneratedContent
   true; reminder trig_011MzyGvnFdPT5WKHemEMjVJ (Sat 18:45, this session). Urdu film (11:41, 85 MB) scheduled Sun 22 18:30 with
