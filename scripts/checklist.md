@@ -9,6 +9,7 @@ Report the result (each line ✅ or ❌ + fix) to the user together with the vid
 - [ ] **Core message**: help, dua, hope, Allah's mercy or gratitude; the turn comes through dua / Allah.
 - [ ] **A real closing lesson** (one clear action for today, or a dua to save), not a throwaway line.
 - [ ] **Honorific on every name** in voice and on screen: alayhis salaam / (AS), alayhimas salaam (two), peace be upon him / ﷺ, Razi Allah hu Anhu / (RA).
+- [ ] **Arabic phrases** (Masha'Allah, la quwwata illa billah, duas, verses): written in Arabic script in the TTS text, transcribed back with speech-to-text, and offered to the user to hear before publishing (user, 19 Nov: Callum mispronounced "la quwwata").
 - [ ] **Only what the Quran / sahih sources say**: no numbers, places or details not in the source; every verse from the package (Sahih International / Maududi) with its reference.
 - [ ] **Ending**: "Watch the full movie(s) of <named film(s)>, link(s) below" + a comment question (pinned).
 
