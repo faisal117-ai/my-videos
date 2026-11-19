@@ -22,15 +22,15 @@ Chapters
 2:47 O My Father
 3:44 The Broken Idols
 5:11 The Fire
-5:51 The King Who Argued
-6:37 Leaving Home
-7:22 The Valley Without Water
-8:41 Show Me How
-9:24 The Dream
-10:26 The Honoured Guests
-11:57 The House
-13:07 The Dua of Ibrahim
-14:02 The Lesson
+5:59 The King Who Argued
+6:44 Leaving Home
+7:29 The Valley Without Water
+8:49 Show Me How
+9:32 The Dream
+10:34 The Honoured Guests
+12:05 The House
+13:14 The Dua of Ibrahim
+14:10 The Lesson
 
 Sources: Al-Anbiya (21), Al-An'am (6), Maryam (19), Al-Baqarah (2), As-Saffat (37), Ibrahim (14), Hud (11), Adh-Dhariyat (51), Al-Hajj (22), An-Nisa (4), Al-Mumtahanah (60); Hajar and Zamzam: Sahih al-Bukhari 3364. English translation: Sahih International. Every quoted verse is shown on screen with its reference.
 
