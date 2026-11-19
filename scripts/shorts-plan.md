@@ -89,6 +89,15 @@ YouTube's rules), and only topics with a sound source.
    generator, with Claude's prompt and headline), and checks the result before it is applied (user's rule, 19 Nov).
 Not copied: sensational, unverifiable stories; hype ("SHOCKED everyone", "TERRIFIED the world").
 
+## Colour rule (user, 19 Nov): bright by default, dark only briefly
+- **Default palette:** daylight, golden hour, warm lamplight; rich detail and strong contrast, in the spirit of the
+  new film thumbnails. No Short spends most of its time in night or muted browns.
+- **Dark only at the moment of hardship,** for a few seconds (the well, the storm, the fire).
+- **At the turn (the dua, Allah's help) the screen brightens**, so the colours tell the core message: darkness,
+  then Allah's light and mercy. The ending and the "Follow for more." card are in full light.
+- **The first frame is always lit** (opening rule). Check the cover frame of every render.
+- A standing rule, not a test (titles and captions are being tested already).
+
 ## A typical week (14 Shorts)
 | | 11:00 | 18:30 |
 |---|---|---|

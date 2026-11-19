@@ -46,6 +46,7 @@ Read next: `scripts/channel-plan.md` (start-here index, core message, decisions)
 - **Films** (scripts/channel-plan.md): hook → 2–3 open loops → each chapter opens with a question → suspense in
   between (chapter cliffhangers, pause and sound before each turn, the answer held back, never invented drama)
   → takeaway → spoken call to the next film + comment question + end screen.
+- **Colours:** bright by default, dark only briefly at the hardship, brighter at the turn (Shorts and films).
 - **Thumbnails:** after every upload, ask the user to change it to YouTube's suggestion (with Claude's prompt and
   headline); the rich split-scene style of thumbs/yt-yusuf-ur-well-throne.png (shorts-plan item 8).
 - **Growth:** no paid promotion of any kind; daily Community post; reply in the first hour; series playlists;

@@ -214,3 +214,6 @@ analytics and improve; hooks and open loops; consistency; playlists and series. 
    well was not the last time his brothers would see him…") → each chapter opens with a question it answers →
    the story with sources, with **suspense in between**: every chapter ends on a cliffhanger (the danger at its height, the question unanswered), a short pause and a sound or music swell before each turn, and the answer held back a few lines; real suspense from the Quran's own story, never invented drama → a takeaway to keep ("Save this dua", one action for today) → a spoken call to the
    next film + one comment question + end screen. Check every film script against this before voicing.
+8. **Colour (user, 19 Nov):** films follow the same colour rule as Shorts (shorts-plan.md): each chapter opens
+   in a bright, warm scene; night and storm scenes are short; the turn brightens the screen; the lesson and the
+   end are in full light.
