@@ -7,7 +7,7 @@
   "text_top": 300,
   "text_bottom": 780,
   "tr_size": 56,
-  "scene": "hoopoe",
+  "scene": "photos",
   "fly_beat": 2,
   "sheba_beat": 3,
   "glass_beat": 4,
@@ -18,7 +18,7 @@
       "sub": "…of a queen who worshipped the sun.",
       "ur": "ایک ننھا پرندہ خبر لایا… ایک ملکہ کی جو سورج کو پوجتی تھی",
       "mood": {
-        "warm": 0.3,
+        "warm": 0.12,
         "cool": 0
       },
       "reveal": false
@@ -36,8 +36,8 @@
       ],
       "ref": "An-Naml 27:20",
       "mood": {
-        "warm": 0.3,
-        "cool": 0.1
+        "warm": 0.12,
+        "cool": 0
       },
       "arabic": "مَالِيَ لَآ أَرَى ٱلۡهُدۡهُدَ أَمۡ كَانَ مِنَ ٱلۡغَآئِبِينَ",
       "translation": "“Why do I not see the hoopoe - or is he among the absent”",
@@ -56,7 +56,7 @@
       ],
       "ref": "An-Naml 27:22",
       "mood": {
-        "warm": 0.4,
+        "warm": 0.12,
         "cool": 0
       },
       "arabic": "وَجِئۡتُكَ مِن سَبَإِۭ بِنَبَإࣲ يَقِينٍ",
@@ -76,7 +76,7 @@
       ],
       "ref": "An-Naml 27:24",
       "mood": {
-        "warm": 0.6,
+        "warm": 0.12,
         "cool": 0
       },
       "arabic": "وَجَدتُّهَا وَقَوۡمَهَا يَسۡجُدُونَ لِلشَّمۡسِ مِن دُونِ ٱللَّهِ",
@@ -96,8 +96,8 @@
       ],
       "ref": "An-Naml 27:44",
       "mood": {
-        "warm": 0.3,
-        "cool": 0.4
+        "warm": 0.12,
+        "cool": 0
       },
       "arabic": "رَبِّ إِنِّي ظَلَمۡتُ نَفۡسِي وَأَسۡلَمۡتُ مَعَ سُلَيۡمَٰنَ لِلَّهِ رَبِّ ٱلۡعَٰلَمِينَ",
       "translation": "“My Lord, indeed I have wronged myself, and I submit with Solomon to Allah, Lord of the worlds”",
@@ -108,8 +108,8 @@
       "text": "Follow for more.",
       "ur": "فالو کریں",
       "mood": {
-        "warm": 0.3,
-        "cool": 0.3
+        "warm": 0.12,
+        "cool": 0
       }
     }
   ],
@@ -173,5 +173,13 @@
       "fade_in": 1.5,
       "fade_out": 2
     }
+  ],
+  "photos": [
+    "assets/gen/s1.jpg",
+    "assets/gen/s2.jpg",
+    "assets/gen/s3.jpg",
+    "assets/gen/s4.jpg",
+    "assets/gen/s5.jpg",
+    "assets/gen/s5.jpg"
   ]
 }

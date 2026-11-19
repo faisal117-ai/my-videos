@@ -7,7 +7,7 @@
   "text_top": 300,
   "text_bottom": 780,
   "tr_size": 56,
-  "scene": "sacrifice",
+  "scene": "photos",
   "dream_beat": 1,
   "ask_beat": 2,
   "reply_beat": 3,
@@ -19,8 +19,8 @@
       "sub": "…and his son said: do as you are commanded.",
       "ur": "ایک باپ نے خواب دیکھا… اور بیٹے نے کہا: جو حکم ملا ہے، کر ڈالیے",
       "mood": {
-        "warm": 0.2,
-        "cool": 0.1
+        "warm": 0.12,
+        "cool": 0
       },
       "reveal": false
     },
@@ -30,8 +30,8 @@
       "ur": "خواب میں دیکھا کہ وہ اپنے بیٹے کو ذبح کر رہے ہیں",
       "ref": "As-Saffat 37:102",
       "mood": {
-        "warm": 0.1,
-        "cool": 0.3
+        "warm": 0.12,
+        "cool": 0
       }
     },
     {
@@ -47,8 +47,8 @@
       ],
       "ref": "As-Saffat 37:102",
       "mood": {
-        "warm": 0.2,
-        "cool": 0.3
+        "warm": 0.12,
+        "cool": 0
       },
       "arabic": "يَٰبُنَيَّ إِنِّيٓ أَرَىٰ فِي ٱلۡمَنَامِ أَنِّيٓ أَذۡبَحُكَ فَٱنظُرۡ مَاذَا تَرَىٰۚ",
       "translation": "“O my son, indeed I have seen in a dream that I [must] sacrifice you, so see what you think”",
@@ -67,8 +67,8 @@
       ],
       "ref": "As-Saffat 37:102",
       "mood": {
-        "warm": 0.3,
-        "cool": 0.3
+        "warm": 0.12,
+        "cool": 0
       },
       "arabic": "يَـٰٓأَبَتِ ٱفۡعَلۡ مَا تُؤۡمَرُۖ سَتَجِدُنِيٓ إِن شَآءَ ٱللَّهُ مِنَ ٱلصَّـٰبِرِينَ",
       "translation": "“O my father, do as you are commanded. You will find me, if Allah wills, of the steadfast”",
@@ -87,8 +87,8 @@
       ],
       "ref": "As-Saffat 37:107",
       "mood": {
-        "warm": 0.6,
-        "cool": 0.2
+        "warm": 0.12,
+        "cool": 0
       },
       "arabic": "وَفَدَيۡنَٰهُ بِذِبۡحٍ عَظِيمࣲ",
       "translation": "“And We ransomed him with a great sacrifice”",
@@ -99,8 +99,8 @@
       "text": "Follow for more.",
       "ur": "فالو کریں",
       "mood": {
-        "warm": 0.3,
-        "cool": 0.3
+        "warm": 0.12,
+        "cool": 0
       }
     }
   ],
@@ -165,5 +165,13 @@
       "fade_in": 1.5,
       "fade_out": 2
     }
+  ],
+  "photos": [
+    "assets/gen/s1.jpg",
+    "assets/gen/s2.jpg",
+    "assets/gen/s3.jpg",
+    "assets/gen/s4.jpg",
+    "assets/gen/s5.jpg",
+    "assets/gen/s5.jpg"
   ]
 }

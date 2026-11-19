@@ -159,7 +159,7 @@ def beat_html(i: int, beat: dict, dur: float, spoken: float, accent: str) -> str
   <style>
     #{bid} {{ position: absolute; inset: 0; }}
     #{bid}-wrap {{ position: absolute; left: {side}px; right: {rail}px; top: {beat["_top"]}px; bottom: {beat["_bottom"]}px;
-      display: flex; flex-direction: column; justify-content: center; gap: 34px; }}
+      display: flex; flex-direction: column; justify-content: {beat.get("_justify", "center")}; gap: {beat.get("_gap", 34)}px; }}
   </style>
   <div id="{bid}" data-composition-id="{bid}" data-width="{W}" data-height="{H}">
     <div id="{bid}-wrap" class="clip" data-start="0" data-duration="{dur:.2f}"{allow}>
@@ -1673,8 +1673,8 @@ def photos_scene(spec, beats, total):
     #phsc { position: absolute; inset: 0; overflow: hidden; }
     .ph { position: absolute; left: -54px; top: -96px; width: 1188px; height: 2112px; opacity: 0; }
     .ph img { width: 100%; height: 100%; object-fit: cover; display: block; }
-    #phshade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0.42) 0%, rgba(0,0,0,0.25) 22%,
-      rgba(0,0,0,0.35) 42%, rgba(0,0,0,0.0) 62%, rgba(0,0,0,0) 80%, rgba(0,0,0,0.35) 100%); }
+    #phshade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.38) 25%,
+      rgba(0,0,0,0.18) 40%, rgba(0,0,0,0.0) 50%, rgba(0,0,0,0) 80%, rgba(0,0,0,0.35) 100%); }
 """
     layers = "".join(f'<div id="ph{i}" class="ph"><img src="{photos[i]}" alt=""></div>' for i in range(len(beats)))
     markup = f"""
@@ -1708,6 +1708,21 @@ def vo_len(spec: dict) -> float:
     with wave.open(str(Path(spec["_dir"], "assets/narration.wav"))) as w:
         return w.getnframes() / w.getframerate() - 0.005
 
+
+# Photo Shorts: all text in a top band (about y 230-760), ~25% smaller, so the picture owns the lower two
+# thirds (YouTube's own UI covers the bottom of a Short anyway). User's request, 19 Nov.
+COMPACT_CSS = """
+      .txt { font-size: 86px !important; text-shadow: 0 3px 18px rgba(0,0,0,0.85); }
+      .txt.hook { font-size: 100px !important; }
+      .hook ~ .sub { font-size: 58px; }
+      .txt.cta { font-size: 74px !important; }
+      .sub { font-size: 54px; text-shadow: 0 3px 14px rgba(0,0,0,0.85); }
+      .ar { font-size: 58px; line-height: 1.75; text-shadow: 0 3px 16px rgba(0,0,0,0.9); }
+      .tr { font-size: 46px !important; text-shadow: 0 3px 14px rgba(0,0,0,0.9); }
+      .ur { font-size: 36px; line-height: 1.85; background: rgba(0,0,0,0.38); padding: 8px 22px 18px; }
+      .ref { font-size: 25px; }
+      .mark { font-size: 96px; }
+      .btn { font-size: 34px; padding: 18px 40px; }"""
 
 def index_html(spec: dict, beats: list, total: float) -> str:
     accent = spec["accent"]
@@ -1767,7 +1782,7 @@ def index_html(spec: dict, beats: list, total: float) -> str:
         color: var(--accent); opacity: 0; }}
       .mark {{ font-family: "Amiri Quran"; font-size: 120px; text-align: center; color: var(--accent); line-height: 1.4; }}
       .btn {{ align-self: center; font-family: Inter; font-weight: 700; font-size: 40px; letter-spacing: 0.08em;
-        color: #120b08; background: var(--accent); border-radius: 999px; padding: 22px 48px; }}
+        color: #120b08; background: var(--accent); border-radius: 999px; padding: 22px 48px; }}{COMPACT_CSS if spec.get("scene") == "photos" else ""}
     </style>
   </head>
   <body>
@@ -1804,6 +1819,8 @@ def main() -> None:
         beats.append({**b, "_text_right": spec.get("text_right", 140), "_top": spec.get("text_top", 330),
                       "_bottom": spec.get("text_bottom", 600), "start": start, "dur": round(end - start, 2),
                       "spoken": t["end"] - t["start"], "mood": b.get("mood", {"warm": 0.3})})
+        if spec.get("scene") == "photos":
+            beats[-1].update({"_top": 250, "_bottom": 1120, "_justify": "flex-start", "_gap": 20})
 
     (d / "compositions").mkdir(exist_ok=True)
     for i, b in enumerate(beats):

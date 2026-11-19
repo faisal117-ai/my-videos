@@ -7,7 +7,7 @@
   "text_top": 300,
   "text_bottom": 780,
   "tr_size": 56,
-  "scene": "flood",
+  "scene": "photos",
   "build_beat": 3,
   "flood_beat": 4,
   "calm_beat": 5,
@@ -18,7 +18,7 @@
       "sub": "…then the flood came.",
       "ur": "ساڑھے نو سو برس دعوت دی… پھر طوفان آ گیا",
       "mood": {
-        "warm": 0.1,
+        "warm": 0.12,
         "cool": 0
       },
       "reveal": false
@@ -36,8 +36,8 @@
       ],
       "ref": "Al-Ankabut 29:14",
       "mood": {
-        "warm": 0.2,
-        "cool": 0.1
+        "warm": 0.12,
+        "cool": 0
       },
       "arabic": "فَلَبِثَ فِيهِمۡ أَلۡفَ سَنَةٍ إِلَّا خَمۡسِينَ عَامࣰا",
       "translation": "“he remained among them a thousand years minus fifty years”",
@@ -56,8 +56,8 @@
       ],
       "ref": "Al-Qamar 54:10",
       "mood": {
-        "warm": 0.3,
-        "cool": 0.2
+        "warm": 0.12,
+        "cool": 0
       },
       "arabic": "فَدَعَا رَبَّهُۥٓ أَنِّي مَغۡلُوبࣱ فَٱنتَصِرۡ",
       "translation": "“So he invoked his Lord, \"Indeed, I am overpowered, so help”",
@@ -76,7 +76,7 @@
       ],
       "ref": "Hud 11:37",
       "mood": {
-        "warm": 0.3,
+        "warm": 0.12,
         "cool": 0
       },
       "arabic": "وَٱصۡنَعِ ٱلۡفُلۡكَ بِأَعۡيُنِنَا وَوَحۡيِنَا",
@@ -89,8 +89,8 @@
       "ur": "آسمان سے موسلا دھار بارش… زمین سے چشمے… اور پہاڑوں جیسی موجیں",
       "ref": "Al-Qamar 54:11–12 · Hud 11:42",
       "mood": {
-        "warm": 0,
-        "cool": 0.2
+        "warm": 0.12,
+        "cool": 0
       }
     },
     {
@@ -106,8 +106,8 @@
       ],
       "ref": "Hud 11:44",
       "mood": {
-        "warm": 0.4,
-        "cool": 0.3
+        "warm": 0.12,
+        "cool": 0
       },
       "arabic": "وَقِيلَ يَـٰٓأَرۡضُ ٱبۡلَعِي مَآءَكِ وَيَٰسَمَآءُ أَقۡلِعِي",
       "translation": "“O earth, swallow your water, and O sky, withhold [your rain]”",
@@ -118,8 +118,8 @@
       "text": "Follow for more.",
       "ur": "فالو کریں",
       "mood": {
-        "warm": 0.3,
-        "cool": 0.3
+        "warm": 0.12,
+        "cool": 0
       }
     }
   ],
@@ -193,5 +193,15 @@
       "fade_in": 1.5,
       "fade_out": 2
     }
-  ]
+  ],
+  "photos": [
+    "assets/gen/s1.jpg",
+    "assets/gen/s2.jpg",
+    "assets/gen/s3.jpg",
+    "assets/gen/s4.jpg",
+    "assets/gen/s5.jpg",
+    "assets/gen/s6.jpg",
+    "assets/gen/s6.jpg"
+  ],
+  "shake_beat": 4
 }
