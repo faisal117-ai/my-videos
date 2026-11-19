@@ -7,7 +7,7 @@
 **When:** Sunday 22 Nov, 6:30 PM PKT
 
 ## Title
-Qasas ul Anbiya EP 3: Hazrat Ibrahim AS Ka Mukammal Waqia | Full Movie in Urdu/Hindi | حضرت ابراہیمؑ
+Aag Thandi Kyun Hui? Hazrat Ibrahim AS Ka Waqia | Qasas ul Anbiya EP 3 | Full Movie in Urdu/Hindi
 
 ## Description
 انہوں نے اتنی بڑی آگ جلائی کہ کوئی اس کے قریب نہ جا سکتا تھا، اور ایک نوجوان کو اس میں پھینک دیا، صرف اس لیے کہ اس نے کہا تھا: میرا رب اللہ ہے۔ اور اللہ نے فرمایا: "اے آگ، ٹھنڈی ہو جا اور سلامتی بن جا ابراہیمؑ پر۔" (الانبیاء 21:69)

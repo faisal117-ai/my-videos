@@ -64,6 +64,11 @@ YouTube's rules), and only topics with a sound source.
    every day, swapping slots daily. Story questions only, never advice questions ("Why Is Charity Powerful?":
    our advice titles went 0 for 14). Same opening rules and length for both. Decide after 2 weeks (~14 each) on
    views and "stayed to watch"; the winner gets 70% or more. Never a title near-identical to theirs or ours.
+   **Films too (user, 19 Nov):** every film title (EN and UR) leads with a story question about its key moment,
+   then the series part ("Thrown Into the Fire… Why Didn't It Burn Him? | Stories of the Prophets EP 3: …";
+   Urdu "Aag Thandi Kyun Hui? Hazrat Ibrahim AS Ka Waqia | Qasas ul Anbiya EP 3 | Full Movie in Urdu/Hindi").
+   Keep the searchable words (prophet's name, "waqia", "Full Movie in Urdu/Hindi") and stay under 100 characters.
+   Compare against the earlier statement-title films (Yusuf, Musa) on CTR and views.
 3. **Companions and righteous people in Shorts,** not only prophets (Umar, Ali, Abu Lubaba, Uwais), their stories
    told by voice, text and places only: **no Companion is ever shown in any form** (user's rule, restated 18 Nov;
    Miracle of Islam draws them as figures with glowing faces, we never do). It also feeds our Companions series.
