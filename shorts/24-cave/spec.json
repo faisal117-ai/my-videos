@@ -1,0 +1,225 @@
+{
+ "accent": "#f2b04a",
+ "embers": false,
+ "motes": 0.35,
+ "mote": "#f6dcae",
+ "flash": 0.0,
+ "bed_volume": 1.0,
+ "hold_end": 1.2,
+ "text_top": 300,
+ "text_bottom": 780,
+ "tr_size": 56,
+ "scene": "photos",
+ "photos": [
+  "assets/gen/s1.jpg",
+  "assets/gen/s2.jpg",
+  "assets/gen/s3.jpg",
+  "assets/gen/s4.jpg",
+  "assets/gen/s5.jpg",
+  "assets/gen/s6.jpg",
+  "assets/gen/s7.jpg",
+  "assets/gen/s8.jpg",
+  "assets/gen/s9.jpg",
+  "assets/gen/s3.jpg",
+  "assets/gen/s10.jpg",
+  "assets/gen/s11.jpg",
+  "assets/gen/s11.jpg"
+ ],
+ "shakes": [
+  {
+   "beat": 0,
+   "at": 0.4,
+   "amp": 12,
+   "dur": 1.4
+  },
+  {
+   "beat": 5,
+   "at": -0.3,
+   "amp": 6,
+   "dur": 0.9
+  },
+  {
+   "beat": 7,
+   "at": -0.3,
+   "amp": 7,
+   "dur": 1.0
+  },
+  {
+   "beat": 10,
+   "at": -0.3,
+   "amp": 10,
+   "dur": 1.6
+  }
+ ],
+ "glows": [
+  {
+   "beat": 5,
+   "at": 0.1,
+   "dur": 2.2,
+   "peak": 0.35
+  },
+  {
+   "beat": 7,
+   "at": 0.1,
+   "dur": 2.4,
+   "peak": 0.5
+  },
+  {
+   "beat": 10,
+   "at": 0.2,
+   "dur": 3.5,
+   "peak": 0.85
+  }
+ ],
+ "beats": [
+  {
+   "text": "Three men, sealed in a cave by a *giant rock*.",
+   "ur": "تین آدمی، ایک بڑے پتھر نے غار میں بند کر دیے",
+   "mood": {
+    "warm": 0,
+    "cool": 0.1
+   },
+   "hook": true,
+   "reveal": false
+  },
+  {
+   "text": "Their only way out: one deed done *only for Allah*. Which deed would you name?",
+   "ur": "باہر نکلنے کا صرف ایک راستہ: وہ عمل جو صرف اللہ کے لیے کیا ہو۔ آپ کون سا عمل پیش کریں گے؟",
+   "mood": {
+    "warm": 0,
+    "cool": 0.1
+   }
+  },
+  {
+   "text": "The Prophet ﷺ told us they said: “Only a deed done for *Allah alone* can save us now.”",
+   "ur": "صرف وہ عمل ہمیں بچا سکتا ہے جو خالص اللہ کے لیے کیا ہو",
+   "mood": {
+    "warm": 0,
+    "cool": 0.1
+   },
+   "ref": "Sahih al-Bukhari 2272"
+  },
+  {
+   "text": "“I never let anyone drink before my *old parents*… I held their milk until dawn.”",
+   "ur": "میں نے کبھی اپنے بوڑھے والدین سے پہلے کسی کو دودھ نہ پلایا… صبح تک دودھ لیے کھڑا رہا",
+   "mood": {
+    "warm": 0.12,
+    "cool": 0
+   },
+   "ref": "Sahih al-Bukhari 2272"
+  },
+  {
+   "text": "“If I did that for You… *move this rock*.”",
+   "ur": "اگر میں نے یہ تیرے لیے کیا… تو یہ پتھر ہٹا دے",
+   "mood": {
+    "warm": 0,
+    "cool": 0.1
+   },
+   "ref": "Sahih al-Bukhari 2272"
+  },
+  {
+   "text": "The rock moved… *a little*.",
+   "ur": "پتھر تھوڑا سا ہٹا…",
+   "mood": {
+    "warm": 0,
+    "cool": 0.1
+   },
+   "ref": "Sahih al-Bukhari 2272"
+  },
+  {
+   "text": "“I left a sin, only out of *fear of You*.”",
+   "ur": "میں نے صرف تیرے ڈر سے ایک گناہ چھوڑ دیا",
+   "mood": {
+    "warm": 0,
+    "cool": 0.1
+   },
+   "ref": "Sahih al-Bukhari 2272"
+  },
+  {
+   "text": "It moved again… *still not enough*.",
+   "ur": "پتھر پھر ہٹا… مگر ابھی بھی راستہ نہ بنا",
+   "mood": {
+    "warm": 0,
+    "cool": 0.1
+   },
+   "ref": "Sahih al-Bukhari 2272"
+  },
+  {
+   "text": "“I grew a worker’s forgotten wage into a *whole herd*… and gave him all of it.”",
+   "ur": "میں نے ایک مزدور کی رہ جانے والی مزدوری کو پورا ریوڑ بنا دیا… اور سب اسے دے دیا",
+   "mood": {
+    "warm": 0.12,
+    "cool": 0
+   },
+   "ref": "Sahih al-Bukhari 2272"
+  },
+  {
+   "text": "“If I did that for You… *move this rock*.”",
+   "ur": "اگر میں نے یہ تیرے لیے کیا… تو یہ پتھر ہٹا دے",
+   "mood": {
+    "warm": 0,
+    "cool": 0.1
+   },
+   "ref": "Sahih al-Bukhari 2272"
+  },
+  {
+   "text": "The rock rolled away… *into the light*.",
+   "ur": "پتھر لڑھک گیا… اور وہ روشنی میں نکل آئے",
+   "mood": {
+    "warm": 0.12,
+    "cool": 0
+   },
+   "ref": "Sahih al-Bukhari 2272"
+  },
+  {
+   "text": "A good deed no one sees… *Allah sees*. Do one today, only for Him.",
+   "ur": "وہ نیکی جو کوئی نہیں دیکھتا… اللہ دیکھتا ہے۔ آج ایک نیکی صرف اسی کے لیے کریں",
+   "mood": {
+    "warm": 0.12,
+    "cool": 0
+   }
+  },
+  {
+   "text": "Watch the full movies of *Prophet Musa (AS)* and *Prophet Yusuf (AS)*, links below.",
+   "ur": "حضرت موسیٰؑ اور حضرت یوسفؑ کی مکمل فلمیں دیکھیں، لنک نیچے",
+   "mood": {
+    "warm": 0.12,
+    "cool": 0
+   },
+   "cta": true,
+   "btn": "Full movies ↓"
+  }
+ ],
+ "sound": [
+  {
+   "prompt": "lib",
+   "src": "assets/cave_bed.wav",
+   "beat": 0,
+   "offset": 0,
+   "dur": 77.6,
+   "gain": -12,
+   "fade_in": 0.02,
+   "fade_out": 1.5
+  },
+  {
+   "prompt": "lib",
+   "src": "../03-cave/assets/sfx/1a9908bb62c8.mp3",
+   "beat": 2,
+   "offset": 0.5,
+   "dur": 20,
+   "gain": -19,
+   "fade_in": 3,
+   "fade_out": 2.5
+  },
+  {
+   "prompt": "lib",
+   "src": "../04-ease/assets/sfx/ed4334fb2fbf.mp3",
+   "beat": 10,
+   "offset": 0.3,
+   "dur": 22,
+   "gain": -18,
+   "fade_in": 2,
+   "fade_out": 2.5
+  }
+ ]
+}

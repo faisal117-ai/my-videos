@@ -1705,6 +1705,26 @@ def photos_scene(spec, beats, total):
         s0 = beats[sb]["start"] + 0.3
         js.append(f'tl.fromTo("#phsc", {{x: 0}}, {{x: 7, duration: 0.05, yoyo: true, repeat: 40, immediateRender: false}}, {s0:.2f});')
         js.append(f'tl.to("#phsc", {{x: 0, duration: 0.05}}, {s0 + 2.1:.2f});')
+    # More code-made effects: "shakes": [{"beat", "at", "amp", "dur"}] (rock hits, rumbles) and
+    # "glows": [{"beat", "at", "dur", "peak"}] (a warm light bloom, e.g. a door of light opening).
+    for k, s in enumerate(spec.get("shakes", [])):
+        s0, amp, dur = beats[s["beat"]]["start"] + s.get("at", 0), s.get("amp", 8), s.get("dur", 1.2)
+        reps = max(2, int(dur / 0.05)) // 2 * 2
+        js.append(f'tl.fromTo("#phsc", {{x: 0, y: 0}}, {{x: {amp}, y: {amp * 0.6:.1f}, duration: 0.05, yoyo: true, repeat: {reps}, '
+                  f'ease: "none", immediateRender: false}}, {s0:.2f});')
+        js.append(f'tl.to("#phsc", {{x: 0, y: 0, duration: 0.08}}, {s0 + dur + 0.05:.2f});')
+    glows = spec.get("glows", [])
+    if glows:
+        css += """
+    .phglow { position: absolute; inset: 0; opacity: 0; mix-blend-mode: screen;
+      background: radial-gradient(ellipse 70% 55% at 50% 62%, rgba(255,214,140,0.95) 0%, rgba(255,170,80,0.45) 40%, rgba(0,0,0,0) 75%); }
+"""
+        markup = markup.replace('<div id="phshade"></div>',
+                                "".join(f'<div id="phg{k}" class="phglow"></div>' for k in range(len(glows))) + '<div id="phshade"></div>')
+        for k, g in enumerate(glows):
+            g0, gd = beats[g["beat"]]["start"] + g.get("at", 0), g.get("dur", 2.5)
+            js.append(f'tl.fromTo("#phg{k}", {{opacity: 0}}, {{keyframes: [{{opacity: {g.get("peak", 0.8)}, duration: {gd * 0.35:.2f}, ease: "power2.out"}}, '
+                      f'{{opacity: 0, duration: {gd * 0.65:.2f}, ease: "sine.in"}}], immediateRender: false}}, {g0:.2f});')
     return css, markup, "\n    ".join(js)
 
 
