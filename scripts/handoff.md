@@ -4,6 +4,10 @@ Read next: root `CLAUDE.md` (standing rules + which skill runs at each step), `s
 video), `scripts/channel-plan.md`, `scripts/shorts-plan.md`, `scripts/series-plan.md`, `scripts/voice.md`.
 
 ## NOW (19 Nov night): the current state in one place
+- **20 Nov 00:xx PKT, START NEW SESSIONS ON THE "my-videos" ENVIRONMENT.** Session session_019ZSVGScBUUkyUorGhVgReh
+  opened on "Default", which has no keys: api.atlascloud.ai is blocked there (proxy 403) and the Gemini/ElevenLabs
+  keys are missing. A running session can't be moved onto "my-videos", so the cave Short wasn't touched.
+  "my-videos" holds secrets for Atlas, ElevenLabs and Gemini but **none for Sync (mcp.sync.so)** yet.
 - **Process rules the user insists on** (they were upset when rules were missed): run checklist.md on every video
   and report each line; use every applicable skill without being reminded (CLAUDE.md table); only what the source
   says; ask before publishing; push to the branch and main after every change; the user is on an iPhone only.
