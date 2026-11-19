@@ -1,0 +1,56 @@
+[
+ {
+  "img": "assets/gen/s4.jpg",
+  "out": "assets/gen/talk_s4.mp4",
+  "t0": 22.69,
+  "dur": 8.61,
+  "mouth": [
+   901,
+   1127
+  ],
+  "w": 14,
+  "drop": 4,
+  "speech": [
+   [
+    23.818,
+    30.448
+   ]
+  ]
+ },
+ {
+  "img": "assets/gen/s5.jpg",
+  "out": "assets/gen/talk_s5.mp4",
+  "t0": 30.7,
+  "dur": 4.62,
+  "mouth": [
+   588,
+   1040
+  ],
+  "w": 22,
+  "drop": 5,
+  "speech": [
+   [
+    30.848,
+    33.467
+   ]
+  ]
+ },
+ {
+  "img": "assets/gen/s3.jpg",
+  "out": "assets/gen/talk_s3.mp4",
+  "t0": 51.85,
+  "dur": 4.96,
+  "mouth": [
+   776,
+   985
+  ],
+  "w": 16,
+  "drop": 4,
+  "speech": [
+   [
+    52.003,
+    54.761
+   ]
+  ]
+ }
+]
