@@ -8,9 +8,9 @@
   "text_bottom": 780,
   "tr_size": 56,
   "scene": "flood",
-  "build_beat": 2,
-  "flood_beat": 3,
-  "calm_beat": 4,
+  "build_beat": 3,
+  "flood_beat": 4,
+  "calm_beat": 5,
   "beats": [
     {
       "hook": true,
@@ -42,6 +42,26 @@
       "arabic": "فَلَبِثَ فِيهِمۡ أَلۡفَ سَنَةٍ إِلَّا خَمۡسِينَ عَامࣰا",
       "translation": "“he remained among them a thousand years minus fifty years”",
       "ur": "وہ پچاس کم ایک ہزار برس اُن کے درمیان رہا"
+    },
+    {
+      "q": "54:10",
+      "ar_words": [
+        1,
+        5
+      ],
+      "en": "So he invoked his Lord, \"Indeed, I am overpowered, so help",
+      "ur_a": [
+        "اُس نے",
+        "ہو چکا"
+      ],
+      "ref": "Al-Qamar 54:10",
+      "mood": {
+        "warm": 0.3,
+        "cool": 0.2
+      },
+      "arabic": "فَدَعَا رَبَّهُۥٓ أَنِّي مَغۡلُوبࣱ فَٱنتَصِرۡ",
+      "translation": "“So he invoked his Lord, \"Indeed, I am overpowered, so help”",
+      "ur": "اُس نے اپنے رب کو پکارا کہ میں مغلوب ہو چکا"
     },
     {
       "q": "11:37",
@@ -126,7 +146,7 @@
     },
     {
       "prompt": "wooden hammering and sawing, a large wooden ship being built, wind",
-      "beat": 2,
+      "beat": 3,
       "offset": 0,
       "dur": 7,
       "gain": -11,
@@ -136,7 +156,7 @@
     {
       "prompt": "lib",
       "src": "../04-ease/assets/sfx/3835e3c98c45.mp3",
-      "beat": 3,
+      "beat": 4,
       "offset": 0,
       "dur": 9,
       "gain": -8,
@@ -146,7 +166,7 @@
     {
       "prompt": "lib",
       "src": "../04-ease/assets/sfx/13fce06b48a0.mp3",
-      "beat": 3,
+      "beat": 4,
       "offset": 0.8,
       "dur": 4,
       "gain": -7,
@@ -156,7 +176,7 @@
     {
       "prompt": "lib",
       "src": "../04-ease/assets/sfx/61e97fb787a5.mp3",
-      "beat": 4,
+      "beat": 5,
       "offset": 0,
       "dur": 10,
       "gain": -13,
@@ -166,7 +186,7 @@
     {
       "prompt": "lib",
       "src": "../04-ease/assets/sfx/ed4334fb2fbf.mp3",
-      "beat": 4,
+      "beat": 5,
       "offset": 0,
       "dur": 10,
       "gain": -14,

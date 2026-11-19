@@ -84,6 +84,26 @@
       "ur": "آخر کار ہم نے اسے اور اس کے گھر کو زمین میں دَھنسا دیا"
     },
     {
+      "q": "28:82",
+      "ar_words": [
+        16,
+        22
+      ],
+      "en": "If not that Allah had conferred favor on us, He would have caused it to swallow us",
+      "ur_a": [
+        "اگر اللہ",
+        "دَھنسا دیتا"
+      ],
+      "ref": "Al-Qasas 28:82",
+      "mood": {
+        "warm": 0.6,
+        "cool": 0
+      },
+      "arabic": "لَوۡلَآ أَن مَّنَّ ٱللَّهُ عَلَيۡنَا لَخَسَفَ بِنَاۖ",
+      "translation": "“If not that Allah had conferred favor on us, He would have caused it to swallow us”",
+      "ur": "اگر اللہ نے ہم پر احسان نہ کیا ہوتا تو ہمیں بھی زمین میں دَھنسا دیتا"
+    },
+    {
       "cta": true,
       "text": "Follow for more.",
       "ur": "فالو کریں",

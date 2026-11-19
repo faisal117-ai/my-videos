@@ -94,6 +94,26 @@
       "ur": "بلکہ یہ سب کچھ ان کے اس سردار نے کیا ہے، اِن ہی سے پوچھ لو اگر یہ بولتے ہوں"
     },
     {
+      "q": "21:69",
+      "ar_words": [
+        1,
+        7
+      ],
+      "en": "O fire, be coolness and safety upon Abraham",
+      "ur_a": [
+        "اے آگ",
+        "ابراہیمؑ پر"
+      ],
+      "ref": "Al-Anbiya 21:69",
+      "mood": {
+        "warm": 0.7,
+        "cool": 0.3
+      },
+      "arabic": "قُلۡنَا يَٰنَارُ كُونِي بَرۡدࣰا وَسَلَٰمًا عَلَىٰٓ إِبۡرَٰهِيمَ",
+      "translation": "“O fire, be coolness and safety upon Abraham [Ibrahim]”",
+      "ur": "اے آگ، ٹھنڈی ہو جا اور سلامتی بن جا ابراہیمؑ پر"
+    },
+    {
       "cta": true,
       "text": "Follow for more.",
       "ur": "فالو کریں",

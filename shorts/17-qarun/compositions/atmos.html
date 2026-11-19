@@ -28,9 +28,9 @@
     #brand span { color: #f2b04a; }
   </style>
   <div id="atmos" data-composition-id="atmos" data-width="1080" data-height="1920" data-layout-allow-overflow>
-    <div id="sky" class="clip" data-start="0" data-duration="30.27"></div>
+    <div id="sky" class="clip" data-start="0" data-duration="37.05"></div>
 
-    <div id="qarunsc" class="clip" data-start="0" data-duration="30.27">
+    <div id="qarunsc" class="clip" data-start="0" data-duration="37.05">
       <div id="qsky"></div><div id="qgold"></div>
       <svg id="qpal" viewBox="0 0 1080 1920"><g id="qp">
         <path d="M 200 1520 L 200 1260 L 260 1260 L 260 1200 L 340 1200 L 340 1260 L 740 1260 L 740 1200 L 820 1200 L 820 1260 L 880 1260 L 880 1520 Z" fill="#2a1a10"/>
@@ -43,50 +43,53 @@
       <svg id="qcrack" viewBox="0 0 1080 1920"><path d="M 0 1660 L 160 1690 L 260 1650 L 420 1700 L 560 1640 L 700 1710 L 860 1650 L 1080 1690" stroke="#000" stroke-width="22" fill="none"/></svg>
       <div id="qdust"></div>
     </div>
-    <div id="warm" class="clip" data-start="0" data-duration="30.27"><div id="warm-g" style="opacity:0.5"><div id="warm-b"></div></div></div>
-    <div id="cool" class="clip" data-start="0" data-duration="30.27"><div id="cool-g" style="opacity:0"></div></div>
-    <div id="embers" class="clip" data-start="0" data-duration="30.27"><div id="embers-g" style="opacity:0.70">
+    <div id="warm" class="clip" data-start="0" data-duration="37.05"><div id="warm-g" style="opacity:0.5"><div id="warm-b"></div></div></div>
+    <div id="cool" class="clip" data-start="0" data-duration="37.05"><div id="cool-g" style="opacity:0"></div></div>
+    <div id="embers" class="clip" data-start="0" data-duration="37.05"><div id="embers-g" style="opacity:0.70">
       
     </div></div>
-    <div id="vig" class="clip" data-start="0" data-duration="30.27"></div>
+    <div id="vig" class="clip" data-start="0" data-duration="37.05"></div>
     <div id="flash-host" class="clip" data-start="0" data-duration="0.6"><div id="flash"></div></div>
-    <div id="brand" class="clip" data-start="0" data-duration="30.27">HAQ <span>·</span> STORIES</div>
+    <div id="brand" class="clip" data-start="0" data-duration="37.05">HAQ <span>·</span> STORIES</div>
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
     tl.fromTo("#flash", {opacity: 0.4}, {opacity: 0, duration: 0.55, ease: "power2.out"}, 0);
-    tl.fromTo("#qgold", {opacity: 0.7}, {opacity: 1, duration: 0.60, ease: "sine.inOut", yoyo: true, repeat: 51}, 0.00);
-    tl.fromTo("#qkeys", {opacity: 0}, {opacity: 1, duration: 0.8, ease: "sine.inOut", immediateRender: false}, 4.74);
-    tl.fromTo("#qkeys", {opacity: 1}, {opacity: 0, duration: 0.6, ease: "sine.inOut", immediateRender: false}, 15.00);
-    tl.fromTo("#qpar", {opacity: 0}, {opacity: 1, duration: 0.5, ease: "sine.inOut", immediateRender: false}, 15.30);
-    tl.fromTo("#qprow", {x: -400}, {x: 500, duration: 8.03, ease: "none", immediateRender: false}, 15.30);
-    tl.fromTo("#qpar", {opacity: 1}, {opacity: 0, duration: 0.4, ease: "sine.inOut", immediateRender: false}, 23.33);
-    tl.fromTo("#qcrack", {opacity: 0}, {opacity: 1, duration: 0.3, ease: "sine.inOut", immediateRender: false}, 24.85);
-    tl.fromTo("#qp", {y: 0}, {y: 520, duration: 2.6, ease: "power2.in", immediateRender: false}, 25.05);
-    tl.fromTo("#qarunsc", {x: 0}, {x: 6, duration: 0.05, yoyo: true, repeat: 50, immediateRender: false}, 24.85);
-    tl.to("#qarunsc", {x: 0, duration: 0.05}, 27.45);
-    tl.fromTo("#qdust", {opacity: 0}, {opacity: 1, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 25.45);
-    tl.fromTo("#qgold", {opacity: 1}, {opacity: 0, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 25.45);
-    tl.fromTo("#warm-b", {scaleY: 1}, {scaleY: 1.06, duration: 0.8, ease: "sine.inOut", yoyo: true, repeat: 18}, 0);
-    tl.fromTo("#warm-g", {opacity: 0.5}, {opacity: 0.6, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 4.24);
-    tl.fromTo("#cool-g", {opacity: 0}, {opacity: 0, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 4.24);
-    tl.fromTo("#embers-g", {opacity: 0.70}, {opacity: 0.84, duration: 0.9, immediateRender: false}, 4.24);
-    tl.fromTo("#warm-g", {opacity: 0.6}, {opacity: 0.5, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 10.81);
-    tl.fromTo("#cool-g", {opacity: 0}, {opacity: 0, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 10.81);
-    tl.fromTo("#embers-g", {opacity: 0.84}, {opacity: 0.70, duration: 0.9, immediateRender: false}, 10.81);
-    tl.fromTo("#warm-g", {opacity: 0.5}, {opacity: 0.6, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 15.30);
-    tl.fromTo("#cool-g", {opacity: 0}, {opacity: 0, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 15.30);
-    tl.fromTo("#embers-g", {opacity: 0.70}, {opacity: 0.84, duration: 0.9, immediateRender: false}, 15.30);
-    tl.fromTo("#warm-g", {opacity: 0.6}, {opacity: 0.2, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 23.33);
-    tl.fromTo("#cool-g", {opacity: 0}, {opacity: 0.2, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 23.33);
-    tl.fromTo("#embers-g", {opacity: 0.84}, {opacity: 0.28, duration: 0.9, immediateRender: false}, 23.33);
-    tl.fromTo("#warm-g", {opacity: 0.2}, {opacity: 0.3, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 28.28);
-    tl.fromTo("#cool-g", {opacity: 0.2}, {opacity: 0.3, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 28.28);
-    tl.fromTo("#embers-g", {opacity: 0.28}, {opacity: 0.42, duration: 0.9, immediateRender: false}, 28.28);
+    tl.fromTo("#qgold", {opacity: 0.7}, {opacity: 1, duration: 0.60, ease: "sine.inOut", yoyo: true, repeat: 62}, 0.00);
+    tl.fromTo("#qkeys", {opacity: 0}, {opacity: 1, duration: 0.8, ease: "sine.inOut", immediateRender: false}, 4.62);
+    tl.fromTo("#qkeys", {opacity: 1}, {opacity: 0, duration: 0.6, ease: "sine.inOut", immediateRender: false}, 14.55);
+    tl.fromTo("#qpar", {opacity: 0}, {opacity: 1, duration: 0.5, ease: "sine.inOut", immediateRender: false}, 14.85);
+    tl.fromTo("#qprow", {x: -400}, {x: 500, duration: 7.54, ease: "none", immediateRender: false}, 14.85);
+    tl.fromTo("#qpar", {opacity: 1}, {opacity: 0, duration: 0.4, ease: "sine.inOut", immediateRender: false}, 22.39);
+    tl.fromTo("#qcrack", {opacity: 0}, {opacity: 1, duration: 0.3, ease: "sine.inOut", immediateRender: false}, 23.82);
+    tl.fromTo("#qp", {y: 0}, {y: 520, duration: 2.6, ease: "power2.in", immediateRender: false}, 24.02);
+    tl.fromTo("#qarunsc", {x: 0}, {x: 6, duration: 0.05, yoyo: true, repeat: 50, immediateRender: false}, 23.82);
+    tl.to("#qarunsc", {x: 0, duration: 0.05}, 26.42);
+    tl.fromTo("#qdust", {opacity: 0}, {opacity: 1, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 24.42);
+    tl.fromTo("#qgold", {opacity: 1}, {opacity: 0, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 24.42);
+    tl.fromTo("#warm-b", {scaleY: 1}, {scaleY: 1.06, duration: 0.8, ease: "sine.inOut", yoyo: true, repeat: 23}, 0);
+    tl.fromTo("#warm-g", {opacity: 0.5}, {opacity: 0.6, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 4.12);
+    tl.fromTo("#cool-g", {opacity: 0}, {opacity: 0, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 4.12);
+    tl.fromTo("#embers-g", {opacity: 0.70}, {opacity: 0.84, duration: 0.9, immediateRender: false}, 4.12);
+    tl.fromTo("#warm-g", {opacity: 0.6}, {opacity: 0.5, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 10.26);
+    tl.fromTo("#cool-g", {opacity: 0}, {opacity: 0, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 10.26);
+    tl.fromTo("#embers-g", {opacity: 0.84}, {opacity: 0.70, duration: 0.9, immediateRender: false}, 10.26);
+    tl.fromTo("#warm-g", {opacity: 0.5}, {opacity: 0.6, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 14.85);
+    tl.fromTo("#cool-g", {opacity: 0}, {opacity: 0, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 14.85);
+    tl.fromTo("#embers-g", {opacity: 0.70}, {opacity: 0.84, duration: 0.9, immediateRender: false}, 14.85);
+    tl.fromTo("#warm-g", {opacity: 0.6}, {opacity: 0.2, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 22.39);
+    tl.fromTo("#cool-g", {opacity: 0}, {opacity: 0.2, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 22.39);
+    tl.fromTo("#embers-g", {opacity: 0.84}, {opacity: 0.28, duration: 0.9, immediateRender: false}, 22.39);
+    tl.fromTo("#warm-g", {opacity: 0.2}, {opacity: 0.6, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 27.16);
+    tl.fromTo("#cool-g", {opacity: 0.2}, {opacity: 0, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 27.16);
+    tl.fromTo("#embers-g", {opacity: 0.28}, {opacity: 0.84, duration: 0.9, immediateRender: false}, 27.16);
+    tl.fromTo("#warm-g", {opacity: 0.6}, {opacity: 0.3, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 35.03);
+    tl.fromTo("#cool-g", {opacity: 0}, {opacity: 0.3, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 35.03);
+    tl.fromTo("#embers-g", {opacity: 0.84}, {opacity: 0.42, duration: 0.9, immediateRender: false}, 35.03);
     const et = gsap.timeline({ paused: true });
     
     // Sparks are already mid-flight on frame 0: play their own timeline from 7 s in.
-    tl.add(et.tweenFromTo(7, 37.27, { ease: "none" }), 0);
+    tl.add(et.tweenFromTo(7, 44.05, { ease: "none" }), 0);
     window.__timelines["atmos"] = tl;
   </script>
 </template>
