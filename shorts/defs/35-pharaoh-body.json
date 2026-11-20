@@ -1,0 +1,116 @@
+{
+ "id": "35-pharaoh-body",
+ "lines": [
+  "At the last moment, Pharaoh said: I believe. Allah's answer is still in the Quran.",
+  "When drowning overtook him, he said: I believe that there is no deity except the One in whom the Children of Israel believe.",
+  "Now? And you had disobeyed before, and were of the corrupters?",
+  "So today We will save you in body, that you may be a sign to those who come after you.",
+  "Don't wait for the last moment to turn to Allah. Turn today.",
+  "Watch the full movie of Prophet Musa, alayhis salaam... link below."
+ ],
+ "beats": [
+  {
+   "hook": true,
+   "text": "At the last moment, Pharaoh said: *“I believe.”*",
+   "sub": "Allah's answer is still in the Quran.",
+   "ur": "آخری لمحے فرعون نے کہا: میں ایمان لایا",
+   "mood": {
+    "warm": 0.1,
+    "cool": 0.1
+   },
+   "reveal": false
+  },
+  {
+   "q": "10:90",
+   "ar_words": [
+    10,
+    24
+   ],
+   "en": "until, when drowning overtook him, he said, \"I believe that there is no deity except that in whom the Children of Israel believe",
+   "ur_a": [
+    "حتیٰ کہ جب",
+    "بنی اسرائیل ایمان لائے"
+   ],
+   "ref": "Yunus 10:90",
+   "mood": {
+    "warm": 0.0,
+    "cool": 0.15
+   }
+  },
+  {
+   "q": "10:91",
+   "ar_words": [
+    1,
+    7
+   ],
+   "en": "Now? And you had disobeyed [Him] before and were of the corrupters",
+   "ur_a": [
+    "اب ایمان لاتا ہے",
+    "والوں میں سے تھا"
+   ],
+   "ref": "Yunus 10:91",
+   "mood": {
+    "warm": 0.0,
+    "cool": 0.12
+   }
+  },
+  {
+   "q": "10:92",
+   "ar_words": [
+    1,
+    7
+   ],
+   "en": "So today We will save you in body that you may be to those who succeed you a sign",
+   "ur_a": [
+    "اب تو ہم",
+    "نشان عبرت بنے"
+   ],
+   "ref": "Yunus 10:92",
+   "mood": {
+    "warm": 0.1,
+    "cool": 0
+   }
+  },
+  {
+   "text": "Don't wait for the last moment. *Turn to Allah today.*",
+   "ur": "آخری لمحے کا انتظار نہ کریں۔ آج اللہ کی طرف رجوع کریں",
+   "mood": {
+    "warm": 0.25,
+    "cool": 0
+   }
+  },
+  {
+   "cta": true,
+   "text": "Watch the full movie of *Prophet Musa (AS)*, link below.",
+   "ur": "حضرت موسیٰ علیہ السلام کی مکمل فلم دیکھیں، لنک نیچے",
+   "mood": {
+    "warm": 0.25,
+    "cool": 0
+   },
+   "btn": "Full movie ↓"
+  }
+ ],
+ "photos": [
+  "s1",
+  "s2",
+  "s3",
+  "s4",
+  "s5",
+  "s1"
+ ],
+ "scenes": {
+  "style": "High-quality 3D animated feature film still, close to photoreal (modern big-studio animation look), rich detail, cinematic lighting and depth of field. Vertical 9:16, keep the top third fairly simple and dark-to-plain (text sits there), the action in the lower two thirds. Ancient Egypt and the Red Sea, long ago. Absolutely no prophet shown.",
+  "scenes": {
+   "s1": "The parted sea closing back with huge crashing waves under a stormy dawn sky, chariots' wheels and spears tumbling in the water, dramatic. No faces.",
+   "s2": "Dark churning sea waves at dawn with a broken golden crown floating on the surface, dramatic light breaking through clouds. No people.",
+   "s3": "An empty golden throne in a dim Egyptian palace hall with tall columns and hieroglyphs, dust in a beam of light, abandoned. No people.",
+   "s4": "An empty ancient sea shore at dawn, gentle waves washing over wet sand where the sea has calmed after a storm, broken spears half buried. No people, no bodies.",
+   "s5": "Bright calm sea at sunrise with gentle waves on a sandy shore, birds flying, hopeful golden light. No people."
+  }
+ },
+ "pauses": {
+  "2": 0.8
+ },
+ "turn": 2,
+ "hum": 4
+}

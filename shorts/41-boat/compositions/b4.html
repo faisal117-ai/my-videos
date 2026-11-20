@@ -1,0 +1,24 @@
+<template>
+  <style>
+    #b4 { position: absolute; inset: 0; }
+    #b4-wrap { position: absolute; left: 60px; right: 60px; top: 250px; bottom: 1120px;
+      display: flex; flex-direction: column; justify-content: flex-start; gap: 20px; }
+  </style>
+  <div id="b4" data-composition-id="b4" data-width="1080" data-height="1920">
+    <div id="b4-wrap" class="clip" data-start="0" data-duration="10.99">
+      <div id="b4-ar" class="ar" dir="rtl" lang="ar">أَمَّا ٱلسَّفِينَةُ فَكَانَتۡ لِمَسَٰكِينَ يَعۡمَلُونَ فِي ٱلۡبَحۡرِ فَأَرَدتُّ أَنۡ أَعِيبَهَا وَكَانَ وَرَآءَهُم مَّلِكࣱ يَأۡخُذُ كُلَّ سَفِينَةٍ غَصۡبࣰا</div>
+      <div id="b4-tr" class="tr">“As for the ship, it belonged to poor people working at sea. So I intended to cause defect in it as there was after them a king who seized every [good] ship by force”</div>
+      <div id="b4-ur" class="ur" dir="rtl" lang="ur" data-layout-allow-overflow>اُس کشتی کا معاملہ یہ ہے کہ وہ چند غریب آدمیوں کی تھی جو دریا میں محنت مزدوری کرتے تھے میں نے چاہا کہ اسے عیب دار کر دوں، کیونکہ آگے ایک ایسے بادشاہ کا علاقہ تھا جو ہر کشتی کو زبردستی چھین لیتا تھا</div>
+      <div id="b4-ref" class="ref">Al-Kahf 18:79</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#b4-ar", {opacity: 0, y: 30, filter: "blur(10px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.9, ease: "power2.out"}, 0.05);
+    tl.fromTo("#b4-tr", {opacity: 0, y: 20}, {opacity: 1, y: 0, duration: 0.7, ease: "power2.out"}, 0.6);
+    tl.fromTo("#b4-ur", {opacity: 0, y: 10}, {opacity: 1, y: 0, duration: 0.35, ease: "power2.out"}, 0.15);
+    tl.fromTo("#b4-ref", {opacity: 0, y: 12}, {opacity: 1, y: 0, duration: 0.45, ease: "power2.out"}, 0.35);
+    tl.fromTo("#b4-wrap", {opacity: 1}, {opacity: 0, duration: 0.22, ease: "power1.in"}, 10.75);
+    window.__timelines["b4"] = tl;
+  </script>
+</template>

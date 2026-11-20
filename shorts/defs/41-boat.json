@@ -1,0 +1,107 @@
+{
+ "id": "41-boat",
+ "lines": [
+  "Why would a man make a hole in a boat... that belonged to poor people?",
+  "Prophet Musa, alayhis salaam, said: Have you torn it open to drown its people? You have certainly done a grave thing.",
+  "Then came the reason.",
+  "As for the ship, it belonged to poor people working at sea. So I intended to cause defect in it, as there was after them a king who seized every ship by force.",
+  "The damage you can't understand today... may be what saves you.",
+  "Watch the full movie of Prophet Musa, alayhis salaam... link below."
+ ],
+ "beats": [
+  {
+   "hook": true,
+   "text": "A hole in a boat… *of poor people*?",
+   "sub": "Why?",
+   "ur": "غریبوں کی کشتی میں شگاف… کیوں؟",
+   "mood": {
+    "warm": 0.1,
+    "cool": 0.08
+   },
+   "reveal": false
+  },
+  {
+   "q": "18:71",
+   "ar_words": [
+    8,
+    15
+   ],
+   "en": "Have you torn it open to drown its people? You have certainly done a grave thing",
+   "ur_a": [
+    "آپ نے اس میں",
+    "سخت حرکت کر ڈالی"
+   ],
+   "ref": "Al-Kahf 18:71",
+   "mood": {
+    "warm": 0.05,
+    "cool": 0.1
+   }
+  },
+  {
+   "text": "Then came *the reason*.",
+   "ur": "پھر وجہ سامنے آئی",
+   "mood": {
+    "warm": 0.1,
+    "cool": 0
+   }
+  },
+  {
+   "q": "18:79",
+   "ar_words": [
+    1,
+    17
+   ],
+   "en": "As for the ship, it belonged to poor people working at sea. So I intended to cause defect in it as there was after them a king who seized every [good] ship by force",
+   "ur_a": [
+    "اُس کشتی کا",
+    "چھین لیتا تھا"
+   ],
+   "ref": "Al-Kahf 18:79",
+   "mood": {
+    "warm": 0.2,
+    "cool": 0
+   }
+  },
+  {
+   "text": "The damage you can't understand today… *may be what saves you*.",
+   "ur": "جو نقصان آج سمجھ نہیں آتا… شاید وہی آپ کو بچا رہا ہو",
+   "mood": {
+    "warm": 0.25,
+    "cool": 0
+   }
+  },
+  {
+   "cta": true,
+   "text": "Watch the full movie of *Prophet Musa (AS)*, link below.",
+   "ur": "حضرت موسیٰ علیہ السلام کی مکمل فلم دیکھیں، لنک نیچے",
+   "mood": {
+    "warm": 0.25,
+    "cool": 0
+   },
+   "btn": "Full movie ↓"
+  }
+ ],
+ "photos": [
+  "s1",
+  "s2",
+  "s3",
+  "s4",
+  "s5",
+  "s5"
+ ],
+ "scenes": {
+  "style": "High-quality 3D animated feature film still, close to photoreal (modern big-studio animation look), rich detail, cinematic lighting and depth of field. Vertical 9:16, keep the top third fairly simple and dark-to-plain (text sits there), the action in the lower two thirds. An ancient sea coast long ago. Absolutely no prophet or holy figure shown; no person close up.",
+  "scenes": {
+   "s1": "A small wooden fishing boat pulled up on a sunny shore with a fresh hole broken in its side planks, fishing nets beside it, bright morning. No people.",
+   "s2": "A small wooden boat on a calm blue sea at dawn, water starting to seep through a broken plank, close view of the damaged hull. No people.",
+   "s3": "Far out at sea, a line of large armed warships with dark sails approaching a coast, seen from the shore, ominous clouds. No people close.",
+   "s4": "Fishermen's small boats with nets on a sunny harbour beach, the damaged boat among them left behind on the sand while big warships sail past in the distance. Small people from behind.",
+   "s5": "A bright calm sea at sunrise with a small repaired fishing boat sailing safely, birds over the water, hopeful light."
+  }
+ },
+ "pauses": {
+  "2": 0.8
+ },
+ "turn": 3,
+ "hum": 4
+}

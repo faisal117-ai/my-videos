@@ -1,0 +1,116 @@
+{
+ "id": "42-dawud",
+ "lines": [
+  "Two men climbed the wall into a king's prayer room. What did they want?",
+  "They said: Fear not. Two adversaries, one has wronged the other, so judge between us with truth.",
+  "This, my brother, has ninety-nine ewes, and I have one ewe. And he said: give her to me.",
+  "Prophet Dawud, alayhis salaam, became certain it was a test. He asked forgiveness of his Lord, and fell down bowing.",
+  "A prophet and a king turned back to Allah in a moment. Turn back today.",
+  "Watch the full movie of his son, Prophet Sulaiman... link below."
+ ],
+ "beats": [
+  {
+   "hook": true,
+   "text": "Two men climbed the wall into *a king's prayer room*.",
+   "sub": "What did they want?",
+   "ur": "دو آدمی دیوار پھاند کر بادشاہ کے عبادت خانے میں آ گئے۔ کیا چاہتے تھے؟",
+   "mood": {
+    "warm": 0.1,
+    "cool": 0.08
+   },
+   "reveal": false
+  },
+  {
+   "q": "38:22",
+   "ar_words": [
+    7,
+    17
+   ],
+   "en": "Fear not. [We are] two adversaries, one of whom has wronged the other, so judge between us with truth",
+   "ur_a": [
+    "ڈریے نہیں",
+    "فیصلہ کر دیجیے"
+   ],
+   "ref": "Saad 38:22",
+   "mood": {
+    "warm": 0.1,
+    "cool": 0
+   }
+  },
+  {
+   "q": "38:23",
+   "ar_words": [
+    1,
+    12
+   ],
+   "en": "Indeed this, my brother, has ninety-nine ewes, and I have one ewe; so he said, 'Entrust her to me",
+   "ur_a": [
+    "یہ میرا بھائی",
+    "میرے حوالے کر دے"
+   ],
+   "ref": "Saad 38:23",
+   "mood": {
+    "warm": 0.15,
+    "cool": 0
+   }
+  },
+  {
+   "q": "38:24",
+   "ar_words": [
+    24,
+    32
+   ],
+   "en": "And David became certain that We had tried him, and he asked forgiveness of his Lord and fell down bowing [in prostration] and turned in repentance [to Allah]",
+   "ur_a": [
+    "داؤدؑ سمجھ گیا",
+    "رجوع کر لیا"
+   ],
+   "ref": "Saad 38:24",
+   "mood": {
+    "warm": 0.25,
+    "cool": 0
+   }
+  },
+  {
+   "text": "A prophet and a king turned back in a moment. *Turn back today.*",
+   "ur": "ایک نبی اور بادشاہ نے ایک لمحے میں رجوع کیا۔ آج آپ بھی رجوع کریں",
+   "mood": {
+    "warm": 0.25,
+    "cool": 0
+   }
+  },
+  {
+   "cta": true,
+   "text": "Watch the full movie of *Prophet Sulaiman (AS)*, link below.",
+   "ur": "حضرت سلیمان علیہ السلام کی مکمل فلم دیکھیں، لنک نیچے",
+   "mood": {
+    "warm": 0.25,
+    "cool": 0
+   },
+   "btn": "Full movie ↓"
+  }
+ ],
+ "photos": [
+  "s1",
+  "s2",
+  "s3",
+  "s4",
+  "s5",
+  "s5"
+ ],
+ "scenes": {
+  "style": "High-quality 3D animated feature film still, close to photoreal (modern big-studio animation look), rich detail, cinematic lighting and depth of field. Vertical 9:16, keep the top third fairly simple and dark-to-plain (text sits there), the action in the lower two thirds. Ancient Jerusalem, the time of the kings of Bani Israil. Absolutely no king, no prophet, no holy figure; no person close up; ordinary people only, small and from behind.",
+  "scenes": {
+   "s1": "A tall stone wall of an ancient palace at dusk with a high arched window lit from inside, a rope ladder hanging on the wall, mysterious. No people.",
+   "s2": "An empty quiet stone prayer chamber with a reading stand, oil lamps and a woven prayer rug, soft golden light through a high window. No people.",
+   "s3": "A large flock of ninety-nine sheep on a green hillside and, apart on the other side of a low stone wall, one single lamb alone, morning light. No people.",
+   "s4": "Close view of an empty prayer rug on a stone floor in warm lamplight, an oil lamp beside it, soft dust in the air, peaceful. ABSOLUTELY NO PEOPLE, no human figures, no silhouettes anywhere in the image.",
+   "s5": "Golden sunrise over the hills and walls of ancient Jerusalem, birds flying, bright and hopeful. No people close."
+  }
+ },
+ "pauses": {
+  "3": 0.9
+ },
+ "turn": 3,
+ "hum": 4
+}

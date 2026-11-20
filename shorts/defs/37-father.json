@@ -1,0 +1,113 @@
+{
+ "id": "37-father",
+ "lines": [
+  "How do you speak to a father who threatens to stone you? Prophet Ibrahim, alayhis salaam, showed us.",
+  "O my father, why do you worship that which does not hear and does not see, and will not benefit you at all?",
+  "His father said: If you do not stop, I will surely stone you.",
+  "He answered: Peace will be upon you. I will ask forgiveness for you of my Lord.",
+  "Speak gently to your parents today... even when it's hard.",
+  "The full movie of Prophet Ibrahim, alayhis salaam, comes tonight. Follow so you don't miss it."
+ ],
+ "beats": [
+  {
+   "hook": true,
+   "text": "A father who threatens to *stone* you…",
+   "sub": "How would you answer him?",
+   "ur": "باپ جو سنگسار کرنے کی دھمکی دے… آپ کیا جواب دیں گے؟",
+   "mood": {
+    "warm": 0.1,
+    "cool": 0
+   },
+   "reveal": false
+  },
+  {
+   "q": "19:42",
+   "ar_words": [
+    4,
+    15
+   ],
+   "en": "O my father, why do you worship that which does not hear and does not see and will not benefit you at all",
+   "ur_a": [
+    "ابّا جان",
+    "کام بنا سکتی ہیں"
+   ],
+   "ref": "Maryam 19:42",
+   "mood": {
+    "warm": 0.15,
+    "cool": 0
+   }
+  },
+  {
+   "q": "19:46",
+   "ar_words": [
+    7,
+    10
+   ],
+   "en": "If you do not desist, I will surely stone you",
+   "ur_a": [
+    "اگر تو باز",
+    "سنگسار کر دوں گا"
+   ],
+   "ref": "Maryam 19:46",
+   "mood": {
+    "warm": 0.0,
+    "cool": 0.1
+   }
+  },
+  {
+   "q": "19:47",
+   "ar_words": [
+    2,
+    6
+   ],
+   "en": "Peace will be upon you. I will ask forgiveness for you of my Lord",
+   "ur_a": [
+    "سلام ہے آپ کو",
+    "معاف کر دے"
+   ],
+   "ref": "Maryam 19:47",
+   "mood": {
+    "warm": 0.25,
+    "cool": 0
+   }
+  },
+  {
+   "text": "Speak gently to your parents today… *even when it's hard*.",
+   "ur": "آج اپنے والدین سے نرمی سے بات کریں… چاہے مشکل ہو",
+   "mood": {
+    "warm": 0.25,
+    "cool": 0
+   }
+  },
+  {
+   "cta": true,
+   "text": "The full movie of *Prophet Ibrahim (AS)*: tonight, 6:30 PM. Follow so you don't miss it.",
+   "ur": "حضرت ابراہیم علیہ السلام کی مکمل فلم: آج رات ساڑھے چھ بجے۔ فالو کریں",
+   "mood": {
+    "warm": 0.25,
+    "cool": 0
+   },
+   "btn": "Follow ↑"
+  }
+ ],
+ "photos": [
+  "c03a",
+  "c01b",
+  "c03b",
+  "c03a",
+  "c13a",
+  "c00c"
+ ],
+ "crops": {
+  "c03a": "long/03-ibrahim/assets/gen/c03a.jpg",
+  "c01b": "long/03-ibrahim/assets/gen/c01b.jpg",
+  "c03b": "long/03-ibrahim/assets/gen/c03b.jpg",
+  "c13a": "long/03-ibrahim/assets/gen/c13a.jpg",
+  "c00c": "long/03-ibrahim/assets/gen/c00c.jpg"
+ },
+ "pauses": {
+  "3": 0.9
+ },
+ "turn": 3,
+ "hum": 3
+}

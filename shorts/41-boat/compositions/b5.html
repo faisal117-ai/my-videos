@@ -1,0 +1,21 @@
+<template>
+  <style>
+    #b5 { position: absolute; inset: 0; }
+    #b5-wrap { position: absolute; left: 90px; right: 140px; top: 250px; bottom: 1120px;
+      display: flex; flex-direction: column; justify-content: flex-start; gap: 20px; }
+  </style>
+  <div id="b5" data-composition-id="b5" data-width="1080" data-height="1920">
+    <div id="b5-wrap" class="clip" data-start="0" data-duration="4.83">
+      <div id="b5-txt" class="txt"><span class="w" id="b5-w0">The</span> <span class="w" id="b5-w1">damage</span> <span class="w" id="b5-w2">you</span> <span class="w" id="b5-w3">can&#x27;t</span> <span class="w" id="b5-w4">understand</span> <span class="w" id="b5-w5">today…</span> <span class="w hi" id="b5-w6">may</span> <span class="w" id="b5-w7">be</span> <span class="w" id="b5-w8">what</span> <span class="w" id="b5-w9">saves</span> <span class="w hi" id="b5-w10">you.</span></div>
+      <div id="b5-ur" class="ur" dir="rtl" lang="ur" data-layout-allow-overflow>جو نقصان آج سمجھ نہیں آتا… شاید وہی آپ کو بچا رہا ہو</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#b5 .w", {opacity: 0, y: 22, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.32, ease: "power2.out", stagger: 0.311}, 0.12);
+    tl.fromTo("#b5 .hi", {textShadow: "0 0 0px rgba(0,0,0,0)"}, {textShadow: "0 0 28px var(--accent)", duration: 0.6, ease: "power1.out"}, 2.19);
+    tl.fromTo("#b5-ur", {opacity: 0, y: 10}, {opacity: 1, y: 0, duration: 0.35, ease: "power2.out"}, 0.15);
+    tl.fromTo("#b5-wrap", {opacity: 1}, {opacity: 0, duration: 0.22, ease: "power1.in"}, 4.59);
+    window.__timelines["b5"] = tl;
+  </script>
+</template>

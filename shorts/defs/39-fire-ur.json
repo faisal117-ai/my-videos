@@ -1,0 +1,113 @@
+{
+ "id": "39-fire-ur",
+ "lines": [
+  "اگر آپ کو آگ میں پھینکا جائے تو آپ کیا کہیں گے؟ انہوں نے چار لفظ کہے۔",
+  "انہوں نے کہا: جلا ڈالو اس کو، اور حمایت کرو اپنے خداؤں کی۔",
+  "جب انہیں پھینکا گیا، تو حضرت ابراہیم علیہ السلام نے کہا: حَسْبُنَا اللَّهُ وَنِعْمَ الْوَكِيلُ۔ اللہ ہمارے لیے کافی ہے، اور وہی بہترین کارساز ہے۔",
+  "اور اللہ نے فرمایا: اے آگ، ٹھنڈی ہو جا اور سلامتی بن جا ابراہیم پر۔",
+  "آج جب ڈر لگے... یہی الفاظ کہیں۔",
+  "حضرت ابراہیم علیہ السلام کی مکمل فلم دیکھیں... لنک نیچے۔"
+ ],
+ "beats": [
+  {
+   "hook": true,
+   "text": "Thrown into a fire… *he said four words*.",
+   "ur": "آگ میں پھینکا گیا… اور اس نے چار لفظ کہے",
+   "mood": {
+    "warm": 0.3,
+    "cool": 0
+   },
+   "reveal": false
+  },
+  {
+   "q": "21:68",
+   "ar_words": [
+    1,
+    4
+   ],
+   "en": "Burn him and support your gods",
+   "ur_a": [
+    "جلا ڈالو",
+    "اپنے خداؤں کی"
+   ],
+   "ref": "Al-Anbiya 21:68",
+   "mood": {
+    "warm": 0.35,
+    "cool": 0
+   }
+  },
+  {
+   "arabic": "حَسْبُنَا اللَّهُ وَنِعْمَ الْوَكِيلُ",
+   "translation": "“Allah is sufficient for us, and He is the best Disposer of affairs.”",
+   "ur": "اللہ ہمارے لیے کافی ہے اور وہی بہترین کارساز ہے",
+   "ref": "Sahih al-Bukhari 4563",
+   "mood": {
+    "warm": 0.3,
+    "cool": 0
+   }
+  },
+  {
+   "q": "21:69",
+   "ar_words": [
+    1,
+    7
+   ],
+   "en": "O fire, be coolness and safety upon Abraham",
+   "ur_a": [
+    "اے آگ",
+    "ابراہیمؑ پر"
+   ],
+   "ref": "Al-Anbiya 21:69",
+   "mood": {
+    "warm": 0.15,
+    "cool": 0
+   }
+  },
+  {
+   "text": "When you're afraid today… *say his words*.",
+   "ur": "آج جب ڈر لگے… یہی الفاظ کہیں",
+   "mood": {
+    "warm": 0.2,
+    "cool": 0
+   }
+  },
+  {
+   "cta": true,
+   "text": "Watch the full movie of *Prophet Ibrahim (AS)*, link below.",
+   "ur": "حضرت ابراہیم علیہ السلام کی مکمل فلم دیکھیں، لنک نیچے",
+   "mood": {
+    "warm": 0.25,
+    "cool": 0
+   },
+   "btn": "Full movie ↓"
+  }
+ ],
+ "photos": [
+  "c00a",
+  "c05a",
+  "c05b",
+  "c05c",
+  "c14a",
+  "c00c"
+ ],
+ "crops": {
+  "c00a": "long/03-ibrahim/assets/gen/c00a.jpg",
+  "c05a": "long/03-ibrahim/assets/gen/c05a.jpg",
+  "c05b": "long/03-ibrahim/assets/gen/c05b.jpg",
+  "c05c": "long/03-ibrahim/assets/gen/c05c.jpg",
+  "c14a": "long/03-ibrahim/assets/gen/c14a.jpg",
+  "c00c": "long/03-ibrahim/assets/gen/c00c.jpg"
+ },
+ "pauses": {
+  "3": 0.9
+ },
+ "turn": 3,
+ "hum": 3,
+ "eleven": {
+  "voice_id": "N2lVS1w4EtoT3dr4eOWO",
+  "model_id": "eleven_v3",
+  "settings": {
+   "stability": 0.5
+  }
+ }
+}

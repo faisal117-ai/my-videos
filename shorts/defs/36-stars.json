@@ -1,0 +1,104 @@
+{
+ "id": "36-stars",
+ "lines": [
+  "A young man watched the stars set... and found the One who never sets.",
+  "When the night covered him, he saw a star. He said: This is my lord. But when it set, he said: I like not those that disappear.",
+  "The moon rose... and set. The sun rose... and set too.",
+  "And Prophet Ibrahim, alayhis salaam, said: Indeed, I have turned my face toward He who created the heavens and the earth.",
+  "Everything you lean on will set one day. Lean on the One who never does.",
+  "The full movie of Prophet Ibrahim, alayhis salaam, comes this Saturday. Follow so you don't miss it."
+ ],
+ "beats": [
+  {
+   "hook": true,
+   "text": "He watched the stars set… *and found the One who never sets*.",
+   "ur": "اس نے ستاروں کو ڈوبتے دیکھا… اور اسے پا لیا جو کبھی نہیں ڈوبتا",
+   "mood": {
+    "warm": 0.1,
+    "cool": 0.08
+   },
+   "reveal": false
+  },
+  {
+   "q": "6:76",
+   "ar_words": [
+    1,
+    15
+   ],
+   "en": "So when the night covered him [with darkness], he saw a star. He said, \"This is my lord.\" But when it set, he said, \"I like not those that disappear",
+   "ur_a": [
+    "چنانچہ جب رات",
+    "گرویدہ نہیں ہوں"
+   ],
+   "ref": "Al-An'am 6:76",
+   "mood": {
+    "warm": 0.05,
+    "cool": 0.1
+   }
+  },
+  {
+   "text": "The moon rose… and set. *The sun… set too.*",
+   "ur": "چاند نکلا… اور ڈوب گیا۔ سورج بھی ڈوب گیا",
+   "mood": {
+    "warm": 0.15,
+    "cool": 0
+   },
+   "ref": "Al-An'am 6:77–78"
+  },
+  {
+   "q": "6:79",
+   "ar_words": [
+    1,
+    7
+   ],
+   "en": "Indeed, I have turned my face toward He who created the heavens and the earth",
+   "ur_a": [
+    "میں نے",
+    "پیدا کیا ہے"
+   ],
+   "ref": "Al-An'am 6:79",
+   "mood": {
+    "warm": 0.25,
+    "cool": 0
+   }
+  },
+  {
+   "text": "Everything you lean on will set. *Lean on the One who never does.*",
+   "ur": "جس پر بھی سہارا لیں، وہ ڈوب جائے گا۔ اس پر سہارا لیں جو کبھی نہیں ڈوبتا",
+   "mood": {
+    "warm": 0.25,
+    "cool": 0
+   }
+  },
+  {
+   "cta": true,
+   "text": "The full movie of *Prophet Ibrahim (AS)*: this Saturday, 6:30 PM. Follow so you don't miss it.",
+   "ur": "حضرت ابراہیم علیہ السلام کی مکمل فلم: اس ہفتے۔ فالو کریں",
+   "mood": {
+    "warm": 0.25,
+    "cool": 0
+   },
+   "btn": "Follow ↑"
+  }
+ ],
+ "photos": [
+  "c02a",
+  "c02a",
+  "c02b",
+  "c02c",
+  "c02d",
+  "c00c"
+ ],
+ "crops": {
+  "c02a": "long/03-ibrahim/assets/gen/c02a.jpg",
+  "c02b": "long/03-ibrahim/assets/gen/c02b.jpg",
+  "c02c": "long/03-ibrahim/assets/gen/c02c.jpg",
+  "c02d": "long/03-ibrahim/assets/gen/c02d.jpg",
+  "c00c": "long/03-ibrahim/assets/gen/c00c.jpg"
+ },
+ "pauses": {
+  "3": 0.8
+ },
+ "turn": 3,
+ "hum": 3
+}
