@@ -14,23 +14,19 @@
 Shared thing: **one named prophet + one named moment** ("X aur Y ka waqia"). Urdu prophet films are the
 niche's biggest winners, and Sulaiman + the Queen is #1, which is exactly our Sunday film.
 
-## Shorts 23–29 Nov (11:00 / 17:00 PKT; question titles and "X… then Y" alternate daily)
-| Day | Slot | Short | Source | Promise | Gemini |
-|---|---|---|---|---|---|
-| Mon 23 | 11:00 | Who Brought a Throne Before an Eye Could Blink? 👑 | 27:38–40 | the throne, and the words "to test me" | $0 (film scenes) |
-| Mon 23 | 17:00 | The jinn kept working… then a tiny creature told the truth | 34:14 | the staff and the death no one saw | $0 (film scenes) |
-| Tue 24 | 11:00 | He looked at the stars… then said "I love not those that set" | 6:76–79 | a boy's reasoning to his Lord | Ibrahim film scenes |
-| Tue 24 | 17:00 | Why Did Two Men Climb Into a King's Prayer Room? 🧱 | 38:21–25 | Dawud (AS) and the quick judgement, then his repentance | new |
-| Wed 25 | 11:00 | Why Did Uwais Stay Home Instead of Meeting the Prophet ﷺ? 🤲 | Muslim 2542 | Uwais al-Qarani and his mother (user's pick) | new |
-| Wed 25 | 17:00 | "O my father"… then a son's gentle words to a man who threatened him | 19:42–47 | how to speak to a parent | Ibrahim film scenes |
-| Thu 26 | 11:00 | Why Did He Make a Hole in the Boat? ⛵ | 18:71, 18:79 | Musa (AS) and Khidr: the boat | new |
-| Thu 26 | 17:00 | A king said "I give life and death"… then one question silenced him | 2:258 | the sun from the east | Ibrahim film scenes |
-| Fri 27 | 11:00 | Who Made the Golden Calf? 🐄 | 20:85–97 | the calf, and the people's excuse | new |
-| Fri 27 | 17:00 | Three men were tested with wealth… then only one remembered | Bukhari 3464 | leper, bald man, blind man | new |
-| Sat 28 | 11:00 | Why Leave a Family in a Valley With No Water? 🏜️ | 14:37 | the dua in the empty valley (no one shown) | Ibrahim film scenes |
-| Sat 28 | 17:00 | He sent 1,000 dinars into the sea in a piece of wood… then | Bukhari 2291 | trust in Allah as the witness | new |
-| Sun 29 | 11:00 | What Did Two Prophets Say While Building the Kaaba? 🕋 | 2:127–128 | "Our Lord, accept from us" | Ibrahim film scenes |
-| Sun 29 | 17:00 | Pharaoh's end… then his body was kept as a sign | 10:90–92 | Firoun ka anjaam (viral topic) | new |
+## Shorts 23–29 Nov (user, 20 Nov: films first, Shorts drive traffic to them; keep the hadith Shorts too)
+Sulaiman films stay Sat 21 (EN) / Sun 22 (UR) 18:30. Film Shorts: Related video + pinned link → that film;
+17:00 film Shorts voiced in Urdu → Urdu film. Third slot 14:00 (Mon–Fri) for the hadith/other-story Shorts.
+| Day | 11:00 (EN, film) | 14:00 (new topic) | 17:00 (Urdu voice, film) |
+|---|---|---|---|
+| Mon 23 | Sulaiman: throne in a blink (27:38–40) | Uwais and his mother (Muslim 2542) | Sulaiman: the staff and the jinn (34:14) |
+| Tue 24 | Sulaiman: dua for a kingdom (38:35) | Musa & Khidr: the boat (18:71, 79) | Sulaiman: the gift sent back (27:36) |
+| Wed 25 | Sulaiman: palace of glass (27:44) | The golden calf (20:85–97) | Sulaiman: judgement of the field (21:78–79) |
+| Thu 26 | Ibrahim: the stars (6:76–79) | Leper, bald man, blind man (Bukhari 3464) | Ibrahim: "O my father" (19:42–47) |
+| Fri 27 | Ibrahim: the king who argued (2:258) | 1,000 dinars in a piece of wood (Bukhari 2291) | Ibrahim: valley with no water (14:37) |
+| Sat 28 | Ibrahim: building the Kaaba (2:127) | Pharaoh's end, body kept as a sign (10:90–92) | Ibrahim: his dua (14:35–41) |
+| Sun 29 | Ibrahim (yt-shorts pick) | – | Ibrahim (yt-shorts pick) |
+Total 19 Shorts. Each ends "Watch the full movie of <film>, link below".
 
 ## Anchor: Ibrahim film EP 4 (Sat 28 EN / Sun 29 UR 18:30, posts 434202929 / 434203028)
 Rebuild in house style (Gemini scenes, shakes, light blooms), fix "EP 3" → "EP 4", new question title, yt-seo,
