@@ -210,3 +210,10 @@ A new session can recreate these for itself (send_later / create_trigger) and de
   switch spec chapters to "photos" + shakes/glows, EP 4 everywhere, render both, swap into posts 434202929 / 434203028.
 - 30-gold-jar approved + scheduled Tue 24 10:00 (post 435546768); Sat reminder also swaps its film link.
 - 31-calf approved + scheduled Wed 25 10:00 (post 435558164; Musa film link already real).
+- 20 Nov evening: SHORTS LENGTH RULE CORRECTED to 35–45 s (user; channel-plan data: ≤45 s = 48% pushed). All nine week Shorts
+  re-cut to 40–45 s (tools/new_short.py + shorts/defs/*.json). Approved re-cuts swapped into Metricool (media only):
+  throne Sat 19:00 (now post 435639476), Uwais Mon 10:00 (435639558), two answers Mon 16:00 (435639640),
+  jar of gold Tue 10:00 (435639723), calf Wed 10:00 (435639828). Still to approve: Urdu throne (Sun 19:00),
+  staff, dua, dinars. Renders: a second/third HYPERFRAMES_CACHE_DIR lets Shorts render beside a film.
+- Ibrahim EN film rendered (15:35) but 120 MB: re-encoding at ~700 kbps to get under 100 MB. UR film rendering.
+- The garden Short was posted twice (19 Nov 23:37 and 23:57): user to set the copy with fewer views to Private.
