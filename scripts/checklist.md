@@ -17,6 +17,9 @@ Report the result (each line ✅ or ❌ + fix) to the user together with the vid
 ## Picture
 - [ ] Never a prophet, the Prophet ﷺ, a Companion, a righteous woman, an angel or jinn in any form; check every image and every animated clip frame.
 - [ ] Ordinary people may be shown and may speak (animated clips): only lines from the source.
+- [ ] **Ordinary people (crowds, travellers, townsfolk, workers) stay in** (user, 20 Nov). Remove a figure only when it stands in
+      for a holy person: a lone or small group of figures at the exact moment the narration speaks of the prophet/righteous person
+      (e.g. a man kneeling as "Dawud fell down bowing", figures carrying stones as "father and son built the House").
 - [ ] Captions in the top band, picture clear below; reference text ≥ 28 px.
 - [ ] Bright by default; dark only briefly at the hardship.
 
