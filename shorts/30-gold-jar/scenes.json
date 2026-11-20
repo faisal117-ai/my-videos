@@ -1,0 +1,15 @@
+{
+ "style": "High-quality 3D animated feature film still, close to photoreal (modern big-studio animation look), rich detail, cinematic lighting and depth of field. Vertical 9:16, keep the top third fairly simple and dark-to-plain (text sits there), the action in the lower two thirds. An ancient Near Eastern farming village, long ago. Any people are small, distant, seen from behind, ordinary travellers in simple earth-toned robes and head wraps.",
+ "aspect": "9:16",
+ "scenes": {
+  "s1": "A cracked old clay jar half-buried in freshly dug brown earth in a farm field, overflowing with shining gold coins catching golden sunset light. No people.",
+  "s2": "A small farm field with a simple mud-brick house and an old tree in an ancient village, golden morning light, a spade stuck in the ground. No people.",
+  "s3": "A wooden spade and turned soil in a field with a glint of gold under the earth, dramatic low sunlight, dust in the air. No people.",
+  "s4": "An old wooden door of a village house at dusk, warm light from a small window, a clay jar of gold coins set down on the doorstep. No people.",
+  "s5": "Two ordinary village men in simple robes standing apart in a field, seen from far behind, a clay jar on the ground between them, sunset.",
+  "s6": "A shaded village courtyard under a big tree where a few ordinary men sit on mats, seen from far behind, a clay jar in the middle, calm afternoon light.",
+  "s7": "A modest village house at night decorated for a simple wedding: hanging lanterns, flowers on the doorway, warm glow. No people visible.",
+  "s8": "Hands only, seen from above, placing gold coins into a wooden bowl held out by other hands in a village street, warm light (no faces).",
+  "s9": "A green village field at sunrise with birds flying, peaceful and bright, a small house far away."
+ }
+}
