@@ -1,0 +1,21 @@
+<template>
+  <style>
+    #b9 { position: absolute; inset: 0; }
+    #b9-wrap { position: absolute; left: 90px; right: 140px; top: 250px; bottom: 1120px;
+      display: flex; flex-direction: column; justify-content: flex-start; gap: 20px; }
+  </style>
+  <div id="b9" data-composition-id="b9" data-width="1080" data-height="1920">
+    <div id="b9-wrap" class="clip" data-start="0" data-duration="5.67">
+      <div id="b9-txt" class="txt"><span class="w" id="b9-w0">What</span> <span class="w" id="b9-w1">would</span> <span class="w" id="b9-w2">you</span> <span class="w" id="b9-w3">say?</span> <span class="w" id="b9-w4">Most</span> <span class="w" id="b9-w5">of</span> <span class="w" id="b9-w6">us:</span> <span class="w hi" id="b9-w7">look</span> <span class="w" id="b9-w8">what</span> <span class="w" id="b9-w9">I</span> <span class="w hi" id="b9-w10">have.</span></div>
+      <div id="b9-ur" class="ur" dir="rtl" lang="ur" data-layout-allow-overflow>آپ کیا کہتے؟ ہم میں سے اکثر: دیکھو میرے پاس کیا ہے</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#b9 .w", {opacity: 0, y: 22, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.32, ease: "power2.out", stagger: 0.318}, 0.12);
+    tl.fromTo("#b9 .hi", {textShadow: "0 0 0px rgba(0,0,0,0)"}, {textShadow: "0 0 28px var(--accent)", duration: 0.6, ease: "power1.out"}, 2.24);
+    tl.fromTo("#b9-ur", {opacity: 0, y: 10}, {opacity: 1, y: 0, duration: 0.35, ease: "power2.out"}, 0.15);
+    tl.fromTo("#b9-wrap", {opacity: 1}, {opacity: 0, duration: 0.22, ease: "power1.in"}, 5.43);
+    window.__timelines["b9"] = tl;
+  </script>
+</template>

@@ -1,0 +1,24 @@
+<template>
+  <style>
+    #b10 { position: absolute; inset: 0; }
+    #b10-wrap { position: absolute; left: 60px; right: 60px; top: 250px; bottom: 1120px;
+      display: flex; flex-direction: column; justify-content: flex-start; gap: 20px; }
+  </style>
+  <div id="b10" data-composition-id="b10" data-width="1080" data-height="1920">
+    <div id="b10-wrap" class="clip" data-start="0" data-duration="6.93">
+      <div id="b10-ar" class="ar" dir="rtl" lang="ar">هَٰذَا مِن فَضۡلِ رَبِّي لِيَبۡلُوَنِيٓ ءَأَشۡكُرُ أَمۡ أَكۡفُرُۖ</div>
+      <div id="b10-tr" class="tr">“This is from the favor of my Lord to test me whether I will be grateful or ungrateful”</div>
+      <div id="b10-ur" class="ur" dir="rtl" lang="ur" data-layout-allow-overflow>یہ میرے رب کا فضل ہے تاکہ وہ مجھے آزمائے کہ میں شکر کرتا ہوں یا کافر نعمت بن جاتا ہوں</div>
+      <div id="b10-ref" class="ref">An-Naml 27:40</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#b10-ar", {opacity: 0, y: 30, filter: "blur(10px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.9, ease: "power2.out"}, 0.05);
+    tl.fromTo("#b10-tr", {opacity: 0, y: 20}, {opacity: 1, y: 0, duration: 0.7, ease: "power2.out"}, 0.6);
+    tl.fromTo("#b10-ur", {opacity: 0, y: 10}, {opacity: 1, y: 0, duration: 0.35, ease: "power2.out"}, 0.15);
+    tl.fromTo("#b10-ref", {opacity: 0, y: 12}, {opacity: 1, y: 0, duration: 0.45, ease: "power2.out"}, 0.35);
+    tl.fromTo("#b10-wrap", {opacity: 1}, {opacity: 0, duration: 0.22, ease: "power1.in"}, 6.69);
+    window.__timelines["b10"] = tl;
+  </script>
+</template>

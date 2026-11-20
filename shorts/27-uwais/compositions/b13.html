@@ -1,0 +1,23 @@
+<template>
+  <style>
+    #b13 { position: absolute; inset: 0; }
+    #b13-wrap { position: absolute; left: 60px; right: 60px; top: 250px; bottom: 1120px;
+      display: flex; flex-direction: column; justify-content: flex-start; gap: 20px; }
+  </style>
+  <div id="b13" data-composition-id="b13" data-width="1080" data-height="1920">
+    <div id="b13-wrap" class="clip" data-start="0" data-duration="7.11">
+      <div id="b13-cta-mark" class="mark">حق کہانیاں</div>
+      <div id="b13-txt" class="txt cta"><span class="w" id="b13-w0">Watch</span> <span class="w" id="b13-w1">the</span> <span class="w" id="b13-w2">full</span> <span class="w" id="b13-w3">movie</span> <span class="w" id="b13-w4">of</span> <span class="w hi" id="b13-w5">Prophet</span> <span class="w" id="b13-w6">Sulaiman</span> <span class="w hi" id="b13-w7">(AS),</span> <span class="w" id="b13-w8">link</span> <span class="w" id="b13-w9">below.</span></div>
+      <div id="b13-btn" class="btn">Full movie ↓</div>
+      <div id="b13-ur" class="ur" dir="rtl" lang="ur" data-layout-allow-overflow>حضرت سلیمان علیہ السلام کی مکمل فلم دیکھیں، لنک نیچے</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#b13-cta-mark", {opacity: 0, scale: 0.92}, {opacity: 1, scale: 1, duration: 0.8, ease: "power2.out"}, 0);
+    tl.fromTo("#b13 .w", {opacity: 0, y: 18}, {opacity: 1, y: 0, duration: 0.35, ease: "power2.out", stagger: 0.403}, 0.15);
+    tl.fromTo("#b13-btn", {opacity: 0, y: 24}, {opacity: 1, y: 0, duration: 0.5, ease: "back.out(1.6)"}, 0.5);
+    tl.fromTo("#b13-ur", {opacity: 0, y: 10}, {opacity: 1, y: 0, duration: 0.35, ease: "power2.out"}, 0.15);
+    window.__timelines["b13"] = tl;
+  </script>
+</template>
