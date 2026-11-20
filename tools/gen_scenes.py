@@ -9,6 +9,16 @@ RULES = ("Ordinary people only; no prophets, no religious or holy figures, no ha
          "focus, no close-up portraits. No text, no letters, no writing, no logos. ")
 MODEL = "gemini-2.5-flash-image"
 
+def trim_bars(im):
+    """Crop black letterbox/pillarbox bars Gemini sometimes adds."""
+    g = im.convert("L"); w, h = g.size
+    rows = [y for y in range(h) if max(g.crop((0, y, w, y + 1)).getdata()) > 24]
+    cols = [x for x in range(w) if max(g.crop((x, 0, x + 1, h)).getdata()) > 24]
+    if rows and cols and (rows[0] > 4 or h - rows[-1] > 4 or cols[0] > 4 or w - cols[-1] > 4):
+        im = im.crop((cols[0], rows[0], cols[-1] + 1, rows[-1] + 1))
+    return im
+
+
 def gen(d, cfg, k):
     body = {"contents": [{"parts": [{"text": cfg["style"] + " " + RULES + cfg["scenes"][k]}]}],
             "generationConfig": {"responseModalities": ["IMAGE"], "imageConfig": {"aspectRatio": cfg.get("aspect", "9:16")}}}
@@ -18,11 +28,18 @@ def gen(d, cfg, k):
     r = json.loads(out)
     if "error" in r:
         return k, "ERROR " + r["error"]["message"][:200]
-    for p in r["candidates"][0]["content"]["parts"]:
+    c = (r.get("candidates") or [{}])[0]
+    if "content" not in c:
+        return k, "blocked " + str(c.get("finishReason", r.get("promptFeedback")))[:120]
+    for p in c["content"]["parts"]:
         if "inlineData" in p:
             im = Image.open(io.BytesIO(base64.b64decode(p["inlineData"]["data"]))).convert("RGB")
+            im = trim_bars(im)
             size = (1188, 2112) if cfg.get("aspect", "9:16") == "9:16" else (2112, 1188)
-            im = ImageEnhance.Sharpness(im.resize(size, Image.LANCZOS)).enhance(1.3)
+            tw, th = size
+            s = max(tw / im.width, th / im.height); im = im.resize((round(im.width * s), round(im.height * s)), Image.LANCZOS)
+            l, u = (im.width - tw) // 2, (im.height - th) // 2; im = im.crop((l, u, l + tw, u + th))
+            im = ImageEnhance.Sharpness(im).enhance(1.3)
             im.save(d / "assets/gen" / f"{k}.jpg", quality=90)
             return k, "ok"
     return k, "no image"
