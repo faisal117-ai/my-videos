@@ -1,6 +1,6 @@
 # Short: 25-throne (the Queen's throne, An-Naml 27:38–40): upload details
 
-**Status:** made 20 Nov; waiting for the user's approval. Slot: **Sat 21 Nov 19:00 PKT**, 30 min after the
+**Status:** APPROVED and scheduled in Metricool Sat 21 Nov 19:00 PKT (post 435490006; channel link until the film is live, swapped at 18:38 by reminder trig_01FzgjE5ti8FsEjnhGMQS6Nh), 30 min after the
 English Sulaiman film (18:30). FILM_EN = the film's link, filled in after it goes live (~18:40).
 **Skills run:** yt-shorts (pick #1 from the film, 7:00–8:13), yt-script hookscore (hook 60/100), yt-package
 (title 90/100), yt-seo (below).

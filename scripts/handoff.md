@@ -194,3 +194,11 @@ A new session can recreate these for itself (send_later / create_trigger) and de
 - Waiting for the user's approval. Then swap media, titles, descriptions, chapters and thumbnails in Metricool posts 434496552 (EN, Sat 21 Nov 18:30) and 434526077 (UR, Sun 22 Nov 18:30).
 - 20 Nov: user APPROVED. Metricool updated with new mp4s, titles, descriptions + chapters, thumbnails, tags, AI box, pinned-comment text as first comment: EN post now 435454310 (Sat 21 Nov 18:30), UR post now 435454706 (Sun 22 Nov 18:30). Hindi title/description for Sulaiman EP 3 added to scripts/translations/urdu-films-hindi.md (Ibrahim moved to EP 4).
 - After they go live: set Related video (EN → Musa film, UR → Urdu Yusuf), add the Hindi translation for the Urdu film, playlist + end screen per UPLOAD.md.
+
+### 20 Nov afternoon: week 23–29 Nov plan APPROVED (scripts/week-plan-23-29nov.md), Ibrahim EP 4 = yes
+- User topped up Gemini by $20. Shorts slots move to 10:00 (channel Short) and 16:00 (film Short) from Mon 23.
+- 25-throne (EN) approved + scheduled Sat 21 19:00 (post 435490006). Reminder at Sat 18:38 swaps in the film link.
+- Built and rendering: 26-throne-ur (Sun 19:00), 27-uwais (Mon 10:00; Muslim 2542 only, NOT the "stayed home
+  instead of meeting the Prophet" story, which is not in that hadith), 28-two-answers (Mon 16:00).
+- New tool: tools/short_pauses.py (pauses before turns in a Short).
+- Next: Ibrahim film rebuild with Gemini photos (it still uses code-drawn SVG scenes, 15 chapters), then Tue–Sun Shorts.
