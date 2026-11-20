@@ -217,3 +217,8 @@ A new session can recreate these for itself (send_later / create_trigger) and de
   staff, dua, dinars. Renders: a second/third HYPERFRAMES_CACHE_DIR lets Shorts render beside a film.
 - Ibrahim EN film rendered (15:35) but 120 MB: re-encoding at ~700 kbps to get under 100 MB. UR film rendering.
 - The garden Short was posted twice (19 Nov 23:37 and 23:57): user to set the copy with fewer views to Private.
+- 20 Nov night: approved + scheduled: Urdu throne re-cut (Sun 22 19:00, post 435843153), staff (Tue 24 16:00, 435843304),
+  dua (Wed 25 16:00, 435843383), dinars (Thu 26 10:00, 435843481). Sat 18:38 reminder swaps the EN film link into every
+  Short whose description still has the channel URL; Sun 18:38 reminder does the Urdu throne.
+- Ibrahim EN + UR films re-rendering (8 scenes regenerated: no figure that could be read as a prophet/Hajar/Ismail/angel).
+  Reminder trig_01VjayWR19wBDhrVAghWAyAW checks them at 01:30 PKT. Still to make for 26–29 Nov: Thu 16:00, Fri, Sat, Sun Shorts.
