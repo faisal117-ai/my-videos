@@ -13,11 +13,7 @@
  "photos": [
   "assets/gen/s1.jpg",
   "assets/gen/s3.jpg",
-  "assets/gen/s3.jpg",
-  "assets/gen/s4.jpg",
-  "assets/gen/s5.jpg",
   "assets/gen/s6.jpg",
-  "assets/gen/s7.jpg",
   "assets/gen/s8.jpg",
   "assets/gen/s9.jpg",
   "assets/gen/s2.jpg"
@@ -30,30 +26,24 @@
    "dur": 1.0
   },
   {
-   "beat": 3,
-   "at": 0.0,
+   "beat": 2,
+   "at": 3.0,
    "amp": 6,
    "dur": 0.9
-  },
-  {
-   "beat": 7,
-   "at": 0.0,
-   "amp": 10,
-   "dur": 1.4
   }
  ],
  "glows": [
   {
-   "beat": 5,
+   "beat": 3,
    "at": 0.1,
-   "dur": 2.5,
-   "peak": 0.35
+   "dur": 3.0,
+   "peak": 0.85
   },
   {
-   "beat": 7,
-   "at": 0.1,
-   "dur": 3.5,
-   "peak": 0.85
+   "beat": 4,
+   "at": 0.2,
+   "dur": 2.5,
+   "peak": 0.4
   }
  ],
  "sound": [
@@ -80,7 +70,7 @@
   {
    "prompt": "lib",
    "src": "../../long/04-sulaiman/assets/sfx/93fa1b20e45f.mp3",
-   "beat": 4,
+   "beat": 1,
    "offset": 0,
    "dur": 8,
    "gain": -13,
@@ -90,7 +80,7 @@
   {
    "prompt": "lib",
    "src": "../../long/04-sulaiman/assets/sfx/72cc4baec592.mp3",
-   "beat": 7,
+   "beat": 3,
    "offset": -3.6,
    "dur": 3.8,
    "gain": -8,
@@ -100,7 +90,7 @@
   {
    "prompt": "lib",
    "src": "../../long/04-sulaiman/assets/sfx/f0b78dedaad6.mp3",
-   "beat": 7,
+   "beat": 3,
    "offset": 0,
    "dur": 4,
    "gain": -7,
@@ -110,7 +100,7 @@
   {
    "prompt": "lib",
    "src": "../06-ant/assets/sfx/cabf6e6577de.mp3",
-   "beat": 7,
+   "beat": 3,
    "offset": 0,
    "dur": 30,
    "gain": -13,
@@ -131,37 +121,10 @@
    "reveal": false
   },
   {
-   "text": "A man of Bani Israil asked to borrow *a thousand dinars*.",
-   "ur": "بنی اسرائیل کے ایک شخص نے ہزار دینار قرض مانگے",
-   "mood": {
-    "warm": 0.15,
-    "cool": 0
-   },
-   "ref": "Sahih al-Bukhari 2291"
-  },
-  {
    "text": "“Witnesses?” *“Allah is enough.”* “A guarantor?” *“Allah is enough.”*",
    "ur": "گواہ؟ اللہ کافی ہے۔ ضامن؟ اللہ کافی ہے",
    "mood": {
     "warm": 0.2,
-    "cool": 0
-   },
-   "ref": "Sahih al-Bukhari 2291"
-  },
-  {
-   "text": "The day came… *and there was no boat.*",
-   "ur": "ادائیگی کا دن آیا… اور کوئی کشتی نہ ملی",
-   "mood": {
-    "warm": 0.05,
-    "cool": 0.08
-   },
-   "ref": "Sahih al-Bukhari 2291"
-  },
-  {
-   "text": "A piece of wood… *a thousand dinars and a letter* inside.",
-   "ur": "لکڑی کا ایک ٹکڑا… اندر ہزار دینار اور ایک خط",
-   "mood": {
-    "warm": 0.15,
     "cool": 0
    },
    "ref": "Sahih al-Bukhari 2291"
@@ -176,17 +139,8 @@
    "ref": "Sahih al-Bukhari 2291"
   },
   {
-   "text": "The other shore: a boat? No… *a piece of wood*.",
-   "ur": "دوسرے کنارے پر: کشتی؟ نہیں… لکڑی کا ایک ٹکڑا",
-   "mood": {
-    "warm": 0.15,
-    "cool": 0
-   },
-   "ref": "Sahih al-Bukhari 2291"
-  },
-  {
-   "text": "He cut it open… *his money, and the letter.*",
-   "ur": "اس نے اسے چیرا… اس کی رقم، اور خط",
+   "text": "A piece of wood… *and there was his money*.",
+   "ur": "لکڑی کا ایک ٹکڑا… اور اس میں اس کی رقم",
    "mood": {
     "warm": 0.25,
     "cool": 0

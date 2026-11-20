@@ -1,0 +1,110 @@
+{
+ "id": "30-gold-jar",
+ "lines": [
+  "What if you found a jar of gold under land you just bought?",
+  "The Prophet, peace be upon him, told us: a man found one. He told the seller: take your gold. I bought the land, not the gold.",
+  "The seller said: I sold you the land, and everything in it. Neither would take it.",
+  "A man judged between them: Do you have children? A boy. A girl. Marry them, spend on them from it, and give in charity.",
+  "They argued to give, not to take. Return one thing today that isn't yours.",
+  "Watch the full movie of Prophet Sulaiman, alayhis salaam... link below."
+ ],
+ "beats": [
+  {
+   "hook": true,
+   "text": "A jar of *gold*… under land you just bought.",
+   "sub": "Whose is it?",
+   "ur": "آپ کی خریدی ہوئی زمین میں سونے کا مٹکا… کس کا ہے؟",
+   "mood": {
+    "warm": 0.2,
+    "cool": 0
+   },
+   "reveal": false
+  },
+  {
+   "text": "“Take your gold. I bought *the land*, not the gold.”",
+   "ur": "اپنا سونا لے لو۔ میں نے زمین خریدی تھی، سونا نہیں",
+   "mood": {
+    "warm": 0.15,
+    "cool": 0
+   },
+   "ref": "Sahih al-Bukhari 3472"
+  },
+  {
+   "text": "“…and everything in it.” *Neither would take it.*",
+   "ur": "اور جو کچھ اس میں ہے۔ کوئی بھی لینے کو تیار نہ تھا",
+   "mood": {
+    "warm": 0.1,
+    "cool": 0.05
+   },
+   "ref": "Sahih al-Bukhari 3472"
+  },
+  {
+   "text": "“Marry the boy to the girl, spend on them from it, *and give in charity*.”",
+   "ur": "لڑکے کا نکاح لڑکی سے کر دو، اسی میں سے ان پر خرچ کرو، اور صدقہ کرو",
+   "mood": {
+    "warm": 0.25,
+    "cool": 0
+   },
+   "ref": "Sahih al-Bukhari 3472"
+  },
+  {
+   "text": "They argued *to give*, not to take. Return one thing today that isn't yours.",
+   "ur": "وہ دینے پر جھگڑے، لینے پر نہیں۔ آج کوئی ایک چیز لوٹا دیں جو آپ کی نہیں",
+   "mood": {
+    "warm": 0.25,
+    "cool": 0
+   }
+  },
+  {
+   "cta": true,
+   "text": "Watch the full movie of *Prophet Sulaiman (AS)*, link below.",
+   "ur": "حضرت سلیمان علیہ السلام کی مکمل فلم دیکھیں، لنک نیچے",
+   "mood": {
+    "warm": 0.25,
+    "cool": 0
+   },
+   "btn": "Full movie ↓"
+  }
+ ],
+ "photos": [
+  "s1",
+  "s4",
+  "s5",
+  "s7",
+  "s8",
+  "s9"
+ ],
+ "pauses": {
+  "3": 0.8
+ },
+ "turn": 3,
+ "hum": 3,
+ "shakes": [
+  {
+   "beat": 0,
+   "at": 0.3,
+   "amp": 8,
+   "dur": 1.0
+  },
+  {
+   "beat": 2,
+   "at": 2.0,
+   "amp": 6,
+   "dur": 0.9
+  }
+ ],
+ "glows": [
+  {
+   "beat": 3,
+   "at": 0.1,
+   "dur": 3.0,
+   "peak": 0.85
+  },
+  {
+   "beat": 4,
+   "at": 0.2,
+   "dur": 2.5,
+   "peak": 0.4
+  }
+ ]
+}

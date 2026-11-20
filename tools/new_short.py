@@ -43,7 +43,8 @@ def main():
     d = ROOT / "shorts" / D["id"]
     (d / "assets/gen").mkdir(parents=True, exist_ok=True)
     for f in ["AGENTS.md", "CLAUDE.md", "hyperframes.json", "package.json"]:
-        shutil.copy(TPL / f, d / f)
+        if not (d / f).exists():
+            shutil.copy(TPL / f, d / f)
     for sub in ["fonts", "vendor"]:
         if not (d / "assets" / sub).exists():
             shutil.copytree(TPL / "assets" / sub, d / "assets" / sub)
@@ -87,6 +88,9 @@ def main():
         run("tools/short_pauses.py", str(d), json.dumps(D["pauses"]))
     run("tools/soundscape.py", str(d))
     run("tools/build_short.py", str(d))
+    end = json.loads((d / "assets/timings.json").read_text(encoding="utf-8"))[-1]["end"] + spec["hold_end"]
+    words = sum(len(l.split()) for l in D["lines"])
+    print(f"LENGTH {end:.1f}s, {words} words" + ("  ** OVER 45 s: cut it **" if end > 45.5 else "  ok (35-45 s rule)"))
 
 
 if __name__ == "__main__":

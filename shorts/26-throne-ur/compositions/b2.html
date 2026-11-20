@@ -1,21 +1,24 @@
 <template>
   <style>
     #b2 { position: absolute; inset: 0; }
-    #b2-wrap { position: absolute; left: 90px; right: 140px; top: 250px; bottom: 1120px;
+    #b2-wrap { position: absolute; left: 60px; right: 60px; top: 250px; bottom: 1120px;
       display: flex; flex-direction: column; justify-content: flex-start; gap: 20px; }
   </style>
   <div id="b2" data-composition-id="b2" data-width="1080" data-height="1920">
-    <div id="b2-wrap" class="clip" data-start="0" data-duration="5.29">
-      <div id="b2-txt" class="txt"><span class="w" id="b2-w0">Who</span> <span class="w" id="b2-w1">was</span> <span class="w" id="b2-w2">he?</span> <span class="w" id="b2-w3">And</span> <span class="w" id="b2-w4">what</span> <span class="w" id="b2-w5">would</span> <span class="w hi" id="b2-w6">you</span> <span class="w" id="b2-w7">say…</span> <span class="w" id="b2-w8">if</span> <span class="w" id="b2-w9">that</span> <span class="w" id="b2-w10">throne</span> <span class="w" id="b2-w11">were</span> <span class="w" id="b2-w12">yours?</span></div>
-      <div id="b2-ur" class="ur" dir="rtl" lang="ur" data-layout-allow-overflow>وہ کون تھا؟ اور اگر وہ تخت آپ کے سامنے آتا تو آپ کیا کہتے؟</div>
+    <div id="b2-wrap" class="clip" data-start="0" data-duration="7.70">
+      <div id="b2-ar" class="ar" dir="rtl" lang="ar">أَنَا۠ ءَاتِيكَ بِهِۦ قَبۡلَ أَن يَرۡتَدَّ إِلَيۡكَ طَرۡفُكَۚ</div>
+      <div id="b2-tr" class="tr">“I will bring it to you before your glance returns to you”</div>
+      <div id="b2-ur" class="ur" dir="rtl" lang="ur" data-layout-allow-overflow>میں آپ کی پلک جھپکنے سے پہلے اسے لائے دیتا ہوں</div>
+      <div id="b2-ref" class="ref">An-Naml 27:40</div>
     </div>
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
-    tl.fromTo("#b2 .w", {opacity: 0, y: 22, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.32, ease: "power2.out", stagger: 0.300}, 0.12);
-    tl.fromTo("#b2 .hi", {textShadow: "0 0 0px rgba(0,0,0,0)"}, {textShadow: "0 0 28px var(--accent)", duration: 0.6, ease: "power1.out"}, 2.50);
+    tl.fromTo("#b2-ar", {opacity: 0, y: 30, filter: "blur(10px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.9, ease: "power2.out"}, 0.05);
+    tl.fromTo("#b2-tr", {opacity: 0, y: 20}, {opacity: 1, y: 0, duration: 0.7, ease: "power2.out"}, 0.6);
     tl.fromTo("#b2-ur", {opacity: 0, y: 10}, {opacity: 1, y: 0, duration: 0.35, ease: "power2.out"}, 0.15);
-    tl.fromTo("#b2-wrap", {opacity: 1}, {opacity: 0, duration: 0.22, ease: "power1.in"}, 5.05);
+    tl.fromTo("#b2-ref", {opacity: 0, y: 12}, {opacity: 1, y: 0, duration: 0.45, ease: "power2.out"}, 0.35);
+    tl.fromTo("#b2-wrap", {opacity: 1}, {opacity: 0, duration: 0.22, ease: "power1.in"}, 7.46);
     window.__timelines["b2"] = tl;
   </script>
 </template>

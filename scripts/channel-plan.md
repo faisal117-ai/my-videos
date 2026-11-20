@@ -21,7 +21,7 @@ Reference: shorts/24-cave/24-cave.mp4 (spec.json = the template). Use it for eve
   source chip (e.g. "SAHIH AL-BUKHARI 2272") on every quoted line.
 - **Story beats:** hook (one sentence) → open question to the viewer → the source quoted → each step with
   a pause before the turn ("a little… still not enough… rolled away") → one-line lesson → ending card naming
-  the films with "Full movies ↓". About 75–80 s.
+  the films with "Full movies ↓". **Length: 35–45 s, about 90–100 spoken words (never over 45 s): our data, 45 s or shorter = 48% pushed vs 7–8% for longer (channel-plan.md "What the data shows"). Corrected 20 Nov: the earlier "75–80 s" here was wrong.** One hook, one turn with one verse card, the lesson, the film line.
 - **Sound:** Callum + character voices, story soundscape, booms/risers at the turns, mix.py at -14.5 LUFS.
 - Then checklist.md line by line and the skills table in CLAUDE.md, as always.
 

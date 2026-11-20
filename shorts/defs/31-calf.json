@@ -1,0 +1,113 @@
+{
+ "id": "31-calf",
+ "lines": [
+  "You saw the sea split for you... would you ever bow to a statue? They did.",
+  "While Prophet Musa, alayhis salaam, was away forty nights, the Samiri made them a calf. And they said: This is your god.",
+  "Did they not see that it could not return to them any speech, nor harm, nor benefit?",
+  "Musa, alayhis salaam, returned and said: We will surely burn it, and blow it into the sea.",
+  "A god that can't answer you is no god. Turn to the One who answers.",
+  "Watch the full movie of Prophet Musa, alayhis salaam... link below."
+ ],
+ "beats": [
+  {
+   "hook": true,
+   "text": "You saw *the sea split* for you…",
+   "sub": "…would you ever bow to a statue? They did.",
+   "ur": "آپ کے لیے سمندر پھٹ گیا… کیا پھر بھی آپ کسی مورت کو سجدہ کریں گے؟",
+   "mood": {
+    "warm": 0.2,
+    "cool": 0
+   },
+   "reveal": false
+  },
+  {
+   "text": "While *Musa (AS)* was away forty nights… *a calf*.",
+   "ur": "موسیٰ علیہ السلام چالیس راتوں کے لیے گئے… اور ایک بچھڑا",
+   "mood": {
+    "warm": 0.05,
+    "cool": 0.08
+   },
+   "ref": "Taha 20:88"
+  },
+  {
+   "q": "20:89",
+   "ar_words": [
+    1,
+    12
+   ],
+   "en": "Did they not see that it could not return to them any speech and that it did not possess for them any harm or benefit",
+   "ur_a": [
+    "کیا وہ نہ دیکھتے",
+    "اختیار رکھتا ہے"
+   ],
+   "ref": "Taha 20:89",
+   "mood": {
+    "warm": 0.05,
+    "cool": 0.08
+   },
+   "ur": "کیا وہ نہ دیکھتے تھے کہ نہ وہ اُن کی بات کا جواب دیتا ہے اور نہ ان کے نفع و نقصان کا کچھ اختیار رکھتا ہے"
+  },
+  {
+   "text": "“We will surely *burn it*, and blow it into the sea.”",
+   "ur": "ہم اسے جلا ڈالیں گے، اور دریا میں بہا دیں گے",
+   "mood": {
+    "warm": 0.15,
+    "cool": 0
+   },
+   "ref": "Taha 20:97"
+  },
+  {
+   "text": "A god that can't answer, harm or help… *is no god*. Turn to the One who answers.",
+   "ur": "جو نہ جواب دے، نہ نقصان، نہ فائدہ… وہ خدا نہیں۔ اس کی طرف رجوع کریں جو جواب دیتا ہے",
+   "mood": {
+    "warm": 0.25,
+    "cool": 0
+   }
+  },
+  {
+   "cta": true,
+   "text": "Watch the full movie of *Prophet Musa (AS)*, link below.",
+   "ur": "حضرت موسیٰ علیہ السلام کی مکمل فلم دیکھیں، لنک نیچے",
+   "mood": {
+    "warm": 0.25,
+    "cool": 0
+   },
+   "btn": "Full movie ↓"
+  }
+ ],
+ "photos": [
+  "s1",
+  "s4",
+  "s5",
+  "s7",
+  "s9",
+  "s9"
+ ],
+ "pauses": {
+  "3": 0.8
+ },
+ "turn": 3,
+ "hum": 4,
+ "shakes": [
+  {
+   "beat": 0,
+   "at": 0.3,
+   "amp": 8,
+   "dur": 1.0
+  },
+  {
+   "beat": 3,
+   "at": 0.3,
+   "amp": 12,
+   "dur": 1.6
+  }
+ ],
+ "glows": [
+  {
+   "beat": 4,
+   "at": 0.2,
+   "dur": 3.0,
+   "peak": 0.85
+  }
+ ]
+}

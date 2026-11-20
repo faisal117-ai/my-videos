@@ -1,271 +1,184 @@
 {
- "accent": "#f2b04a",
- "embers": false,
- "motes": 0.35,
- "mote": "#f6dcae",
- "flash": 0.0,
- "bed_volume": 1.0,
- "hold_end": 1.2,
- "text_top": 300,
- "text_bottom": 780,
- "tr_size": 56,
- "scene": "photos",
- "photos": [
-  "assets/gen/c11b.jpg",
-  "assets/gen/c02a.jpg",
-  "assets/gen/c02c.jpg",
-  "assets/gen/c11a.jpg",
-  "assets/gen/c11a.jpg",
-  "assets/gen/c11b.jpg",
-  "assets/gen/c11a.jpg",
-  "assets/gen/c11c.jpg",
-  "assets/gen/c11c.jpg",
-  "assets/gen/c12a.jpg",
-  "assets/gen/c02a.jpg"
- ],
- "shakes": [
-  {
-   "beat": 0,
-   "at": 0.3,
-   "amp": 8,
-   "dur": 1.0
-  },
-  {
-   "beat": 7,
-   "at": 0.0,
-   "amp": 12,
-   "dur": 1.6
-  }
- ],
- "glows": [
-  {
-   "beat": 3,
-   "at": 0.1,
-   "dur": 2.4,
-   "peak": 0.35
-  },
-  {
-   "beat": 9,
-   "at": 0.2,
-   "dur": 3.5,
-   "peak": 0.85
-  }
- ],
- "sound": [
-  {
-   "prompt": "lib",
-   "src": "../../long/01-yusuf/assets/sfx/992f69b875be.mp3",
-   "beat": 0,
-   "offset": 0,
-   "dur": 90,
-   "gain": -17,
-   "fade_in": 0.5,
-   "fade_out": 1.5
-  },
-  {
-   "prompt": "lib",
-   "src": "../03-cave/assets/sfx/03b5f68efefc.mp3",
-   "beat": 0,
-   "offset": 0.2,
-   "dur": 3,
-   "gain": -13,
-   "fade_in": 0.02,
-   "fade_out": 1
-  },
-  {
-   "prompt": "lib",
-   "src": "../../long/04-sulaiman/assets/sfx/93fa1b20e45f.mp3",
-   "beat": 5,
-   "offset": 0,
-   "dur": 8,
-   "gain": -13,
-   "fade_in": 0.5,
-   "fade_out": 1.5
-  },
-  {
-   "prompt": "lib",
-   "src": "../../long/04-sulaiman/assets/sfx/72cc4baec592.mp3",
-   "beat": 7,
-   "offset": -3.6,
-   "dur": 3.8,
-   "gain": -8,
-   "fade_in": 0.4,
-   "fade_out": 0.3
-  },
-  {
-   "prompt": "lib",
-   "src": "../../long/04-sulaiman/assets/sfx/f0b78dedaad6.mp3",
-   "beat": 7,
-   "offset": 0,
-   "dur": 4,
-   "gain": -6,
-   "fade_in": 0.02,
-   "fade_out": 1.5
-  },
-  {
-   "prompt": "lib",
-   "src": "../03-cave/assets/sfx/f73090a5a6a6.mp3",
-   "beat": 7,
-   "offset": 0.2,
-   "dur": 4,
-   "gain": -10,
-   "fade_in": 0.03,
-   "fade_out": 1
-  },
-  {
-   "prompt": "lib",
-   "src": "../06-ant/assets/sfx/cabf6e6577de.mp3",
-   "beat": 9,
-   "offset": 0,
-   "dur": 30,
-   "gain": -13,
-   "fade_in": 1.0,
-   "fade_out": 1.5
-  }
- ],
- "beats": [
-  {
-   "hook": true,
-   "text": "The jinn know your future? They didn't even know *their king had died*.",
-   "ur": "جن آپ کا مستقبل جانتے ہیں؟ انہیں تو اپنے بادشاہ کی موت کا بھی پتہ نہ چلا",
-   "mood": {
-    "warm": 0.1,
-    "cool": 0.05
-   },
-   "reveal": false
-  },
-  {
-   "text": "Even the jinn worked for *Prophet Sulaiman (AS)*, by his Lord's permission.",
-   "ur": "جن بھی حضرت سلیمان علیہ السلام کے لیے کام کرتے تھے، ان کے رب کے حکم سے",
-   "mood": {
-    "warm": 0.15,
-    "cool": 0
-   },
-   "ref": "Saba 34:12"
-  },
-  {
-   "q": "34:13",
-   "ar_words": [
-    1,
-    11
-   ],
-   "en": "They made for him what he willed of elevated chambers, statues, bowls like reservoirs, and stationary kettles",
-   "ur_a": [
-    "وہ اُس کے لیے",
-    "نہ ہٹنے والی بھاری دیگیں"
-   ],
-   "ref": "Saba 34:13",
-   "mood": {
-    "warm": 0.15,
-    "cool": 0
-   },
-   "arabic": "يَعۡمَلُونَ لَهُۥ مَا يَشَآءُ مِن مَّحَٰرِيبَ وَتَمَٰثِيلَ وَجِفَانࣲ كَٱلۡجَوَابِ وَقُدُورࣲ رَّاسِيَٰتٍۚ",
-   "translation": "“They made for him what he willed of elevated chambers, statues, bowls like reservoirs, and stationary kettles”",
-   "ur": "وہ اُس کے لیے بناتے تھے جو کچھ وہ چاہتا، اونچی عمارتیں، تصویریں، بڑے بڑے حوض جیسے لگن اور اپنی جگہ سے نہ ہٹنے والی بھاری دیگیں"
-  },
-  {
-   "q": "34:13",
-   "ar_words": [
-    12,
-    19
-   ],
-   "en": "Work, O family of David, in gratitude. And few of My servants are grateful",
-   "ur_a": [
-    "اے آلِ داؤدؑ",
-    "شکر گزار ہیں"
-   ],
-   "ref": "Saba 34:13",
-   "mood": {
-    "warm": 0.2,
-    "cool": 0
-   },
-   "arabic": "ٱعۡمَلُوٓاْ ءَالَ دَاوُۥدَ شُكۡرࣰاۚ وَقَلِيلࣱ مِّنۡ عِبَادِيَ ٱلشَّكُورُ",
-   "translation": "“Work, O family of David, in gratitude. And few of My servants are grateful”",
-   "ur": "اے آلِ داؤدؑ، عمل کرو شکر کے طریقے پر، میرے بندوں میں کم ہی شکر گزار ہیں"
-  },
-  {
-   "text": "Then came the one thing *no kingdom can stop*.",
-   "ur": "پھر وہ آیا جسے کوئی بادشاہی نہیں روک سکتی",
-   "mood": {
-    "warm": 0.0,
-    "cool": 0.12
-   }
-  },
-  {
-   "q": "34:14",
-   "ar_words": [
-    5,
-    13
-   ],
-   "en": "nothing indicated to the jinn his death except a creature of the earth eating his staff",
-   "ur_a": [
-    "جنوں کو",
-    "کھا رہا تھا"
-   ],
-   "ref": "Saba 34:14",
-   "mood": {
-    "warm": 0.0,
-    "cool": 0.12
-   },
-   "arabic": "مَا دَلَّهُمۡ عَلَىٰ مَوۡتِهِۦٓ إِلَّا دَآبَّةُ ٱلۡأَرۡضِ تَأۡكُلُ مِنسَأَتَهُۥۖ",
-   "translation": "“nothing indicated to the jinn his death except a creature of the earth eating his staff”",
-   "ur": "جنوں کو اس کی موت کا پتہ دینے والی کوئی چیز اُس گھن کے سوا نہ تھی جو اس کے عصا کو کھا رہا تھا"
-  },
-  {
-   "text": "Still leaning on his staff… and *the jinn kept working*.",
-   "ur": "وہ اپنے عصا پر ٹیک لگائے تھے… اور جن کام کرتے رہے",
-   "mood": {
-    "warm": 0.0,
-    "cool": 0.1
-   },
-   "ref": "Saba 34:14"
-  },
-  {
-   "text": "But when he *fell*…",
-   "ur": "پھر جب وہ گر پڑے…",
-   "mood": {
-    "warm": 0.0,
-    "cool": 0.12
-   },
-   "ref": "Saba 34:14"
-  },
-  {
-   "q": "34:14",
-   "ar_words": [
-    16,
-    27
-   ],
-   "en": "it became clear to the jinn that if they had known the unseen, they would not have remained in humiliating punishment",
-   "ur_a": [
-    "جنوں پر یہ بات",
-    "مبتلا نہ رہتے"
-   ],
-   "ref": "Saba 34:14",
-   "mood": {
-    "warm": 0.1,
-    "cool": 0
-   },
-   "arabic": "تَبَيَّنَتِ ٱلۡجِنُّ أَن لَّوۡ كَانُواْ يَعۡلَمُونَ ٱلۡغَيۡبَ مَا لَبِثُواْ فِي ٱلۡعَذَابِ ٱلۡمُهِينِ",
-   "translation": "“it became clear to the jinn that if they had known the unseen, they would not have remained in humiliating punishment”",
-   "ur": "جنوں پر یہ بات کھل گئی کہ اگر وہ غیب کے جاننے والے ہوتے تو اس ذلت کے عذاب میں مبتلا نہ رہتے"
-  },
-  {
-   "text": "Only *Allah* knows the unseen. Trust Him alone.",
-   "ur": "غیب صرف اللہ جانتا ہے۔ بھروسہ صرف اسی پر",
-   "mood": {
-    "warm": 0.25,
-    "cool": 0
-   }
-  },
-  {
-   "cta": true,
-   "text": "Watch the full movie of *Prophet Sulaiman (AS)*, link below.",
-   "ur": "حضرت سلیمان علیہ السلام کی مکمل فلم دیکھیں، لنک نیچے",
-   "mood": {
-    "warm": 0.25,
-    "cool": 0
-   },
-   "btn": "Full movie ↓"
-  }
- ]
+  "accent": "#f2b04a",
+  "embers": false,
+  "motes": 0.35,
+  "mote": "#f6dcae",
+  "flash": 0.0,
+  "bed_volume": 1.0,
+  "hold_end": 1.2,
+  "text_top": 300,
+  "text_bottom": 780,
+  "tr_size": 56,
+  "scene": "photos",
+  "photos": [
+    "assets/gen/c11b.jpg",
+    "assets/gen/c02a.jpg",
+    "assets/gen/c11b.jpg",
+    "assets/gen/c11c.jpg",
+    "assets/gen/c12a.jpg",
+    "assets/gen/c02a.jpg"
+  ],
+  "shakes": [
+    {
+      "beat": 0,
+      "at": 0.3,
+      "amp": 8,
+      "dur": 1.0
+    },
+    {
+      "beat": 3,
+      "at": 0.2,
+      "amp": 12,
+      "dur": 1.6
+    }
+  ],
+  "glows": [
+    {
+      "beat": 4,
+      "at": 0.2,
+      "dur": 3.0,
+      "peak": 0.85
+    }
+  ],
+  "sound": [
+    {
+      "prompt": "lib",
+      "src": "../../long/01-yusuf/assets/sfx/992f69b875be.mp3",
+      "beat": 0,
+      "offset": 0,
+      "dur": 100,
+      "gain": -17,
+      "fade_in": 0.5,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "lib",
+      "src": "../03-cave/assets/sfx/03b5f68efefc.mp3",
+      "beat": 0,
+      "offset": 0.2,
+      "dur": 3,
+      "gain": -13,
+      "fade_in": 0.02,
+      "fade_out": 1
+    },
+    {
+      "prompt": "lib",
+      "src": "../../long/04-sulaiman/assets/sfx/93fa1b20e45f.mp3",
+      "beat": 1,
+      "offset": 0,
+      "dur": 8,
+      "gain": -13,
+      "fade_in": 0.5,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "lib",
+      "src": "../../long/04-sulaiman/assets/sfx/72cc4baec592.mp3",
+      "beat": 3,
+      "offset": -3.6,
+      "dur": 3.8,
+      "gain": -8,
+      "fade_in": 0.4,
+      "fade_out": 0.3
+    },
+    {
+      "prompt": "lib",
+      "src": "../../long/04-sulaiman/assets/sfx/f0b78dedaad6.mp3",
+      "beat": 3,
+      "offset": 0,
+      "dur": 4,
+      "gain": -7,
+      "fade_in": 0.02,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "lib",
+      "src": "../06-ant/assets/sfx/cabf6e6577de.mp3",
+      "beat": 4,
+      "offset": 0,
+      "dur": 30,
+      "gain": -13,
+      "fade_in": 1.0,
+      "fade_out": 1.5
+    }
+  ],
+  "beats": [
+    {
+      "hook": true,
+      "text": "The jinn know your future? They didn't even know *their king had died*.",
+      "ur": "جن آپ کا مستقبل جانتے ہیں؟ انہیں تو اپنے بادشاہ کی موت کا بھی پتہ نہ چلا",
+      "mood": {
+        "warm": 0.1,
+        "cool": 0.05
+      },
+      "reveal": false
+    },
+    {
+      "text": "Even the jinn worked for *Prophet Sulaiman (AS)*, by his Lord's permission.",
+      "ur": "جن بھی حضرت سلیمان علیہ السلام کے لیے کام کرتے تھے، ان کے رب کے حکم سے",
+      "mood": {
+        "warm": 0.15,
+        "cool": 0
+      },
+      "ref": "Saba 34:12"
+    },
+    {
+      "q": "34:14",
+      "ar_words": [
+        5,
+        13
+      ],
+      "en": "nothing indicated to the jinn his death except a creature of the earth eating his staff",
+      "ur_a": [
+        "جنوں کو",
+        "کھا رہا تھا"
+      ],
+      "ref": "Saba 34:14",
+      "mood": {
+        "warm": 0.0,
+        "cool": 0.12
+      },
+      "ur": "جنوں کو اس کی موت کا پتہ دینے والی کوئی چیز اُس گھن کے سوا نہ تھی جو اس کے عصا کو کھا رہا تھا",
+      "arabic": "مَا دَلَّهُمۡ عَلَىٰ مَوۡتِهِۦٓ إِلَّا دَآبَّةُ ٱلۡأَرۡضِ تَأۡكُلُ مِنسَأَتَهُۥۖ",
+      "translation": "“nothing indicated to the jinn his death except a creature of the earth eating his staff”"
+    },
+    {
+      "q": "34:14",
+      "ar_words": [
+        16,
+        27
+      ],
+      "en": "it became clear to the jinn that if they had known the unseen, they would not have remained in humiliating punishment",
+      "ur_a": [
+        "جنوں پر یہ بات",
+        "مبتلا نہ رہتے"
+      ],
+      "ref": "Saba 34:14",
+      "mood": {
+        "warm": 0.1,
+        "cool": 0
+      },
+      "ur": "جنوں پر یہ بات کھل گئی کہ اگر وہ غیب کے جاننے والے ہوتے تو اس ذلت کے عذاب میں مبتلا نہ رہتے",
+      "arabic": "تَبَيَّنَتِ ٱلۡجِنُّ أَن لَّوۡ كَانُواْ يَعۡلَمُونَ ٱلۡغَيۡبَ مَا لَبِثُواْ فِي ٱلۡعَذَابِ ٱلۡمُهِينِ",
+      "translation": "“it became clear to the jinn that if they had known the unseen, they would not have remained in humiliating punishment”"
+    },
+    {
+      "text": "Only *Allah* knows the unseen. Trust Him alone.",
+      "ur": "غیب صرف اللہ جانتا ہے۔ بھروسہ صرف اسی پر",
+      "mood": {
+        "warm": 0.25,
+        "cool": 0
+      }
+    },
+    {
+      "cta": true,
+      "text": "Watch the full movie of *Prophet Sulaiman (AS)*, link below.",
+      "ur": "حضرت سلیمان علیہ السلام کی مکمل فلم دیکھیں، لنک نیچے",
+      "mood": {
+        "warm": 0.25,
+        "cool": 0
+      },
+      "btn": "Full movie ↓"
+    }
+  ]
 }

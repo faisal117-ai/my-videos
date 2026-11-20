@@ -1,0 +1,137 @@
+{
+ "id": "28-two-answers",
+ "lines": [
+  "Two men, one test. One said: I earned it... and the earth swallowed him.",
+  "Qarun was given treasures, and he said: I was only given it because of knowledge I have.",
+  "Prophet Sulaiman, alayhis salaam, was given far more, and said: This is from the favor of my Lord.",
+  "Same test. Two answers. And about Qarun, Allah says: We caused the earth to swallow him and his home.",
+  "Whatever you have today is the same test. Say: from the favor of my Lord.",
+  "Watch the full movie of Prophet Sulaiman, alayhis salaam... link below."
+ ],
+ "beats": [
+  {
+   "hook": true,
+   "text": "2 men. 1 test. One said *“I earned it.”*",
+   "sub": "…and the earth swallowed him.",
+   "ur": "دو آدمی، ایک امتحان۔ ایک نے کہا: یہ میری کمائی ہے… اور زمین اسے نگل گئی",
+   "mood": {
+    "warm": 0.15,
+    "cool": 0
+   },
+   "reveal": false
+  },
+  {
+   "q": "28:78",
+   "ar_words": [
+    1,
+    6
+   ],
+   "en": "I was only given it because of knowledge I have",
+   "ur_a": [
+    "یہ سب کچھ",
+    "حاصل ہے"
+   ],
+   "ref": "Al-Qasas 28:78",
+   "mood": {
+    "warm": 0.05,
+    "cool": 0.08
+   },
+   "ur": "یہ سب کچھ تو مجھے اُس علم کی بنا پر دیا گیا ہے جو مجھ کو حاصل ہے"
+  },
+  {
+   "q": "27:40",
+   "ar_words": [
+    20,
+    23
+   ],
+   "en": "This is from the favor of my Lord",
+   "ur_a": [
+    "یہ میرے رب",
+    "کا فضل ہے"
+   ],
+   "ref": "An-Naml 27:40",
+   "mood": {
+    "warm": 0.2,
+    "cool": 0
+   },
+   "ur": "یہ میرے رب کا فضل ہے تاکہ وہ مجھے آزمائے کہ میں شکر کرتا ہوں یا کافر نعمت بن جاتا ہوں"
+  },
+  {
+   "q": "28:81",
+   "ar_words": [
+    1,
+    4
+   ],
+   "en": "And We caused the earth to swallow him and his home",
+   "ur_a": [
+    "ہم نے اسے",
+    "دَھنسا دیا"
+   ],
+   "ref": "Al-Qasas 28:81",
+   "mood": {
+    "warm": 0.0,
+    "cool": 0.12
+   },
+   "ur": "ہم نے اسے اور اس کے گھر کو زمین میں دَھنسا دیا"
+  },
+  {
+   "text": "Whatever you have is the same test. Say: *“from the favor of my Lord.”*",
+   "ur": "جو کچھ آپ کے پاس ہے، وہی امتحان ہے۔ کہیں: یہ میرے رب کا فضل ہے",
+   "mood": {
+    "warm": 0.25,
+    "cool": 0
+   }
+  },
+  {
+   "cta": true,
+   "text": "Watch the full movie of *Prophet Sulaiman (AS)*, link below.",
+   "ur": "حضرت سلیمان علیہ السلام کی مکمل فلم دیکھیں، لنک نیچے",
+   "mood": {
+    "warm": 0.25,
+    "cool": 0
+   },
+   "btn": "Full movie ↓"
+  }
+ ],
+ "photos": [
+  "q3",
+  "q2",
+  "s6",
+  "q5",
+  "s5",
+  "s1"
+ ],
+ "pauses": {
+  "3": 0.8
+ },
+ "turn": 3,
+ "hum": 4,
+ "shakes": [
+  {
+   "beat": 0,
+   "at": 0.3,
+   "amp": 10,
+   "dur": 1.2
+  },
+  {
+   "beat": 3,
+   "at": 1.5,
+   "amp": 12,
+   "dur": 1.6
+  }
+ ],
+ "glows": [
+  {
+   "beat": 2,
+   "at": 0.1,
+   "dur": 2.5,
+   "peak": 0.5
+  },
+  {
+   "beat": 4,
+   "at": 0.2,
+   "dur": 3.0,
+   "peak": 0.85
+  }
+ ]
+}

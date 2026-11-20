@@ -12,16 +12,9 @@
  "scene": "photos",
  "photos": [
   "assets/gen/s8.jpg",
-  "assets/gen/s3.jpg",
-  "assets/gen/s1.jpg",
-  "assets/gen/s3.jpg",
   "assets/gen/s2.jpg",
-  "assets/gen/s5.jpg",
-  "assets/gen/s4.jpg",
   "assets/gen/s6.jpg",
   "assets/gen/s7.jpg",
-  "assets/gen/s7.jpg",
-  "assets/gen/s5.jpg",
   "assets/gen/s9.jpg",
   "assets/gen/s8.jpg"
  ],
@@ -33,36 +26,24 @@
    "dur": 1.0
   },
   {
-   "beat": 7,
-   "at": -0.3,
-   "amp": 8,
-   "dur": 1.2
-  },
-  {
-   "beat": 10,
-   "at": -0.3,
+   "beat": 2,
+   "at": 2.5,
    "amp": 7,
-   "dur": 1.2
+   "dur": 1.0
   }
  ],
  "glows": [
   {
-   "beat": 4,
+   "beat": 3,
    "at": 0.1,
-   "dur": 2.4,
-   "peak": 0.35
-  },
-  {
-   "beat": 9,
-   "at": 0.1,
-   "dur": 2.4,
-   "peak": 0.5
-  },
-  {
-   "beat": 10,
-   "at": 0.2,
-   "dur": 3.5,
+   "dur": 3.0,
    "peak": 0.85
+  },
+  {
+   "beat": 4,
+   "at": 0.2,
+   "dur": 3.0,
+   "peak": 0.5
   }
  ],
  "sound": [
@@ -71,7 +52,7 @@
    "src": "../../long/01-yusuf/assets/sfx/992f69b875be.mp3",
    "beat": 0,
    "offset": 0,
-   "dur": 90,
+   "dur": 100,
    "gain": -17,
    "fade_in": 0.5,
    "fade_out": 1.5
@@ -89,7 +70,7 @@
   {
    "prompt": "lib",
    "src": "../../long/04-sulaiman/assets/sfx/93fa1b20e45f.mp3",
-   "beat": 6,
+   "beat": 1,
    "offset": 0,
    "dur": 8,
    "gain": -13,
@@ -99,39 +80,29 @@
   {
    "prompt": "lib",
    "src": "../../long/04-sulaiman/assets/sfx/72cc4baec592.mp3",
-   "beat": 7,
+   "beat": 3,
    "offset": -3.6,
    "dur": 3.8,
-   "gain": -9,
+   "gain": -8,
    "fade_in": 0.4,
    "fade_out": 0.3
   },
   {
    "prompt": "lib",
    "src": "../../long/04-sulaiman/assets/sfx/f0b78dedaad6.mp3",
-   "beat": 7,
+   "beat": 3,
    "offset": 0,
    "dur": 4,
-   "gain": -9,
+   "gain": -7,
    "fade_in": 0.02,
    "fade_out": 1.5
   },
   {
    "prompt": "lib",
-   "src": "../../long/04-sulaiman/assets/sfx/72cc4baec592.mp3",
-   "beat": 10,
-   "offset": -3.6,
-   "dur": 3.8,
-   "gain": -9,
-   "fade_in": 0.4,
-   "fade_out": 0.3
-  },
-  {
-   "prompt": "lib",
    "src": "../06-ant/assets/sfx/cabf6e6577de.mp3",
-   "beat": 9,
+   "beat": 3,
    "offset": 0,
-   "dur": 40,
+   "dur": 30,
    "gain": -13,
    "fade_in": 1.0,
    "fade_out": 1.5
@@ -151,34 +122,8 @@
    "ref": "Sahih Muslim 2542"
   },
   {
-   "text": "Not a king. Not a famous scholar. *So why him?*",
-   "ur": "نہ بادشاہ، نہ مشہور عالم۔ تو پھر وہی کیوں؟",
-   "mood": {
-    "warm": 0.1,
-    "cool": 0
-   }
-  },
-  {
-   "text": "*Uwais*, son of Amir, coming with the help from *Yemen*.",
-   "ur": "اویس بن عامر، یمن کی کمک کے ساتھ آئے گا",
-   "mood": {
-    "warm": 0.12,
-    "cool": 0
-   },
-   "ref": "Sahih Muslim 2542"
-  },
-  {
-   "text": "He had leprosy… cured, except *a spot the size of a coin*.",
-   "ur": "اسے برص تھا… ٹھیک ہو گیا، سوائے ایک درہم جتنی جگہ کے",
-   "mood": {
-    "warm": 0.08,
-    "cool": 0
-   },
-   "ref": "Sahih Muslim 2542"
-  },
-  {
-   "text": "He has a mother… and he is *dutiful to her*.",
-   "ur": "اس کی ایک ماں ہے… اور وہ اس کے ساتھ نیک سلوک کرتا ہے",
+   "text": "*Uwais* from Yemen… he has a mother, and he is *dutiful to her*.",
+   "ur": "یمن کا اویس… اس کی ایک ماں ہے، اور وہ اس کا فرمانبردار ہے",
    "mood": {
     "warm": 0.2,
     "cool": 0
@@ -186,37 +131,10 @@
    "ref": "Sahih Muslim 2542"
   },
   {
-   "text": "If he swore by Allah, *Allah would fulfil it*.",
-   "ur": "اگر وہ اللہ کی قسم کھا لے تو اللہ اسے پورا کر دے",
-   "mood": {
-    "warm": 0.12,
-    "cool": 0
-   },
-   "ref": "Sahih Muslim 2542"
-  },
-  {
-   "text": "Umar (RA), to every caravan from Yemen: *“Is Uwais among you?”*",
-   "ur": "عمر رضی اللہ عنہ ہر یمنی قافلے سے پوچھتے: کیا تم میں اویس ہے؟",
+   "text": "Umar (RA), to every caravan: *“Is Uwais among you?”* …Yes.",
+   "ur": "عمر رضی اللہ عنہ ہر قافلے سے: کیا تم میں اویس ہے؟ …ہاں",
    "mood": {
     "warm": 0.1,
-    "cool": 0
-   },
-   "ref": "Sahih Muslim 2542"
-  },
-  {
-   "text": "Until one day… *“Yes.”*",
-   "ur": "یہاں تک کہ ایک دن… ہاں",
-   "mood": {
-    "warm": 0.1,
-    "cool": 0.05
-   },
-   "ref": "Sahih Muslim 2542"
-  },
-  {
-   "text": "Every detail the Prophet ﷺ gave… *every answer: yes.*",
-   "ur": "نبی ﷺ کی بتائی ہر بات… ہر جواب: ہاں",
-   "mood": {
-    "warm": 0.15,
     "cool": 0
    },
    "ref": "Sahih Muslim 2542"
@@ -226,15 +144,6 @@
    "ur": "امیر المومنین نے کہا: میرے لیے مغفرت کی دعا کرو",
    "mood": {
     "warm": 0.2,
-    "cool": 0
-   },
-   "ref": "Sahih Muslim 2542"
-  },
-  {
-   "text": "And Uwais *made that dua* for him.",
-   "ur": "اور اویس نے ان کے لیے مغفرت کی دعا کی",
-   "mood": {
-    "warm": 0.25,
     "cool": 0
    },
    "ref": "Sahih Muslim 2542"

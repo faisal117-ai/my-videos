@@ -1,0 +1,111 @@
+{
+ "id": "27-uwais",
+ "lines": [
+  "The Prophet, peace be upon him, told Umar: if you can... ask this man to pray for you.",
+  "Uwais, from Yemen. He has a mother, and he is dutiful to her.",
+  "Years later, Umar, Razi Allah hu Anhu, asked every caravan from Yemen: Is Uwais among you? Until one day... yes.",
+  "The leader of the believers asked him: ask Allah to forgive me. And Uwais did.",
+  "Of all he could say, the Prophet, peace be upon him, mentioned his mother. Serve yours today.",
+  "Watch the full movie of Prophet Sulaiman, alayhis salaam... link below."
+ ],
+ "beats": [
+  {
+   "hook": true,
+   "text": "“If you can, ask *this man* to pray for you.”",
+   "sub": "The Prophet ﷺ to Umar (RA)",
+   "ur": "اگر ہو سکے تو اس شخص سے اپنے لیے دعا کروانا",
+   "mood": {
+    "warm": 0.15,
+    "cool": 0
+   },
+   "reveal": false,
+   "ref": "Sahih Muslim 2542"
+  },
+  {
+   "text": "*Uwais* from Yemen… he has a mother, and he is *dutiful to her*.",
+   "ur": "یمن کا اویس… اس کی ایک ماں ہے، اور وہ اس کا فرمانبردار ہے",
+   "mood": {
+    "warm": 0.2,
+    "cool": 0
+   },
+   "ref": "Sahih Muslim 2542"
+  },
+  {
+   "text": "Umar (RA), to every caravan: *“Is Uwais among you?”* …Yes.",
+   "ur": "عمر رضی اللہ عنہ ہر قافلے سے: کیا تم میں اویس ہے؟ …ہاں",
+   "mood": {
+    "warm": 0.1,
+    "cool": 0
+   },
+   "ref": "Sahih Muslim 2542"
+  },
+  {
+   "text": "The leader of the believers: *“Ask Allah to forgive me.”*",
+   "ur": "امیر المومنین نے کہا: میرے لیے مغفرت کی دعا کرو",
+   "mood": {
+    "warm": 0.2,
+    "cool": 0
+   },
+   "ref": "Sahih Muslim 2542"
+  },
+  {
+   "text": "Of all he could say, the Prophet ﷺ mentioned *his mother*. Serve yours today.",
+   "ur": "نبی ﷺ نے اس کی ماں کا ذکر کیا۔ آج اپنی ماں کی خدمت کریں",
+   "mood": {
+    "warm": 0.25,
+    "cool": 0
+   }
+  },
+  {
+   "cta": true,
+   "text": "Watch the full movie of *Prophet Sulaiman (AS)*, link below.",
+   "ur": "حضرت سلیمان علیہ السلام کی مکمل فلم دیکھیں، لنک نیچے",
+   "mood": {
+    "warm": 0.25,
+    "cool": 0
+   },
+   "btn": "Full movie ↓"
+  }
+ ],
+ "photos": [
+  "s8",
+  "s2",
+  "s6",
+  "s7",
+  "s9",
+  "s8"
+ ],
+ "pauses": {
+  "3": 0.8
+ },
+ "turn": 3,
+ "hum": 3,
+ "shakes": [
+  {
+   "beat": 0,
+   "at": 0.3,
+   "amp": 8,
+   "dur": 1.0
+  },
+  {
+   "beat": 2,
+   "at": 2.5,
+   "amp": 7,
+   "dur": 1.0
+  }
+ ],
+ "glows": [
+  {
+   "beat": 3,
+   "at": 0.1,
+   "dur": 3.0,
+   "peak": 0.85
+  },
+  {
+   "beat": 4,
+   "at": 0.2,
+   "dur": 3.0,
+   "peak": 0.5
+  }
+ ]
+}

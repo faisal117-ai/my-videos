@@ -3,6 +3,7 @@
 Report the result (each line ✅ or ❌ + fix) to the user together with the video. Sources: shorts-plan.md, channel-plan.md, voice.md.
 
 ## Story (script)
+- [ ] **Length: Shorts 35–45 s, never over 45 s** (about 90–100 spoken words; our data: 45 s or shorter = 48% pushed, longer = 7–8%).
 - [ ] **Hook in one short sentence, first 5 s**: named person (or clear "he"/"a man") + surprising act + promise of the turn; lit first frame.
 - [ ] **A question / open loop** the viewer must stay for ("five words he forgot…", "what does a man say…"), answered only near the end.
 - [ ] **Suspense**: the answer is held back; a pause (0.6–1.2 s) and a sound (riser / pulse) before every turn; cliffhanger lines.

@@ -1,0 +1,121 @@
+{
+ "id": "29-staff",
+ "lines": [
+  "You think the jinn know your future? They didn't even know their own king had died.",
+  "Even the jinn worked for Prophet Sulaiman, alayhis salaam, by his Lord's permission.",
+  "And when We decreed for him death, nothing indicated to the jinn his death except a creature of the earth eating his staff.",
+  "But when he fell... it became clear to the jinn that if they had known the unseen, they would not have remained in humiliating punishment.",
+  "Only Allah knows the unseen. Trust Him alone.",
+  "Watch the full movie of Prophet Sulaiman, alayhis salaam... link below."
+ ],
+ "beats": [
+  {
+   "hook": true,
+   "text": "The jinn know your future? They didn't even know *their king had died*.",
+   "ur": "جن آپ کا مستقبل جانتے ہیں؟ انہیں تو اپنے بادشاہ کی موت کا بھی پتہ نہ چلا",
+   "mood": {
+    "warm": 0.1,
+    "cool": 0.05
+   },
+   "reveal": false
+  },
+  {
+   "text": "Even the jinn worked for *Prophet Sulaiman (AS)*, by his Lord's permission.",
+   "ur": "جن بھی حضرت سلیمان علیہ السلام کے لیے کام کرتے تھے، ان کے رب کے حکم سے",
+   "mood": {
+    "warm": 0.15,
+    "cool": 0
+   },
+   "ref": "Saba 34:12"
+  },
+  {
+   "q": "34:14",
+   "ar_words": [
+    5,
+    13
+   ],
+   "en": "nothing indicated to the jinn his death except a creature of the earth eating his staff",
+   "ur_a": [
+    "جنوں کو",
+    "کھا رہا تھا"
+   ],
+   "ref": "Saba 34:14",
+   "mood": {
+    "warm": 0.0,
+    "cool": 0.12
+   },
+   "ur": "جنوں کو اس کی موت کا پتہ دینے والی کوئی چیز اُس گھن کے سوا نہ تھی جو اس کے عصا کو کھا رہا تھا"
+  },
+  {
+   "q": "34:14",
+   "ar_words": [
+    16,
+    27
+   ],
+   "en": "it became clear to the jinn that if they had known the unseen, they would not have remained in humiliating punishment",
+   "ur_a": [
+    "جنوں پر یہ بات",
+    "مبتلا نہ رہتے"
+   ],
+   "ref": "Saba 34:14",
+   "mood": {
+    "warm": 0.1,
+    "cool": 0
+   },
+   "ur": "جنوں پر یہ بات کھل گئی کہ اگر وہ غیب کے جاننے والے ہوتے تو اس ذلت کے عذاب میں مبتلا نہ رہتے"
+  },
+  {
+   "text": "Only *Allah* knows the unseen. Trust Him alone.",
+   "ur": "غیب صرف اللہ جانتا ہے۔ بھروسہ صرف اسی پر",
+   "mood": {
+    "warm": 0.25,
+    "cool": 0
+   }
+  },
+  {
+   "cta": true,
+   "text": "Watch the full movie of *Prophet Sulaiman (AS)*, link below.",
+   "ur": "حضرت سلیمان علیہ السلام کی مکمل فلم دیکھیں، لنک نیچے",
+   "mood": {
+    "warm": 0.25,
+    "cool": 0
+   },
+   "btn": "Full movie ↓"
+  }
+ ],
+ "photos": [
+  "c11b",
+  "c02a",
+  "c11b",
+  "c11c",
+  "c12a",
+  "c02a"
+ ],
+ "pauses": {
+  "3": 0.9
+ },
+ "turn": 3,
+ "hum": 4,
+ "shakes": [
+  {
+   "beat": 0,
+   "at": 0.3,
+   "amp": 8,
+   "dur": 1.0
+  },
+  {
+   "beat": 3,
+   "at": 0.2,
+   "amp": 12,
+   "dur": 1.6
+  }
+ ],
+ "glows": [
+  {
+   "beat": 4,
+   "at": 0.2,
+   "dur": 3.0,
+   "peak": 0.85
+  }
+ ]
+}

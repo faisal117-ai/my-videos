@@ -1,0 +1,127 @@
+{
+ "id": "32-dua-kingdom",
+ "lines": [
+  "If you could ask Allah for anything... what would you ask first? One king asked this.",
+  "Prophet Sulaiman, alayhis salaam, said: My Lord, forgive me, and grant me a kingdom such as will not belong to anyone after me. Indeed, You are the Bestower.",
+  "Forgiveness first... then the kingdom.",
+  "And Allah gave him the wind, blowing by his command, gently, wherever he directed.",
+  "So before you ask Allah for more today... ask for forgiveness first. أَسْتَغْفِرُ اللَّهَ.",
+  "Watch the full movie of Prophet Sulaiman, alayhis salaam... link below."
+ ],
+ "beats": [
+  {
+   "hook": true,
+   "text": "Ask Allah for anything… *what would you ask first?*",
+   "sub": "One king asked for this.",
+   "ur": "اللہ سے کچھ بھی مانگ سکیں… تو پہلے کیا مانگیں گے؟",
+   "mood": {
+    "warm": 0.2,
+    "cool": 0
+   },
+   "reveal": false
+  },
+  {
+   "q": "38:35",
+   "ar_words": [
+    2,
+    15
+   ],
+   "en": "My Lord, forgive me and grant me a kingdom such as will not belong to anyone after me. Indeed, You are the Bestower",
+   "ur_a": [
+    "اے میرے رب",
+    "اصل داتا ہے"
+   ],
+   "ref": "Saad 38:35",
+   "mood": {
+    "warm": 0.2,
+    "cool": 0
+   },
+   "ur": "اے میرے رب، مجھے معاف کر دے اور مجھے وہ بادشاہی دے جو میرے بعد کسی کے لیے سزاوار نہ ہو، بیشک تو ہی اصل داتا ہے"
+  },
+  {
+   "text": "*Forgiveness first…* then the kingdom.",
+   "ur": "پہلے مغفرت… پھر بادشاہی",
+   "mood": {
+    "warm": 0.15,
+    "cool": 0
+   }
+  },
+  {
+   "q": "38:36",
+   "ar_words": [
+    1,
+    8
+   ],
+   "en": "So We subjected to him the wind blowing by his command, gently, wherever he directed",
+   "ur_a": [
+    "تب ہم نے",
+    "وہ چاہتا تھا"
+   ],
+   "ref": "Saad 38:36",
+   "mood": {
+    "warm": 0.2,
+    "cool": 0
+   },
+   "ur": "تب ہم نے اس کے لیے ہوا کو مسخر کر دیا جو اس کے حکم سے نرمی کے ساتھ چلتی تھی جدھر وہ چاہتا تھا"
+  },
+  {
+   "text": "Before you ask for more today… *ask for forgiveness first.*",
+   "ur": "آج کچھ اور مانگنے سے پہلے… مغفرت مانگیں۔ أَسْتَغْفِرُ اللَّهَ",
+   "mood": {
+    "warm": 0.25,
+    "cool": 0
+   }
+  },
+  {
+   "cta": true,
+   "text": "Watch the full movie of *Prophet Sulaiman (AS)*, link below.",
+   "ur": "حضرت سلیمان علیہ السلام کی مکمل فلم دیکھیں، لنک نیچے",
+   "mood": {
+    "warm": 0.25,
+    "cool": 0
+   },
+   "btn": "Full movie ↓"
+  }
+ ],
+ "photos": [
+  "c00a",
+  "c00b",
+  "c02a",
+  "c02b",
+  "c12a",
+  "c12b"
+ ],
+ "pauses": {
+  "2": 0.8
+ },
+ "turn": 2,
+ "hum": 4,
+ "shakes": [
+  {
+   "beat": 0,
+   "at": 0.3,
+   "amp": 8,
+   "dur": 1.0
+  },
+  {
+   "beat": 3,
+   "at": 0.0,
+   "amp": 6,
+   "dur": 1.0
+  }
+ ],
+ "glows": [
+  {
+   "beat": 2,
+   "at": 0.1,
+   "dur": 2.5,
+   "peak": 0.6
+  },
+  {
+   "beat": 4,
+   "at": 0.2,
+   "dur": 3.0,
+   "peak": 0.85
+  }
+ ]
+}

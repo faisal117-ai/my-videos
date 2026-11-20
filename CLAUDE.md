@@ -28,7 +28,7 @@ Skills that have nothing to do with videos (keyboard shortcuts, config, code rev
 ## Rules that never bend (details in checklist.md)
 - Never show a prophet, the Prophet ﷺ, a Companion, a righteous woman, an angel or jinn in any form.
 - Only what the Quran / sahih sources say. Honorific on every name, in voice and on screen.
-- Hook in 5 s, a question held open, suspense, the core message (dua / mercy / gratitude), a real closing lesson,
+- Shorts 35–45 s (never over 45 s). Hook in 5 s, a question held open, suspense, the core message (dua / mercy / gratitude), a real closing lesson,
   and the ending "Watch the full movie(s) of <named film(s)>, link(s) below".
 - House style = shorts/24-cave (20 Nov; see shorts-plan.md). Gemini scenes for every Short and film; captions in the top band. No instrumental music (voice-only humming is fine).
 - Arabic phrases in Arabic script in the TTS text, checked with speech-to-text. Callum narrates.

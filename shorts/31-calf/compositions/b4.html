@@ -1,24 +1,23 @@
 <template>
   <style>
     #b4 { position: absolute; inset: 0; }
-    #b4-wrap { position: absolute; left: 60px; right: 60px; top: 250px; bottom: 1120px;
+    #b4-wrap { position: absolute; left: 90px; right: 140px; top: 250px; bottom: 1120px;
       display: flex; flex-direction: column; justify-content: flex-start; gap: 20px; }
   </style>
   <div id="b4" data-composition-id="b4" data-width="1080" data-height="1920">
-    <div id="b4-wrap" class="clip" data-start="0" data-duration="11.00">
-      <div id="b4-ar" class="ar" dir="rtl" lang="ar">فَأَخۡرَجَ لَهُمۡ عِجۡلࣰا جَسَدࣰا لَّهُۥ خُوَارࣱ فَقَالُواْ هَٰذَآ إِلَٰهُكُمۡ وَإِلَٰهُ مُوسَىٰ فَنَسِيَ</div>
-      <div id="b4-tr" class="tr">“And he extracted for them [the statue of] a calf which had a lowing sound, and they said, &quot;This is your god and the god of Moses [Musa], but he forgot”</div>
-      <div id="b4-ur" class="ur" dir="rtl" lang="ur" data-layout-allow-overflow>اور ان کے لیے ایک بچھڑے کی مورت بنا کر نکال لایا جس میں سے بیل کی سی آواز نکلتی تھی لوگ پکار اٹھے یہی ہے تمہارا خدا اور موسیٰؑ کا خدا، موسیٰؑ اسے بھول گیا</div>
-      <div id="b4-ref" class="ref">Taha 20:88</div>
+    <div id="b4-wrap" class="clip" data-start="0" data-duration="7.11">
+      <div id="b4-txt" class="txt"><span class="w" id="b4-w0">“We</span> <span class="w" id="b4-w1">will</span> <span class="w" id="b4-w2">surely</span> <span class="w hi" id="b4-w3">burn</span> <span class="w hi" id="b4-w4">it,</span> <span class="w" id="b4-w5">and</span> <span class="w" id="b4-w6">blow</span> <span class="w" id="b4-w7">it</span> <span class="w" id="b4-w8">into</span> <span class="w" id="b4-w9">the</span> <span class="w" id="b4-w10">sea.”</span></div>
+      <div id="b4-ur" class="ur" dir="rtl" lang="ur" data-layout-allow-overflow>ہم اسے جلا ڈالیں گے، اور دریا میں بہا دیں گے</div>
+      <div id="b4-ref" class="ref">Taha 20:97</div>
     </div>
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
-    tl.fromTo("#b4-ar", {opacity: 0, y: 30, filter: "blur(10px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.9, ease: "power2.out"}, 0.05);
-    tl.fromTo("#b4-tr", {opacity: 0, y: 20}, {opacity: 1, y: 0, duration: 0.7, ease: "power2.out"}, 0.6);
+    tl.fromTo("#b4 .w", {opacity: 0, y: 22, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.32, ease: "power2.out", stagger: 0.481}, 0.12);
+    tl.fromTo("#b4 .hi", {textShadow: "0 0 0px rgba(0,0,0,0)"}, {textShadow: "0 0 28px var(--accent)", duration: 0.6, ease: "power1.out"}, 3.39);
     tl.fromTo("#b4-ur", {opacity: 0, y: 10}, {opacity: 1, y: 0, duration: 0.35, ease: "power2.out"}, 0.15);
     tl.fromTo("#b4-ref", {opacity: 0, y: 12}, {opacity: 1, y: 0, duration: 0.45, ease: "power2.out"}, 0.35);
-    tl.fromTo("#b4-wrap", {opacity: 1}, {opacity: 0, duration: 0.22, ease: "power1.in"}, 10.76);
+    tl.fromTo("#b4-wrap", {opacity: 1}, {opacity: 0, duration: 0.22, ease: "power1.in"}, 6.87);
     window.__timelines["b4"] = tl;
   </script>
 </template>

@@ -1,0 +1,136 @@
+{
+ "id": "26-throne-ur",
+ "lines": [
+  "ایک جن نے کہا: میں آپ کے اٹھنے سے پہلے تخت لے آؤں گا۔ ایک شخص نے کہا: پلک جھپکنے سے پہلے۔",
+  "جس شخص کے پاس کتاب کا علم تھا، وہ بولا: میں آپ کی پلک جھپکنے سے پہلے اسے لائے دیتا ہوں۔",
+  "اور وہ سامنے تھا... حضرت سلیمان علیہ السلام کے پاس رکھا ہوا۔",
+  "آپ کیا کہتے؟ انہوں نے کہا: یہ میرے رب کا فضل ہے، تاکہ وہ مجھے آزمائے کہ میں شکر کرتا ہوں یا کافر نعمت بن جاتا ہوں۔",
+  "آج اللہ کی دی ہوئی ایک نعمت کو دیکھیں... اور آپ بھی یہی کہیں۔",
+  "حضرت سلیمان علیہ السلام کی مکمل فلم دیکھیں... لنک نیچے۔"
+ ],
+ "beats": [
+  {
+   "hook": true,
+   "text": "A jinn: *before you stand up*.",
+   "sub": "One man: before you blink.",
+   "ur": "ایک جن: آپ کے اٹھنے سے پہلے۔ ایک شخص: پلک جھپکنے سے پہلے",
+   "mood": {
+    "warm": 0.12,
+    "cool": 0
+   },
+   "reveal": false
+  },
+  {
+   "q": "27:40",
+   "ar_words": [
+    7,
+    14
+   ],
+   "en": "I will bring it to you before your glance returns to you",
+   "ur_a": [
+    "میں آپ کی پلک",
+    "لائے دیتا ہوں"
+   ],
+   "ref": "An-Naml 27:40",
+   "mood": {
+    "warm": 0.12,
+    "cool": 0
+   },
+   "ur": "میں آپ کی پلک جھپکنے سے پہلے اسے لائے دیتا ہوں"
+  },
+  {
+   "text": "And there it was… *placed before him*.",
+   "ur": "اور وہ سامنے رکھا تھا",
+   "mood": {
+    "warm": 0.2,
+    "cool": 0
+   },
+   "ref": "An-Naml 27:40"
+  },
+  {
+   "q": "27:40",
+   "ar_words": [
+    20,
+    27
+   ],
+   "en": "This is from the favor of my Lord to test me whether I will be grateful or ungrateful",
+   "ur_a": [
+    "یہ میرے رب کا فضل",
+    "کافر نعمت بن جاتا ہوں"
+   ],
+   "ref": "An-Naml 27:40",
+   "mood": {
+    "warm": 0.2,
+    "cool": 0
+   },
+   "ur": "یہ میرے رب کا فضل ہے تاکہ وہ مجھے آزمائے کہ میں شکر کرتا ہوں یا کافر نعمت بن جاتا ہوں"
+  },
+  {
+   "text": "Look at one thing Allah gave you today… *and say it too*.",
+   "ur": "آج اللہ کی دی ہوئی ایک نعمت کو دیکھیں… اور آپ بھی یہی کہیں",
+   "mood": {
+    "warm": 0.2,
+    "cool": 0
+   }
+  },
+  {
+   "cta": true,
+   "text": "Watch the full movie of *Prophet Sulaiman (AS)*, link below.",
+   "ur": "حضرت سلیمان علیہ السلام کی مکمل فلم دیکھیں، لنک نیچے",
+   "mood": {
+    "warm": 0.2,
+    "cool": 0
+   },
+   "btn": "Full movie ↓"
+  }
+ ],
+ "photos": [
+  "s1",
+  "s8",
+  "s6",
+  "s1",
+  "s10",
+  "s9"
+ ],
+ "pauses": {
+  "2": 0.9,
+  "3": 0.6
+ },
+ "turn": 2,
+ "hum": 3,
+ "shakes": [
+  {
+   "beat": 0,
+   "at": 0.3,
+   "amp": 10,
+   "dur": 1.2
+  },
+  {
+   "beat": 2,
+   "at": -0.2,
+   "amp": 10,
+   "dur": 1.4
+  }
+ ],
+ "glows": [
+  {
+   "beat": 2,
+   "at": 0.1,
+   "dur": 3.0,
+   "peak": 0.85
+  },
+  {
+   "beat": 3,
+   "at": 0.2,
+   "dur": 3.0,
+   "peak": 0.5
+  }
+ ],
+ "eleven": {
+  "voice_id": "N2lVS1w4EtoT3dr4eOWO",
+  "model_id": "eleven_v3",
+  "settings": {
+   "stability": 0.5
+  }
+ }
+}
