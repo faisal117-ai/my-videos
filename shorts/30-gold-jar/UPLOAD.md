@@ -1,6 +1,6 @@
 # Short: 30-gold-jar: upload details
 
-**Status:** built 20 Nov; rendering; waiting for the user's approval. Slot: **Tue 24 Nov 10:00 PKT (channel Short; replaces the 'ashes' hadith, a repeat of two older Shorts)**.
+**Status:** APPROVED, scheduled (post 435546768). Slot: **Tue 24 Nov 10:00 PKT (channel Short; replaces the 'ashes' hadith, a repeat of two older Shorts)**.
 **Skills run:** yt-script hookscore (46/100, best of 5), yt-package (title 94/100), yt-seo (below).
 
 ## Title
