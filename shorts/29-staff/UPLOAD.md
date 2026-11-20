@@ -1,6 +1,6 @@
 # Short: 29-staff: upload details
 
-**Status:** built 20 Nov; rendering; waiting for the user's approval. Slot: **Tue 24 Nov 16:00 PKT (film Short)**.
+**Status:** APPROVED 20 Nov (re-cut 42–43 s), scheduled. Slot: **Tue 24 Nov 16:00 PKT (film Short)**.
 **Skills run:** yt-shorts (pick #3 from the Sulaiman film, 9:07–9:50), yt-script hookscore (43/100, best of 5), yt-package (title 90/100), yt-seo (below).
 
 ## Title

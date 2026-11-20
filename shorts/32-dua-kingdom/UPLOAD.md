@@ -1,6 +1,6 @@
 # Short: 32-dua-kingdom: upload details
 
-**Status:** built 20 Nov; rendering; waiting for the user's approval. Slot: **Wed 25 Nov 16:00 PKT (film Short)**.
+**Status:** APPROVED 20 Nov (re-cut 42–43 s), scheduled. Slot: **Wed 25 Nov 16:00 PKT (film Short)**.
 **Skills run:** yt-shorts (pick #4 from the Sulaiman film, 1:09–2:23), yt-script hookscore (43/100), yt-package (title 80/100), yt-seo (below).
 
 ## Title
