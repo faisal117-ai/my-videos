@@ -1,17 +1,17 @@
 {
  "id": "27-uwais",
  "lines": [
-  "The Prophet, peace be upon him, told Umar: if you can... ask this man to pray for you.",
-  "Uwais, from Yemen. He has a mother, and he is dutiful to her.",
-  "Years later, Umar, Razi Allah hu Anhu, asked every caravan from Yemen: Is Uwais among you? Until one day... yes.",
-  "The leader of the believers asked him: ask Allah to forgive me. And Uwais did.",
-  "Of all he could say, the Prophet, peace be upon him, mentioned his mother. Serve yours today.",
-  "Watch the full movie of Prophet Sulaiman, alayhis salaam... link below."
+  "Ask this man to pray for you. The Prophet, peace be upon him, said it to Umar.",
+  "Uwais of Yemen. Dutiful to his mother.",
+  "Years later, Umar, Razi Allah hu Anhu, asked every caravan: Is Uwais among you? Until one day... yes.",
+  "And Umar asked him: ask Allah to forgive me. And Uwais did.",
+  "The Prophet, peace be upon him, mentioned his mother. Serve yours today.",
+  "Full movie of Prophet Sulaiman, alayhis salaam: link below."
  ],
  "beats": [
   {
    "hook": true,
-   "text": "“If you can, ask *this man* to pray for you.”",
+   "text": "“Ask *this man* to pray for you.”",
    "sub": "The Prophet ﷺ to Umar (RA)",
    "ur": "اگر ہو سکے تو اس شخص سے اپنے لیے دعا کروانا",
    "mood": {
@@ -22,7 +22,7 @@
    "ref": "Sahih Muslim 2542"
   },
   {
-   "text": "*Uwais* from Yemen… he has a mother, and he is *dutiful to her*.",
+   "text": "*Uwais* of Yemen. *Dutiful to his mother.*",
    "ur": "یمن کا اویس… اس کی ایک ماں ہے، اور وہ اس کا فرمانبردار ہے",
    "mood": {
     "warm": 0.2,
@@ -40,7 +40,7 @@
    "ref": "Sahih Muslim 2542"
   },
   {
-   "text": "The leader of the believers: *“Ask Allah to forgive me.”*",
+   "text": "Umar (RA): *“Ask Allah to forgive me.”* And he did.",
    "ur": "امیر المومنین نے کہا: میرے لیے مغفرت کی دعا کرو",
    "mood": {
     "warm": 0.2,
@@ -49,7 +49,7 @@
    "ref": "Sahih Muslim 2542"
   },
   {
-   "text": "Of all he could say, the Prophet ﷺ mentioned *his mother*. Serve yours today.",
+   "text": "The Prophet ﷺ mentioned *his mother*. Serve yours today.",
    "ur": "نبی ﷺ نے اس کی ماں کا ذکر کیا۔ آج اپنی ماں کی خدمت کریں",
    "mood": {
     "warm": 0.25,
@@ -58,7 +58,7 @@
   },
   {
    "cta": true,
-   "text": "Watch the full movie of *Prophet Sulaiman (AS)*, link below.",
+   "text": "Full movie of *Prophet Sulaiman (AS)*: link below.",
    "ur": "حضرت سلیمان علیہ السلام کی مکمل فلم دیکھیں، لنک نیچے",
    "mood": {
     "warm": 0.25,

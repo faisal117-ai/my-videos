@@ -37,7 +37,7 @@
       "beat": 2,
       "at": 0.1,
       "dur": 2.5,
-      "peak": 0.5
+      "peak": 0.25
     },
     {
       "beat": 4,
@@ -111,8 +111,8 @@
   "beats": [
     {
       "hook": true,
-      "text": "2 men. 1 test. One said *“I earned it.”*",
-      "sub": "…and the earth swallowed him.",
+      "text": "Two men. *One test.*",
+      "sub": "One said “I earned it”… and the earth swallowed him.",
       "ur": "دو آدمی، ایک امتحان۔ ایک نے کہا: یہ میری کمائی ہے… اور زمین اسے نگل گئی",
       "mood": {
         "warm": 0.15,
@@ -181,7 +181,7 @@
       "translation": "“And We caused the earth to swallow him and his home”"
     },
     {
-      "text": "Whatever you have is the same test. Say: *“from the favor of my Lord.”*",
+      "text": "Same test today. Say: *“from the favor of my Lord.”*",
       "ur": "جو کچھ آپ کے پاس ہے، وہی امتحان ہے۔ کہیں: یہ میرے رب کا فضل ہے",
       "mood": {
         "warm": 0.25,
@@ -190,7 +190,7 @@
     },
     {
       "cta": true,
-      "text": "Watch the full movie of *Prophet Sulaiman (AS)*, link below.",
+      "text": "Full movie of *Prophet Sulaiman (AS)*: link below.",
       "ur": "حضرت سلیمان علیہ السلام کی مکمل فلم دیکھیں، لنک نیچے",
       "mood": {
         "warm": 0.25,

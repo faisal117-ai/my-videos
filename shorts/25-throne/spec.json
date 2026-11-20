@@ -1,185 +1,185 @@
 {
- "accent": "#f2b04a",
- "embers": false,
- "motes": 0.35,
- "mote": "#f6dcae",
- "flash": 0.0,
- "bed_volume": 1.0,
- "hold_end": 1.2,
- "text_top": 300,
- "text_bottom": 780,
- "tr_size": 56,
- "scene": "photos",
- "photos": [
-  "assets/gen/s1.jpg",
-  "assets/gen/s8.jpg",
-  "assets/gen/s6.jpg",
-  "assets/gen/s1.jpg",
-  "assets/gen/s10.jpg",
-  "assets/gen/s9.jpg"
- ],
- "shakes": [
-  {
-   "beat": 0,
-   "at": 0.3,
-   "amp": 10,
-   "dur": 1.2
-  },
-  {
-   "beat": 2,
-   "at": -0.2,
-   "amp": 10,
-   "dur": 1.4
-  }
- ],
- "glows": [
-  {
-   "beat": 2,
-   "at": 0.1,
-   "dur": 3.0,
-   "peak": 0.85
-  }
- ],
- "sound": [
-  {
-   "prompt": "lib",
-   "src": "../../long/01-yusuf/assets/sfx/992f69b875be.mp3",
-   "beat": 0,
-   "offset": 0,
-   "dur": 100,
-   "gain": -17,
-   "fade_in": 0.5,
-   "fade_out": 1.5
-  },
-  {
-   "prompt": "lib",
-   "src": "../03-cave/assets/sfx/03b5f68efefc.mp3",
-   "beat": 0,
-   "offset": 0.2,
-   "dur": 3,
-   "gain": -13,
-   "fade_in": 0.02,
-   "fade_out": 1
-  },
-  {
-   "prompt": "lib",
-   "src": "../../long/04-sulaiman/assets/sfx/93fa1b20e45f.mp3",
-   "beat": 1,
-   "offset": 0,
-   "dur": 8,
-   "gain": -13,
-   "fade_in": 0.5,
-   "fade_out": 1.5
-  },
-  {
-   "prompt": "lib",
-   "src": "../../long/04-sulaiman/assets/sfx/72cc4baec592.mp3",
-   "beat": 2,
-   "offset": -3.6,
-   "dur": 3.8,
-   "gain": -8,
-   "fade_in": 0.4,
-   "fade_out": 0.3
-  },
-  {
-   "prompt": "lib",
-   "src": "../../long/04-sulaiman/assets/sfx/f0b78dedaad6.mp3",
-   "beat": 2,
-   "offset": 0,
-   "dur": 4,
-   "gain": -7,
-   "fade_in": 0.02,
-   "fade_out": 1.5
-  },
-  {
-   "prompt": "lib",
-   "src": "../06-ant/assets/sfx/cabf6e6577de.mp3",
-   "beat": 3,
-   "offset": 0,
-   "dur": 30,
-   "gain": -13,
-   "fade_in": 1.0,
-   "fade_out": 1.5
-  }
- ],
- "beats": [
-  {
-   "hook": true,
-   "text": "A jinn: *before you stand up*.",
-   "sub": "One man: before you blink.",
-   "ur": "ایک جن: آپ کے اٹھنے سے پہلے۔ ایک شخص: پلک جھپکنے سے پہلے",
-   "mood": {
-    "warm": 0.12,
-    "cool": 0
-   },
-   "reveal": false
-  },
-  {
-   "q": "27:40",
-   "ar_words": [
-    7,
-    14
-   ],
-   "en": "I will bring it to you before your glance returns to you",
-   "ur_a": [
-    "میں آپ کی پلک",
-    "لائے دیتا ہوں"
-   ],
-   "ref": "An-Naml 27:40",
-   "mood": {
-    "warm": 0.12,
-    "cool": 0
-   },
-   "ur": "میں آپ کی پلک جھپکنے سے پہلے اسے لائے دیتا ہوں",
-   "arabic": "أَنَا۠ ءَاتِيكَ بِهِۦ قَبۡلَ أَن يَرۡتَدَّ إِلَيۡكَ طَرۡفُكَۚ",
-   "translation": "“I will bring it to you before your glance returns to you”"
-  },
-  {
-   "text": "And there it was… *placed before him*.",
-   "ur": "اور وہ سامنے رکھا تھا",
-   "mood": {
-    "warm": 0.2,
-    "cool": 0
-   },
-   "ref": "An-Naml 27:40"
-  },
-  {
-   "q": "27:40",
-   "ar_words": [
-    20,
-    27
-   ],
-   "en": "This is from the favor of my Lord to test me whether I will be grateful or ungrateful",
-   "ur_a": [
-    "یہ میرے رب کا فضل",
-    "کافر نعمت بن جاتا ہوں"
-   ],
-   "ref": "An-Naml 27:40",
-   "mood": {
-    "warm": 0.2,
-    "cool": 0
-   },
-   "ur": "یہ میرے رب کا فضل ہے تاکہ وہ مجھے آزمائے کہ میں شکر کرتا ہوں یا کافر نعمت بن جاتا ہوں",
-   "arabic": "هَٰذَا مِن فَضۡلِ رَبِّي لِيَبۡلُوَنِيٓ ءَأَشۡكُرُ أَمۡ أَكۡفُرُۖ",
-   "translation": "“This is from the favor of my Lord to test me whether I will be grateful or ungrateful”"
-  },
-  {
-   "text": "Look at one thing Allah gave you today… *and say it too*.",
-   "ur": "آج اللہ کی دی ہوئی ایک نعمت کو دیکھیں… اور آپ بھی یہی کہیں",
-   "mood": {
-    "warm": 0.2,
-    "cool": 0
-   }
-  },
-  {
-   "cta": true,
-   "text": "Watch the full movie of *Prophet Sulaiman (AS)*, link below.",
-   "ur": "حضرت سلیمان علیہ السلام کی مکمل فلم دیکھیں، لنک نیچے",
-   "mood": {
-    "warm": 0.2,
-    "cool": 0
-   },
-   "btn": "Full movie ↓"
-  }
- ]
+  "accent": "#f2b04a",
+  "embers": false,
+  "motes": 0.35,
+  "mote": "#f6dcae",
+  "flash": 0.0,
+  "bed_volume": 1.0,
+  "hold_end": 1.2,
+  "text_top": 300,
+  "text_bottom": 780,
+  "tr_size": 56,
+  "scene": "photos",
+  "photos": [
+    "assets/gen/s1.jpg",
+    "assets/gen/s8.jpg",
+    "assets/gen/s6.jpg",
+    "assets/gen/s1.jpg",
+    "assets/gen/s10.jpg",
+    "assets/gen/s9.jpg"
+  ],
+  "shakes": [
+    {
+      "beat": 0,
+      "at": 0.3,
+      "amp": 10,
+      "dur": 1.2
+    },
+    {
+      "beat": 2,
+      "at": -0.2,
+      "amp": 10,
+      "dur": 1.4
+    }
+  ],
+  "glows": [
+    {
+      "beat": 2,
+      "at": 0.1,
+      "dur": 3.0,
+      "peak": 0.85
+    }
+  ],
+  "sound": [
+    {
+      "prompt": "lib",
+      "src": "../../long/01-yusuf/assets/sfx/992f69b875be.mp3",
+      "beat": 0,
+      "offset": 0,
+      "dur": 100,
+      "gain": -17,
+      "fade_in": 0.5,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "lib",
+      "src": "../03-cave/assets/sfx/03b5f68efefc.mp3",
+      "beat": 0,
+      "offset": 0.2,
+      "dur": 3,
+      "gain": -13,
+      "fade_in": 0.02,
+      "fade_out": 1
+    },
+    {
+      "prompt": "lib",
+      "src": "../../long/04-sulaiman/assets/sfx/93fa1b20e45f.mp3",
+      "beat": 1,
+      "offset": 0,
+      "dur": 8,
+      "gain": -13,
+      "fade_in": 0.5,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "lib",
+      "src": "../../long/04-sulaiman/assets/sfx/72cc4baec592.mp3",
+      "beat": 2,
+      "offset": -3.6,
+      "dur": 3.8,
+      "gain": -8,
+      "fade_in": 0.4,
+      "fade_out": 0.3
+    },
+    {
+      "prompt": "lib",
+      "src": "../../long/04-sulaiman/assets/sfx/f0b78dedaad6.mp3",
+      "beat": 2,
+      "offset": 0,
+      "dur": 4,
+      "gain": -7,
+      "fade_in": 0.02,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "lib",
+      "src": "../06-ant/assets/sfx/cabf6e6577de.mp3",
+      "beat": 3,
+      "offset": 0,
+      "dur": 30,
+      "gain": -13,
+      "fade_in": 1.0,
+      "fade_out": 1.5
+    }
+  ],
+  "beats": [
+    {
+      "hook": true,
+      "text": "A jinn: *before you stand up*.",
+      "sub": "One man: before you blink.",
+      "ur": "ایک جن: آپ کے اٹھنے سے پہلے۔ ایک شخص: پلک جھپکنے سے پہلے",
+      "mood": {
+        "warm": 0.12,
+        "cool": 0
+      },
+      "reveal": false
+    },
+    {
+      "q": "27:40",
+      "ar_words": [
+        7,
+        14
+      ],
+      "en": "I will bring it to you before your glance returns to you",
+      "ur_a": [
+        "میں آپ کی پلک",
+        "لائے دیتا ہوں"
+      ],
+      "ref": "An-Naml 27:40",
+      "mood": {
+        "warm": 0.12,
+        "cool": 0
+      },
+      "ur": "میں آپ کی پلک جھپکنے سے پہلے اسے لائے دیتا ہوں",
+      "arabic": "أَنَا۠ ءَاتِيكَ بِهِۦ قَبۡلَ أَن يَرۡتَدَّ إِلَيۡكَ طَرۡفُكَۚ",
+      "translation": "“I will bring it to you before your glance returns to you”"
+    },
+    {
+      "text": "And there it was… *placed before him*.",
+      "ur": "اور وہ سامنے رکھا تھا",
+      "mood": {
+        "warm": 0.2,
+        "cool": 0
+      },
+      "ref": "An-Naml 27:40"
+    },
+    {
+      "q": "27:40",
+      "ar_words": [
+        20,
+        27
+      ],
+      "en": "This is from the favor of my Lord to test me whether I will be grateful or ungrateful",
+      "ur_a": [
+        "یہ میرے رب کا فضل",
+        "کافر نعمت بن جاتا ہوں"
+      ],
+      "ref": "An-Naml 27:40",
+      "mood": {
+        "warm": 0.2,
+        "cool": 0
+      },
+      "ur": "یہ میرے رب کا فضل ہے تاکہ وہ مجھے آزمائے کہ میں شکر کرتا ہوں یا کافر نعمت بن جاتا ہوں",
+      "arabic": "هَٰذَا مِن فَضۡلِ رَبِّي لِيَبۡلُوَنِيٓ ءَأَشۡكُرُ أَمۡ أَكۡفُرُۖ",
+      "translation": "“This is from the favor of my Lord to test me whether I will be grateful or ungrateful”"
+    },
+    {
+      "text": "Look at one gift Allah gave you today… *and say it too*.",
+      "ur": "آج اللہ کی دی ہوئی ایک نعمت کو دیکھیں… اور آپ بھی یہی کہیں",
+      "mood": {
+        "warm": 0.2,
+        "cool": 0
+      }
+    },
+    {
+      "cta": true,
+      "text": "Full movie of *Prophet Sulaiman (AS)*: link below.",
+      "ur": "حضرت سلیمان علیہ السلام کی مکمل فلم دیکھیں، لنک نیچے",
+      "mood": {
+        "warm": 0.2,
+        "cool": 0
+      },
+      "btn": "Full movie ↓"
+    }
+  ]
 }
