@@ -1,0 +1,301 @@
+{
+ "accent": "#f2b04a",
+ "embers": false,
+ "motes": 0.35,
+ "mote": "#f6dcae",
+ "flash": 0.0,
+ "bed_volume": 1.0,
+ "hold_end": 1.2,
+ "text_top": 300,
+ "text_bottom": 780,
+ "tr_size": 56,
+ "scene": "photos",
+ "photos": [
+  "assets/gen/s1.jpg",
+  "assets/gen/s2.jpg",
+  "assets/gen/s3.jpg",
+  "assets/gen/s4.jpg",
+  "assets/gen/s4.jpg",
+  "assets/gen/s5.jpg",
+  "assets/gen/s3.jpg",
+  "assets/gen/s6.jpg",
+  "assets/gen/s7.jpg",
+  "assets/gen/s8.jpg",
+  "assets/gen/s9.jpg"
+ ],
+ "shakes": [
+  {
+   "beat": 0,
+   "at": 0.3,
+   "amp": 8,
+   "dur": 1.0
+  },
+  {
+   "beat": 6,
+   "at": -0.3,
+   "amp": 7,
+   "dur": 1.0
+  },
+  {
+   "beat": 8,
+   "at": 0.5,
+   "amp": 12,
+   "dur": 1.6
+  }
+ ],
+ "glows": [
+  {
+   "beat": 5,
+   "at": 0.1,
+   "dur": 2.4,
+   "peak": 0.35
+  },
+  {
+   "beat": 9,
+   "at": 0.2,
+   "dur": 3.5,
+   "peak": 0.85
+  }
+ ],
+ "sound": [
+  {
+   "prompt": "lib",
+   "src": "../../long/01-yusuf/assets/sfx/992f69b875be.mp3",
+   "beat": 0,
+   "offset": 0,
+   "dur": 100,
+   "gain": -17,
+   "fade_in": 0.5,
+   "fade_out": 1.5
+  },
+  {
+   "prompt": "lib",
+   "src": "../03-cave/assets/sfx/03b5f68efefc.mp3",
+   "beat": 0,
+   "offset": 0.2,
+   "dur": 3,
+   "gain": -13,
+   "fade_in": 0.02,
+   "fade_out": 1
+  },
+  {
+   "prompt": "lib",
+   "src": "../../long/04-sulaiman/assets/sfx/93fa1b20e45f.mp3",
+   "beat": 3,
+   "offset": 0,
+   "dur": 8,
+   "gain": -13,
+   "fade_in": 0.5,
+   "fade_out": 1.5
+  },
+  {
+   "prompt": "lib",
+   "src": "../../long/04-sulaiman/assets/sfx/72cc4baec592.mp3",
+   "beat": 6,
+   "offset": -3.6,
+   "dur": 3.8,
+   "gain": -9,
+   "fade_in": 0.4,
+   "fade_out": 0.3
+  },
+  {
+   "prompt": "lib",
+   "src": "../../long/04-sulaiman/assets/sfx/72cc4baec592.mp3",
+   "beat": 8,
+   "offset": -3.6,
+   "dur": 3.8,
+   "gain": -8,
+   "fade_in": 0.4,
+   "fade_out": 0.3
+  },
+  {
+   "prompt": "lib",
+   "src": "../../long/04-sulaiman/assets/sfx/f0b78dedaad6.mp3",
+   "beat": 8,
+   "offset": 0.5,
+   "dur": 4,
+   "gain": -6,
+   "fade_in": 0.02,
+   "fade_out": 1.5
+  },
+  {
+   "prompt": "lib",
+   "src": "../06-ant/assets/sfx/cabf6e6577de.mp3",
+   "beat": 9,
+   "offset": 0,
+   "dur": 30,
+   "gain": -13,
+   "fade_in": 1.0,
+   "fade_out": 1.5
+  }
+ ],
+ "beats": [
+  {
+   "hook": true,
+   "text": "You saw *the sea split* for you…",
+   "sub": "…would you ever bow to a statue? They did.",
+   "ur": "آپ کے لیے سمندر پھٹ گیا… کیا پھر بھی آپ کسی مورت کو سجدہ کریں گے؟",
+   "mood": {
+    "warm": 0.2,
+    "cool": 0
+   },
+   "reveal": false
+  },
+  {
+   "text": "*Prophet Musa (AS)* went to meet his Lord, for forty nights.",
+   "ur": "حضرت موسیٰ علیہ السلام چالیس راتوں کے لیے اپنے رب سے ملاقات کو گئے",
+   "mood": {
+    "warm": 0.15,
+    "cool": 0
+   },
+   "ref": "Al-A'raf 7:142"
+  },
+  {
+   "q": "20:85",
+   "ar_words": [
+    2,
+    9
+   ],
+   "en": "indeed, We have tried your people after you [departed], and the Samiri has led them astray",
+   "ur_a": [
+    "ہم نے تمہارے پیچھے",
+    "گمراہ کر ڈالا"
+   ],
+   "ref": "Taha 20:85",
+   "mood": {
+    "warm": 0.05,
+    "cool": 0.08
+   },
+   "arabic": "فَإِنَّا قَدۡ فَتَنَّا قَوۡمَكَ مِنۢ بَعۡدِكَ وَأَضَلَّهُمُ ٱلسَّامِرِيُّ",
+   "translation": "“indeed, We have tried your people after you [departed], and the Samiri has led them astray”",
+   "ur": "ہم نے تمہارے پیچھے تمہاری قوم کو آزمائش میں ڈال دیا اور سامری نے انہیں گمراہ کر ڈالا"
+  },
+  {
+   "q": "20:88",
+   "ar_words": [
+    1,
+    12
+   ],
+   "en": "And he extracted for them [the statue of] a calf which had a lowing sound, and they said, \"This is your god and the god of Moses, but he forgot",
+   "ur_a": [
+    "اور ان کے لیے",
+    "اسے بھول گیا"
+   ],
+   "ref": "Taha 20:88",
+   "mood": {
+    "warm": 0.05,
+    "cool": 0.1
+   },
+   "arabic": "فَأَخۡرَجَ لَهُمۡ عِجۡلࣰا جَسَدࣰا لَّهُۥ خُوَارࣱ فَقَالُواْ هَٰذَآ إِلَٰهُكُمۡ وَإِلَٰهُ مُوسَىٰ فَنَسِيَ",
+   "translation": "“And he extracted for them [the statue of] a calf which had a lowing sound, and they said, \"This is your god and the god of Moses [Musa], but he forgot”",
+   "ur": "اور ان کے لیے ایک بچھڑے کی مورت بنا کر نکال لایا جس میں سے بیل کی سی آواز نکلتی تھی لوگ پکار اٹھے یہی ہے تمہارا خدا اور موسیٰؑ کا خدا، موسیٰؑ اسے بھول گیا"
+  },
+  {
+   "q": "20:89",
+   "ar_words": [
+    1,
+    12
+   ],
+   "en": "Did they not see that it could not return to them any speech and that it did not possess for them any harm or benefit",
+   "ur_a": [
+    "کیا وہ نہ دیکھتے",
+    "اختیار رکھتا ہے"
+   ],
+   "ref": "Taha 20:89",
+   "mood": {
+    "warm": 0.05,
+    "cool": 0.08
+   },
+   "arabic": "أَفَلَا يَرَوۡنَ أَلَّا يَرۡجِعُ إِلَيۡهِمۡ قَوۡلࣰا وَلَا يَمۡلِكُ لَهُمۡ ضَرࣰّا وَلَا نَفۡعࣰا",
+   "translation": "“Did they not see that it could not return to them any speech and that it did not possess for them any harm or benefit”",
+   "ur": "کیا وہ نہ دیکھتے تھے کہ نہ وہ اُن کی بات کا جواب دیتا ہے اور نہ ان کے نفع و نقصان کا کچھ اختیار رکھتا ہے"
+  },
+  {
+   "q": "20:90",
+   "ar_words": [
+    7,
+    13
+   ],
+   "en": "O my people, you are only being tested by it, and indeed, your Lord is the Most Merciful",
+   "ur_a": [
+    "لوگو، تم",
+    "تو رحمٰن ہے"
+   ],
+   "ref": "Taha 20:90",
+   "mood": {
+    "warm": 0.1,
+    "cool": 0
+   },
+   "arabic": "يَٰقَوۡمِ إِنَّمَا فُتِنتُم بِهِۦۖ وَإِنَّ رَبَّكُمُ ٱلرَّحۡمَٰنُ",
+   "translation": "“O my people, you are only being tested by it, and indeed, your Lord is the Most Merciful”",
+   "ur": "لوگو، تم اِس کی وجہ سے فتنے میں پڑ گئے ہو، تمہارا رب تو رحمٰن ہے"
+  },
+  {
+   "text": "He returned *angry and grieved*: “What is your case, O Samiri?”",
+   "ur": "وہ سخت غصے اور رنج میں لوٹے: سامری، تیرا کیا معاملہ ہے؟",
+   "mood": {
+    "warm": 0.05,
+    "cool": 0.1
+   },
+   "ref": "Taha 20:86, 95"
+  },
+  {
+   "q": "20:96",
+   "ar_words": [
+    2,
+    16
+   ],
+   "en": "I saw what they did not see, so I took a handful [of dust] from the track of the messenger and threw it, and thus did my soul entice me",
+   "ur_a": [
+    "میں نے وہ چیز",
+    "کچھ ایسا ہی سجھایا"
+   ],
+   "ref": "Taha 20:96",
+   "mood": {
+    "warm": 0.05,
+    "cool": 0.1
+   },
+   "arabic": "بَصُرۡتُ بِمَا لَمۡ يَبۡصُرُواْ بِهِۦ فَقَبَضۡتُ قَبۡضَةࣰ مِّنۡ أَثَرِ ٱلرَّسُولِ فَنَبَذۡتُهَا وَكَذَٰلِكَ سَوَّلَتۡ لِي نَفۡسِي",
+   "translation": "“I saw what they did not see, so I took a handful [of dust] from the track of the messenger and threw it, and thus did my soul entice me”",
+   "ur": "میں نے وہ چیز دیکھی جو اِن لوگوں کو نظر نہ آئی، پس میں نے رسُول کے نقش قدم سے ایک مٹھی اٹھا لی اور اُس کو ڈال دیا میرے نفس نے مجھے کچھ ایسا ہی سجھایا"
+  },
+  {
+   "q": "20:97",
+   "ar_words": [
+    16,
+    28
+   ],
+   "en": "look at your 'god' to which you remained devoted. We will surely burn it and blow it into the sea with a blast",
+   "ur_a": [
+    "دیکھ اپنے",
+    "دریا میں بہا دیں گے"
+   ],
+   "ref": "Taha 20:97",
+   "mood": {
+    "warm": 0.15,
+    "cool": 0
+   },
+   "arabic": "وَٱنظُرۡ إِلَىٰٓ إِلَٰهِكَ ٱلَّذِي ظَلۡتَ عَلَيۡهِ عَاكِفࣰاۖ لَّنُحَرِّقَنَّهُۥ ثُمَّ لَنَنسِفَنَّهُۥ فِي ٱلۡيَمِّ نَسۡفًا",
+   "translation": "“look at your 'god' to which you remained devoted. We will surely burn it and blow it into the sea with a blast”",
+   "ur": "دیکھ اپنے اِس خدا کو جس پر تو ریجھا ہُوا تھا، اب ہم اسے جلا ڈالیں گے اور ریزہ ریزہ کر کے دریا میں بہا دیں گے"
+  },
+  {
+   "text": "A god that can't answer, harm or help… *is no god*. Turn to the One who answers.",
+   "ur": "جو نہ جواب دے، نہ نقصان، نہ فائدہ… وہ خدا نہیں۔ اس کی طرف رجوع کریں جو جواب دیتا ہے",
+   "mood": {
+    "warm": 0.25,
+    "cool": 0
+   }
+  },
+  {
+   "cta": true,
+   "text": "Watch the full movie of *Prophet Musa (AS)*, link below.",
+   "ur": "حضرت موسیٰ علیہ السلام کی مکمل فلم دیکھیں، لنک نیچے",
+   "mood": {
+    "warm": 0.25,
+    "cool": 0
+   },
+   "btn": "Full movie ↓"
+  }
+ ]
+}

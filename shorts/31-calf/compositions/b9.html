@@ -1,0 +1,24 @@
+<template>
+  <style>
+    #b9 { position: absolute; inset: 0; }
+    #b9-wrap { position: absolute; left: 60px; right: 60px; top: 250px; bottom: 1120px;
+      display: flex; flex-direction: column; justify-content: flex-start; gap: 20px; }
+  </style>
+  <div id="b9" data-composition-id="b9" data-width="1080" data-height="1920">
+    <div id="b9-wrap" class="clip" data-start="0" data-duration="8.66">
+      <div id="b9-ar" class="ar" dir="rtl" lang="ar">وَٱنظُرۡ إِلَىٰٓ إِلَٰهِكَ ٱلَّذِي ظَلۡتَ عَلَيۡهِ عَاكِفࣰاۖ لَّنُحَرِّقَنَّهُۥ ثُمَّ لَنَنسِفَنَّهُۥ فِي ٱلۡيَمِّ نَسۡفًا</div>
+      <div id="b9-tr" class="tr">“look at your &#x27;god&#x27; to which you remained devoted. We will surely burn it and blow it into the sea with a blast”</div>
+      <div id="b9-ur" class="ur" dir="rtl" lang="ur" data-layout-allow-overflow>دیکھ اپنے اِس خدا کو جس پر تو ریجھا ہُوا تھا، اب ہم اسے جلا ڈالیں گے اور ریزہ ریزہ کر کے دریا میں بہا دیں گے</div>
+      <div id="b9-ref" class="ref">Taha 20:97</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#b9-ar", {opacity: 0, y: 30, filter: "blur(10px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.9, ease: "power2.out"}, 0.05);
+    tl.fromTo("#b9-tr", {opacity: 0, y: 20}, {opacity: 1, y: 0, duration: 0.7, ease: "power2.out"}, 0.6);
+    tl.fromTo("#b9-ur", {opacity: 0, y: 10}, {opacity: 1, y: 0, duration: 0.35, ease: "power2.out"}, 0.15);
+    tl.fromTo("#b9-ref", {opacity: 0, y: 12}, {opacity: 1, y: 0, duration: 0.45, ease: "power2.out"}, 0.35);
+    tl.fromTo("#b9-wrap", {opacity: 1}, {opacity: 0, duration: 0.22, ease: "power1.in"}, 8.42);
+    window.__timelines["b9"] = tl;
+  </script>
+</template>
