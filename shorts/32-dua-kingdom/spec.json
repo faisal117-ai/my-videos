@@ -1,0 +1,277 @@
+{
+  "accent": "#f2b04a",
+  "embers": false,
+  "motes": 0.35,
+  "mote": "#f6dcae",
+  "flash": 0.0,
+  "bed_volume": 1.0,
+  "hold_end": 1.2,
+  "text_top": 300,
+  "text_bottom": 780,
+  "tr_size": 56,
+  "scene": "photos",
+  "photos": [
+    "assets/gen/c00a.jpg",
+    "assets/gen/c01a.jpg",
+    "assets/gen/c00b.jpg",
+    "assets/gen/c02a.jpg",
+    "assets/gen/c02b.jpg",
+    "assets/gen/c02c.jpg",
+    "assets/gen/c02d.jpg",
+    "assets/gen/c00c.jpg",
+    "assets/gen/c00a.jpg",
+    "assets/gen/c12a.jpg",
+    "assets/gen/c12b.jpg"
+  ],
+  "shakes": [
+    {
+      "beat": 0,
+      "at": 0.3,
+      "amp": 8,
+      "dur": 1.0
+    },
+    {
+      "beat": 4,
+      "at": 0.0,
+      "amp": 6,
+      "dur": 1.0
+    }
+  ],
+  "glows": [
+    {
+      "beat": 3,
+      "at": 0.1,
+      "dur": 2.4,
+      "peak": 0.4
+    },
+    {
+      "beat": 8,
+      "at": 0.1,
+      "dur": 3.0,
+      "peak": 0.85
+    },
+    {
+      "beat": 9,
+      "at": 0.2,
+      "dur": 3.0,
+      "peak": 0.5
+    }
+  ],
+  "sound": [
+    {
+      "prompt": "lib",
+      "src": "../../long/01-yusuf/assets/sfx/992f69b875be.mp3",
+      "beat": 0,
+      "offset": 0,
+      "dur": 95,
+      "gain": -17,
+      "fade_in": 0.5,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "lib",
+      "src": "../03-cave/assets/sfx/03b5f68efefc.mp3",
+      "beat": 0,
+      "offset": 0.2,
+      "dur": 3,
+      "gain": -13,
+      "fade_in": 0.02,
+      "fade_out": 1
+    },
+    {
+      "prompt": "lib",
+      "src": "../../long/04-sulaiman/assets/sfx/728b5f877130.mp3",
+      "beat": 4,
+      "offset": 0,
+      "dur": 3,
+      "gain": -10,
+      "fade_in": 0.02,
+      "fade_out": 1
+    },
+    {
+      "prompt": "lib",
+      "src": "../../long/04-sulaiman/assets/sfx/93fa1b20e45f.mp3",
+      "beat": 7,
+      "offset": 0,
+      "dur": 8,
+      "gain": -13,
+      "fade_in": 0.5,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "lib",
+      "src": "../../long/04-sulaiman/assets/sfx/72cc4baec592.mp3",
+      "beat": 8,
+      "offset": -3.6,
+      "dur": 3.8,
+      "gain": -9,
+      "fade_in": 0.4,
+      "fade_out": 0.3
+    },
+    {
+      "prompt": "lib",
+      "src": "../../long/04-sulaiman/assets/sfx/f0b78dedaad6.mp3",
+      "beat": 8,
+      "offset": 0,
+      "dur": 4,
+      "gain": -9,
+      "fade_in": 0.02,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "lib",
+      "src": "../06-ant/assets/sfx/cabf6e6577de.mp3",
+      "beat": 8,
+      "offset": 0,
+      "dur": 30,
+      "gain": -13,
+      "fade_in": 1.0,
+      "fade_out": 1.5
+    }
+  ],
+  "beats": [
+    {
+      "hook": true,
+      "text": "Ask Allah for anything… *what would you ask first?*",
+      "sub": "One king asked for this.",
+      "ur": "اللہ سے کچھ بھی مانگ سکیں… تو پہلے کیا مانگیں گے؟",
+      "mood": {
+        "warm": 0.2,
+        "cool": 0
+      },
+      "reveal": false
+    },
+    {
+      "text": "*Prophet Sulaiman (AS)*: prophet and king after *Prophet Dawud (AS)*.",
+      "ur": "حضرت سلیمان علیہ السلام، حضرت داؤد علیہ السلام کے بعد نبی اور بادشاہ",
+      "mood": {
+        "warm": 0.15,
+        "cool": 0
+      },
+      "ref": "An-Naml 27:16"
+    },
+    {
+      "q": "38:35",
+      "ar_words": [
+        2,
+        15
+      ],
+      "en": "My Lord, forgive me and grant me a kingdom such as will not belong to anyone after me. Indeed, You are the Bestower",
+      "ur_a": [
+        "اے میرے رب",
+        "اصل داتا ہے"
+      ],
+      "ref": "Saad 38:35",
+      "mood": {
+        "warm": 0.2,
+        "cool": 0
+      },
+      "arabic": "رَبِّ ٱغۡفِرۡ لِي وَهَبۡ لِي مُلۡكࣰا لَّا يَنۢبَغِي لِأَحَدࣲ مِّنۢ بَعۡدِيٓۖ إِنَّكَ أَنتَ ٱلۡوَهَّابُ",
+      "translation": "“My Lord, forgive me and grant me a kingdom such as will not belong to anyone after me. Indeed, You are the Bestower”",
+      "ur": "اے میرے رب، مجھے معاف کر دے اور مجھے وہ بادشاہی دے جو میرے بعد کسی کے لیے سزاوار نہ ہو، بیشک تو ہی اصل داتا ہے"
+    },
+    {
+      "text": "*Forgiveness first…* then the kingdom.",
+      "ur": "پہلے مغفرت… پھر بادشاہی",
+      "mood": {
+        "warm": 0.15,
+        "cool": 0
+      }
+    },
+    {
+      "q": "38:36",
+      "ar_words": [
+        1,
+        8
+      ],
+      "en": "So We subjected to him the wind blowing by his command, gently, wherever he directed",
+      "ur_a": [
+        "تب ہم نے",
+        "وہ چاہتا تھا"
+      ],
+      "ref": "Saad 38:36",
+      "mood": {
+        "warm": 0.2,
+        "cool": 0
+      },
+      "arabic": "فَسَخَّرۡنَا لَهُ ٱلرِّيحَ تَجۡرِي بِأَمۡرِهِۦ رُخَآءً حَيۡثُ أَصَابَ",
+      "translation": "“So We subjected to him the wind blowing by his command, gently, wherever he directed”",
+      "ur": "تب ہم نے اس کے لیے ہوا کو مسخر کر دیا جو اس کے حکم سے نرمی کے ساتھ چلتی تھی جدھر وہ چاہتا تھا"
+    },
+    {
+      "q": "34:12",
+      "ar_words": [
+        2,
+        10
+      ],
+      "en": "the wind - its morning [journey was that of] a month - and its afternoon [journey was that of] a month, and We made flow for him a spring of [liquid] copper",
+      "ur_a": [
+        "صبح کے وقت",
+        "چشمہ بہا دیا"
+      ],
+      "ref": "Saba 34:12",
+      "mood": {
+        "warm": 0.2,
+        "cool": 0
+      },
+      "arabic": "ٱلرِّيحَ غُدُوُّهَا شَهۡرࣱ وَرَوَاحُهَا شَهۡرࣱۖ وَأَسَلۡنَا لَهُۥ عَيۡنَ ٱلۡقِطۡرِۖ",
+      "translation": "“the wind - its morning [journey was that of] a month - and its afternoon [journey was that of] a month, and We made flow for him a spring of [liquid] copper”",
+      "ur": "صبح کے وقت اس کا چلنا ایک مہینے کی راہ تک اور شام کے وقت اس کا چلنا ایک مہینے کی راہ تک ہم نے اُس کے لیے پگھلے ہوئے تانبے کا چشمہ بہا دیا"
+    },
+    {
+      "q": "34:13",
+      "ar_words": [
+        12,
+        19
+      ],
+      "en": "Work, O family of David, in gratitude. And few of My servants are grateful",
+      "ur_a": [
+        "اے آلِ داؤدؑ",
+        "شکر گزار ہیں"
+      ],
+      "ref": "Saba 34:13",
+      "mood": {
+        "warm": 0.15,
+        "cool": 0
+      },
+      "arabic": "ٱعۡمَلُوٓاْ ءَالَ دَاوُۥدَ شُكۡرࣰاۚ وَقَلِيلࣱ مِّنۡ عِبَادِيَ ٱلشَّكُورُ",
+      "translation": "“Work, O family of David, in gratitude. And few of My servants are grateful”",
+      "ur": "اے آلِ داؤدؑ، عمل کرو شکر کے طریقے پر، میرے بندوں میں کم ہی شکر گزار ہیں"
+    },
+    {
+      "text": "Few are grateful… *would he be one of the few?*",
+      "ur": "شکر گزار کم ہیں… کیا وہ ان کم میں سے ہوں گے؟",
+      "mood": {
+        "warm": 0.05,
+        "cool": 0.08
+      }
+    },
+    {
+      "text": "A queen's throne in a blink… *“This is from the favor of my Lord.”*",
+      "ur": "پلک جھپکتے ملکہ کا تخت… یہ میرے رب کا فضل ہے",
+      "mood": {
+        "warm": 0.25,
+        "cool": 0
+      },
+      "ref": "An-Naml 27:40"
+    },
+    {
+      "text": "Before you ask for more today… *ask for forgiveness first.*",
+      "ur": "آج کچھ اور مانگنے سے پہلے… مغفرت مانگیں۔ أَسْتَغْفِرُ اللَّهَ",
+      "mood": {
+        "warm": 0.25,
+        "cool": 0
+      }
+    },
+    {
+      "cta": true,
+      "text": "Watch the full movie of *Prophet Sulaiman (AS)*, link below.",
+      "ur": "حضرت سلیمان علیہ السلام کی مکمل فلم دیکھیں، لنک نیچے",
+      "mood": {
+        "warm": 0.25,
+        "cool": 0
+      },
+      "btn": "Full movie ↓"
+    }
+  ]
+}
