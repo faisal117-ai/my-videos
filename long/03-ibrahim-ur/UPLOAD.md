@@ -1,44 +1,47 @@
-# Long video 3 (Urdu): Ibrahim (AS): Upload details
+# Long video EP 4 (Urdu): Ibrahim (AS): Upload details
 
 **Files**
 - Video: `03-ibrahim-ur.mp4` (1920×1080, Urdu narration, Urdu captions and Maududi verse cards)
 - Thumbnail: `thumbnail/thumbnail.jpg`
 
-**When:** Sunday 22 Nov, 6:30 PM PKT
+**When:** Sunday 29 Nov, 6:30 PM PKT (Metricool post 434203028, swap in after approval)
 
-## Title
-Aag Thandi Kyun Hui? Hazrat Ibrahim AS Ka Waqia | Qasas ul Anbiya EP 3 | Full Movie in Urdu/Hindi
+## Title (yt-package)
+Aag Thandi Kyun Hui? Hazrat Ibrahim AS Ka Waqia | Qasas ul Anbiya EP 4 | Full Movie in Urdu/Hindi
 
-## Description
-انہوں نے اتنی بڑی آگ جلائی کہ کوئی اس کے قریب نہ جا سکتا تھا، اور ایک نوجوان کو اس میں پھینک دیا، صرف اس لیے کہ اس نے کہا تھا: میرا رب اللہ ہے۔ اور اللہ نے فرمایا: "اے آگ، ٹھنڈی ہو جا اور سلامتی بن جا ابراہیمؑ پر۔" (الانبیاء 21:69)
+## Description (yt-seo 20 Nov)
+🎥 مکمل فلمیں دیکھیے: حضرت موسیٰؑ 👉 https://youtu.be/h59TV5hdSew · حضرت یوسفؑ 👉 https://youtu.be/DSOlTSSiRHs · حضرت سلیمانؑ 👉 FILM_UR
+Hazrat Ibrahim AS ka mukammal waqia, Quran se, Urdu mein: aag jo thandi ho gayi, Hazrat Ismail AS, Zamzam, qurbani aur Kaaba ki tameer.
+हज़रत इब्राहीम (अ.स.) का मुकम्मल वाक़िया, क़ुरआन से: आग, ज़मज़म, क़ुर्बानी और काबा
 
-یہ قرآن سے حضرت ابراہیم علیہ السلام، خلیل اللہ، کا مکمل قصہ ہے: بت، ستارہ، چاند اور سورج، باپ سے گفتگو، ٹوٹے ہوئے بت، آگ، بادشاہ، مکہ کی وادی اور زمزم، چار پرندے، خواب اور قربانی، معزز مہمان، کعبہ کی تعمیر، اور ان کی دعا۔
-
-Hazrat Ibrahim AS ka mukammal waqia, Quran se, Urdu mein: Namrood, aag, Hazrat Ismail AS, Zamzam, qurbani aur Kaaba ki tameer.
+انہیں دہکتی ہوئی آگ میں پھینکا گیا، اور انہوں نے کہا: حَسْبُنَا اللَّهُ وَنِعْمَ الْوَكِيلُ (صحیح بخاری 4563)۔ اور اللہ نے فرمایا: "اے آگ، ٹھنڈی ہو جا اور سلامتی بن جا ابراہیمؑ پر۔" (الانبیاء 21:69)
 
 ابواب
 0:00 آغاز
-0:38 بتوں کے درمیان ایک لڑکا
-1:35 ستارہ، چاند اور سورج
-2:49 ابا جان
-3:53 ٹوٹے ہوئے بت
-5:21 آگ
-6:12 بادشاہ جو جھگڑا
-6:55 گھر چھوڑنا
-7:44 بے آب وادی
-9:08 مجھے دکھا دے
-9:53 خواب
-11:00 معزز مہمان
-12:30 اللہ کا گھر
-13:45 ابراہیمؑ کی دعا
-14:43 سبق
+0:42 بتوں کے درمیان ایک نوجوان
+1:37 ستارہ، چاند اور سورج
+2:45 ابا جان
+3:46 ٹوٹے ہوئے بت
+5:19 آگ
+6:16 بادشاہ جو جھگڑا
+6:58 گھر چھوڑنا
+7:51 بے آب وادی
+9:20 مجھے دکھا دے
+10:18 خواب
+11:20 معزز مہمان
+12:48 اللہ کا گھر
+14:03 ابراہیمؑ کی دعا
+14:57 سبق
 
-ماخذ: الانبیاء، الانعام، مریم، البقرہ، الصافات، ابراہیم، ہود، الذاریات، الحج، النساء، الممتحنہ؛ حضرت ہاجرہ اور زمزم: صحیح بخاری 3364۔ آیات کا اردو ترجمہ: مولانا مودودی (تفہیم القرآن)۔
+یہ قرآن اور صحیح سنت سے حضرت ابراہیم علیہ السلام، خلیل اللہ، کا مکمل قصہ ہے: بت، ستارہ، چاند اور سورج، باپ سے گفتگو، ٹوٹے ہوئے بت، آگ، بادشاہ، مکہ کی وادی اور زمزم، چار پرندے، خواب اور فدیہ، معزز مہمان، کعبہ کی تعمیر، اور ان کی دعا۔
 
-کسی نبی کو کسی بھی شکل میں نہیں دکھایا گیا، نہ حضرت ہاجرہ، حضرت سارہ یا فرشتوں کو۔
+ماخذ: الانبیاء، الانعام، مریم، البقرہ، الصافات، ابراہیم، ہود، الذاریات، الحج، العنکبوت، النساء، الممتحنہ؛ صحیح بخاری 3364، 4563، 3370۔ آیات کا اردو ترجمہ: مولانا مودودی (تفہیم القرآن)۔
 
-English version: The Complete Story of Prophet Ibrahim (AS) | Stories of the Prophets
+کسی نبی کو کسی بھی شکل میں نہیں دکھایا گیا، نہ حضرت ہاجرہ، حضرت سارہ یا فرشتوں کو۔ مناظر مصنوعی ذہانت سے بنائی گئی تصویریں ہیں۔
 
+قصص الانبیاء سیریز: EP 1 حضرت موسیٰؑ · EP 2 حضرت یوسفؑ · EP 3 حضرت سلیمانؑ · EP 4 حضرت ابراہیمؑ
+
+اس قصے کا کون سا لمحہ آپ کے دل کو سب سے زیادہ چھو گیا: آگ، وادی، یا خواب؟ کمنٹس میں بتائیے۔
 حق کہانیاں | Haq Stories کو سبسکرائب کریں، قرآن سے انبیاء کے قصوں کے لیے۔
 
 #HazratIbrahim #QasasUlAnbiya #IslamicStoriesUrdu
@@ -47,7 +50,7 @@ English version: The Complete Story of Prophet Ibrahim (AS) | Stories of the Pro
 hazrat ibrahim ka waqia, hazrat ibrahim story in urdu, ibrahim as aur namrood, hazrat ibrahim aur aag, hazrat ismail ka waqia, qurbani ka waqia, zamzam ka waqia, qasas ul anbiya urdu, anbiya ke waqiat, full movie in urdu, haq stories
 
 ## Upload settings
-- **Video language:** Urdu. **Made for kids:** No. **Category:** Education. **Altered or synthetic content:** No.
+- **Video language:** Urdu. **Made for kids:** No. **Category:** Education. **Altered or synthetic content: Yes** (Gemini scenes).
 - **Playlist:** "Stories of the Prophets | Complete Stories".
 - **End screen:** Subscribe + the Musa (AS) film.
 
