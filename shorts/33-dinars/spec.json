@@ -111,8 +111,7 @@
  "beats": [
   {
    "hook": true,
-   "text": "No boat. No witness. *1,000 dinars due today.*",
-   "sub": "What would you do?",
+   "text": "No boat. No witness. *1,000 dinars due.*",
    "ur": "نہ کشتی، نہ گواہ، آج ہزار دینار ادا کرنے ہیں۔ آپ کیا کرتے؟",
    "mood": {
     "warm": 0.2,
@@ -157,7 +156,7 @@
   },
   {
    "cta": true,
-   "text": "Watch the full movie of *Prophet Sulaiman (AS)*, link below.",
+   "text": "Full movie of *Prophet Sulaiman (AS)*: link below.",
    "ur": "حضرت سلیمان علیہ السلام کی مکمل فلم دیکھیں، لنک نیچے",
    "mood": {
     "warm": 0.25,

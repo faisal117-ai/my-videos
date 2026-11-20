@@ -111,8 +111,7 @@
   "beats": [
     {
       "hook": true,
-      "text": "Think Allah could *never* forgive you?",
-      "sub": "This verse is for you.",
+      "text": "Think Allah won't forgive you? *Listen.*",
       "ur": "سوچتے ہیں اللہ آپ کو کبھی معاف نہیں کرے گا؟ یہ آیت آپ کے لیے ہے",
       "mood": {
         "warm": 0.0,
@@ -191,7 +190,7 @@
     },
     {
       "cta": true,
-      "text": "Say *أَسْتَغْفِرُ اللَّهَ* and come back today. Send this to someone who needs it.",
+      "text": "*أَسْتَغْفِرُ اللَّهَ*. Come back today. Send this to someone who needs it.",
       "ur": "آج ہی استغفار کریں اور لوٹ آئیں۔ یہ اس تک پہنچائیں جسے اس کی ضرورت ہے",
       "mood": {
         "warm": 0.3,

@@ -1,18 +1,18 @@
 {
  "id": "37-father",
  "lines": [
-  "How do you speak to a father who threatens to stone you? Prophet Ibrahim, alayhis salaam, showed us.",
-  "O my father, why do you worship that which does not hear and does not see, and will not benefit you at all?",
+  "Your father threatens to stone you. Your answer?",
+  "Prophet Ibrahim, alayhis salaam, said: O my father, why do you worship that which does not hear and does not see?",
   "His father said: If you do not stop, I will surely stone you.",
   "He answered: Peace will be upon you. I will ask forgiveness for you of my Lord.",
-  "Speak gently to your parents today... even when it's hard.",
-  "The full movie of Prophet Ibrahim, alayhis salaam, comes tonight. Follow so you don't miss it."
+  "Speak gently to your parents today.",
+  "Prophet Ibrahim's full movie comes tonight. Follow."
  ],
  "beats": [
   {
    "hook": true,
-   "text": "A father who threatens to *stone* you…",
-   "sub": "How would you answer him?",
+   "text": "Your father threatens to *stone* you.",
+   "sub": "Your answer?",
    "ur": "باپ جو سنگسار کرنے کی دھمکی دے… آپ کیا جواب دیں گے؟",
    "mood": {
     "warm": 0.1,
@@ -72,7 +72,7 @@
    }
   },
   {
-   "text": "Speak gently to your parents today… *even when it's hard*.",
+   "text": "Speak gently to your parents *today*.",
    "ur": "آج اپنے والدین سے نرمی سے بات کریں… چاہے مشکل ہو",
    "mood": {
     "warm": 0.25,
@@ -81,7 +81,7 @@
   },
   {
    "cta": true,
-   "text": "The full movie of *Prophet Ibrahim (AS)*: tonight, 6:30 PM. Follow so you don't miss it.",
+   "text": "The full movie of *Prophet Ibrahim (AS)*: tonight, 6:30 PM. Follow.",
    "ur": "حضرت ابراہیم علیہ السلام کی مکمل فلم: آج رات ساڑھے چھ بجے۔ فالو کریں",
    "mood": {
     "warm": 0.25,

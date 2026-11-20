@@ -1,18 +1,17 @@
 {
  "id": "42-dawud",
  "lines": [
-  "Two men climbed the wall into a king's prayer room. What did they want?",
+  "Two men climbed into a king's prayer room.",
   "They said: Fear not. Two adversaries, one has wronged the other, so judge between us with truth.",
-  "This, my brother, has ninety-nine ewes, and I have one ewe. And he said: give her to me.",
-  "Prophet Dawud, alayhis salaam, became certain it was a test. He asked forgiveness of his Lord, and fell down bowing.",
-  "A prophet and a king turned back to Allah in a moment. Turn back today.",
-  "Watch the full movie of his son, Prophet Sulaiman... link below."
+  "This, my brother, has ninety-nine ewes, and I have one ewe.",
+  "Prophet Dawud, alayhis salaam, knew it was a test. He asked forgiveness of his Lord, and fell down bowing.",
+  "A prophet and a king turned back in a moment. Turn back today.",
+  "Full movie of his son, Prophet Sulaiman, alayhis salaam: link below."
  ],
  "beats": [
   {
    "hook": true,
-   "text": "Two men climbed the wall into *a king's prayer room*.",
-   "sub": "What did they want?",
+   "text": "Two men climbed into *a king's prayer room*.",
    "ur": "دو آدمی دیوار پھاند کر بادشاہ کے عبادت خانے میں آ گئے۔ کیا چاہتے تھے؟",
    "mood": {
     "warm": 0.1,
@@ -81,7 +80,7 @@
   },
   {
    "cta": true,
-   "text": "Watch the full movie of *Prophet Sulaiman (AS)*, link below.",
+   "text": "Full movie of *Prophet Sulaiman (AS)*: link below.",
    "ur": "حضرت سلیمان علیہ السلام کی مکمل فلم دیکھیں، لنک نیچے",
    "mood": {
     "warm": 0.25,

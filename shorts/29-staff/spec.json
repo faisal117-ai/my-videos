@@ -105,16 +105,17 @@
   "beats": [
     {
       "hook": true,
-      "text": "The jinn know your future? They didn't even know *their king had died*.",
+      "text": "The jinn didn't even know *their king had died*.",
       "ur": "جن آپ کا مستقبل جانتے ہیں؟ انہیں تو اپنے بادشاہ کی موت کا بھی پتہ نہ چلا",
       "mood": {
         "warm": 0.1,
         "cool": 0.05
       },
-      "reveal": false
+      "reveal": false,
+      "sub": "So who knows your future?"
     },
     {
-      "text": "Even the jinn worked for *Prophet Sulaiman (AS)*, by his Lord's permission.",
+      "text": "Even the jinn worked for *Prophet Sulaiman (AS)*.",
       "ur": "جن بھی حضرت سلیمان علیہ السلام کے لیے کام کرتے تھے، ان کے رب کے حکم سے",
       "mood": {
         "warm": 0.15,
@@ -172,7 +173,7 @@
     },
     {
       "cta": true,
-      "text": "Watch the full movie of *Prophet Sulaiman (AS)*, link below.",
+      "text": "Full movie of *Prophet Sulaiman (AS)*: link below.",
       "ur": "حضرت سلیمان علیہ السلام کی مکمل فلم دیکھیں، لنک نیچے",
       "mood": {
         "warm": 0.25,

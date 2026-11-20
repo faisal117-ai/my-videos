@@ -105,8 +105,8 @@
   "beats": [
     {
       "hook": true,
-      "text": "You saw *the sea split* for you…",
-      "sub": "…would you ever bow to a statue? They did.",
+      "text": "They saw *the sea split*.",
+      "sub": "Then they bowed to a calf.",
       "ur": "آپ کے لیے سمندر پھٹ گیا… کیا پھر بھی آپ کسی مورت کو سجدہ کریں گے؟",
       "mood": {
         "warm": 0.2,
@@ -162,7 +162,7 @@
     },
     {
       "cta": true,
-      "text": "Watch the full movie of *Prophet Musa (AS)*, link below.",
+      "text": "Full movie of *Prophet Musa (AS)*: link below.",
       "ur": "حضرت موسیٰ علیہ السلام کی مکمل فلم دیکھیں، لنک نیچے",
       "mood": {
         "warm": 0.25,

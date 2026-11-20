@@ -5,19 +5,19 @@
       display: flex; flex-direction: column; justify-content: flex-start; gap: 20px; }
   </style>
   <div id="b1" data-composition-id="b1" data-width="1080" data-height="1920">
-    <div id="b1-wrap" class="clip" data-start="0" data-duration="6.84">
-      <div id="b1-txt" class="txt hook"><span class="w" id="b1-w0">At</span> <span class="w" id="b1-w1">the</span> <span class="w" id="b1-w2">last</span> <span class="w" id="b1-w3">moment,</span> <span class="w" id="b1-w4">Pharaoh</span> <span class="w" id="b1-w5">said:</span> <span class="w hi" id="b1-w6">“I</span> <span class="w hi" id="b1-w7">believe.”</span></div>
-      <div id="b1-sub" class="sub">Allah&#x27;s answer is still in the Quran.</div>
+    <div id="b1-wrap" class="clip" data-start="0" data-duration="3.62">
+      <div id="b1-txt" class="txt hook"><span class="w" id="b1-w0">Pharaoh</span> <span class="w" id="b1-w1">said:</span> <span class="w hi" id="b1-w2">“I</span> <span class="w hi" id="b1-w3">believe.”</span></div>
+      <div id="b1-sub" class="sub">Too late.</div>
       <div id="b1-ur" class="ur" dir="rtl" lang="ur" data-layout-allow-overflow>آخری لمحے فرعون نے کہا: میں ایمان لایا</div>
     </div>
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
     tl.fromTo("#b1-txt", {scale: 1.18}, {scale: 1, duration: 0.35, ease: "back.out(2)"}, 0);
-    tl.fromTo("#b1-sub", {opacity: 0, y: 16}, {opacity: 1, y: 0, duration: 0.5, ease: "power2.out"}, 2.84);
-    tl.fromTo("#b1 .hi", {textShadow: "0 0 0px rgba(0,0,0,0)"}, {textShadow: "0 0 28px var(--accent)", duration: 0.6, ease: "power1.out"}, 3.15);
+    tl.fromTo("#b1-sub", {opacity: 0, y: 16}, {opacity: 1, y: 0, duration: 0.5, ease: "power2.out"}, 1.42);
+    tl.fromTo("#b1 .hi", {textShadow: "0 0 0px rgba(0,0,0,0)"}, {textShadow: "0 0 28px var(--accent)", duration: 0.6, ease: "power1.out"}, 1.57);
     tl.fromTo("#b1-ur", {opacity: 0, y: 10}, {opacity: 1, y: 0, duration: 0.35, ease: "power2.out"}, 0.15);
-    tl.fromTo("#b1-wrap", {opacity: 1}, {opacity: 0, duration: 0.22, ease: "power1.in"}, 6.60);
+    tl.fromTo("#b1-wrap", {opacity: 1}, {opacity: 0, duration: 0.22, ease: "power1.in"}, 3.38);
     window.__timelines["b1"] = tl;
   </script>
 </template>

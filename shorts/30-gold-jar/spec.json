@@ -111,7 +111,7 @@
  "beats": [
   {
    "hook": true,
-   "text": "A jar of *gold*… under land you just bought.",
+   "text": "*Gold.* Under land you just bought.",
    "sub": "Whose is it?",
    "ur": "آپ کی خریدی ہوئی زمین میں سونے کا مٹکا… کس کا ہے؟",
    "mood": {
@@ -157,7 +157,7 @@
   },
   {
    "cta": true,
-   "text": "Watch the full movie of *Prophet Sulaiman (AS)*, link below.",
+   "text": "Full movie of *Prophet Sulaiman (AS)*: link below.",
    "ur": "حضرت سلیمان علیہ السلام کی مکمل فلم دیکھیں، لنک نیچے",
    "mood": {
     "warm": 0.25,

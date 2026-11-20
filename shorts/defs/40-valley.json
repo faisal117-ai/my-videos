@@ -1,18 +1,18 @@
 {
  "id": "40-valley",
  "lines": [
-  "Why would a father leave his family in a valley with no water?",
-  "As he walked away, the mother asked: Has Allah commanded you to do this? He said: yes. She said: Then He will not neglect us.",
-  "Out of sight, he prayed: Our Lord, I have settled some of my descendants in an uncultivated valley, near Your sacred House.",
-  "And water came from the ground... the spring of Zamzam, still flowing today.",
-  "When Allah commands it... He will not neglect you.",
-  "Watch the full movie of Prophet Ibrahim, alayhis salaam... link below."
+  "A valley. No water. A family left there.",
+  "The mother asked: Has Allah commanded you to do this? He said: yes. She said: Then He will not neglect us.",
+  "Prophet Ibrahim, alayhis salaam, prayed: Our Lord, I have settled some of my descendants in an uncultivated valley, near Your sacred House.",
+  "And water came... Zamzam, still flowing today.",
+  "When Allah commands it, He will not neglect you.",
+  "Full movie of Prophet Ibrahim, alayhis salaam: link below."
  ],
  "beats": [
   {
    "hook": true,
-   "text": "A valley with *no water*…",
-   "sub": "Why would a father leave his family there?",
+   "text": "A valley. *No water.*",
+   "sub": "A family left there.",
    "ur": "بے آب وادی… ایک باپ اپنے گھر والوں کو وہاں کیوں چھوڑے گا؟",
    "mood": {
     "warm": 0.2,
@@ -65,7 +65,7 @@
   },
   {
    "cta": true,
-   "text": "Watch the full movie of *Prophet Ibrahim (AS)*, link below.",
+   "text": "Full movie of *Prophet Ibrahim (AS)*: link below.",
    "ur": "حضرت ابراہیم علیہ السلام کی مکمل فلم دیکھیں، لنک نیچے",
    "mood": {
     "warm": 0.25,

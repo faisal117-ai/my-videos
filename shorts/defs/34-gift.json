@@ -1,18 +1,18 @@
 {
  "id": "34-gift",
  "lines": [
-  "A queen sent a king a fortune. He sent every bit of it back. Why?",
+  "A queen sent a fortune. He sent it back.",
   "The Queen of Sheba said: I will send to them a gift, and see with what the messengers return.",
   "Prophet Sulaiman, alayhis salaam, said: Do you provide me with wealth? What Allah has given me is better than what He has given you.",
   "Rather, it is you who rejoice in your gift.",
-  "What Allah gave you is worth more than anything anyone can hand you.",
-  "Watch the full movie of Prophet Sulaiman, alayhis salaam... link below."
+  "What Allah gave you is worth more than any gift.",
+  "Full movie of Prophet Sulaiman, alayhis salaam: link below."
  ],
  "beats": [
   {
    "hook": true,
-   "text": "A queen sent a king *a fortune*.",
-   "sub": "He sent every bit of it back.",
+   "text": "A queen sent *a fortune*.",
+   "sub": "He sent it back.",
    "ur": "ایک ملکہ نے بادشاہ کو خزانہ بھیجا۔ اس نے سب واپس کر دیا",
    "mood": {
     "warm": 0.2,
@@ -72,7 +72,7 @@
    }
   },
   {
-   "text": "What Allah gave you is worth more than *anything anyone can hand you*.",
+   "text": "What Allah gave you is worth more than *any gift*.",
    "ur": "جو اللہ نے آپ کو دیا، وہ ہر تحفے سے بہتر ہے",
    "mood": {
     "warm": 0.25,
@@ -81,7 +81,7 @@
   },
   {
    "cta": true,
-   "text": "Watch the full movie of *Prophet Sulaiman (AS)*, link below.",
+   "text": "Full movie of *Prophet Sulaiman (AS)*: link below.",
    "ur": "حضرت سلیمان علیہ السلام کی مکمل فلم دیکھیں، لنک نیچے",
    "mood": {
     "warm": 0.25,

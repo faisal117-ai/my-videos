@@ -28,3 +28,8 @@
 
 
 - **Urdu honorific for two prophets (user, 20 Nov 2026):** use "علیہ السلام" (not "علیہما السلام") in Urdu narration and captions, e.g. "حضرت موسیٰ اور حضرت یوسف علیہ السلام".
+
+## Callum and "Astaghfirullah" (20 Nov 2026)
+Callum (multilingual v2) says the غ in أَسْتَغْفِرُ اللَّهَ as an English hard "g" (failed the speech-to-text check 6 times).
+Rule: don't voice Astaghfirullah with Callum; say "ask Allah for forgiveness" and show أَسْتَغْفِرُ اللَّهَ on screen.
+Hasbunallahu wa ni'mal wakeel passes (EN and UR). Check every Arabic phrase with the strict YES/NO check before showing the user.

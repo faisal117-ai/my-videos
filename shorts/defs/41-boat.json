@@ -1,18 +1,17 @@
 {
  "id": "41-boat",
  "lines": [
-  "Why would a man make a hole in a boat... that belonged to poor people?",
+  "A hole... in a poor man's boat?",
   "Prophet Musa, alayhis salaam, said: Have you torn it open to drown its people? You have certainly done a grave thing.",
   "Then came the reason.",
   "As for the ship, it belonged to poor people working at sea. So I intended to cause defect in it, as there was after them a king who seized every ship by force.",
   "The damage you can't understand today... may be what saves you.",
-  "Watch the full movie of Prophet Musa, alayhis salaam... link below."
+  "Full movie of Prophet Musa, alayhis salaam: link below."
  ],
  "beats": [
   {
    "hook": true,
-   "text": "A hole in a boat… *of poor people*?",
-   "sub": "Why?",
+   "text": "A hole… *in a poor man's boat*?",
    "ur": "غریبوں کی کشتی میں شگاف… کیوں؟",
    "mood": {
     "warm": 0.1,
@@ -72,7 +71,7 @@
   },
   {
    "cta": true,
-   "text": "Watch the full movie of *Prophet Musa (AS)*, link below.",
+   "text": "Full movie of *Prophet Musa (AS)*: link below.",
    "ur": "حضرت موسیٰ علیہ السلام کی مکمل فلم دیکھیں، لنک نیچے",
    "mood": {
     "warm": 0.25,

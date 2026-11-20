@@ -111,8 +111,7 @@
   "beats": [
     {
       "hook": true,
-      "text": "Ask Allah for anything… *what would you ask first?*",
-      "sub": "One king asked for this.",
+      "text": "One king's first request… *wasn't a kingdom*.",
       "ur": "اللہ سے کچھ بھی مانگ سکیں… تو پہلے کیا مانگیں گے؟",
       "mood": {
         "warm": 0.2,
@@ -169,7 +168,7 @@
       "translation": "“So We subjected to him the wind blowing by his command, gently, wherever he directed”"
     },
     {
-      "text": "Before you ask for more today… *ask for forgiveness first.*",
+      "text": "Before you ask for more… *ask for forgiveness first*. أَسْتَغْفِرُ اللَّهَ",
       "ur": "آج کچھ اور مانگنے سے پہلے… مغفرت مانگیں۔ أَسْتَغْفِرُ اللَّهَ",
       "mood": {
         "warm": 0.25,
@@ -178,7 +177,7 @@
     },
     {
       "cta": true,
-      "text": "Watch the full movie of *Prophet Sulaiman (AS)*, link below.",
+      "text": "Full movie of *Prophet Sulaiman (AS)*: link below.",
       "ur": "حضرت سلیمان علیہ السلام کی مکمل فلم دیکھیں، لنک نیچے",
       "mood": {
         "warm": 0.25,

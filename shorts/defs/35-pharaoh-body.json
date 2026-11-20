@@ -1,18 +1,18 @@
 {
  "id": "35-pharaoh-body",
  "lines": [
-  "At the last moment, Pharaoh said: I believe. Allah's answer is still in the Quran.",
+  "Pharaoh said: I believe. Too late.",
   "When drowning overtook him, he said: I believe that there is no deity except the One in whom the Children of Israel believe.",
   "Now? And you had disobeyed before, and were of the corrupters?",
   "So today We will save you in body, that you may be a sign to those who come after you.",
-  "Don't wait for the last moment to turn to Allah. Turn today.",
-  "Watch the full movie of Prophet Musa, alayhis salaam... link below."
+  "Don't wait for the last moment. Turn to Allah today.",
+  "Full movie of Prophet Musa, alayhis salaam: link below."
  ],
  "beats": [
   {
    "hook": true,
-   "text": "At the last moment, Pharaoh said: *“I believe.”*",
-   "sub": "Allah's answer is still in the Quran.",
+   "text": "Pharaoh said: *“I believe.”*",
+   "sub": "Too late.",
    "ur": "آخری لمحے فرعون نے کہا: میں ایمان لایا",
    "mood": {
     "warm": 0.1,
@@ -81,7 +81,7 @@
   },
   {
    "cta": true,
-   "text": "Watch the full movie of *Prophet Musa (AS)*, link below.",
+   "text": "Full movie of *Prophet Musa (AS)*: link below.",
    "ur": "حضرت موسیٰ علیہ السلام کی مکمل فلم دیکھیں، لنک نیچے",
    "mood": {
     "warm": 0.25,

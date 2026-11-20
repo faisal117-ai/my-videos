@@ -1,18 +1,17 @@
 {
  "id": "33-dinars",
  "lines": [
-  "No boat, no witness, a thousand dinars due today. What would you do?",
+  "No boat. No witness. A thousand dinars due.",
   "The Prophet, peace be upon him, told us of a man who borrowed a thousand dinars, saying: Allah is enough as a witness.",
-  "When the day came, he found no boat. So he put the dinars and a letter in a piece of wood... and entrusted it to Allah, in the sea.",
-  "On the other shore, the lender found a piece of wood. He cut it open... and there was his money.",
+  "With no boat, he put the dinars and a letter in a piece of wood... and entrusted it to Allah, in the sea.",
+  "On the other shore, the lender found the wood, cut it open... and there was his money.",
   "Can't keep a promise with your own hands? Keep it with Allah.",
-  "Watch the full movie of Prophet Sulaiman, alayhis salaam... link below."
+  "Full movie of Prophet Sulaiman, alayhis salaam: link below."
  ],
  "beats": [
   {
    "hook": true,
-   "text": "No boat. No witness. *1,000 dinars due today.*",
-   "sub": "What would you do?",
+   "text": "No boat. No witness. *1,000 dinars due.*",
    "ur": "نہ کشتی، نہ گواہ، آج ہزار دینار ادا کرنے ہیں۔ آپ کیا کرتے؟",
    "mood": {
     "warm": 0.2,
@@ -57,7 +56,7 @@
   },
   {
    "cta": true,
-   "text": "Watch the full movie of *Prophet Sulaiman (AS)*, link below.",
+   "text": "Full movie of *Prophet Sulaiman (AS)*: link below.",
    "ur": "حضرت سلیمان علیہ السلام کی مکمل فلم دیکھیں، لنک نیچے",
    "mood": {
     "warm": 0.25,

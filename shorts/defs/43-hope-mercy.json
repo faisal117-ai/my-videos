@@ -1,18 +1,17 @@
 {
  "id": "43-hope-mercy",
  "lines": [
-  "If you think Allah could never forgive you... this verse is for you.",
+  "Think Allah won't forgive you? Listen.",
   "Allah didn't call them sinners. He called them: O My servants.",
   "O My servants who have transgressed against themselves, do not despair of the mercy of Allah.",
-  "Indeed, Allah forgives all sins. All. Not some.",
+  "Indeed, Allah forgives all sins. All.",
   "Then He says: Return to your Lord.",
-  "Say أَسْتَغْفِرُ اللَّهَ... and come back today. Send this to someone who needs it, and watch our full movies, link below."
+  "Ask Allah for forgiveness, and come back today. Send this to someone who needs it. Full movies: link below."
  ],
  "beats": [
   {
    "hook": true,
-   "text": "Think Allah could *never* forgive you?",
-   "sub": "This verse is for you.",
+   "text": "Think Allah won't forgive you? *Listen.*",
    "ur": "سوچتے ہیں اللہ آپ کو کبھی معاف نہیں کرے گا؟ یہ آیت آپ کے لیے ہے",
    "mood": {
     "warm": 0.0,
@@ -82,7 +81,7 @@
   },
   {
    "cta": true,
-   "text": "Say *أَسْتَغْفِرُ اللَّهَ* and come back today. Send this to someone who needs it.",
+   "text": "*أَسْتَغْفِرُ اللَّهَ*. Come back today. Send this to someone who needs it.",
    "ur": "آج ہی استغفار کریں اور لوٹ آئیں۔ یہ اس تک پہنچائیں جسے اس کی ضرورت ہے",
    "mood": {
     "warm": 0.3,
