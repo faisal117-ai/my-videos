@@ -1,0 +1,12 @@
+{
+ "style": "High-quality 3D animated feature film still, close to photoreal (modern big-studio animation look), rich detail, cinematic lighting and depth of field. Vertical 9:16, keep the top third fairly simple and dark-to-plain (text sits there), the action in the lower two thirds. Symbolic scenes of light after darkness. ABSOLUTELY NO PEOPLE, no human figures, no silhouettes anywhere.",
+ "scenes": {
+  "s1": "A dark stormy night sky over a calm sea, a single bright beam of light breaking through the heavy clouds onto the water.",
+  "s2": "A heavy wooden door in a dark stone street, slightly open, warm golden light pouring out onto the stones.",
+  "s3": "Dawn light flooding a quiet desert valley after a dark night, the first rays touching the sand and rocks, birds rising.",
+  "s4": "A golden sunrise over a calm sea, the whole sky glowing, gentle waves sparkling with light.",
+  "s5": "A path through green fields after rain leading toward a bright sunrise, drops shining on the grass.",
+  "s6": "An oil lamp burning brightly on a simple wooden table by an open window at sunrise, a prayer rug folded beside it, peaceful light."
+ },
+ "aspect": "9:16"
+}

@@ -1,0 +1,118 @@
+{
+ "id": "43-hope-mercy",
+ "lines": [
+  "If you think Allah could never forgive you... this verse is for you.",
+  "Allah didn't call them sinners. He called them: O My servants.",
+  "O My servants who have transgressed against themselves, do not despair of the mercy of Allah.",
+  "Indeed, Allah forgives all sins. All. Not some.",
+  "Then He says: Return to your Lord.",
+  "Say أَسْتَغْفِرُ اللَّهَ... and come back today. Send this to someone who needs it, and watch our full movies, link below."
+ ],
+ "beats": [
+  {
+   "hook": true,
+   "text": "Think Allah could *never* forgive you?",
+   "sub": "This verse is for you.",
+   "ur": "سوچتے ہیں اللہ آپ کو کبھی معاف نہیں کرے گا؟ یہ آیت آپ کے لیے ہے",
+   "mood": {
+    "warm": 0.0,
+    "cool": 0.12
+   },
+   "reveal": false
+  },
+  {
+   "text": "Not “sinners”… *“O My servants.”*",
+   "ur": "گناہگار نہیں… اے میرے بندو",
+   "mood": {
+    "warm": 0.05,
+    "cool": 0.08
+   },
+   "ref": "Az-Zumar 39:53"
+  },
+  {
+   "q": "39:53",
+   "ar_words": [
+    2,
+    11
+   ],
+   "en": "O My servants who have transgressed against themselves [by sinning], do not despair of the mercy of Allah",
+   "ur_a": [
+    "اے میرے بندو",
+    "مایوس نہ ہو جاؤ"
+   ],
+   "ref": "Az-Zumar 39:53",
+   "mood": {
+    "warm": 0.15,
+    "cool": 0
+   }
+  },
+  {
+   "q": "39:53",
+   "ar_words": [
+    12,
+    16
+   ],
+   "en": "Indeed, Allah forgives all sins",
+   "ur_a": [
+    "یقیناً اللہ",
+    "معاف کر دیتا ہے"
+   ],
+   "ref": "Az-Zumar 39:53",
+   "mood": {
+    "warm": 0.25,
+    "cool": 0
+   }
+  },
+  {
+   "q": "39:54",
+   "ar_words": [
+    1,
+    3
+   ],
+   "en": "And return [in repentance] to your Lord",
+   "ur_a": [
+    "پلٹ آؤ",
+    "رب کی طرف"
+   ],
+   "ref": "Az-Zumar 39:54",
+   "mood": {
+    "warm": 0.25,
+    "cool": 0
+   }
+  },
+  {
+   "cta": true,
+   "text": "Say *أَسْتَغْفِرُ اللَّهَ* and come back today. Send this to someone who needs it.",
+   "ur": "آج ہی استغفار کریں اور لوٹ آئیں۔ یہ اس تک پہنچائیں جسے اس کی ضرورت ہے",
+   "mood": {
+    "warm": 0.3,
+    "cool": 0
+   },
+   "btn": "Full movies ↓"
+  }
+ ],
+ "photos": [
+  "s1",
+  "s2",
+  "s3",
+  "s4",
+  "s5",
+  "s6"
+ ],
+ "scenes": {
+  "style": "High-quality 3D animated feature film still, close to photoreal (modern big-studio animation look), rich detail, cinematic lighting and depth of field. Vertical 9:16, keep the top third fairly simple and dark-to-plain (text sits there), the action in the lower two thirds. Symbolic scenes of light after darkness. ABSOLUTELY NO PEOPLE, no human figures, no silhouettes anywhere.",
+  "scenes": {
+   "s1": "A dark stormy night sky over a calm sea, a single bright beam of light breaking through the heavy clouds onto the water.",
+   "s2": "A heavy wooden door in a dark stone street, slightly open, warm golden light pouring out onto the stones.",
+   "s3": "Dawn light flooding a quiet desert valley after a dark night, the first rays touching the sand and rocks, birds rising.",
+   "s4": "A golden sunrise over a calm sea, the whole sky glowing, gentle waves sparkling with light.",
+   "s5": "A path through green fields after rain leading toward a bright sunrise, drops shining on the grass.",
+   "s6": "An oil lamp burning brightly on a simple wooden table by an open window at sunrise, a prayer rug folded beside it, peaceful light."
+  }
+ },
+ "pauses": {
+  "3": 0.8
+ },
+ "turn": 3,
+ "hum": 4
+}
