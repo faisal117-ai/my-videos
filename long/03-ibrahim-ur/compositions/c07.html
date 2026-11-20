@@ -40,11 +40,11 @@
     .c07-brand span { color: var(--accent); }
     .c07-fade { position: absolute; inset: 0; background: #000; }
 
-    #c07-sky { background: linear-gradient(180deg, #1a2440 0%, #6a5a7a 40%, #e09a6a 62%, #f2c48a 68%, #6a4a30 74%); }
-    #c07-night { opacity: 0; background: linear-gradient(180deg, #02030a 0%, #0b1026 70%, #151a2c 100%); }
-    #c07-bstar { position: absolute; left: 1360px; top: 160px; width: 60px; height: 60px; margin: -30px; border-radius: 50%; opacity: 0;
-      background: radial-gradient(circle, #fff 0%, #dfe8ff 35%, rgba(200,215,255,0) 70%); box-shadow: 0 0 60px 20px rgba(200,215,255,0.5); }
-
+    .c07-ph { position: absolute; left: -60px; top: -34px; width: 2040px; height: 1148px; opacity: 0; }
+    .c07-ph img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    #c07-phsc { position: absolute; inset: 0; }
+    .c07-phglow { position: absolute; inset: 0; opacity: 0; mix-blend-mode: screen; pointer-events: none;
+      background: radial-gradient(ellipse 60% 70% at 50% 55%, rgba(255,214,140,0.95) 0%, rgba(255,170,80,0.45) 40%, rgba(0,0,0,0) 75%); }
     .c07-cap { font-family: "Noto Nastaliq Urdu"; font-weight: 400; font-size: 44px; line-height: 1.9; direction: rtl; bottom: 40px; }
     .c07-urtr { font-family: "Noto Nastaliq Urdu"; font-style: normal; font-weight: 400; font-size: 44px; line-height: 1.9; }
     .c07-ctext { font-family: "Noto Nastaliq Urdu"; font-weight: 400; font-size: 60px; line-height: 1.9; direction: rtl; }
@@ -54,69 +54,49 @@
 
   </style>
   <div id="c07" data-composition-id="c07" data-width="1920" data-height="1080">
-    <div id="c07-scene" class="clip" data-start="0" data-duration="49.54" style="position:absolute;inset:0" data-layout-allow-overflow>
-      <div id="c07-cam" class="c07-cam">
-      <div id="c07-sky" class="c07-full"></div><div id="c07-night" class="c07-full"></div><div id="c07-bstar"></div>
-      <svg class="c07-svg" viewBox="0 0 1920 1080" preserveAspectRatio="none"><path fill="#7a5636" d="M -100 747 Q 60 733 220 760 Q 380 743 540 743 Q 700 731 860 776 Q 1020 758 1180 747 Q 1340 733 1500 763 Q 1660 749 1820 781 Q 1980 764 2140 755 V 1100 H -100 Z"/><path fill="#5a3e26" d="M -100 869 Q 60 845 220 813 Q 380 799 540 854 Q 700 834 860 839 Q 1020 824 1180 867 Q 1340 845 1500 834 Q 1660 819 1820 865 Q 1980 843 2140 820 V 1100 H -100 Z"/><path fill="#3a2818" d="M -100 947 Q 60 931 220 963 Q 380 943 540 937 Q 700 921 860 953 Q 1020 936 1180 966 Q 1340 946 1500 941 Q 1660 925 1820 954 Q 1980 936 2140 954 V 1100 H -100 Z"/><path d="M 900 1080 Q 960 900 940 640 L 980 640 Q 1000 900 1020 1080 Z" fill="#8a6a46" opacity="0.6"/><ellipse id="c07-fp0" cx="897" cy="1060" rx="12" ry="6" fill="#4a3220" opacity="0"/><ellipse id="c07-fp1" cx="931" cy="1042" rx="12" ry="6" fill="#4a3220" opacity="0"/><ellipse id="c07-fp2" cx="905" cy="1024" rx="11" ry="6" fill="#4a3220" opacity="0"/><ellipse id="c07-fp3" cx="939" cy="1006" rx="11" ry="6" fill="#4a3220" opacity="0"/><ellipse id="c07-fp4" cx="913" cy="988" rx="11" ry="5" fill="#4a3220" opacity="0"/><ellipse id="c07-fp5" cx="947" cy="970" rx="10" ry="5" fill="#4a3220" opacity="0"/><ellipse id="c07-fp6" cx="921" cy="952" rx="10" ry="5" fill="#4a3220" opacity="0"/><ellipse id="c07-fp7" cx="955" cy="934" rx="10" ry="5" fill="#4a3220" opacity="0"/><ellipse id="c07-fp8" cx="929" cy="916" rx="10" ry="5" fill="#4a3220" opacity="0"/><ellipse id="c07-fp9" cx="963" cy="898" rx="9" ry="5" fill="#4a3220" opacity="0"/><ellipse id="c07-fp10" cx="937" cy="880" rx="9" ry="4" fill="#4a3220" opacity="0"/><ellipse id="c07-fp11" cx="971" cy="862" rx="9" ry="4" fill="#4a3220" opacity="0"/><ellipse id="c07-fp12" cx="945" cy="844" rx="8" ry="4" fill="#4a3220" opacity="0"/><ellipse id="c07-fp13" cx="979" cy="826" rx="8" ry="4" fill="#4a3220" opacity="0"/><ellipse id="c07-fp14" cx="953" cy="808" rx="8" ry="4" fill="#4a3220" opacity="0"/><ellipse id="c07-fp15" cx="987" cy="790" rx="8" ry="4" fill="#4a3220" opacity="0"/><ellipse id="c07-fp16" cx="961" cy="772" rx="7" ry="4" fill="#4a3220" opacity="0"/><ellipse id="c07-fp17" cx="995" cy="754" rx="7" ry="3" fill="#4a3220" opacity="0"/><ellipse id="c07-fp18" cx="969" cy="736" rx="7" ry="3" fill="#4a3220" opacity="0"/><ellipse id="c07-fp19" cx="1003" cy="718" rx="6" ry="3" fill="#4a3220" opacity="0"/><ellipse id="c07-fp20" cx="977" cy="700" rx="6" ry="3" fill="#4a3220" opacity="0"/><ellipse id="c07-fp21" cx="1011" cy="682" rx="6" ry="3" fill="#4a3220" opacity="0"/><ellipse id="c07-fp22" cx="985" cy="664" rx="5" ry="3" fill="#4a3220" opacity="0"/><ellipse id="c07-fp23" cx="1019" cy="646" rx="5" ry="3" fill="#4a3220" opacity="0"/></svg>
+    <div id="c07-scene" class="clip" data-start="0" data-duration="52.58" style="position:absolute;inset:0" data-layout-allow-overflow>
+      <div id="c07-cam" class="c07-cam"><div id="c07-phsc"><div id="c07-ph0" class="c07-ph"><img src="assets/gen/c07a.jpg" alt=""></div><div id="c07-ph1" class="c07-ph"><img src="assets/gen/c07b.jpg" alt=""></div><div id="c07-ph2" class="c07-ph"><img src="assets/gen/c07c.jpg" alt=""></div></div><div id="c07-phg0" class="c07-phglow"></div>
       </div>
     </div>
-    <div id="c07-scr" class="c07-scrim clip" data-start="0" data-duration="49.54"></div>
+    <div id="c07-scr" class="c07-scrim clip" data-start="0" data-duration="52.58"></div>
     <div id="c07-lab" class="c07-label clip" data-start="0.3" data-duration="4.6"><b>باب 7</b><i>گھر چھوڑنا</i></div>
-    <div id="c07-cp0" class="c07-cap clip" data-start="0.22" data-duration="2.46">باپ نے انہیں ٹھکرا دیا تھا۔</div>
-    <div id="c07-cp1" class="c07-cap clip" data-start="2.68" data-duration="2.27">قوم نے جلانا چاہا تھا۔</div>
-    <div id="c07-cp2" class="c07-cap clip" data-start="4.95" data-duration="2.28">بادشاہ دشمن بن گیا تھا۔</div>
-    <div id="c07-cp3" class="c07-cap clip" data-start="7.23" data-duration="2.69">ان پر صرف چند لوگ ایمان لائے۔</div>
-    <div id="c07-cp4" class="c07-cap clip" data-start="9.93" data-duration="3.97">ان میں ان کے بھتیجے، لوط علیہ السلام، بھی تھے۔</div>
-    <div id="c07-cp5" class="c07-cap clip" data-start="13.90" data-duration="2.60">چنانچہ ابراہیم علیہ السلام نے اپنی جائے</div>
-    <div id="c07-cp6" class="c07-cap clip" data-start="16.50" data-duration="3.95">پیدائش چھوڑ دی، صرف اپنے ایمان کے ساتھ۔</div>
-    <div id="c07-cp7" class="c07-cap clip" data-start="30.85" data-duration="4.57">سے گزرتے، جہاں جاتے لوگوں کو اللہ کی طرف بلاتے۔</div>
-    <div id="c07-k0w" class="c07-cardwrap clip" data-start="20.50" data-duration="6.80"><div id="c07-k0" class="c07-card"><div class="c07-ar" dir="rtl" lang="ar">إِنِّي ذَاهِبٌ إِلَىٰ رَبِّي سَيَهۡدِينِ</div><div class="c07-en c07-urtr" dir="rtl" lang="ur">میں اپنے رب کی طرف جاتا ہوں، وہی میری رہنمائی کرے گا</div><div class="c07-ref">As-Saffat 37:99</div></div></div>
-    <div id="c07-k1w" class="c07-cardwrap clip" data-start="35.47" data-duration="8.92"><div id="c07-k1" class="c07-card"><div class="c07-ar" dir="rtl" lang="ar">رَبِّ هَبۡ لِي مِنَ ٱلصَّـٰلِحِينَ</div><div class="c07-en c07-urtr" dir="rtl" lang="ur">اے پروردگار، مجھے ایک بیٹا عطا کر جو صالحوں میں سے ہو</div><div class="c07-ref">As-Saffat 37:100</div></div></div>
-    <div id="c07-k2w" class="c07-cardwrap clip" data-start="44.49" data-duration="4.55"><div id="c07-k2" class="c07-card"><div class="c07-ar" dir="rtl" lang="ar">فَبَشَّرۡنَٰهُ بِغُلَٰمٍ حَلِيمࣲ</div><div class="c07-en c07-urtr" dir="rtl" lang="ur">ہم نے اس کو ایک حلیم (بردبار) لڑکے کی بشارت دی</div><div class="c07-ref">As-Saffat 37:101</div></div></div>
+    <div id="c07-cp0" class="c07-cap clip" data-start="0.22" data-duration="3.80">والد نے سنگسار کرنے کی دھمکی دی تھی۔</div>
+    <div id="c07-cp1" class="c07-cap clip" data-start="4.02" data-duration="2.31">قوم نے جلانا چاہا تھا۔</div>
+    <div id="c07-cp2" class="c07-cap clip" data-start="6.33" data-duration="3.75">ایک بادشاہ ان کے رب کے بارے میں جھگڑا تھا۔</div>
+    <div id="c07-cp3" class="c07-cap clip" data-start="10.08" data-duration="3.34">اور ایک شخص ان پر ایمان لایا:</div>
+    <div id="c07-cp4" class="c07-cap clip" data-start="13.42" data-duration="1.81">لوط علیہ السلام۔</div>
+    <div id="c07-cp5" class="c07-cap clip" data-start="15.23" data-duration="4.99">چنانچہ ابراہیم علیہ السلام نے اپنی قوم کو چھوڑ دیا، اور اللہ</div>
+    <div id="c07-cp6" class="c07-cap clip" data-start="20.22" data-duration="4.97">انہیں اور لوط علیہ السلام کو ایک بابرکت سرزمین کی طرف لے گیا۔</div>
+    <div id="c07-cp7" class="c07-cap clip" data-start="35.26" data-duration="4.10">اللہ کو چھوڑ کر پکارتے ہیں، میں تو اپنے رب ہی کو پکاروں گا۔</div>
+    <div id="c07-k0w" class="c07-cardwrap clip" data-start="25.24" data-duration="6.38"><div id="c07-k0" class="c07-card"><div class="c07-ar" dir="rtl" lang="ar">إِنِّي ذَاهِبٌ إِلَىٰ رَبِّي سَيَهۡدِينِ</div><div class="c07-en c07-urtr" dir="rtl" lang="ur">میں اپنے رب کی طرف جاتا ہوں، وہی میری رہنمائی کرے گا</div><div class="c07-ref">As-Saffat 37:99</div></div></div>
+    <div id="c07-k1w" class="c07-cardwrap clip" data-start="39.41" data-duration="7.84"><div id="c07-k1" class="c07-card"><div class="c07-ar" dir="rtl" lang="ar">رَبِّ هَبۡ لِي مِنَ ٱلصَّـٰلِحِينَ</div><div class="c07-en c07-urtr" dir="rtl" lang="ur">اے پروردگار، مجھے ایک بیٹا عطا کر جو صالحوں میں سے ہو</div><div class="c07-ref">As-Saffat 37:100</div></div></div>
+    <div id="c07-k2w" class="c07-cardwrap clip" data-start="47.35" data-duration="4.73"><div id="c07-k2" class="c07-card"><div class="c07-ar" dir="rtl" lang="ar">فَبَشَّرۡنَٰهُ بِغُلَٰمٍ حَلِيمࣲ</div><div class="c07-en c07-urtr" dir="rtl" lang="ur">ہم نے اس کو ایک حلیم (بردبار) لڑکے کی بشارت دی</div><div class="c07-ref">As-Saffat 37:101</div></div></div>
     <div id="c07-fadeIn" class="c07-fade clip" data-start="0" data-duration="0.55" style="opacity:1"></div>
-    <div id="c07-fadeOut" class="c07-fade clip" data-start="49.04" data-duration="0.50" style="opacity:0"></div>
-    <div id="c07-br" class="c07-brand clip" data-start="0" data-duration="49.54">HAQ <span>·</span> STORIES</div>
+    <div id="c07-fadeOut" class="c07-fade clip" data-start="52.08" data-duration="0.50" style="opacity:0"></div>
+    <div id="c07-br" class="c07-brand clip" data-start="0" data-duration="52.58">HAQ <span>·</span> STORIES</div>
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
-    tl.fromTo("#c07-fp0", {opacity: 0}, {opacity: 1, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 13.98);
-    tl.fromTo("#c07-fp1", {opacity: 0}, {opacity: 1, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 14.43);
-    tl.fromTo("#c07-fp2", {opacity: 0}, {opacity: 1, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 14.88);
-    tl.fromTo("#c07-fp3", {opacity: 0}, {opacity: 1, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 15.33);
-    tl.fromTo("#c07-fp4", {opacity: 0}, {opacity: 1, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 15.78);
-    tl.fromTo("#c07-fp5", {opacity: 0}, {opacity: 1, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 16.23);
-    tl.fromTo("#c07-fp6", {opacity: 0}, {opacity: 1, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 16.68);
-    tl.fromTo("#c07-fp7", {opacity: 0}, {opacity: 1, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 17.13);
-    tl.fromTo("#c07-fp8", {opacity: 0}, {opacity: 1, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 17.58);
-    tl.fromTo("#c07-fp9", {opacity: 0}, {opacity: 1, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 18.03);
-    tl.fromTo("#c07-fp10", {opacity: 0}, {opacity: 1, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 18.48);
-    tl.fromTo("#c07-fp11", {opacity: 0}, {opacity: 1, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 18.93);
-    tl.fromTo("#c07-fp12", {opacity: 0}, {opacity: 1, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 19.38);
-    tl.fromTo("#c07-fp13", {opacity: 0}, {opacity: 1, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 19.83);
-    tl.fromTo("#c07-fp14", {opacity: 0}, {opacity: 1, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 20.28);
-    tl.fromTo("#c07-fp15", {opacity: 0}, {opacity: 1, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 20.73);
-    tl.fromTo("#c07-fp16", {opacity: 0}, {opacity: 1, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 21.18);
-    tl.fromTo("#c07-fp17", {opacity: 0}, {opacity: 1, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 21.63);
-    tl.fromTo("#c07-fp18", {opacity: 0}, {opacity: 1, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 22.08);
-    tl.fromTo("#c07-fp19", {opacity: 0}, {opacity: 1, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 22.53);
-    tl.fromTo("#c07-fp20", {opacity: 0}, {opacity: 1, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 22.98);
-    tl.fromTo("#c07-fp21", {opacity: 0}, {opacity: 1, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 23.43);
-    tl.fromTo("#c07-fp22", {opacity: 0}, {opacity: 1, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 23.88);
-    tl.fromTo("#c07-fp23", {opacity: 0}, {opacity: 1, duration: 0.30, ease: "sine.inOut", immediateRender: false}, 24.33);
-    tl.fromTo("#c07-night", {opacity: 0}, {opacity: 1, duration: 1.50, ease: "sine.inOut", immediateRender: false}, 35.32);
-    tl.fromTo("#c07-bstar", {opacity: 0}, {opacity: 1, duration: 1.50, ease: "sine.inOut", immediateRender: false}, 36.22);
-    tl.fromTo("#c07-bstar", {scale: 1}, {scale: 1.2, duration: 1.20, ease: "sine.inOut", yoyo: true, repeat: 11, immediateRender: false}, 37.12);
-    tl.fromTo("#c07-k0w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 20.50);
-    tl.fromTo("#c07-k0", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 20.50);
-    tl.fromTo("#c07-k1w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 35.47);
-    tl.fromTo("#c07-k1", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 35.47);
-    tl.fromTo("#c07-k2w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 44.49);
-    tl.fromTo("#c07-k2", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 44.49);
+    tl.fromTo("#c07-phg0", {opacity: 0}, {keyframes: [{opacity: 0.4, duration: 1.05, ease: "power2.out"}, {opacity: 0, duration: 1.95, ease: "sine.in"}], immediateRender: false}, 47.60);
+    tl.set("#c07-ph0", {opacity: 1}, 0);
+    tl.fromTo("#c07-ph0", {x: 0, scale: 1.0}, {x: 26, scale: 1.05, duration: 15.71, ease: "none", immediateRender: false}, 0.00);
+    tl.to("#c07-ph0", {opacity: 0, duration: 0.3}, 15.76);
+    tl.fromTo("#c07-ph1", {opacity: 0}, {opacity: 1, duration: 1.00, ease: "sine.inOut", immediateRender: false}, 14.71);
+    tl.fromTo("#c07-ph1", {x: 0, scale: 1.0}, {x: -26, scale: 1.05, duration: 25.25, ease: "none", immediateRender: false}, 14.71);
+    tl.to("#c07-ph1", {opacity: 0, duration: 0.3}, 40.01);
+    tl.fromTo("#c07-ph2", {opacity: 0}, {opacity: 1, duration: 1.00, ease: "sine.inOut", immediateRender: false}, 38.96);
+    tl.fromTo("#c07-ph2", {x: 0, scale: 1.0}, {x: 26, scale: 1.05, duration: 13.62, ease: "none", immediateRender: false}, 38.96);
+    tl.fromTo("#c07-k0w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 25.24);
+    tl.fromTo("#c07-k0", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 25.24);
+    tl.fromTo("#c07-k1w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 39.41);
+    tl.fromTo("#c07-k1", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 39.41);
+    tl.fromTo("#c07-k2w", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power2.out", immediateRender: false}, 47.35);
+    tl.fromTo("#c07-k2", {y: 24, scale: 0.98}, {y: 0, scale: 1, duration: 0.80, ease: "power2.out", immediateRender: false}, 47.35);
     tl.fromTo("#c07-lab", {opacity: 0, x: -20}, {opacity: 1, x: 0, duration: 0.60, ease: "power2.out", immediateRender: false}, 0.30);
     tl.fromTo("#c07-lab", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 4.40);
-    tl.fromTo("#c07-scene", {scale: 1.0, x: 0}, {scale: 1.06, x: -30, duration: 49.54, ease: "none", immediateRender: false}, 0.00);
+    tl.fromTo("#c07-scene", {scale: 1.0, x: 0}, {scale: 1.06, x: -30, duration: 52.58, ease: "none", immediateRender: false}, 0.00);
     tl.fromTo("#c07-fadeIn", {opacity: 1}, {opacity: 0, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 0.00);
-    tl.fromTo("#c07-fadeOut", {opacity: 0}, {opacity: 1, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 49.04);
+    tl.fromTo("#c07-fadeOut", {opacity: 0}, {opacity: 1, duration: 0.50, ease: "sine.inOut", immediateRender: false}, 52.08);
     window.__timelines["c07"] = tl;
   </script>
 </template>
