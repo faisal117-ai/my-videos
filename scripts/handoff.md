@@ -192,3 +192,5 @@ A new session can recreate these for itself (send_later / create_trigger) and de
 ### 19/20 Nov late: Sulaiman EP 3 re-made (EN + UR)
 - Both films re-rendered with the fixed script, house-style shakes/light blooms, exact verse cards; mixed (-14.5 / -14.3 LUFS), CRF 27: EN 11:03 80 MB, UR 11:43 83 MB. Commit 067251a.
 - Waiting for the user's approval. Then swap media, titles, descriptions, chapters and thumbnails in Metricool posts 434496552 (EN, Sat 21 Nov 18:30) and 434526077 (UR, Sun 22 Nov 18:30).
+- 20 Nov: user APPROVED. Metricool updated with new mp4s, titles, descriptions + chapters, thumbnails, tags, AI box, pinned-comment text as first comment: EN post now 435454310 (Sat 21 Nov 18:30), UR post now 435454706 (Sun 22 Nov 18:30). Hindi title/description for Sulaiman EP 3 added to scripts/translations/urdu-films-hindi.md (Ibrahim moved to EP 4).
+- After they go live: set Related video (EN → Musa film, UR → Urdu Yusuf), add the Hindi translation for the Urdu film, playlist + end screen per UPLOAD.md.
