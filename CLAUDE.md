@@ -12,7 +12,7 @@ after every change.
 For each video, run the skills below at their step and tell the user which ones ran and what they found.
 | Step | Skill |
 |---|---|
-| Friday plan | `anthropic-skills:yt-viral`, then `anthropic-skills:yt-plan` |
+| Friday plan | `anthropic-skills:yt-viral`, then `anthropic-skills:yt-plan`; update `scripts/ypp-tracker.md` (Earn-tab screenshot from the user) |
 | Film research | `anthropic-skills:deep-research` (Quran / sahih sources only) |
 | Script and hook | `anthropic-skills:yt-script` (5 hooks scored with hookscore.py; show the best two) |
 | Picture effects / cartoon | `stickman` (code-made effects: dust, light, shake; vertical with STICKMAN_W/H) |
