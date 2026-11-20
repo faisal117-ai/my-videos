@@ -1,6 +1,6 @@
 # Short: 34-gift: upload details
 
-**Status:** built 20 Nov; rendering; waiting for the user's approval. Slot: **Thu 26 Nov 16:00 PKT (film Short)**.
+**Status:** APPROVED and scheduled 20 Nov. Slot: **Thu 26 Nov 16:00 PKT (film Short)**.
 **Skills run:** yt-script hookscore, yt-package (title 76/100), yt-seo (below); yt-shorts (film Short).
 
 ## Title

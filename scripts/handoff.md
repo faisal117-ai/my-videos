@@ -222,3 +222,13 @@ A new session can recreate these for itself (send_later / create_trigger) and de
   Short whose description still has the channel URL; Sun 18:38 reminder does the Urdu throne.
 - Ibrahim EN + UR films re-rendering (8 scenes regenerated: no figure that could be read as a prophet/Hajar/Ismail/angel).
   Reminder trig_01VjayWR19wBDhrVAghWAyAW checks them at 01:30 PKT. Still to make for 26–29 Nov: Thu 16:00, Fri, Sat, Sun Shorts.
+- 20 Nov late: ALL Shorts through Sun 29 Nov approved + scheduled (35–45 s each):
+  Thu 26 16:00 gift (435976283), 17:00 hope 39:53 (435976373); Fri 27 10:00 Pharaoh body (435976467), 16:00 stars (435976549);
+  Sat 28 10:00 Khidr boat (435976658), 16:00 father (435976752), 19:00 fire EN (435976903);
+  Sun 29 10:00 Dawud (435977052), 16:00 valley (435977159), 19:00 fire UR (435977260).
+  Film links: Sat 21 18:38 reminder swaps the Sulaiman link (all Shorts with the channel URL next to "Prophet Sulaiman");
+  Sat 28 18:38 (trig_01PmuHD38cHTpXrHsNKZWvX1) Ibrahim EN link into fire EN + valley; Sun 29 18:38 (trig_01Mgd56Lyqi7Va5LYhnGxTn5) Urdu link into fire UR.
+- New weekly format: a hope-verse Short (user approved 20 Nov). Next ones: 2:286, 40:60, 13:28.
+- yt-retention (Musa EN film): 45% gone by 0:30 because of the spoken title section; rule now: no spoken titles (channel-plan.md).
+- Ibrahim EN + UR films rendering (opening cut to 0:26, 19 scenes regenerated people-free). Not yet in Metricool: send links,
+  get approval, then swap into posts 434202929 (Sat 28 18:30) / 434203028 (Sun 29 18:30) with EP 4 titles + seo text.

@@ -1,6 +1,6 @@
 # Short: 39-fire-ur: upload details
 
-**Status:** built 20 Nov; rendering; waiting for the user's approval. Slot: **Sun 29 Nov 19:00 PKT (30 min after the Urdu Ibrahim film)**.
+**Status:** APPROVED and scheduled 20 Nov. Slot: **Sun 29 Nov 19:00 PKT (30 min after the Urdu Ibrahim film)**.
 **Skills run:** yt-script hookscore, yt-package (title 94/100), yt-seo (below).
 
 ## Title

@@ -1,6 +1,6 @@
 # Short: 35-pharaoh-body: upload details
 
-**Status:** built 20 Nov; rendering; waiting for the user's approval. Slot: **Fri 27 Nov 10:00 PKT (channel Short → Musa film)**.
+**Status:** APPROVED and scheduled 20 Nov. Slot: **Fri 27 Nov 10:00 PKT (channel Short → Musa film)**.
 **Skills run:** yt-script hookscore, yt-package (title 76/100), yt-seo (below).
 
 ## Title

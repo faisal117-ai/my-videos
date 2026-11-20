@@ -1,6 +1,6 @@
 # Short: 41-boat: upload details
 
-**Status:** built 20 Nov; rendering; waiting for the user's approval. Slot: **Sat 28 Nov 10:00 PKT (channel Short → Musa film; tests a Khidr film)**.
+**Status:** APPROVED and scheduled 20 Nov. Slot: **Sat 28 Nov 10:00 PKT (channel Short → Musa film; tests a Khidr film)**.
 **Skills run:** yt-script hookscore, yt-package (title 80/100), yt-seo (below).
 
 ## Title

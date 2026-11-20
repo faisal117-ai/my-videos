@@ -1,6 +1,6 @@
 # Short: 36-stars: upload details
 
-**Status:** built 20 Nov; rendering; waiting for the user's approval. Slot: **Fri 27 Nov 16:00 PKT (Ibrahim film teaser)**.
+**Status:** APPROVED and scheduled 20 Nov. Slot: **Fri 27 Nov 16:00 PKT (Ibrahim film teaser)**.
 **Skills run:** yt-script hookscore, yt-package (title 80/100), yt-seo (below); yt-shorts (film Short).
 
 ## Title

@@ -1,6 +1,6 @@
 # Short: 43-hope-mercy (Az-Zumar 39:53–54): upload details
 
-**Status:** built 20 Nov; rendering; waiting for the user's approval. Slot: **Thu 26 Nov 17:00 PKT** (weekly hope-verse Short, user 20 Nov).
+**Status:** APPROVED and scheduled 20 Nov. Slot: **Thu 26 Nov 17:00 PKT** (weekly hope-verse Short, user 20 Nov).
 **Why:** our most shared video is a hope reminder ("Ease With Every Hardship": 317 likes, 34 shares). Shares bring new viewers free.
 **Skills run:** yt-script hookscore (47/100, best of 5), yt-package (title 98/100), yt-seo (below).
 
