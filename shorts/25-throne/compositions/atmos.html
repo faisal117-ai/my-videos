@@ -29,7 +29,7 @@
   <div id="atmos" data-composition-id="atmos" data-width="1080" data-height="1920" data-layout-allow-overflow>
     <div id="sky" class="clip" data-start="0" data-duration="42.71"></div>
 
-    <div id="phsc" class="clip" data-start="0" data-duration="42.71"><div id="ph0" class="ph"><img src="assets/gen/s1.jpg" alt=""></div><div id="ph1" class="ph"><img src="assets/gen/s8.jpg" alt=""></div><div id="ph2" class="ph"><img src="assets/gen/s6.jpg" alt=""></div><div id="ph3" class="ph"><img src="assets/gen/s1.jpg" alt=""></div><div id="ph4" class="ph"><img src="assets/gen/s10.jpg" alt=""></div><div id="ph5" class="ph"><img src="assets/gen/s9.jpg" alt=""></div><div id="phg0" class="phglow"></div><div id="phg1" class="phglow"></div><div id="phshade"></div></div>
+    <div id="phsc" class="clip" data-start="0" data-duration="42.71"><div id="ph0" class="ph"><img src="assets/gen/s1.jpg" alt=""></div><div id="ph1" class="ph"><img src="assets/gen/s8.jpg" alt=""></div><div id="ph2" class="ph"><img src="assets/gen/s6.jpg" alt=""></div><div id="ph3" class="ph"><img src="assets/gen/s1.jpg" alt=""></div><div id="ph4" class="ph"><img src="assets/gen/s10.jpg" alt=""></div><div id="ph5" class="ph"><img src="assets/gen/s9.jpg" alt=""></div><div id="phg0" class="phglow"></div><div id="phshade"></div></div>
     <div id="warm" class="clip" data-start="0" data-duration="42.71"><div id="warm-g" style="opacity:0.12"><div id="warm-b"></div></div></div>
     <div id="cool" class="clip" data-start="0" data-duration="42.71"><div id="cool-g" style="opacity:0"></div></div>
     <div id="embers" class="clip" data-start="0" data-duration="42.71"><div id="embers-g" style="opacity:0.35">
@@ -64,7 +64,6 @@
     tl.fromTo("#phsc", {x: 0, y: 0}, {x: 10, y: 6.0, duration: 0.05, yoyo: true, repeat: 26, ease: "none", immediateRender: false}, 14.70);
     tl.to("#phsc", {x: 0, y: 0, duration: 0.08}, 16.15);
     tl.fromTo("#phg0", {opacity: 0}, {keyframes: [{opacity: 0.85, duration: 1.05, ease: "power2.out"}, {opacity: 0, duration: 1.95, ease: "sine.in"}], immediateRender: false}, 15.00);
-    tl.fromTo("#phg1", {opacity: 0}, {keyframes: [{opacity: 0.5, duration: 1.05, ease: "power2.out"}, {opacity: 0, duration: 1.95, ease: "sine.in"}], immediateRender: false}, 21.47);
     tl.fromTo("#warm-b", {scaleY: 1}, {scaleY: 1.06, duration: 0.8, ease: "sine.inOut", yoyo: true, repeat: 26}, 0);
     tl.fromTo("#warm-g", {opacity: 0.12}, {opacity: 0.12, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 7.45);
     tl.fromTo("#cool-g", {opacity: 0}, {opacity: 0, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 7.45);
