@@ -77,6 +77,10 @@ def main():
             "shakes": D.get("shakes", [{"beat": 0, "at": 0.3, "amp": 8, "dur": 1.0}, {"beat": turn, "at": 0.0, "amp": 10, "dur": 1.4}]),
             "glows": D.get("glows", [{"beat": turn, "at": 0.1, "dur": 3.0, "peak": 0.6}, {"beat": hum, "at": 0.2, "dur": 3.5, "peak": 0.85}]),
             "sound": D.get("sound", sound), "beats": D["beats"]}
+    verse = {i for i, b in enumerate(D["beats"]) if "q" in b or "arabic" in b}
+    for g in spec["glows"]:  # a strong bloom behind a verse card washes out the translation
+        if g["beat"] in verse:
+            g["peak"] = min(g["peak"], 0.25)
     (d / "spec.json").write_text(json.dumps(spec, ensure_ascii=False, indent=1), encoding="utf-8")
     eleven = D.get("eleven", {"voice_id": "N2lVS1w4EtoT3dr4eOWO"})
     (d / "narration.json").write_text(json.dumps({"lead": 0.3, "eleven": eleven, "lines": D["lines"]}, ensure_ascii=False, indent=1), encoding="utf-8")

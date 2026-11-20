@@ -1,202 +1,202 @@
 {
-  "accent": "#f2b04a",
-  "embers": false,
-  "motes": 0.35,
-  "mote": "#f6dcae",
-  "flash": 0.0,
-  "bed_volume": 1.0,
-  "hold_end": 1.2,
-  "text_top": 300,
-  "text_bottom": 780,
-  "tr_size": 56,
-  "scene": "photos",
-  "photos": [
-    "assets/gen/c07c.jpg",
-    "assets/gen/c06a.jpg",
-    "assets/gen/c08a.jpg",
-    "assets/gen/c08b.jpg",
-    "assets/gen/c12a.jpg",
-    "assets/gen/c00a.jpg"
-  ],
-  "shakes": [
-    {
-      "beat": 0,
-      "at": 0.3,
-      "amp": 8,
-      "dur": 1.0
-    },
-    {
-      "beat": 2,
-      "at": 0.0,
-      "amp": 10,
-      "dur": 1.4
-    }
-  ],
-  "glows": [
-    {
-      "beat": 2,
-      "at": 0.1,
-      "dur": 3.0,
-      "peak": 0.6
-    },
-    {
-      "beat": 4,
-      "at": 0.2,
-      "dur": 3.5,
-      "peak": 0.85
-    }
-  ],
-  "sound": [
-    {
-      "prompt": "lib",
-      "src": "../../long/01-yusuf/assets/sfx/992f69b875be.mp3",
-      "beat": 0,
-      "offset": 0,
-      "dur": 100,
-      "gain": -17,
-      "fade_in": 0.5,
-      "fade_out": 1.5
-    },
-    {
-      "prompt": "lib",
-      "src": "../03-cave/assets/sfx/03b5f68efefc.mp3",
-      "beat": 0,
-      "offset": 0.2,
-      "dur": 3,
-      "gain": -13,
-      "fade_in": 0.02,
-      "fade_out": 1
-    },
-    {
-      "prompt": "lib",
-      "src": "../../long/04-sulaiman/assets/sfx/93fa1b20e45f.mp3",
-      "beat": 1,
-      "offset": 0,
-      "dur": 8,
-      "gain": -13,
-      "fade_in": 0.5,
-      "fade_out": 1.5
-    },
-    {
-      "prompt": "lib",
-      "src": "../../long/04-sulaiman/assets/sfx/72cc4baec592.mp3",
-      "beat": 2,
-      "offset": -3.6,
-      "dur": 3.8,
-      "gain": -8,
-      "fade_in": 0.4,
-      "fade_out": 0.3
-    },
-    {
-      "prompt": "lib",
-      "src": "../../long/04-sulaiman/assets/sfx/f0b78dedaad6.mp3",
-      "beat": 2,
-      "offset": 0,
-      "dur": 4,
-      "gain": -7,
-      "fade_in": 0.02,
-      "fade_out": 1.5
-    },
-    {
-      "prompt": "lib",
-      "src": "../06-ant/assets/sfx/cabf6e6577de.mp3",
-      "beat": 4,
-      "offset": 0,
-      "dur": 30,
-      "gain": -13,
-      "fade_in": 1.0,
-      "fade_out": 1.5
-    }
-  ],
-  "beats": [
-    {
-      "hook": true,
-      "text": "A queen sent a king *a fortune*.",
-      "sub": "He sent every bit of it back.",
-      "ur": "ایک ملکہ نے بادشاہ کو خزانہ بھیجا۔ اس نے سب واپس کر دیا",
-      "mood": {
-        "warm": 0.2,
-        "cool": 0
-      },
-      "reveal": false
-    },
-    {
-      "q": "27:35",
-      "ar_words": [
-        1,
-        8
-      ],
-      "en": "I will send to them a gift and see with what [reply] the messengers will return",
-      "ur_a": [
-        "میں اِن لوگوں",
-        "پلٹتے ہیں"
-      ],
-      "ref": "An-Naml 27:35",
-      "mood": {
-        "warm": 0.15,
-        "cool": 0
-      },
-      "arabic": "وَإِنِّي مُرۡسِلَةٌ إِلَيۡهِم بِهَدِيَّةࣲ فَنَاظِرَةُۢ بِمَ يَرۡجِعُ ٱلۡمُرۡسَلُونَ",
-      "translation": "“I will send to them a gift and see with what [reply] the messengers will return”",
-      "ur": "میں اِن لوگوں کی طرف ایک ہدیہ بھیجتی ہوں، پھر دیکھتی ہوں کہ میرے ایلچی کیا جواب لے کر پلٹتے ہیں"
-    },
-    {
-      "q": "27:36",
-      "ar_words": [
-        5,
-        12
-      ],
-      "en": "Do you provide me with wealth? But what Allah has given me is better than what He has given you",
-      "ur_a": [
-        "کیا تم لوگ",
-        "جو تمہیں دیا ہے"
-      ],
-      "ref": "An-Naml 27:36",
-      "mood": {
-        "warm": 0.2,
-        "cool": 0
-      },
-      "arabic": "أَتُمِدُّونَنِ بِمَالࣲ فَمَآ ءَاتَىٰنِۦَ ٱللَّهُ خَيۡرࣱ مِّمَّآ ءَاتَىٰكُمۚ",
-      "translation": "“Do you provide me with wealth? But what Allah has given me is better than what He has given you”",
-      "ur": "کیا تم لوگ مال سے میری مدد کرنا چاہتے ہو؟ جو کچھ خدا نے مجھے دے رکھا ہے وہ اس سے بہت زیادہ ہے جو تمہیں دیا ہے"
-    },
-    {
-      "q": "27:36",
-      "ar_words": [
-        13,
-        16
-      ],
-      "en": "Rather, it is you who rejoice in your gift",
-      "ur_a": [
-        "تمہارا ہدیہ",
-        "مبارک رہے"
-      ],
-      "ref": "An-Naml 27:36",
-      "mood": {
-        "warm": 0.15,
-        "cool": 0
-      },
-      "arabic": "بَلۡ أَنتُم بِهَدِيَّتِكُمۡ تَفۡرَحُونَ",
-      "translation": "“Rather, it is you who rejoice in your gift”",
-      "ur": "تمہارا ہدیہ تمہی کو مبارک رہے"
-    },
-    {
-      "text": "What Allah gave you is worth more than *anything anyone can hand you*.",
-      "ur": "جو اللہ نے آپ کو دیا، وہ ہر تحفے سے بہتر ہے",
-      "mood": {
-        "warm": 0.25,
-        "cool": 0
-      }
-    },
-    {
-      "cta": true,
-      "text": "Watch the full movie of *Prophet Sulaiman (AS)*, link below.",
-      "ur": "حضرت سلیمان علیہ السلام کی مکمل فلم دیکھیں، لنک نیچے",
-      "mood": {
-        "warm": 0.25,
-        "cool": 0
-      },
-      "btn": "Full movie ↓"
-    }
-  ]
+ "accent": "#f2b04a",
+ "embers": false,
+ "motes": 0.35,
+ "mote": "#f6dcae",
+ "flash": 0.0,
+ "bed_volume": 1.0,
+ "hold_end": 1.2,
+ "text_top": 300,
+ "text_bottom": 780,
+ "tr_size": 56,
+ "scene": "photos",
+ "photos": [
+  "assets/gen/c07c.jpg",
+  "assets/gen/c06a.jpg",
+  "assets/gen/c08a.jpg",
+  "assets/gen/c08b.jpg",
+  "assets/gen/c12a.jpg",
+  "assets/gen/c00a.jpg"
+ ],
+ "shakes": [
+  {
+   "beat": 0,
+   "at": 0.3,
+   "amp": 8,
+   "dur": 1.0
+  },
+  {
+   "beat": 2,
+   "at": 0.0,
+   "amp": 10,
+   "dur": 1.4
+  }
+ ],
+ "glows": [
+  {
+   "beat": 2,
+   "at": 0.1,
+   "dur": 3.0,
+   "peak": 0.25
+  },
+  {
+   "beat": 4,
+   "at": 0.2,
+   "dur": 3.5,
+   "peak": 0.85
+  }
+ ],
+ "sound": [
+  {
+   "prompt": "lib",
+   "src": "../../long/01-yusuf/assets/sfx/992f69b875be.mp3",
+   "beat": 0,
+   "offset": 0,
+   "dur": 100,
+   "gain": -17,
+   "fade_in": 0.5,
+   "fade_out": 1.5
+  },
+  {
+   "prompt": "lib",
+   "src": "../03-cave/assets/sfx/03b5f68efefc.mp3",
+   "beat": 0,
+   "offset": 0.2,
+   "dur": 3,
+   "gain": -13,
+   "fade_in": 0.02,
+   "fade_out": 1
+  },
+  {
+   "prompt": "lib",
+   "src": "../../long/04-sulaiman/assets/sfx/93fa1b20e45f.mp3",
+   "beat": 1,
+   "offset": 0,
+   "dur": 8,
+   "gain": -13,
+   "fade_in": 0.5,
+   "fade_out": 1.5
+  },
+  {
+   "prompt": "lib",
+   "src": "../../long/04-sulaiman/assets/sfx/72cc4baec592.mp3",
+   "beat": 2,
+   "offset": -3.6,
+   "dur": 3.8,
+   "gain": -8,
+   "fade_in": 0.4,
+   "fade_out": 0.3
+  },
+  {
+   "prompt": "lib",
+   "src": "../../long/04-sulaiman/assets/sfx/f0b78dedaad6.mp3",
+   "beat": 2,
+   "offset": 0,
+   "dur": 4,
+   "gain": -7,
+   "fade_in": 0.02,
+   "fade_out": 1.5
+  },
+  {
+   "prompt": "lib",
+   "src": "../06-ant/assets/sfx/cabf6e6577de.mp3",
+   "beat": 4,
+   "offset": 0,
+   "dur": 30,
+   "gain": -13,
+   "fade_in": 1.0,
+   "fade_out": 1.5
+  }
+ ],
+ "beats": [
+  {
+   "hook": true,
+   "text": "A queen sent a king *a fortune*.",
+   "sub": "He sent every bit of it back.",
+   "ur": "ایک ملکہ نے بادشاہ کو خزانہ بھیجا۔ اس نے سب واپس کر دیا",
+   "mood": {
+    "warm": 0.2,
+    "cool": 0
+   },
+   "reveal": false
+  },
+  {
+   "q": "27:35",
+   "ar_words": [
+    1,
+    8
+   ],
+   "en": "I will send to them a gift and see with what [reply] the messengers will return",
+   "ur_a": [
+    "میں اِن لوگوں",
+    "پلٹتے ہیں"
+   ],
+   "ref": "An-Naml 27:35",
+   "mood": {
+    "warm": 0.15,
+    "cool": 0
+   },
+   "arabic": "وَإِنِّي مُرۡسِلَةٌ إِلَيۡهِم بِهَدِيَّةࣲ فَنَاظِرَةُۢ بِمَ يَرۡجِعُ ٱلۡمُرۡسَلُونَ",
+   "translation": "“I will send to them a gift and see with what [reply] the messengers will return”",
+   "ur": "میں اِن لوگوں کی طرف ایک ہدیہ بھیجتی ہوں، پھر دیکھتی ہوں کہ میرے ایلچی کیا جواب لے کر پلٹتے ہیں"
+  },
+  {
+   "q": "27:36",
+   "ar_words": [
+    5,
+    12
+   ],
+   "en": "Do you provide me with wealth? But what Allah has given me is better than what He has given you",
+   "ur_a": [
+    "کیا تم لوگ",
+    "جو تمہیں دیا ہے"
+   ],
+   "ref": "An-Naml 27:36",
+   "mood": {
+    "warm": 0.2,
+    "cool": 0
+   },
+   "arabic": "أَتُمِدُّونَنِ بِمَالࣲ فَمَآ ءَاتَىٰنِۦَ ٱللَّهُ خَيۡرࣱ مِّمَّآ ءَاتَىٰكُمۚ",
+   "translation": "“Do you provide me with wealth? But what Allah has given me is better than what He has given you”",
+   "ur": "کیا تم لوگ مال سے میری مدد کرنا چاہتے ہو؟ جو کچھ خدا نے مجھے دے رکھا ہے وہ اس سے بہت زیادہ ہے جو تمہیں دیا ہے"
+  },
+  {
+   "q": "27:36",
+   "ar_words": [
+    13,
+    16
+   ],
+   "en": "Rather, it is you who rejoice in your gift",
+   "ur_a": [
+    "تمہارا ہدیہ",
+    "مبارک رہے"
+   ],
+   "ref": "An-Naml 27:36",
+   "mood": {
+    "warm": 0.15,
+    "cool": 0
+   },
+   "arabic": "بَلۡ أَنتُم بِهَدِيَّتِكُمۡ تَفۡرَحُونَ",
+   "translation": "“Rather, it is you who rejoice in your gift”",
+   "ur": "تمہارا ہدیہ تمہی کو مبارک رہے"
+  },
+  {
+   "text": "What Allah gave you is worth more than *anything anyone can hand you*.",
+   "ur": "جو اللہ نے آپ کو دیا، وہ ہر تحفے سے بہتر ہے",
+   "mood": {
+    "warm": 0.25,
+    "cool": 0
+   }
+  },
+  {
+   "cta": true,
+   "text": "Watch the full movie of *Prophet Sulaiman (AS)*, link below.",
+   "ur": "حضرت سلیمان علیہ السلام کی مکمل فلم دیکھیں، لنک نیچے",
+   "mood": {
+    "warm": 0.25,
+    "cool": 0
+   },
+   "btn": "Full movie ↓"
+  }
+ ]
 }
