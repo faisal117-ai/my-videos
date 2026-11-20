@@ -1,0 +1,23 @@
+<template>
+  <style>
+    #b11 { position: absolute; inset: 0; }
+    #b11-wrap { position: absolute; left: 90px; right: 140px; top: 250px; bottom: 1120px;
+      display: flex; flex-direction: column; justify-content: flex-start; gap: 20px; }
+  </style>
+  <div id="b11" data-composition-id="b11" data-width="1080" data-height="1920">
+    <div id="b11-wrap" class="clip" data-start="0" data-duration="8.95">
+      <div id="b11-txt" class="txt"><span class="w hi" id="b11-w0">“Allah</span> <span class="w" id="b11-w1">has</span> <span class="w hi" id="b11-w2">delivered</span> <span class="w" id="b11-w3">on</span> <span class="w" id="b11-w4">your</span> <span class="w" id="b11-w5">behalf</span> <span class="w" id="b11-w6">what</span> <span class="w" id="b11-w7">you</span> <span class="w" id="b11-w8">sent</span> <span class="w" id="b11-w9">in</span> <span class="w" id="b11-w10">the</span> <span class="w" id="b11-w11">wood.”</span></div>
+      <div id="b11-ur" class="ur" dir="rtl" lang="ur" data-layout-allow-overflow>اللہ نے تمہاری طرف سے وہ پہنچا دیا جو تم نے لکڑی میں بھیجا تھا</div>
+      <div id="b11-ref" class="ref">Sahih al-Bukhari 2291</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#b11 .w", {opacity: 0, y: 22, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.32, ease: "power2.out", stagger: 0.557}, 0.12);
+    tl.fromTo("#b11 .hi", {textShadow: "0 0 0px rgba(0,0,0,0)"}, {textShadow: "0 0 28px var(--accent)", duration: 0.6, ease: "power1.out"}, 4.28);
+    tl.fromTo("#b11-ur", {opacity: 0, y: 10}, {opacity: 1, y: 0, duration: 0.35, ease: "power2.out"}, 0.15);
+    tl.fromTo("#b11-ref", {opacity: 0, y: 12}, {opacity: 1, y: 0, duration: 0.45, ease: "power2.out"}, 0.35);
+    tl.fromTo("#b11-wrap", {opacity: 1}, {opacity: 0, duration: 0.22, ease: "power1.in"}, 8.71);
+    window.__timelines["b11"] = tl;
+  </script>
+</template>

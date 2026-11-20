@@ -1,0 +1,15 @@
+{
+ "style": "High-quality 3D animated feature film still, close to photoreal (modern big-studio animation look), rich detail, cinematic lighting and depth of field. Vertical 9:16, keep the top third fairly simple and dark-to-plain (text sits there), the action in the lower two thirds. An ancient Mediterranean harbour town and the open sea, long ago. Any people are small, distant, seen from behind, ordinary people in simple earth-toned robes and head wraps.",
+ "scenes": {
+  "s1": "A sealed piece of hollowed wood floating on bright blue sea waves at sunrise, a glint of gold coins visible through a crack, sparkling light. No people.",
+  "s2": "An ancient sunny harbour town with stone houses, a busy market by the water, sailing boats, small people from behind, bright morning.",
+  "s3": "Two ordinary merchants seen from behind at a wooden table in a sunny harbour market, a leather pouch of gold coins on the table between them.",
+  "s4": "An empty harbour at sunset with no boats, waves on the stone pier, a long shadow, lonely mood. No people.",
+  "s5": "Hands only (no face) placing gold coins and a rolled letter into a hollowed piece of wood on a workbench, warm lamplight.",
+  "s6": "A lone ordinary man seen from far behind standing at the edge of the sea at dusk, a small piece of wood floating away on the waves.",
+  "s7": "A piece of driftwood washed up on a sunny beach at morning, foam and wet sand, a stone town far behind. No people.",
+  "s8": "A split piece of wood on a workbench with gold coins and a rolled letter spilling out, an axe beside it, lamplight glow. No people.",
+  "s9": "A calm bright sea at sunrise with golden light on the water and a sailing boat far away, birds flying, peaceful."
+ },
+ "aspect": "9:16"
+}

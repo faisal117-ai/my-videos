@@ -1,0 +1,175 @@
+{
+ "id": "33-dinars",
+ "lines": [
+  "No boat, no witness, a thousand dinars due today. What would you do?",
+  "The Prophet, peace be upon him, told us: a man of Bani Israil borrowed a thousand dinars.",
+  "Witnesses? He said: Allah is enough as a witness. A guarantor? Allah is enough as a guarantor. And the lender agreed.",
+  "When the day came to repay... he could find no boat.",
+  "So he hollowed out a piece of wood, put in the thousand dinars and a letter, and sealed it.",
+  "At the sea he said: O Allah, I said You are enough, and he accepted You. I cannot find a boat... so I entrust this to You. And he threw it in.",
+  "On the other shore, the lender came out hoping for a boat... and found a piece of wood. He took it home for firewood.",
+  "When he cut it open... there was his money, and the letter.",
+  "When you can't keep a promise with your own hands... keep it with Allah. He is enough as a witness.",
+  "Watch the full movie of Prophet Sulaiman, alayhis salaam... link below."
+ ],
+ "beats": [
+  {
+   "hook": true,
+   "text": "No boat. No witness. *1,000 dinars due today.*",
+   "sub": "What would you do?",
+   "ur": "نہ کشتی، نہ گواہ، آج ہزار دینار ادا کرنے ہیں۔ آپ کیا کرتے؟",
+   "mood": {
+    "warm": 0.2,
+    "cool": 0
+   },
+   "reveal": false
+  },
+  {
+   "text": "A man of Bani Israil asked to borrow *a thousand dinars*.",
+   "ur": "بنی اسرائیل کے ایک شخص نے ہزار دینار قرض مانگے",
+   "mood": {
+    "warm": 0.15,
+    "cool": 0
+   },
+   "ref": "Sahih al-Bukhari 2291"
+  },
+  {
+   "text": "“Witnesses?” *“Allah is enough.”* “A guarantor?” *“Allah is enough.”*",
+   "ur": "گواہ؟ اللہ کافی ہے۔ ضامن؟ اللہ کافی ہے",
+   "mood": {
+    "warm": 0.2,
+    "cool": 0
+   },
+   "ref": "Sahih al-Bukhari 2291"
+  },
+  {
+   "text": "The day came… *and there was no boat.*",
+   "ur": "ادائیگی کا دن آیا… اور کوئی کشتی نہ ملی",
+   "mood": {
+    "warm": 0.05,
+    "cool": 0.08
+   },
+   "ref": "Sahih al-Bukhari 2291"
+  },
+  {
+   "text": "A piece of wood… *a thousand dinars and a letter* inside.",
+   "ur": "لکڑی کا ایک ٹکڑا… اندر ہزار دینار اور ایک خط",
+   "mood": {
+    "warm": 0.15,
+    "cool": 0
+   },
+   "ref": "Sahih al-Bukhari 2291"
+  },
+  {
+   "text": "“I entrust this *to You*.” Into the sea.",
+   "ur": "میں یہ تیرے سپرد کرتا ہوں۔ اور اسے سمندر میں ڈال دیا",
+   "mood": {
+    "warm": 0.1,
+    "cool": 0.05
+   },
+   "ref": "Sahih al-Bukhari 2291"
+  },
+  {
+   "text": "The other shore: a boat? No… *a piece of wood*.",
+   "ur": "دوسرے کنارے پر: کشتی؟ نہیں… لکڑی کا ایک ٹکڑا",
+   "mood": {
+    "warm": 0.15,
+    "cool": 0
+   },
+   "ref": "Sahih al-Bukhari 2291"
+  },
+  {
+   "text": "He cut it open… *his money, and the letter.*",
+   "ur": "اس نے اسے چیرا… اس کی رقم، اور خط",
+   "mood": {
+    "warm": 0.25,
+    "cool": 0
+   },
+   "ref": "Sahih al-Bukhari 2291"
+  },
+  {
+   "text": "Can't keep a promise with your hands? *Keep it with Allah.*",
+   "ur": "اپنے ہاتھوں سے وعدہ نہ نبھا سکیں؟ اللہ کے ساتھ نبھائیں",
+   "mood": {
+    "warm": 0.25,
+    "cool": 0
+   }
+  },
+  {
+   "cta": true,
+   "text": "Watch the full movie of *Prophet Sulaiman (AS)*, link below.",
+   "ur": "حضرت سلیمان علیہ السلام کی مکمل فلم دیکھیں، لنک نیچے",
+   "mood": {
+    "warm": 0.25,
+    "cool": 0
+   },
+   "btn": "Full movie ↓"
+  }
+ ],
+ "photos": [
+  "s1",
+  "s3",
+  "s3",
+  "s4",
+  "s5",
+  "s6",
+  "s7",
+  "s8",
+  "s9",
+  "s2"
+ ],
+ "scenes": {
+  "style": "High-quality 3D animated feature film still, close to photoreal (modern big-studio animation look), rich detail, cinematic lighting and depth of field. Vertical 9:16, keep the top third fairly simple and dark-to-plain (text sits there), the action in the lower two thirds. An ancient Mediterranean harbour town and the open sea, long ago. Any people are small, distant, seen from behind, ordinary people in simple earth-toned robes and head wraps.",
+  "scenes": {
+   "s1": "A sealed piece of hollowed wood floating on bright blue sea waves at sunrise, a glint of gold coins visible through a crack, sparkling light. No people.",
+   "s2": "An ancient sunny harbour town with stone houses, a busy market by the water, sailing boats, small people from behind, bright morning.",
+   "s3": "Two ordinary merchants seen from behind at a wooden table in a sunny harbour market, a leather pouch of gold coins on the table between them.",
+   "s4": "An empty harbour at sunset with no boats, waves on the stone pier, a long shadow, lonely mood. No people.",
+   "s5": "Hands only (no face) placing gold coins and a rolled letter into a hollowed piece of wood on a workbench, warm lamplight.",
+   "s6": "A lone ordinary man seen from far behind standing at the edge of the sea at dusk, a small piece of wood floating away on the waves.",
+   "s7": "A piece of driftwood washed up on a sunny beach at morning, foam and wet sand, a stone town far behind. No people.",
+   "s8": "A split piece of wood on a workbench with gold coins and a rolled letter spilling out, an axe beside it, lamplight glow. No people.",
+   "s9": "A calm bright sea at sunrise with golden light on the water and a sailing boat far away, birds flying, peaceful."
+  }
+ },
+ "pauses": {
+  "5": 0.6,
+  "7": 1.0
+ },
+ "turn": 7,
+ "hum": 7,
+ "glows": [
+  {
+   "beat": 5,
+   "at": 0.1,
+   "dur": 2.5,
+   "peak": 0.35
+  },
+  {
+   "beat": 7,
+   "at": 0.1,
+   "dur": 3.5,
+   "peak": 0.85
+  }
+ ],
+ "shakes": [
+  {
+   "beat": 0,
+   "at": 0.3,
+   "amp": 8,
+   "dur": 1.0
+  },
+  {
+   "beat": 3,
+   "at": 0.0,
+   "amp": 6,
+   "dur": 0.9
+  },
+  {
+   "beat": 7,
+   "at": 0.0,
+   "amp": 10,
+   "dur": 1.4
+  }
+ ]
+}
