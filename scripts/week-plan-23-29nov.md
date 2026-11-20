@@ -21,9 +21,9 @@ niche's biggest winners, and Sulaiman + the Queen is #1, which is exactly our Su
 | Mon 23 | 17:00 | The jinn kept working… then a tiny creature told the truth | 34:14 | the staff and the death no one saw | $0 (film scenes) |
 | Tue 24 | 11:00 | He looked at the stars… then said "I love not those that set" | 6:76–79 | a boy's reasoning to his Lord | Ibrahim film scenes |
 | Tue 24 | 17:00 | Why Did Two Men Climb Into a King's Prayer Room? 🧱 | 38:21–25 | Dawud (AS) and the quick judgement, then his repentance | new |
-| Wed 25 | 11:00 | What Did the Mother's Son Do Instead of Meeting the Prophet ﷺ? 🤲 | Muslim 2542 | Uwais al-Qarani and his mother (user's pick) | new |
+| Wed 25 | 11:00 | Why Did Uwais Stay Home Instead of Meeting the Prophet ﷺ? 🤲 | Muslim 2542 | Uwais al-Qarani and his mother (user's pick) | new |
 | Wed 25 | 17:00 | "O my father"… then a son's gentle words to a man who threatened him | 19:42–47 | how to speak to a parent | Ibrahim film scenes |
-| Thu 26 | 11:00 | Why Did a Man Make a Boat a Hole? ⛵ | 18:71, 18:79 | Musa (AS) and Khidr: the boat | new |
+| Thu 26 | 11:00 | Why Did He Make a Hole in the Boat? ⛵ | 18:71, 18:79 | Musa (AS) and Khidr: the boat | new |
 | Thu 26 | 17:00 | A king said "I give life and death"… then one question silenced him | 2:258 | the sun from the east | Ibrahim film scenes |
 | Fri 27 | 11:00 | Who Made the Golden Calf? 🐄 | 20:85–97 | the calf, and the people's excuse | new |
 | Fri 27 | 17:00 | Three men were tested with wealth… then only one remembered | Bukhari 3464 | leper, bald man, blind man | new |
