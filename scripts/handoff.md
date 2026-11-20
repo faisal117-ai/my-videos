@@ -232,3 +232,7 @@ A new session can recreate these for itself (send_later / create_trigger) and de
 - yt-retention (Musa EN film): 45% gone by 0:30 because of the spoken title section; rule now: no spoken titles (channel-plan.md).
 - Ibrahim EN + UR films rendering (opening cut to 0:26, 19 scenes regenerated people-free). Not yet in Metricool: send links,
   get approval, then swap into posts 434202929 (Sat 28 18:30) / 434203028 (Sun 29 18:30) with EP 4 titles + seo text.
+- **Friday 27 Nov review (user, 20 Nov):** yt-viral → yt-plan as usual, PLUS: check the 39:53 hope Short (Thu 26 17:00):
+  shares and likes per 1,000 views vs "Ease With Every Hardship"; then make next week's two hope Shorts
+  (scripts/hope-shorts-plan.md: Mon 30 26:61–62 Musa → Musa film; Thu 3 Dec 2:286 → Ibrahim film), adjusted to what the data says.
+  Also compare: film Shorts (16:00) vs channel Shorts (10:00); the Dawud and Khidr test Shorts (pick the 5–6 Dec film).
