@@ -1,6 +1,6 @@
 # Short: 28-two-answers (Qarun 28:76–81 vs Sulaiman 27:40, 38:30): upload details
 
-**Status:** made 20 Nov; waiting for the user's approval. Slot: **Mon 23 Nov 16:00 PKT** (film Short).
+**Status:** APPROVED, scheduled Mon 23 Nov 16:00 PKT (post 435510428); film link swapped in Sat 18:38 (reminder).
 **Skills run:** yt-shorts (pick #2 from the Sulaiman film, 9:50–10:20 + Qarun), yt-script hookscore (54/100),
 yt-package (title 100/100), yt-seo (below).
 

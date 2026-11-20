@@ -203,3 +203,8 @@ A new session can recreate these for itself (send_later / create_trigger) and de
   instead of meeting the Prophet" story, which is not in that hadith), 28-two-answers (Mon 16:00).
 - New tool: tools/short_pauses.py (pauses before turns in a Short).
 - Next: Ibrahim film rebuild with Gemini photos (it still uses code-drawn SVG scenes, 15 chapters), then Tue–Sun Shorts.
+- 27-uwais (Mon 23 10:00, post 435510123) and 28-two-answers (Mon 23 16:00, post 435510428) approved + scheduled.
+  Sat 18:38 reminder (trig_01FzgjE5ti8FsEjnhGMQS6Nh) swaps the EN film link into the throne, Uwais and two-answers posts.
+- Ibrahim: 44 Gemini scenes done (long/03-ibrahim/scenes.json, assets/gen). Source check: reports/Ibrahim film source
+  check.md (20 lines not in source, 23 wording fixes). Next: rewrite those lines, re-voice (EN splice, UR whole chapters),
+  switch spec chapters to "photos" + shakes/glows, EP 4 everywhere, render both, swap into posts 434202929 / 434203028.

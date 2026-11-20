@@ -1,6 +1,6 @@
 # Short: 27-uwais (Uwais al-Qarani, Sahih Muslim 2542): upload details
 
-**Status:** made 20 Nov; waiting for the user's approval. Slot: **Mon 23 Nov 10:00 PKT** (channel Short).
+**Status:** APPROVED, scheduled Mon 23 Nov 10:00 PKT (post 435510123); film link swapped in Sat 18:38 (reminder).
 **Skills run:** yt-script hookscore (hook 53/100, best of 5), yt-package (title 80/100), yt-seo (below).
 Source note: only Muslim 2542 (the Prophet ﷺ described Uwais; Umar (RA) asked every Yemeni contingent; Uwais
 prayed for his forgiveness). The popular "he stayed home instead of meeting the Prophet ﷺ" is NOT in it, so not used.
