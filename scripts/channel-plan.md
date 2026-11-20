@@ -238,3 +238,9 @@ analytics and improve; hooks and open loops; consistency; playlists and series. 
    So: the hook in one short sentence in the first 5 s (no 12-second line), the promise of the payoff by 0:15
    ("…and how one dua changed everything"), into the story by 0:20–0:30, a bright first scene; the title card
    comes after the hook, never before it.
+
+## Film openings (yt-retention on the English Musa film, 20 Nov 2026)
+Lifetime average view 3:26 of 11:30 (29.9%); 45% gone by 0:30 (healthy: under 25%), then a normal slow slide.
+The leak was the spoken title section after the hook ("This is the story of… From the river… to the sea").
+**Rule for every film:** hook → one open question → straight into the story. No spoken title lines; the series
+title is on screen only (on the question line). Applied first to Ibrahim EP 4 (story starts at 0:26 instead of 0:45).
