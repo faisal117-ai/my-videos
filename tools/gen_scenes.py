@@ -19,6 +19,22 @@ def trim_bars(im):
     return im
 
 
+def trim_flat(im):
+    """Crop a flat single-colour band Gemini sometimes leaves at the bottom or top (any colour)."""
+    import statistics
+    g = im.convert("L"); w, h = g.size
+    def flat(y):
+        row = g.crop((0, y, w, y + 1)).get_flattened_data() if hasattr(g, "get_flattened_data") else g.crop((0, y, w, y + 1)).getdata()
+        return statistics.pstdev(list(row)) < 4
+    b = h - 1
+    while b > h * 0.6 and flat(b): b -= 1
+    t0 = 0
+    while t0 < h * 0.4 and flat(t0): t0 += 1
+    if b < h - 8 or t0 > 8:
+        im = im.crop((0, t0, w, b + 1))
+    return im
+
+
 def gen(d, cfg, k):
     body = {"contents": [{"parts": [{"text": cfg["style"] + " " + RULES + cfg["scenes"][k]}]}],
             "generationConfig": {"responseModalities": ["IMAGE"], "imageConfig": {"aspectRatio": cfg.get("aspect", "9:16")}}}
@@ -34,7 +50,7 @@ def gen(d, cfg, k):
     for p in c["content"]["parts"]:
         if "inlineData" in p:
             im = Image.open(io.BytesIO(base64.b64decode(p["inlineData"]["data"]))).convert("RGB")
-            im = trim_bars(im)
+            im = trim_flat(trim_bars(im))
             size = (1188, 2112) if cfg.get("aspect", "9:16") == "9:16" else (2112, 1188)
             tw, th = size
             s = max(tw / im.width, th / im.height); im = im.resize((round(im.width * s), round(im.height * s)), Image.LANCZOS)
