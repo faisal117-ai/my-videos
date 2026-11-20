@@ -198,6 +198,7 @@ A new session can recreate these for itself (send_later / create_trigger) and de
 ### 20 Nov afternoon: week 23–29 Nov plan APPROVED (scripts/week-plan-23-29nov.md), Ibrahim EP 4 = yes
 - User topped up Gemini by $20. Shorts slots move to 10:00 (channel Short) and 16:00 (film Short) from Mon 23.
 - 25-throne (EN) approved + scheduled Sat 21 19:00 (post 435490006). Reminder at Sat 18:38 swaps in the film link.
+- 26-throne-ur approved + scheduled Sun 22 19:00 (post 435493704). Reminder Sun 18:38 swaps in the Urdu film link.
 - Built and rendering: 26-throne-ur (Sun 19:00), 27-uwais (Mon 10:00; Muslim 2542 only, NOT the "stayed home
   instead of meeting the Prophet" story, which is not in that hadith), 28-two-answers (Mon 16:00).
 - New tool: tools/short_pauses.py (pauses before turns in a Short).

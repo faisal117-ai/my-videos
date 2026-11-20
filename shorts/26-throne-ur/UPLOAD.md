@@ -1,6 +1,6 @@
 # Short: 26-throne-ur (Urdu voice, An-Naml 27:38–40): upload details
 
-**Status:** made 20 Nov; waiting for the user's approval. Slot: **Sun 22 Nov 19:00 PKT**, 30 min after the
+**Status:** APPROVED and scheduled Sun 22 Nov 19:00 PKT (post 435493704; film link swapped in at 18:38 by reminder trig_01EScgFYcNQf2JnpfraJpiuW), 30 min after the
 Urdu Sulaiman film (18:30). FILM_UR = the film's link, filled in after it goes live.
 **Skills run:** yt-shorts, yt-script hookscore, yt-package, yt-seo (same pick as 25-throne, Urdu voice; Maududi translation).
 
