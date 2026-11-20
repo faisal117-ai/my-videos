@@ -209,3 +209,4 @@ A new session can recreate these for itself (send_later / create_trigger) and de
   check.md (20 lines not in source, 23 wording fixes). Next: rewrite those lines, re-voice (EN splice, UR whole chapters),
   switch spec chapters to "photos" + shakes/glows, EP 4 everywhere, render both, swap into posts 434202929 / 434203028.
 - 30-gold-jar approved + scheduled Tue 24 10:00 (post 435546768); Sat reminder also swaps its film link.
+- 31-calf approved + scheduled Wed 25 10:00 (post 435558164; Musa film link already real).

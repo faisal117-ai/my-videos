@@ -1,6 +1,6 @@
 # Short: 31-calf: upload details
 
-**Status:** built 20 Nov; rendering; waiting for the user's approval. Slot: **Wed 25 Nov 10:00 PKT (channel Short → Musa film)**.
+**Status:** APPROVED, scheduled (post 435558164). Slot: **Wed 25 Nov 10:00 PKT (channel Short → Musa film)**.
 **Skills run:** yt-script hookscore (43/100, best of 4), yt-package (title 94 (variant)/100), yt-seo (below).
 
 ## Title
