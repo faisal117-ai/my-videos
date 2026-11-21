@@ -255,3 +255,4 @@ A new session can recreate these for itself (send_later / create_trigger) and de
 - 21 Nov: reminders for already-published Shorts (Related video + pinned comment + description link in Studio, since Metricool can't edit live videos): Sat 21 17:20 (hoopoe, Qarun x2, ant), Sun 22 17:20 (Urdu ant, Urdu throne), Sat 28 18:50 (idols, fire, four birds x2, why-idols, sacrifice, stars, father), Sun 29 18:50 (Urdu fire, valley).
 - 21 Nov 17:28: Sulaiman EN film LIVE https://youtu.be/rdLEJPHlQi8 (17:00 post failed: Metricool free-plan limit; user upgraded, re-published 17:28). Throne Short moved to 17:50.
   Film link swapped into 13 scheduled posts (throne, Uwais, two-answers, gold, staff, dua, dinars, gift, hope, stars, father, dawud, Ibrahim EN film). FILM_EN filled in UPLOAD.md files.
+- 21 Nov 17:50: throne Short live https://www.youtube.com/shorts/To-gOslcAvM (film link in description + first comment). All 22 remaining posts PENDING, none rejected after the upgrade.
