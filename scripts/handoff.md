@@ -249,3 +249,4 @@ A new session can recreate these for itself (send_later / create_trigger) and de
   fire UR 436361968. The whole week 23–29 Nov is now final and scheduled.
 - Ibrahim film links in the Sat 28 19:00 and Sun 29 16:00/19:00 Shorts point to the channel page: swap to the
   real film URLs at the Sat 28 / Sun 29 18:38 reminders.
+- 21 Nov 10:12 PKT: idols Short published early at the user's request (was 11:00): https://www.youtube.com/shorts/rTCmDLREy4s
