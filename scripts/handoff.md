@@ -243,4 +243,9 @@ A new session can recreate these for itself (send_later / create_trigger) and de
   gift 436356071, hope 39:53 436356097.
 - Ibrahim EP 4 films with new thumbnails, titles, chapters and AI box: EN 436356359 (Sat 28 18:30),
   UR 436356457 (Sun 29 18:30). Link swaps after publishing: Sat 28 / Sun 29 18:38 reminders.
-- Still to send: Fri–Sun Shorts (pharaoh, stars, boat, father, fire done; dawud, valley, fire-ur rendering).
+- Fri–Sun Shorts: all sent and approved (see below).
+- 21 Nov: Fri–Sun Shorts approved and swapped (media pinned to commit 52245e1): pharaoh 436361700,
+  stars 436361740, boat 436361776, father 436361818, fire EN 436361847, dawud 436361877, valley 436361914,
+  fire UR 436361968. The whole week 23–29 Nov is now final and scheduled.
+- Ibrahim film links in the Sat 28 19:00 and Sun 29 16:00/19:00 Shorts point to the channel page: swap to the
+  real film URLs at the Sat 28 / Sun 29 18:38 reminders.
