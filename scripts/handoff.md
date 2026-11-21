@@ -250,3 +250,4 @@ A new session can recreate these for itself (send_later / create_trigger) and de
 - Ibrahim film links in the Sat 28 19:00 and Sun 29 16:00/19:00 Shorts point to the channel page: swap to the
   real film URLs at the Sat 28 / Sun 29 18:38 reminders.
 - 21 Nov 10:12 PKT: idols Short published early at the user's request (was 11:00): https://www.youtube.com/shorts/rTCmDLREy4s
+- 21 Nov: Sulaiman EN film moved 18:30 → 17:00 PKT at the user's request (post 436393722); link-swap reminder moved to 17:08, after-upload reminder to 17:15.
