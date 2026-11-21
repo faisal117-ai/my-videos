@@ -5,7 +5,7 @@
 - Thumbnail: `thumbnail/thumbnail.jpg`
 - Subtitles: `subtitles/en.srt` (English, timed from the voice)
 
-**When:** Saturday 28 Nov, 6:30 PM PKT (Metricool post 434202929, swap in after approval)
+**When:** Saturday 28 Nov, 6:30 PM PKT (Metricool post 436356359, approved and scheduled 21 Nov)
 
 ## Title (yt-package 84/100; thumbnail words differ)
 Thrown Into the Fire… Why Didn't It Burn Him? | Prophet Ibrahim (AS) | Stories of the Prophets EP 4
@@ -18,20 +18,20 @@ They threw him into a blazing furnace, and he said: "Hasbunallahu wa ni'mal wake
 
 Chapters
 0:00 Intro
-0:45 A Young Man Among Idols
-1:38 The Star, the Moon and the Sun
-2:41 O My Father
-3:43 The Broken Idols
-5:13 The Fire
-6:08 The King Who Argued
-6:52 Leaving Home
-7:37 The Valley Without Water
-9:03 Show Me How
-9:48 The Dream
-10:51 The Honoured Guests
-12:24 The House
-13:33 The Dua of Ibrahim
-14:26 The Lesson
+0:26 A Young Man Among Idols
+1:19 The Star, the Moon and the Sun
+2:22 O My Father
+3:25 The Broken Idols
+4:54 The Fire
+5:49 The King Who Argued
+6:33 Leaving Home
+7:18 The Valley Without Water
+8:44 Show Me How
+9:30 The Dream
+10:32 The Honoured Guests
+12:05 The House
+13:14 The Dua of Ibrahim
+14:07 The Lesson
 
 Told in order from the Quran and the authentic Sunnah: the statues of his people, the star, the moon and the sun, "O my father", the broken idols, the fire, the king who argued, Makkah and Zamzam, the four birds, the dream and the ransom, the honoured guests, the building of the Kaaba, and his dua.
 

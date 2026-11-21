@@ -237,3 +237,10 @@ A new session can recreate these for itself (send_later / create_trigger) and de
   shares and likes per 1,000 views vs "Ease With Every Hardship"; then make next week's two hope Shorts
   (scripts/hope-shorts-plan.md: Mon 30 26:61–62 Musa → Musa film; Thu 3 Dec 2:286 → Ibrahim film), adjusted to what the data says.
   Also compare: film Shorts (16:00) vs channel Shorts (10:00); the Dawud and Khidr test Shorts (pick the 5–6 Dec film).
+
+## 21 Nov: approved and swapped into Metricool (media pinned to commit a6ea3ea)
+- Tue–Thu Shorts: gold jar 436355895, staff 436355944, calf 436355969, dua 436356009, dinars 436356038,
+  gift 436356071, hope 39:53 436356097.
+- Ibrahim EP 4 films with new thumbnails, titles, chapters and AI box: EN 436356359 (Sat 28 18:30),
+  UR 436356457 (Sun 29 18:30). Link swaps after publishing: Sat 28 / Sun 29 18:38 reminders.
+- Still to send: Fri–Sun Shorts (pharaoh, stars, boat, father, fire done; dawud, valley, fire-ur rendering).
