@@ -7,7 +7,7 @@
 Why Did He Put 1,000 Dinars in a Piece of Wood? 🌊
 
 ## Description
-🎥 Watch the full movie: Prophet Sulaiman (AS) and the Queen of Sheba 👉 FILM_EN
+🎥 Watch the full movie: Prophet Sulaiman (AS) and the Queen of Sheba 👉 https://youtu.be/rdLEJPHlQi8
 The Prophet ﷺ told us of a man of Bani Israil who borrowed a thousand dinars with no witness and no guarantor but Allah: "Allah is enough as a witness" (Sahih al-Bukhari 2291).
 
 When the day came, he found no boat. He put the dinars and a letter in a piece of wood and entrusted it to Allah, in the sea. On the other shore, the lender found the wood, cut it open, and there was his money.
@@ -23,4 +23,4 @@ Follow Haq Stories | حق کہانیاں for a new story every day.
 1000 dinars hadith, sahih bukhari 2291, piece of wood in the sea hadith, trust in allah story, tawakkul, allah is enough as a witness, hazar dinar ka waqia, islamic stories, haq stories
 
 ## After it is live
-Related video = the English Sulaiman film. First comment (pin): "Who do you trust when no one is watching? 👇 Full movie: FILM_EN"
+Related video = the English Sulaiman film. First comment (pin): "Who do you trust when no one is watching? 👇 Full movie: https://youtu.be/rdLEJPHlQi8"

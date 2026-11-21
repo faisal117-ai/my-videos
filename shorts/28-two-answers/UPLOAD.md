@@ -9,7 +9,7 @@ yt-package (title 100/100), yt-seo (below).
 Runners-up: "Qarun vs Sulaiman (AS): Same Test, Two Answers 💰" (80), "What Did Sulaiman (AS) Say That Qarun Didn't? 💰" (80).
 
 ## Description
-🎥 Watch the full movie: Prophet Sulaiman (AS) and the Queen of Sheba 👉 FILM_EN
+🎥 Watch the full movie: Prophet Sulaiman (AS) and the Queen of Sheba 👉 https://youtu.be/rdLEJPHlQi8
 Qarun and Prophet Sulaiman (AS) were both given more than anyone around them. Qarun said: "I was only given it because of knowledge I have" (Al-Qasas 28:78). Sulaiman (AS) said: "This is from the favor of my Lord to test me" (An-Naml 27:40).
 
 About Qarun, Allah says: "And We caused the earth to swallow him and his home" (28:81). About Sulaiman (AS): "An excellent servant, indeed he was one repeatedly turning back [to Allah]" (Saad 38:30).
@@ -25,4 +25,4 @@ Follow Haq Stories | حق کہانیاں for a new story from the Quran every da
 qarun story, korah in the quran, qarun and sulaiman, i earned it quran 28 78, gratitude in islam, surah qasas 28 81, qarun ka waqia, hazrat sulaiman, quran stories, haq stories
 
 ## After it is live
-Related video = English Sulaiman film. First comment (pin): "Which answer will you give today? 👇 Full movie: FILM_EN"
+Related video = English Sulaiman film. First comment (pin): "Which answer will you give today? 👇 Full movie: https://youtu.be/rdLEJPHlQi8"

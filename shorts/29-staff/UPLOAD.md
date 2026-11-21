@@ -7,7 +7,7 @@
 Who Told the Jinn the King Was Dead? 🪵
 
 ## Description
-🎥 Watch the full movie: Prophet Sulaiman (AS) and the Queen of Sheba 👉 FILM_EN
+🎥 Watch the full movie: Prophet Sulaiman (AS) and the Queen of Sheba 👉 https://youtu.be/rdLEJPHlQi8
 The jinn worked for Prophet Sulaiman (AS), by his Lord's permission. When he died, nothing showed them his death except a creature of the earth eating his staff (Saba 34:14).
 
 "But when he fell, it became clear to the jinn that if they had known the unseen, they would not have remained in humiliating punishment." (34:14)
@@ -23,4 +23,4 @@ Follow Haq Stories | حق کہانیاں for a new story from the Quran every da
 prophet sulaiman death, sulaiman staff jinn, surah saba 34 14, jinn do not know the unseen, death of solomon quran, hazrat sulaiman ka asa, quran stories, haq stories
 
 ## After it is live
-Related video = the film named in line 1. First comment (pin): "Who claims to know the unseen today? Only Allah knows it. 👇 Full movie: FILM_EN"
+Related video = the film named in line 1. First comment (pin): "Who claims to know the unseen today? Only Allah knows it. 👇 Full movie: https://youtu.be/rdLEJPHlQi8"

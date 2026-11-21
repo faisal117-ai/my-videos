@@ -10,7 +10,7 @@ Why Did Umar (RA) Need This Stranger's Dua? 🤲
 Runners-up: "Who Was Uwais? The Man Umar (RA) Searched For 🤲" (80), "The Prophet ﷺ Said: Ask This Man to Pray for You 🤲" (76).
 
 ## Description
-🎥 Watch the full movie: Prophet Sulaiman (AS) and the Queen of Sheba 👉 FILM_EN
+🎥 Watch the full movie: Prophet Sulaiman (AS) and the Queen of Sheba 👉 https://youtu.be/rdLEJPHlQi8
 The Prophet ﷺ told Umar (RA): Uwais, son of Amir, will come with the help from Yemen. He has a mother to whom he is dutiful. If you can, ask him to pray for your forgiveness (Sahih Muslim 2542).
 
 Years later, Umar (RA) asked every contingent from Yemen: is Uwais among you? Until one day, a man said yes. Every detail the Prophet ﷺ had given was true, and Uwais prayed for him.
@@ -26,4 +26,4 @@ Follow Haq Stories | حق کہانیاں for a new story every day.
 uwais al qarani, uwais qarni story, hazrat uwais qarni, umar and uwais, sahih muslim 2542, serving your mother islam, hazrat owais qarni ka waqia, islamic stories, haq stories
 
 ## After it is live
-Related video = English Sulaiman film. First comment (pin): "Who will you ask to pray for you today? And who will you serve? 👇 Full movie: FILM_EN"
+Related video = English Sulaiman film. First comment (pin): "Who will you ask to pray for you today? And who will you serve? 👇 Full movie: https://youtu.be/rdLEJPHlQi8"

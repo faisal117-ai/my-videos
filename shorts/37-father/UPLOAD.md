@@ -7,7 +7,7 @@
 How Do You Answer a Father Who Threatens to Stone You? 🤲
 
 ## Description
-🎥 The full movie of Prophet Ibrahim (AS) comes tonight, 6:30 PM · Watch now: Prophet Sulaiman (AS) 👉 FILM_EN
+🎥 The full movie of Prophet Ibrahim (AS) comes tonight, 6:30 PM · Watch now: Prophet Sulaiman (AS) 👉 https://youtu.be/rdLEJPHlQi8
 Prophet Ibrahim (AS) said to his father: "O my father, why do you worship that which does not hear and does not see and will not benefit you at all?" (Maryam 19:42) His father said: "If you do not desist, I will surely stone you." (19:46) He answered: "Peace will be upon you. I will ask forgiveness for you of my Lord." (19:47)
 Speak gently to your parents today, even when it's hard.
 

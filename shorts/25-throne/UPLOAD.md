@@ -1,7 +1,7 @@
 # Short: 25-throne (the Queen's throne, An-Naml 27:38–40): upload details
 
 **Status:** APPROVED and scheduled in Metricool Sat 21 Nov 19:00 PKT (post 435490006; channel link until the film is live, swapped at 18:38 by reminder trig_01FzgjE5ti8FsEjnhGMQS6Nh), 30 min after the
-English Sulaiman film (18:30). FILM_EN = the film's link, filled in after it goes live (~18:40).
+English Sulaiman film (18:30). https://youtu.be/rdLEJPHlQi8 = the film's link, filled in after it goes live (~18:40).
 **Skills run:** yt-shorts (pick #1 from the film, 7:00–8:13), yt-script hookscore (hook 60/100), yt-package
 (title 90/100), yt-seo (below).
 
@@ -10,7 +10,7 @@ Who Was Faster Than the Jinn? 👑
 Runners-up: "What Did Sulaiman (AS) Say When the Throne Appeared? 👑" (80), "Who Brought a Queen's Throne Before an Eye Could Blink? 👑" (76).
 
 ## Description
-🎥 Watch the full movie: Prophet Sulaiman (AS) and the Queen of Sheba 👉 FILM_EN
+🎥 Watch the full movie: Prophet Sulaiman (AS) and the Queen of Sheba 👉 https://youtu.be/rdLEJPHlQi8
 A jinn offered to bring the Queen of Sheba's throne before Prophet Sulaiman (AS) could stand up. One who had knowledge from the Scripture brought it before his eye could blink (An-Naml 27:38–40).
 
 And when he saw it placed before him, he said: "This is from the favor of my Lord to test me whether I will be grateful or ungrateful." (27:40)
@@ -33,4 +33,4 @@ prophet sulaiman throne, queen of sheba throne, throne of bilqis, surah naml 27 
 | prophet sulaiman throne | – | ✅ |
 
 ## After it is live
-Related video = the English Sulaiman film. First comment (pin): "🎥 The full movie of Prophet Sulaiman (AS): FILM_EN — what would YOU have said? 👇"
+Related video = the English Sulaiman film. First comment (pin): "🎥 The full movie of Prophet Sulaiman (AS): https://youtu.be/rdLEJPHlQi8 — what would YOU have said? 👇"

@@ -7,7 +7,7 @@
 Ibrahim (AS) Watched Every Star Set… Then Found His Lord ✨
 
 ## Description
-🎥 The full movie of Prophet Ibrahim (AS) comes Saturday 28 Nov, 6:30 PM · Watch now: Prophet Sulaiman (AS) 👉 FILM_EN
+🎥 The full movie of Prophet Ibrahim (AS) comes Saturday 28 Nov, 6:30 PM · Watch now: Prophet Sulaiman (AS) 👉 https://youtu.be/rdLEJPHlQi8
 "So when the night covered him, he saw a star. He said, 'This is my lord.' But when it set, he said, 'I like not those that disappear.'" (Al-An'am 6:76) The moon set, and the sun set too. Then Prophet Ibrahim (AS) said: "Indeed, I have turned my face toward He who created the heavens and the earth." (6:79)
 Everything you lean on will set one day. Lean on the One who never does.
 

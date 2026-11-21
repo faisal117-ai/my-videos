@@ -8,7 +8,7 @@
 Do Not Despair: Allah Forgives ALL Sins (39:53) 🤲
 
 ## Description
-🎥 Watch the full movies: Prophet Musa (AS) 👉 https://youtu.be/I9d00aHMQrQ · Prophet Sulaiman (AS) 👉 FILM_EN
+🎥 Watch the full movies: Prophet Musa (AS) 👉 https://youtu.be/I9d00aHMQrQ · Prophet Sulaiman (AS) 👉 https://youtu.be/rdLEJPHlQi8
 "Say, 'O My servants who have transgressed against themselves, do not despair of the mercy of Allah. Indeed, Allah forgives all sins. Indeed, it is He who is the Forgiving, the Merciful.'" (Az-Zumar 39:53)
 "And return [in repentance] to your Lord…" (39:54)
 

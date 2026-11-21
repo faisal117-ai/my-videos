@@ -11,7 +11,7 @@
 Thrown Into the Fire… Why Didn't It Burn Him? | Prophet Ibrahim (AS) | Stories of the Prophets EP 4
 
 ## Description (yt-seo 20 Nov)
-🎥 Watch the full movies: Prophet Musa (AS) 👉 https://youtu.be/I9d00aHMQrQ · Prophet Sulaiman (AS) 👉 FILM_EN
+🎥 Watch the full movies: Prophet Musa (AS) 👉 https://youtu.be/I9d00aHMQrQ · Prophet Sulaiman (AS) 👉 https://youtu.be/rdLEJPHlQi8
 The complete story of Prophet Ibrahim (AS) from the Quran: the idols, the fire that turned cool, the valley of Makkah and Zamzam, the dream, and the building of the Kaaba.
 
 They threw him into a blazing furnace, and he said: "Hasbunallahu wa ni'mal wakeel" (Sahih al-Bukhari 4563). And Allah said: "O fire, be coolness and safety upon Abraham [Ibrahim]." (Al-Anbiya 21:69)
