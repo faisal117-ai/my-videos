@@ -256,3 +256,4 @@ A new session can recreate these for itself (send_later / create_trigger) and de
 - 21 Nov 17:28: Sulaiman EN film LIVE https://youtu.be/rdLEJPHlQi8 (17:00 post failed: Metricool free-plan limit; user upgraded, re-published 17:28). Throne Short moved to 17:50.
   Film link swapped into 13 scheduled posts (throne, Uwais, two-answers, gold, staff, dua, dinars, gift, hope, stars, father, dawud, Ibrahim EN film). FILM_EN filled in UPLOAD.md files.
 - 21 Nov 17:50: throne Short live https://www.youtube.com/shorts/To-gOslcAvM (film link in description + first comment). All 22 remaining posts PENDING, none rejected after the upgrade.
+- 21 Nov: yt-audit shipped (reports/Channel audit 21 Nov.md). One fix = Shorts → film conversion: Related video + pinned film link on every Short; judge Fri 27 (Sulaiman >300 views).

@@ -30,7 +30,7 @@ Report the result (each line ✅ or ❌ + fix) to the user together with the vid
 
 ## Publishing
 - [ ] Title: story question or "X… then Y" (50-50 test), ≤ 100 characters.
-- [ ] Description first line "🎥 Watch the full movie: … 👉 link"; Related video set after upload; AI-content box ticked.
+- [ ] Description first line "🎥 Watch the full movie: … 👉 link"; **Related video → the film set in Studio on EVERY Short after it goes live** (audit 21 Nov: the one fix); pinned film-link comment; AI-content box ticked.
 - [ ] Evening Shorts 17:00, morning 11:00, films 18:30 PKT; 7 days scheduled ahead.
 
 ## Skills: use every stored skill that applies (user's rule, 19 Nov 2026)
