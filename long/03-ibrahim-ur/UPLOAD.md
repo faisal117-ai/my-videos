@@ -10,7 +10,7 @@
 Aag Thandi Kyun Hui? Hazrat Ibrahim AS Ka Waqia | Qasas ul Anbiya EP 4 | Full Movie in Urdu/Hindi
 
 ## Description (yt-seo 20 Nov)
-🎥 مکمل فلمیں دیکھیے: حضرت موسیٰؑ 👉 https://youtu.be/h59TV5hdSew · حضرت یوسفؑ 👉 https://youtu.be/DSOlTSSiRHs · حضرت سلیمانؑ 👉 FILM_UR
+🎥 مکمل فلمیں دیکھیے: حضرت موسیٰؑ 👉 https://youtu.be/h59TV5hdSew · حضرت یوسفؑ 👉 https://youtu.be/DSOlTSSiRHs · حضرت سلیمانؑ 👉 https://youtu.be/s_Ja6UvoWRQ
 Hazrat Ibrahim AS ka mukammal waqia, Quran se, Urdu mein: aag jo thandi ho gayi, Hazrat Ismail AS, Zamzam, qurbani aur Kaaba ki tameer.
 हज़रत इब्राहीम (अ.स.) का मुकम्मल वाक़िया, क़ुरआन से: आग, ज़मज़म, क़ुर्बानी और काबा
 
