@@ -17,4 +17,4 @@ Haq Stories | حق کہانیاں ko follow karein taake film miss na ho.
 hazrat ibrahim ka waqia, hazrat ibrahim aur sitare, surah anam 6 76, hazrat ibrahim story in hindi, हज़रत इब्राहीम, qasas ul anbiya, haq stories
 
 ## Note
-Voice ends "film: hafte ki shaam" (Saturday) — that is the ENGLISH film. Urdu film is Sun 29. On-screen Hindi says शनिवार. Description points Urdu viewers to Sunday.
+Voice ends "film: Itwar ki shaam" (Sunday 29 Nov 18:30, the Urdu film); on screen रविवार / Sunday.
