@@ -1,0 +1,118 @@
+{
+ "id": "47-stars-hi",
+ "lines": [
+  "ہر ستارہ… ڈوب گیا۔",
+  "جب رات ان پر طاری ہوئی تو انہوں نے ایک تارا دیکھا، کہا یہ میرا رب ہے، مگر جب وہ ڈوب گیا تو بولے: ڈوب جانے والوں کا تو میں گرویدہ نہیں ہوں۔",
+  "چاند بھی… سورج بھی ڈوب گیا۔",
+  "پھر انہوں نے فرمایا: میں نے تو یکسو ہو کر اپنا رخ اُس ہستی کی طرف کر لیا جس نے زمین اور آسمانوں کو پیدا کیا ہے۔",
+  "جس پر سہارا لیں، وہ ڈوب جائے گا… سہارا اُس پر لیں جو کبھی نہیں ڈوبتا۔",
+  "حضرت ابراہیم علیہ السلام کی مکمل فلم: ہفتے کی شام۔ فالو کریں۔"
+ ],
+ "beats": [
+  {
+   "hook": true,
+   "text": "Every star he watched… *set*.",
+   "ur": "اس نے ستاروں کو ڈوبتے دیکھا… اور اسے پا لیا جو کبھی نہیں ڈوبتا",
+   "mood": {
+    "warm": 0.1,
+    "cool": 0.08
+   },
+   "reveal": false,
+   "hi": "हर सितारा… डूब गया",
+   "sub": "Har sitara doob gaya… phir?"
+  },
+  {
+   "q": "6:76",
+   "ar_words": [
+    1,
+    15
+   ],
+   "en": "So when the night covered him [with darkness], he saw a star. He said, \"This is my lord.\" But when it set, he said, \"I like not those that disappear",
+   "ur_a": [
+    "چنانچہ جب رات",
+    "گرویدہ نہیں ہوں"
+   ],
+   "ref": "Al-An'am 6:76",
+   "mood": {
+    "warm": 0.05,
+    "cool": 0.1
+   },
+   "hi": "जब रात उन पर तारी हुई तो उन्होंने एक तारा देखा, कहा यह मेरा रब है, मगर जब वह डूब गया तो बोले: डूब जाने वालों का तो मैं गिरवीदा नहीं हूँ"
+  },
+  {
+   "text": "The moon set. *The sun set too.*",
+   "ur": "چاند نکلا… اور ڈوب گیا۔ سورج بھی ڈوب گیا",
+   "mood": {
+    "warm": 0.15,
+    "cool": 0
+   },
+   "ref": "Al-An'am 6:77–78",
+   "hi": "चाँद भी… सूरज भी डूब गया"
+  },
+  {
+   "q": "6:79",
+   "ar_words": [
+    1,
+    7
+   ],
+   "en": "Indeed, I have turned my face toward He who created the heavens and the earth",
+   "ur_a": [
+    "میں نے",
+    "پیدا کیا ہے"
+   ],
+   "ref": "Al-An'am 6:79",
+   "mood": {
+    "warm": 0.25,
+    "cool": 0
+   },
+   "hi": "मैंने तो यकसू होकर अपना रुख़ उस हस्ती की तरफ़ कर लिया जिसने ज़मीन और आसमानों को पैदा किया है"
+  },
+  {
+   "text": "Everything you lean on will set. *Lean on the One who never does.*",
+   "ur": "جس پر بھی سہارا لیں، وہ ڈوب جائے گا۔ اس پر سہارا لیں جو کبھی نہیں ڈوبتا",
+   "mood": {
+    "warm": 0.25,
+    "cool": 0
+   },
+   "hi": "जिस पर सहारा लें, वह डूब जाएगा… सहारा उस पर लें जो कभी नहीं डूबता"
+  },
+  {
+   "cta": true,
+   "text": "The full movie of *Prophet Ibrahim (AS)*: this Saturday, 6:30 PM. Follow.",
+   "ur": "حضرت ابراہیم علیہ السلام کی مکمل فلم: اس ہفتے۔ فالو کریں",
+   "mood": {
+    "warm": 0.25,
+    "cool": 0
+   },
+   "btn": "Follow ↑",
+   "hi": "हज़रत इब्राहीम अलैहिस्सलाम की मुकम्मल फ़िल्म: शनिवार शाम। फ़ॉलो करें"
+  }
+ ],
+ "photos": [
+  "c02a",
+  "c02a",
+  "c02b",
+  "c02c",
+  "c02d",
+  "c00c"
+ ],
+ "crops": {
+  "c02a": "long/03-ibrahim/assets/gen/c02a.jpg",
+  "c02b": "long/03-ibrahim/assets/gen/c02b.jpg",
+  "c02c": "long/03-ibrahim/assets/gen/c02c.jpg",
+  "c02d": "long/03-ibrahim/assets/gen/c02d.jpg",
+  "c00c": "long/03-ibrahim/assets/gen/c00c.jpg"
+ },
+ "pauses": {
+  "3": 0.8
+ },
+ "turn": 3,
+ "hum": 3,
+ "eleven": {
+  "voice_id": "N2lVS1w4EtoT3dr4eOWO",
+  "model_id": "eleven_v3",
+  "settings": {
+   "stability": 0.5
+  }
+ }
+}

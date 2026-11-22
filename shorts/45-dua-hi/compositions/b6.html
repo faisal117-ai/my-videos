@@ -1,0 +1,23 @@
+<template>
+  <style>
+    #b6 { position: absolute; inset: 0; }
+    #b6-wrap { position: absolute; left: 60px; right: 60px; top: 250px; bottom: 1120px;
+      display: flex; flex-direction: column; justify-content: flex-start; gap: 20px; }
+  </style>
+  <div id="b6" data-composition-id="b6" data-width="1080" data-height="1920">
+    <div id="b6-wrap" class="clip" data-start="0" data-duration="5.49">
+      <div id="b6-cta-mark" class="mark">حق کہانیاں</div>
+      <div id="b6-txt" class="txt cta"><span class="w" id="b6-w0">Full</span> <span class="w" id="b6-w1">movie</span> <span class="w" id="b6-w2">of</span> <span class="w hi" id="b6-w3">Prophet</span> <span class="w" id="b6-w4">Sulaiman</span> <span class="w hi" id="b6-w5">(AS):</span> <span class="w" id="b6-w6">link</span> <span class="w" id="b6-w7">below.</span></div>
+      <div id="b6-btn" class="btn">Full movie ↓</div>
+      <div id="b6-ur" class="hi" lang="hi" data-layout-allow-overflow>हज़रत सुलेमान अलैहिस्सलाम की मुकम्मल फ़िल्म देखिए, लिंक नीचे</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#b6-cta-mark", {opacity: 0, scale: 0.92}, {opacity: 1, scale: 1, duration: 0.8, ease: "power2.out"}, 0);
+    tl.fromTo("#b6 .w", {opacity: 0, y: 18}, {opacity: 1, y: 0, duration: 0.35, ease: "power2.out", stagger: 0.363}, 0.15);
+    tl.fromTo("#b6-btn", {opacity: 0, y: 24}, {opacity: 1, y: 0, duration: 0.5, ease: "back.out(1.6)"}, 0.5);
+    tl.fromTo("#b6-ur", {opacity: 0, y: 10}, {opacity: 1, y: 0, duration: 0.35, ease: "power2.out"}, 0.15);
+    window.__timelines["b6"] = tl;
+  </script>
+</template>
