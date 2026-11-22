@@ -7,7 +7,7 @@
 **When:** Sunday 29 Nov, 6:30 PM PKT (Metricool post 436356457, approved and scheduled 21 Nov)
 
 ## Title (yt-package)
-Aag Thandi Kyun Hui? Hazrat Ibrahim AS Ka Waqia | Qasas ul Anbiya EP 4 | Full Movie in Urdu/Hindi
+Hazrat Ibrahim AS Ka Waqia: Aag Thandi Kaise Hui? | Qasas ul Anbiya EP 4 | Full Movie Urdu/Hindi
 
 ## Description (yt-seo 20 Nov)
 🎥 مکمل فلمیں دیکھیے: حضرت موسیٰؑ 👉 https://youtu.be/h59TV5hdSew · حضرت یوسفؑ 👉 https://youtu.be/DSOlTSSiRHs · حضرت سلیمانؑ 👉 https://youtu.be/s_Ja6UvoWRQ
