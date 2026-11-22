@@ -37,6 +37,8 @@ FONT_FACES = """
         src: url("assets/fonts/cormorant-garamond-latin-600-italic.woff2") format("woff2"); }
       @font-face { font-family: "Noto Nastaliq Urdu"; font-weight: 400;
         src: url("assets/fonts/noto-nastaliq-urdu-arabic-400-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Noto Sans Devanagari"; font-weight: 600;
+        src: url("assets/fonts/noto-sans-devanagari-devanagari-600-normal.woff2") format("woff2"); }
       @font-face { font-family: "Amiri Quran"; font-weight: 400;
         src: url("assets/fonts/amiri-quran-arabic-400-normal.woff2") format("woff2"); }
 """
@@ -138,7 +140,10 @@ def beat_html(i: int, beat: dict, dur: float, spoken: float, accent: str) -> str
         js.append(f'tl.fromTo("#{bid}-orb1", {{x: -150}}, {{x: -70, duration: {dur:.2f}, ease: "sine.inOut"}}, 0);')
         js.append(f'tl.fromTo("#{bid}-orb2", {{x: 150}}, {{x: 70, duration: {dur:.2f}, ease: "sine.inOut"}}, 0);')
 
-    if beat.get("ur"):
+    if beat.get("hi"):  # Hindi (Devanagari) second line, for Hindustani Shorts (India 33% of viewers)
+        parts.append(f'<div id="{bid}-ur" class="hi" lang="hi" data-layout-allow-overflow>{esc(beat["hi"])}</div>')
+        js.append(f'tl.fromTo("#{bid}-ur", {{opacity: 0, y: 10}}, {{opacity: 1, y: 0, duration: 0.35, ease: "power2.out"}}, 0.15);')
+    elif beat.get("ur"):
         parts.append(f'<div id="{bid}-ur" class="ur" dir="rtl" lang="ur" data-layout-allow-overflow>{esc(beat["ur"])}</div>')
         js.append(f'tl.fromTo("#{bid}-ur", {{opacity: 0, y: 10}}, {{opacity: 1, y: 0, duration: 0.35, ease: "power2.out"}}, 0.15);')
 
@@ -1795,6 +1800,8 @@ def index_html(spec: dict, beats: list, total: float) -> str:
       .ur {{ font-family: "Noto Nastaliq Urdu"; font-size: 46px; line-height: 1.9; color: #fff3dc; text-align: right;
         background: rgba(0,0,0,0.5); border-radius: 18px; padding: 12px 26px 26px; align-self: stretch; }}
       .cta ~ .ur, .ar ~ .ur, .tr ~ .ur {{ text-align: center; }}
+      .hi {{ font-family: "Noto Sans Devanagari"; font-weight: 600; font-size: 44px; line-height: 1.5; color: #fff3dc;
+        text-align: center; background: rgba(0,0,0,0.5); border-radius: 18px; padding: 14px 26px; align-self: stretch; }}
       .ref {{ align-self: flex-start; font-family: Inter; font-weight: 700; font-size: 32px; letter-spacing: 0.14em;
         text-transform: uppercase; color: var(--accent); border: 2px solid var(--accent); border-radius: 999px;
         padding: 12px 26px; background: rgba(0,0,0,0.35); }}
