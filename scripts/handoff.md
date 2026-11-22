@@ -265,3 +265,6 @@ A new session can recreate these for itself (send_later / create_trigger) and de
 - 22 Nov: English + Hindi subtitles made for Urdu films (tools/srt_ur_film.py; EN = source-checked English script per line, HI = Devanagari transliteration of the Urdu, cached in subtitles/hi_lines.json). Sulaiman UR: user uploads now; Ibrahim UR: upload after it goes live Sun 29.
 - 22–23 Nov (user, Studio): Urdu Sulaiman film video language fixed English → Urdu; EN + HI subtitles published (Hindi title not addable on iPhone, skipped). Malay title + description added to Musa EN, Sulaiman EN, Yusuf EN.
 - 23 Nov: Urdu Ibrahim film title → "Hazrat Ibrahim AS Ka Waqia: Aag Thandi Kaise Hui? | Qasas ul Anbiya EP 4 | Full Movie Urdu/Hindi" (post 437904091). Audience (28 d): India 33.5%, Pakistan 12.1%, Malaysia 5.2%; 63% male. Next: Hindustani 19:00 test Shorts Tue–Fri (Urdu voice, Hindi + English captions, no Urdu script), user approves each.
+- 23 Nov: Hindustani test (Urdu voice, Hindi + English captions, no Urdu script; tools/build_short.py "hi" field + Devanagari font) approved and scheduled at 19:00 PKT:
+  Tue 24 staff 437912279 · Wed 25 dua 437949733 · Thu 26 gift 437949996 · Fri 27 stars 437950341 (ends "Itwar ki shaam" → Urdu Ibrahim film).
+  Judge Fri 27: avg > 300 views or Urdu film +50% → keep; else stop. Sun 29 Urdu fire Short still in the old Urdu-script style.
