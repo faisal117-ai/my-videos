@@ -257,3 +257,4 @@ A new session can recreate these for itself (send_later / create_trigger) and de
   Film link swapped into 13 scheduled posts (throne, Uwais, two-answers, gold, staff, dua, dinars, gift, hope, stars, father, dawud, Ibrahim EN film). FILM_EN filled in UPLOAD.md files.
 - 21 Nov 17:50: throne Short live https://www.youtube.com/shorts/To-gOslcAvM (film link in description + first comment). All 22 remaining posts PENDING, none rejected after the upgrade.
 - 21 Nov: yt-audit shipped (reports/Channel audit 21 Nov.md). One fix = Shorts → film conversion: Related video + pinned film link on every Short; judge Fri 27 (Sulaiman >300 views).
+- 22 Nov 12:00 PKT: Metricool per-video/traffic/country analytics still EMPTY after reconnect (only subs + daily views; subs 174 on 21 Nov). Public counts: Sulaiman EN film 12 views (18.5 h) vs throne Short 513, idols Short 643, sacrifice Short 132 (2 h). Conversion problem confirmed.
