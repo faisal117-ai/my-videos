@@ -5,7 +5,7 @@
       display: flex; flex-direction: column; justify-content: flex-start; gap: 20px; }
   </style>
   <div id="b3" data-composition-id="b3" data-width="1080" data-height="1920">
-    <div id="b3-wrap" class="clip" data-start="0" data-duration="3.28">
+    <div id="b3-wrap" class="clip" data-start="0" data-duration="3.34">
       <div id="b3-txt" class="txt"><span class="w" id="b3-w0">The</span> <span class="w" id="b3-w1">moon</span> <span class="w" id="b3-w2">set.</span> <span class="w" id="b3-w3">The</span> <span class="w" id="b3-w4">sun</span> <span class="w" id="b3-w5">set</span> <span class="w" id="b3-w6">too.</span></div>
       <div id="b3-ur" class="hi" lang="hi" data-layout-allow-overflow>चाँद भी… सूरज भी डूब गया</div>
       <div id="b3-ref" class="ref">Al-An&#x27;am 6:77–78</div>
@@ -13,11 +13,11 @@
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
-    tl.fromTo("#b3 .w", {opacity: 0, y: 22, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.32, ease: "power2.out", stagger: 0.263}, 0.12);
-    tl.fromTo("#b3 .hi", {textShadow: "0 0 0px rgba(0,0,0,0)"}, {textShadow: "0 0 28px var(--accent)", duration: 0.6, ease: "power1.out"}, 1.18);
+    tl.fromTo("#b3 .w", {opacity: 0, y: 22, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.32, ease: "power2.out", stagger: 0.261}, 0.12);
+    tl.fromTo("#b3 .hi", {textShadow: "0 0 0px rgba(0,0,0,0)"}, {textShadow: "0 0 28px var(--accent)", duration: 0.6, ease: "power1.out"}, 1.17);
     tl.fromTo("#b3-ur", {opacity: 0, y: 10}, {opacity: 1, y: 0, duration: 0.35, ease: "power2.out"}, 0.15);
     tl.fromTo("#b3-ref", {opacity: 0, y: 12}, {opacity: 1, y: 0, duration: 0.45, ease: "power2.out"}, 0.35);
-    tl.fromTo("#b3-wrap", {opacity: 1}, {opacity: 0, duration: 0.22, ease: "power1.in"}, 3.04);
+    tl.fromTo("#b3-wrap", {opacity: 1}, {opacity: 0, duration: 0.22, ease: "power1.in"}, 3.10);
     window.__timelines["b3"] = tl;
   </script>
 </template>
