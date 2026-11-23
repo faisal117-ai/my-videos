@@ -178,3 +178,4 @@ half of the English Shorts' views within 4 weeks.
   timeless stories that are still watched in 10 years.
 - **Never miss a day**, reply to people, ask them which story comes next.
 - **Mercy first:** every story ends in hope; nothing that divides Muslims.
+- Hindustani Shorts (23 Nov): no *highlight* markup in the English text line — the word pop is timed to English words and never fires on an Urdu voice.

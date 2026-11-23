@@ -275,3 +275,7 @@ A new session can recreate these for itself (send_later / create_trigger) and de
   pharaoh "Yunus 10:92: Why Was Pharaoh's Body Kept?", stars "Star, Moon, Sun: All 3 Set…", stars-hi "Sitara, Chaand, Suraj… 3 Doob Gaye!",
   boat "1 Hole in a Poor Man's Boat…", father "Maryam 19:47: How Ibrahim (AS) Answered His Father", valley "1 Mother, 1 Baby, No Water…".
   Post ids changed (uuids same); always getScheduledPosts before editing.
+- 23 Nov: covers corrected — English Shorts at end of hook (gold 4.17 s, staff 3.17, calf 3.81, dua 3.68, dinars 4.98, gift 3.34, hope 2.88,
+  pharaoh 3.3, stars 2.62, boat 2.98, father 3.77, fire 2.87, dawud 1.5, valley 3.97). Hindustani Shorts had a defect (highlighted *words*
+  never resolved, stayed as tiny chips): fixed by plain hook text, re-rendered (commit a24d153), swapped into all 5 posts, covers 3.0 s (stars 2.0 s).
+  Rule for future Hindustani Shorts: no *highlight* markup in the English "text" line (word timing comes from the Urdu voice).
