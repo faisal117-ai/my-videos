@@ -249,3 +249,4 @@ title is on screen only (on the question line). Applied first to Ibrahim EP 4 (s
 "Idea, title and thumbnail are 80% of the result": every Short and film gets 5 titles scored with title.py (best two shown
 to the user), a deliberately chosen Shorts cover frame (hook frame, set via Metricool videoCoverMilliseconds) and, for
 films, a thumbnail checked at feed size with yt-package. Only this lesson was adopted; the rest of our rules stay as they are.
+- Film targets (23 Nov 2026): CTR 4–10 %, AVD 40–60 %, first-30 s retention 70 %+, session contribution, returning viewers/subs; checked every Friday (checklist.md).
