@@ -11,6 +11,7 @@ Report the result (each line ✅ or ❌ + fix) to the user together with the vid
 - [ ] **A real closing lesson** (one clear action for today, or a dua to save), not a throwaway line.
 - [ ] **Honorific on every name, EVERY mention** in voice and on screen: alayhis salaam / (AS), alayhimas salaam (two), peace be upon him / ﷺ, Razi Allah hu Anhu / (RA), rahimahullah / (RH) for a Tabi'i (e.g. Uwais). Also in "Prophet X's full movie" endings. Not inside an exact verse/hadith quote or someone's own words. (User caught misses 20 Nov.)
 - [ ] **Arabic phrases** (Masha'Allah, la quwwata illa billah, duas, verses): written in Arabic script in the TTS text, transcribed back with speech-to-text, and offered to the user to hear before publishing (user, 19 Nov: Callum mispronounced "la quwwata").
+- [ ] **Voices** (user, 23 Nov): Callum narrates all words of prophets, the Prophet ﷺ, Companions, righteous women, angels and jinn (never a character voice for them; no female voice acting). Other speakers may get a distinct male voice only in real dialogue; a new voice is played to the user before first use. Arabic runs use eleven_v3 (voice.md).
 - [ ] **Only what the Quran / sahih sources say**: no numbers, places or details not in the source; every verse from the package (Sahih International / Maududi) with its reference.
 - [ ] **Ending**: "Watch the full movie(s) of <named film(s)>, link(s) below" + a comment question (pinned).
 

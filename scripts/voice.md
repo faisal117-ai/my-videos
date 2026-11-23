@@ -42,3 +42,11 @@ Hasbunallahu wa ni'mal wakeel passes (EN and UR). Check every Arabic phrase with
   La hawla wa la quwwata illa billah, Masha'Allah). v2 (multilingual) dropped the long "aa" in Ar-Rahman: never use v2 for Arabic.
 - This replaces the earlier workaround (Arabic shown on screen only). English Shorts may voice the Arabic phrase as a v3 clip.
 - Tool (23 Nov): tools/tts_eleven.py does this automatically: when a v2 (English) narration contains Arabic script, the English parts are voiced on v2 and each Arabic run on eleven_v3, joined with 0.12 s gaps; check each Arabic line with tools/arabic_check.py <id> <line>. First used on 38-fire (both clips YES).
+
+## Multiple voices in dialogue (user approved 23 Nov 2026: "Save it")
+- Callum narrates everything, including every word of prophets, the Prophet ﷺ, Companions, righteous women, angels and jinn
+  ("He said: …"). Never a voice that "plays" a holy figure (acting them = depicting them).
+- Other speakers (rulers, chiefs, ordinary people in a story: Pharaoh, Ibrahim's father, the two men before Dawud, the
+  Queen's chiefs, the lender/borrower) may get a distinct male voice, only when a Short or film has real back-and-forth dialogue.
+- No female voice acting: women's words (e.g. the Queen of Sheba, Hajar) are quoted by the narrator.
+- Each new voice is tested and sent to the user to hear before its first use.
