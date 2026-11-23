@@ -268,3 +268,4 @@ A new session can recreate these for itself (send_later / create_trigger) and de
 - 23 Nov: Hindustani test (Urdu voice, Hindi + English captions, no Urdu script; tools/build_short.py "hi" field + Devanagari font) approved and scheduled at 19:00 PKT:
   Tue 24 staff 437912279 · Wed 25 dua 437949733 · Thu 26 gift 437949996 · Fri 27 stars 437950341 (ends "Itwar ki shaam" → Urdu Ibrahim film).
   Judge Fri 27: avg > 300 views or Urdu film +50% → keep; else stop. Sun 29 Urdu fire Short still in the old Urdu-script style.
+- 23 Nov: Sun 29 19:00 Urdu fire Short replaced by Hindustani 48-fire-hi (no spoken Arabic; post 438341074, same uuid 8528820876309056952; link swap by the Sun 29 Ibrahim UR reminder).

@@ -33,3 +33,4 @@
 Callum (multilingual v2) says the غ in أَسْتَغْفِرُ اللَّهَ as an English hard "g" (failed the speech-to-text check 6 times).
 Rule: don't voice Astaghfirullah with Callum; say "ask Allah for forgiveness" and show أَسْتَغْفِرُ اللَّهَ on screen.
 Hasbunallahu wa ni'mal wakeel passes (EN and UR). Check every Arabic phrase with the strict YES/NO check before showing the user.
+- Hindustani Shorts (23 Nov): spoken Arabic duas (Hasbunallah, Astaghfirullah) are NOT voiced; voice says the Urdu meaning, Arabic + Hindi shown on screen (Callum's ح/ع/غ are Urdu-style).
