@@ -32,7 +32,7 @@ Report the result (each line ✅ or ❌ + fix) to the user together with the vid
 - [ ] **Three scores from the skills' own tools (user's formal rule, 23 Nov 2026): title ≥ 90, hook ≥ 75 (rule C), cover ≥ 90; Short < 45 s. Show exact text + scores, wait for approval, then build:**
       1. **Title** — yt-package `title.py --title "<title>"` ≥ 90 (5 written, best 2 shown).
       2. **Hook** (first spoken line) — yt-script `hookscore.py --hook "<line>"` VERDICT **≥ 75** (rule C, user 23 Nov):
-         hook rule (user approved 23 Nov): (1) hook text on screen from frame 0 over ONE strong image, works on mute; (2) "you" + the stakes inside the first 2 s; (3) spoken hook finished by **4 s max, aim 3 s**; (4) never a plain description ("A father saw a dream…"). hookscore shown for information only. 5 written, best 2 shown.
+         hook rule (user approved 23 Nov): (1) hook text on screen from frame 0 over ONE strong image, works on mute; (2) "you" + the stakes OR a surprising claim/contradiction inside the first 2 s; (3) spoken hook finished by **4 s max, aim 3 s**; (4) never a plain description ("A father saw a dream…"). hookscore shown for information only. 5 written, best 2 shown.
       3. **Cover frame / film thumbnail** — yt-package `title.py --title "<title>" --thumb "<words on the cover>"` ≥ 90.
          The user removed the three-word limit: ignore the `thumb-length` flag (add its 14 points back); every other
          check stands, above all **the cover words must not repeat the title's words**.
@@ -57,10 +57,10 @@ Report which skills ran with each video. Skills live in the session list (anthro
 ## Short scorecard (user's formal rubric, 23 Nov 2026) — score every Short /100 before showing it
 | Area | Weight | Pass condition |
 |---|---|---|
-| Hook (0–3 s) | 30 | On-screen text from frame 0 + one strong image, works on mute; "you" + stakes in the first 2 s; spoken hook ≤ 4 s (aim 3); not a description |
+| Hook (0–3 s) | **40** | On-screen text from frame 0 + one strong image, works on mute; **either** "you" + stakes **or** a surprising claim / contradiction in the first 2 s; spoken hook ≤ 4 s (aim 3); not a description |
 | Story payoff / lesson | 25 | Clear twist and an explicit moral in the final 15–30 s |
 | Retention / pacing | 20 | No dead air; one idea; loop intentional |
-| Packaging (title + cover) | 15 | One promise; no repetition between title and cover; keyword-rich (title.py ≥ 90, pair ≥ 90) |
+| Packaging (title + cover) | **5** | One promise; no repetition between title and cover; keyword-rich (title.py ≥ 90, pair ≥ 90 still required) |
 | Accuracy / sourcing | 10 | Every claim sourced (Quran / sahih); no fabrication |
 
 ## Film targets (check in the Friday review)
@@ -71,3 +71,7 @@ Report which skills ran with each video. Skills live in the session list (anthro
 | First-30 s retention | 70 %+ | Did the opening survive the cliff? |
 | Session contribution | viewers keep watching after | Will YouTube recommend it further? |
 | Returning viewers / subs from video | rising trend | Is it building loyalty? |
+
+Weights adjusted 23 Nov (user approved) after scoring our best Short ("Ease With Every Hardship", 2.9k views, ~83/100):
+its hook was a surprising claim with no "you", and its title scored only 76 — for Shorts the hook decides, packaging matters
+little (feed shows the video, not the title). Films keep full packaging weight (CTR target 4–10 %).

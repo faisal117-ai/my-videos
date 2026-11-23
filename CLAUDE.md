@@ -34,8 +34,8 @@ Skills that have nothing to do with videos (keyboard shortcuts, config, code rev
 - Arabic phrases in Arabic script in the TTS text, checked with speech-to-text. Callum narrates.
 - After render: `tools/mix.py`. AI-content box ticked. Shorts 11:00 / 17:00, films 18:30 PKT.
 - **Every Short and film is scored before it reaches the user (user's rule, 23 Nov 2026; details in checklist.md):**
-  Short scorecard /100 (Hook 30 · Payoff/lesson 25 · Retention/pacing 20 · Packaging 15 · Accuracy 10), with the hook rule:
-  hook text on screen from frame 0 over one strong image (works on mute), "you" + stakes in the first 2 s, spoken hook ≤ 4 s
+  Short scorecard /100 (Hook 40 · Payoff/lesson 25 · Retention/pacing 20 · Packaging 5 · Accuracy 10), with the hook rule:
+  hook text on screen from frame 0 over one strong image (works on mute), "you" + stakes OR a surprising claim/contradiction in the first 2 s, spoken hook ≤ 4 s
   (aim 3), never a plain description. Title ≥ 90 and title+cover pair ≥ 90 (yt-package title.py, no 3-word limit).
   Films: the same packaging/hook rules, then judged in the Friday review on CTR 4–10 %, AVD 40–60 %, first-30 s retention 70 %+,
   session contribution and returning viewers/subs.
