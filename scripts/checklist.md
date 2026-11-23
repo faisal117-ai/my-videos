@@ -64,6 +64,8 @@ Report which skills ran with each video. Skills live in the session list (anthro
 | Packaging (title + cover) | **5** | One promise; no repetition between title and cover; keyword-rich (title.py ≥ 90, pair ≥ 90 still required) |
 | Accuracy / sourcing | 10 | Every claim sourced (Quran / sahih); no fabrication |
 
+## Films: run the pre-publish film check in scripts/film-guidelines.md (user, 23 Nov); Shorts rules above do not apply
+
 ## Film targets (check in the Friday review)
 | Metric | Target | Tells you |
 |---|---|---|

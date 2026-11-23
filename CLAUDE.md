@@ -37,8 +37,10 @@ Skills that have nothing to do with videos (keyboard shortcuts, config, code rev
   Short scorecard /100 (Hook 40 · Payoff/lesson 25 · Retention/pacing 20 · Packaging 5 · Accuracy 10), with the hook rule:
   hook text on screen from frame 0 over one strong image (works on mute), "you" + stakes OR a surprising claim/contradiction in the first 2 s, spoken hook ≤ 4 s
   (aim 3), never a plain description. Title ≥ 90 and title+cover pair ≥ 90 (yt-package title.py, no 3-word limit).
-  Films: the same packaging/hook rules, then judged in the Friday review on CTR 4–10 %, AVD 40–60 %, first-30 s retention 70 %+,
-  session contribution and returning viewers/subs.
+  **Films follow `scripts/film-guidelines.md` (user, 23 Nov), NOT the Shorts hook/scorecard rules:** packaging (one subject,
+  ≤ 4 elements, no repeated words), first 30 s (no intro, promise, loop, hook done by 0:30), moral-epic structure,
+  interrupts every 45–90 s, re-hooks, 8–15 min, bulletproof sourcing, the chain; judged Friday on CTR 4–10 %, AVD 40–60 %,
+  first-30 s 70 %+, session contribution, returning viewers/subs. Run its pre-publish film check on every film.
 - **Rules are guides, not cages (user, 23 Nov 2026):** when a hook (or any element) is good, don't force it into a rule.
   Always compare the rule-following version with the best version and say which one I'd choose as the channel owner, and why.
   Speak up whenever a rule doesn't fit a particular Short or film.
