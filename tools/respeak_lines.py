@@ -20,7 +20,7 @@ from pathlib import Path
 import numpy as np
 
 sys.path.insert(0, str(Path(__file__).parent))
-from tts_eleven import DEFAULT  # noqa: E402
+from tts_eleven import AR, DEFAULT, mixed_take  # noqa: E402
 
 SR = 48000
 MARGIN = 0.06  # seconds kept around the new line's first and last character
@@ -51,6 +51,13 @@ def voiced_span(x: np.ndarray, frame: float = 0.01, below_peak_db: float = 40.0)
 
 
 def speak(text: str, prev: str, nxt: str, el: dict) -> tuple[np.ndarray, dict]:
+    if el["model_id"] != "eleven_v3" and AR.search(text):
+        # Arabic inside an English line: English on v2, the Arabic run on eleven_v3 (voice.md).
+        with tempfile.TemporaryDirectory() as tmp:
+            wav, st, en = mixed_take(text, el, tmp)
+            audio = read_wav(Path(wav))
+        return audio, {"characters": list(text), "character_start_times_seconds": st,
+                       "character_end_times_seconds": en}
     body = {"text": text, "model_id": el["model_id"], "voice_settings": el["settings"]}
     if el["model_id"] != "eleven_v3":  # v3 does not take request context
         body |= {"previous_text": prev, "next_text": nxt}
