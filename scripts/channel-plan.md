@@ -244,3 +244,8 @@ Lifetime average view 3:26 of 11:30 (29.9%); 45% gone by 0:30 (healthy: under 25
 The leak was the spoken title section after the hook ("This is the story of… From the river… to the sea").
 **Rule for every film:** hook → one open question → straight into the story. No spoken title lines; the series
 title is on screen only (on the question line). Applied first to Ibrahim EP 4 (story starts at 0:26 instead of 0:45).
+
+## Packaging rule (user, 23 Nov 2026, from a creator's 7-lessons video)
+"Idea, title and thumbnail are 80% of the result": every Short and film gets 5 titles scored with title.py (best two shown
+to the user), a deliberately chosen Shorts cover frame (hook frame, set via Metricool videoCoverMilliseconds) and, for
+films, a thumbnail checked at feed size with yt-package. Only this lesson was adopted; the rest of our rules stay as they are.

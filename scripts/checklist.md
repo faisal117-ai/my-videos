@@ -29,7 +29,13 @@ Report the result (each line ✅ or ❌ + fix) to the user together with the vid
 - [ ] After render: `tools/mix.py` (≈ -14.5 LUFS); films re-encoded CRF 27 (< 100 MB).
 
 ## Publishing
-- [ ] Title: story question or "X… then Y" (50-50 test), ≤ 100 characters.
+- [ ] **Packaging gets as much care as the edit (user's rule, 23 Nov 2026):**
+      - **Title:** write 5, run all through `yt-package/title.py`, keep the best (score ≥ 90; a true number or name;
+        subject inside the first 40 characters; story question or "X… then Y"; ≤ 100 characters). Show the user the top 2.
+      - **Shorts cover:** pick the cover frame on purpose (the hook frame: big hook words + one clear image, readable at
+        feed size); set it with `videoCoverMilliseconds` in Metricool. Never a verse card or a dark frame.
+      - **Films thumbnail:** yt-package pair check: ≤ 3 words, words differ from the title, one clear focal point, no
+        holy figure; checked at feed size (small) before approval.
 - [ ] Description first line "🎥 Watch the full movie: … 👉 link"; **Related video → the film set in Studio on EVERY Short after it goes live** (audit 21 Nov: the one fix); pinned film-link comment; AI-content box ticked.
 - [ ] Evening Shorts 17:00, morning 11:00, films 18:30 PKT; 7 days scheduled ahead.
 
