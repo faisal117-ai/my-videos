@@ -1,202 +1,201 @@
 {
- "accent": "#f2b04a",
- "embers": false,
- "motes": 0.35,
- "mote": "#f6dcae",
- "flash": 0.0,
- "bed_volume": 1.0,
- "hold_end": 1.2,
- "text_top": 300,
- "text_bottom": 780,
- "tr_size": 56,
- "scene": "photos",
- "photos": [
-  "assets/gen/c03a.jpg",
-  "assets/gen/c01b.jpg",
-  "assets/gen/c03b.jpg",
-  "assets/gen/c03a.jpg",
-  "assets/gen/c13a.jpg",
-  "assets/gen/c00c.jpg"
- ],
- "shakes": [
-  {
-   "beat": 0,
-   "at": 0.3,
-   "amp": 8,
-   "dur": 1.0
-  },
-  {
-   "beat": 3,
-   "at": 0.0,
-   "amp": 10,
-   "dur": 1.4
-  }
- ],
- "glows": [
-  {
-   "beat": 3,
-   "at": 0.1,
-   "dur": 3.0,
-   "peak": 0.25
-  },
-  {
-   "beat": 3,
-   "at": 0.2,
-   "dur": 3.5,
-   "peak": 0.25
-  }
- ],
- "sound": [
-  {
-   "prompt": "lib",
-   "src": "../../long/01-yusuf/assets/sfx/992f69b875be.mp3",
-   "beat": 0,
-   "offset": 0,
-   "dur": 100,
-   "gain": -17,
-   "fade_in": 0.5,
-   "fade_out": 1.5
-  },
-  {
-   "prompt": "lib",
-   "src": "../03-cave/assets/sfx/03b5f68efefc.mp3",
-   "beat": 0,
-   "offset": 0.2,
-   "dur": 3,
-   "gain": -13,
-   "fade_in": 0.02,
-   "fade_out": 1
-  },
-  {
-   "prompt": "lib",
-   "src": "../../long/04-sulaiman/assets/sfx/93fa1b20e45f.mp3",
-   "beat": 1,
-   "offset": 0,
-   "dur": 8,
-   "gain": -13,
-   "fade_in": 0.5,
-   "fade_out": 1.5
-  },
-  {
-   "prompt": "lib",
-   "src": "../../long/04-sulaiman/assets/sfx/72cc4baec592.mp3",
-   "beat": 3,
-   "offset": -3.6,
-   "dur": 3.8,
-   "gain": -8,
-   "fade_in": 0.4,
-   "fade_out": 0.3
-  },
-  {
-   "prompt": "lib",
-   "src": "../../long/04-sulaiman/assets/sfx/f0b78dedaad6.mp3",
-   "beat": 3,
-   "offset": 0,
-   "dur": 4,
-   "gain": -7,
-   "fade_in": 0.02,
-   "fade_out": 1.5
-  },
-  {
-   "prompt": "lib",
-   "src": "../06-ant/assets/sfx/cabf6e6577de.mp3",
-   "beat": 3,
-   "offset": 0,
-   "dur": 30,
-   "gain": -13,
-   "fade_in": 1.0,
-   "fade_out": 1.5
-  }
- ],
- "beats": [
-  {
-   "hook": true,
-   "text": "Your father threatens to *stone* you.",
-   "sub": "Your answer?",
-   "ur": "باپ جو سنگسار کرنے کی دھمکی دے… آپ کیا جواب دیں گے؟",
-   "mood": {
-    "warm": 0.1,
-    "cool": 0
-   },
-   "reveal": false
-  },
-  {
-   "q": "19:42",
-   "ar_words": [
-    4,
-    15
-   ],
-   "en": "O my father, why do you worship that which does not hear and does not see and will not benefit you at all",
-   "ur_a": [
-    "ابّا جان",
-    "کام بنا سکتی ہیں"
-   ],
-   "ref": "Maryam 19:42",
-   "mood": {
-    "warm": 0.15,
-    "cool": 0
-   },
-   "arabic": "يَـٰٓأَبَتِ لِمَ تَعۡبُدُ مَا لَا يَسۡمَعُ وَلَا يُبۡصِرُ وَلَا يُغۡنِي عَنكَ شَيۡـࣰٔا",
-   "translation": "“O my father, why do you worship that which does not hear and does not see and will not benefit you at all”",
-   "ur": "ابّا جان، آپ کیوں اُن چیزوں کی عبادت کرتے ہیں جو نہ سنتی ہیں نہ دیکھتی ہیں اور نہ آپ کا کوئی کام بنا سکتی ہیں"
-  },
-  {
-   "q": "19:46",
-   "ar_words": [
-    7,
-    10
-   ],
-   "en": "If you do not desist, I will surely stone you",
-   "ur_a": [
-    "اگر تو باز",
-    "سنگسار کر دوں گا"
-   ],
-   "ref": "Maryam 19:46",
-   "mood": {
-    "warm": 0.0,
-    "cool": 0.1
-   },
-   "arabic": "لَئِن لَّمۡ تَنتَهِ لَأَرۡجُمَنَّكَۖ",
-   "translation": "“If you do not desist, I will surely stone you”",
-   "ur": "اگر تو باز نہ آیا تو میں تجھے سنگسار کر دوں گا"
-  },
-  {
-   "q": "19:47",
-   "ar_words": [
-    2,
-    6
-   ],
-   "en": "Peace will be upon you. I will ask forgiveness for you of my Lord",
-   "ur_a": [
-    "سلام ہے آپ کو",
-    "معاف کر دے"
-   ],
-   "ref": "Maryam 19:47",
-   "mood": {
-    "warm": 0.25,
-    "cool": 0
-   },
-   "arabic": "سَلَٰمٌ عَلَيۡكَۖ سَأَسۡتَغۡفِرُ لَكَ رَبِّيٓۖ",
-   "translation": "“Peace will be upon you. I will ask forgiveness for you of my Lord”",
-   "ur": "سلام ہے آپ کو میں اپنے رب سے دُعا کروں گا کہ آپ کو معاف کر دے"
-  },
-  {
-   "text": "Speak gently to your parents *today*.",
-   "ur": "آج اپنے والدین سے نرمی سے بات کریں… چاہے مشکل ہو",
-   "mood": {
-    "warm": 0.25,
-    "cool": 0
-   }
-  },
-  {
-   "cta": true,
-   "text": "The full movie of *Prophet Ibrahim (AS)*: tonight, 5 PM. Follow.",
-   "ur": "حضرت ابراہیم علیہ السلام کی مکمل فلم: آج شام پانچ بجے۔ فالو کریں",
-   "mood": {
-    "warm": 0.25,
-    "cool": 0
-   },
-   "btn": "Follow ↑"
-  }
- ]
+  "accent": "#f2b04a",
+  "embers": false,
+  "motes": 0.35,
+  "mote": "#f6dcae",
+  "flash": 0.0,
+  "bed_volume": 1.0,
+  "hold_end": 1.2,
+  "text_top": 300,
+  "text_bottom": 780,
+  "tr_size": 56,
+  "scene": "photos",
+  "photos": [
+    "assets/gen/c03a.jpg",
+    "assets/gen/c01b.jpg",
+    "assets/gen/c03b.jpg",
+    "assets/gen/c03a.jpg",
+    "assets/gen/c13a.jpg",
+    "assets/gen/c00c.jpg"
+  ],
+  "shakes": [
+    {
+      "beat": 0,
+      "at": 0.3,
+      "amp": 8,
+      "dur": 1.0
+    },
+    {
+      "beat": 3,
+      "at": 0.0,
+      "amp": 10,
+      "dur": 1.4
+    }
+  ],
+  "glows": [
+    {
+      "beat": 3,
+      "at": 0.1,
+      "dur": 3.0,
+      "peak": 0.25
+    },
+    {
+      "beat": 3,
+      "at": 0.2,
+      "dur": 3.5,
+      "peak": 0.25
+    }
+  ],
+  "sound": [
+    {
+      "prompt": "lib",
+      "src": "../../long/01-yusuf/assets/sfx/992f69b875be.mp3",
+      "beat": 0,
+      "offset": 0,
+      "dur": 100,
+      "gain": -17,
+      "fade_in": 0.5,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "lib",
+      "src": "../03-cave/assets/sfx/03b5f68efefc.mp3",
+      "beat": 0,
+      "offset": 0.2,
+      "dur": 3,
+      "gain": -13,
+      "fade_in": 0.02,
+      "fade_out": 1
+    },
+    {
+      "prompt": "lib",
+      "src": "../../long/04-sulaiman/assets/sfx/93fa1b20e45f.mp3",
+      "beat": 1,
+      "offset": 0,
+      "dur": 8,
+      "gain": -13,
+      "fade_in": 0.5,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "lib",
+      "src": "../../long/04-sulaiman/assets/sfx/72cc4baec592.mp3",
+      "beat": 3,
+      "offset": -3.6,
+      "dur": 3.8,
+      "gain": -8,
+      "fade_in": 0.4,
+      "fade_out": 0.3
+    },
+    {
+      "prompt": "lib",
+      "src": "../../long/04-sulaiman/assets/sfx/f0b78dedaad6.mp3",
+      "beat": 3,
+      "offset": 0,
+      "dur": 4,
+      "gain": -7,
+      "fade_in": 0.02,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "lib",
+      "src": "../06-ant/assets/sfx/cabf6e6577de.mp3",
+      "beat": 3,
+      "offset": 0,
+      "dur": 30,
+      "gain": -13,
+      "fade_in": 1.0,
+      "fade_out": 1.5
+    }
+  ],
+  "beats": [
+    {
+      "hook": true,
+      "text": "Your father threatens to stone you. Your answer?",
+      "ur": "آپ کا باپ آپ کو سنگسار کرنے کی دھمکی دے… آپ کا جواب؟",
+      "mood": {
+        "warm": 0.1,
+        "cool": 0
+      },
+      "reveal": false
+    },
+    {
+      "q": "19:42",
+      "ar_words": [
+        4,
+        15
+      ],
+      "en": "O my father, why do you worship that which does not hear and does not see and will not benefit you at all",
+      "ur_a": [
+        "ابّا جان",
+        "کام بنا سکتی ہیں"
+      ],
+      "ref": "Maryam 19:42",
+      "mood": {
+        "warm": 0.15,
+        "cool": 0
+      },
+      "arabic": "يَـٰٓأَبَتِ لِمَ تَعۡبُدُ مَا لَا يَسۡمَعُ وَلَا يُبۡصِرُ وَلَا يُغۡنِي عَنكَ شَيۡـࣰٔا",
+      "translation": "“O my father, why do you worship that which does not hear and does not see and will not benefit you at all”",
+      "ur": "ابّا جان، آپ کیوں اُن چیزوں کی عبادت کرتے ہیں جو نہ سنتی ہیں نہ دیکھتی ہیں اور نہ آپ کا کوئی کام بنا سکتی ہیں"
+    },
+    {
+      "q": "19:46",
+      "ar_words": [
+        7,
+        10
+      ],
+      "en": "If you do not desist, I will surely stone you",
+      "ur_a": [
+        "اگر تو باز",
+        "سنگسار کر دوں گا"
+      ],
+      "ref": "Maryam 19:46",
+      "mood": {
+        "warm": 0.0,
+        "cool": 0.1
+      },
+      "arabic": "لَئِن لَّمۡ تَنتَهِ لَأَرۡجُمَنَّكَۖ",
+      "translation": "“If you do not desist, I will surely stone you”",
+      "ur": "اگر تو باز نہ آیا تو میں تجھے سنگسار کر دوں گا"
+    },
+    {
+      "q": "19:47",
+      "ar_words": [
+        2,
+        6
+      ],
+      "en": "Peace will be upon you. I will ask forgiveness for you of my Lord",
+      "ur_a": [
+        "سلام ہے آپ کو",
+        "معاف کر دے"
+      ],
+      "ref": "Maryam 19:47",
+      "mood": {
+        "warm": 0.25,
+        "cool": 0
+      },
+      "arabic": "سَلَٰمٌ عَلَيۡكَۖ سَأَسۡتَغۡفِرُ لَكَ رَبِّيٓۖ",
+      "translation": "“Peace will be upon you. I will ask forgiveness for you of my Lord”",
+      "ur": "سلام ہے آپ کو میں اپنے رب سے دُعا کروں گا کہ آپ کو معاف کر دے"
+    },
+    {
+      "text": "Speak gently to your parents today, even when it's hard.",
+      "ur": "آج اپنے والدین سے نرمی سے بات کریں… چاہے مشکل ہو",
+      "mood": {
+        "warm": 0.25,
+        "cool": 0
+      }
+    },
+    {
+      "cta": true,
+      "text": "The full movie of Prophet Ibrahim (AS): tonight, 5 PM. Follow.",
+      "ur": "حضرت ابراہیم علیہ السلام کی مکمل فلم: آج شام پانچ بجے۔ فالو کریں",
+      "mood": {
+        "warm": 0.25,
+        "cool": 0
+      },
+      "btn": "Follow ↑"
+    }
+  ]
 }

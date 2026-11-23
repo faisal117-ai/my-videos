@@ -5,15 +5,14 @@
   "Prophet Ibrahim, alayhis salaam, said: O my father, why do you worship that which does not hear and does not see?",
   "His father said: If you do not stop, I will surely stone you.",
   "He answered: Peace will be upon you. I will ask forgiveness for you of my Lord.",
-  "Speak gently to your parents today.",
+  "Speak gently to your parents today, even when it's hard.",
   "The full movie of Prophet Ibrahim, alayhis salaam, comes tonight. Follow."
  ],
  "beats": [
   {
    "hook": true,
-   "text": "Your father threatens to *stone* you.",
-   "sub": "Your answer?",
-   "ur": "باپ جو سنگسار کرنے کی دھمکی دے… آپ کیا جواب دیں گے؟",
+   "text": "Your father threatens to stone you. Your answer?",
+   "ur": "آپ کا باپ آپ کو سنگسار کرنے کی دھمکی دے… آپ کا جواب؟",
    "mood": {
     "warm": 0.1,
     "cool": 0
@@ -72,7 +71,7 @@
    }
   },
   {
-   "text": "Speak gently to your parents *today*.",
+   "text": "Speak gently to your parents today, even when it's hard.",
    "ur": "آج اپنے والدین سے نرمی سے بات کریں… چاہے مشکل ہو",
    "mood": {
     "warm": 0.25,
@@ -81,7 +80,7 @@
   },
   {
    "cta": true,
-   "text": "The full movie of *Prophet Ibrahim (AS)*: tonight, 5 PM. Follow.",
+   "text": "The full movie of Prophet Ibrahim (AS): tonight, 5 PM. Follow.",
    "ur": "حضرت ابراہیم علیہ السلام کی مکمل فلم: آج شام پانچ بجے۔ فالو کریں",
    "mood": {
     "warm": 0.25,
