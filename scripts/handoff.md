@@ -295,3 +295,4 @@ A new session can recreate these for itself (send_later / create_trigger) and de
 - 23 Nov: 34-gift approved, post 439200677 (uuid -2162989109603381851), Thu 16:00, cover 3550 ms. Rendering: hope, then gift-hi. Next: pharaoh (Fri 10:00).
 - 23 Nov: 43-hope-mercy approved, post 439209364 (uuid 680823038147841556), Thu 17:00, title '39:53: ALL Sins? Even Mine? 🤲', cover 3150 ms, 35.9 s, named-films ending. Queued renders: gift-hi, pharaoh, stars, stars-hi, boat (title '18:79: Why Did Khidr (AS) Break the Ship? ⛵'), father (title '1 Harsh Threat, 1 Gentle Reply: Ibrahim (AS) 🤲'). Next: fire (Sat 17:30).
 - 23 Nov: 46-gift-hi approved, post 439221682 (uuid -1935161179783148220), Thu 19:00, cover 4550 ms.
+- 23 Nov: 35-pharaoh-body approved, post 439223577 (uuid 2494877274946356218), Fri 10:00, cover 3350 ms. Queue restarted after worker restart: stars, stars-hi, boat, father, fire (scratchpad q.log).
