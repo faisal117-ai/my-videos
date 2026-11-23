@@ -1,7 +1,7 @@
 {
  "id": "33-dinars",
  "lines": [
-  "No boat. No witness. A thousand dinars due.",
+  "He threw a thousand dinars into the sea, and it arrived.",
   "The Prophet, peace be upon him, told us of a man who borrowed a thousand dinars, saying: Allah is enough as a witness.",
   "With no boat, he put the dinars and a letter in a piece of wood... and entrusted it to Allah, in the sea.",
   "On the other shore, the lender found the wood, cut it open... and there was his money.",
@@ -11,8 +11,8 @@
  "beats": [
   {
    "hook": true,
-   "text": "No boat. No witness. *1,000 dinars due.*",
-   "ur": "نہ کشتی، نہ گواہ، آج ہزار دینار ادا کرنے ہیں۔ آپ کیا کرتے؟",
+   "text": "He threw a thousand dinars into the sea. And it arrived.",
+   "ur": "اس نے ہزار دینار سمندر میں پھینک دیے… اور وہ پہنچ گئے",
    "mood": {
     "warm": 0.2,
     "cool": 0
@@ -20,7 +20,7 @@
    "reveal": false
   },
   {
-   "text": "“Witnesses?” *“Allah is enough.”* “A guarantor?” *“Allah is enough.”*",
+   "text": "“Witnesses?” “Allah is enough.” “A guarantor?” “Allah is enough.”",
    "ur": "گواہ؟ اللہ کافی ہے۔ ضامن؟ اللہ کافی ہے",
    "mood": {
     "warm": 0.2,
@@ -29,7 +29,7 @@
    "ref": "Sahih al-Bukhari 2291"
   },
   {
-   "text": "“I entrust this *to You*.” Into the sea.",
+   "text": "“I entrust this to You.” Into the sea.",
    "ur": "میں یہ تیرے سپرد کرتا ہوں۔ اور اسے سمندر میں ڈال دیا",
    "mood": {
     "warm": 0.1,
@@ -38,7 +38,7 @@
    "ref": "Sahih al-Bukhari 2291"
   },
   {
-   "text": "A piece of wood… *and there was his money*.",
+   "text": "A piece of wood… and there was his money.",
    "ur": "لکڑی کا ایک ٹکڑا… اور اس میں اس کی رقم",
    "mood": {
     "warm": 0.25,
@@ -47,7 +47,7 @@
    "ref": "Sahih al-Bukhari 2291"
   },
   {
-   "text": "Can't keep a promise with your hands? *Keep it with Allah.*",
+   "text": "Can't keep a promise with your hands? Keep it with Allah.",
    "ur": "اپنے ہاتھوں سے وعدہ نہ نبھا سکیں؟ اللہ کے ساتھ نبھائیں",
    "mood": {
     "warm": 0.25,
@@ -56,7 +56,7 @@
   },
   {
    "cta": true,
-   "text": "Full movie of *Prophet Sulaiman (AS)*: link below.",
+   "text": "Full movie of Prophet Sulaiman (AS): link below.",
    "ur": "حضرت سلیمان علیہ السلام کی مکمل فلم دیکھیں، لنک نیچے",
    "mood": {
     "warm": 0.25,
