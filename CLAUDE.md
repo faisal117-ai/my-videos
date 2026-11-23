@@ -39,4 +39,7 @@ Skills that have nothing to do with videos (keyboard shortcuts, config, code rev
   (aim 3), never a plain description. Title ≥ 90 and title+cover pair ≥ 90 (yt-package title.py, no 3-word limit).
   Films: the same packaging/hook rules, then judged in the Friday review on CTR 4–10 %, AVD 40–60 %, first-30 s retention 70 %+,
   session contribution and returning viewers/subs.
+- **Rules are guides, not cages (user, 23 Nov 2026):** when a hook (or any element) is good, don't force it into a rule.
+  Always compare the rule-following version with the best version and say which one I'd choose as the channel owner, and why.
+  Speak up whenever a rule doesn't fit a particular Short or film.
 - Never publish without the user's approval of the finished video.

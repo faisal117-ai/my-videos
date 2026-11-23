@@ -111,8 +111,8 @@
  "beats": [
   {
    "hook": true,
-   "text": "You'd never risk returning *found gold*. But 2 men did. Why?",
-   "ur": "آپ ملا ہوا سونا واپس کرنے کا خطرہ کبھی نہ لیتے… مگر دو آدمیوں نے لیا۔ کیوں؟",
+   "text": "You'd never return *found gold*. 2 men did.",
+   "ur": "آپ ملا ہوا سونا کبھی واپس نہ کرتے… دو آدمیوں نے کیا",
    "mood": {
     "warm": 0.2,
     "cool": 0
