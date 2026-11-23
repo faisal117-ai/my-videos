@@ -5,17 +5,17 @@
       display: flex; flex-direction: column; justify-content: flex-start; gap: 20px; }
   </style>
   <div id="b3" data-composition-id="b3" data-width="1080" data-height="1920">
-    <div id="b3-wrap" class="clip" data-start="0" data-duration="1.83">
-      <div id="b3-txt" class="txt"><span class="w" id="b3-w0">Then</span> <span class="w" id="b3-w1">came</span> <span class="w hi" id="b3-w2">the</span> <span class="w hi" id="b3-w3">reason.</span></div>
+    <div id="b3-wrap" class="clip" data-start="0" data-duration="1.84">
+      <div id="b3-txt" class="txt"><span class="w" id="b3-w0">Then</span> <span class="w" id="b3-w1">came</span> <span class="w" id="b3-w2">the</span> <span class="w" id="b3-w3">reason.</span></div>
       <div id="b3-ur" class="ur" dir="rtl" lang="ur" data-layout-allow-overflow>پھر وجہ سامنے آئی</div>
     </div>
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
-    tl.fromTo("#b3 .w", {opacity: 0, y: 22, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.32, ease: "power2.out", stagger: 0.283}, 0.12);
-    tl.fromTo("#b3 .hi", {textShadow: "0 0 0px rgba(0,0,0,0)"}, {textShadow: "0 0 28px var(--accent)", duration: 0.6, ease: "power1.out"}, 0.73);
+    tl.fromTo("#b3 .w", {opacity: 0, y: 22, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.32, ease: "power2.out", stagger: 0.303}, 0.12);
+    tl.fromTo("#b3 .hi", {textShadow: "0 0 0px rgba(0,0,0,0)"}, {textShadow: "0 0 28px var(--accent)", duration: 0.6, ease: "power1.out"}, 0.78);
     tl.fromTo("#b3-ur", {opacity: 0, y: 10}, {opacity: 1, y: 0, duration: 0.35, ease: "power2.out"}, 0.15);
-    tl.fromTo("#b3-wrap", {opacity: 1}, {opacity: 0, duration: 0.22, ease: "power1.in"}, 1.59);
+    tl.fromTo("#b3-wrap", {opacity: 1}, {opacity: 0, duration: 0.22, ease: "power1.in"}, 1.60);
     window.__timelines["b3"] = tl;
   </script>
 </template>

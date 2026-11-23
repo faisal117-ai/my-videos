@@ -1,7 +1,7 @@
 {
  "id": "41-boat",
  "lines": [
-  "A hole... in a poor man's boat?",
+  "He broke a poor man's boat… to save it.",
   "Prophet Musa, alayhis salaam, said: Have you torn it open to drown its people? You have certainly done a grave thing.",
   "Then came the reason.",
   "As for the ship, it belonged to poor people working at sea. So I intended to cause defect in it, as there was after them a king who seized every ship by force.",
@@ -11,8 +11,8 @@
  "beats": [
   {
    "hook": true,
-   "text": "A hole… *in a poor man's boat*?",
-   "ur": "غریبوں کی کشتی میں شگاف… کیوں؟",
+   "text": "He broke a poor man's boat… to save it.",
+   "ur": "انہوں نے غریبوں کی کشتی توڑی… اسے بچانے کے لیے",
    "mood": {
     "warm": 0.1,
     "cool": 0.08
@@ -37,7 +37,7 @@
    }
   },
   {
-   "text": "Then came *the reason*.",
+   "text": "Then came the reason.",
    "ur": "پھر وجہ سامنے آئی",
    "mood": {
     "warm": 0.1,
@@ -62,7 +62,7 @@
    }
   },
   {
-   "text": "The damage you can't understand today… *may be what saves you*.",
+   "text": "The damage you can't understand today… may be what saves you.",
    "ur": "جو نقصان آج سمجھ نہیں آتا… شاید وہی آپ کو بچا رہا ہو",
    "mood": {
     "warm": 0.25,
@@ -71,7 +71,7 @@
   },
   {
    "cta": true,
-   "text": "Full movie of *Prophet Musa (AS)*: link below.",
+   "text": "Full movie of Prophet Musa (AS): link below.",
    "ur": "حضرت موسیٰ علیہ السلام کی مکمل فلم دیکھیں، لنک نیچے",
    "mood": {
     "warm": 0.25,

@@ -111,8 +111,8 @@
   "beats": [
     {
       "hook": true,
-      "text": "A hole… *in a poor man's boat*?",
-      "ur": "غریبوں کی کشتی میں شگاف… کیوں؟",
+      "text": "He broke a poor man's boat… to save it.",
+      "ur": "انہوں نے غریبوں کی کشتی توڑی… اسے بچانے کے لیے",
       "mood": {
         "warm": 0.1,
         "cool": 0.08
@@ -140,7 +140,7 @@
       "ur": "آپ نے اس میں شگاف ڈال دیا تاکہ سب کشتی والوں کو ڈبو دیں؟ یہ تو آپ نے ایک سخت حرکت کر ڈالی"
     },
     {
-      "text": "Then came *the reason*.",
+      "text": "Then came the reason.",
       "ur": "پھر وجہ سامنے آئی",
       "mood": {
         "warm": 0.1,
@@ -168,7 +168,7 @@
       "ur": "اُس کشتی کا معاملہ یہ ہے کہ وہ چند غریب آدمیوں کی تھی جو دریا میں محنت مزدوری کرتے تھے میں نے چاہا کہ اسے عیب دار کر دوں، کیونکہ آگے ایک ایسے بادشاہ کا علاقہ تھا جو ہر کشتی کو زبردستی چھین لیتا تھا"
     },
     {
-      "text": "The damage you can't understand today… *may be what saves you*.",
+      "text": "The damage you can't understand today… may be what saves you.",
       "ur": "جو نقصان آج سمجھ نہیں آتا… شاید وہی آپ کو بچا رہا ہو",
       "mood": {
         "warm": 0.25,
@@ -177,7 +177,7 @@
     },
     {
       "cta": true,
-      "text": "Full movie of *Prophet Musa (AS)*: link below.",
+      "text": "Full movie of Prophet Musa (AS): link below.",
       "ur": "حضرت موسیٰ علیہ السلام کی مکمل فلم دیکھیں، لنک نیچے",
       "mood": {
         "warm": 0.25,
