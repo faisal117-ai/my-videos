@@ -111,9 +111,8 @@
   "beats": [
     {
       "hook": true,
-      "text": "Pharaoh said: *“I believe.”*",
-      "sub": "Too late.",
-      "ur": "آخری لمحے فرعون نے کہا: میں ایمان لایا",
+      "text": "Pharaoh said: “I believe.” Too late.",
+      "ur": "فرعون نے کہا: میں ایمان لایا… بہت دیر ہو چکی تھی",
       "mood": {
         "warm": 0.1,
         "cool": 0.1
@@ -181,8 +180,8 @@
       "ur": "اب تو ہم صرف تیری لاش ہی کو بچائیں گے تاکہ تو بعد کی نسلوں کے لیے نشان عبرت بنے"
     },
     {
-      "text": "Don't wait for the last moment. *Turn to Allah today.*",
-      "ur": "آخری لمحے کا انتظار نہ کریں۔ آج اللہ کی طرف رجوع کریں",
+      "text": "Don't wait for the last moment. Turn to Allah today, while you still have time.",
+      "ur": "آخری لمحے کا انتظار نہ کریں۔ آج ہی اللہ کی طرف رجوع کریں، جب تک وقت ہے",
       "mood": {
         "warm": 0.25,
         "cool": 0
@@ -190,7 +189,7 @@
     },
     {
       "cta": true,
-      "text": "Full movie of *Prophet Musa (AS)*: link below.",
+      "text": "Full movie of Prophet Musa (AS): link below.",
       "ur": "حضرت موسیٰ علیہ السلام کی مکمل فلم دیکھیں، لنک نیچے",
       "mood": {
         "warm": 0.25,
