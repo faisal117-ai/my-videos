@@ -1,18 +1,18 @@
 {
  "id": "36-stars",
  "lines": [
-  "Every star he watched... set.",
+  "Everything you lean on will set. Even the sun.",
   "When the night covered him, he saw a star. He said: This is my lord. But when it set, he said: I like not those that disappear.",
   "The moon set. The sun set too.",
   "And Prophet Ibrahim, alayhis salaam, said: Indeed, I have turned my face toward He who created the heavens and the earth.",
-  "Everything you lean on will set. Lean on the One who never does.",
+  "So lean on the One who never sets.",
   "The full movie of Prophet Ibrahim, alayhis salaam, comes Saturday. Follow."
  ],
  "beats": [
   {
    "hook": true,
-   "text": "Every star he watched… *set*.",
-   "ur": "اس نے ستاروں کو ڈوبتے دیکھا… اور اسے پا لیا جو کبھی نہیں ڈوبتا",
+   "text": "Everything you lean on will set. Even the sun.",
+   "ur": "جس پر بھی آپ سہارا لیتے ہیں، وہ ڈوب جائے گا۔ سورج بھی",
    "mood": {
     "warm": 0.1,
     "cool": 0.08
@@ -37,7 +37,7 @@
    }
   },
   {
-   "text": "The moon set. *The sun set too.*",
+   "text": "The moon set. The sun set too.",
    "ur": "چاند نکلا… اور ڈوب گیا۔ سورج بھی ڈوب گیا",
    "mood": {
     "warm": 0.15,
@@ -63,8 +63,8 @@
    }
   },
   {
-   "text": "Everything you lean on will set. *Lean on the One who never does.*",
-   "ur": "جس پر بھی سہارا لیں، وہ ڈوب جائے گا۔ اس پر سہارا لیں جو کبھی نہیں ڈوبتا",
+   "text": "So lean on the One who never sets.",
+   "ur": "تو اس پر سہارا لیں جو کبھی نہیں ڈوبتا",
    "mood": {
     "warm": 0.25,
     "cool": 0
@@ -72,7 +72,7 @@
   },
   {
    "cta": true,
-   "text": "The full movie of *Prophet Ibrahim (AS)*: this Saturday, 5 PM. Follow.",
+   "text": "The full movie of Prophet Ibrahim (AS): this Saturday, 5 PM. Follow.",
    "ur": "حضرت ابراہیم علیہ السلام کی مکمل فلم: اس ہفتے۔ فالو کریں",
    "mood": {
     "warm": 0.25,
