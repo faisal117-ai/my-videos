@@ -41,3 +41,4 @@ Hasbunallahu wa ni'mal wakeel passes (EN and UR). Check every Arabic phrase with
 - Test 23 Nov (tests/names/): v3 got 10/10 Names right (incl. ح ع غ ق) and all 4 duas (Hasbunallah, Astaghfirullah,
   La hawla wa la quwwata illa billah, Masha'Allah). v2 (multilingual) dropped the long "aa" in Ar-Rahman: never use v2 for Arabic.
 - This replaces the earlier workaround (Arabic shown on screen only). English Shorts may voice the Arabic phrase as a v3 clip.
+- Tool (23 Nov): tools/tts_eleven.py does this automatically: when a v2 (English) narration contains Arabic script, the English parts are voiced on v2 and each Arabic run on eleven_v3, joined with 0.12 s gaps; check each Arabic line with tools/arabic_check.py <id> <line>. First used on 38-fire (both clips YES).

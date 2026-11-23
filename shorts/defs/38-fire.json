@@ -1,18 +1,18 @@
 {
  "id": "38-fire",
  "lines": [
-  "Thrown into a fire. Four words.",
+  "Thrown into a fire… what 4 words would you say?",
   "They said: Burn him, and support your gods.",
-  "As they threw him, Prophet Ibrahim, alayhis salaam, said: حَسْبُنَا اللَّهُ وَنِعْمَ الْوَكِيلُ. Allah is enough for us, and He is the best Guardian.",
+  "As they threw him, Prophet Ibrahim, alayhis salaam, said: حَسْبُنَا اللّٰهُ وَنِعْمَ الْوَكِيْلُ. Allah is enough for us, and He is the best Guardian.",
   "And Allah said: O fire, be coolness and safety upon Ibrahim.",
-  "When you're afraid today... say his words.",
+  "When you're afraid today, say his words: حَسْبُنَا اللّٰهُ وَنِعْمَ الْوَكِيْلُ.",
   "Full movie of Prophet Ibrahim, alayhis salaam: link below."
  ],
  "beats": [
   {
    "hook": true,
-   "text": "Thrown into a fire. *Four words.*",
-   "ur": "آگ میں پھینکا گیا… اور اس نے چار لفظ کہے",
+   "text": "Thrown into a fire… what 4 words would you say?",
+   "ur": "آگ میں پھینکے جائیں… تو آپ کون سے چار لفظ کہیں گے؟",
    "mood": {
     "warm": 0.3,
     "cool": 0
@@ -64,8 +64,8 @@
    }
   },
   {
-   "text": "When you're afraid today… *say his words*.",
-   "ur": "آج جب ڈر لگے… یہی الفاظ کہیں",
+   "text": "When you're afraid today, say his words: حَسْبُنَا اللّٰهُ وَنِعْمَ الْوَكِيْلُ",
+   "ur": "آج جب ڈر لگے… یہی الفاظ کہیں: حَسْبُنَا اللّٰهُ وَنِعْمَ الْوَكِيْلُ",
    "mood": {
     "warm": 0.2,
     "cool": 0
@@ -73,7 +73,7 @@
   },
   {
    "cta": true,
-   "text": "Full movie of *Prophet Ibrahim (AS)*: link below.",
+   "text": "Full movie of Prophet Ibrahim (AS): link below.",
    "ur": "حضرت ابراہیم علیہ السلام کی مکمل فلم دیکھیں، لنک نیچے",
    "mood": {
     "warm": 0.25,
