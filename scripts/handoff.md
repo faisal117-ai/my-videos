@@ -292,3 +292,4 @@ A new session can recreate these for itself (send_later / create_trigger) and de
 - 23 Nov: 45-dua-hi approved, post 439179364 (uuid -3832382285876540682), Wed 19:00, cover 4150 ms. 33-dinars rebuilt (hook 'He threw a thousand dinars into the sea. And it arrived.', title '1 Loan, 0 Witnesses: Only Allah Saw It 🌊'), rendering. Next: gift (Thu 16:00).
 - Lesson: 34-gift was 32.2 s (under 35) when approved earlier; check LENGTH on every rebuild.
 - 23 Nov: 33-dinars approved, post 439197464 (uuid -3492304906221172532), Thu 10:00, title '1 Loan, 0 Witnesses: Only Allah Saw It 🌊', cover 4050 ms, description line fixed (two men shown close; not prophets). 34-gift (39.1 s, title '1 Royal Gift Refused: What Did Sulaiman (AS) Say? 👑') and 43-hope-mercy (36.8 s, title '39:53: ALL Sins? Even Mine? 🤲') rendering.
+- 23 Nov: 34-gift approved, post 439200677 (uuid -2162989109603381851), Thu 16:00, cover 3550 ms. Rendering: hope, then gift-hi. Next: pharaoh (Fri 10:00).
