@@ -29,9 +29,10 @@ Report the result (each line ✅ or ❌ + fix) to the user together with the vid
 - [ ] After render: `tools/mix.py` (≈ -14.5 LUFS); films re-encoded CRF 27 (< 100 MB).
 
 ## Publishing
-- [ ] **Three scores, each ≥ 90, from the skills' own tools (user's rule, 23 Nov 2026), shown to the user before building:**
+- [ ] **Three scores from the skills' own tools (user's formal rule, 23 Nov 2026): title ≥ 90, hook ≥ 75 (rule C), cover ≥ 90; Short < 45 s. Show exact text + scores, wait for approval, then build:**
       1. **Title** — yt-package `title.py --title "<title>"` ≥ 90 (5 written, best 2 shown).
-      2. **Hook** (first spoken line) — yt-script `hookscore.py --hook "<line>"` VERDICT ≥ 90 (5 written, best 2 shown).
+      2. **Hook** (first spoken line) — yt-script `hookscore.py --hook "<line>"` VERDICT **≥ 75** (rule C, user 23 Nov):
+         must contain "you" and real stakes, sound natural, and be spoken in **≤ 5 s** (about 12 words). 5 written, best 2 shown.
       3. **Cover frame / film thumbnail** — yt-package `title.py --title "<title>" --thumb "<words on the cover>"` ≥ 90.
          The user removed the three-word limit: ignore the `thumb-length` flag (add its 14 points back); every other
          check stands, above all **the cover words must not repeat the title's words**.
