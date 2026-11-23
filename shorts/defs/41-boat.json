@@ -91,9 +91,9 @@
  "scenes": {
   "style": "High-quality 3D animated feature film still, close to photoreal (modern big-studio animation look), rich detail, cinematic lighting and depth of field. Vertical 9:16, keep the top third fairly simple and dark-to-plain (text sits there), the action in the lower two thirds. An ancient sea coast long ago. Absolutely no prophet or holy figure shown; no person close up.",
   "scenes": {
-   "s1": "A small wooden fishing boat pulled up on a sunny shore with a fresh hole broken in its side planks, fishing nets beside it, bright morning. No people.",
-   "s2": "A small wooden boat on a calm blue sea at dawn, water starting to seep through a broken plank, close view of the damaged hull. No people.",
-   "s3": "Far out at sea, a line of large armed warships with dark sails approaching a coast, seen from the shore, ominous clouds. No people close.",
+   "s1": "A small wooden fishing boat pulled up on a sunny shore with a fresh hole broken in its side planks, fishing nets beside it, bright morning. ABSOLUTELY NO PEOPLE, no human figures, no silhouettes anywhere.",
+   "s2": "A small wooden boat on a calm blue sea at dawn, water starting to seep through a broken plank, close view of the damaged hull. ABSOLUTELY NO PEOPLE, no human figures, no silhouettes anywhere.",
+   "s3": "Far out at sea, a line of large armed warships with dark sails approaching a coast, seen from the shore, ominous clouds. ABSOLUTELY NO PEOPLE, no human figures, no silhouettes anywhere.",
    "s4": "Fishermen's small boats with nets on a sunny harbour beach, the damaged boat among them left behind on the sand while big warships sail past in the distance. ABSOLUTELY NO PEOPLE, no human figures, no silhouettes anywhere.",
    "s5": "A bright calm sea at sunrise with a small repaired fishing boat sailing safely, birds over the water, hopeful golden light. ABSOLUTELY NO PEOPLE, no human figures, no silhouettes on the shore or in the boat."
   }
