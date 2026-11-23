@@ -1,7 +1,7 @@
 {
  "id": "40-valley",
  "lines": [
-  "A valley. No water. A family left there.",
+  "No water, no one… she said: He won't abandon us.",
   "The mother asked: Has Allah commanded you to do this? He said: yes. She said: Then He will not neglect us.",
   "Prophet Ibrahim, alayhis salaam, prayed: Our Lord, I have settled some of my descendants in an uncultivated valley, near Your sacred House.",
   "And water came... Zamzam, still flowing today.",
@@ -11,9 +11,8 @@
  "beats": [
   {
    "hook": true,
-   "text": "A valley. *No water.*",
-   "sub": "A family left there.",
-   "ur": "بے آب وادی… ایک باپ اپنے گھر والوں کو وہاں کیوں چھوڑے گا؟",
+   "text": "No water, no one… she said: He won't abandon us.",
+   "ur": "نہ پانی، نہ لوگ… اور انہوں نے کہا: وہ ہمیں ضائع نہیں کرے گا",
    "mood": {
     "warm": 0.2,
     "cool": 0
@@ -21,7 +20,7 @@
    "reveal": false
   },
   {
-   "text": "“Has Allah commanded you?” “Yes.” *“Then He will not neglect us.”*",
+   "text": "“Has Allah commanded you?” “Yes.” “Then He will not neglect us.”",
    "ur": "کیا اللہ نے آپ کو یہ حکم دیا ہے؟ ہاں۔ تو پھر وہ ہمیں ضائع نہیں کرے گا",
    "mood": {
     "warm": 0.2,
@@ -47,7 +46,7 @@
    }
   },
   {
-   "text": "Water from the ground… *Zamzam*, still flowing today.",
+   "text": "Water from the ground… Zamzam, still flowing today.",
    "ur": "زمین سے پانی… زمزم، جو آج بھی بہہ رہا ہے",
    "mood": {
     "warm": 0.25,
@@ -56,7 +55,7 @@
    "ref": "Sahih al-Bukhari 3364"
   },
   {
-   "text": "When Allah commands it… *He will not neglect you*.",
+   "text": "When Allah commands it… He will not neglect you.",
    "ur": "جب اللہ حکم دے… تو وہ آپ کو ضائع نہیں کرے گا",
    "mood": {
     "warm": 0.25,
@@ -65,7 +64,7 @@
   },
   {
    "cta": true,
-   "text": "Full movie of *Prophet Ibrahim (AS)*: link below.",
+   "text": "Full movie of Prophet Ibrahim (AS): link below.",
    "ur": "حضرت ابراہیم علیہ السلام کی مکمل فلم دیکھیں، لنک نیچے",
    "mood": {
     "warm": 0.25,
