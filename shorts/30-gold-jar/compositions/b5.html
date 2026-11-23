@@ -5,17 +5,17 @@
       display: flex; flex-direction: column; justify-content: flex-start; gap: 20px; }
   </style>
   <div id="b5" data-composition-id="b5" data-width="1080" data-height="1920">
-    <div id="b5-wrap" class="clip" data-start="0" data-duration="5.31">
+    <div id="b5-wrap" class="clip" data-start="0" data-duration="5.80">
       <div id="b5-txt" class="txt"><span class="w" id="b5-w0">They</span> <span class="w" id="b5-w1">argued</span> <span class="w hi" id="b5-w2">to</span> <span class="w hi" id="b5-w3">give,</span> <span class="w" id="b5-w4">not</span> <span class="w" id="b5-w5">to</span> <span class="w" id="b5-w6">take.</span> <span class="w" id="b5-w7">Return</span> <span class="w" id="b5-w8">one</span> <span class="w" id="b5-w9">thing</span> <span class="w" id="b5-w10">today</span> <span class="w" id="b5-w11">that</span> <span class="w" id="b5-w12">isn&#x27;t</span> <span class="w" id="b5-w13">yours.</span></div>
       <div id="b5-ur" class="ur" dir="rtl" lang="ur" data-layout-allow-overflow>وہ دینے پر جھگڑے، لینے پر نہیں۔ آج کوئی ایک چیز لوٹا دیں جو آپ کی نہیں</div>
     </div>
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
-    tl.fromTo("#b5 .w", {opacity: 0, y: 22, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.32, ease: "power2.out", stagger: 0.284}, 0.12);
-    tl.fromTo("#b5 .hi", {textShadow: "0 0 0px rgba(0,0,0,0)"}, {textShadow: "0 0 28px var(--accent)", duration: 0.6, ease: "power1.out"}, 2.55);
+    tl.fromTo("#b5 .w", {opacity: 0, y: 22, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.32, ease: "power2.out", stagger: 0.305}, 0.12);
+    tl.fromTo("#b5 .hi", {textShadow: "0 0 0px rgba(0,0,0,0)"}, {textShadow: "0 0 28px var(--accent)", duration: 0.6, ease: "power1.out"}, 2.73);
     tl.fromTo("#b5-ur", {opacity: 0, y: 10}, {opacity: 1, y: 0, duration: 0.35, ease: "power2.out"}, 0.15);
-    tl.fromTo("#b5-wrap", {opacity: 1}, {opacity: 0, duration: 0.22, ease: "power1.in"}, 5.07);
+    tl.fromTo("#b5-wrap", {opacity: 1}, {opacity: 0, duration: 0.22, ease: "power1.in"}, 5.56);
     window.__timelines["b5"] = tl;
   </script>
 </template>
