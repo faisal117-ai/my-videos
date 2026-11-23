@@ -279,3 +279,7 @@ A new session can recreate these for itself (send_later / create_trigger) and de
   pharaoh 3.3, stars 2.62, boat 2.98, father 3.77, fire 2.87, dawud 1.5, valley 3.97). Hindustani Shorts had a defect (highlighted *words*
   never resolved, stayed as tiny chips): fixed by plain hook text, re-rendered (commit a24d153), swapped into all 5 posts, covers 3.0 s (stars 2.0 s).
   Rule for future Hindustani Shorts: no *highlight* markup in the English "text" line (word timing comes from the Urdu voice).
+- 23 Nov: Ibrahim films moved 18:30 → 17:00 (EN Sat 28 post 438640045, UR Sun 29 post 438640104); fire Shorts 19:00 → 17:30 (EN 438640165,
+  Hindustani 438640238). Father + stars Shorts re-rendered with "5 PM" on screen (commit e9364cc; posts 438646341, 438646422); stars-hi text
+  "sham 5 baje". Reminders: link swaps 17:05, published-Shorts checklists 17:20; four stale EP 3 thumbnail/translation reminders disabled.
+  Weekend film slot is now 17:00 (16:00 = Short teaser, 17:30 = Short after the film).
