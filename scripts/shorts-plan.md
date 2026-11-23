@@ -179,4 +179,5 @@ half of the English Shorts' views within 4 weeks.
 - **Never miss a day**, reply to people, ask them which story comes next.
 - **Mercy first:** every story ends in hope; nothing that divides Muslims.
 - Hindustani Shorts (23 Nov): no *highlight* markup in the English text line — the word pop is timed to English words and never fires on an Urdu voice.
+- All Shorts (23 Nov): no *highlight* markup on any line where the spoken words differ from the screen words — "(AS)" spoken as "alayhis salaam", digits spoken as words, "Prophet" in a phrase. The pop then misfires: random words in dark boxes, others not (seen on calf and staff). Default: plain text; highlight only a single word spoken exactly as written.
 - Scorecard (23 Nov 2026): every Short is scored /100 with the rubric in checklist.md before it is shown; hook text from frame 0, "you" + stakes in 2 s, spoken hook ≤ 4 s (aim 3).
