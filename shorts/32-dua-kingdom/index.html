@@ -11,6 +11,8 @@
         src: url("assets/fonts/cormorant-garamond-latin-600-italic.woff2") format("woff2"); }
       @font-face { font-family: "Noto Nastaliq Urdu"; font-weight: 400;
         src: url("assets/fonts/noto-nastaliq-urdu-arabic-400-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Noto Sans Devanagari"; font-weight: 600;
+        src: url("assets/fonts/noto-sans-devanagari-devanagari-600-normal.woff2") format("woff2"); }
       @font-face { font-family: "Amiri Quran"; font-weight: 400;
         src: url("assets/fonts/amiri-quran-arabic-400-normal.woff2") format("woff2"); }
 
@@ -36,6 +38,8 @@
       .ur { font-family: "Noto Nastaliq Urdu"; font-size: 46px; line-height: 1.9; color: #fff3dc; text-align: right;
         background: rgba(0,0,0,0.5); border-radius: 18px; padding: 12px 26px 26px; align-self: stretch; }
       .cta ~ .ur, .ar ~ .ur, .tr ~ .ur { text-align: center; }
+      .hi { font-family: "Noto Sans Devanagari"; font-weight: 600; font-size: 44px; line-height: 1.5; color: #fff3dc;
+        text-align: center; background: rgba(0,0,0,0.5); border-radius: 18px; padding: 14px 26px; align-self: stretch; }
       .ref { align-self: flex-start; font-family: Inter; font-weight: 700; font-size: 32px; letter-spacing: 0.14em;
         text-transform: uppercase; color: var(--accent); border: 2px solid var(--accent); border-radius: 999px;
         padding: 12px 26px; background: rgba(0,0,0,0.35); }
@@ -68,32 +72,32 @@
     </style>
   </head>
   <body>
-    <div id="root" data-composition-id="main" data-start="0" data-duration="36.16"
+    <div id="root" data-composition-id="main" data-start="0" data-duration="36.99"
       data-width="1080" data-height="1920">
       <div id="atmos" data-composition-id="atmos" data-composition-src="compositions/atmos.html"
-        data-start="0" data-duration="36.16" data-track-index="1" data-track-kind="graphics"
+        data-start="0" data-duration="36.99" data-track-index="1" data-track-kind="graphics"
         data-width="1080" data-height="1920" style="z-index:1"></div>
       <div id="b1" data-composition-id="b1" data-composition-src="compositions/b1.html"
-        data-start="0.00" data-duration="4.12" data-track-index="2" data-track-kind="graphics"
+        data-start="0.00" data-duration="4.13" data-track-index="2" data-track-kind="graphics"
         data-width="1080" data-height="1920" style="z-index:2"></div>
       <div id="b2" data-composition-id="b2" data-composition-src="compositions/b2.html"
-        data-start="4.12" data-duration="10.40" data-track-index="2" data-track-kind="graphics"
+        data-start="4.13" data-duration="10.52" data-track-index="2" data-track-kind="graphics"
         data-width="1080" data-height="1920" style="z-index:2"></div>
       <div id="b3" data-composition-id="b3" data-composition-src="compositions/b3.html"
-        data-start="14.52" data-duration="3.26" data-track-index="2" data-track-kind="graphics"
+        data-start="14.65" data-duration="3.17" data-track-index="2" data-track-kind="graphics"
         data-width="1080" data-height="1920" style="z-index:2"></div>
       <div id="b4" data-composition-id="b4" data-composition-src="compositions/b4.html"
-        data-start="17.78" data-duration="5.96" data-track-index="2" data-track-kind="graphics"
+        data-start="17.82" data-duration="5.03" data-track-index="2" data-track-kind="graphics"
         data-width="1080" data-height="1920" style="z-index:2"></div>
       <div id="b5" data-composition-id="b5" data-composition-src="compositions/b5.html"
-        data-start="23.74" data-duration="5.69" data-track-index="2" data-track-kind="graphics"
+        data-start="22.85" data-duration="7.29" data-track-index="2" data-track-kind="graphics"
         data-width="1080" data-height="1920" style="z-index:2"></div>
       <div id="b6" data-composition-id="b6" data-composition-src="compositions/b6.html"
-        data-start="29.43" data-duration="6.73" data-track-index="2" data-track-kind="graphics"
+        data-start="30.14" data-duration="6.85" data-track-index="2" data-track-kind="graphics"
         data-width="1080" data-height="1920" style="z-index:2"></div>
-      <audio id="vo" class="clip" src="assets/narration.wav" data-start="0" data-duration="35.25"
+      <audio id="vo" class="clip" src="assets/narration.wav" data-start="0" data-duration="36.09"
         data-track-index="10" data-volume="1"></audio>
-      <audio id="amb" class="clip" src="assets/ambience.wav" data-start="0" data-duration="36.16" data-track-index="11" data-volume="1.0"></audio>
+      <audio id="amb" class="clip" src="assets/ambience.wav" data-start="0" data-duration="36.99" data-track-index="11" data-volume="1.0"></audio>
     </div>
     <script>
       window.__timelines["main"] = gsap.timeline({ paused: true });

@@ -1,18 +1,18 @@
 {
  "id": "32-dua-kingdom",
  "lines": [
-  "One king's first request to Allah... wasn't a kingdom.",
+  "Before you ask Allah for more, ask this first.",
   "Prophet Sulaiman, alayhis salaam, said: My Lord, forgive me, and grant me a kingdom such as will not belong to anyone after me.",
   "Forgiveness first... then the kingdom.",
   "And Allah gave him the wind, blowing by his command, wherever he directed.",
-  "Before you ask for more today... ask Allah for forgiveness first.",
+  "Before you ask for more today... ask Allah for forgiveness first. Then ask Him for anything.",
   "Full movie of Prophet Sulaiman, alayhis salaam: link below."
  ],
  "beats": [
   {
    "hook": true,
-   "text": "One king's first request… *wasn't a kingdom*.",
-   "ur": "اللہ سے کچھ بھی مانگ سکیں… تو پہلے کیا مانگیں گے؟",
+   "text": "Before you ask Allah for more, ask this first.",
+   "ur": "اللہ سے کچھ اور مانگنے سے پہلے… یہ مانگیں",
    "mood": {
     "warm": 0.2,
     "cool": 0
@@ -38,7 +38,7 @@
    "ur": "اے میرے رب، مجھے معاف کر دے اور مجھے وہ بادشاہی دے جو میرے بعد کسی کے لیے سزاوار نہ ہو، بیشک تو ہی اصل داتا ہے"
   },
   {
-   "text": "*Forgiveness first…* then the kingdom.",
+   "text": "Forgiveness first… then the kingdom.",
    "ur": "پہلے مغفرت… پھر بادشاہی",
    "mood": {
     "warm": 0.15,
@@ -64,8 +64,8 @@
    "ur": "تب ہم نے اس کے لیے ہوا کو مسخر کر دیا جو اس کے حکم سے نرمی کے ساتھ چلتی تھی جدھر وہ چاہتا تھا"
   },
   {
-   "text": "Before you ask for more… *ask for forgiveness first*. أَسْتَغْفِرُ اللَّهَ",
-   "ur": "آج کچھ اور مانگنے سے پہلے… مغفرت مانگیں۔ أَسْتَغْفِرُ اللَّهَ",
+   "text": "Before you ask for more… ask for forgiveness first. Then ask Him for anything. أَسْتَغْفِرُ اللَّهَ",
+   "ur": "آج کچھ اور مانگنے سے پہلے… مغفرت مانگیں۔ پھر اس سے جو چاہیں مانگیں۔ أَسْتَغْفِرُ اللَّهَ",
    "mood": {
     "warm": 0.25,
     "cool": 0
@@ -73,7 +73,7 @@
   },
   {
    "cta": true,
-   "text": "Full movie of *Prophet Sulaiman (AS)*: link below.",
+   "text": "Full movie of Prophet Sulaiman (AS): link below.",
    "ur": "حضرت سلیمان علیہ السلام کی مکمل فلم دیکھیں، لنک نیچے",
    "mood": {
     "warm": 0.25,
