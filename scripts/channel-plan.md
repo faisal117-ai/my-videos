@@ -245,7 +245,7 @@ The leak was the spoken title section after the hook ("This is the story of… F
 **Rule for every film:** hook → one open question → straight into the story. No spoken title lines; the series
 title is on screen only (on the question line). Applied first to Ibrahim EP 4 (story starts at 0:26 instead of 0:45).
 
-## Packaging rule (user, 23 Nov 2026, from a creator's 7-lessons video)
+## Packaging rule (user, 23 Nov 2026): three scores ≥ 90 from the skills — title (title.py), hook (hookscore.py), cover/thumbnail (title.py --thumb, no 3-word limit). Details in checklist.md.
 "Idea, title and thumbnail are 80% of the result": every Short and film gets 5 titles scored with title.py (best two shown
 to the user), a deliberately chosen Shorts cover frame (hook frame, set via Metricool videoCoverMilliseconds) and, for
 films, a thumbnail checked at feed size with yt-package. Only this lesson was adopted; the rest of our rules stay as they are.
