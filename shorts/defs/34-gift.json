@@ -5,7 +5,7 @@
   "The Queen of Sheba said: I will send to them a gift, and see with what the messengers return.",
   "Prophet Sulaiman, alayhis salaam, said: Do you provide me with wealth? What Allah has given me is better than what He has given you.",
   "Rather, it is you who rejoice in your gift.",
-  "What Allah gave you is worth more than any gift.",
+  "What Allah gave you is worth more than any gift. Thank Him for it today, before you ask for more.",
   "Full movie of Prophet Sulaiman, alayhis salaam: link below."
  ],
  "beats": [
@@ -71,8 +71,8 @@
    }
   },
   {
-   "text": "What Allah gave you is worth more than any gift.",
-   "ur": "جو اللہ نے آپ کو دیا، وہ ہر تحفے سے بہتر ہے",
+   "text": "What Allah gave you is worth more than any gift. Thank Him for it today.",
+   "ur": "جو اللہ نے آپ کو دیا، وہ ہر تحفے سے بہتر ہے۔ آج اس کا شکر ادا کریں",
    "mood": {
     "warm": 0.25,
     "cool": 0
@@ -106,7 +106,8 @@
   "c00a": "long/04-sulaiman/assets/gen/c00a.jpg"
  },
  "pauses": {
-  "2": 0.8
+  "2": 0.8,
+  "4": 0.6
  },
  "turn": 2,
  "hum": 4

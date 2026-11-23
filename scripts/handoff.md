@@ -290,3 +290,4 @@ A new session can recreate these for itself (send_later / create_trigger) and de
 - 23 Nov: 29-staff plain-caption file swapped in (post now 439158156, commit 1eefe17). 32-dua-kingdom: hook 'Before you ask Allah for more, ask this first.' (4.07 s; the old 'first dua' claim was not in the Quran), lesson line lengthened, 37.0 s, rendering; title to be '38:35: The Dua That Got Sulaiman (AS) the Wind 🤲'.
 - 23 Nov: 32-dua-kingdom approved, post 439171664 (uuid 2132286735951416163), Wed 16:00, title '38:35: The Dua That Got Sulaiman (AS) the Wind 🤲', cover 3950 ms. Next: dua-hi (Wed 19:00).
 - 23 Nov: 45-dua-hi approved, post 439179364 (uuid -3832382285876540682), Wed 19:00, cover 4150 ms. 33-dinars rebuilt (hook 'He threw a thousand dinars into the sea. And it arrived.', title '1 Loan, 0 Witnesses: Only Allah Saw It 🌊'), rendering. Next: gift (Thu 16:00).
+- Lesson: 34-gift was 32.2 s (under 35) when approved earlier; check LENGTH on every rebuild.
