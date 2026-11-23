@@ -283,3 +283,4 @@ A new session can recreate these for itself (send_later / create_trigger) and de
   Hindustani 438640238). Father + stars Shorts re-rendered with "5 PM" on screen (commit e9364cc; posts 438646341, 438646422); stars-hi text
   "sham 5 baje". Reminders: link swaps 17:05, published-Shorts checklists 17:20; four stale EP 3 thumbnail/translation reminders disabled.
   Weekend film slot is now 17:00 (16:00 = Short teaser, 17:30 = Short after the film).
+- 23 Nov 21:50: gold jar rebuilt (hook 'You'd never return found gold. 2 men did. Why?', plain text, 38.7 s, scorecard 92) and swapped into Tue 24 10:00 post 439089615, title 'Who Owns 1 Jar Under Sold Land? 🏺', cover 4.8 s. Lesson: on-screen hook must match spoken words (2 vs 'two' broke the highlight) — keep hook text plain.
