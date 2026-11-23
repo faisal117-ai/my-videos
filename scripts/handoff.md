@@ -269,3 +269,9 @@ A new session can recreate these for itself (send_later / create_trigger) and de
   Tue 24 staff 437912279 · Wed 25 dua 437949733 · Thu 26 gift 437949996 · Fri 27 stars 437950341 (ends "Itwar ki shaam" → Urdu Ibrahim film).
   Judge Fri 27: avg > 300 views or Urdu film +50% → keep; else stop. Sun 29 Urdu fire Short still in the old Urdu-script style.
 - 23 Nov: Sun 29 19:00 Urdu fire Short replaced by Hindustani 48-fire-hi (no spoken Arabic; post 438341074, same uuid 8528820876309056952; link swap by the Sun 29 Ibrahim UR reminder).
+- 23 Nov: packaging rule applied to all 19 Shorts Tue 24–Sun 29: cover frame = 2.0 s (videoCoverMilliseconds 2000) on every post;
+  11 titles re-scored to 94–98 (title.py): staff-hi "1 Chhote Se Keede Ne Jinnaat Ko Bataya…", dua "His 1st Dua Wasn't for a Kingdom…",
+  dua-hi "1 Dua Pehle, Phir Badshahat…", gift "1 Queen, 1 Fortune…", gift-hi "Malika Saba Ka Tohfa 1 Jawab Mein Wapas!",
+  pharaoh "Yunus 10:92: Why Was Pharaoh's Body Kept?", stars "Star, Moon, Sun: All 3 Set…", stars-hi "Sitara, Chaand, Suraj… 3 Doob Gaye!",
+  boat "1 Hole in a Poor Man's Boat…", father "Maryam 19:47: How Ibrahim (AS) Answered His Father", valley "1 Mother, 1 Baby, No Water…".
+  Post ids changed (uuids same); always getScheduledPosts before editing.
