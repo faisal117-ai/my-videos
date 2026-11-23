@@ -34,3 +34,10 @@ Callum (multilingual v2) says the غ in أَسْتَغْفِرُ اللَّهَ 
 Rule: don't voice Astaghfirullah with Callum; say "ask Allah for forgiveness" and show أَسْتَغْفِرُ اللَّهَ on screen.
 Hasbunallahu wa ni'mal wakeel passes (EN and UR). Check every Arabic phrase with the strict YES/NO check before showing the user.
 - Hindustani Shorts (23 Nov): spoken Arabic duas (Hasbunallah, Astaghfirullah) are NOT voiced; voice says the Urdu meaning, Arabic + Hindi shown on screen (Callum's ح/ع/غ are Urdu-style).
+
+## Arabic Names and duas: eleven_v3 (user approved 23 Nov 2026: "V3 is excellent")
+- Names of Allah, duas and short Arabic phrases are voiced with Callum on **eleven_v3**, written in Arabic script with full
+  vowel marks (e.g. حَسْبُنَا اللّٰهُ وَنِعْمَ الْوَكِيْلُ), then checked with speech-to-text letter by letter before use.
+- Test 23 Nov (tests/names/): v3 got 10/10 Names right (incl. ح ع غ ق) and all 4 duas (Hasbunallah, Astaghfirullah,
+  La hawla wa la quwwata illa billah, Masha'Allah). v2 (multilingual) dropped the long "aa" in Ar-Rahman: never use v2 for Arabic.
+- This replaces the earlier workaround (Arabic shown on screen only). English Shorts may voice the Arabic phrase as a v3 clip.
