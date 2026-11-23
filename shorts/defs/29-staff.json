@@ -1,7 +1,7 @@
 {
  "id": "29-staff",
  "lines": [
-  "The jinn didn't even know their king had died.",
+  "You think jinn know your future? They never knew their king had died.",
   "Even the jinn worked for Prophet Sulaiman, alayhis salaam.",
   "And when We decreed for him death, nothing indicated to the jinn his death except a creature of the earth eating his staff.",
   "But when he fell... it became clear to the jinn that if they had known the unseen, they would not have remained in humiliating punishment.",
@@ -11,14 +11,13 @@
  "beats": [
   {
    "hook": true,
-   "text": "The jinn didn't even know *their king had died*.",
-   "ur": "جن آپ کا مستقبل جانتے ہیں؟ انہیں تو اپنے بادشاہ کی موت کا بھی پتہ نہ چلا",
+   "text": "You think jinn know your future? They never knew their king had died.",
+   "ur": "آپ سمجھتے ہیں جن آپ کا مستقبل جانتے ہیں؟ انہیں تو اپنے بادشاہ کی موت کا بھی پتہ نہ چلا",
    "mood": {
     "warm": 0.1,
     "cool": 0.05
    },
-   "reveal": false,
-   "sub": "So who knows your future?"
+   "reveal": false
   },
   {
    "text": "Even the jinn worked for *Prophet Sulaiman (AS)*.",
