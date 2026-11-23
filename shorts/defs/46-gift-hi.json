@@ -11,7 +11,7 @@
  "beats": [
   {
    "hook": true,
-   "text": "A queen sent *a fortune*.",
+   "text": "A queen sent a fortune.",
    "sub": "Malika ka khazana wapas kyun bheja?",
    "ur": "ایک ملکہ نے بادشاہ کو خزانہ بھیجا۔ اس نے سب واپس کر دیا",
    "mood": {
@@ -76,7 +76,7 @@
    "hi": "तुम्हारा हदिया तुम्हीं को मुबारक रहे"
   },
   {
-   "text": "What Allah gave you is worth more than *any gift*.",
+   "text": "What Allah gave you is worth more than any gift.",
    "ur": "جو اللہ نے آپ کو دیا، وہ ہر تحفے سے بہتر ہے",
    "mood": {
     "warm": 0.25,
@@ -86,7 +86,7 @@
   },
   {
    "cta": true,
-   "text": "Full movie of *Prophet Sulaiman (AS)*: link below.",
+   "text": "Full movie of Prophet Sulaiman (AS): link below.",
    "ur": "حضرت سلیمان علیہ السلام کی مکمل فلم دیکھیں، لنک نیچے",
    "mood": {
     "warm": 0.25,

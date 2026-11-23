@@ -11,7 +11,7 @@
  "beats": [
   {
    "hook": true,
-   "text": "The jinn didn't even know *their king had died*.",
+   "text": "The jinn didn't even know their king had died.",
    "ur": "جن آپ کا مستقبل جانتے ہیں؟ انہیں تو اپنے بادشاہ کی موت کا بھی پتہ نہ چلا",
    "mood": {
     "warm": 0.1,
@@ -22,7 +22,7 @@
    "hi": "जिन्नात को भी पता न चला… कि उनका बादशाह फ़ौत हो चुका है"
   },
   {
-   "text": "Even the jinn worked for *Prophet Sulaiman (AS)*.",
+   "text": "Even the jinn worked for Prophet Sulaiman (AS).",
    "ur": "جن بھی حضرت سلیمان علیہ السلام کے لیے کام کرتے تھے، ان کے رب کے حکم سے",
    "mood": {
     "warm": 0.15,
@@ -70,7 +70,7 @@
    "hi": "जिन्नों पर यह बात खुल गई कि अगर वे ग़ैब के जानने वाले होते तो इस ज़िल्लत के अज़ाब में मुब्तिला न रहते"
   },
   {
-   "text": "Only *Allah* knows the unseen. Trust Him alone.",
+   "text": "Only Allah knows the unseen. Trust Him alone.",
    "ur": "غیب صرف اللہ جانتا ہے۔ بھروسہ صرف اسی پر",
    "mood": {
     "warm": 0.25,
@@ -80,7 +80,7 @@
   },
   {
    "cta": true,
-   "text": "Full movie of *Prophet Sulaiman (AS)*: link below.",
+   "text": "Full movie of Prophet Sulaiman (AS): link below.",
    "ur": "حضرت سلیمان علیہ السلام کی مکمل فلم دیکھیں، لنک نیچے",
    "mood": {
     "warm": 0.25,

@@ -11,7 +11,7 @@
  "beats": [
   {
    "hook": true,
-   "text": "Thrown into a fire. *Four words.*",
+   "text": "Thrown into a fire. Four words.",
    "ur": "آگ میں پھینکا گیا… اور اس نے چار لفظ کہے",
    "mood": {
     "warm": 0.3,
@@ -69,7 +69,7 @@
    "hi": "ऐ आग, ठंडी हो जा और सलामती बन जा इब्राहीम पर"
   },
   {
-   "text": "When you're afraid today… *say his words*.",
+   "text": "When you're afraid today… say his words.",
    "ur": "آج جب ڈر لگے… یہی الفاظ کہیں",
    "mood": {
     "warm": 0.2,
@@ -79,7 +79,7 @@
   },
   {
    "cta": true,
-   "text": "Full movie of *Prophet Ibrahim (AS)*: link below.",
+   "text": "Full movie of Prophet Ibrahim (AS): link below.",
    "ur": "حضرت ابراہیم علیہ السلام کی مکمل فلم دیکھیں، لنک نیچے",
    "mood": {
     "warm": 0.25,

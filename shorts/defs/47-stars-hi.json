@@ -11,7 +11,7 @@
  "beats": [
   {
    "hook": true,
-   "text": "Every star he watched… *set*.",
+   "text": "Every star he watched… set.",
    "ur": "اس نے ستاروں کو ڈوبتے دیکھا… اور اسے پا لیا جو کبھی نہیں ڈوبتا",
    "mood": {
     "warm": 0.1,
@@ -40,7 +40,7 @@
    "hi": "जब रात उन पर तारी हुई तो उन्होंने एक तारा देखा, कहा यह मेरा रब है, मगर जब वह डूब गया तो बोले: डूब जाने वालों का तो मैं गिरवीदा नहीं हूँ"
   },
   {
-   "text": "The moon set. *The sun set too.*",
+   "text": "The moon set. The sun set too.",
    "ur": "چاند نکلا… اور ڈوب گیا۔ سورج بھی ڈوب گیا",
    "mood": {
     "warm": 0.15,
@@ -68,7 +68,7 @@
    "hi": "मैंने तो यकसू होकर अपना रुख़ उस हस्ती की तरफ़ कर लिया जिसने ज़मीन और आसमानों को पैदा किया है"
   },
   {
-   "text": "Everything you lean on will set. *Lean on the One who never does.*",
+   "text": "Everything you lean on will set. Lean on the One who never does.",
    "ur": "جس پر بھی سہارا لیں، وہ ڈوب جائے گا۔ اس پر سہارا لیں جو کبھی نہیں ڈوبتا",
    "mood": {
     "warm": 0.25,
@@ -78,7 +78,7 @@
   },
   {
    "cta": true,
-   "text": "The full movie of *Prophet Ibrahim (AS)*: Sunday, 6:30 PM. Follow.",
+   "text": "The full movie of Prophet Ibrahim (AS): Sunday, 6:30 PM. Follow.",
    "ur": "حضرت ابراہیم علیہ السلام کی مکمل فلم: اس ہفتے۔ فالو کریں",
    "mood": {
     "warm": 0.25,
