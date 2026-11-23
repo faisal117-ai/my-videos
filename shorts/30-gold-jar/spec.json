@@ -111,9 +111,8 @@
  "beats": [
   {
    "hook": true,
-   "text": "*Gold.* Under land you just bought.",
-   "sub": "Whose is it?",
-   "ur": "آپ کی خریدی ہوئی زمین میں سونے کا مٹکا… کس کا ہے؟",
+   "text": "You'd never risk returning *found gold*. But 2 men did. Why?",
+   "ur": "آپ ملا ہوا سونا واپس کرنے کا خطرہ کبھی نہ لیتے… مگر دو آدمیوں نے لیا۔ کیوں؟",
    "mood": {
     "warm": 0.2,
     "cool": 0

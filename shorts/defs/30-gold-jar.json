@@ -1,7 +1,7 @@
 {
  "id": "30-gold-jar",
  "lines": [
-  "Gold. Under land you just bought. Whose is it?",
+  "You'd never risk returning found gold. But two men did. Why?",
   "The Prophet, peace be upon him, told us: the buyer said, take your gold. I bought the land, not the gold.",
   "The seller said: I sold you the land, and everything in it. Neither would take it.",
   "A judge said: Marry your boy to his girl. Spend on them from it, and give in charity.",
@@ -11,9 +11,8 @@
  "beats": [
   {
    "hook": true,
-   "text": "*Gold.* Under land you just bought.",
-   "sub": "Whose is it?",
-   "ur": "آپ کی خریدی ہوئی زمین میں سونے کا مٹکا… کس کا ہے؟",
+   "text": "You'd never risk returning *found gold*. But 2 men did. Why?",
+   "ur": "آپ ملا ہوا سونا واپس کرنے کا خطرہ کبھی نہ لیتے… مگر دو آدمیوں نے لیا۔ کیوں؟",
    "mood": {
     "warm": 0.2,
     "cool": 0
