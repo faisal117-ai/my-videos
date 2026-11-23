@@ -11,9 +11,8 @@
  "beats": [
   {
    "hook": true,
-   "text": "They saw *the sea split*.",
-   "sub": "Then they bowed to a calf.",
-   "ur": "آپ کے لیے سمندر پھٹ گیا… کیا پھر بھی آپ کسی مورت کو سجدہ کریں گے؟",
+   "text": "They saw the sea split. Then they bowed to a calf.",
+   "ur": "انہوں نے سمندر پھٹتے دیکھا… پھر بھی بچھڑے کو پوجنے لگے",
    "mood": {
     "warm": 0.2,
     "cool": 0
