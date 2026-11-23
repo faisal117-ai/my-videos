@@ -16,6 +16,7 @@
     "assets/gen/s3.jpg",
     "assets/gen/s4.jpg",
     "assets/gen/s5.jpg",
+    "assets/gen/s6.jpg",
     "assets/gen/s6.jpg"
   ],
   "shakes": [
@@ -111,8 +112,8 @@
   "beats": [
     {
       "hook": true,
-      "text": "Think Allah won't forgive you? *Listen.*",
-      "ur": "سوچتے ہیں اللہ آپ کو کبھی معاف نہیں کرے گا؟ یہ آیت آپ کے لیے ہے",
+      "text": "Think Allah won't forgive you? Listen.",
+      "ur": "سوچتے ہیں اللہ آپ کو معاف نہیں کرے گا؟ سنیں",
       "mood": {
         "warm": 0.0,
         "cool": 0.12
@@ -120,7 +121,7 @@
       "reveal": false
     },
     {
-      "text": "Not “sinners”… *“O My servants.”*",
+      "text": "Not “sinners”… “O My servants.”",
       "ur": "گناہگار نہیں… اے میرے بندو",
       "mood": {
         "warm": 0.05,
@@ -189,13 +190,21 @@
       "ur": "پلٹ آؤ اپنے رب کی طرف"
     },
     {
-      "cta": true,
-      "text": "*أَسْتَغْفِرُ اللَّهَ*. Come back today. Send this to someone who needs it.",
+      "text": "أَسْتَغْفِرُ اللَّهَ. Come back to Him today. Send this to someone who needs it.",
       "ur": "آج ہی استغفار کریں اور لوٹ آئیں۔ یہ اس تک پہنچائیں جسے اس کی ضرورت ہے",
       "mood": {
         "warm": 0.3,
         "cool": 0
+      }
+    },
+    {
+      "text": "Full movies of Prophet Musa and Prophet Sulaiman (AS): link below.",
+      "ur": "حضرت موسیٰ اور حضرت سلیمان علیہما السلام کی مکمل فلمیں دیکھیں، لنک نیچے",
+      "mood": {
+        "warm": 0.3,
+        "cool": 0
       },
+      "cta": true,
       "btn": "Full movies ↓"
     }
   ]

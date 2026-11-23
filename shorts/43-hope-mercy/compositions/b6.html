@@ -1,23 +1,21 @@
 <template>
   <style>
     #b6 { position: absolute; inset: 0; }
-    #b6-wrap { position: absolute; left: 60px; right: 60px; top: 250px; bottom: 1120px;
+    #b6-wrap { position: absolute; left: 90px; right: 140px; top: 250px; bottom: 1120px;
       display: flex; flex-direction: column; justify-content: flex-start; gap: 20px; }
   </style>
   <div id="b6" data-composition-id="b6" data-width="1080" data-height="1920">
-    <div id="b6-wrap" class="clip" data-start="0" data-duration="9.45">
-      <div id="b6-cta-mark" class="mark">حق کہانیاں</div>
-      <div id="b6-txt" class="txt cta"><span class="w hi" id="b6-w0">أَسْتَغْفِرُ</span> <span class="w hi" id="b6-w1">اللَّهَ.</span> <span class="w" id="b6-w2">Come</span> <span class="w" id="b6-w3">back</span> <span class="w" id="b6-w4">today.</span> <span class="w" id="b6-w5">Send</span> <span class="w" id="b6-w6">this</span> <span class="w" id="b6-w7">to</span> <span class="w" id="b6-w8">someone</span> <span class="w" id="b6-w9">who</span> <span class="w" id="b6-w10">needs</span> <span class="w" id="b6-w11">it.</span></div>
-      <div id="b6-btn" class="btn">Full movies ↓</div>
+    <div id="b6-wrap" class="clip" data-start="0" data-duration="6.34">
+      <div id="b6-txt" class="txt"><span class="w" id="b6-w0">أَسْتَغْفِرُ</span> <span class="w" id="b6-w1">اللَّهَ.</span> <span class="w" id="b6-w2">Come</span> <span class="w" id="b6-w3">back</span> <span class="w" id="b6-w4">to</span> <span class="w" id="b6-w5">Him</span> <span class="w" id="b6-w6">today.</span> <span class="w" id="b6-w7">Send</span> <span class="w" id="b6-w8">this</span> <span class="w" id="b6-w9">to</span> <span class="w" id="b6-w10">someone</span> <span class="w" id="b6-w11">who</span> <span class="w" id="b6-w12">needs</span> <span class="w" id="b6-w13">it.</span></div>
       <div id="b6-ur" class="ur" dir="rtl" lang="ur" data-layout-allow-overflow>آج ہی استغفار کریں اور لوٹ آئیں۔ یہ اس تک پہنچائیں جسے اس کی ضرورت ہے</div>
     </div>
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
-    tl.fromTo("#b6-cta-mark", {opacity: 0, scale: 0.92}, {opacity: 1, scale: 1, duration: 0.8, ease: "power2.out"}, 0);
-    tl.fromTo("#b6 .w", {opacity: 0, y: 18}, {opacity: 1, y: 0, duration: 0.35, ease: "power2.out", stagger: 0.473}, 0.15);
-    tl.fromTo("#b6-btn", {opacity: 0, y: 24}, {opacity: 1, y: 0, duration: 0.5, ease: "back.out(1.6)"}, 0.5);
+    tl.fromTo("#b6 .w", {opacity: 0, y: 22, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.32, ease: "power2.out", stagger: 0.340}, 0.12);
+    tl.fromTo("#b6 .hi", {textShadow: "0 0 0px rgba(0,0,0,0)"}, {textShadow: "0 0 28px var(--accent)", duration: 0.6, ease: "power1.out"}, 3.05);
     tl.fromTo("#b6-ur", {opacity: 0, y: 10}, {opacity: 1, y: 0, duration: 0.35, ease: "power2.out"}, 0.15);
+    tl.fromTo("#b6-wrap", {opacity: 1}, {opacity: 0, duration: 0.22, ease: "power1.in"}, 6.10);
     window.__timelines["b6"] = tl;
   </script>
 </template>

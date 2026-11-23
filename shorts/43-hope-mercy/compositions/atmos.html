@@ -27,64 +27,70 @@
     #brand span { color: #f2b04a; }
   </style>
   <div id="atmos" data-composition-id="atmos" data-width="1080" data-height="1920" data-layout-allow-overflow>
-    <div id="sky" class="clip" data-start="0" data-duration="31.88"></div>
+    <div id="sky" class="clip" data-start="0" data-duration="36.76"></div>
 
-    <div id="phsc" class="clip" data-start="0" data-duration="31.88"><div id="ph0" class="ph"><img src="assets/gen/s1.jpg" alt=""></div><div id="ph1" class="ph"><img src="assets/gen/s2.jpg" alt=""></div><div id="ph2" class="ph"><img src="assets/gen/s3.jpg" alt=""></div><div id="ph3" class="ph"><img src="assets/gen/s4.jpg" alt=""></div><div id="ph4" class="ph"><img src="assets/gen/s5.jpg" alt=""></div><div id="ph5" class="ph"><img src="assets/gen/s6.jpg" alt=""></div><div id="phg0" class="phglow"></div><div id="phg1" class="phglow"></div><div id="phshade"></div></div>
-    <div id="warm" class="clip" data-start="0" data-duration="31.88"><div id="warm-g" style="opacity:0.0"><div id="warm-b"></div></div></div>
-    <div id="cool" class="clip" data-start="0" data-duration="31.88"><div id="cool-g" style="opacity:0.12"></div></div>
-    <div id="embers" class="clip" data-start="0" data-duration="31.88"><div id="embers-g" style="opacity:0.35">
+    <div id="phsc" class="clip" data-start="0" data-duration="36.76"><div id="ph0" class="ph"><img src="assets/gen/s1.jpg" alt=""></div><div id="ph1" class="ph"><img src="assets/gen/s2.jpg" alt=""></div><div id="ph2" class="ph"><img src="assets/gen/s3.jpg" alt=""></div><div id="ph3" class="ph"><img src="assets/gen/s4.jpg" alt=""></div><div id="ph4" class="ph"><img src="assets/gen/s5.jpg" alt=""></div><div id="ph5" class="ph"><img src="assets/gen/s6.jpg" alt=""></div><div id="ph6" class="ph"><img src="assets/gen/s6.jpg" alt=""></div><div id="phg0" class="phglow"></div><div id="phg1" class="phglow"></div><div id="phshade"></div></div>
+    <div id="warm" class="clip" data-start="0" data-duration="36.76"><div id="warm-g" style="opacity:0.0"><div id="warm-b"></div></div></div>
+    <div id="cool" class="clip" data-start="0" data-duration="36.76"><div id="cool-g" style="opacity:0.12"></div></div>
+    <div id="embers" class="clip" data-start="0" data-duration="36.76"><div id="embers-g" style="opacity:0.35">
       
     </div></div>
-    <div id="vig" class="clip" data-start="0" data-duration="31.88"></div>
+    <div id="vig" class="clip" data-start="0" data-duration="36.76"></div>
     <div id="flash-host" class="clip" data-start="0" data-duration="0.6"><div id="flash"></div></div>
-    <div id="brand" class="clip" data-start="0" data-duration="31.88">HAQ <span>·</span> STORIES</div>
+    <div id="brand" class="clip" data-start="0" data-duration="36.76">HAQ <span>·</span> STORIES</div>
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
     tl.fromTo("#flash", {opacity: 0.0}, {opacity: 0, duration: 0.55, ease: "power2.out"}, 0);
     tl.set("#ph0", {opacity: 1}, 0);
-    tl.fromTo("#ph0", {scale: 1.0, x: 0}, {scale: 1.08, x: 0, duration: 4.27, ease: "none", immediateRender: false}, 0.00);
-    tl.to("#ph0", {opacity: 0, duration: 0.3, immediateRender: false}, 3.87);
-    tl.fromTo("#ph1", {opacity: 0}, {opacity: 1, duration: 0.7, ease: "sine.inOut", immediateRender: false}, 3.17);
-    tl.fromTo("#ph1", {scale: 1.08, x: -20}, {scale: 1.0, x: 20, duration: 6.05, ease: "none", immediateRender: false}, 3.17);
-    tl.to("#ph1", {opacity: 0, duration: 0.3, immediateRender: false}, 9.02);
-    tl.fromTo("#ph2", {opacity: 0}, {opacity: 1, duration: 0.7, ease: "sine.inOut", immediateRender: false}, 8.32);
-    tl.fromTo("#ph2", {scale: 1.0, x: 0}, {scale: 1.08, x: 0, duration: 7.46, ease: "none", immediateRender: false}, 8.32);
-    tl.to("#ph2", {opacity: 0, duration: 0.3, immediateRender: false}, 15.58);
-    tl.fromTo("#ph3", {opacity: 0}, {opacity: 1, duration: 0.7, ease: "sine.inOut", immediateRender: false}, 14.88);
-    tl.fromTo("#ph3", {scale: 1.08, x: -20}, {scale: 1.0, x: 20, duration: 5.32, ease: "none", immediateRender: false}, 14.88);
-    tl.to("#ph3", {opacity: 0, duration: 0.3, immediateRender: false}, 20.00);
-    tl.fromTo("#ph4", {opacity: 0}, {opacity: 1, duration: 0.7, ease: "sine.inOut", immediateRender: false}, 19.30);
-    tl.fromTo("#ph4", {scale: 1.0, x: 0}, {scale: 1.08, x: 0, duration: 3.83, ease: "none", immediateRender: false}, 19.30);
-    tl.to("#ph4", {opacity: 0, duration: 0.3, immediateRender: false}, 22.93);
-    tl.fromTo("#ph5", {opacity: 0}, {opacity: 1, duration: 0.7, ease: "sine.inOut", immediateRender: false}, 22.23);
-    tl.fromTo("#ph5", {scale: 1.08, x: -20}, {scale: 1.0, x: 20, duration: 10.35, ease: "none", immediateRender: false}, 22.23);
+    tl.fromTo("#ph0", {scale: 1.0, x: 0}, {scale: 1.08, x: 0, duration: 4.35, ease: "none", immediateRender: false}, 0.00);
+    tl.to("#ph0", {opacity: 0, duration: 0.3, immediateRender: false}, 3.95);
+    tl.fromTo("#ph1", {opacity: 0}, {opacity: 1, duration: 0.7, ease: "sine.inOut", immediateRender: false}, 3.25);
+    tl.fromTo("#ph1", {scale: 1.08, x: -20}, {scale: 1.0, x: 20, duration: 6.26, ease: "none", immediateRender: false}, 3.25);
+    tl.to("#ph1", {opacity: 0, duration: 0.3, immediateRender: false}, 9.31);
+    tl.fromTo("#ph2", {opacity: 0}, {opacity: 1, duration: 0.7, ease: "sine.inOut", immediateRender: false}, 8.61);
+    tl.fromTo("#ph2", {scale: 1.0, x: 0}, {scale: 1.08, x: 0, duration: 7.41, ease: "none", immediateRender: false}, 8.61);
+    tl.to("#ph2", {opacity: 0, duration: 0.3, immediateRender: false}, 15.82);
+    tl.fromTo("#ph3", {opacity: 0}, {opacity: 1, duration: 0.7, ease: "sine.inOut", immediateRender: false}, 15.12);
+    tl.fromTo("#ph3", {scale: 1.08, x: -20}, {scale: 1.0, x: 20, duration: 5.01, ease: "none", immediateRender: false}, 15.12);
+    tl.to("#ph3", {opacity: 0, duration: 0.3, immediateRender: false}, 19.93);
+    tl.fromTo("#ph4", {opacity: 0}, {opacity: 1, duration: 0.7, ease: "sine.inOut", immediateRender: false}, 19.23);
+    tl.fromTo("#ph4", {scale: 1.0, x: 0}, {scale: 1.08, x: 0, duration: 3.64, ease: "none", immediateRender: false}, 19.23);
+    tl.to("#ph4", {opacity: 0, duration: 0.3, immediateRender: false}, 22.67);
+    tl.fromTo("#ph5", {opacity: 0}, {opacity: 1, duration: 0.7, ease: "sine.inOut", immediateRender: false}, 21.97);
+    tl.fromTo("#ph5", {scale: 1.08, x: -20}, {scale: 1.0, x: 20, duration: 7.24, ease: "none", immediateRender: false}, 21.97);
+    tl.to("#ph5", {opacity: 0, duration: 0.3, immediateRender: false}, 29.01);
+    tl.fromTo("#ph6", {opacity: 0}, {opacity: 1, duration: 0.7, ease: "sine.inOut", immediateRender: false}, 28.31);
+    tl.fromTo("#ph6", {scale: 1.0, x: 0}, {scale: 1.08, x: 0, duration: 9.15, ease: "none", immediateRender: false}, 28.31);
     tl.fromTo("#phsc", {x: 0, y: 0}, {x: 8, y: 4.8, duration: 0.05, yoyo: true, repeat: 20, ease: "none", immediateRender: false}, 0.30);
     tl.to("#phsc", {x: 0, y: 0, duration: 0.08}, 1.35);
-    tl.fromTo("#phsc", {x: 0, y: 0}, {x: 10, y: 6.0, duration: 0.05, yoyo: true, repeat: 26, ease: "none", immediateRender: false}, 15.08);
-    tl.to("#phsc", {x: 0, y: 0, duration: 0.08}, 16.53);
-    tl.fromTo("#phg0", {opacity: 0}, {keyframes: [{opacity: 0.25, duration: 1.05, ease: "power2.out"}, {opacity: 0, duration: 1.95, ease: "sine.in"}], immediateRender: false}, 15.18);
-    tl.fromTo("#phg1", {opacity: 0}, {keyframes: [{opacity: 0.25, duration: 1.22, ease: "power2.out"}, {opacity: 0, duration: 2.27, ease: "sine.in"}], immediateRender: false}, 19.70);
-    tl.fromTo("#warm-b", {scaleY: 1}, {scaleY: 1.06, duration: 0.8, ease: "sine.inOut", yoyo: true, repeat: 19}, 0);
-    tl.fromTo("#warm-g", {opacity: 0.0}, {opacity: 0.05, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 3.37);
-    tl.fromTo("#cool-g", {opacity: 0.12}, {opacity: 0.08, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 3.37);
-    tl.fromTo("#embers-g", {opacity: 0.35}, {opacity: 0.35, duration: 0.9, immediateRender: false}, 3.37);
-    tl.fromTo("#warm-g", {opacity: 0.05}, {opacity: 0.15, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 8.52);
-    tl.fromTo("#cool-g", {opacity: 0.08}, {opacity: 0, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 8.52);
-    tl.fromTo("#embers-g", {opacity: 0.35}, {opacity: 0.35, duration: 0.9, immediateRender: false}, 8.52);
-    tl.fromTo("#warm-g", {opacity: 0.15}, {opacity: 0.25, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 15.08);
-    tl.fromTo("#cool-g", {opacity: 0}, {opacity: 0, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 15.08);
-    tl.fromTo("#embers-g", {opacity: 0.35}, {opacity: 0.35, duration: 0.9, immediateRender: false}, 15.08);
-    tl.fromTo("#warm-g", {opacity: 0.25}, {opacity: 0.25, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 19.50);
-    tl.fromTo("#cool-g", {opacity: 0}, {opacity: 0, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 19.50);
-    tl.fromTo("#embers-g", {opacity: 0.35}, {opacity: 0.35, duration: 0.9, immediateRender: false}, 19.50);
-    tl.fromTo("#warm-g", {opacity: 0.25}, {opacity: 0.3, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 22.43);
-    tl.fromTo("#cool-g", {opacity: 0}, {opacity: 0, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 22.43);
-    tl.fromTo("#embers-g", {opacity: 0.35}, {opacity: 0.42, duration: 0.9, immediateRender: false}, 22.43);
+    tl.fromTo("#phsc", {x: 0, y: 0}, {x: 10, y: 6.0, duration: 0.05, yoyo: true, repeat: 26, ease: "none", immediateRender: false}, 15.32);
+    tl.to("#phsc", {x: 0, y: 0, duration: 0.08}, 16.77);
+    tl.fromTo("#phg0", {opacity: 0}, {keyframes: [{opacity: 0.25, duration: 1.05, ease: "power2.out"}, {opacity: 0, duration: 1.95, ease: "sine.in"}], immediateRender: false}, 15.42);
+    tl.fromTo("#phg1", {opacity: 0}, {keyframes: [{opacity: 0.25, duration: 1.22, ease: "power2.out"}, {opacity: 0, duration: 2.27, ease: "sine.in"}], immediateRender: false}, 19.63);
+    tl.fromTo("#warm-b", {scaleY: 1}, {scaleY: 1.06, duration: 0.8, ease: "sine.inOut", yoyo: true, repeat: 22}, 0);
+    tl.fromTo("#warm-g", {opacity: 0.0}, {opacity: 0.05, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 3.45);
+    tl.fromTo("#cool-g", {opacity: 0.12}, {opacity: 0.08, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 3.45);
+    tl.fromTo("#embers-g", {opacity: 0.35}, {opacity: 0.35, duration: 0.9, immediateRender: false}, 3.45);
+    tl.fromTo("#warm-g", {opacity: 0.05}, {opacity: 0.15, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 8.81);
+    tl.fromTo("#cool-g", {opacity: 0.08}, {opacity: 0, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 8.81);
+    tl.fromTo("#embers-g", {opacity: 0.35}, {opacity: 0.35, duration: 0.9, immediateRender: false}, 8.81);
+    tl.fromTo("#warm-g", {opacity: 0.15}, {opacity: 0.25, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 15.32);
+    tl.fromTo("#cool-g", {opacity: 0}, {opacity: 0, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 15.32);
+    tl.fromTo("#embers-g", {opacity: 0.35}, {opacity: 0.35, duration: 0.9, immediateRender: false}, 15.32);
+    tl.fromTo("#warm-g", {opacity: 0.25}, {opacity: 0.25, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 19.43);
+    tl.fromTo("#cool-g", {opacity: 0}, {opacity: 0, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 19.43);
+    tl.fromTo("#embers-g", {opacity: 0.35}, {opacity: 0.35, duration: 0.9, immediateRender: false}, 19.43);
+    tl.fromTo("#warm-g", {opacity: 0.25}, {opacity: 0.3, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 22.17);
+    tl.fromTo("#cool-g", {opacity: 0}, {opacity: 0, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 22.17);
+    tl.fromTo("#embers-g", {opacity: 0.35}, {opacity: 0.42, duration: 0.9, immediateRender: false}, 22.17);
+    tl.fromTo("#warm-g", {opacity: 0.3}, {opacity: 0.3, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 28.51);
+    tl.fromTo("#cool-g", {opacity: 0}, {opacity: 0, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 28.51);
+    tl.fromTo("#embers-g", {opacity: 0.42}, {opacity: 0.42, duration: 0.9, immediateRender: false}, 28.51);
     const et = gsap.timeline({ paused: true });
     
     // Sparks are already mid-flight on frame 0: play their own timeline from 7 s in.
-    tl.add(et.tweenFromTo(7, 38.88, { ease: "none" }), 0);
+    tl.add(et.tweenFromTo(7, 43.76, { ease: "none" }), 0);
     window.__timelines["atmos"] = tl;
   </script>
 </template>
