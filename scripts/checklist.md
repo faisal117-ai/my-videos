@@ -32,7 +32,7 @@ Report the result (each line ✅ or ❌ + fix) to the user together with the vid
 - [ ] **Three scores from the skills' own tools (user's formal rule, 23 Nov 2026): title ≥ 90, hook ≥ 75 (rule C), cover ≥ 90; Short < 45 s. Show exact text + scores, wait for approval, then build:**
       1. **Title** — yt-package `title.py --title "<title>"` ≥ 90 (5 written, best 2 shown).
       2. **Hook** (first spoken line) — yt-script `hookscore.py --hook "<line>"` VERDICT **≥ 75** (rule C, user 23 Nov):
-         must contain "you" and real stakes, sound natural, and be spoken in **≤ 5 s** (about 12 words). 5 written, best 2 shown.
+         must contain "you" and real stakes, sound natural, and be spoken in **≤ 3 s** (about 7 words; scorecard below). 5 written, best 2 shown.
       3. **Cover frame / film thumbnail** — yt-package `title.py --title "<title>" --thumb "<words on the cover>"` ≥ 90.
          The user removed the three-word limit: ignore the `thumb-length` flag (add its 14 points back); every other
          check stands, above all **the cover words must not repeat the title's words**.
@@ -53,3 +53,21 @@ Report which skills ran with each video. Skills live in the session list (anthro
 - [ ] **Description + tags:** `yt-seo`.
 - [ ] **Films:** `yt-chapters` validates the chapter list.
 - [ ] **After publishing:** `yt-comment` drafts replies; `yt-retention` on each retention chart the user sends; `yt-audit` once a month; `dataviz` / `docs` for any report.
+
+## Short scorecard (user's formal rubric, 23 Nov 2026) — score every Short /100 before showing it
+| Area | Weight | Pass condition |
+|---|---|---|
+| Hook (0–3 s) | 30 | On-screen text + visual work on mute; "you" + stakes; spoken in **≤ 3 s** |
+| Story payoff / lesson | 25 | Clear twist and an explicit moral in the final 15–30 s |
+| Retention / pacing | 20 | No dead air; one idea; loop intentional |
+| Packaging (title + cover) | 15 | One promise; no repetition between title and cover; keyword-rich (title.py ≥ 90, pair ≥ 90) |
+| Accuracy / sourcing | 10 | Every claim sourced (Quran / sahih); no fabrication |
+
+## Film targets (check in the Friday review)
+| Metric | Target | Tells you |
+|---|---|---|
+| CTR | 4–10 % (6 % avg); < 3 % = packaging problem | Do thumbnail + title earn the click? |
+| AVD (% viewed) | 40–60 % depending on length | Does the film deliver the promise? |
+| First-30 s retention | 70 %+ | Did the opening survive the cliff? |
+| Session contribution | viewers keep watching after | Will YouTube recommend it further? |
+| Returning viewers / subs from video | rising trend | Is it building loyalty? |
