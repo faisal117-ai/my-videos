@@ -38,7 +38,7 @@ Report the result (each line ✅ or ❌ + fix) to the user together with the vid
       - Shorts cover = the frame set by `videoCoverMilliseconds` (hook words fully on screen, never a verse card or a
         dark frame). Film thumbnail also checked at feed size for one clear focal point and no holy figure.
 - [ ] Description first line "🎥 Watch the full movie: … 👉 link"; **Related video → the film set in Studio on EVERY Short after it goes live** (audit 21 Nov: the one fix); pinned film-link comment; AI-content box ticked.
-- [ ] Evening Shorts 17:00, morning 11:00, films 18:30 PKT; 7 days scheduled ahead.
+- [ ] Shorts 10:00 and 16:00 PKT (audience peaks), films Sat/Sun 17:00 with a Short at 17:30; 7 days scheduled ahead. No title/description edits in a Short's first 24 h.
 
 ## Skills: use every stored skill that applies (user's rule, 19 Nov 2026)
 Report which skills ran with each video. Skills live in the session list (anthropic-skills:yt-*, stickman, deep-research, dataviz, docs).
