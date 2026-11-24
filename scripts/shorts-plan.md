@@ -195,3 +195,19 @@ half of the English Shorts' views within 4 weeks.
   "Follow · a Quran story daily" (stories). TEST: only on today's Shorts (Tue 24: 29-staff 16:00, 44-staff-hi 19:00);
   the user decides from their response; otherwise it starts with next week's batch. Never a spoken "like and subscribe".
 - Pinned comment: a heartfelt question ("Write the one dua you need answered today 🤲") + film link.
+
+## FORMAT v2 (user approved 25 Nov 2026) — every Short from Wed 25 Nov
+Second by second (30–35 s, 70–80 words):
+| Time | Beat | Picture & effect | Sound |
+|---|---|---|---|
+| 0–3.5 s | Hook: ≤ 10 words on screen from frame 0; "you" + stakes or a surprising claim | one strong image, key object visible, punch-in | hit at frame 0 |
+| 3.5–9 s | Set-up: the fear/situation in 1–2 short lines | new image or fast push-in every ≤ 4 s | soundscape; soft riser into the verse |
+| 9–15 s | The verse: ONE card (Arabic + English big, Urdu small, ref chip), key phrase, ~6 s | transformation (dark→light) + light bloom | humming starts; hit on the key words |
+| 15–20 s | Punch line, 3–5 words | close-up / second shot | humming swells |
+| 20–29 s | Lesson to "you", answers the hook | bright image, slow drift | humming |
+| 29–32 s | Ending ≤ 3 s: comfort "Send this to someone who needs it." / story "Full movie below." (film button shown during the lesson) | last frame leads back to the first (loop) | soft release |
+Slots: 10:00 story → film, 16:00 comfort (≈4 comfort : 3 dua-with-answer per week).
+Scorecard /100: Hook 40 (frame-0 text, ≤ 10 words, you+stakes or surprise in 2 s, spoken ≤ 3.5 s, not a description) ·
+Payoff 25 (one verse = the twist, punch line, lesson to "you" answering the hook) · Retention 20 (change every ≤ 4 s,
+transformation at the turn, sound event 8–18 s, humming from the verse, ending ≤ 3 s, 30–35 s, no beat > 6 s) ·
+Packaging 5 (title ≥ 90, pair ≥ 90) · Accuracy 10. After publishing: stayed-to-watch target 50 %+, average view 70 %+.

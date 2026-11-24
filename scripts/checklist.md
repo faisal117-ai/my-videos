@@ -55,6 +55,8 @@ Report which skills ran with each video. Skills live in the session list (anthro
 - [ ] **Films:** `yt-chapters` validates the chapter list.
 - [ ] **After publishing:** `yt-comment` drafts replies; `yt-retention` on each retention chart the user sends; `yt-audit` once a month; `dataviz` / `docs` for any report.
 
+- [ ] **FORMAT v2 (25 Nov):** hook ≤ 10 words/≤ 3.5 s · one verse card ~6 s · punch line · change every ≤ 4 s · transformation at the turn · sound event 8–18 s · humming from the verse · ending ≤ 3 s · 30–35 s (shorts-plan.md).
+
 ## Short scorecard (user's formal rubric, 23 Nov 2026) — score every Short /100 before showing it
 | Area | Weight | Pass condition |
 |---|---|---|

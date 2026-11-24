@@ -28,15 +28,15 @@ Skills that have nothing to do with videos (keyboard shortcuts, config, code rev
 ## Rules that never bend (details in checklist.md)
 - Never show a prophet, the Prophet ﷺ, a Companion, a righteous woman, an angel or jinn in any form.
 - Only what the Quran / sahih sources say. Honorific on every name, in voice and on screen.
-- Shorts 35–45 s (never over 45 s). Hook in 5 s, a question held open, suspense, the core message (dua / mercy / gratitude), a real closing lesson,
+- Shorts 30–45 s, aim 30–35 (never over 45 s; user 25 Nov, FORMAT v2 in shorts-plan.md). Hook in 5 s, a question held open, suspense, the core message (dua / mercy / gratitude), a real closing lesson,
   and the ending "Watch the full movie(s) of <named film(s)>, link(s) below".
 - House style = shorts/24-cave (20 Nov; see shorts-plan.md). Gemini scenes for every Short and film; captions in the top band. No instrumental music (voice-only humming is fine).
 - Arabic phrases in Arabic script in the TTS text, checked with speech-to-text. Callum narrates.
 - After render: `tools/mix.py`. AI-content box ticked. Shorts 11:00 / 17:00, films 18:30 PKT.
 - **Every Short and film is scored before it reaches the user (user's rule, 23 Nov 2026; details in checklist.md):**
   Short scorecard /100 (Hook 40 · Payoff/lesson 25 · Retention/pacing 20 · Packaging 5 · Accuracy 10), with the hook rule:
-  hook text on screen from frame 0 over one strong image (works on mute), "you" + stakes OR a surprising claim/contradiction in the first 2 s, spoken hook ≤ 4 s
-  (aim 3), never a plain description. Title ≥ 90 and title+cover pair ≥ 90 (yt-package title.py, no 3-word limit).
+  hook text on screen from frame 0 over one strong image (works on mute), ≤ 10 words, "you" + stakes OR a surprising claim/contradiction in the first 2 s, spoken hook ≤ 3.5 s,
+  never a plain description. Build every Short to FORMAT v2 (shorts-plan.md: one verse card, punch line, change every ≤ 4 s, transformation at the turn, humming from the verse, ending ≤ 3 s). Title ≥ 90 and title+cover pair ≥ 90 (yt-package title.py, no 3-word limit).
   **Films follow `scripts/film-guidelines.md` (user, 23 Nov), NOT the Shorts hook/scorecard rules:** packaging (one subject,
   ≤ 4 elements, no repeated words), first 30 s (no intro, promise, loop, hook done by 0:30), moral-epic structure,
   interrupts every 45–90 s, re-hooks, 8–15 min, bulletproof sourcing, the chain; judged Friday on CTR 4–10 %, AVD 40–60 %,
