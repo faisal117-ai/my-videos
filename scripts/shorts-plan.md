@@ -213,6 +213,9 @@ transformation at the turn, sound event 8–18 s, humming from the verse, ending
 Packaging 5 (title ≥ 90, pair ≥ 90) · Accuracy 10. After publishing: stayed-to-watch target 50 %+, average view 70 %+.
 
 ## Brightness (user approved 25 Nov 2026, part of FORMAT v2)
+**Pictures (user 25 Nov):** every Short picture is DAYLIGHT: clear late-morning light, blue sky, white sun, true
+colours; no sunset/golden-hour/brown cast; rooms lit by morning sun. tools/gen_scenes.py adds this to every prompt
+(scenes.json "light": "day" default; list a hardship scene in "dark_keys" to let it be dark). Films are not bound by this.
 Lighter top shade (~30 %), golden hour / dawn / soft daylight by default, dark only for the hardship beat, a bright warm
 first frame with the key object, ~70 % of runtime bright; the transformation starts at ~85 % brightness and ends bright
 and warm (110–115 %). Brightness supports the hook; it does not replace it (17 Nov test).

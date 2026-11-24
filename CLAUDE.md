@@ -9,8 +9,10 @@ Every new rule the user gives goes into THIS file the same turn (not only into s
 2. Compare the rule version with the best version and recommend as the channel owner.
 3. Check length (Shorts 30–45 s, aim 30–35), honorifics, no holy figure in any image (Gemini prompts say NO PEOPLE for
    any scene tied to a holy figure), Arabic voiced with eleven_v3 + speech-to-text check, plain captions (no *chip*).
-4. Shorts are BRIGHT (user 25 Nov): warm golden-hour/dawn/daylight scenes, a bright first frame with the key object,
-   ~70 % of runtime bright; dark only for the one hardship beat; the turn goes from ~85 % to bright and warm.
+4. Shorts are BRIGHT (user 25 Nov): clear late-morning DAYLIGHT pictures (blue sky, white sunlight, true colours; NO
+   sunset/golden-hour/orange/brown cast, no dark rooms — rooms get morning sun). Gemini prompts say so (gen_scenes.py
+   `--light day`, the default for Shorts). Bright first frame with the key object (fire keeps its flames, in daylight);
+   ~70 % of runtime bright; dark/warm only for the one hardship beat; the turn goes from ~85 % to bright; neutral grade.
 5. FORMAT v2 for every Short (shorts-plan.md); films follow scripts/film-guidelines.md (not the Shorts rules).
 6. Slots: 10:00 story → film, 16:00 comfort (≈4 comfort : 3 dua-with-answer); films Sat EN / Sun UR 17:00. No Hindustani twins.
 7. Every change: commit and push to the branch AND main; log it in scripts/handoff.md.

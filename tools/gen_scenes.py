@@ -8,6 +8,9 @@ from PIL import Image, ImageEnhance
 RULES = ("Ordinary people only; no prophets, no religious or holy figures, no halos, no angels, no women as the "
          "focus, no close-up portraits. No text, no letters, no writing, no logos. ")
 MODEL = "gemini-2.5-flash-image"
+# Shorts rule (user 25 Nov 2026): daylight pictures, no sunset/brown cast. scenes.json "light": "day" (default) | "free"
+DAY = ("Lighting: bright clear late-morning daylight, light-blue sky, neutral white sunlight, true natural colours; "
+       "no sunset, no golden hour, no orange or brown cast, no dark interiors (rooms lit by morning sun). ")
 
 def trim_bars(im):
     """Crop black letterbox/pillarbox bars Gemini sometimes adds."""
@@ -36,7 +39,7 @@ def trim_flat(im):
 
 
 def gen(d, cfg, k):
-    body = {"contents": [{"parts": [{"text": cfg["style"] + " " + RULES + cfg["scenes"][k]}]}],
+    body = {"contents": [{"parts": [{"text": cfg["style"] + " " + RULES + (DAY if cfg.get("light", "day") == "day" and k not in cfg.get("dark_keys", []) else "") + cfg["scenes"][k]}]}],
             "generationConfig": {"responseModalities": ["IMAGE"], "imageConfig": {"aspectRatio": cfg.get("aspect", "9:16")}}}
     out = subprocess.run(["curl", "-sS", "-H", "x-goog-api-key: proxy-injected", "-H", "Content-Type: application/json",
                           "-d", json.dumps(body), f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent"],
