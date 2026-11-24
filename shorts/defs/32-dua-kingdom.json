@@ -2,11 +2,10 @@
  "id": "32-dua-kingdom",
  "lines": [
   "Before you ask Allah for more, ask this first.",
-  "Prophet Sulaiman, alayhis salaam, said: My Lord, forgive me, and grant me a kingdom such as will not belong to anyone after me.",
-  "Forgiveness first... then the kingdom.",
-  "And Allah gave him the wind, blowing by his command, wherever he directed.",
-  "Before you ask for more today... ask Allah for forgiveness first. Then ask Him for anything.",
-  "Full movie of Prophet Sulaiman, alayhis salaam: link below."
+  "A king was about to ask for a kingdom like no other. Listen to how he began.",
+  "Prophet Sulaiman, alayhis salaam, prayed: My Lord, forgive me... and grant me a kingdom.",
+  "Forgiveness first. Then the kingdom.",
+  "So before you ask for more today, say it first: أَسْتَغْفِرُ اللَّهَ. Send this to someone who needs it."
  ],
  "beats": [
   {
@@ -20,107 +19,62 @@
    "reveal": false
   },
   {
+   "text": "A kingdom like no other… listen to how he began.",
+   "ur": "ایسی بادشاہی جو کسی کو نہ ملی… سنیں انہوں نے دعا کیسے شروع کی",
+   "mood": {
+    "warm": 0.1,
+    "cool": 0.05
+   }
+  },
+  {
    "q": "38:35",
    "ar_words": [
     2,
-    15
+    12
    ],
-   "en": "My Lord, forgive me and grant me a kingdom such as will not belong to anyone after me. Indeed, You are the Bestower",
+   "en": "My Lord, forgive me and grant me a kingdom such as will not belong to anyone after me",
    "ur_a": [
     "اے میرے رب",
-    "اصل داتا ہے"
+    "سزاوار نہ ہو"
    ],
    "ref": "Saad 38:35",
    "mood": {
     "warm": 0.2,
     "cool": 0
-   },
-   "ur": "اے میرے رب، مجھے معاف کر دے اور مجھے وہ بادشاہی دے جو میرے بعد کسی کے لیے سزاوار نہ ہو، بیشک تو ہی اصل داتا ہے"
+   }
   },
   {
-   "text": "Forgiveness first… then the kingdom.",
+   "text": "Forgiveness first. Then the kingdom.",
    "ur": "پہلے مغفرت… پھر بادشاہی",
    "mood": {
-    "warm": 0.15,
-    "cool": 0
-   }
-  },
-  {
-   "q": "38:36",
-   "ar_words": [
-    1,
-    8
-   ],
-   "en": "So We subjected to him the wind blowing by his command, gently, wherever he directed",
-   "ur_a": [
-    "تب ہم نے",
-    "وہ چاہتا تھا"
-   ],
-   "ref": "Saad 38:36",
-   "mood": {
-    "warm": 0.2,
-    "cool": 0
-   },
-   "ur": "تب ہم نے اس کے لیے ہوا کو مسخر کر دیا جو اس کے حکم سے نرمی کے ساتھ چلتی تھی جدھر وہ چاہتا تھا"
-  },
-  {
-   "text": "Before you ask for more… ask for forgiveness first. Then ask Him for anything. أَسْتَغْفِرُ اللَّهَ",
-   "ur": "آج کچھ اور مانگنے سے پہلے… مغفرت مانگیں۔ پھر اس سے جو چاہیں مانگیں۔ أَسْتَغْفِرُ اللَّهَ",
-   "mood": {
-    "warm": 0.25,
-    "cool": 0
-   }
-  },
-  {
-   "cta": true,
-   "text": "Full movie of Prophet Sulaiman (AS): link below.",
-   "ur": "حضرت سلیمان علیہ السلام کی مکمل فلم دیکھیں، لنک نیچے",
-   "mood": {
     "warm": 0.25,
     "cool": 0
    },
-   "btn": "Full movie ↓"
+   "size": 110
+  },
+  {
+   "text": "Before you ask for more today… say it first: أَسْتَغْفِرُ اللَّهَ",
+   "ur": "آج کچھ اور مانگنے سے پہلے… یہ کہیں: أَسْتَغْفِرُ اللَّهَ",
+   "mood": {
+    "warm": 0.3,
+    "cool": 0
+   },
+   "stay": true
   }
  ],
  "photos": [
   "c00a",
-  "c00b",
   "c02a",
-  "c02b",
   "c12a",
+  "c02b",
   "c12b"
  ],
  "pauses": {
-  "2": 0.8
+  "2": 0.5,
+  "3": 0.6,
+  "4": 0.6
  },
  "turn": 2,
- "hum": 4,
- "shakes": [
-  {
-   "beat": 0,
-   "at": 0.3,
-   "amp": 8,
-   "dur": 1.0
-  },
-  {
-   "beat": 3,
-   "at": 0.0,
-   "amp": 6,
-   "dur": 1.0
-  }
- ],
- "glows": [
-  {
-   "beat": 2,
-   "at": 0.1,
-   "dur": 2.5,
-   "peak": 0.6
-  },
-  {
-   "beat": 4,
-   "at": 0.2,
-   "dur": 3.0,
-   "peak": 0.85
-  }
- ]
+ "hum": 2,
+ "v2": true
 }
