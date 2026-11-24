@@ -1,0 +1,21 @@
+<template>
+  <style>
+    #b1 { position: absolute; inset: 0; }
+    #b1-wrap { position: absolute; left: 90px; right: 140px; top: 250px; bottom: 1120px;
+      display: flex; flex-direction: column; justify-content: flex-start; gap: 20px; }
+  </style>
+  <div id="b1" data-composition-id="b1" data-width="1080" data-height="1920">
+    <div id="b1-wrap" class="clip" data-start="0" data-duration="4.27">
+      <div id="b1-txt" class="txt hook"><span class="w" id="b1-w0">Trapped,</span> <span class="w" id="b1-w1">no</span> <span class="w" id="b1-w2">way</span> <span class="w" id="b1-w3">out?</span> <span class="w" id="b1-w4">Say</span> <span class="w" id="b1-w5">what</span> <span class="w" id="b1-w6">he</span> <span class="w" id="b1-w7">said</span> <span class="w" id="b1-w8">at</span> <span class="w" id="b1-w9">the</span> <span class="w" id="b1-w10">sea.</span></div>
+      <div id="b1-ur" class="ur" dir="rtl" lang="ur" data-layout-allow-overflow>پھنس گئے، کوئی راستہ نہیں؟ وہ کہیں جو انہوں نے سمندر کے کنارے کہا</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#b1-txt", {scale: 1.18}, {scale: 1, duration: 0.35, ease: "back.out(2)"}, 0);
+    tl.fromTo("#b1 .hi", {textShadow: "0 0 0px rgba(0,0,0,0)"}, {textShadow: "0 0 28px var(--accent)", duration: 0.6, ease: "power1.out"}, 1.96);
+    tl.fromTo("#b1-ur", {opacity: 0, y: 10}, {opacity: 1, y: 0, duration: 0.35, ease: "power2.out"}, 0.15);
+    tl.fromTo("#b1-wrap", {opacity: 1}, {opacity: 0, duration: 0.22, ease: "power1.in"}, 4.03);
+    window.__timelines["b1"] = tl;
+  </script>
+</template>

@@ -1,0 +1,211 @@
+{
+  "accent": "#f2b04a",
+  "embers": false,
+  "motes": 0.35,
+  "mote": "#f6dcae",
+  "flash": 0.0,
+  "bed_volume": 1.0,
+  "hold_end": 1.2,
+  "text_top": 300,
+  "text_bottom": 780,
+  "tr_size": 56,
+  "scene": "photos",
+  "photos": [
+    "assets/gen/s1.jpg",
+    "assets/gen/s2.jpg",
+    "assets/gen/s3.jpg",
+    "assets/gen/s3.jpg",
+    "assets/gen/s4.jpg",
+    "assets/gen/s5.jpg",
+    "assets/gen/s5.jpg"
+  ],
+  "shakes": [
+    {
+      "beat": 0,
+      "at": 0.3,
+      "amp": 8,
+      "dur": 1.0
+    },
+    {
+      "beat": 3,
+      "at": 0.0,
+      "amp": 10,
+      "dur": 1.4
+    }
+  ],
+  "glows": [
+    {
+      "beat": 3,
+      "at": 0.1,
+      "dur": 3.0,
+      "peak": 0.25
+    },
+    {
+      "beat": 4,
+      "at": 0.2,
+      "dur": 3.5,
+      "peak": 0.25
+    }
+  ],
+  "sound": [
+    {
+      "prompt": "lib",
+      "src": "../../long/01-yusuf/assets/sfx/992f69b875be.mp3",
+      "beat": 0,
+      "offset": 0,
+      "dur": 100,
+      "gain": -17,
+      "fade_in": 0.5,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "lib",
+      "src": "../03-cave/assets/sfx/03b5f68efefc.mp3",
+      "beat": 0,
+      "offset": 0.2,
+      "dur": 3,
+      "gain": -13,
+      "fade_in": 0.02,
+      "fade_out": 1
+    },
+    {
+      "prompt": "lib",
+      "src": "../../long/04-sulaiman/assets/sfx/93fa1b20e45f.mp3",
+      "beat": 1,
+      "offset": 0,
+      "dur": 8,
+      "gain": -13,
+      "fade_in": 0.5,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "lib",
+      "src": "../../long/04-sulaiman/assets/sfx/72cc4baec592.mp3",
+      "beat": 3,
+      "offset": -3.6,
+      "dur": 3.8,
+      "gain": -8,
+      "fade_in": 0.4,
+      "fade_out": 0.3
+    },
+    {
+      "prompt": "lib",
+      "src": "../../long/04-sulaiman/assets/sfx/f0b78dedaad6.mp3",
+      "beat": 3,
+      "offset": 0,
+      "dur": 4,
+      "gain": -7,
+      "fade_in": 0.02,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "lib",
+      "src": "../06-ant/assets/sfx/cabf6e6577de.mp3",
+      "beat": 4,
+      "offset": 0,
+      "dur": 30,
+      "gain": -13,
+      "fade_in": 1.0,
+      "fade_out": 1.5
+    }
+  ],
+  "beats": [
+    {
+      "hook": true,
+      "text": "Trapped, no way out? Say what he said at the sea.",
+      "ur": "پھنس گئے، کوئی راستہ نہیں؟ وہ کہیں جو انہوں نے سمندر کے کنارے کہا",
+      "mood": {
+        "warm": 0.0,
+        "cool": 0.14
+      },
+      "reveal": false
+    },
+    {
+      "text": "The sea in front. Pharaoh's army behind.",
+      "ur": "آگے سمندر، پیچھے فرعون کا لشکر",
+      "mood": {
+        "warm": 0.0,
+        "cool": 0.12
+      },
+      "ref": "Ash-Shu'ara 26:60–61"
+    },
+    {
+      "q": "26:61",
+      "ar_words": [
+        1,
+        8
+      ],
+      "en": "And when the two companies saw one another, the companions of Moses said, \"Indeed, we are to be overtaken",
+      "ur_a": [
+        "جب دونوں",
+        "پکڑے گئے"
+      ],
+      "ref": "Ash-Shu'ara 26:61",
+      "mood": {
+        "warm": 0.0,
+        "cool": 0.1
+      },
+      "arabic": "فَلَمَّا تَرَـٰٓءَا ٱلۡجَمۡعَانِ قَالَ أَصۡحَٰبُ مُوسَىٰٓ إِنَّا لَمُدۡرَكُونَ",
+      "translation": "“And when the two companies saw one another, the companions of Moses [Musa] said, \"Indeed, we are to be overtaken”",
+      "ur": "جب دونوں گروہوں کا آمنا سامنا ہوا تو موسیٰؑ کے ساتھی چیخ اٹھے کہ ہم تو پکڑے گئے"
+    },
+    {
+      "q": "26:62",
+      "ar_words": [
+        1,
+        6
+      ],
+      "en": "[Moses] said, \"No! Indeed, with me is my Lord; He will guide me",
+      "ur_a": [
+        "موسیٰؑ نے",
+        "فرمائے گا"
+      ],
+      "ref": "Ash-Shu'ara 26:62",
+      "mood": {
+        "warm": 0.15,
+        "cool": 0
+      },
+      "arabic": "قَالَ كَلَّآۖ إِنَّ مَعِيَ رَبِّي سَيَهۡدِينِ",
+      "translation": "“[Moses [Musa]] said, \"No! Indeed, with me is my Lord; He will guide me”",
+      "ur": "موسیٰؑ نے کہا ہرگز نہیں میرے ساتھ میرا رب ہے وہ ضرور میری رہنمائی فرمائے گا"
+    },
+    {
+      "q": "26:63",
+      "ar_words": [
+        1,
+        12
+      ],
+      "en": "Then We inspired to Moses, \"Strike with your staff the sea,\" and it parted, and each portion was like a great towering mountain",
+      "ur_a": [
+        "ہم نے",
+        "طرح ہو گیا"
+      ],
+      "ref": "Ash-Shu'ara 26:63",
+      "mood": {
+        "warm": 0.25,
+        "cool": 0
+      },
+      "arabic": "فَأَوۡحَيۡنَآ إِلَىٰ مُوسَىٰٓ أَنِ ٱضۡرِب بِّعَصَاكَ ٱلۡبَحۡرَۖ فَٱنفَلَقَ فَكَانَ كُلُّ فِرۡقࣲ كَٱلطَّوۡدِ",
+      "translation": "“Then We inspired to Moses [Musa], \"Strike with your staff the sea,\" and it parted, and each portion was like a great towering mountain”",
+      "ur": "ہم نے موسیٰؑ کو وحی کے ذریعہ سے حکم دیا کہ مار اپنا عصا سمندر پر یکایک سمندر پھَٹ گیا اور اس کا ہر ٹکڑا ایک عظیم الشان پہاڑ کی طرح ہو گیا"
+    },
+    {
+      "text": "Facing a dead end today? Say it with certainty: my Lord is with me. Send this to someone who needs it.",
+      "ur": "آج کوئی راستہ نظر نہیں آتا؟ یقین سے کہیں: میرا رب میرے ساتھ ہے۔ یہ اس تک پہنچائیں جسے ضرورت ہے",
+      "mood": {
+        "warm": 0.3,
+        "cool": 0
+      }
+    },
+    {
+      "text": "Full movie of Prophet Musa (AS): link below.",
+      "ur": "حضرت موسیٰ علیہ السلام کی مکمل فلم دیکھیں، لنک نیچے",
+      "mood": {
+        "warm": 0.3,
+        "cool": 0
+      },
+      "cta": true,
+      "btn": "Full movie ↓"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+ "style": "High-quality 3D animated feature film still, close to photoreal (modern big-studio animation look), rich detail, cinematic lighting and depth of field. Vertical 9:16, keep the top third fairly simple and dark-to-plain (text sits there), the action in the lower two thirds. ABSOLUTELY NO PEOPLE, no human figures, no silhouettes anywhere.",
+ "scenes": {
+  "s1": "A narrow empty shore at night between a vast dark stormy sea and high dunes, one beam of moonlight on the water, a feeling of being trapped.",
+  "s2": "From an empty beach at dusk, a dark sea ahead; far behind on the dunes, a long line of tiny torch lights and dust clouds of an approaching army, no figures visible.",
+  "s3": "A wide dark sea under heavy clouds, waves rising, one small break in the clouds letting a golden ray fall on the water.",
+  "s4": "The sea parted into two towering walls of water like mountains, a dry seabed path between them glowing in dawn light, no one on the path.",
+  "s5": "A calm sea at sunrise, gentle golden light on the water, an empty sandy shore and a single staff-shaped driftwood lying on the sand, peaceful."
+ },
+ "aspect": "9:16"
+}
