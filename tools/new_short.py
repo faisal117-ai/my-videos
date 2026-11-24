@@ -95,7 +95,7 @@ def main():
     run("tools/build_short.py", str(d))
     end = json.loads((d / "assets/timings.json").read_text(encoding="utf-8"))[-1]["end"] + spec["hold_end"]
     words = sum(len(l.split()) for l in D["lines"])
-    print(f"LENGTH {end:.1f}s, {words} words" + ("  ** OVER 45 s: cut it **" if end > 45.5 else "  ok (35-45 s rule)"))
+    print(f"LENGTH {end:.1f}s, {words} words" + ("  ** OVER 45 s: cut it **" if end > 45.5 else "  ok (30-45 s rule)"))
 
 
 if __name__ == "__main__":

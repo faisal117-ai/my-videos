@@ -14,12 +14,13 @@
     "assets/gen/s1.jpg",
     "assets/gen/s4.jpg",
     "assets/gen/s5.jpg",
-    "assets/gen/s7.jpg",
+    "assets/gen/s4.jpg",
     "assets/gen/s9.jpg"
   ],
   "push": 0.12,
   "shot2": 4.5,
   "transform": 2,
+  "bright": true,
   "shakes": [
     {
       "beat": 0,
