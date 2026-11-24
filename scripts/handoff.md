@@ -321,3 +321,9 @@ A new session can recreate these for itself (send_later / create_trigger) and de
 - 24 Nov 18:35: owner decision (user delegated): keep 44-staff-hi at 19:00 tonight (completes the Hindustani test; no real effect on the English Short's reach).
 - 24 Nov: first audience request (comment on the staff Short): viewer asked for 'the ones who struggle and ease by Allah' → supports the comfort-Short plan; replied promising Mon 30 sea Short.
 - 24 Nov: comfort-verse Shorts get Related video = 'Ease With Every Hardship' https://youtube.com/shorts/wSX3fbkqLwo (to re-surface it); story Shorts keep the film. Daily 20:47 reminder (trig_01XLLkNEZn59tEPvcyXsdzom) updated.
+- 25 Nov ~01:30 PKT: user deleted the 4 Hindustani Short posts (Hindustani test ended). Plan for Wed 25 → Tue 1 (user): story Shorts 10:00 (→ film), comfort Shorts 16:00:
+  Wed calf | dua 38:35 · Thu gift | 39:53 · Fri Pharaoh | stars · Sat father | boat + film EN 17:00 + fire 17:30 ·
+  Sun Dawud | valley + film UR 17:00 · Mon dinars | sea 26:62 · Tue (Friday review) | near 2:186.
+  All rebuilt with template v2 (hook ≤10 words/≤3.5 s, 1 verse card ~6 s, punch line, transformation at the turn,
+  change every ≤4 s, humming from the verse, sound event 8–18 s, ending ≤3 s, 30–35 s); each sent for approval, then
+  swapped (with its new time) into Metricool. Until swapped, the current versions stay scheduled as the fallback.
