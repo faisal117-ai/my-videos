@@ -250,3 +250,17 @@ title is on screen only (on the question line). Applied first to Ibrahim EP 4 (s
 to the user), a deliberately chosen Shorts cover frame (hook frame, set via Metricool videoCoverMilliseconds) and, for
 films, a thumbnail checked at feed size with yt-package. Only this lesson was adopted; the rest of our rules stay as they are.
 - Film targets (23 Nov 2026): CTR 4–10 %, AVD 40–60 %, first-30 s retention 70 %+, session contribution, returning viewers/subs; checked every Friday (checklist.md).
+
+## Growth plan (user approved 24 Nov 2026)
+1. Shorts: 2 a day: 10:00 comfort verse (one verse, "you", "send this to someone"; a recognisable series opening),
+   16:00 one-moment miracle pointing to a film. Hook rule + scorecard on every Short. Stop the Hindustani test at the
+   Friday review if it averages < 300 views.
+2. Shorts feed films: user sets Related video = matching film on each Short after it goes live; pinned film comment;
+   one "Stories of the Prophets" playlist in episode order; end screens chain film → next film.
+3. Films: 1 a week (EN + UR), 10–12 min, built to scripts/film-guidelines.md. Keep the Urdu film only if Sulaiman/Ibrahim
+   UR earn ~200+ organic views; otherwise spend that time on an extra comfort Short (decide at the Friday review).
+4. Comments: I draft replies daily with yt-comment; the user posts them within 24 h.
+5. No more paid ads (ad watch hours don't count for YPP; Musa ads brought ~3 subs).
+6. Cross-post the same Shorts to Instagram Reels / Facebook through Metricool (check the networks are connected first).
+7. Every Friday: stayed-to-watch % per Short, Earn tab, film views → one change a week.
+4-week target (to 22 Dec): stayed-to-watch 50 %+, one Short > 10k, films ~500 organic views each, 10+ subs a day.
