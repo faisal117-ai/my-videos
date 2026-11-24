@@ -29,7 +29,7 @@ Skills that have nothing to do with videos (keyboard shortcuts, config, code rev
 - Never show a prophet, the Prophet ﷺ, a Companion, a righteous woman, an angel or jinn in any form.
 - Only what the Quran / sahih sources say. Honorific on every name, in voice and on screen.
 - Shorts 30–45 s, aim 30–35 (never over 45 s; user 25 Nov, FORMAT v2 in shorts-plan.md). Hook in 5 s, a question held open, suspense, the core message (dua / mercy / gratitude), a real closing lesson,
-  and the ending "Watch the full movie(s) of <named film(s)>, link(s) below".
+  and the ending "Watch the full movie(s) of <named film(s)>, link(s) below" (story Shorts) or "Send this to someone who needs it" (comfort Shorts, film link in description/Related video).
 - House style = shorts/24-cave (20 Nov; see shorts-plan.md). Gemini scenes for every Short and film; captions in the top band. No instrumental music (voice-only humming is fine).
 - Arabic phrases in Arabic script in the TTS text, checked with speech-to-text. Callum narrates.
 - After render: `tools/mix.py`. AI-content box ticked. Shorts 11:00 / 17:00, films 18:30 PKT.

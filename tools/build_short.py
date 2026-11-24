@@ -158,7 +158,7 @@ def beat_html(i: int, beat: dict, dur: float, spoken: float, accent: str) -> str
                   f'{{opacity: 1, y: 0, duration: 0.45, ease: "power2.out"}}, 0.35);')
 
     # Every beat but the last leaves the same way, landing just before its end.
-    if not beat.get("cta"):
+    if not beat.get("cta") and not beat.get("stay"):
         js.append(f'tl.fromTo("#{bid}-wrap", {{opacity: 1}}, {{opacity: 0, duration: 0.22, ease: "power1.in"}}, {dur - 0.24:.2f});')
 
     body = "\n      ".join(parts)
@@ -1695,6 +1695,9 @@ def photos_scene(spec, beats, total):
                     f'style="width:100%;height:100%;object-fit:cover;display:block"></video></div>')
         return f'<div id="ph{i}" class="ph"><img src="{src}" alt=""></div>'
     layers = "".join(layer(i) for i in range(len(beats)))
+    if spec.get("shot2"):  # second (closer) shot layers, origin low-centre where the subject usually is
+        layers += "".join(f'<div id="ph{i}b" class="ph" style="transform-origin:50% 68%"><img src="{photos[i]}" alt=""></div>'
+                          for i, b in enumerate(beats) if b["dur"] > spec["shot2"] and not photos[i].endswith(".mp4"))
     markup = f"""
     <div id="phsc" class="clip" data-start="0" data-duration="{total:.2f}">{layers}<div id="phshade"></div></div>"""
     js = []
@@ -1704,12 +1707,28 @@ def photos_scene(spec, beats, total):
             js.append(f'tl.set("#ph0", {{opacity: 1}}, 0);')
         else:
             js.append(fade(f"#ph{i}", 0, 1, a - 0.2, 0.7))
-        frm, to = ("scale: 1.0, x: 0", "scale: 1.08, x: 0") if i % 2 == 0 else ("scale: 1.08, x: -20", "scale: 1.0, x: 20")
+        push = spec.get("push", 0.08)  # FORMAT v2: 0.12 (visible movement every beat)
+        frm, to = (("scale: 1.0, x: 0", f"scale: {1 + push:.2f}, x: 0") if i % 2 == 0
+                   else (f"scale: {1 + push:.2f}, x: -20", "scale: 1.0, x: 20"))
         if photos[i].endswith(".mp4"):
             frm, to = "scale: 1.0, x: 0", "scale: 1.02, x: 0"
         js.append(f'tl.fromTo("#ph{i}", {{{frm}}}, {{{to}, duration: {d + 0.9:.2f}, ease: "none", immediateRender: false}}, {max(0, a - 0.2):.2f});')
+        shot2 = spec.get("shot2", 0)  # FORMAT v2: a second, closer shot of the same still on beats longer than this
+        if shot2 and d > shot2 and not photos[i].endswith(".mp4"):
+            m = a + d / 2
+            js.append(f'tl.fromTo("#ph{i}b", {{opacity: 0, scale: 1.28}}, {{opacity: 1, scale: 1.36, duration: 0.5, immediateRender: false}}, {m - 0.25:.2f});')
+            js.append(f'tl.fromTo("#ph{i}b", {{scale: 1.36}}, {{scale: 1.44, duration: {d / 2 + 0.6:.2f}, ease: "none", immediateRender: false}}, {m + 0.25:.2f});')
+            if i + 1 < len(beats):
+                js.append(f'tl.to("#ph{i}b", {{opacity: 0, duration: 0.3, immediateRender: false}}, {beats[i + 1]["start"] + 0.5:.2f});')
         if i + 1 < len(beats):
             js.append(f'tl.to("#ph{i}", {{opacity: 0, duration: 0.3, immediateRender: false}}, {beats[i + 1]["start"] + 0.5:.2f});')
+    tr = spec.get("transform")  # FORMAT v2: dark → light at the turn (e.g. storm → sunrise), on the whole picture
+    if tr is not None:
+        t0 = beats[tr]["start"] - 0.2
+        if tr > 0:
+            js.append(f'tl.set("#phsc", {{filter: "brightness(0.72) saturate(0.75) hue-rotate(-8deg)"}}, 0);')
+        js.append(f'tl.fromTo("#phsc", {{filter: "brightness(0.72) saturate(0.75) hue-rotate(-8deg)"}}, '
+                  f'{{filter: "brightness(1.1) saturate(1.18) hue-rotate(0deg)", duration: 1.8, ease: "power2.out", immediateRender: false}}, {t0:.2f});')
     sb = spec.get("shake_beat")
     if sb is not None:
         s0 = beats[sb]["start"] + 0.3

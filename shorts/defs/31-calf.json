@@ -1,17 +1,16 @@
 {
  "id": "31-calf",
  "lines": [
-  "They saw the sea split. Then they bowed to a calf.",
-  "While Prophet Musa, alayhis salaam, was away forty nights, the Samiri made them a calf. And they said: This is your god.",
-  "Did they not see that it could not return to them any speech, nor harm, nor benefit?",
-  "Musa, alayhis salaam, said: We will surely burn it, and blow it into the sea.",
-  "A god that can't answer you is no god. Turn to the One who answers.",
-  "Full movie of Prophet Musa, alayhis salaam: link below."
+  "They saw the sea split. Then bowed to a calf.",
+  "Forty nights without Prophet Musa, alayhis salaam... and the Samiri made them a calf.",
+  "Allah asks: Did they not see it could not answer them, nor harm them, nor help them?",
+  "It couldn't even answer.",
+  "Whatever you run to instead of Allah... can't answer you either. Only He answers. Full movie below."
  ],
  "beats": [
   {
    "hook": true,
-   "text": "They saw the sea split. Then they bowed to a calf.",
+   "text": "They saw the sea split. Then bowed to a calf.",
    "ur": "انہوں نے سمندر پھٹتے دیکھا… پھر بھی بچھڑے کو پوجنے لگے",
    "mood": {
     "warm": 0.2,
@@ -20,13 +19,13 @@
    "reveal": false
   },
   {
-   "text": "While Musa (AS) was away forty nights… a calf.",
-   "ur": "موسیٰ علیہ السلام چالیس راتوں کے لیے گئے… اور ایک بچھڑا",
+   "text": "40 nights without Musa (AS)… and the Samiri made them a calf.",
+   "ur": "موسیٰ علیہ السلام کے بغیر چالیس راتیں… اور سامری نے انہیں ایک بچھڑا بنا دیا",
    "mood": {
     "warm": 0.05,
     "cool": 0.08
    },
-   "ref": "Taha 20:88"
+   "ref": "Taha 20:85–88"
   },
   {
    "q": "20:89",
@@ -47,31 +46,23 @@
    "ur": "کیا وہ نہ دیکھتے تھے کہ نہ وہ اُن کی بات کا جواب دیتا ہے اور نہ ان کے نفع و نقصان کا کچھ اختیار رکھتا ہے"
   },
   {
-   "text": "“We will surely burn it, and blow it into the sea.”",
-   "ur": "ہم اسے جلا ڈالیں گے، اور دریا میں بہا دیں گے",
+   "text": "It couldn't even answer.",
+   "ur": "وہ جواب تک نہ دے سکتا تھا",
    "mood": {
     "warm": 0.15,
     "cool": 0
    },
-   "ref": "Taha 20:97"
+   "size": 110
   },
   {
-   "text": "A god that can't answer, harm or help… is no god. Turn to the One who answers.",
-   "ur": "جو نہ جواب دے، نہ نقصان، نہ فائدہ… وہ خدا نہیں۔ اس کی طرف رجوع کریں جو جواب دیتا ہے",
+   "text": "Whatever you run to instead of Allah can't answer you either. Only He answers.",
+   "ur": "اللہ کے سوا جس کی طرف بھی بھاگیں، وہ جواب نہیں دے سکتا۔ صرف وہی جواب دیتا ہے",
    "mood": {
-    "warm": 0.25,
-    "cool": 0
-   }
-  },
-  {
-   "cta": true,
-   "text": "Full movie of Prophet Musa (AS): link below.",
-   "ur": "حضرت موسیٰ علیہ السلام کی مکمل فلم دیکھیں، لنک نیچے",
-   "mood": {
-    "warm": 0.25,
+    "warm": 0.3,
     "cool": 0
    },
-   "btn": "Full movie ↓"
+   "follow": "Full movie ↓",
+   "stay": true
   }
  ],
  "photos": [
@@ -79,34 +70,14 @@
   "s4",
   "s5",
   "s7",
-  "s9",
   "s9"
  ],
  "pauses": {
-  "3": 0.8
+  "2": 0.5,
+  "3": 0.4,
+  "4": 0.4
  },
- "turn": 3,
- "hum": 4,
- "shakes": [
-  {
-   "beat": 0,
-   "at": 0.3,
-   "amp": 8,
-   "dur": 1.0
-  },
-  {
-   "beat": 3,
-   "at": 0.3,
-   "amp": 12,
-   "dur": 1.6
-  }
- ],
- "glows": [
-  {
-   "beat": 4,
-   "at": 0.2,
-   "dur": 3.0,
-   "peak": 0.85
-  }
- ]
+ "turn": 2,
+ "hum": 2,
+ "v2": true
 }

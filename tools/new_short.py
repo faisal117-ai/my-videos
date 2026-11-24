@@ -72,8 +72,9 @@ def main():
         {"prompt": "lib", "src": SFX + "f0b78dedaad6.mp3", "beat": turn, "offset": 0, "dur": 4, "gain": -7, "fade_in": 0.02, "fade_out": 1.5},
         {"prompt": "lib", "src": "../06-ant/assets/sfx/cabf6e6577de.mp3", "beat": hum, "offset": 0, "dur": 30, "gain": -13, "fade_in": 1.0, "fade_out": 1.5}]
     spec = {"accent": "#f2b04a", "embers": False, "motes": 0.35, "mote": "#f6dcae", "flash": 0.0, "bed_volume": 1.0,
-            "hold_end": 1.2, "text_top": 300, "text_bottom": 780, "tr_size": 56, "scene": "photos",
+            "hold_end": D.get("hold_end", 0.3 if D.get("v2") else 1.2), "text_top": 300, "text_bottom": 780, "tr_size": 56, "scene": "photos",
             "photos": [f"assets/gen/{p}.jpg" for p in D["photos"]],
+            **({"push": 0.12, "shot2": 4.5, "transform": turn} if D.get("v2") else {}),
             "shakes": D.get("shakes", [{"beat": 0, "at": 0.3, "amp": 8, "dur": 1.0}, {"beat": turn, "at": 0.0, "amp": 10, "dur": 1.4}]),
             "glows": D.get("glows", [{"beat": turn, "at": 0.1, "dur": 3.0, "peak": 0.6}, {"beat": hum, "at": 0.2, "dur": 3.5, "peak": 0.85}]),
             "sound": D.get("sound", sound), "beats": D["beats"]}
