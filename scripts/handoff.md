@@ -335,3 +335,4 @@ A new session can recreate these for itself (send_later / create_trigger) and de
 - 25 Nov: daylight-picture rule saved (CLAUDE.md #4, shorts-plan Brightness, gen_scenes.py DAY prompt by default; dark_keys for the hardship beat).
 - 25 Nov: picture rule approved (owner version): daylight default, one dark hardship picture, sunrise only at the turn (gen_scenes dark_keys/dawn_keys). From the next Short on; this week's 14 keep their daylight lessons.
 - 25 Nov: user: apply the picture rule to this week too. Verse-card pictures relit to daylight, turn pictures (beat 3) relit to sunrise; story hardship picture (beat 1) kept. Boat/Dawud turn pictures split to s5t/s4t. Contact sheet reports/week-pictures-sunrise.jpg. Re-rendering 14.
+- 25 Nov 02:20 PKT: v2 calf swapped (post 440918395, cover 4100, commit 27a1f49) and v2 dua swapped (post 440918474, cover 4150). Frame check clean (daylight, sunrise turn, no new figures). Hook ends 4.08/4.10 s (guide 3.5; voice unchanged).
