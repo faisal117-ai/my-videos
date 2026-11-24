@@ -181,3 +181,10 @@ half of the English Shorts' views within 4 weeks.
 - Hindustani Shorts (23 Nov): no *highlight* markup in the English text line — the word pop is timed to English words and never fires on an Urdu voice.
 - All Shorts (23 Nov): no *highlight* markup on any line where the spoken words differ from the screen words — "(AS)" spoken as "alayhis salaam", digits spoken as words, "Prophet" in a phrase. The pop then misfires: random words in dark boxes, others not (seen on calf and staff). Default: plain text; highlight only a single word spoken exactly as written.
 - Scorecard (23 Nov 2026): every Short is scored /100 with the rubric in checklist.md before it is shown; hook text from frame 0, "you" + stakes in 2 s, spoken hook ≤ 4 s (aim 3).
+
+## Week plan 30 Nov – 6 Dec (user: "Ship it", 24 Nov; from reports/Viral niche 24 Nov.md)
+- 2 Shorts a day: 10:00 comfort-verse Short (one verse, "you", a promise, soft light scenes, verse on screen);
+  16:00 one-moment miracle Short with a turn, pointing to a film. Sat/Sun 17:00 film + 17:30 Short as now.
+- Comfort Shorts speak to a fear the viewer already has (hardship, sin, loneliness, loss); comfort first, story second.
+- No AI-voiced Quran recitation (translate and quote; Callum narrates).
+- Hindustani test: decide at the Friday 27 Nov review from its numbers.
