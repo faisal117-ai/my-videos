@@ -1,189 +1,173 @@
 {
- "accent": "#f2b04a",
- "embers": false,
- "motes": 0.35,
- "mote": "#f6dcae",
- "flash": 0.0,
- "bed_volume": 1.0,
- "hold_end": 1.2,
- "text_top": 300,
- "text_bottom": 780,
- "tr_size": 56,
- "scene": "photos",
- "photos": [
-  "assets/gen/s1.jpg",
-  "assets/gen/s2.jpg",
-  "assets/gen/s3.jpg",
-  "assets/gen/s4.jpg",
-  "assets/gen/s5.jpg",
-  "assets/gen/s5.jpg"
- ],
- "shakes": [
-  {
-   "beat": 0,
-   "at": 0.3,
-   "amp": 8,
-   "dur": 1.0
-  },
-  {
-   "beat": 3,
-   "at": 0.0,
-   "amp": 10,
-   "dur": 1.4
-  }
- ],
- "glows": [
-  {
-   "beat": 3,
-   "at": 0.1,
-   "dur": 3.0,
-   "peak": 0.25
-  },
-  {
-   "beat": 4,
-   "at": 0.2,
-   "dur": 3.5,
-   "peak": 0.85
-  }
- ],
- "sound": [
-  {
-   "prompt": "lib",
-   "src": "../../long/01-yusuf/assets/sfx/992f69b875be.mp3",
-   "beat": 0,
-   "offset": 0,
-   "dur": 100,
-   "gain": -17,
-   "fade_in": 0.5,
-   "fade_out": 1.5
-  },
-  {
-   "prompt": "lib",
-   "src": "../03-cave/assets/sfx/03b5f68efefc.mp3",
-   "beat": 0,
-   "offset": 0.2,
-   "dur": 3,
-   "gain": -13,
-   "fade_in": 0.02,
-   "fade_out": 1
-  },
-  {
-   "prompt": "lib",
-   "src": "../../long/04-sulaiman/assets/sfx/93fa1b20e45f.mp3",
-   "beat": 1,
-   "offset": 0,
-   "dur": 8,
-   "gain": -13,
-   "fade_in": 0.5,
-   "fade_out": 1.5
-  },
-  {
-   "prompt": "lib",
-   "src": "../../long/04-sulaiman/assets/sfx/72cc4baec592.mp3",
-   "beat": 3,
-   "offset": -3.6,
-   "dur": 3.8,
-   "gain": -8,
-   "fade_in": 0.4,
-   "fade_out": 0.3
-  },
-  {
-   "prompt": "lib",
-   "src": "../../long/04-sulaiman/assets/sfx/f0b78dedaad6.mp3",
-   "beat": 3,
-   "offset": 0,
-   "dur": 4,
-   "gain": -7,
-   "fade_in": 0.02,
-   "fade_out": 1.5
-  },
-  {
-   "prompt": "lib",
-   "src": "../06-ant/assets/sfx/cabf6e6577de.mp3",
-   "beat": 4,
-   "offset": 0,
-   "dur": 30,
-   "gain": -13,
-   "fade_in": 1.0,
-   "fade_out": 1.5
-  }
- ],
- "beats": [
-  {
-   "hook": true,
-   "text": "He broke a poor man's boat… to save it.",
-   "ur": "انہوں نے غریبوں کی کشتی توڑی… اسے بچانے کے لیے",
-   "mood": {
-    "warm": 0.1,
-    "cool": 0.08
-   },
-   "reveal": false
-  },
-  {
-   "q": "18:71",
-   "ar_words": [
-    8,
-    15
-   ],
-   "en": "Have you torn it open to drown its people? You have certainly done a grave thing",
-   "ur_a": [
-    "آپ نے اس میں",
-    "سخت حرکت کر ڈالی"
-   ],
-   "ref": "Al-Kahf 18:71",
-   "mood": {
-    "warm": 0.05,
-    "cool": 0.1
-   },
-   "arabic": "قَالَ أَخَرَقۡتَهَا لِتُغۡرِقَ أَهۡلَهَا لَقَدۡ جِئۡتَ شَيۡـًٔا إِمۡرࣰا",
-   "translation": "“Have you torn it open to drown its people? You have certainly done a grave thing”",
-   "ur": "آپ نے اس میں شگاف ڈال دیا تاکہ سب کشتی والوں کو ڈبو دیں؟ یہ تو آپ نے ایک سخت حرکت کر ڈالی"
-  },
-  {
-   "text": "Then came the reason.",
-   "ur": "پھر وجہ سامنے آئی",
-   "mood": {
-    "warm": 0.1,
-    "cool": 0
-   }
-  },
-  {
-   "q": "18:79",
-   "ar_words": [
-    1,
-    17
-   ],
-   "en": "As for the ship, it belonged to poor people working at sea. So I intended to cause defect in it as there was after them a king who seized every [good] ship by force",
-   "ur_a": [
-    "اُس کشتی کا",
-    "چھین لیتا تھا"
-   ],
-   "ref": "Al-Kahf 18:79",
-   "mood": {
-    "warm": 0.2,
-    "cool": 0
-   },
-   "arabic": "أَمَّا ٱلسَّفِينَةُ فَكَانَتۡ لِمَسَٰكِينَ يَعۡمَلُونَ فِي ٱلۡبَحۡرِ فَأَرَدتُّ أَنۡ أَعِيبَهَا وَكَانَ وَرَآءَهُم مَّلِكࣱ يَأۡخُذُ كُلَّ سَفِينَةٍ غَصۡبࣰا",
-   "translation": "“As for the ship, it belonged to poor people working at sea. So I intended to cause defect in it as there was after them a king who seized every [good] ship by force”",
-   "ur": "اُس کشتی کا معاملہ یہ ہے کہ وہ چند غریب آدمیوں کی تھی جو دریا میں محنت مزدوری کرتے تھے میں نے چاہا کہ اسے عیب دار کر دوں، کیونکہ آگے ایک ایسے بادشاہ کا علاقہ تھا جو ہر کشتی کو زبردستی چھین لیتا تھا"
-  },
-  {
-   "text": "The damage you can't understand today… may be what saves you.",
-   "ur": "جو نقصان آج سمجھ نہیں آتا… شاید وہی آپ کو بچا رہا ہو",
-   "mood": {
-    "warm": 0.25,
-    "cool": 0
-   }
-  },
-  {
-   "cta": true,
-   "text": "Full movie of Prophet Musa (AS): link below.",
-   "ur": "حضرت موسیٰ علیہ السلام کی مکمل فلم دیکھیں، لنک نیچے",
-   "mood": {
-    "warm": 0.25,
-    "cool": 0
-   },
-   "btn": "Full movie ↓"
-  }
- ]
+  "accent": "#f2b04a",
+  "embers": false,
+  "motes": 0.35,
+  "mote": "#f6dcae",
+  "flash": 0.0,
+  "bed_volume": 1.0,
+  "hold_end": 0.3,
+  "text_top": 300,
+  "text_bottom": 780,
+  "tr_size": 56,
+  "scene": "photos",
+  "photos": [
+    "assets/gen/s1.jpg",
+    "assets/gen/s2.jpg",
+    "assets/gen/s4.jpg",
+    "assets/gen/s5.jpg",
+    "assets/gen/s5.jpg"
+  ],
+  "push": 0.12,
+  "shot2": 4.5,
+  "transform": 2,
+  "bright": true,
+  "shakes": [
+    {
+      "beat": 0,
+      "at": 0.3,
+      "amp": 8,
+      "dur": 1.0
+    },
+    {
+      "beat": 2,
+      "at": 0.0,
+      "amp": 10,
+      "dur": 1.4
+    }
+  ],
+  "glows": [
+    {
+      "beat": 2,
+      "at": 0.1,
+      "dur": 3.0,
+      "peak": 0.25
+    },
+    {
+      "beat": 2,
+      "at": 0.2,
+      "dur": 3.5,
+      "peak": 0.25
+    }
+  ],
+  "sound": [
+    {
+      "prompt": "lib",
+      "src": "../../long/01-yusuf/assets/sfx/992f69b875be.mp3",
+      "beat": 0,
+      "offset": 0,
+      "dur": 100,
+      "gain": -17,
+      "fade_in": 0.5,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "lib",
+      "src": "../03-cave/assets/sfx/03b5f68efefc.mp3",
+      "beat": 0,
+      "offset": 0.2,
+      "dur": 3,
+      "gain": -13,
+      "fade_in": 0.02,
+      "fade_out": 1
+    },
+    {
+      "prompt": "lib",
+      "src": "../../long/04-sulaiman/assets/sfx/93fa1b20e45f.mp3",
+      "beat": 1,
+      "offset": 0,
+      "dur": 8,
+      "gain": -13,
+      "fade_in": 0.5,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "lib",
+      "src": "../../long/04-sulaiman/assets/sfx/72cc4baec592.mp3",
+      "beat": 2,
+      "offset": -3.6,
+      "dur": 3.8,
+      "gain": -8,
+      "fade_in": 0.4,
+      "fade_out": 0.3
+    },
+    {
+      "prompt": "lib",
+      "src": "../../long/04-sulaiman/assets/sfx/f0b78dedaad6.mp3",
+      "beat": 2,
+      "offset": 0,
+      "dur": 4,
+      "gain": -7,
+      "fade_in": 0.02,
+      "fade_out": 1.5
+    },
+    {
+      "prompt": "lib",
+      "src": "../06-ant/assets/sfx/cabf6e6577de.mp3",
+      "beat": 2,
+      "offset": 0,
+      "dur": 30,
+      "gain": -13,
+      "fade_in": 1.0,
+      "fade_out": 1.5
+    }
+  ],
+  "beats": [
+    {
+      "hook": true,
+      "text": "He broke a poor man's boat… to save it.",
+      "ur": "انہوں نے غریبوں کی کشتی توڑی… اسے بچانے کے لیے",
+      "mood": {
+        "warm": 0.2,
+        "cool": 0
+      },
+      "reveal": false
+    },
+    {
+      "text": "“Have you torn it open to drown its people?”",
+      "ur": "کیا آپ نے اسے اس لیے پھاڑا کہ اس کے لوگوں کو ڈبو دیں؟",
+      "mood": {
+        "warm": 0.15,
+        "cool": 0
+      },
+      "ref": "Al-Kahf 18:71"
+    },
+    {
+      "q": "18:79",
+      "ar_words": [
+        8,
+        17
+      ],
+      "en": "So I intended to cause defect in it as there was after them a king who seized every [good] ship by force",
+      "ur_a": [
+        "میں نے چاہا",
+        "لیتا تھا"
+      ],
+      "ref": "Al-Kahf 18:79",
+      "mood": {
+        "warm": 0.15,
+        "cool": 0
+      },
+      "arabic": "فَأَرَدتُّ أَنۡ أَعِيبَهَا وَكَانَ وَرَآءَهُم مَّلِكࣱ يَأۡخُذُ كُلَّ سَفِينَةٍ غَصۡبࣰا",
+      "translation": "“So I intended to cause defect in it as there was after them a king who seized every [good] ship by force”",
+      "ur": "میں نے چاہا کہ اسے عیب دار کر دوں، کیونکہ آگے ایک ایسے بادشاہ کا علاقہ تھا جو ہر کشتی کو زبردستی چھین لیتا تھا"
+    },
+    {
+      "text": "The damage saved it.",
+      "ur": "اسی نقصان نے اسے بچا لیا",
+      "mood": {
+        "warm": 0.15,
+        "cool": 0
+      },
+      "size": 110
+    },
+    {
+      "text": "The damage you can't understand today… may be what saves you.",
+      "ur": "جو نقصان آج سمجھ نہیں آتا… شاید وہی آپ کو بچا رہا ہو",
+      "mood": {
+        "warm": 0.3,
+        "cool": 0
+      },
+      "stay": true
+    }
+  ]
 }

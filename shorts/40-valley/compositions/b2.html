@@ -5,19 +5,19 @@
       display: flex; flex-direction: column; justify-content: flex-start; gap: 20px; }
   </style>
   <div id="b2" data-composition-id="b2" data-width="1080" data-height="1920">
-    <div id="b2-wrap" class="clip" data-start="0" data-duration="8.89">
-      <div id="b2-txt" class="txt"><span class="w" id="b2-w0">“Has</span> <span class="w" id="b2-w1">Allah</span> <span class="w" id="b2-w2">commanded</span> <span class="w" id="b2-w3">you?”</span> <span class="w" id="b2-w4">“Yes.”</span> <span class="w" id="b2-w5">“Then</span> <span class="w" id="b2-w6">He</span> <span class="w" id="b2-w7">will</span> <span class="w" id="b2-w8">not</span> <span class="w" id="b2-w9">neglect</span> <span class="w" id="b2-w10">us.”</span></div>
-      <div id="b2-ur" class="ur" dir="rtl" lang="ur" data-layout-allow-overflow>کیا اللہ نے آپ کو یہ حکم دیا ہے؟ ہاں۔ تو پھر وہ ہمیں ضائع نہیں کرے گا</div>
+    <div id="b2-wrap" class="clip" data-start="0" data-duration="5.55">
+      <div id="b2-txt" class="txt"><span class="w" id="b2-w0">“Has</span> <span class="w" id="b2-w1">Allah</span> <span class="w" id="b2-w2">commanded</span> <span class="w" id="b2-w3">you?”</span> <span class="w" id="b2-w4">“Yes.”</span></div>
+      <div id="b2-ur" class="ur" dir="rtl" lang="ur" data-layout-allow-overflow>کیا اللہ نے آپ کو یہ حکم دیا ہے؟ ہاں</div>
       <div id="b2-ref" class="ref">Sahih al-Bukhari 3364</div>
     </div>
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
-    tl.fromTo("#b2 .w", {opacity: 0, y: 22, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.32, ease: "power2.out", stagger: 0.588}, 0.12);
-    tl.fromTo("#b2 .hi", {textShadow: "0 0 0px rgba(0,0,0,0)"}, {textShadow: "0 0 28px var(--accent)", duration: 0.6, ease: "power1.out"}, 4.14);
+    tl.fromTo("#b2 .w", {opacity: 0, y: 22, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.32, ease: "power2.out", stagger: 0.750}, 0.12);
+    tl.fromTo("#b2 .hi", {textShadow: "0 0 0px rgba(0,0,0,0)"}, {textShadow: "0 0 28px var(--accent)", duration: 0.6, ease: "power1.out"}, 2.40);
     tl.fromTo("#b2-ur", {opacity: 0, y: 10}, {opacity: 1, y: 0, duration: 0.35, ease: "power2.out"}, 0.15);
     tl.fromTo("#b2-ref", {opacity: 0, y: 12}, {opacity: 1, y: 0, duration: 0.45, ease: "power2.out"}, 0.35);
-    tl.fromTo("#b2-wrap", {opacity: 1}, {opacity: 0, duration: 0.22, ease: "power1.in"}, 8.65);
+    tl.fromTo("#b2-wrap", {opacity: 1}, {opacity: 0, duration: 0.22, ease: "power1.in"}, 5.31);
     window.__timelines["b2"] = tl;
   </script>
 </template>

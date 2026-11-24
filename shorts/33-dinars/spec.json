@@ -5,7 +5,7 @@
  "mote": "#f6dcae",
  "flash": 0.0,
  "bed_volume": 1.0,
- "hold_end": 1.2,
+ "hold_end": 0.3,
  "text_top": 300,
  "text_bottom": 780,
  "tr_size": 56,
@@ -15,9 +15,12 @@
   "assets/gen/s3.jpg",
   "assets/gen/s6.jpg",
   "assets/gen/s8.jpg",
-  "assets/gen/s9.jpg",
-  "assets/gen/s2.jpg"
+  "assets/gen/s9.jpg"
  ],
+ "push": 0.12,
+ "shot2": 4.5,
+ "transform": 3,
+ "bright": true,
  "shakes": [
   {
    "beat": 0,
@@ -26,10 +29,10 @@
    "dur": 1.0
   },
   {
-   "beat": 2,
-   "at": 3.0,
-   "amp": 6,
-   "dur": 0.9
+   "beat": 3,
+   "at": 0.0,
+   "amp": 10,
+   "dur": 1.4
   }
  ],
  "glows": [
@@ -37,13 +40,13 @@
    "beat": 3,
    "at": 0.1,
    "dur": 3.0,
-   "peak": 0.85
+   "peak": 0.6
   },
   {
-   "beat": 4,
+   "beat": 2,
    "at": 0.2,
-   "dur": 2.5,
-   "peak": 0.4
+   "dur": 3.5,
+   "peak": 0.85
   }
  ],
  "sound": [
@@ -100,7 +103,7 @@
   {
    "prompt": "lib",
    "src": "../06-ant/assets/sfx/cabf6e6577de.mp3",
-   "beat": 3,
+   "beat": 2,
    "offset": 0,
    "dur": 30,
    "gain": -13,
@@ -120,49 +123,40 @@
    "reveal": false
   },
   {
-   "text": "“Witnesses?” “Allah is enough.” “A guarantor?” “Allah is enough.”",
-   "ur": "گواہ؟ اللہ کافی ہے۔ ضامن؟ اللہ کافی ہے",
+   "text": "Only Allah as his witness.",
+   "ur": "گواہ صرف اللہ",
    "mood": {
-    "warm": 0.2,
+    "warm": 0.15,
     "cool": 0
    },
    "ref": "Sahih al-Bukhari 2291"
   },
   {
-   "text": "“I entrust this to You.” Into the sea.",
-   "ur": "میں یہ تیرے سپرد کرتا ہوں۔ اور اسے سمندر میں ڈال دیا",
+   "text": "No boat… so he gave it to Allah.",
+   "ur": "کوئی کشتی نہیں… تو اس نے اسے اللہ کے سپرد کر دیا",
    "mood": {
-    "warm": 0.1,
-    "cool": 0.05
-   },
-   "ref": "Sahih al-Bukhari 2291"
+    "warm": 0.15,
+    "cool": 0
+   }
   },
   {
-   "text": "A piece of wood… and there was his money.",
-   "ur": "لکڑی کا ایک ٹکڑا… اور اس میں اس کی رقم",
+   "text": "…and his money inside.",
+   "ur": "اور اندر اس کی رقم",
    "mood": {
-    "warm": 0.25,
+    "warm": 0.15,
     "cool": 0
    },
-   "ref": "Sahih al-Bukhari 2291"
+   "size": 100
   },
   {
    "text": "Can't keep a promise with your hands? Keep it with Allah.",
    "ur": "اپنے ہاتھوں سے وعدہ نہ نبھا سکیں؟ اللہ کے ساتھ نبھائیں",
    "mood": {
-    "warm": 0.25,
-    "cool": 0
-   }
-  },
-  {
-   "cta": true,
-   "text": "Full movie of Prophet Sulaiman (AS): link below.",
-   "ur": "حضرت سلیمان علیہ السلام کی مکمل فلم دیکھیں، لنک نیچے",
-   "mood": {
-    "warm": 0.25,
+    "warm": 0.3,
     "cool": 0
    },
-   "btn": "Full movie ↓"
+   "follow": "Full movie ↓",
+   "stay": true
   }
  ]
 }

@@ -1,24 +1,20 @@
 <template>
   <style>
     #b5 { position: absolute; inset: 0; }
-    #b5-wrap { position: absolute; left: 60px; right: 60px; top: 250px; bottom: 1120px;
+    #b5-wrap { position: absolute; left: 90px; right: 140px; top: 250px; bottom: 1120px;
       display: flex; flex-direction: column; justify-content: flex-start; gap: 20px; }
   </style>
   <div id="b5" data-composition-id="b5" data-width="1080" data-height="1920">
-    <div id="b5-wrap" class="clip" data-start="0" data-duration="2.74">
-      <div id="b5-ar" class="ar" dir="rtl" lang="ar">وَأَنِيبُوٓاْ إِلَىٰ رَبِّكُمۡ</div>
-      <div id="b5-tr" class="tr">“And return [in repentance] to your Lord”</div>
-      <div id="b5-ur" class="ur" dir="rtl" lang="ur" data-layout-allow-overflow>پلٹ آؤ اپنے رب کی طرف</div>
-      <div id="b5-ref" class="ref">Az-Zumar 39:54</div>
+    <div id="b5-wrap" class="clip" data-start="0" data-duration="7.77">
+      <div id="b5-txt" class="txt"><span class="w" id="b5-w0">Say</span> <span class="w" id="b5-w1">it</span> <span class="w" id="b5-w2">today:</span> <span class="w" id="b5-w3">أَسْتَغْفِرُ</span> <span class="w" id="b5-w4">اللَّهَ.</span> <span class="w" id="b5-w5">Come</span> <span class="w" id="b5-w6">back</span> <span class="w" id="b5-w7">to</span> <span class="w" id="b5-w8">Him.</span></div>
+      <div id="b5-ur" class="ur" dir="rtl" lang="ur" data-layout-allow-overflow>آج ہی کہیں: أَسْتَغْفِرُ اللَّهَ۔ اس کی طرف لوٹ آئیں</div>
     </div>
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
-    tl.fromTo("#b5-ar", {opacity: 0, y: 30, filter: "blur(10px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.9, ease: "power2.out"}, 0.05);
-    tl.fromTo("#b5-tr", {opacity: 0, y: 20}, {opacity: 1, y: 0, duration: 0.7, ease: "power2.out"}, 0.6);
+    tl.fromTo("#b5 .w", {opacity: 0, y: 22, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.32, ease: "power2.out", stagger: 0.634}, 0.12);
+    tl.fromTo("#b5 .hi", {textShadow: "0 0 0px rgba(0,0,0,0)"}, {textShadow: "0 0 28px var(--accent)", duration: 0.6, ease: "power1.out"}, 3.66);
     tl.fromTo("#b5-ur", {opacity: 0, y: 10}, {opacity: 1, y: 0, duration: 0.35, ease: "power2.out"}, 0.15);
-    tl.fromTo("#b5-ref", {opacity: 0, y: 12}, {opacity: 1, y: 0, duration: 0.45, ease: "power2.out"}, 0.35);
-    tl.fromTo("#b5-wrap", {opacity: 1}, {opacity: 0, duration: 0.22, ease: "power1.in"}, 2.50);
     window.__timelines["b5"] = tl;
   </script>
 </template>

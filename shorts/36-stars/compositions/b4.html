@@ -1,24 +1,21 @@
 <template>
   <style>
     #b4 { position: absolute; inset: 0; }
-    #b4-wrap { position: absolute; left: 60px; right: 60px; top: 250px; bottom: 1120px;
+    #b4-wrap { position: absolute; left: 90px; right: 140px; top: 250px; bottom: 1120px;
       display: flex; flex-direction: column; justify-content: flex-start; gap: 20px; }
   </style>
   <div id="b4" data-composition-id="b4" data-width="1080" data-height="1920">
-    <div id="b4-wrap" class="clip" data-start="0" data-duration="9.64">
-      <div id="b4-ar" class="ar" dir="rtl" lang="ar">إِنِّي وَجَّهۡتُ وَجۡهِيَ لِلَّذِي فَطَرَ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضَ</div>
-      <div id="b4-tr" class="tr">“Indeed, I have turned my face toward He who created the heavens and the earth”</div>
-      <div id="b4-ur" class="ur" dir="rtl" lang="ur" data-layout-allow-overflow>میں نے تویکسو ہو کر اپنا رخ اُس ہستی کی طرف کر لیا جس نے زمین اور آسمانوں کو پیدا کیا ہے</div>
-      <div id="b4-ref" class="ref">Al-An&#x27;am 6:79</div>
+    <div id="b4-wrap" class="clip" data-start="0" data-duration="2.75">
+      <div id="b4-txt" class="txt" style="font-size:110px"><span class="w" id="b4-w0">Only</span> <span class="w" id="b4-w1">One</span> <span class="w" id="b4-w2">never</span> <span class="w" id="b4-w3">sets.</span></div>
+      <div id="b4-ur" class="ur" dir="rtl" lang="ur" data-layout-allow-overflow>صرف ایک کبھی نہیں ڈوبتا</div>
     </div>
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
-    tl.fromTo("#b4-ar", {opacity: 0, y: 30, filter: "blur(10px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.9, ease: "power2.out"}, 0.05);
-    tl.fromTo("#b4-tr", {opacity: 0, y: 20}, {opacity: 1, y: 0, duration: 0.7, ease: "power2.out"}, 0.6);
+    tl.fromTo("#b4 .w", {opacity: 0, y: 22, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.32, ease: "power2.out", stagger: 0.378}, 0.12);
+    tl.fromTo("#b4 .hi", {textShadow: "0 0 0px rgba(0,0,0,0)"}, {textShadow: "0 0 28px var(--accent)", duration: 0.6, ease: "power1.out"}, 0.97);
     tl.fromTo("#b4-ur", {opacity: 0, y: 10}, {opacity: 1, y: 0, duration: 0.35, ease: "power2.out"}, 0.15);
-    tl.fromTo("#b4-ref", {opacity: 0, y: 12}, {opacity: 1, y: 0, duration: 0.45, ease: "power2.out"}, 0.35);
-    tl.fromTo("#b4-wrap", {opacity: 1}, {opacity: 0, duration: 0.22, ease: "power1.in"}, 9.40);
+    tl.fromTo("#b4-wrap", {opacity: 1}, {opacity: 0, duration: 0.22, ease: "power1.in"}, 2.51);
     window.__timelines["b4"] = tl;
   </script>
 </template>

@@ -1,24 +1,23 @@
 <template>
   <style>
     #b3 { position: absolute; inset: 0; }
-    #b3-wrap { position: absolute; left: 60px; right: 60px; top: 250px; bottom: 1120px;
+    #b3-wrap { position: absolute; left: 90px; right: 140px; top: 250px; bottom: 1120px;
       display: flex; flex-direction: column; justify-content: flex-start; gap: 20px; }
   </style>
   <div id="b3" data-composition-id="b3" data-width="1080" data-height="1920">
-    <div id="b3-wrap" class="clip" data-start="0" data-duration="10.87">
-      <div id="b3-ar" class="ar" dir="rtl" lang="ar">رَّبَّنَآ إِنِّيٓ أَسۡكَنتُ مِن ذُرِّيَّتِي بِوَادٍ غَيۡرِ ذِي زَرۡعٍ عِندَ بَيۡتِكَ ٱلۡمُحَرَّمِ</div>
-      <div id="b3-tr" class="tr">“Our Lord, I have settled some of my descendants in an uncultivated valley near Your sacred House”</div>
-      <div id="b3-ur" class="ur" dir="rtl" lang="ur" data-layout-allow-overflow>پروردگار، میں نے ایک بے آب و گیاہ وادی میں اپنی اولاد کے ایک حصے کو تیرے محترم گھر کے پاس لا بسایا ہے</div>
-      <div id="b3-ref" class="ref">Ibrahim 14:37</div>
+    <div id="b3-wrap" class="clip" data-start="0" data-duration="3.75">
+      <div id="b3-txt" class="txt" style="font-size:100px"><span class="w" id="b3-w0">“Then</span> <span class="w" id="b3-w1">He</span> <span class="w" id="b3-w2">will</span> <span class="w" id="b3-w3">not</span> <span class="w" id="b3-w4">neglect</span> <span class="w" id="b3-w5">us.”</span></div>
+      <div id="b3-ur" class="ur" dir="rtl" lang="ur" data-layout-allow-overflow>تو پھر وہ ہمیں ضائع نہیں کرے گا</div>
+      <div id="b3-ref" class="ref">Sahih al-Bukhari 3364</div>
     </div>
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
-    tl.fromTo("#b3-ar", {opacity: 0, y: 30, filter: "blur(10px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.9, ease: "power2.out"}, 0.05);
-    tl.fromTo("#b3-tr", {opacity: 0, y: 20}, {opacity: 1, y: 0, duration: 0.7, ease: "power2.out"}, 0.6);
+    tl.fromTo("#b3 .w", {opacity: 0, y: 22, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.32, ease: "power2.out", stagger: 0.391}, 0.12);
+    tl.fromTo("#b3 .hi", {textShadow: "0 0 0px rgba(0,0,0,0)"}, {textShadow: "0 0 28px var(--accent)", duration: 0.6, ease: "power1.out"}, 1.50);
     tl.fromTo("#b3-ur", {opacity: 0, y: 10}, {opacity: 1, y: 0, duration: 0.35, ease: "power2.out"}, 0.15);
     tl.fromTo("#b3-ref", {opacity: 0, y: 12}, {opacity: 1, y: 0, duration: 0.45, ease: "power2.out"}, 0.35);
-    tl.fromTo("#b3-wrap", {opacity: 1}, {opacity: 0, duration: 0.22, ease: "power1.in"}, 10.63);
+    tl.fromTo("#b3-wrap", {opacity: 1}, {opacity: 0, duration: 0.22, ease: "power1.in"}, 3.51);
     window.__timelines["b3"] = tl;
   </script>
 </template>
