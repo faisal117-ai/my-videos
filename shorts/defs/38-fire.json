@@ -2,11 +2,10 @@
  "id": "38-fire",
  "lines": [
   "Thrown into a fire… what 4 words would you say?",
-  "They said: Burn him, and support your gods.",
-  "As they threw him, Prophet Ibrahim, alayhis salaam, said: حَسْبُنَا اللّٰهُ وَنِعْمَ الْوَكِيْلُ. Allah is enough for us, and He is the best Guardian.",
+  "They lit a great fire, and said: Burn him.",
+  "As they threw him, Prophet Ibrahim, alayhis salaam, said: حَسْبُنَا اللّٰهُ وَنِعْمَ الْوَكِيْلُ. Allah is enough for us.",
   "And Allah said: O fire, be coolness and safety upon Ibrahim.",
-  "When you're afraid today, say his words: حَسْبُنَا اللّٰهُ وَنِعْمَ الْوَكِيْلُ.",
-  "Full movie of Prophet Ibrahim, alayhis salaam: link below."
+  "When you're afraid today, say his words: حَسْبُنَا اللّٰهُ وَنِعْمَ الْوَكِيْلُ. Send this to someone who needs it."
  ],
  "beats": [
   {
@@ -14,37 +13,29 @@
    "text": "Thrown into a fire… what 4 words would you say?",
    "ur": "آگ میں پھینکے جائیں… تو آپ کون سے چار لفظ کہیں گے؟",
    "mood": {
-    "warm": 0.3,
+    "warm": 0.2,
     "cool": 0
    },
    "reveal": false
   },
   {
-   "q": "21:68",
-   "ar_words": [
-    1,
-    4
-   ],
-   "en": "Burn him and support your gods",
-   "ur_a": [
-    "جلا ڈالو",
-    "اپنے خداؤں کی"
-   ],
-   "ref": "Al-Anbiya 21:68",
+   "text": "A great fire… “Burn him.”",
+   "ur": "ایک بڑی آگ… اسے جلا دو",
    "mood": {
-    "warm": 0.35,
+    "warm": 0.15,
     "cool": 0
-   }
+   },
+   "ref": "Al-Anbiya 21:68"
   },
   {
-   "arabic": "حَسْبُنَا اللَّهُ وَنِعْمَ الْوَكِيلُ",
-   "translation": "“Allah is sufficient for us, and He is the best Disposer of affairs.”",
+   "text": "حَسْبُنَا اللّٰهُ وَنِعْمَ الْوَكِيْلُ",
    "ur": "اللہ ہمارے لیے کافی ہے اور وہی بہترین کارساز ہے",
-   "ref": "Sahih al-Bukhari 4563",
    "mood": {
-    "warm": 0.3,
+    "warm": 0.15,
     "cool": 0
-   }
+   },
+   "ref": "Sahih al-Bukhari 4563",
+   "size": 100
   },
   {
    "q": "21:69",
@@ -67,19 +58,10 @@
    "text": "When you're afraid today, say his words: حَسْبُنَا اللّٰهُ وَنِعْمَ الْوَكِيْلُ",
    "ur": "آج جب ڈر لگے… یہی الفاظ کہیں: حَسْبُنَا اللّٰهُ وَنِعْمَ الْوَكِيْلُ",
    "mood": {
-    "warm": 0.2,
-    "cool": 0
-   }
-  },
-  {
-   "cta": true,
-   "text": "Full movie of Prophet Ibrahim (AS): link below.",
-   "ur": "حضرت ابراہیم علیہ السلام کی مکمل فلم دیکھیں، لنک نیچے",
-   "mood": {
-    "warm": 0.25,
+    "warm": 0.3,
     "cool": 0
    },
-   "btn": "Full movie ↓"
+   "stay": true
   }
  ],
  "photos": [
@@ -87,8 +69,7 @@
   "c05a",
   "c05b",
   "c05c",
-  "c14a",
-  "c00c"
+  "c14a"
  ],
  "crops": {
   "c00a": "long/03-ibrahim/assets/gen/c00a.jpg",
@@ -99,8 +80,11 @@
   "c00c": "long/03-ibrahim/assets/gen/c00c.jpg"
  },
  "pauses": {
-  "3": 0.9
+  "2": 0.5,
+  "3": 0.5,
+  "4": 0.6
  },
  "turn": 3,
- "hum": 3
+ "hum": 2,
+ "v2": true
 }

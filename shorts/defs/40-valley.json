@@ -2,11 +2,10 @@
  "id": "40-valley",
  "lines": [
   "No water, no one… she said: He won't abandon us.",
-  "The mother asked: Has Allah commanded you to do this? He said: yes. She said: Then He will not neglect us.",
-  "Prophet Ibrahim, alayhis salaam, prayed: Our Lord, I have settled some of my descendants in an uncultivated valley, near Your sacred House.",
-  "And water came... Zamzam, still flowing today.",
-  "When Allah commands it, He will not neglect you.",
-  "Full movie of Prophet Ibrahim, alayhis salaam: link below."
+  "She asked: Has Allah commanded you to do this? He said: yes.",
+  "She said: Then He will not neglect us.",
+  "And water came... Zamzam. Still flowing today.",
+  "When Allah asks something of you, He will not neglect you. Send this to someone who needs it."
  ],
  "beats": [
   {
@@ -20,57 +19,40 @@
    "reveal": false
   },
   {
-   "text": "“Has Allah commanded you?” “Yes.” “Then He will not neglect us.”",
-   "ur": "کیا اللہ نے آپ کو یہ حکم دیا ہے؟ ہاں۔ تو پھر وہ ہمیں ضائع نہیں کرے گا",
+   "text": "“Has Allah commanded you?” “Yes.”",
+   "ur": "کیا اللہ نے آپ کو یہ حکم دیا ہے؟ ہاں",
    "mood": {
-    "warm": 0.2,
+    "warm": 0.15,
     "cool": 0
    },
    "ref": "Sahih al-Bukhari 3364"
   },
   {
-   "q": "14:37",
-   "ar_words": [
-    1,
-    12
-   ],
-   "en": "Our Lord, I have settled some of my descendants in an uncultivated valley near Your sacred House",
-   "ur_a": [
-    "پروردگار، میں نے",
-    "پاس لا بسایا ہے"
-   ],
-   "ref": "Ibrahim 14:37",
+   "text": "“Then He will not neglect us.”",
+   "ur": "تو پھر وہ ہمیں ضائع نہیں کرے گا",
    "mood": {
-    "warm": 0.2,
+    "warm": 0.15,
+    "cool": 0
+   },
+   "ref": "Sahih al-Bukhari 3364",
+   "size": 100
+  },
+  {
+   "text": "Zamzam… still flowing today.",
+   "ur": "زمزم… آج بھی بہہ رہا ہے",
+   "mood": {
+    "warm": 0.15,
     "cool": 0
    }
   },
   {
-   "text": "Water from the ground… Zamzam, still flowing today.",
-   "ur": "زمین سے پانی… زمزم، جو آج بھی بہہ رہا ہے",
+   "text": "When Allah asks something of you… He will not neglect you.",
+   "ur": "جب اللہ آپ سے کچھ چاہے… تو وہ آپ کو ضائع نہیں کرے گا",
    "mood": {
-    "warm": 0.25,
+    "warm": 0.3,
     "cool": 0
    },
-   "ref": "Sahih al-Bukhari 3364"
-  },
-  {
-   "text": "When Allah commands it… He will not neglect you.",
-   "ur": "جب اللہ حکم دے… تو وہ آپ کو ضائع نہیں کرے گا",
-   "mood": {
-    "warm": 0.25,
-    "cool": 0
-   }
-  },
-  {
-   "cta": true,
-   "text": "Full movie of Prophet Ibrahim (AS): link below.",
-   "ur": "حضرت ابراہیم علیہ السلام کی مکمل فلم دیکھیں، لنک نیچے",
-   "mood": {
-    "warm": 0.25,
-    "cool": 0
-   },
-   "btn": "Full movie ↓"
+   "stay": true
   }
  ],
  "photos": [
@@ -78,7 +60,6 @@
   "c08b",
   "c12b",
   "c08c",
-  "c08d",
   "c13b"
  ],
  "crops": {
@@ -90,8 +71,11 @@
   "c13b": "long/03-ibrahim/assets/gen/c13b.jpg"
  },
  "pauses": {
-  "3": 0.9
+  "2": 0.5,
+  "3": 0.5,
+  "4": 0.6
  },
- "turn": 3,
- "hum": 3
+ "turn": 2,
+ "hum": 2,
+ "v2": true
 }

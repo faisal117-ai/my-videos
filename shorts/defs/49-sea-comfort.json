@@ -3,11 +3,9 @@
  "lines": [
   "Trapped, no way out? Say what he said at the sea.",
   "The sea in front of them. Pharaoh's army behind them.",
-  "And his people cried: We are surely overtaken!",
   "Prophet Musa, alayhis salaam, said: No! Indeed, my Lord is with me. He will guide me.",
-  "Then Allah said: Strike the sea with your staff. And it split, each side like a towering mountain.",
-  "Facing a dead end today? Say it with certainty: my Lord is with me. Send this to someone who needs it.",
-  "Full movie of Prophet Musa, alayhis salaam: link below."
+  "And the sea split.",
+  "Facing a dead end today? Say it with certainty: my Lord is with me. Send this to someone who needs it."
  ],
  "beats": [
   {
@@ -15,8 +13,8 @@
    "text": "Trapped, no way out? Say what he said at the sea.",
    "ur": "پھنس گئے، کوئی راستہ نہیں؟ وہ کہیں جو انہوں نے سمندر کے کنارے کہا",
    "mood": {
-    "warm": 0.0,
-    "cool": 0.14
+    "warm": 0.2,
+    "cool": 0
    },
    "reveal": false
   },
@@ -24,27 +22,10 @@
    "text": "The sea in front. Pharaoh's army behind.",
    "ur": "آگے سمندر، پیچھے فرعون کا لشکر",
    "mood": {
-    "warm": 0.0,
-    "cool": 0.12
+    "warm": 0.15,
+    "cool": 0
    },
    "ref": "Ash-Shu'ara 26:60–61"
-  },
-  {
-   "q": "26:61",
-   "ar_words": [
-    1,
-    8
-   ],
-   "en": "And when the two companies saw one another, the companions of Moses said, \"Indeed, we are to be overtaken",
-   "ur_a": [
-    "جب دونوں",
-    "پکڑے گئے"
-   ],
-   "ref": "Ash-Shu'ara 26:61",
-   "mood": {
-    "warm": 0.0,
-    "cool": 0.1
-   }
   },
   {
    "q": "26:62",
@@ -64,48 +45,30 @@
    }
   },
   {
-   "q": "26:63",
-   "ar_words": [
-    1,
-    12
-   ],
-   "en": "Then We inspired to Moses, \"Strike with your staff the sea,\" and it parted, and each portion was like a great towering mountain",
-   "ur_a": [
-    "ہم نے",
-    "طرح ہو گیا"
-   ],
+   "text": "And the sea split.",
+   "ur": "اور سمندر پھٹ گیا",
+   "mood": {
+    "warm": 0.15,
+    "cool": 0
+   },
    "ref": "Ash-Shu'ara 26:63",
-   "mood": {
-    "warm": 0.25,
-    "cool": 0
-   }
+   "size": 110
   },
   {
-   "text": "Facing a dead end today? Say it with certainty: my Lord is with me. Send this to someone who needs it.",
-   "ur": "آج کوئی راستہ نظر نہیں آتا؟ یقین سے کہیں: میرا رب میرے ساتھ ہے۔ یہ اس تک پہنچائیں جسے ضرورت ہے",
-   "mood": {
-    "warm": 0.3,
-    "cool": 0
-   }
-  },
-  {
-   "text": "Full movie of Prophet Musa (AS): link below.",
-   "ur": "حضرت موسیٰ علیہ السلام کی مکمل فلم دیکھیں، لنک نیچے",
+   "text": "Facing a dead end today? Say it: my Lord is with me.",
+   "ur": "آج کوئی راستہ نظر نہیں آتا؟ کہیں: میرا رب میرے ساتھ ہے",
    "mood": {
     "warm": 0.3,
     "cool": 0
    },
-   "cta": true,
-   "btn": "Full movie ↓"
+   "stay": true
   }
  ],
  "photos": [
   "s1",
   "s2",
   "s3",
-  "s3",
   "s4",
-  "s5",
   "s5"
  ],
  "scenes": {
@@ -119,8 +82,11 @@
   }
  },
  "pauses": {
-  "3": 0.6
+  "2": 0.5,
+  "3": 0.5,
+  "4": 0.6
  },
- "turn": 3,
- "hum": 4
+ "turn": 2,
+ "hum": 2,
+ "v2": true
 }

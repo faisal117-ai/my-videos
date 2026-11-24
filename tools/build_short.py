@@ -1691,6 +1691,7 @@ def photos_scene(spec, beats, total):
     #phshade { background: linear-gradient(180deg, rgba(0,0,0,0.32) 0%, rgba(0,0,0,0.22) 25%, rgba(0,0,0,0.08) 40%,
       rgba(0,0,0,0) 50%, rgba(0,0,0,0) 85%, rgba(0,0,0,0.2) 100%); }
     .ph img { filter: brightness(1.08) saturate(1.08); }
+    .tr { text-shadow: 0 2px 10px rgba(0,0,0,0.95), 0 0 3px rgba(0,0,0,0.95) !important; color: #fff6e6 !important; }
 """
     def layer(i):
         src = photos[i]
@@ -1731,10 +1732,8 @@ def photos_scene(spec, beats, total):
     tr = spec.get("transform")  # FORMAT v2: dark → light at the turn (e.g. storm → sunrise), on the whole picture
     if tr is not None:
         t0 = beats[tr]["start"] - 0.2
-        if tr > 0:
-            js.append(f'tl.set("#phsc", {{filter: "brightness(0.85) saturate(0.85) hue-rotate(-6deg)"}}, 0);')
-        js.append(f'tl.fromTo("#phsc", {{filter: "brightness(0.85) saturate(0.85) hue-rotate(-6deg)"}}, '
-                  f'{{filter: "brightness(1.14) saturate(1.2) hue-rotate(0deg)", duration: 1.8, ease: "power2.out", immediateRender: false}}, {t0:.2f});')
+        js.append(f'tl.fromTo("#phsc", {{filter: "brightness(1) saturate(1) hue-rotate(0deg)"}}, '
+                  f'{{filter: "brightness(1.16) saturate(1.22) sepia(0.12)", duration: 1.8, ease: "power2.out", immediateRender: false}}, {t0:.2f});')
     sb = spec.get("shake_beat")
     if sb is not None:
         s0 = beats[sb]["start"] + 0.3

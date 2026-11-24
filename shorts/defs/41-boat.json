@@ -2,11 +2,10 @@
  "id": "41-boat",
  "lines": [
   "He broke a poor man's boat… to save it.",
-  "Prophet Musa, alayhis salaam, said: Have you torn it open to drown its people? You have certainly done a grave thing.",
-  "Then came the reason.",
-  "As for the ship, it belonged to poor people working at sea. So I intended to cause defect in it, as there was after them a king who seized every ship by force.",
-  "The damage you can't understand today... may be what saves you.",
-  "Full movie of Prophet Musa, alayhis salaam: link below."
+  "Prophet Musa, alayhis salaam, asked: Have you torn it open to drown its people?",
+  "Then came the reason: I damaged it, because a king was seizing every ship by force.",
+  "The damage saved it.",
+  "The damage you can't understand today... may be what saves you. Send this to someone who needs it."
  ],
  "beats": [
   {
@@ -14,76 +13,59 @@
    "text": "He broke a poor man's boat… to save it.",
    "ur": "انہوں نے غریبوں کی کشتی توڑی… اسے بچانے کے لیے",
    "mood": {
-    "warm": 0.1,
-    "cool": 0.08
+    "warm": 0.2,
+    "cool": 0
    },
    "reveal": false
   },
   {
-   "q": "18:71",
-   "ar_words": [
-    8,
-    15
-   ],
-   "en": "Have you torn it open to drown its people? You have certainly done a grave thing",
-   "ur_a": [
-    "آپ نے اس میں",
-    "سخت حرکت کر ڈالی"
-   ],
-   "ref": "Al-Kahf 18:71",
+   "text": "“Have you torn it open to drown its people?”",
+   "ur": "کیا آپ نے اسے اس لیے پھاڑا کہ اس کے لوگوں کو ڈبو دیں؟",
    "mood": {
-    "warm": 0.05,
-    "cool": 0.1
-   }
-  },
-  {
-   "text": "Then came the reason.",
-   "ur": "پھر وجہ سامنے آئی",
-   "mood": {
-    "warm": 0.1,
+    "warm": 0.15,
     "cool": 0
-   }
+   },
+   "ref": "Al-Kahf 18:71"
   },
   {
    "q": "18:79",
    "ar_words": [
-    1,
+    8,
     17
    ],
-   "en": "As for the ship, it belonged to poor people working at sea. So I intended to cause defect in it as there was after them a king who seized every [good] ship by force",
+   "en": "So I intended to cause defect in it as there was after them a king who seized every [good] ship by force",
    "ur_a": [
-    "اُس کشتی کا",
-    "چھین لیتا تھا"
+    "میں نے چاہا",
+    "لیتا تھا"
    ],
    "ref": "Al-Kahf 18:79",
    "mood": {
-    "warm": 0.2,
+    "warm": 0.15,
     "cool": 0
    }
+  },
+  {
+   "text": "The damage saved it.",
+   "ur": "اسی نقصان نے اسے بچا لیا",
+   "mood": {
+    "warm": 0.15,
+    "cool": 0
+   },
+   "size": 110
   },
   {
    "text": "The damage you can't understand today… may be what saves you.",
    "ur": "جو نقصان آج سمجھ نہیں آتا… شاید وہی آپ کو بچا رہا ہو",
    "mood": {
-    "warm": 0.25,
-    "cool": 0
-   }
-  },
-  {
-   "cta": true,
-   "text": "Full movie of Prophet Musa (AS): link below.",
-   "ur": "حضرت موسیٰ علیہ السلام کی مکمل فلم دیکھیں، لنک نیچے",
-   "mood": {
-    "warm": 0.25,
+    "warm": 0.3,
     "cool": 0
    },
-   "btn": "Full movie ↓"
+   "stay": true
   }
  ],
  "photos": [
   "s1",
   "s2",
-  "s3",
   "s4",
   "s5",
   "s5"
@@ -99,8 +81,11 @@
   }
  },
  "pauses": {
-  "2": 0.8
+  "2": 0.5,
+  "3": 0.5,
+  "4": 0.6
  },
- "turn": 3,
- "hum": 4
+ "turn": 2,
+ "hum": 2,
+ "v2": true
 }

@@ -2,11 +2,10 @@
  "id": "50-near-comfort",
  "lines": [
   "You think Allah is far? He says: I am near.",
-  "When you whisper a dua and nothing seems to change, remember this.",
+  "A whispered dua... and nothing seems to change?",
   "Allah says: When My servants ask about Me... indeed, I am near.",
-  "I respond to the call of the one who calls, when he calls upon Me.",
-  "Not far. Near. Call Him today, in your own words. Send this to someone who needs it.",
-  "Full movie of Prophet Sulaiman, alayhis salaam, whose dua was answered: link below."
+  "Not far. Near.",
+  "He responds when you call. Call Him today, in your own words. Send this to someone who needs it."
  ],
  "beats": [
   {
@@ -14,8 +13,8 @@
    "text": "You think Allah is far? He says: I am near.",
    "ur": "آپ سمجھتے ہیں اللہ دور ہے؟ وہ فرماتا ہے: میں قریب ہوں",
    "mood": {
-    "warm": 0.0,
-    "cool": 0.12
+    "warm": 0.2,
+    "cool": 0
    },
    "reveal": false
   },
@@ -23,8 +22,8 @@
    "text": "A whispered dua… and nothing seems to change?",
    "ur": "آہستہ سے دعا… اور کچھ بدلتا نظر نہیں آتا؟",
    "mood": {
-    "warm": 0.05,
-    "cool": 0.08
+    "warm": 0.15,
+    "cool": 0
    }
   },
   {
@@ -45,45 +44,27 @@
    }
   },
   {
-   "q": "2:186",
-   "ar_words": [
-    7,
-    11
-   ],
-   "en": "I respond to the invocation of the supplicant when he calls upon Me",
-   "ur_a": [
-    "پکارنے والا",
-    "جواب دیتا ہوں"
-   ],
-   "ref": "Al-Baqarah 2:186",
+   "text": "Not far. Near.",
+   "ur": "دور نہیں۔ قریب",
    "mood": {
-    "warm": 0.22,
+    "warm": 0.15,
     "cool": 0
-   }
+   },
+   "size": 110
   },
   {
-   "text": "Not far. Near. Call Him today, in your own words. Send this to someone who needs it.",
-   "ur": "دور نہیں، قریب۔ آج اپنے الفاظ میں اسے پکاریں۔ یہ اس تک پہنچائیں جسے ضرورت ہے",
-   "mood": {
-    "warm": 0.3,
-    "cool": 0
-   }
-  },
-  {
-   "text": "Full movie of Prophet Sulaiman (AS), whose dua was answered: link below.",
-   "ur": "حضرت سلیمان علیہ السلام کی مکمل فلم دیکھیں، جن کی دعا قبول ہوئی، لنک نیچے",
+   "text": "He responds when you call. Call Him today, in your own words.",
+   "ur": "جب آپ پکاریں وہ جواب دیتا ہے۔ آج اپنے الفاظ میں اسے پکاریں",
    "mood": {
     "warm": 0.3,
     "cool": 0
    },
-   "cta": true,
-   "btn": "Full movie ↓"
+   "stay": true
   }
  ],
  "photos": [
   "s1",
   "s2",
-  "s3",
   "s3",
   "s4",
   "s5"
@@ -99,8 +80,11 @@
   }
  },
  "pauses": {
-  "2": 0.6
+  "2": 0.5,
+  "3": 0.5,
+  "4": 0.6
  },
  "turn": 2,
- "hum": 3
+ "hum": 2,
+ "v2": true
 }

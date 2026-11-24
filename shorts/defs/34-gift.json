@@ -2,11 +2,10 @@
  "id": "34-gift",
  "lines": [
   "A queen sent a fortune. He sent it back.",
-  "The Queen of Sheba said: I will send to them a gift, and see with what the messengers return.",
-  "Prophet Sulaiman, alayhis salaam, said: Do you provide me with wealth? What Allah has given me is better than what He has given you.",
-  "Rather, it is you who rejoice in your gift.",
-  "What Allah gave you is worth more than any gift. Thank Him for it today, before you ask for more.",
-  "Full movie of Prophet Sulaiman, alayhis salaam: link below."
+  "The Queen of Sheba sent him a rich gift, to test what kind of king he was.",
+  "Prophet Sulaiman, alayhis salaam, said: What Allah has given me is better than what He has given you.",
+  "Better than any gift.",
+  "What Allah gave you is worth more than anything anyone can hand you. Full movie below."
  ],
  "beats": [
   {
@@ -20,21 +19,13 @@
    "reveal": false
   },
   {
-   "q": "27:35",
-   "ar_words": [
-    1,
-    8
-   ],
-   "en": "I will send to them a gift and see with what [reply] the messengers will return",
-   "ur_a": [
-    "میں اِن لوگوں",
-    "پلٹتے ہیں"
-   ],
-   "ref": "An-Naml 27:35",
+   "text": "A rich gift… to test what kind of king he was.",
+   "ur": "ایک قیمتی تحفہ… یہ دیکھنے کو کہ وہ کیسا بادشاہ ہے",
    "mood": {
     "warm": 0.15,
     "cool": 0
-   }
+   },
+   "ref": "An-Naml 27:35"
   },
   {
    "q": "27:36",
@@ -54,39 +45,23 @@
    }
   },
   {
-   "q": "27:36",
-   "ar_words": [
-    13,
-    16
-   ],
-   "en": "Rather, it is you who rejoice in your gift",
-   "ur_a": [
-    "تمہارا ہدیہ",
-    "مبارک رہے"
-   ],
-   "ref": "An-Naml 27:36",
+   "text": "Better than any gift.",
+   "ur": "ہر تحفے سے بہتر",
    "mood": {
     "warm": 0.15,
     "cool": 0
-   }
+   },
+   "size": 110
   },
   {
-   "text": "What Allah gave you is worth more than any gift. Thank Him for it today.",
-   "ur": "جو اللہ نے آپ کو دیا، وہ ہر تحفے سے بہتر ہے۔ آج اس کا شکر ادا کریں",
+   "text": "What Allah gave you is worth more than anything anyone can hand you.",
+   "ur": "جو اللہ نے آپ کو دیا، وہ ہر اس چیز سے بہتر ہے جو کوئی آپ کو دے",
    "mood": {
-    "warm": 0.25,
-    "cool": 0
-   }
-  },
-  {
-   "cta": true,
-   "text": "Full movie of Prophet Sulaiman (AS): link below.",
-   "ur": "حضرت سلیمان علیہ السلام کی مکمل فلم دیکھیں، لنک نیچے",
-   "mood": {
-    "warm": 0.25,
+    "warm": 0.3,
     "cool": 0
    },
-   "btn": "Full movie ↓"
+   "follow": "Full movie ↓",
+   "stay": true
   }
  ],
  "photos": [
@@ -94,8 +69,7 @@
   "c06a",
   "c08a",
   "c08b",
-  "c12a",
-  "c00a"
+  "c12a"
  ],
  "crops": {
   "c07c": "long/04-sulaiman/assets/gen/c07c.jpg",
@@ -106,9 +80,11 @@
   "c00a": "long/04-sulaiman/assets/gen/c00a.jpg"
  },
  "pauses": {
-  "2": 0.8,
+  "2": 0.5,
+  "3": 0.5,
   "4": 0.6
  },
  "turn": 2,
- "hum": 4
+ "hum": 2,
+ "v2": true
 }

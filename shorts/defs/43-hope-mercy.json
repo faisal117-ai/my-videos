@@ -2,12 +2,10 @@
  "id": "43-hope-mercy",
  "lines": [
   "Think Allah won't forgive you? Listen.",
-  "Allah didn't call them sinners. He called them: O My servants.",
-  "O My servants who have transgressed against themselves, do not despair of the mercy of Allah.",
-  "Indeed, Allah forgives all sins. All.",
-  "Then He says: Return to your Lord.",
-  "Ask Allah for forgiveness, and come back to Him today. Send this to someone who needs it.",
-  "Full movies of Prophet Musa and Prophet Sulaiman, alayhis salaam: link below."
+  "He didn't call them sinners. He called them: O My servants.",
+  "Allah says: Do not despair of the mercy of Allah. Indeed, Allah forgives all sins.",
+  "All. Not some. All.",
+  "So say it today: أَسْتَغْفِرُ اللَّهَ. And come back to Him. Send this to someone who needs it."
  ],
  "beats": [
   {
@@ -15,8 +13,8 @@
    "text": "Think Allah won't forgive you? Listen.",
    "ur": "سوچتے ہیں اللہ آپ کو معاف نہیں کرے گا؟ سنیں",
    "mood": {
-    "warm": 0.0,
-    "cool": 0.12
+    "warm": 0.2,
+    "cool": 0
    },
    "reveal": false
   },
@@ -24,27 +22,10 @@
    "text": "Not “sinners”… “O My servants.”",
    "ur": "گناہگار نہیں… اے میرے بندو",
    "mood": {
-    "warm": 0.05,
-    "cool": 0.08
-   },
-   "ref": "Az-Zumar 39:53"
-  },
-  {
-   "q": "39:53",
-   "ar_words": [
-    2,
-    11
-   ],
-   "en": "O My servants who have transgressed against themselves [by sinning], do not despair of the mercy of Allah",
-   "ur_a": [
-    "اے میرے بندو",
-    "مایوس نہ ہو جاؤ"
-   ],
-   "ref": "Az-Zumar 39:53",
-   "mood": {
     "warm": 0.15,
     "cool": 0
-   }
+   },
+   "ref": "Az-Zumar 39:53"
   },
   {
    "q": "39:53",
@@ -64,48 +45,29 @@
    }
   },
   {
-   "q": "39:54",
-   "ar_words": [
-    1,
-    3
-   ],
-   "en": "And return [in repentance] to your Lord",
-   "ur_a": [
-    "پلٹ آؤ",
-    "رب کی طرف"
-   ],
-   "ref": "Az-Zumar 39:54",
+   "text": "All. Not some. All.",
+   "ur": "سب۔ کچھ نہیں، سب",
    "mood": {
-    "warm": 0.25,
+    "warm": 0.15,
     "cool": 0
-   }
+   },
+   "size": 110
   },
   {
-   "text": "أَسْتَغْفِرُ اللَّهَ. Come back to Him today. Send this to someone who needs it.",
-   "ur": "آج ہی استغفار کریں اور لوٹ آئیں۔ یہ اس تک پہنچائیں جسے اس کی ضرورت ہے",
-   "mood": {
-    "warm": 0.3,
-    "cool": 0
-   }
-  },
-  {
-   "text": "Full movies of Prophet Musa and Prophet Sulaiman (AS): link below.",
-   "ur": "حضرت موسیٰ اور حضرت سلیمان علیہما السلام کی مکمل فلمیں دیکھیں، لنک نیچے",
+   "text": "Say it today: أَسْتَغْفِرُ اللَّهَ. Come back to Him.",
+   "ur": "آج ہی کہیں: أَسْتَغْفِرُ اللَّهَ۔ اس کی طرف لوٹ آئیں",
    "mood": {
     "warm": 0.3,
     "cool": 0
    },
-   "cta": true,
-   "btn": "Full movies ↓"
+   "stay": true
   }
  ],
  "photos": [
   "s1",
   "s2",
-  "s3",
   "s4",
-  "s5",
-  "s6",
+  "s3",
   "s6"
  ],
  "scenes": {
@@ -120,8 +82,11 @@
   }
  },
  "pauses": {
-  "3": 0.8
+  "2": 0.5,
+  "3": 0.5,
+  "4": 0.6
  },
- "turn": 3,
- "hum": 4
+ "turn": 2,
+ "hum": 2,
+ "v2": true
 }
