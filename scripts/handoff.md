@@ -320,3 +320,4 @@ A new session can recreate these for itself (send_later / create_trigger) and de
 - 24 Nov: user keeps all scheduled titles as they are (title.py-scored style). The two live Shorts (gold jar XTofvvKdjgQ, staff C74JJWhj4uE) show different titles on YouTube; left alone (24 h rule).
 - 24 Nov 18:35: owner decision (user delegated): keep 44-staff-hi at 19:00 tonight (completes the Hindustani test; no real effect on the English Short's reach).
 - 24 Nov: first audience request (comment on the staff Short): viewer asked for 'the ones who struggle and ease by Allah' → supports the comfort-Short plan; replied promising Mon 30 sea Short.
+- 24 Nov: comfort-verse Shorts get Related video = 'Ease With Every Hardship' https://youtube.com/shorts/wSX3fbkqLwo (to re-surface it); story Shorts keep the film. Daily 20:47 reminder (trig_01XLLkNEZn59tEPvcyXsdzom) updated.
