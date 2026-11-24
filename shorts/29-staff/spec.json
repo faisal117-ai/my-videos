@@ -168,7 +168,8 @@
    "mood": {
     "warm": 0.25,
     "cool": 0
-   }
+   },
+   "follow": "Follow · a Quran story daily"
   },
   {
    "cta": true,

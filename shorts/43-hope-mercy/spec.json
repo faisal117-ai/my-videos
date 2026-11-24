@@ -1,211 +1,211 @@
 {
-  "accent": "#f2b04a",
-  "embers": false,
-  "motes": 0.35,
-  "mote": "#f6dcae",
-  "flash": 0.0,
-  "bed_volume": 1.0,
-  "hold_end": 1.2,
-  "text_top": 300,
-  "text_bottom": 780,
-  "tr_size": 56,
-  "scene": "photos",
-  "photos": [
-    "assets/gen/s1.jpg",
-    "assets/gen/s2.jpg",
-    "assets/gen/s3.jpg",
-    "assets/gen/s4.jpg",
-    "assets/gen/s5.jpg",
-    "assets/gen/s6.jpg",
-    "assets/gen/s6.jpg"
-  ],
-  "shakes": [
-    {
-      "beat": 0,
-      "at": 0.3,
-      "amp": 8,
-      "dur": 1.0
-    },
-    {
-      "beat": 3,
-      "at": 0.0,
-      "amp": 10,
-      "dur": 1.4
-    }
-  ],
-  "glows": [
-    {
-      "beat": 3,
-      "at": 0.1,
-      "dur": 3.0,
-      "peak": 0.25
-    },
-    {
-      "beat": 4,
-      "at": 0.2,
-      "dur": 3.5,
-      "peak": 0.25
-    }
-  ],
-  "sound": [
-    {
-      "prompt": "lib",
-      "src": "../../long/01-yusuf/assets/sfx/992f69b875be.mp3",
-      "beat": 0,
-      "offset": 0,
-      "dur": 100,
-      "gain": -17,
-      "fade_in": 0.5,
-      "fade_out": 1.5
-    },
-    {
-      "prompt": "lib",
-      "src": "../03-cave/assets/sfx/03b5f68efefc.mp3",
-      "beat": 0,
-      "offset": 0.2,
-      "dur": 3,
-      "gain": -13,
-      "fade_in": 0.02,
-      "fade_out": 1
-    },
-    {
-      "prompt": "lib",
-      "src": "../../long/04-sulaiman/assets/sfx/93fa1b20e45f.mp3",
-      "beat": 1,
-      "offset": 0,
-      "dur": 8,
-      "gain": -13,
-      "fade_in": 0.5,
-      "fade_out": 1.5
-    },
-    {
-      "prompt": "lib",
-      "src": "../../long/04-sulaiman/assets/sfx/72cc4baec592.mp3",
-      "beat": 3,
-      "offset": -3.6,
-      "dur": 3.8,
-      "gain": -8,
-      "fade_in": 0.4,
-      "fade_out": 0.3
-    },
-    {
-      "prompt": "lib",
-      "src": "../../long/04-sulaiman/assets/sfx/f0b78dedaad6.mp3",
-      "beat": 3,
-      "offset": 0,
-      "dur": 4,
-      "gain": -7,
-      "fade_in": 0.02,
-      "fade_out": 1.5
-    },
-    {
-      "prompt": "lib",
-      "src": "../06-ant/assets/sfx/cabf6e6577de.mp3",
-      "beat": 4,
-      "offset": 0,
-      "dur": 30,
-      "gain": -13,
-      "fade_in": 1.0,
-      "fade_out": 1.5
-    }
-  ],
-  "beats": [
-    {
-      "hook": true,
-      "text": "Think Allah won't forgive you? Listen.",
-      "ur": "سوچتے ہیں اللہ آپ کو معاف نہیں کرے گا؟ سنیں",
-      "mood": {
-        "warm": 0.0,
-        "cool": 0.12
-      },
-      "reveal": false
-    },
-    {
-      "text": "Not “sinners”… “O My servants.”",
-      "ur": "گناہگار نہیں… اے میرے بندو",
-      "mood": {
-        "warm": 0.05,
-        "cool": 0.08
-      },
-      "ref": "Az-Zumar 39:53"
-    },
-    {
-      "q": "39:53",
-      "ar_words": [
-        2,
-        11
-      ],
-      "en": "O My servants who have transgressed against themselves [by sinning], do not despair of the mercy of Allah",
-      "ur_a": [
-        "اے میرے بندو",
-        "مایوس نہ ہو جاؤ"
-      ],
-      "ref": "Az-Zumar 39:53",
-      "mood": {
-        "warm": 0.15,
-        "cool": 0
-      },
-      "arabic": "يَٰعِبَادِيَ ٱلَّذِينَ أَسۡرَفُواْ عَلَىٰٓ أَنفُسِهِمۡ لَا تَقۡنَطُواْ مِن رَّحۡمَةِ ٱللَّهِۚ",
-      "translation": "“O My servants who have transgressed against themselves [by sinning], do not despair of the mercy of Allah”",
-      "ur": "اے میرے بندو، جنہوں نے اپنی جانوں پر زیادتی کی ہے، اللہ کی رحمت سے مایوس نہ ہو جاؤ"
-    },
-    {
-      "q": "39:53",
-      "ar_words": [
-        12,
-        16
-      ],
-      "en": "Indeed, Allah forgives all sins",
-      "ur_a": [
-        "یقیناً اللہ",
-        "معاف کر دیتا ہے"
-      ],
-      "ref": "Az-Zumar 39:53",
-      "mood": {
-        "warm": 0.25,
-        "cool": 0
-      },
-      "arabic": "إِنَّ ٱللَّهَ يَغۡفِرُ ٱلذُّنُوبَ جَمِيعًاۚ",
-      "translation": "“Indeed, Allah forgives all sins”",
-      "ur": "یقیناً اللہ سارے گناہ معاف کر دیتا ہے"
-    },
-    {
-      "q": "39:54",
-      "ar_words": [
-        1,
-        3
-      ],
-      "en": "And return [in repentance] to your Lord",
-      "ur_a": [
-        "پلٹ آؤ",
-        "رب کی طرف"
-      ],
-      "ref": "Az-Zumar 39:54",
-      "mood": {
-        "warm": 0.25,
-        "cool": 0
-      },
-      "arabic": "وَأَنِيبُوٓاْ إِلَىٰ رَبِّكُمۡ",
-      "translation": "“And return [in repentance] to your Lord”",
-      "ur": "پلٹ آؤ اپنے رب کی طرف"
-    },
-    {
-      "text": "أَسْتَغْفِرُ اللَّهَ. Come back to Him today. Send this to someone who needs it.",
-      "ur": "آج ہی استغفار کریں اور لوٹ آئیں۔ یہ اس تک پہنچائیں جسے اس کی ضرورت ہے",
-      "mood": {
-        "warm": 0.3,
-        "cool": 0
-      }
-    },
-    {
-      "text": "Full movies of Prophet Musa and Prophet Sulaiman (AS): link below.",
-      "ur": "حضرت موسیٰ اور حضرت سلیمان علیہما السلام کی مکمل فلمیں دیکھیں، لنک نیچے",
-      "mood": {
-        "warm": 0.3,
-        "cool": 0
-      },
-      "cta": true,
-      "btn": "Full movies ↓"
-    }
-  ]
+ "accent": "#f2b04a",
+ "embers": false,
+ "motes": 0.35,
+ "mote": "#f6dcae",
+ "flash": 0.0,
+ "bed_volume": 1.0,
+ "hold_end": 1.2,
+ "text_top": 300,
+ "text_bottom": 780,
+ "tr_size": 56,
+ "scene": "photos",
+ "photos": [
+  "assets/gen/s1.jpg",
+  "assets/gen/s2.jpg",
+  "assets/gen/s3.jpg",
+  "assets/gen/s4.jpg",
+  "assets/gen/s5.jpg",
+  "assets/gen/s6.jpg",
+  "assets/gen/s6.jpg"
+ ],
+ "shakes": [
+  {
+   "beat": 0,
+   "at": 0.3,
+   "amp": 8,
+   "dur": 1.0
+  },
+  {
+   "beat": 3,
+   "at": 0.0,
+   "amp": 10,
+   "dur": 1.4
+  }
+ ],
+ "glows": [
+  {
+   "beat": 3,
+   "at": 0.1,
+   "dur": 3.0,
+   "peak": 0.25
+  },
+  {
+   "beat": 4,
+   "at": 0.2,
+   "dur": 3.5,
+   "peak": 0.25
+  }
+ ],
+ "sound": [
+  {
+   "prompt": "lib",
+   "src": "../../long/01-yusuf/assets/sfx/992f69b875be.mp3",
+   "beat": 0,
+   "offset": 0,
+   "dur": 100,
+   "gain": -17,
+   "fade_in": 0.5,
+   "fade_out": 1.5
+  },
+  {
+   "prompt": "lib",
+   "src": "../03-cave/assets/sfx/03b5f68efefc.mp3",
+   "beat": 0,
+   "offset": 0.2,
+   "dur": 3,
+   "gain": -13,
+   "fade_in": 0.02,
+   "fade_out": 1
+  },
+  {
+   "prompt": "lib",
+   "src": "../../long/04-sulaiman/assets/sfx/93fa1b20e45f.mp3",
+   "beat": 1,
+   "offset": 0,
+   "dur": 8,
+   "gain": -13,
+   "fade_in": 0.5,
+   "fade_out": 1.5
+  },
+  {
+   "prompt": "lib",
+   "src": "../../long/04-sulaiman/assets/sfx/72cc4baec592.mp3",
+   "beat": 3,
+   "offset": -3.6,
+   "dur": 3.8,
+   "gain": -8,
+   "fade_in": 0.4,
+   "fade_out": 0.3
+  },
+  {
+   "prompt": "lib",
+   "src": "../../long/04-sulaiman/assets/sfx/f0b78dedaad6.mp3",
+   "beat": 3,
+   "offset": 0,
+   "dur": 4,
+   "gain": -7,
+   "fade_in": 0.02,
+   "fade_out": 1.5
+  },
+  {
+   "prompt": "lib",
+   "src": "../06-ant/assets/sfx/cabf6e6577de.mp3",
+   "beat": 4,
+   "offset": 0,
+   "dur": 30,
+   "gain": -13,
+   "fade_in": 1.0,
+   "fade_out": 1.5
+  }
+ ],
+ "beats": [
+  {
+   "hook": true,
+   "text": "Think Allah won't forgive you? Listen.",
+   "ur": "سوچتے ہیں اللہ آپ کو معاف نہیں کرے گا؟ سنیں",
+   "mood": {
+    "warm": 0.0,
+    "cool": 0.12
+   },
+   "reveal": false
+  },
+  {
+   "text": "Not “sinners”… “O My servants.”",
+   "ur": "گناہگار نہیں… اے میرے بندو",
+   "mood": {
+    "warm": 0.05,
+    "cool": 0.08
+   },
+   "ref": "Az-Zumar 39:53"
+  },
+  {
+   "q": "39:53",
+   "ar_words": [
+    2,
+    11
+   ],
+   "en": "O My servants who have transgressed against themselves [by sinning], do not despair of the mercy of Allah",
+   "ur_a": [
+    "اے میرے بندو",
+    "مایوس نہ ہو جاؤ"
+   ],
+   "ref": "Az-Zumar 39:53",
+   "mood": {
+    "warm": 0.15,
+    "cool": 0
+   },
+   "arabic": "يَٰعِبَادِيَ ٱلَّذِينَ أَسۡرَفُواْ عَلَىٰٓ أَنفُسِهِمۡ لَا تَقۡنَطُواْ مِن رَّحۡمَةِ ٱللَّهِۚ",
+   "translation": "“O My servants who have transgressed against themselves [by sinning], do not despair of the mercy of Allah”",
+   "ur": "اے میرے بندو، جنہوں نے اپنی جانوں پر زیادتی کی ہے، اللہ کی رحمت سے مایوس نہ ہو جاؤ"
+  },
+  {
+   "q": "39:53",
+   "ar_words": [
+    12,
+    16
+   ],
+   "en": "Indeed, Allah forgives all sins",
+   "ur_a": [
+    "یقیناً اللہ",
+    "معاف کر دیتا ہے"
+   ],
+   "ref": "Az-Zumar 39:53",
+   "mood": {
+    "warm": 0.25,
+    "cool": 0
+   },
+   "arabic": "إِنَّ ٱللَّهَ يَغۡفِرُ ٱلذُّنُوبَ جَمِيعًاۚ",
+   "translation": "“Indeed, Allah forgives all sins”",
+   "ur": "یقیناً اللہ سارے گناہ معاف کر دیتا ہے"
+  },
+  {
+   "q": "39:54",
+   "ar_words": [
+    1,
+    3
+   ],
+   "en": "And return [in repentance] to your Lord",
+   "ur_a": [
+    "پلٹ آؤ",
+    "رب کی طرف"
+   ],
+   "ref": "Az-Zumar 39:54",
+   "mood": {
+    "warm": 0.25,
+    "cool": 0
+   },
+   "arabic": "وَأَنِيبُوٓاْ إِلَىٰ رَبِّكُمۡ",
+   "translation": "“And return [in repentance] to your Lord”",
+   "ur": "پلٹ آؤ اپنے رب کی طرف"
+  },
+  {
+   "text": "أَسْتَغْفِرُ اللَّهَ. Come back to Him today. Send this to someone who needs it.",
+   "ur": "آج ہی استغفار کریں اور لوٹ آئیں۔ یہ اس تک پہنچائیں جسے اس کی ضرورت ہے",
+   "mood": {
+    "warm": 0.3,
+    "cool": 0
+   }
+  },
+  {
+   "text": "Full movies of Prophet Musa and Prophet Sulaiman (AS): link below.",
+   "ur": "حضرت موسیٰ اور حضرت سلیمان علیہما السلام کی مکمل فلمیں دیکھیں، لنک نیچے",
+   "mood": {
+    "warm": 0.3,
+    "cool": 0
+   },
+   "cta": true,
+   "btn": "Full movies ↓"
+  }
+ ]
 }

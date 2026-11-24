@@ -188,3 +188,10 @@ half of the English Shorts' views within 4 weeks.
 - Comfort Shorts speak to a fear the viewer already has (hardship, sin, loneliness, loss); comfort first, story second.
 - No AI-voiced Quran recitation (translate and quote; Callum narrates).
 - Hindustani test: decide at the Friday 27 Nov review from its numbers.
+
+## CTA rule (user, 24 Nov)
+- One spoken ask per Short: comfort Shorts "Send this to someone who needs it"; story Shorts "Full movie of …: link below".
+- Silent on-screen follow button on the lesson beat ("follow" field in build_short): "Follow · 1 verse daily" (comfort) /
+  "Follow · a Quran story daily" (stories). TEST: only on today's Shorts (Tue 24: 29-staff 16:00, 44-staff-hi 19:00);
+  the user decides from their response; otherwise it starts with next week's batch. Never a spoken "like and subscribe".
+- Pinned comment: a heartfelt question ("Write the one dua you need answered today 🤲") + film link.

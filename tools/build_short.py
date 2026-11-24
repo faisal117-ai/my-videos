@@ -147,6 +147,11 @@ def beat_html(i: int, beat: dict, dur: float, spoken: float, accent: str) -> str
         parts.append(f'<div id="{bid}-ur" class="ur" dir="rtl" lang="ur" data-layout-allow-overflow>{esc(beat["ur"])}</div>')
         js.append(f'tl.fromTo("#{bid}-ur", {{opacity: 0, y: 10}}, {{opacity: 1, y: 0, duration: 0.35, ease: "power2.out"}}, 0.15);')
 
+    if beat.get("follow"):  # silent follow CTA (user, 24 Nov): on screen only, no extra voice time
+        parts.append(f'<div id="{bid}-follow" class="follow">{esc(beat["follow"])}</div>')
+        js.append(f'tl.fromTo("#{bid}-follow", {{opacity: 0, y: 20, scale: 0.9}}, '
+                  f'{{opacity: 1, y: 0, scale: 1, duration: 0.5, ease: "back.out(1.8)"}}, {max(spoken * 0.35, 0.6):.2f});')
+
     if beat.get("ref"):
         parts.append(f'<div id="{bid}-ref" class="ref">{esc(beat["ref"])}</div>')
         js.append(f'tl.fromTo("#{bid}-ref", {{opacity: 0, y: 12}}, '
@@ -1819,7 +1824,9 @@ def index_html(spec: dict, beats: list, total: float) -> str:
         color: var(--accent); opacity: 0; }}
       .mark {{ font-family: "Amiri Quran"; font-size: 120px; text-align: center; color: var(--accent); line-height: 1.4; }}
       .btn {{ align-self: center; font-family: Inter; font-weight: 700; font-size: 40px; letter-spacing: 0.08em;
-        color: #120b08; background: var(--accent); border-radius: 999px; padding: 22px 48px; }}{COMPACT_CSS if spec.get("scene") == "photos" else ""}
+        color: #120b08; background: var(--accent); border-radius: 999px; padding: 22px 48px; }}
+      .follow {{ align-self: center; margin-top: 18px; font-family: Inter; font-weight: 800; font-size: 34px; letter-spacing: 0.06em;
+        color: var(--accent); border: 3px solid var(--accent); background: rgba(0,0,0,0.45); border-radius: 999px; padding: 14px 34px; }}{COMPACT_CSS if spec.get("scene") == "photos" else ""}
     </style>
   </head>
   <body>
