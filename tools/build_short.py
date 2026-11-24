@@ -741,7 +741,7 @@ def atmos_html(spec: dict, beats: list, total: float) -> str:
 
     if spec.get("bright"):  # neutral grade (user 25 Nov: no brown cast): keep only a trace of the warm tint
         for b in beats:
-            b["mood"] = {**b["mood"], "warm": round(b["mood"].get("warm", 0) * 0.25, 3)}
+            b["mood"] = {**b["mood"], "warm": 0}  # true colours: no warm overlay at all
     mood_js = []
     prev = beats[0]["mood"]
     for b in beats[1:]:
@@ -1693,7 +1693,7 @@ def photos_scene(spec, beats, total):
         css += """
     #phshade { background: linear-gradient(180deg, rgba(0,0,0,0.32) 0%, rgba(0,0,0,0.22) 25%, rgba(0,0,0,0.08) 40%,
       rgba(0,0,0,0) 50%, rgba(0,0,0,0) 85%, rgba(0,0,0,0.2) 100%); }
-    .ph img { filter: brightness(1.08) contrast(1.07) saturate(1.15); }
+    .ph img { filter: brightness(1.08) contrast(1.05); }
     .tr { text-shadow: 0 2px 10px rgba(0,0,0,0.95), 0 0 3px rgba(0,0,0,0.95) !important; color: #fff6e6 !important; }
 """
     def layer(i):
@@ -1736,7 +1736,7 @@ def photos_scene(spec, beats, total):
     if tr is not None:
         t0 = beats[tr]["start"] - 0.2
         js.append(f'tl.fromTo("#phsc", {{filter: "brightness(1) saturate(1) hue-rotate(0deg)"}}, '
-                  f'{{filter: "brightness(1.16) saturate(1.15)", duration: 1.8, ease: "power2.out", immediateRender: false}}, {t0:.2f});')
+                  f'{{filter: "brightness(1.14) saturate(1.03)", duration: 1.8, ease: "power2.out", immediateRender: false}}, {t0:.2f});')
     sb = spec.get("shake_beat")
     if sb is not None:
         s0 = beats[sb]["start"] + 0.3

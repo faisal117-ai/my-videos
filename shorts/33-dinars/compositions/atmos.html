@@ -18,7 +18,7 @@
 
     #phshade { background: linear-gradient(180deg, rgba(0,0,0,0.32) 0%, rgba(0,0,0,0.22) 25%, rgba(0,0,0,0.08) 40%,
       rgba(0,0,0,0) 50%, rgba(0,0,0,0) 85%, rgba(0,0,0,0.2) 100%); }
-    .ph img { filter: brightness(1.08) contrast(1.07) saturate(1.15); }
+    .ph img { filter: brightness(1.08) contrast(1.05); }
     .tr { text-shadow: 0 2px 10px rgba(0,0,0,0.95), 0 0 3px rgba(0,0,0,0.95) !important; color: #fff6e6 !important; }
 
     .phglow { position: absolute; inset: 0; opacity: 0; mix-blend-mode: screen;
@@ -35,7 +35,7 @@
     <div id="sky" class="clip" data-start="0" data-duration="29.97"></div>
 
     <div id="phsc" class="clip" data-start="0" data-duration="29.97"><div id="ph0" class="ph"><img src="assets/gen/s1.jpg" alt=""></div><div id="ph1" class="ph"><img src="assets/gen/s3.jpg" alt=""></div><div id="ph2" class="ph"><img src="assets/gen/s6.jpg" alt=""></div><div id="ph3" class="ph"><img src="assets/gen/s8.jpg" alt=""></div><div id="ph4" class="ph"><img src="assets/gen/s9.jpg" alt=""></div><div id="ph1b" class="ph" style="transform-origin:50% 68%"><img src="assets/gen/s3.jpg" alt=""></div><div id="ph2b" class="ph" style="transform-origin:50% 68%"><img src="assets/gen/s6.jpg" alt=""></div><div id="ph3b" class="ph" style="transform-origin:50% 68%"><img src="assets/gen/s8.jpg" alt=""></div><div id="ph4b" class="ph" style="transform-origin:50% 68%"><img src="assets/gen/s9.jpg" alt=""></div><div id="phg0" class="phglow"></div><div id="phg1" class="phglow"></div><div id="phshade"></div></div>
-    <div id="warm" class="clip" data-start="0" data-duration="29.97"><div id="warm-g" style="opacity:0.05"><div id="warm-b"></div></div></div>
+    <div id="warm" class="clip" data-start="0" data-duration="29.97"><div id="warm-g" style="opacity:0"><div id="warm-b"></div></div></div>
     <div id="cool" class="clip" data-start="0" data-duration="29.97"><div id="cool-g" style="opacity:0"></div></div>
     <div id="embers" class="clip" data-start="0" data-duration="29.97"><div id="embers-g" style="opacity:0.35">
       
@@ -72,7 +72,7 @@
     tl.fromTo("#ph4", {scale: 1.0, x: 0}, {scale: 1.12, x: 0, duration: 7.69, ease: "none", immediateRender: false}, 22.98);
     tl.fromTo("#ph4b", {opacity: 0, scale: 1.28}, {opacity: 1, scale: 1.36, duration: 0.5, immediateRender: false}, 26.32);
     tl.fromTo("#ph4b", {scale: 1.36}, {scale: 1.44, duration: 4.00, ease: "none", immediateRender: false}, 26.82);
-    tl.fromTo("#phsc", {filter: "brightness(1) saturate(1) hue-rotate(0deg)"}, {filter: "brightness(1.16) saturate(1.15)", duration: 1.8, ease: "power2.out", immediateRender: false}, 17.70);
+    tl.fromTo("#phsc", {filter: "brightness(1) saturate(1) hue-rotate(0deg)"}, {filter: "brightness(1.14) saturate(1.03)", duration: 1.8, ease: "power2.out", immediateRender: false}, 17.70);
     tl.fromTo("#phsc", {x: 0, y: 0}, {x: 8, y: 4.8, duration: 0.05, yoyo: true, repeat: 20, ease: "none", immediateRender: false}, 0.30);
     tl.to("#phsc", {x: 0, y: 0, duration: 0.08}, 1.35);
     tl.fromTo("#phsc", {x: 0, y: 0}, {x: 10, y: 6.0, duration: 0.05, yoyo: true, repeat: 26, ease: "none", immediateRender: false}, 17.90);
@@ -80,16 +80,16 @@
     tl.fromTo("#phg0", {opacity: 0}, {keyframes: [{opacity: 0.6, duration: 1.05, ease: "power2.out"}, {opacity: 0, duration: 1.95, ease: "sine.in"}], immediateRender: false}, 18.00);
     tl.fromTo("#phg1", {opacity: 0}, {keyframes: [{opacity: 0.85, duration: 1.22, ease: "power2.out"}, {opacity: 0, duration: 2.27, ease: "sine.in"}], immediateRender: false}, 11.84);
     tl.fromTo("#warm-b", {scaleY: 1}, {scaleY: 1.06, duration: 0.8, ease: "sine.inOut", yoyo: true, repeat: 18}, 0);
-    tl.fromTo("#warm-g", {opacity: 0.05}, {opacity: 0.037, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 4.48);
+    tl.fromTo("#warm-g", {opacity: 0}, {opacity: 0, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 4.48);
     tl.fromTo("#cool-g", {opacity: 0}, {opacity: 0, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 4.48);
     tl.fromTo("#embers-g", {opacity: 0.35}, {opacity: 0.35, duration: 0.9, immediateRender: false}, 4.48);
-    tl.fromTo("#warm-g", {opacity: 0.037}, {opacity: 0.037, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 11.64);
+    tl.fromTo("#warm-g", {opacity: 0}, {opacity: 0, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 11.64);
     tl.fromTo("#cool-g", {opacity: 0}, {opacity: 0, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 11.64);
     tl.fromTo("#embers-g", {opacity: 0.35}, {opacity: 0.35, duration: 0.9, immediateRender: false}, 11.64);
-    tl.fromTo("#warm-g", {opacity: 0.037}, {opacity: 0.037, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 17.90);
+    tl.fromTo("#warm-g", {opacity: 0}, {opacity: 0, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 17.90);
     tl.fromTo("#cool-g", {opacity: 0}, {opacity: 0, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 17.90);
     tl.fromTo("#embers-g", {opacity: 0.35}, {opacity: 0.35, duration: 0.9, immediateRender: false}, 17.90);
-    tl.fromTo("#warm-g", {opacity: 0.037}, {opacity: 0.075, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 23.18);
+    tl.fromTo("#warm-g", {opacity: 0}, {opacity: 0, duration: 0.9, ease: "sine.inOut", immediateRender: false}, 23.18);
     tl.fromTo("#cool-g", {opacity: 0}, {opacity: 0, duration: 1.2, ease: "sine.inOut", immediateRender: false}, 23.18);
     tl.fromTo("#embers-g", {opacity: 0.35}, {opacity: 0.35, duration: 0.9, immediateRender: false}, 23.18);
     const et = gsap.timeline({ paused: true });
