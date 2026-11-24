@@ -327,3 +327,4 @@ A new session can recreate these for itself (send_later / create_trigger) and de
   All rebuilt with template v2 (hook ≤10 words/≤3.5 s, 1 verse card ~6 s, punch line, transformation at the turn,
   change every ≤4 s, humming from the verse, sound event 8–18 s, ending ≤3 s, 30–35 s); each sent for approval, then
   swapped (with its new time) into Metricool. Until swapped, the current versions stay scheduled as the fallback.
+- 25 Nov 01:38 PKT: time moves done in Metricool (existing videos): dinars → Mon 30 10:00 (post 440871181), gift → Thu 10:00 (440871301), 39:53 → Thu 16:00 (440871411), father → Sat 10:00 (440871527), boat → Sat 16:00 (440871609), sea → Mon 30 16:00 (440871745), near → Tue 1 16:00 (440871832). Calf Wed 10, dua Wed 16, Pharaoh Fri 10, stars Fri 16, Dawud Sun 10, valley Sun 16 were already right.
