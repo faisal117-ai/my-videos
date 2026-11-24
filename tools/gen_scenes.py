@@ -11,6 +11,14 @@ MODEL = "gemini-2.5-flash-image"
 # Shorts rule (user 25 Nov 2026): daylight pictures, no sunset/brown cast. scenes.json "light": "day" (default) | "free"
 DAY = ("Lighting: bright clear late-morning daylight, light-blue sky, neutral white sunlight, true natural colours; "
        "no sunset, no golden hour, no orange or brown cast, no dark interiors (rooms lit by morning sun). ")
+DAWN = ("Lighting: a real sunrise at the moment of hope: a bright gold sun rising over a deep blue sky, clean light, "
+        "crisp true colours; no brown haze. ")
+
+def light(cfg, k):
+    """Shorts rule (user 25 Nov): daylight by default; dark_keys = the one hardship beat; dawn_keys = the turn only."""
+    if cfg.get("light", "day") != "day" or k in cfg.get("dark_keys", []):
+        return ""
+    return DAWN if k in cfg.get("dawn_keys", []) else DAY
 
 def trim_bars(im):
     """Crop black letterbox/pillarbox bars Gemini sometimes adds."""
@@ -39,7 +47,7 @@ def trim_flat(im):
 
 
 def gen(d, cfg, k):
-    body = {"contents": [{"parts": [{"text": cfg["style"] + " " + RULES + (DAY if cfg.get("light", "day") == "day" and k not in cfg.get("dark_keys", []) else "") + cfg["scenes"][k]}]}],
+    body = {"contents": [{"parts": [{"text": cfg["style"] + " " + RULES + light(cfg, k) + cfg["scenes"][k]}]}],
             "generationConfig": {"responseModalities": ["IMAGE"], "imageConfig": {"aspectRatio": cfg.get("aspect", "9:16")}}}
     out = subprocess.run(["curl", "-sS", "-H", "x-goog-api-key: proxy-injected", "-H", "Content-Type: application/json",
                           "-d", json.dumps(body), f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent"],

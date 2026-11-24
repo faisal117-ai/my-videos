@@ -333,3 +333,4 @@ A new session can recreate these for itself (send_later / create_trigger) and de
 - 25 Nov: neutral grade (option A) applied; all 14 v2 Shorts rebuilt with build_short and rendering in two queues (scratchpad v2/A.log, B.log). Swap each after frame check + scorecard under the overnight advance permission.
 - 25 Nov: user chose A+B: 28 hook + lesson pictures relit to neutral daylight with Gemini image edit (originals in scratchpad relight/orig); fire hook keeps flames in daylight; near hook and 39:53 lesson rooms get morning sun. Re-rendering all 14.
 - 25 Nov: daylight-picture rule saved (CLAUDE.md #4, shorts-plan Brightness, gen_scenes.py DAY prompt by default; dark_keys for the hardship beat).
+- 25 Nov: picture rule approved (owner version): daylight default, one dark hardship picture, sunrise only at the turn (gen_scenes dark_keys/dawn_keys). From the next Short on; this week's 14 keep their daylight lessons.
