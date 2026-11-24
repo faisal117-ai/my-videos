@@ -310,3 +310,4 @@ A new session can recreate these for itself (send_later / create_trigger) and de
 - 24 Nov: user changed Studio settings: automatic dubbing OFF (accuracy risk on Quran/duas), third-party AI training OFF. Clips ON, likes shown, not made for kids, no product tagging (decided as channel owner).
 - 24 Nov: yt-viral run (reports/Viral niche 24 Nov.md); user shipped the plan: 2 Shorts/day from 30 Nov, 10:00 comfort-verse + 16:00 one-moment miracle. Drafting the 7 comfort Shorts for approval.
 - 24 Nov: 49-sea-comfort approved and scheduled Mon 30 10:00 (title '26:62: 1 Sentence Facing a Dead End 🌊', cover 4050 ms). 50-near-comfort (Tue 1 Dec 10:00, 2:186) rendering.
+- 24 Nov: 50-near-comfort approved and scheduled Tue 1 Dec 10:00 (title '2:186: How Close Is Your Lord, Really? 🤲', cover 3850 ms). User: do NOT build Wed onward until the Friday 27 Nov review; the remaining comfort Shorts (65:3, 2:286, 13:28, 93:3, 12:87) are approved drafts only.
