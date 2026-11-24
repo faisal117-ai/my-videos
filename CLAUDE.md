@@ -15,6 +15,8 @@ Every new rule the user gives goes into THIS file the same turn (not only into s
 6. Slots: 10:00 story → film, 16:00 comfort (≈4 comfort : 3 dua-with-answer); films Sat EN / Sun UR 17:00. No Hindustani twins.
 7. Every change: commit and push to the branch AND main; log it in scripts/handoff.md.
 8. Never publish or swap a video into Metricool without the user's approval of the finished video.
+9. Pictures change about every 4 s (new picture or new framing) — a GUIDE, not a rule (user 25 Nov): hold longer when
+   essential (a verse card being read, an emotional beat). All format rules are guides: compare and judge as the owner.
 
 ## Read first, every session
 1. `scripts/handoff.md`: where things stand, open items, schedule, decisions.
