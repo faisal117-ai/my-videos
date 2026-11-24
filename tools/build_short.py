@@ -1686,6 +1686,12 @@ def photos_scene(spec, beats, total):
     #phshade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.38) 25%,
       rgba(0,0,0,0.18) 40%, rgba(0,0,0,0.0) 50%, rgba(0,0,0,0) 80%, rgba(0,0,0,0.35) 100%); }
 """
+    if spec.get("bright"):  # FORMAT v2 brightness: lighter shade, a touch of lift on the stills
+        css += """
+    #phshade { background: linear-gradient(180deg, rgba(0,0,0,0.32) 0%, rgba(0,0,0,0.22) 25%, rgba(0,0,0,0.08) 40%,
+      rgba(0,0,0,0) 50%, rgba(0,0,0,0) 85%, rgba(0,0,0,0.2) 100%); }
+    .ph img { filter: brightness(1.08) saturate(1.08); }
+"""
     def layer(i):
         src = photos[i]
         if src.endswith(".mp4"):  # an animated clip (Gemini Omni): plays from its beat, muted (its voice is in the narration)
@@ -1726,9 +1732,9 @@ def photos_scene(spec, beats, total):
     if tr is not None:
         t0 = beats[tr]["start"] - 0.2
         if tr > 0:
-            js.append(f'tl.set("#phsc", {{filter: "brightness(0.72) saturate(0.75) hue-rotate(-8deg)"}}, 0);')
-        js.append(f'tl.fromTo("#phsc", {{filter: "brightness(0.72) saturate(0.75) hue-rotate(-8deg)"}}, '
-                  f'{{filter: "brightness(1.1) saturate(1.18) hue-rotate(0deg)", duration: 1.8, ease: "power2.out", immediateRender: false}}, {t0:.2f});')
+            js.append(f'tl.set("#phsc", {{filter: "brightness(0.85) saturate(0.85) hue-rotate(-6deg)"}}, 0);')
+        js.append(f'tl.fromTo("#phsc", {{filter: "brightness(0.85) saturate(0.85) hue-rotate(-6deg)"}}, '
+                  f'{{filter: "brightness(1.14) saturate(1.2) hue-rotate(0deg)", duration: 1.8, ease: "power2.out", immediateRender: false}}, {t0:.2f});')
     sb = spec.get("shake_beat")
     if sb is not None:
         s0 = beats[sb]["start"] + 0.3

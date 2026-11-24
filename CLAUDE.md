@@ -3,6 +3,19 @@
 The user works from an iPhone only. Develop on the session branch and push to **both the branch and main**
 after every change.
 
+## NEVER make the user repeat these (user, 25 Nov 2026: "always remember things I always have to remind you")
+Every new rule the user gives goes into THIS file the same turn (not only into scripts/*), so every session sees it.
+1. Score every Short/film with the skills' own tools (title.py, hookscore) before showing it; show the scorecard.
+2. Compare the rule version with the best version and recommend as the channel owner.
+3. Check length (Shorts 30–45 s, aim 30–35), honorifics, no holy figure in any image (Gemini prompts say NO PEOPLE for
+   any scene tied to a holy figure), Arabic voiced with eleven_v3 + speech-to-text check, plain captions (no *chip*).
+4. Shorts are BRIGHT (user 25 Nov): warm golden-hour/dawn/daylight scenes, a bright first frame with the key object,
+   ~70 % of runtime bright; dark only for the one hardship beat; the turn goes from ~85 % to bright and warm.
+5. FORMAT v2 for every Short (shorts-plan.md); films follow scripts/film-guidelines.md (not the Shorts rules).
+6. Slots: 10:00 story → film, 16:00 comfort (≈4 comfort : 3 dua-with-answer); films Sat EN / Sun UR 17:00. No Hindustani twins.
+7. Every change: commit and push to the branch AND main; log it in scripts/handoff.md.
+8. Never publish or swap a video into Metricool without the user's approval of the finished video.
+
 ## Read first, every session
 1. `scripts/handoff.md`: where things stand, open items, schedule, decisions.
 2. `scripts/checklist.md`: run it on EVERY Short and film before showing it to the user, and report each line.

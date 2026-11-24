@@ -211,3 +211,8 @@ Scorecard /100: Hook 40 (frame-0 text, ≤ 10 words, you+stakes or surprise in 2
 Payoff 25 (one verse = the twist, punch line, lesson to "you" answering the hook) · Retention 20 (change every ≤ 4 s,
 transformation at the turn, sound event 8–18 s, humming from the verse, ending ≤ 3 s, 30–35 s, no beat > 6 s) ·
 Packaging 5 (title ≥ 90, pair ≥ 90) · Accuracy 10. After publishing: stayed-to-watch target 50 %+, average view 70 %+.
+
+## Brightness (user approved 25 Nov 2026, part of FORMAT v2)
+Lighter top shade (~30 %), golden hour / dawn / soft daylight by default, dark only for the hardship beat, a bright warm
+first frame with the key object, ~70 % of runtime bright; the transformation starts at ~85 % brightness and ends bright
+and warm (110–115 %). Brightness supports the hook; it does not replace it (17 Nov test).
