@@ -1,0 +1,106 @@
+{
+ "id": "50-near-comfort",
+ "lines": [
+  "You think Allah is far? He says: I am near.",
+  "When you whisper a dua and nothing seems to change, remember this.",
+  "Allah says: When My servants ask about Me... indeed, I am near.",
+  "I respond to the call of the one who calls, when he calls upon Me.",
+  "Not far. Near. Call Him today, in your own words. Send this to someone who needs it.",
+  "Full movie of Prophet Sulaiman, alayhis salaam, whose dua was answered: link below."
+ ],
+ "beats": [
+  {
+   "hook": true,
+   "text": "You think Allah is far? He says: I am near.",
+   "ur": "آپ سمجھتے ہیں اللہ دور ہے؟ وہ فرماتا ہے: میں قریب ہوں",
+   "mood": {
+    "warm": 0.0,
+    "cool": 0.12
+   },
+   "reveal": false
+  },
+  {
+   "text": "A whispered dua… and nothing seems to change?",
+   "ur": "آہستہ سے دعا… اور کچھ بدلتا نظر نہیں آتا؟",
+   "mood": {
+    "warm": 0.05,
+    "cool": 0.08
+   }
+  },
+  {
+   "q": "2:186",
+   "ar_words": [
+    1,
+    6
+   ],
+   "en": "And when My servants ask you, [O Muhammad], concerning Me - indeed I am near",
+   "ur_a": [
+    "اور اے نبیؐ",
+    "قریب ہی ہوں"
+   ],
+   "ref": "Al-Baqarah 2:186",
+   "mood": {
+    "warm": 0.12,
+    "cool": 0
+   }
+  },
+  {
+   "q": "2:186",
+   "ar_words": [
+    7,
+    11
+   ],
+   "en": "I respond to the invocation of the supplicant when he calls upon Me",
+   "ur_a": [
+    "پکارنے والا",
+    "جواب دیتا ہوں"
+   ],
+   "ref": "Al-Baqarah 2:186",
+   "mood": {
+    "warm": 0.22,
+    "cool": 0
+   }
+  },
+  {
+   "text": "Not far. Near. Call Him today, in your own words. Send this to someone who needs it.",
+   "ur": "دور نہیں، قریب۔ آج اپنے الفاظ میں اسے پکاریں۔ یہ اس تک پہنچائیں جسے ضرورت ہے",
+   "mood": {
+    "warm": 0.3,
+    "cool": 0
+   }
+  },
+  {
+   "text": "Full movie of Prophet Sulaiman (AS), whose dua was answered: link below.",
+   "ur": "حضرت سلیمان علیہ السلام کی مکمل فلم دیکھیں، جن کی دعا قبول ہوئی، لنک نیچے",
+   "mood": {
+    "warm": 0.3,
+    "cool": 0
+   },
+   "cta": true,
+   "btn": "Full movie ↓"
+  }
+ ],
+ "photos": [
+  "s1",
+  "s2",
+  "s3",
+  "s3",
+  "s4",
+  "s5"
+ ],
+ "scenes": {
+  "style": "High-quality 3D animated feature film still, close to photoreal (modern big-studio animation look), rich detail, cinematic lighting and depth of field. Vertical 9:16, keep the top third fairly simple and dark-to-plain (text sits there), the action in the lower two thirds. Quiet, intimate, hopeful. ABSOLUTELY NO PEOPLE, no human figures, no hands, no silhouettes anywhere.",
+  "scenes": {
+   "s1": "A small quiet room at night, a prayer rug on the floor lit by one soft beam of moonlight from a window, deep blue darkness around.",
+   "s2": "Prayer beads resting on an open window sill at night, a single candle flickering, the dark city far below.",
+   "s3": "A vast clear night sky full of stars above a calm desert, one star shining brighter and closer than all the others, soft glow.",
+   "s4": "First light of dawn pouring through an open wooden window onto a prayer rug, warm gold light, dust glowing in the air.",
+   "s5": "A peaceful sunrise over a quiet old city of domes and minarets, golden light, birds in the sky."
+  }
+ },
+ "pauses": {
+  "2": 0.6
+ },
+ "turn": 2,
+ "hum": 3
+}
