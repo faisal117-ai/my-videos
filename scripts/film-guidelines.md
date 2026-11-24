@@ -77,3 +77,14 @@ High CTR + low AVD = misleading packaging → demoted. Low CTR + high AVD = good
 - [ ] Length 8–15 min; nothing padded.
 - [ ] Every claim sourced; no Isra'iliyyat unlabelled; no invented quotes. Arabic voiced with eleven_v3 (voice.md).
 - [ ] Chain: ending names the next film(s), end screen, playlist / series.
+
+## Film CTA policy (user approved 24 Nov 2026)
+| When | CTA |
+|---|---|
+| 0:00–0:30 | None (no subscribe, no channel intro) |
+| ~33 % (≈ 5 min) | Silent on-screen chip for 4 s: "Subscribe · a new prophet every week" (no voice) |
+| Mid-film | Nothing else; never a spoken "subscribe" |
+| Last spoken line | One ask: a heartfelt comment question + "next: the full movie of Prophet …" |
+| Last 20 s | End screen: the next film (big) + Subscribe button |
+| Description / pinned comment | First line film links; pinned comment = the same question |
+Starts with the next film (Ibrahim EP 4 keeps its current spoken ending + subscribe end card; no re-render for the chip).
