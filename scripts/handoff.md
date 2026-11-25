@@ -338,3 +338,4 @@ A new session can recreate these for itself (send_later / create_trigger) and de
 - 25 Nov 02:20 PKT: v2 calf swapped (post 440918395, cover 4100, commit 27a1f49) and v2 dua swapped (post 440918474, cover 4150). Frame check clean (daylight, sunrise turn, no new figures). Hook ends 4.08/4.10 s (guide 3.5; voice unchanged).
 - 25 Nov 02:31 PKT: template tint removed (warm overlay 0, no extra saturation; renders now match source colours). Calf re-swapped (post 440930442) and dua (440930575), media commit 50a805d. Remaining 12 rendering.
 - 25 Nov 10:32 PKT: v2 swapped (media 06c10c6/93b6352): gift 441213319, 39:53 441280694, pharaoh 441280866, stars 441281013, father 441281120, boat 441281248. Remaining: fire, dawud, valley, dinars, sea, near.
+- 25 Nov 10:37 PKT: ALL 14 v2 Shorts swapped. Fire 441283169, Dawud 441283283, valley 441283379, dinars 441283474, sea 441283571, near 441283647 (media 93b6352). Frames: reports/week-v2-frames.jpg.
