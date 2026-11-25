@@ -342,3 +342,4 @@ A new session can recreate these for itself (send_later / create_trigger) and de
 - 25 Nov: gift lesson picture redrawn (g5: sunlit garden spring, gold chest set aside in shade, no people); re-rendered 26.5 s; awaiting user approval to swap into post 441213319 (Thu 10:00).
 - 25 Nov 10:51 PKT: user approved; new gift swapped, post 441291442 (Thu 26 10:00), media 6323fb3.
 - 25 Nov: scorecard run on all 14 v2 Shorts (reports/Scorecard v2 25 Nov.md): 83–98; weakest Dawud 83, valley 85, dinars 87, dua 89.
+- 25 Nov: Dawud/valley hook fix BLOCKED: ElevenLabs quota exhausted (49 credits left of 121,124; need ~130 per Short). Dawud re-voice tries gave 4.7/5.5 s hooks (worse). Both restored to the scheduled versions (unchanged in Metricool). New hooks ready: Dawud 'One case of 99 ewes… and a king fell down bowing.' / valley 'No water. No one. Would you trust Allah here?' — redo when credits refill. API key lacks user_read, so the reset date can't be read.
