@@ -92,7 +92,12 @@ def main():
     (d / "assets/pauses.json").unlink(missing_ok=True)
     run("tools/tts_eleven.py", str(d / "narration.json"), str(d / "assets"))
     if D.get("pauses"):
-        run("tools/short_pauses.py", str(d), json.dumps(D["pauses"]))
+        pauses = dict(D["pauses"])
+        if D.get("v2"):  # tighter lesson (user 25 Nov): at most 0.3 s of silence before the last line
+            last = str(len(D["lines"]) - 1)
+            if last in pauses:
+                pauses[last] = min(pauses[last], 0.3)
+        run("tools/short_pauses.py", str(d), json.dumps(pauses))
     run("tools/soundscape.py", str(d))
     run("tools/build_short.py", str(d))
     end = json.loads((d / "assets/timings.json").read_text(encoding="utf-8"))[-1]["end"] + spec["hold_end"]

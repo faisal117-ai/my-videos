@@ -1694,6 +1694,7 @@ def photos_scene(spec, beats, total):
     #phshade { background: linear-gradient(180deg, rgba(0,0,0,0.32) 0%, rgba(0,0,0,0.22) 25%, rgba(0,0,0,0.08) 40%,
       rgba(0,0,0,0) 50%, rgba(0,0,0,0) 85%, rgba(0,0,0,0.2) 100%); }
     .ph img { filter: brightness(1.08) contrast(1.05); }
+    #ph0 { transform-origin: 50% 62%; }
     .tr { text-shadow: 0 2px 10px rgba(0,0,0,0.95), 0 0 3px rgba(0,0,0,0.95) !important; color: #fff6e6 !important; }
 """
     def layer(i):
@@ -1720,6 +1721,8 @@ def photos_scene(spec, beats, total):
         push = spec.get("push", 0.08)  # FORMAT v2: 0.12 (visible movement every beat)
         frm, to = (("scale: 1.0, x: 0", f"scale: {1 + push:.2f}, x: 0") if i % 2 == 0
                    else (f"scale: {1 + push:.2f}, x: -20", "scale: 1.0, x: 20"))
+        if i == 0 and spec.get("bright"):  # v2: the first frame starts closer on the key object
+            frm, to = "scale: 1.14, x: 0", f"scale: {1.14 + push:.2f}, x: 0"
         if photos[i].endswith(".mp4"):
             frm, to = "scale: 1.0, x: 0", "scale: 1.02, x: 0"
         js.append(f'tl.fromTo("#ph{i}", {{{frm}}}, {{{to}, duration: {d + 0.9:.2f}, ease: "none", immediateRender: false}}, {max(0, a - 0.2):.2f});')
@@ -1791,6 +1794,14 @@ COMPACT_CSS = """
       .mark { font-size: 96px; }
       .btn { font-size: 34px; padding: 18px 40px; }"""
 
+# FORMAT v2 hook (user approved 25 Nov, from YouTube's analysis of the dua Short): thicker, high-contrast hook text
+# with a soft dark band behind it, so it reads at feed size over bright pictures.
+HOOK_CSS = """
+      .txt.hook { font-size: 110px !important; -webkit-text-stroke: 1.6px #fff; color: #fff !important; position: relative;
+        isolation: isolate; text-shadow: 0 0 3px rgba(0,0,0,0.95), 0 4px 24px rgba(0,0,0,0.95), 0 0 60px rgba(0,0,0,0.6) !important; }
+      .txt.hook::before { content: ""; position: absolute; inset: -60px -110px -70px -110px; z-index: -1;
+        background: radial-gradient(ellipse at 50% 50%, rgba(0,0,0,0.58) 0%, rgba(0,0,0,0.38) 45%, rgba(0,0,0,0) 72%); }"""
+
 def index_html(spec: dict, beats: list, total: float) -> str:
     accent = spec["accent"]
     hosts = []
@@ -1853,7 +1864,7 @@ def index_html(spec: dict, beats: list, total: float) -> str:
       .btn {{ align-self: center; font-family: Inter; font-weight: 700; font-size: 40px; letter-spacing: 0.08em;
         color: #120b08; background: var(--accent); border-radius: 999px; padding: 22px 48px; }}
       .follow {{ align-self: center; margin-top: 18px; font-family: Inter; font-weight: 800; font-size: 34px; letter-spacing: 0.06em;
-        color: var(--accent); border: 3px solid var(--accent); background: rgba(0,0,0,0.45); border-radius: 999px; padding: 14px 34px; }}{COMPACT_CSS if spec.get("scene") == "photos" else ""}
+        color: var(--accent); border: 3px solid var(--accent); background: rgba(0,0,0,0.45); border-radius: 999px; padding: 14px 34px; }}{COMPACT_CSS if spec.get("scene") == "photos" else ""}{HOOK_CSS if spec.get("bright") else ""}
     </style>
   </head>
   <body>

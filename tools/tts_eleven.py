@@ -69,7 +69,11 @@ def mixed_take(text, el, tmp):
         data = synth(seg.strip(), el["voice_id"], cfg["model_id"], cfg["settings"])
         mp3, wav = os.path.join(tmp, f"p{k}.mp3"), os.path.join(tmp, f"p{k}.wav")
         Path(mp3).write_bytes(base64.b64decode(data["audio_base64"]))
-        subprocess.run(["ffmpeg", "-hide_banner", "-loglevel", "error", "-y", "-i", mp3, "-af", f"apad=pad_dur={GAP}",
+        al0 = data["alignment"]  # trim the model's own lead-in/tail silence (user 25 Nov: no dead air in the lesson)
+        lead = max(0.0, al0["character_start_times_seconds"][0] - 0.04)
+        tail = al0["character_end_times_seconds"][-1] + 0.10
+        subprocess.run(["ffmpeg", "-hide_banner", "-loglevel", "error", "-y", "-i", mp3, "-af",
+                        f"atrim=start={lead:.3f}:end={tail:.3f},asetpts=PTS-STARTPTS,apad=pad_dur={GAP}",
                         "-ar", "48000", "-ac", "1", wav], check=True)
         dur = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", wav],
                                    capture_output=True, text=True).stdout)
@@ -79,7 +83,7 @@ def mixed_take(text, el, tmp):
         n = len(seg.strip())
         for i in range(a, b):  # map by position (proportional if the model changed the text length)
             j = min(len(cs) - 1, max(0, round((i - a - off) * (len(cs) - 1) / max(1, n - 1)))) if len(cs) != n else min(n - 1, max(0, i - a - off))
-            starts[i], ends[i] = cs[j] + t, ce[j] + t
+            starts[i], ends[i] = cs[j] - lead + t, ce[j] - lead + t
         print(f"  {'v3' if ar else 'v2'} {dur:5.2f}s  {seg.strip()[:60]}")
         wavs.append(wav)
         t += dur

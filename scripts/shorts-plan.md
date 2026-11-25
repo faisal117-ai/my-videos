@@ -207,6 +207,11 @@ Second by second (30–35 s, 70–80 words):
 | 20–29 s | Lesson to "you", answers the hook | bright image, slow drift | humming |
 | 29–32 s | Ending ≤ 3 s: comfort "Send this to someone who needs it." / story "Full movie below." (film button shown during the lesson) | last frame leads back to the first (loop) | soft release |
 Slots: 10:00 story → film, 16:00 comfort (≈4 comfort : 3 dua-with-answer per week).
+**Template fixes (user approved 25 Nov, from YouTube's analysis of the dua Short: 877 views vs 210–400 typical, 60 % viewed,
+but 71 % swiped in the first 1–2 s):** hook text thicker (stroke) and larger with a soft dark band behind it; the first picture
+starts 14 % closer on the key object; the lesson has no dead air (silence around Arabic parts trimmed, ≤ 0.3 s pause before
+the lesson line). Applies to every new Short (build_short.py / tts_eleven.py / new_short.py).
+
 Scorecard /100: Hook 40 (frame-0 text, ≤ 10 words, you+stakes or surprise in 2 s, spoken ≤ 3.5 s, not a description) ·
 Payoff 25 (one verse = the twist, punch line, lesson to "you" answering the hook) · Retention 20 (change every ≤ 4 s,
 transformation at the turn, sound event 8–18 s, humming from the verse, ending ≤ 3 s, 30–35 s, no beat > 6 s) ·
