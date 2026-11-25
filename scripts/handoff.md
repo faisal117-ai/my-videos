@@ -340,3 +340,4 @@ A new session can recreate these for itself (send_later / create_trigger) and de
 - 25 Nov 10:32 PKT: v2 swapped (media 06c10c6/93b6352): gift 441213319, 39:53 441280694, pharaoh 441280866, stars 441281013, father 441281120, boat 441281248. Remaining: fire, dawud, valley, dinars, sea, near.
 - 25 Nov 10:37 PKT: ALL 14 v2 Shorts swapped. Fire 441283169, Dawud 441283283, valley 441283379, dinars 441283474, sea 441283571, near 441283647 (media 93b6352). Frames: reports/week-v2-frames.jpg.
 - 25 Nov: gift lesson picture redrawn (g5: sunlit garden spring, gold chest set aside in shade, no people); re-rendered 26.5 s; awaiting user approval to swap into post 441213319 (Thu 10:00).
+- 25 Nov 10:51 PKT: user approved; new gift swapped, post 441291442 (Thu 26 10:00), media 6323fb3.
