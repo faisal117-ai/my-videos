@@ -50,6 +50,8 @@ def main():
             shutil.copytree(TPL / "assets" / sub, d / "assets" / sub)
     (d / "meta.json").write_text(json.dumps({"id": D["id"], "name": D["id"], "createdAt": "2026-11-20T20:00:00.000Z"}))
     for k, src in D.get("crops", {}).items():
+        if (d / f"assets/gen/{k}.jpg").exists():  # keep relit/edited stills on a re-voice (25 Nov)
+            continue
         im = Image.open(ROOT / src)
         w, h = im.size
         cw = int(h * 9 / 16)

@@ -114,8 +114,8 @@
  "beats": [
   {
    "hook": true,
-   "text": "Two men climbed into a king's prayer room… a test.",
-   "ur": "دو آدمی بادشاہ کے عبادت خانے میں آئے… یہ ایک آزمائش تھی",
+   "text": "A king fell down bowing… over one ewe.",
+   "ur": "ایک بادشاہ سجدے میں گر گیا… ایک بھیڑ کے مقدمے پر",
    "mood": {
     "warm": 0.2,
     "cool": 0

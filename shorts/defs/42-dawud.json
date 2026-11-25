@@ -1,7 +1,7 @@
 {
  "id": "42-dawud",
  "lines": [
-  "Two men climbed into a king's prayer room... a test.",
+  "A king fell down bowing, over one ewe.",
   "One said: My brother has ninety-nine ewes, and I have one.",
   "Prophet Dawud, alayhis salaam, knew it was a test. He asked forgiveness of his Lord, and fell down bowing.",
   "A king. Bowing in a moment.",
@@ -10,8 +10,8 @@
  "beats": [
   {
    "hook": true,
-   "text": "Two men climbed into a king's prayer room… a test.",
-   "ur": "دو آدمی بادشاہ کے عبادت خانے میں آئے… یہ ایک آزمائش تھی",
+   "text": "A king fell down bowing… over one ewe.",
+   "ur": "ایک بادشاہ سجدے میں گر گیا… ایک بھیڑ کے مقدمے پر",
    "mood": {
     "warm": 0.2,
     "cool": 0

@@ -114,8 +114,8 @@
  "beats": [
   {
    "hook": true,
-   "text": "No water, no one… she said: He won't abandon us.",
-   "ur": "نہ پانی، نہ لوگ… اور انہوں نے کہا: وہ ہمیں ضائع نہیں کرے گا",
+   "text": "No water. No one. Would you trust Allah here?",
+   "ur": "نہ پانی، نہ کوئی انسان… کیا آپ یہاں اللہ پر بھروسہ کریں گے؟",
    "mood": {
     "warm": 0.2,
     "cool": 0
