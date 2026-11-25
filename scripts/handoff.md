@@ -347,3 +347,4 @@ A new session can recreate these for itself (send_later / create_trigger) and de
 - 25 Nov 14:43 PKT: user approved; Dawud swapped (post 441470795, title '99 to 1: What Did Dawud (AS) Realise? 🐑', cover 3550) and valley (post 441471022, cover 4200), media 763d13f.
 - 25 Nov: dinars re-voiced: hook 'A thousand dinars into the sea… and they arrived.' (9 words, 3.74 s, was 11 words/4.19 s), 29.2 s, score ≈91 (was 87). Awaiting approval to swap into post 441283474 (Mon 30 10:00).
 - 25 Nov 15:45 PKT: user approved; dinars swapped, post 441543471 (Mon 30 10:00), cover 3750, media c379e7b.
+- 25 Nov: user: the comfort ending 'Send this to someone who needs it' drives WhatsApp shares (analytics). Saved in CLAUDE.md #10; Friday review adds shares per Short.
