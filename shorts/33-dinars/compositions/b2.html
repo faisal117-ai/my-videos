@@ -5,7 +5,7 @@
       display: flex; flex-direction: column; justify-content: flex-start; gap: 20px; }
   </style>
   <div id="b2" data-composition-id="b2" data-width="1080" data-height="1920">
-    <div id="b2-wrap" class="clip" data-start="0" data-duration="7.16">
+    <div id="b2-wrap" class="clip" data-start="0" data-duration="7.99">
       <div id="b2-txt" class="txt"><span class="w" id="b2-w0">Only</span> <span class="w" id="b2-w1">Allah</span> <span class="w" id="b2-w2">as</span> <span class="w" id="b2-w3">his</span> <span class="w" id="b2-w4">witness.</span></div>
       <div id="b2-ur" class="ur" dir="rtl" lang="ur" data-layout-allow-overflow>گواہ صرف اللہ</div>
       <div id="b2-ref" class="ref">Sahih al-Bukhari 2291</div>
@@ -13,11 +13,11 @@
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
-    tl.fromTo("#b2 .w", {opacity: 0, y: 22, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.32, ease: "power2.out", stagger: 0.971}, 0.12);
-    tl.fromTo("#b2 .hi", {textShadow: "0 0 0px rgba(0,0,0,0)"}, {textShadow: "0 0 28px var(--accent)", duration: 0.6, ease: "power1.out"}, 3.11);
+    tl.fromTo("#b2 .w", {opacity: 0, y: 22, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.32, ease: "power2.out", stagger: 1.074}, 0.12);
+    tl.fromTo("#b2 .hi", {textShadow: "0 0 0px rgba(0,0,0,0)"}, {textShadow: "0 0 28px var(--accent)", duration: 0.6, ease: "power1.out"}, 3.44);
     tl.fromTo("#b2-ur", {opacity: 0, y: 10}, {opacity: 1, y: 0, duration: 0.35, ease: "power2.out"}, 0.15);
     tl.fromTo("#b2-ref", {opacity: 0, y: 12}, {opacity: 1, y: 0, duration: 0.45, ease: "power2.out"}, 0.35);
-    tl.fromTo("#b2-wrap", {opacity: 1}, {opacity: 0, duration: 0.22, ease: "power1.in"}, 6.92);
+    tl.fromTo("#b2-wrap", {opacity: 1}, {opacity: 0, duration: 0.22, ease: "power1.in"}, 7.75);
     window.__timelines["b2"] = tl;
   </script>
 </template>

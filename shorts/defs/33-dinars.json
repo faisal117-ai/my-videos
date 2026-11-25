@@ -1,7 +1,7 @@
 {
  "id": "33-dinars",
  "lines": [
-  "He threw a thousand dinars into the sea, and it arrived.",
+  "A thousand dinars into the sea, and they arrived.",
   "The Prophet, peace be upon him, told us of a man who borrowed it, with only Allah as his witness.",
   "No boat came. So he sealed the money in a piece of wood, and gave it to Allah.",
   "On the other shore, the lender found the wood... and his money inside.",
@@ -10,8 +10,8 @@
  "beats": [
   {
    "hook": true,
-   "text": "He threw a thousand dinars into the sea. And it arrived.",
-   "ur": "اس نے ہزار دینار سمندر میں پھینک دیے… اور وہ پہنچ گئے",
+   "text": "A thousand dinars into the sea… and they arrived.",
+   "ur": "ہزار دینار سمندر میں… اور وہ پہنچ گئے",
    "mood": {
     "warm": 0.2,
     "cool": 0
