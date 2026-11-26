@@ -356,3 +356,4 @@ A new session can recreate these for itself (send_later / create_trigger) and de
 - 26 Nov 13:56 PKT: batch 1 new-hook swaps approved: pharaoh 442819606, stars 442819714, father 442819820, boat 442819912 (media 80a1e7e, cover 1000).
 - 26 Nov 14:10 PKT: batch 2 new-hook swaps approved: fire 442832212, Dawud 442832353, valley 442832399, dinars 442832811, sea 442832993, near 442833082 (media ec71eb0, cover 1000). All 11 remaining Shorts now carry the new hook style. Compare stayed-to-watch vs dua 28.9% / gift 29.3% at the Friday review.
 - 26 Nov: Tue 1 Dec 10:00 slot stays empty until the Friday 27 Nov review (user). Build it Sat 28 from the review's findings (story vs comfort, hook type), send for approval.
+- 26 Nov: Earn tab (data as of 21 Nov): 187 subs, 8 watch hours (12 mo), 8.5k Shorts views (90 d; target 10M). Logged in ypp-tracker.md.
