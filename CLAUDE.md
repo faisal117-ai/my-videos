@@ -22,6 +22,7 @@ Every new rule the user gives goes into THIS file the same turn (not only into s
    essential (a verse card being read, an emotional beat). All format rules are guides: compare and judge as the owner.
 10. The comfort-Short ending "Send this to someone who needs it" WORKS (user 25 Nov: analytics show WhatsApp shares). Keep it on
    every comfort Short; track shares per Short at each Friday review.
+11. Short covers: videoCoverMilliseconds = 1000 (hook text + first picture), never the hook END (lands on a cut; user approved 26 Nov).
 
 ## Read first, every session
 1. `scripts/handoff.md`: where things stand, open items, schedule, decisions.
