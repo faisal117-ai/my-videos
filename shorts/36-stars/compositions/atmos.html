@@ -19,6 +19,7 @@
     #phshade { background: linear-gradient(180deg, rgba(0,0,0,0.32) 0%, rgba(0,0,0,0.22) 25%, rgba(0,0,0,0.08) 40%,
       rgba(0,0,0,0) 50%, rgba(0,0,0,0) 85%, rgba(0,0,0,0.2) 100%); }
     .ph img { filter: brightness(1.08) contrast(1.05); }
+    #ph0 { transform-origin: 50% 62%; }
     .tr { text-shadow: 0 2px 10px rgba(0,0,0,0.95), 0 0 3px rgba(0,0,0,0.95) !important; color: #fff6e6 !important; }
 
     .phglow { position: absolute; inset: 0; opacity: 0; mix-blend-mode: screen;
@@ -48,7 +49,7 @@
     const tl = gsap.timeline({ paused: true });
     tl.fromTo("#flash", {opacity: 0.0}, {opacity: 0, duration: 0.55, ease: "power2.out"}, 0);
     tl.set("#ph0", {opacity: 1}, 0);
-    tl.fromTo("#ph0", {scale: 1.0, x: 0}, {scale: 1.12, x: 0, duration: 4.86, ease: "none", immediateRender: false}, 0.00);
+    tl.fromTo("#ph0", {scale: 1.14, x: 0}, {scale: 1.26, x: 0, duration: 4.86, ease: "none", immediateRender: false}, 0.00);
     tl.to("#ph0", {opacity: 0, duration: 0.3, immediateRender: false}, 4.46);
     tl.fromTo("#ph1", {opacity: 0}, {opacity: 1, duration: 0.7, ease: "sine.inOut", immediateRender: false}, 3.76);
     tl.fromTo("#ph1", {scale: 1.12, x: -20}, {scale: 1.0, x: 20, duration: 9.27, ease: "none", immediateRender: false}, 3.76);
