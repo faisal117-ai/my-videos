@@ -358,3 +358,4 @@ A new session can recreate these for itself (send_later / create_trigger) and de
 - 26 Nov: Tue 1 Dec 10:00 slot stays empty until the Friday 27 Nov review (user). Build it Sat 28 from the review's findings (story vs comfort, hook type), send for approval.
 - 26 Nov: Earn tab (data as of 21 Nov): 187 subs, 8 watch hours (12 mo), 8.5k Shorts views (90 d; target 10M). Logged in ypp-tracker.md.
 - 26 Nov: 39:53 (new hook) after ~4 h: ~300+ views, 31 likes (~10%), stayed 24.6%, +7 subscribers (user). Comfort/'you' Shorts convert to subs; add subs-per-Short to the Friday review.
+- 26 Nov (later): 39:53 = 858 views, 70 likes (8%), +7 subs, avg viewed 71% (best yet), stayed 28% (same as old-style dua 28.9%/gift 29.3% → bolder hook text alone did NOT lift stayed-to-watch). Next: test motion-first hook (A/B) next week; bring cost to Friday review.
