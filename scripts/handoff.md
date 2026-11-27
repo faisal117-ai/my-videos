@@ -370,3 +370,4 @@ A new session can recreate these for itself (send_later / create_trigger) and de
 - 27 Nov: 51-hearts-rest built for Tue 1 Dec 10:00 (13:28; calm hook 'Your heart can't rest? Listen.' 2.96 s; hook → verse, no set-up; 30.8 s; SubhanAllah v3 STT YES; scorecard 97; title '13:28: What Finally Brings Calm? 🤍' 98). Awaiting approval to schedule.
 - 27 Nov 15:05 PKT: user approved; 51-hearts-rest scheduled Tue 1 Dec 10:00, post 444154179 (uuid -8928684402412207263), title '13:28: What Finally Brings Calm? 🤍', cover 2500, media 3515d17. Related video: Ease (user sets in Studio after publish). Week 25 Nov–1 Dec now fully scheduled.
 - 27 Nov: Sulaiman UR repackage: title '1 Chiyunti Boli, Nabi Muskuraye: Hazrat Sulaiman AS | EP 3' (98), thumbnail v5/thumbnail-ur.jpg ('لشکر آ رہا ہے!' + same ant/army). User changes in Studio.
+- 27 Nov: UR thumbnail adds Roman line 'LASHKAR AA RAHA HAI!' under the Urdu (user: for Hindi readers / outside audience).
