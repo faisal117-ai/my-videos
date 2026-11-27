@@ -71,36 +71,35 @@
       .ref { font-size: 28px; }
       .mark { font-size: 96px; }
       .btn { font-size: 34px; padding: 18px 40px; }
-      .txt.hook { font-size: 110px !important; -webkit-text-stroke: 1.6px #fff; color: #fff !important; position: relative;
-        isolation: isolate; text-shadow: 0 0 3px rgba(0,0,0,0.95), 0 4px 24px rgba(0,0,0,0.95), 0 0 60px rgba(0,0,0,0.6) !important; }
-      .txt.hook::before { content: ""; position: absolute; inset: -60px -110px -70px -110px; z-index: -1;
-        background: radial-gradient(ellipse at 50% 50%, rgba(0,0,0,0.58) 0%, rgba(0,0,0,0.38) 45%, rgba(0,0,0,0) 72%); }
+      .txt.hook { font-size: 84px !important; -webkit-text-stroke: 0; color: #fff6e6 !important; font-style: italic;
+        text-shadow: 0 2px 14px rgba(0,0,0,0.9), 0 0 2px rgba(0,0,0,0.9) !important; }
+      .txt.hook::before { display: none; }
     </style>
   </head>
   <body>
-    <div id="root" data-composition-id="main" data-start="0" data-duration="24.54"
+    <div id="root" data-composition-id="main" data-start="0" data-duration="23.73"
       data-width="1080" data-height="1920">
       <div id="atmos" data-composition-id="atmos" data-composition-src="compositions/atmos.html"
-        data-start="0" data-duration="24.54" data-track-index="1" data-track-kind="graphics"
+        data-start="0" data-duration="23.73" data-track-index="1" data-track-kind="graphics"
         data-width="1080" data-height="1920" style="z-index:1"></div>
       <div id="b1" data-composition-id="b1" data-composition-src="compositions/b1.html"
-        data-start="0.00" data-duration="3.96" data-track-index="2" data-track-kind="graphics"
+        data-start="0.00" data-duration="2.91" data-track-index="2" data-track-kind="graphics"
         data-width="1080" data-height="1920" style="z-index:2"></div>
       <div id="b2" data-composition-id="b2" data-composition-src="compositions/b2.html"
-        data-start="3.96" data-duration="8.37" data-track-index="2" data-track-kind="graphics"
+        data-start="2.91" data-duration="8.44" data-track-index="2" data-track-kind="graphics"
         data-width="1080" data-height="1920" style="z-index:2"></div>
       <div id="b3" data-composition-id="b3" data-composition-src="compositions/b3.html"
-        data-start="12.33" data-duration="4.10" data-track-index="2" data-track-kind="graphics"
+        data-start="11.35" data-duration="4.58" data-track-index="2" data-track-kind="graphics"
         data-width="1080" data-height="1920" style="z-index:2"></div>
       <div id="b4" data-composition-id="b4" data-composition-src="compositions/b4.html"
-        data-start="16.43" data-duration="2.75" data-track-index="2" data-track-kind="graphics"
+        data-start="15.93" data-duration="2.16" data-track-index="2" data-track-kind="graphics"
         data-width="1080" data-height="1920" style="z-index:2"></div>
       <div id="b5" data-composition-id="b5" data-composition-src="compositions/b5.html"
-        data-start="19.18" data-duration="5.36" data-track-index="2" data-track-kind="graphics"
+        data-start="18.09" data-duration="5.64" data-track-index="2" data-track-kind="graphics"
         data-width="1080" data-height="1920" style="z-index:2"></div>
-      <audio id="vo" class="clip" src="assets/narration.wav" data-start="0" data-duration="24.53"
+      <audio id="vo" class="clip" src="assets/narration.wav" data-start="0" data-duration="23.72"
         data-track-index="10" data-volume="1"></audio>
-      <audio id="amb" class="clip" src="assets/ambience.wav" data-start="0" data-duration="24.54" data-track-index="11" data-volume="1.0"></audio>
+      <audio id="amb" class="clip" src="assets/ambience.wav" data-start="0" data-duration="23.73" data-track-index="11" data-volume="1.0"></audio>
     </div>
     <script>
       window.__timelines["main"] = gsap.timeline({ paused: true });

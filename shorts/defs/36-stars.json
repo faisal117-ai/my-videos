@@ -1,7 +1,7 @@
 {
  "id": "36-stars",
  "lines": [
-  "Everything you lean on will set. Even the sun.",
+  "Everything you lean on will set.",
   "Prophet Ibrahim, alayhis salaam, watched a star, the moon, the sun... and each one set.",
   "He said: I like not those that disappear.",
   "Only One never sets.",
@@ -10,8 +10,8 @@
  "beats": [
   {
    "hook": true,
-   "text": "Everything you lean on will set. Even the sun.",
-   "ur": "جس پر بھی آپ سہارا لیتے ہیں، وہ ڈوب جائے گا۔ سورج بھی",
+   "text": "Everything you lean on will set.",
+   "ur": "جس پر آپ سہارا لیتے ہیں… وہ ڈوب جائے گا",
    "mood": {
     "warm": 0.2,
     "cool": 0
@@ -84,5 +84,6 @@
  },
  "turn": 2,
  "hum": 2,
- "v2": true
+ "v2": true,
+ "calm_hook": true
 }

@@ -21,6 +21,7 @@
   "shot2": 4.5,
   "transform": 2,
   "bright": true,
+  "calm_hook": true,
   "shakes": [
     {
       "beat": 0,
@@ -114,8 +115,8 @@
   "beats": [
     {
       "hook": true,
-      "text": "Everything you lean on will set. Even the sun.",
-      "ur": "جس پر بھی آپ سہارا لیتے ہیں، وہ ڈوب جائے گا۔ سورج بھی",
+      "text": "Everything you lean on will set.",
+      "ur": "جس پر آپ سہارا لیتے ہیں… وہ ڈوب جائے گا",
       "mood": {
         "warm": 0.2,
         "cool": 0
