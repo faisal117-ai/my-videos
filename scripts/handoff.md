@@ -373,3 +373,4 @@ A new session can recreate these for itself (send_later / create_trigger) and de
 - 27 Nov: UR thumbnail adds Roman line 'LASHKAR AA RAHA HAI!' under the Urdu (user: for Hindi readers / outside audience).
 - 27 Nov 15:55: stars moved 16:00→17:00 (post 444199946) and converted to calm hook ('Everything you lean on will set.' 2.46 s, 23.7 s); awaiting approval to swap.
 - 27 Nov 15:57: stars calm-hook swapped, post 444207212, Fri 16:05 (16:00 was 3 min away), cover 2500, media a668c31. Test now: calm = stars, father, fire, valley, sea, 13:28; controls = boat, Dawud, dinars, near.
+- 27 Nov evening: user: stars (first calm-hook Short) stayed-to-watch 'very less'. Decision (user OK): FREEZE all format changes until Mon 30 Nov; calm (father, fire, valley, sea, 13:28) vs bright (boat, Dawud, dinars, near) go out as scheduled; Monday pick the style with the higher average stayed-to-watch and stop first-frame experiments for a while.
