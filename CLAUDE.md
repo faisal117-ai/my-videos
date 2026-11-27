@@ -23,6 +23,8 @@ Every new rule the user gives goes into THIS file the same turn (not only into s
 10. The comfort-Short ending "Send this to someone who needs it" WORKS (user 25 Nov: analytics show WhatsApp shares). Keep it on
    every comfort Short; track shares per Short at each Friday review.
 11. Short covers: videoCoverMilliseconds = 1000 (hook text + first picture), never the hook END (lands on a cut; user approved 26 Nov).
+12. Distant armies/crowds (a long row of tiny soldiers with banners, no single figure standing out, no faces) are FINE in
+   pictures and thumbnails even in a prophet's story (user, 27 Nov): nobody will take them for the prophet.
 
 ## Read first, every session
 1. `scripts/handoff.md`: where things stand, open items, schedule, decisions.
