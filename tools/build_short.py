@@ -1721,6 +1721,9 @@ def photos_scene(spec, beats, total):
         push = spec.get("push", 0.08)  # FORMAT v2: 0.12 (visible movement every beat)
         frm, to = (("scale: 1.0, x: 0", f"scale: {1 + push:.2f}, x: 0") if i % 2 == 0
                    else (f"scale: {1 + push:.2f}, x: -20", "scale: 1.0, x: 20"))
+        if i == 0 and spec.get("calm_hook"):  # Ease-style: dark, calm first frame that brightens as the hook ends
+            js.append(f'tl.fromTo("#ph0", {{filter: "brightness(0.5) saturate(0.8)"}}, {{filter: "brightness(1) saturate(1)", '
+                      f'duration: {max(1.0, beats[1]["start"] - 0.4):.2f}, ease: "sine.inOut", immediateRender: true}}, 0);')
         if i == 0 and spec.get("bright"):  # v2: the first frame starts closer on the key object
             frm, to = "scale: 1.14, x: 0", f"scale: {1.14 + push:.2f}, x: 0"
         if photos[i].endswith(".mp4"):
@@ -1802,6 +1805,13 @@ HOOK_CSS = """
       .txt.hook::before { content: ""; position: absolute; inset: -60px -110px -70px -110px; z-index: -1;
         background: radial-gradient(ellipse at 50% 50%, rgba(0,0,0,0.58) 0%, rgba(0,0,0,0.38) 45%, rgba(0,0,0,0) 72%); }"""
 
+# Ease-style first frame (Friday review 27 Nov: Ease 46.9 % stayed vs bright big-text card ~29 %): calm, quiet hook text,
+# no band, smaller; the first picture starts dark and brightens to full daylight as the hook ends ("calm_hook": true).
+CALM_HOOK_CSS = """
+      .txt.hook { font-size: 84px !important; -webkit-text-stroke: 0; color: #fff6e6 !important; font-style: italic;
+        text-shadow: 0 2px 14px rgba(0,0,0,0.9), 0 0 2px rgba(0,0,0,0.9) !important; }
+      .txt.hook::before { display: none; }"""
+
 def index_html(spec: dict, beats: list, total: float) -> str:
     accent = spec["accent"]
     hosts = []
@@ -1864,7 +1874,7 @@ def index_html(spec: dict, beats: list, total: float) -> str:
       .btn {{ align-self: center; font-family: Inter; font-weight: 700; font-size: 40px; letter-spacing: 0.08em;
         color: #120b08; background: var(--accent); border-radius: 999px; padding: 22px 48px; }}
       .follow {{ align-self: center; margin-top: 18px; font-family: Inter; font-weight: 800; font-size: 34px; letter-spacing: 0.06em;
-        color: var(--accent); border: 3px solid var(--accent); background: rgba(0,0,0,0.45); border-radius: 999px; padding: 14px 34px; }}{COMPACT_CSS if spec.get("scene") == "photos" else ""}{HOOK_CSS if spec.get("bright") else ""}
+        color: var(--accent); border: 3px solid var(--accent); background: rgba(0,0,0,0.45); border-radius: 999px; padding: 14px 34px; }}{COMPACT_CSS if spec.get("scene") == "photos" else ""}{(CALM_HOOK_CSS if spec.get("calm_hook") else HOOK_CSS) if spec.get("bright") else ""}
     </style>
   </head>
   <body>

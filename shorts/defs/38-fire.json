@@ -1,7 +1,7 @@
 {
  "id": "38-fire",
  "lines": [
-  "Thrown into a fire… what 4 words would you say?",
+  "Thrown into fire. Your four words?",
   "They lit a great fire, and said: Burn him.",
   "As they threw him, Prophet Ibrahim, alayhis salaam, said: حَسْبُنَا اللّٰهُ وَنِعْمَ الْوَكِيْلُ. Allah is enough for us.",
   "And Allah said: O fire, be coolness and safety upon Ibrahim.",
@@ -10,8 +10,8 @@
  "beats": [
   {
    "hook": true,
-   "text": "Thrown into a fire… what 4 words would you say?",
-   "ur": "آگ میں پھینکے جائیں… تو آپ کون سے چار لفظ کہیں گے؟",
+   "text": "Thrown into fire. Your four words?",
+   "ur": "آگ میں پھینکے جائیں… آپ کے چار لفظ؟",
    "mood": {
     "warm": 0.2,
     "cool": 0
@@ -86,5 +86,6 @@
  },
  "turn": 3,
  "hum": 2,
- "v2": true
+ "v2": true,
+ "calm_hook": true
 }

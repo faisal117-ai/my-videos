@@ -1,7 +1,7 @@
 {
  "id": "37-father",
  "lines": [
-  "Your father threatens to stone you. Your answer?",
+  "Your father threatens you. Your answer?",
   "His father said: Stop, or I will surely stone you.",
   "Prophet Ibrahim, alayhis salaam, answered: Peace will be upon you. I will ask forgiveness for you of my Lord.",
   "A threat. Answered with peace.",
@@ -10,8 +10,8 @@
  "beats": [
   {
    "hook": true,
-   "text": "Your father threatens to stone you. Your answer?",
-   "ur": "آپ کا باپ آپ کو سنگسار کرنے کی دھمکی دے… آپ کا جواب؟",
+   "text": "Your father threatens you. Your answer?",
+   "ur": "آپ کا باپ آپ کو دھمکائے… آپ کا جواب؟",
    "mood": {
     "warm": 0.2,
     "cool": 0
@@ -85,5 +85,6 @@
  },
  "turn": 2,
  "hum": 2,
- "v2": true
+ "v2": true,
+ "calm_hook": true
 }

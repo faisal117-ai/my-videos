@@ -21,6 +21,7 @@
   "shot2": 4.5,
   "transform": 2,
   "bright": true,
+  "calm_hook": true,
   "shakes": [
     {
       "beat": 0,
@@ -114,8 +115,8 @@
   "beats": [
     {
       "hook": true,
-      "text": "Your father threatens to stone you. Your answer?",
-      "ur": "آپ کا باپ آپ کو سنگسار کرنے کی دھمکی دے… آپ کا جواب؟",
+      "text": "Your father threatens you. Your answer?",
+      "ur": "آپ کا باپ آپ کو دھمکائے… آپ کا جواب؟",
       "mood": {
         "warm": 0.2,
         "cool": 0

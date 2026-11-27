@@ -77,6 +77,7 @@ def main():
             "hold_end": D.get("hold_end", 0.3 if D.get("v2") else 1.2), "text_top": 300, "text_bottom": 780, "tr_size": 56, "scene": "photos",
             "photos": [f"assets/gen/{p}.jpg" for p in D["photos"]],
             **({"push": 0.12, "shot2": 4.5, "transform": turn, "bright": True} if D.get("v2") else {}),
+            **({"calm_hook": True} if D.get("calm_hook") else {}),
             "shakes": D.get("shakes", [{"beat": 0, "at": 0.3, "amp": 8, "dur": 1.0}, {"beat": turn, "at": 0.0, "amp": 10, "dur": 1.4}]),
             "glows": D.get("glows", [{"beat": turn, "at": 0.1, "dur": 3.0, "peak": 0.6}, {"beat": hum, "at": 0.2, "dur": 3.5, "peak": 0.85}]),
             "sound": D.get("sound", sound), "beats": D["beats"]}

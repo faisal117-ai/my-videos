@@ -1,7 +1,7 @@
 {
  "id": "40-valley",
  "lines": [
-  "No water, no one. Would you trust Allah here?",
+  "No water, no one. Trust Allah?",
   "She asked: Has Allah commanded you to do this? He said: yes.",
   "She said: Then He will not neglect us.",
   "And water came... Zamzam. Still flowing today.",
@@ -10,8 +10,8 @@
  "beats": [
   {
    "hook": true,
-   "text": "No water. No one. Would you trust Allah here?",
-   "ur": "نہ پانی، نہ کوئی انسان… کیا آپ یہاں اللہ پر بھروسہ کریں گے؟",
+   "text": "No water. No one. Trust Allah?",
+   "ur": "نہ پانی، نہ کوئی… اللہ پر بھروسہ؟",
    "mood": {
     "warm": 0.2,
     "cool": 0
@@ -77,5 +77,6 @@
  },
  "turn": 2,
  "hum": 2,
- "v2": true
+ "v2": true,
+ "calm_hook": true
 }

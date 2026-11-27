@@ -21,6 +21,7 @@
   "shot2": 4.5,
   "transform": 3,
   "bright": true,
+  "calm_hook": true,
   "shakes": [
     {
       "beat": 0,
@@ -114,8 +115,8 @@
   "beats": [
     {
       "hook": true,
-      "text": "Thrown into a fire… what 4 words would you say?",
-      "ur": "آگ میں پھینکے جائیں… تو آپ کون سے چار لفظ کہیں گے؟",
+      "text": "Thrown into fire. Your four words?",
+      "ur": "آگ میں پھینکے جائیں… آپ کے چار لفظ؟",
       "mood": {
         "warm": 0.2,
         "cool": 0

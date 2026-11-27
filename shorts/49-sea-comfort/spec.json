@@ -21,6 +21,7 @@
   "shot2": 4.5,
   "transform": 2,
   "bright": true,
+  "calm_hook": true,
   "shakes": [
     {
       "beat": 0,
@@ -114,8 +115,8 @@
   "beats": [
     {
       "hook": true,
-      "text": "Trapped, no way out? Say what he said at the sea.",
-      "ur": "پھنس گئے، کوئی راستہ نہیں؟ وہ کہیں جو انہوں نے سمندر کے کنارے کہا",
+      "text": "Trapped, no way out? Listen.",
+      "ur": "پھنس گئے، کوئی راستہ نہیں؟ سنیے",
       "mood": {
         "warm": 0.2,
         "cool": 0
