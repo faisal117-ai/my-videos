@@ -212,6 +212,12 @@ but 71 % swiped in the first 1–2 s):** hook text thicker (stroke) and larger w
 starts 14 % closer on the key object; the lesson has no dead air (silence around Arabic parts trimmed, ≤ 0.3 s pause before
 the lesson line). Applies to every new Short (build_short.py / tts_eleven.py / new_short.py).
 
+**Motion-first hook test (user approved 27 Nov):** 39:53 had 71 % viewed, 8 % likes, +7 subs but only 28 % stayed;
+bolder hook text did not lift it. Next week, alternate Shorts: A = first ~5 s is an animated clip (tools/animate_clip.py,
+Atlas seedance-2.0-fast, ~$0.36 per hook, no new people, checked frame by frame), 3–5-word hook, voice from frame 0;
+B = current still + text card (control). Winner = stayed-to-watch. If A clearly beats ~30 %, animate the turn too (B),
+then consider fully animated Shorts/films. Needs an Atlas Cloud top-up (~$10; balance was $0 on 27 Nov).
+
 Scorecard /100: Hook 40 (frame-0 text, ≤ 10 words, you+stakes or surprise in 2 s, spoken ≤ 3.5 s, not a description) ·
 Payoff 25 (one verse = the twist, punch line, lesson to "you" answering the hook) · Retention 20 (change every ≤ 4 s,
 transformation at the turn, sound event 8–18 s, humming from the verse, ending ≤ 3 s, 30–35 s, no beat > 6 s) ·
