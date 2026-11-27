@@ -1,0 +1,83 @@
+{
+ "id": "51-hearts-rest",
+ "lines": [
+  "Your heart can't rest? Listen.",
+  "Allah says: Those who have believed, and whose hearts are assured by the remembrance of Allah. Unquestionably, by the remembrance of Allah hearts are assured.",
+  "Not money. Not people. His remembrance.",
+  "Restless right now? Stop, and say it slowly: سُبْحَانَ اللَّهِ. Feel your heart settle. Send this to someone who needs it."
+ ],
+ "beats": [
+  {
+   "hook": true,
+   "text": "Your heart can't rest? Listen.",
+   "ur": "دل کو سکون نہیں ملتا؟ سنیے",
+   "mood": {
+    "warm": 0.2,
+    "cool": 0
+   },
+   "reveal": false
+  },
+  {
+   "q": "13:28",
+   "ar_words": [
+    1,
+    11
+   ],
+   "en": "Those who have believed and whose hearts are assured by the remembrance of Allah. Unquestionably, by the remembrance of Allah hearts are assured",
+   "ur_a": [
+    "اللہ کی یاد ہی",
+    "اطمینان نصیب ہوا کرتا ہے"
+   ],
+   "ref": "Ar-Ra'd 13:28",
+   "mood": {
+    "warm": 0.12,
+    "cool": 0
+   }
+  },
+  {
+   "text": "Not money. Not people. His remembrance.",
+   "ur": "نہ دولت، نہ لوگ… اس کی یاد",
+   "mood": {
+    "warm": 0.15,
+    "cool": 0
+   },
+   "size": 100
+  },
+  {
+   "text": "Restless? Say it slowly: سُبْحَانَ اللَّهِ",
+   "ur": "ابھی بے چین ہیں؟ رکیے، آہستہ سے کہیے: سبحان اللہ",
+   "mood": {
+    "warm": 0.3,
+    "cool": 0
+   },
+   "stay": true
+  }
+ ],
+ "photos": [
+  "s1",
+  "s2",
+  "s3",
+  "s4"
+ ],
+ "scenes": {
+  "style": "High-quality 3D animated feature film still, close to photoreal (modern big-studio animation look), rich detail, cinematic lighting and depth of field. Vertical 9:16, keep the top third fairly simple (text sits there), the subject in the lower two thirds. Quiet, intimate, hopeful. ABSOLUTELY NO PEOPLE, no human figures, no hands, no silhouettes anywhere. No text, no letters.",
+  "dawn_keys": [
+   "s4"
+  ],
+  "scenes": {
+   "s1": "A cluttered wooden desk by a window: a phone lying face-down, scattered papers, a cold cup of tea, a tangled earphone cable, an hourglass running; the feeling of a restless, busy mind. Key object (the hourglass) sharp in the lower centre.",
+   "s2": "A perfectly still clear mountain lake reflecting the peaks like a mirror, a little morning mist on the water, total calm.",
+   "s3": "Wooden prayer beads resting on a folded prayer rug on a wooden floor, warm morning sunlight falling across them through a window.",
+   "s4": "The same calm mountain lake as the sun rises: a bright gold sun lifting over the peaks into a deep blue sky, light spreading across the still water, a few birds."
+  }
+ },
+ "pauses": {
+  "1": 0.4,
+  "2": 0.5,
+  "3": 0.3
+ },
+ "turn": 1,
+ "hum": 1,
+ "v2": true,
+ "calm_hook": true
+}
