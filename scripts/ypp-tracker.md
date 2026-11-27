@@ -13,6 +13,7 @@ Where the numbers come from each Friday:
 |---|---|---|---|---|---|---|---|
 | 20 Nov 2026 (baseline) | 169 | +91 in 28 days | 4 | – | ~4,918 | Musa EN 3:26 (29.9%) | Musa films' 250 h came from ads: not counted. Hook leak fix from Ibrahim EP 4 |
 | 21 Nov 2026 (Earn tab, sent 26 Nov) | 187 | +18 | 8 | +4 | 8.5k | – | Earn data lags ~5 days. Pace: subs ~45 wks to 1,000; watch hours ~1,000 wks at +4/wk → films must grow |
+| 22 Nov 2026 (Earn tab, sent 27 Nov) | 195 | +8 in 1 day of data | 11 | +3 | 8.7k | – | 28 d: Shorts 26.4k views, +119 subs, stayed 37 %; films 7.8k views but almost all from the mid-Nov ads, organic film views tiny |
 
 Pace check (fill each week): weeks to 1,000 subs at this week's rate = (1000 − subs) ÷ weekly gain;
 weeks to 4,000 h = (4000 − hours) ÷ weekly gain. If either is over 52 weeks, the Friday plan must change something.
