@@ -51,7 +51,24 @@ def esc(s: str) -> str:
 def words_html(text: str, prefix: str) -> tuple[str, int]:
     """*word* -> accent. Returns markup with one span per word and the word count."""
     out, n = [], 0
-    for tok in text.split():
+    toks = text.split()
+    # Arabic phrases stay ONE right-to-left unit (user 28 Nov: word-by-word spans put حسبنا الله … in English order).
+    import re as _re
+    merged, i = [], 0
+    while i < len(toks):
+        if _re.search(r"[\u0600-\u06FF]", toks[i]):
+            j = i
+            while j + 1 < len(toks) and _re.search(r"[\u0600-\u06FF]", toks[j + 1]):
+                j += 1
+            merged.append(("ar", " ".join(toks[i:j + 1])))
+            i = j + 1
+        else:
+            merged.append(("en", toks[i])); i += 1
+    for kind, tok in merged:
+        if kind == "ar":
+            out.append(f'<span class="w" id="{prefix}-w{n}" dir="rtl" lang="ar" style="unicode-bidi:isolate">{esc(tok)}</span>')
+            n += 1
+            continue
         hi = tok.startswith("*") or tok.endswith("*") or "*" in tok
         clean = tok.replace("*", "")
         cls = "w hi" if hi else "w"

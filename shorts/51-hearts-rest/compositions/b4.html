@@ -6,13 +6,13 @@
   </style>
   <div id="b4" data-composition-id="b4" data-width="1080" data-height="1920">
     <div id="b4-wrap" class="clip" data-start="0" data-duration="10.02">
-      <div id="b4-txt" class="txt"><span class="w" id="b4-w0">Restless?</span> <span class="w" id="b4-w1">Say</span> <span class="w" id="b4-w2">it</span> <span class="w" id="b4-w3">slowly:</span> <span class="w" id="b4-w4">سُبْحَانَ</span> <span class="w" id="b4-w5">اللَّهِ</span></div>
+      <div id="b4-txt" class="txt"><span class="w" id="b4-w0">Restless?</span> <span class="w" id="b4-w1">Say</span> <span class="w" id="b4-w2">it</span> <span class="w" id="b4-w3">slowly:</span> <span class="w" id="b4-w4" dir="rtl" lang="ar" style="unicode-bidi:isolate">سُبْحَانَ اللَّهِ</span></div>
       <div id="b4-ur" class="ur" dir="rtl" lang="ur" data-layout-allow-overflow>ابھی بے چین ہیں؟ رکیے، آہستہ سے کہیے: سبحان اللہ</div>
     </div>
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
-    tl.fromTo("#b4 .w", {opacity: 0, y: 22, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.32, ease: "power2.out", stagger: 1.245}, 0.12);
+    tl.fromTo("#b4 .w", {opacity: 0, y: 22, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.32, ease: "power2.out", stagger: 1.494}, 0.12);
     tl.fromTo("#b4 .hi", {textShadow: "0 0 0px rgba(0,0,0,0)"}, {textShadow: "0 0 28px var(--accent)", duration: 0.6, ease: "power1.out"}, 4.79);
     tl.fromTo("#b4-ur", {opacity: 0, y: 10}, {opacity: 1, y: 0, duration: 0.35, ease: "power2.out"}, 0.15);
     window.__timelines["b4"] = tl;
