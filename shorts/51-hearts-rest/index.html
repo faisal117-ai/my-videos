@@ -71,9 +71,10 @@
       .ref { font-size: 28px; }
       .mark { font-size: 96px; }
       .btn { font-size: 34px; padding: 18px 40px; }
-      .txt.hook { font-size: 84px !important; -webkit-text-stroke: 0; color: #fff6e6 !important; font-style: italic;
-        text-shadow: 0 2px 14px rgba(0,0,0,0.9), 0 0 2px rgba(0,0,0,0.9) !important; }
-      .txt.hook::before { display: none; }
+      .txt.hook { font-size: 110px !important; -webkit-text-stroke: 1.6px #fff; color: #fff !important; position: relative;
+        isolation: isolate; text-shadow: 0 0 3px rgba(0,0,0,0.95), 0 4px 24px rgba(0,0,0,0.95), 0 0 60px rgba(0,0,0,0.6) !important; }
+      .txt.hook::before { content: ""; position: absolute; inset: -60px -110px -70px -110px; z-index: -1;
+        background: radial-gradient(ellipse at 50% 50%, rgba(0,0,0,0.58) 0%, rgba(0,0,0,0.38) 45%, rgba(0,0,0,0) 72%); }
     </style>
   </head>
   <body>

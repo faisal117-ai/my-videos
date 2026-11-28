@@ -20,7 +20,6 @@
  "shot2": 4.5,
  "transform": 1,
  "bright": true,
- "calm_hook": true,
  "shakes": [
   {
    "beat": 0,

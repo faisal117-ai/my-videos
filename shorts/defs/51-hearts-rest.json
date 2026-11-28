@@ -78,6 +78,5 @@
  },
  "turn": 1,
  "hum": 1,
- "v2": true,
- "calm_hook": true
+ "v2": true
 }

@@ -25,6 +25,7 @@ Every new rule the user gives goes into THIS file the same turn (not only into s
 11. Short covers: videoCoverMilliseconds = 1000 (hook text + first picture), never the hook END (lands on a cut; user approved 26 Nov).
 12. Distant armies/crowds (a long row of tiny soldiers with banners, no single figure standing out, no faces) are FINE in
    pictures and thumbnails even in a prophet's story (user, 27 Nov): nobody will take them for the prophet.
+13. NO dark/calm first frames (tested 27–28 Nov: stars calm hook 17.8 % stayed vs bright 28–30 %). First frame stays bright, bold hook text.
 
 ## Read first, every session
 1. `scripts/handoff.md`: where things stand, open items, schedule, decisions.

@@ -1,7 +1,7 @@
 {
  "id": "49-sea-comfort",
  "lines": [
-  "Trapped, no way out? Listen.",
+  "Trapped, no way out? Say what he said at the sea.",
   "The sea in front of them. Pharaoh's army behind them.",
   "Prophet Musa, alayhis salaam, said: No! Indeed, my Lord is with me. He will guide me.",
   "And the sea split.",
@@ -10,8 +10,8 @@
  "beats": [
   {
    "hook": true,
-   "text": "Trapped, no way out? Listen.",
-   "ur": "پھنس گئے، کوئی راستہ نہیں؟ سنیے",
+   "text": "Trapped, no way out? Say what he said at the sea.",
+   "ur": "پھنس گئے، کوئی راستہ نہیں؟ وہ کہیں جو انہوں نے سمندر کے کنارے کہا",
    "mood": {
     "warm": 0.2,
     "cool": 0
@@ -88,6 +88,5 @@
  },
  "turn": 2,
  "hum": 2,
- "v2": true,
- "calm_hook": true
+ "v2": true
 }
